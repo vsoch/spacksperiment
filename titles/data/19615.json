@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19615",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19615/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19615/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19615/events",
+    "html_url": "https://github.com/spack/spack/pull/19615",
+    "id": 732820580,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEyNzA3MjYz",
+    "number": 19615,
+    "title": "Graphviz: don't build ghostscript when ~ghostscript",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-10-30T01:55:17Z",
+    "updated_at": "2021-02-04T15:59:25Z",
+    "closed_at": "2021-02-04T15:59:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19615",
+        "html_url": "https://github.com/spack/spack/pull/19615",
+        "diff_url": "https://github.com/spack/spack/pull/19615.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19615.patch"
+    },
+    "body": "#18803 forced ghostscript to be built even when graphviz was specified with `~ghostscript`. This caused a huge number of packages to be required when not really needed. I've removed the `ghostscript` requirement and it builds fine. The second part of that PR was to add `groff` as a build requirement, and it does indeed appear that the `graphviz` configure script looks for `groff`, though I can't verify that it breaks without it. I've therefore left in the `groff` requirement, but since it's a commonly distributed binary and build-only dependency, I've added `spack find external` support for `groff`.\r\n\r\nI suggest @joequant add a `conflicts('~ghostscript', when='....')` for whatever system/circumstance failed to build without a spack-installed ghostscript.",
+    "performed_via_github_app": null
+}

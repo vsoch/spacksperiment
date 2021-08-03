@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21168",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21168/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21168/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21168/events",
+    "html_url": "https://github.com/spack/spack/pull/21168",
+    "id": 790122563,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU4MzYwNDcx",
+    "number": 21168,
+    "title": "Propagate SCR resource_manager flag to libyogrt dependency",
+    "user": {
+        "login": "robertkb",
+        "id": 9001420,
+        "node_id": "MDQ6VXNlcjkwMDE0MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9001420?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertkb",
+        "html_url": "https://github.com/robertkb",
+        "followers_url": "https://api.github.com/users/robertkb/followers",
+        "following_url": "https://api.github.com/users/robertkb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertkb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertkb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertkb/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertkb/orgs",
+        "repos_url": "https://api.github.com/users/robertkb/repos",
+        "events_url": "https://api.github.com/users/robertkb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertkb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-20T16:16:02Z",
+    "updated_at": "2021-01-28T02:18:33Z",
+    "closed_at": "2021-01-20T21:51:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21168",
+        "html_url": "https://github.com/spack/spack/pull/21168",
+        "diff_url": "https://github.com/spack/spack/pull/21168.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21168.patch"
+    },
+    "body": "When the SCR spec specifies a resource_manager=SLURM or LSF flag, propagate the spec through to the libyogrt scheduler=slurm or lsf",
+    "performed_via_github_app": null
+}

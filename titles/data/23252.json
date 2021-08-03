@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23252",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23252/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23252/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23252/events",
+    "html_url": "https://github.com/spack/spack/pull/23252",
+    "id": 867795308,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIzNDA4MTY0",
+    "number": 23252,
+    "title": "Legion package overhaul",
+    "user": {
+        "login": "pmccormick",
+        "id": 651611,
+        "node_id": "MDQ6VXNlcjY1MTYxMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/651611?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pmccormick",
+        "html_url": "https://github.com/pmccormick",
+        "followers_url": "https://api.github.com/users/pmccormick/followers",
+        "following_url": "https://api.github.com/users/pmccormick/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pmccormick/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pmccormick/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pmccormick/subscriptions",
+        "organizations_url": "https://api.github.com/users/pmccormick/orgs",
+        "repos_url": "https://api.github.com/users/pmccormick/repos",
+        "events_url": "https://api.github.com/users/pmccormick/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pmccormick/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-04-26T14:55:09Z",
+    "updated_at": "2021-04-27T23:51:53Z",
+    "closed_at": "2021-04-27T23:51:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23252",
+        "html_url": "https://github.com/spack/spack/pull/23252",
+        "diff_url": "https://github.com/spack/spack/pull/23252.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23252.patch"
+    },
+    "body": "Refactored the Legion package to better capture latest configuration and build options.  This includes features that will be necessary for creation of extra packages for other products built on-top of Legion.  Many features now available were driven by new use cases and requirements.   This update deprecates (actually completely removing) our use of the gasnet package.\r\n\r\nAdded package-specific README to assist some users with more details than are easily provided in the inline documentation mechanisms. ",
+    "performed_via_github_app": null
+}

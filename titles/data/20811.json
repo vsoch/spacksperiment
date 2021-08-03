@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20811",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20811/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20811/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20811/events",
+    "html_url": "https://github.com/spack/spack/pull/20811",
+    "id": 784574063,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzNzQ1MDA5",
+    "number": 20811,
+    "title": "py-torchvision@0.5.0 depends on py-torch@1.4.1",
+    "user": {
+        "login": "rblake-llnl",
+        "id": 24722037,
+        "node_id": "MDQ6VXNlcjI0NzIyMDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24722037?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rblake-llnl",
+        "html_url": "https://github.com/rblake-llnl",
+        "followers_url": "https://api.github.com/users/rblake-llnl/followers",
+        "following_url": "https://api.github.com/users/rblake-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rblake-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rblake-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rblake-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/rblake-llnl/orgs",
+        "repos_url": "https://api.github.com/users/rblake-llnl/repos",
+        "events_url": "https://api.github.com/users/rblake-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rblake-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-01-12T20:36:14Z",
+    "updated_at": "2021-02-11T17:54:25Z",
+    "closed_at": "2021-01-12T23:13:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20811",
+        "html_url": "https://github.com/spack/spack/pull/20811",
+        "diff_url": "https://github.com/spack/spack/pull/20811.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20811.patch"
+    },
+    "body": "TLDR: We need python@2 with py-torch and py-torchvision.  The last working versions are py-torch@1.4.1 and py-torchvision@0.5.1.  This adds the missing version to py-torchvision.\r\n\r\nSee #20810 for why we can't build py-torch@1.4.0 with python@2\r\n\r\nSee #20801 for the original messages that caused this to be needed.",
+    "performed_via_github_app": null
+}

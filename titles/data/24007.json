@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24007",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24007/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24007/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24007/events",
+    "html_url": "https://github.com/spack/spack/pull/24007",
+    "id": 906071432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU3MTA2OTAz",
+    "number": 24007,
+    "title": "Fix mpip package to depends_on libunwind when the libunwind variant is set to true",
+    "user": {
+        "login": "lukebroskop",
+        "id": 6774152,
+        "node_id": "MDQ6VXNlcjY3NzQxNTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6774152?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lukebroskop",
+        "html_url": "https://github.com/lukebroskop",
+        "followers_url": "https://api.github.com/users/lukebroskop/followers",
+        "following_url": "https://api.github.com/users/lukebroskop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lukebroskop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lukebroskop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lukebroskop/subscriptions",
+        "organizations_url": "https://api.github.com/users/lukebroskop/orgs",
+        "repos_url": "https://api.github.com/users/lukebroskop/repos",
+        "events_url": "https://api.github.com/users/lukebroskop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lukebroskop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-05-28T21:17:32Z",
+    "updated_at": "2021-05-28T21:21:24Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24007",
+        "html_url": "https://github.com/spack/spack/pull/24007",
+        "diff_url": "https://github.com/spack/spack/pull/24007.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24007.patch"
+    },
+    "body": "Fix mpip package to depends_on libunwind when the libwunwind variant is set to true\r\n    \r\nI added a dependency for mpip@3.5: when the libunwind is set to true (which is the default)\r\nand '~setjmp' is set to False (which is also the default). Otherwise I ran into a configure\r\ntime error from not finding libunwind.",
+    "performed_via_github_app": null
+}

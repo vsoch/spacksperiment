@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22428",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22428/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22428/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22428/events",
+    "html_url": "https://github.com/spack/spack/pull/22428",
+    "id": 836476180,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk2OTg0MDMx",
+    "number": 22428,
+    "title": "update ascent and friends for the ascent 0.7.0 release",
+    "user": {
+        "login": "cyrush",
+        "id": 1194526,
+        "node_id": "MDQ6VXNlcjExOTQ1MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1194526?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrush",
+        "html_url": "https://github.com/cyrush",
+        "followers_url": "https://api.github.com/users/cyrush/followers",
+        "following_url": "https://api.github.com/users/cyrush/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrush/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrush/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrush/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrush/orgs",
+        "repos_url": "https://api.github.com/users/cyrush/repos",
+        "events_url": "https://api.github.com/users/cyrush/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrush/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 23,
+    "created_at": "2021-03-19T23:30:32Z",
+    "updated_at": "2021-03-26T21:10:33Z",
+    "closed_at": "2021-03-26T20:47:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22428",
+        "html_url": "https://github.com/spack/spack/pull/22428",
+        "diff_url": "https://github.com/spack/spack/pull/22428.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22428.patch"
+    },
+    "body": "updates to:\r\n\r\n - ascent\r\n - vtk-h\r\n - vtk-m\r\n - dray\r\n - mfem\r\n - babelflow\r\n - parallelmergetree\r\n\r\nThese changes are intertwined, I tested building the chain of packages using the following spack env setups in ascent's ci containers, here are the spack.yaml files:\r\n\r\nubuntu 18 based:\r\nhttps://github.com/Alpine-DAV/ascent/blob/develop/scripts/uberenv/spack_envs/ci/ubuntu_18_devel/spack.yaml\r\n\r\nubuntu 18 + cuda 10.1 based:\r\nhttps://github.com/Alpine-DAV/ascent/blob/develop/scripts/uberenv/spack_envs/ci/ubuntu_18_cuda_10.1_devel/spack.yaml\r\n\r\nSeveral of these packages are primarily used in ascent - so building with ascent is a good test of changes to the packages. \r\n\r\nI hope to not break these up b/c I have already spent many days testing. \r\n\r\nHere are some more details:\r\n\r\n- This allows vtk-m to be built using cuda 10.1 (prev had a min of 10.2). This is the default version on summit and we have used 10.1 to successfully build ascent + vtk-m.\r\n- This removes `vtk-m@ascent_ver`, since non-numeric versions are very difficult to wield\r\n- This limits the issue in #22459 to only apply to mfem 4.1 (where the BOM bytes exist in the mfem release)\r\n- This removes a few version constraint forwarding statements from package.py files (we expect to suggest usable combos in spack envs)\r\n",
+    "performed_via_github_app": null
+}

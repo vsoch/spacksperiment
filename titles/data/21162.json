@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21162",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21162/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21162/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21162/events",
+    "html_url": "https://github.com/spack/spack/pull/21162",
+    "id": 789652662,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU3OTY3MTMz",
+    "number": 21162,
+    "title": "libcap-ng: fix detect python.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-20T05:38:34Z",
+    "updated_at": "2021-01-21T03:42:37Z",
+    "closed_at": "2021-01-21T03:42:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21162",
+        "html_url": "https://github.com/spack/spack/pull/21162",
+        "diff_url": "https://github.com/spack/spack/pull/21162.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21162.patch"
+    },
+    "body": "- add python variant.\r\n- add --with-python and --with-python3 configure option.",
+    "performed_via_github_app": null
+}

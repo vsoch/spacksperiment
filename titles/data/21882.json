@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21882",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21882/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21882/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21882/events",
+    "html_url": "https://github.com/spack/spack/pull/21882",
+    "id": 814615004,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc4NTc1MDM2",
+    "number": 21882,
+    "title": "casacore: Use a modern CMake's version of FindHDF5.cmake",
+    "user": {
+        "login": "mpokorny",
+        "id": 794498,
+        "node_id": "MDQ6VXNlcjc5NDQ5OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/794498?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mpokorny",
+        "html_url": "https://github.com/mpokorny",
+        "followers_url": "https://api.github.com/users/mpokorny/followers",
+        "following_url": "https://api.github.com/users/mpokorny/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mpokorny/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mpokorny/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mpokorny/subscriptions",
+        "organizations_url": "https://api.github.com/users/mpokorny/orgs",
+        "repos_url": "https://api.github.com/users/mpokorny/repos",
+        "events_url": "https://api.github.com/users/mpokorny/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mpokorny/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-23T16:17:58Z",
+    "updated_at": "2021-03-05T22:25:15Z",
+    "closed_at": "2021-03-05T16:05:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21882",
+        "html_url": "https://github.com/spack/spack/pull/21882",
+        "diff_url": "https://github.com/spack/spack/pull/21882.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21882.patch"
+    },
+    "body": "Remove casacore's old version of the file with a package patch()\r\nfunction, and depend on a modern CMake for the build.",
+    "performed_via_github_app": null
+}

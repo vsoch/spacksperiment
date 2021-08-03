@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19847",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19847/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19847/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19847/events",
+    "html_url": "https://github.com/spack/spack/pull/19847",
+    "id": 740154344,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE4NjkxNjMy",
+    "number": 19847,
+    "title": "SuperLU-Dist: Add CUDA variant",
+    "user": {
+        "login": "pghysels",
+        "id": 29239758,
+        "node_id": "MDQ6VXNlcjI5MjM5NzU4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29239758?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pghysels",
+        "html_url": "https://github.com/pghysels",
+        "followers_url": "https://api.github.com/users/pghysels/followers",
+        "following_url": "https://api.github.com/users/pghysels/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pghysels/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pghysels/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pghysels/subscriptions",
+        "organizations_url": "https://api.github.com/users/pghysels/orgs",
+        "repos_url": "https://api.github.com/users/pghysels/repos",
+        "events_url": "https://api.github.com/users/pghysels/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pghysels/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-10T18:42:34Z",
+    "updated_at": "2020-11-30T23:02:07Z",
+    "closed_at": "2020-11-12T14:57:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19847",
+        "html_url": "https://github.com/spack/spack/pull/19847",
+        "diff_url": "https://github.com/spack/spack/pull/19847.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19847.patch"
+    },
+    "body": "Add CUDA variant to SuperLU-dist \r\n\r\nOnly enabled for latest version 6.4.0.\r\nThis version of SuperLU-Dist does not (yet) have any CUDA kernels, but uses the CUDA library cuBLAS.",
+    "performed_via_github_app": null
+}

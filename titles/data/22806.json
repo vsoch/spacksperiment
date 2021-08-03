@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22806",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22806/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22806/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22806/events",
+    "html_url": "https://github.com/spack/spack/pull/22806",
+    "id": 851432595,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA5ODU3ODQz",
+    "number": 22806,
+    "title": "mpich: add support for Mellanox HCOLL",
+    "user": {
+        "login": "nazavode",
+        "id": 1379149,
+        "node_id": "MDQ6VXNlcjEzNzkxNDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1379149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nazavode",
+        "html_url": "https://github.com/nazavode",
+        "followers_url": "https://api.github.com/users/nazavode/followers",
+        "following_url": "https://api.github.com/users/nazavode/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nazavode/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nazavode/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nazavode/subscriptions",
+        "organizations_url": "https://api.github.com/users/nazavode/orgs",
+        "repos_url": "https://api.github.com/users/nazavode/repos",
+        "events_url": "https://api.github.com/users/nazavode/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nazavode/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-04-06T13:36:19Z",
+    "updated_at": "2021-04-08T09:04:49Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22806",
+        "html_url": "https://github.com/spack/spack/pull/22806",
+        "diff_url": "https://github.com/spack/spack/pull/22806.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22806.patch"
+    },
+    "body": "This PR exposes explicit HCOLL support available upstream starting from 3.2.x. \r\n\r\nCC maintainers: @raffenet @yfguo",
+    "performed_via_github_app": null
+}

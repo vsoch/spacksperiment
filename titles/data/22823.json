@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22823",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22823/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22823/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22823/events",
+    "html_url": "https://github.com/spack/spack/pull/22823",
+    "id": 852221759,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEwNTEwODQ3",
+    "number": 22823,
+    "title": "Make Spack able to apply gz compressed remote patches",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-04-07T09:38:57Z",
+    "updated_at": "2021-04-28T15:01:04Z",
+    "closed_at": "2021-04-28T15:00:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22823",
+        "html_url": "https://github.com/spack/spack/pull/22823",
+        "diff_url": "https://github.com/spack/spack/pull/22823.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22823.patch"
+    },
+    "body": "fixes #22822\r\n\r\nWhen preparing stages etc. we expect the command to decompress an archive to write its output in the current working directory. This is not the case for `gunzip` that instead works in place by default. Here we solve the issue by substituting a system call with the use of the `gzip` module from the Python standard library.",
+    "performed_via_github_app": null
+}

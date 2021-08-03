@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20156",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20156/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20156/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20156/events",
+    "html_url": "https://github.com/spack/spack/pull/20156",
+    "id": 752791462,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5MDIzNzM0",
+    "number": 20156,
+    "title": "Remove more variables from build environment",
+    "user": {
+        "login": "omor1",
+        "id": 4326436,
+        "node_id": "MDQ6VXNlcjQzMjY0MzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4326436?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omor1",
+        "html_url": "https://github.com/omor1",
+        "followers_url": "https://api.github.com/users/omor1/followers",
+        "following_url": "https://api.github.com/users/omor1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omor1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omor1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omor1/subscriptions",
+        "organizations_url": "https://api.github.com/users/omor1/orgs",
+        "repos_url": "https://api.github.com/users/omor1/repos",
+        "events_url": "https://api.github.com/users/omor1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omor1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-28T23:36:50Z",
+    "updated_at": "2021-01-19T01:34:19Z",
+    "closed_at": "2020-12-24T22:48:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20156",
+        "html_url": "https://github.com/spack/spack/pull/20156",
+        "diff_url": "https://github.com/spack/spack/pull/20156.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20156.patch"
+    },
+    "body": "GCC looks for included files based on several env vars.\r\nRemove `C_INCLUDE_PATH`, `CPLUS_INCLUDE_PATH`, and `OBJC_INCLUDE_PATH` from the build environment to ensure it's clean and prevent accidental clobbering.\r\n\r\nI had encountered difficulties in building certain packages (notably `py-pandas`) after having loaded spack modules; I was building with GCC, but some of the loaded modules had been built with Intel and had loaded its internal include path in `C_INCLUDE_PATH`, which clobbered GCC's internal `<float.h>` and suppressed the definition of `DBL_MIN_EXP` and `DBL_MAX_EXP` (Intel's `float.h` only defines these macros when the compiler is actually Intel).",
+    "performed_via_github_app": null
+}

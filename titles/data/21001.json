@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21001",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21001/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21001/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21001/events",
+    "html_url": "https://github.com/spack/spack/pull/21001",
+    "id": 787334563,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2MDY3NTUx",
+    "number": 21001,
+    "title": "libidn2: https -> http",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2542559486,
+            "node_id": "MDU6TGFiZWwyNTQyNTU5NDg2",
+            "url": "https://api.github.com/repos/spack/spack/labels/bootstrap",
+            "name": "bootstrap",
+            "color": "743ec4",
+            "default": false,
+            "description": "Issues occurring while spack builds its own dependencies."
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-16T03:11:52Z",
+    "updated_at": "2021-01-19T14:57:22Z",
+    "closed_at": "2021-01-19T08:54:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21001",
+        "html_url": "https://github.com/spack/spack/pull/21001",
+        "diff_url": "https://github.com/spack/spack/pull/21001.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21001.patch"
+    },
+    "body": "The following packages must download from `http://` in order to bootstrap `curl`:\r\n```console\r\n$ spack spec curl~darwinssl\r\nInput spec\r\n--------------------------------\r\ncurl~darwinssl\r\n\r\nConcretized\r\n--------------------------------\r\ncurl@7.74.0%apple-clang@12.0.0~darwinssl~gssapi~libssh~libssh2~nghttp2 arch=darwin-catalina-x86_64\r\n    ^libidn2@2.3.0%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n        ^libunistring@0.9.10%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n            ^libiconv@1.16%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n    ^openssl@1.1.1i%apple-clang@12.0.0+systemcerts arch=darwin-catalina-x86_64\r\n        ^perl@5.32.0%apple-clang@12.0.0+cpanm+shared+threads patches=517afe8ca1cb12f798f20b21583d91463fe3f4fa9244c6c8e054a92c8135da8f arch=darwin-catalina-x86_64\r\n            ^berkeley-db@18.1.40%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n            ^gdbm@1.18.1%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n                ^readline@8.0%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n                    ^ncurses@6.2%apple-clang@12.0.0~symlinks+termlib arch=darwin-catalina-x86_64\r\n                        ^pkgconf@1.7.3%apple-clang@12.0.0 arch=darwin-catalina-x86_64\r\n        ^zlib@1.2.11%apple-clang@12.0.0+optimize+pic+shared arch=darwin-catalina-x86_64\r\n```\r\n@mlawsonca",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21563",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21563/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21563/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21563/events",
+    "html_url": "https://github.com/spack/spack/pull/21563",
+    "id": 804507763,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcwMjYzMTI0",
+    "number": 21563,
+    "title": "xpmem: Added RHEL 8.3 support",
+    "user": {
+        "login": "amd-toolchain-support",
+        "id": 73240730,
+        "node_id": "MDQ6VXNlcjczMjQwNzMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/73240730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amd-toolchain-support",
+        "html_url": "https://github.com/amd-toolchain-support",
+        "followers_url": "https://api.github.com/users/amd-toolchain-support/followers",
+        "following_url": "https://api.github.com/users/amd-toolchain-support/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amd-toolchain-support/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amd-toolchain-support/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amd-toolchain-support/subscriptions",
+        "organizations_url": "https://api.github.com/users/amd-toolchain-support/orgs",
+        "repos_url": "https://api.github.com/users/amd-toolchain-support/repos",
+        "events_url": "https://api.github.com/users/amd-toolchain-support/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amd-toolchain-support/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-02-09T12:29:02Z",
+    "updated_at": "2021-02-12T10:01:55Z",
+    "closed_at": "2021-02-12T10:01:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21563",
+        "html_url": "https://github.com/spack/spack/pull/21563",
+        "diff_url": "https://github.com/spack/spack/pull/21563.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21563.patch"
+    },
+    "body": "- Fixed SHA256 value for version 2.6.5 (merged on: 21-Nov-2020)\r\n- Added RHEL 8.3 support for kernel 4.18.0-240.1.1.el8_3.x86_64",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21141",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21141/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21141/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21141/events",
+    "html_url": "https://github.com/spack/spack/pull/21141",
+    "id": 788712489,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU3MTcxMTIy",
+    "number": 21141,
+    "title": "universal-ctags: added depends_on('libiconv', type='link')",
+    "user": {
+        "login": "h-denpo",
+        "id": 57649496,
+        "node_id": "MDQ6VXNlcjU3NjQ5NDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57649496?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/h-denpo",
+        "html_url": "https://github.com/h-denpo",
+        "followers_url": "https://api.github.com/users/h-denpo/followers",
+        "following_url": "https://api.github.com/users/h-denpo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/h-denpo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/h-denpo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/h-denpo/subscriptions",
+        "organizations_url": "https://api.github.com/users/h-denpo/orgs",
+        "repos_url": "https://api.github.com/users/h-denpo/repos",
+        "events_url": "https://api.github.com/users/h-denpo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/h-denpo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-19T05:12:25Z",
+    "updated_at": "2021-03-09T07:42:54Z",
+    "closed_at": "2021-01-19T07:47:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21141",
+        "html_url": "https://github.com/spack/spack/pull/21141",
+        "diff_url": "https://github.com/spack/spack/pull/21141.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21141.patch"
+    },
+    "body": "The following error occurred during installation.\r\nBecause depends_on('libiconv', type='link') is not enough.\r\n\r\n```\r\n6 errors found in build log:\r\n     368      CCLD     packcc\r\n     369    PACKCC     peg/varlink.c\r\n     370      CC       peg/libctags_a-varlink.o\r\n     371      AR       libctags.a\r\n     372      CCLD     ctags\r\n     373      CCLD     mini-geany\r\n  >> 374    /usr/bin/ld: libctags.a(libctags_a-jscript.o): undefined reference\r\n            to symbol 'libiconv_open'\r\n  >> 375    //fefs/home/r1059/spack/opt/spack/linux-rhel8-thunderx2/gcc-8.3.1/l\r\n            ibiconv-1.16-yv2ypzotoapbgh2vulw27f6whjgng5ok/lib/libiconv.so.2: er\r\n            ror adding symbols: DSO missing from command line\r\n  >> 376    collect2: error: ld returned 1 exit status\r\n     377    make[1]: *** [Makefile:1842: ctags] Error 1\r\n     378    make[1]: *** Waiting for unfinished jobs....\r\n  >> 379    /usr/bin/ld: libctags.a(libctags_a-jscript.o): undefined reference\r\n            to symbol 'libiconv_open'\r\n  >> 380    //fefs/home/r1059/spack/opt/spack/linux-rhel8-thunderx2/gcc-8.3.1/l\r\n            ibiconv-1.16-yv2ypzotoapbgh2vulw27f6whjgng5ok/lib/libiconv.so.2: er\r\n            ror adding symbols: DSO missing from command line\r\n  >> 381    collect2: error: ld returned 1 exit status\r\n     382    make[1]: *** [Makefile:1848: mini-geany] Error 1\r\n     383    make[1]: Leaving directory '/tmp/r1059/spack-stage/spack-stage-univ\r\n            ersal-ctags-master-h54naermbm7zautrw72wwsycsq6arjeg/spack-src'\r\n     384    make: *** [Makefile:1309: all] Error 2\r\n```",
+    "performed_via_github_app": null
+}

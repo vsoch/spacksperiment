@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19093",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19093/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19093/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19093/events",
+    "html_url": "https://github.com/spack/spack/pull/19093",
+    "id": 712875227,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk2Mjg2MDUz",
+    "number": 19093,
+    "title": "FAODEL: fix CMake failures on NERSC Cori in faodel@1.1906.1",
+    "user": {
+        "login": "tkordenbrock",
+        "id": 8807825,
+        "node_id": "MDQ6VXNlcjg4MDc4MjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8807825?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkordenbrock",
+        "html_url": "https://github.com/tkordenbrock",
+        "followers_url": "https://api.github.com/users/tkordenbrock/followers",
+        "following_url": "https://api.github.com/users/tkordenbrock/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkordenbrock/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkordenbrock/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkordenbrock/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkordenbrock/orgs",
+        "repos_url": "https://api.github.com/users/tkordenbrock/repos",
+        "events_url": "https://api.github.com/users/tkordenbrock/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkordenbrock/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-10-01T14:03:22Z",
+    "updated_at": "2020-10-14T19:04:09Z",
+    "closed_at": "2020-10-01T17:38:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19093",
+        "html_url": "https://github.com/spack/spack/pull/19093",
+        "diff_url": "https://github.com/spack/spack/pull/19093.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19093.patch"
+    },
+    "body": "@eugeneswalker reported in #17892 that Faodel failed to build on NERSC Cori.  This has been resolved in https://github.com/faodel/faodel/issues/7.  This PR adds a patch file that is a backport of that fix to the Faodel 1.1906.1 release.\r\n",
+    "performed_via_github_app": null
+}

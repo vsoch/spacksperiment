@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19273",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19273/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19273/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19273/events",
+    "html_url": "https://github.com/spack/spack/pull/19273",
+    "id": 719531376,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxNzAyNzI4",
+    "number": 19273,
+    "title": "m4: Fix issue compiling with new intel compilers (#18894)",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-12T17:11:07Z",
+    "updated_at": "2020-10-12T19:22:48Z",
+    "closed_at": "2020-10-12T19:13:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19273",
+        "html_url": "https://github.com/spack/spack/pull/19273",
+        "diff_url": "https://github.com/spack/spack/pull/19273.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19273.patch"
+    },
+    "body": "Original version added --no-gcc to CFLAGS when compiling with intel\r\ncompilers.  This does not appear to be needed and indeed causes problems\r\n(see #18894) with newer intel compilers; I have modified so it is not\r\nadded for intel@19: (I confirmed it is needed/works for intel@20, based\r\non comments in #18854 looks like holds for intel@19 as well).\r\n\r\n(Also fix old formatting issue flake8 was complaining about)\r\n\r\nFixes #18894",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25062",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25062/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25062/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25062/events",
+    "html_url": "https://github.com/spack/spack/pull/25062",
+    "id": 951755237,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2MDkwNjU0",
+    "number": 25062,
+    "title": "Fix LBANN and related packages CMake CUDA arch flag",
+    "user": {
+        "login": "romerojosh",
+        "id": 5974496,
+        "node_id": "MDQ6VXNlcjU5NzQ0OTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5974496?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/romerojosh",
+        "html_url": "https://github.com/romerojosh",
+        "followers_url": "https://api.github.com/users/romerojosh/followers",
+        "following_url": "https://api.github.com/users/romerojosh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/romerojosh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/romerojosh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/romerojosh/subscriptions",
+        "organizations_url": "https://api.github.com/users/romerojosh/orgs",
+        "repos_url": "https://api.github.com/users/romerojosh/repos",
+        "events_url": "https://api.github.com/users/romerojosh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/romerojosh/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-23T17:08:25Z",
+    "updated_at": "2021-07-26T07:16:38Z",
+    "closed_at": "2021-07-26T07:16:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25062",
+        "html_url": "https://github.com/spack/spack/pull/25062",
+        "diff_url": "https://github.com/spack/spack/pull/25062.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25062.patch"
+    },
+    "body": "Some fixes after #24074.\r\n\r\n1. When specifying multiple compute capabilities, `CMAKE_CUDA_ARCHITECTURES` expects a list delimited by `;` not `,`.\r\n2. Current packages will set `CMAKE_CUDA_ARCHITECTURES=none` when no `cuda_arch` is specified. This is not a valid argument and results in CMake trying to use nvcc arch compilation flags like: `-gencode=arch=compute_,code=sm_`. Modified the packages to not set `CMAKE_CUDA_ARCHITECTURES` at all if no `cuda_arch` is specified.\r\n\r\ncc: @bvanessen ",
+    "performed_via_github_app": null
+}

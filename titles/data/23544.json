@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23544",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23544/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23544/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23544/events",
+    "html_url": "https://github.com/spack/spack/pull/23544",
+    "id": 884587691,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjM3OTU3Njgx",
+    "number": 23544,
+    "title": "gmsh: add variants and new version",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-05-10T16:27:12Z",
+    "updated_at": "2021-05-11T15:12:30Z",
+    "closed_at": "2021-05-11T15:12:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23544",
+        "html_url": "https://github.com/spack/spack/pull/23544",
+        "diff_url": "https://github.com/spack/spack/pull/23544.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23544.patch"
+    },
+    "body": "CGNS dependency was forgotten, defaults were very far from those of the pre-compiled packages for Linux distros such as Ubuntu, more options from the gmsh web page https://gmsh.info/doc/texinfo/gmsh.html#Compiling-the-source-code are added, new version 4.8.4 as well.",
+    "performed_via_github_app": null
+}

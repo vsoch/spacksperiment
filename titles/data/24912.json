@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24912",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24912/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24912/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24912/events",
+    "html_url": "https://github.com/spack/spack/pull/24912",
+    "id": 945712926,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxMDAyMzA0",
+    "number": 24912,
+    "title": "Added missing Plumed 2.5-2.7 versions to Gromacs package",
+    "user": {
+        "login": "w8jcik",
+        "id": 3964620,
+        "node_id": "MDQ6VXNlcjM5NjQ2MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3964620?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/w8jcik",
+        "html_url": "https://github.com/w8jcik",
+        "followers_url": "https://api.github.com/users/w8jcik/followers",
+        "following_url": "https://api.github.com/users/w8jcik/following{/other_user}",
+        "gists_url": "https://api.github.com/users/w8jcik/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/w8jcik/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/w8jcik/subscriptions",
+        "organizations_url": "https://api.github.com/users/w8jcik/orgs",
+        "repos_url": "https://api.github.com/users/w8jcik/repos",
+        "events_url": "https://api.github.com/users/w8jcik/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/w8jcik/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-07-15T20:06:32Z",
+    "updated_at": "2021-07-16T11:47:28Z",
+    "closed_at": "2021-07-16T11:47:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24912",
+        "html_url": "https://github.com/spack/spack/pull/24912",
+        "diff_url": "https://github.com/spack/spack/pull/24912.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24912.patch"
+    },
+    "body": "How it was tested:\r\n- [x] Four new versions of `plumed` have been successfully installed through Spack, loaded and called.\r\n- [x] `spack install gromacs@2021+cuda~mpi+plumed` installed correctly.\r\n- [x] Tried `spack spec gromacs@<version>+plumed` with various Gromacs versions **supported** by Plumed and checked what `plumed` versions are resolved. They seems to be correct.",
+    "performed_via_github_app": null
+}

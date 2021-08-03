@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19457",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19457/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19457/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19457/events",
+    "html_url": "https://github.com/spack/spack/pull/19457",
+    "id": 726975804,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA3OTU3Mzcw",
+    "number": 19457,
+    "title": "[NEW] Added amdfftw, amdlibflame and amdscalapack recipes",
+    "user": {
+        "login": "vkallesh",
+        "id": 10962922,
+        "node_id": "MDQ6VXNlcjEwOTYyOTIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10962922?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vkallesh",
+        "html_url": "https://github.com/vkallesh",
+        "followers_url": "https://api.github.com/users/vkallesh/followers",
+        "following_url": "https://api.github.com/users/vkallesh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vkallesh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vkallesh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vkallesh/subscriptions",
+        "organizations_url": "https://api.github.com/users/vkallesh/orgs",
+        "repos_url": "https://api.github.com/users/vkallesh/repos",
+        "events_url": "https://api.github.com/users/vkallesh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vkallesh/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-10-22T01:43:17Z",
+    "updated_at": "2020-10-31T16:57:18Z",
+    "closed_at": "2020-10-31T16:57:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19457",
+        "html_url": "https://github.com/spack/spack/pull/19457",
+        "diff_url": "https://github.com/spack/spack/pull/19457.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19457.patch"
+    },
+    "body": "Updated base fftw, libflame and netlib-scalapack recipes\r\nto accommodate the above listed AMD Optimizing CPU Libraries\r\nwhich are a set of numerical routines optimized for AMD platforms.\r\n\r\nUpdated amdblis spack recipe\r\n\r\namdblis:\r\n\t1. updated with amdblis 2.2 release\r\namdfftw:\r\n\t1. \"--enable-single\" now work as synonym for \"--enable-float\"\r\namdlibflame:\r\n\t1. Added enable_or_disable_threads() to set value for \"--enable-multithreading\" flag\r\nLibflame:\r\n\t1. Added enable_or_disable_threads() to set value for \"--enable-multithreading\" flag\r\n\t2. Corrected invocation of \"enable_or_disable('threads')\"\r\n\r\nChange-Id: I9da0a2c2c4e2075b7fa2776e7cfe6548a2e0b32f",
+    "performed_via_github_app": null
+}

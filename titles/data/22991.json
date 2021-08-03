@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22991",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22991/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22991/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22991/events",
+    "html_url": "https://github.com/spack/spack/pull/22991",
+    "id": 858043350,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE1MzYzODkx",
+    "number": 22991,
+    "title": "bugfix for matrices with dependencies by hash",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-14T16:03:46Z",
+    "updated_at": "2021-05-10T23:01:58Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22991",
+        "html_url": "https://github.com/spack/spack/pull/22991",
+        "diff_url": "https://github.com/spack/spack/pull/22991.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22991.patch"
+    },
+    "body": "Dependencies specified by hash are unique in Spack in that the abstract\r\nspecs are created with internal structure. In this case, the constraint\r\ngeneration for spec matrices fails due to flattening the structure.\r\n\r\nIt turns out that the dep_difference method for Spec.constrain does not\r\nneed to operate on transitive deps to ensure correctness. Removing transitive\r\ndeps from this method resolves the bug.\r\n\r\nIncludes regression test\r\n\r\nBug reported on slack by @omor1 ",
+    "performed_via_github_app": null
+}

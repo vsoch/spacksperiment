@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22251",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22251/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22251/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22251/events",
+    "html_url": "https://github.com/spack/spack/pull/22251",
+    "id": 829430493,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTkxMDk3NjA5",
+    "number": 22251,
+    "title": "adding spack -c to set one off config arguments",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-03-11T18:50:06Z",
+    "updated_at": "2021-03-13T05:31:26Z",
+    "closed_at": "2021-03-13T05:31:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22251",
+        "html_url": "https://github.com/spack/spack/pull/22251",
+        "diff_url": "https://github.com/spack/spack/pull/22251.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22251.patch"
+    },
+    "body": "This pull request will add the ability for a user to add a configuration argument on the fly, on the command line, e.g.,:\r\n\r\n```bash\r\n$ spack -c config:install_tree:root:/path/to/config.yaml -c packages:all:compiler:[gcc] list --help\r\n```\r\nThe above command doesn't do anything (I'm just getting help for list) but you can imagine having another root of packages, and updating it on the fly for a command (something I'd like to do in the near future!)\r\n\r\nI've moved the logic for config_add that used to be in spack/cmd/config.py into spack/config.py proper, and now both the main.py (where spack commands live) and spack/cmd/config.py use these functions. I only needed spack config add, so I didn't move the others. We can move the others if there are also needed in multiple places. Thanks to @becker33 for helping out with my questions on slack this morning!\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

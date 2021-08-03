@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24474",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24474/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24474/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24474/events",
+    "html_url": "https://github.com/spack/spack/pull/24474",
+    "id": 927519598,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc1NjY1MTAx",
+    "number": 24474,
+    "title": "gsl: new release 2.7",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-06-22T18:25:06Z",
+    "updated_at": "2021-06-24T05:03:47Z",
+    "closed_at": "2021-06-23T16:46:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24474",
+        "html_url": "https://github.com/spack/spack/pull/24474",
+        "diff_url": "https://github.com/spack/spack/pull/24474.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24474.patch"
+    },
+    "body": "Only a new release ; +external-cblas patch works as for release 2.6 and as @glennpj did in PR #22968.\r\nSorry @glennpj I did not update the 2.3 patch for 2.6 since when not using +external-cblas for gsl but when using blas for a package that depends on gsl, the package \"automagically\" depends on the \"external\" blas, not the libgslcblas.so shipped with gsl ; this might interest @sethrj and he may give hints on the subject.\r\nYou made it explicit @glennpj , I assume you have a need for that, but I prefer not since I may compile my code without blas for all my code but with a complete gsl. Maybe gsl developpers would have some advise about it, they say \"Users who have access to other conforming CBLAS implementations can use these in place of the version provided by the library\" but it is a bit short for me, I fail to understand that. Reference : \r\nhttps://www.gnu.org/software/gsl/doc/html/blas.html#blas-support",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21740",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21740/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21740/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21740/events",
+    "html_url": "https://github.com/spack/spack/pull/21740",
+    "id": 810547118,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc1MjIwMzg5",
+    "number": 21740,
+    "title": "patches to apply when using oneapi compiler",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-17T21:20:33Z",
+    "updated_at": "2021-02-18T17:39:31Z",
+    "closed_at": "2021-02-18T17:39:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21740",
+        "html_url": "https://github.com/spack/spack/pull/21740",
+        "diff_url": "https://github.com/spack/spack/pull/21740.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21740.patch"
+    },
+    "body": "m4 was failing with:\r\n\r\n>   >> 647    /var/tmp/lee218/spack-stage/spack-stage-m4-1.4.18-yxi7rqp3sdmpprlgm\r\n>             5dytbb3jkvtopbo/spack-src/lib/xalloc.h:107: undefined reference to \r\n>             `__muloti4'\r\n\r\ngdbm was failing with:\r\n\r\n> \r\n>      242    ./libgdbmapp.a(parseopt.o): In function `parseopt_first':\r\n>      243    /tmp/lee218/spack-stage/spack-stage-gdbm-1.18.1-yhernq5c76uc2ikqsvy\r\n>             vultbhs2xexkv/spack-src/src/parseopt.c:203: multiple definition of \r\n>             `parseopt_program_doc'\r\n>      244    gdbmtool.o:/tmp/lee218/spack-stage/spack-stage-gdbm-1.18.1-yhernq5c\r\n>             76uc2ikqsvyvultbhs2xexkv/spack-src/src/gdbmtool.c:821: first define\r\n>             d here\r\n>   >> 245    clang: error: linker command failed with exit code 1 (use -v to see\r\n>              invocation)\r\n",
+    "performed_via_github_app": null
+}

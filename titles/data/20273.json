@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20273",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20273/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20273/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20273/events",
+    "html_url": "https://github.com/spack/spack/pull/20273",
+    "id": 758850717,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMzOTQ5NzY0",
+    "number": 20273,
+    "title": "replace margo pkg with updated mochi-margo pkg",
+    "user": {
+        "login": "carns",
+        "id": 5541937,
+        "node_id": "MDQ6VXNlcjU1NDE5Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5541937?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carns",
+        "html_url": "https://github.com/carns",
+        "followers_url": "https://api.github.com/users/carns/followers",
+        "following_url": "https://api.github.com/users/carns/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carns/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carns/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carns/subscriptions",
+        "organizations_url": "https://api.github.com/users/carns/orgs",
+        "repos_url": "https://api.github.com/users/carns/repos",
+        "events_url": "https://api.github.com/users/carns/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carns/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-12-07T21:10:07Z",
+    "updated_at": "2021-02-01T18:38:03Z",
+    "closed_at": "2021-02-01T18:38:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20273",
+        "html_url": "https://github.com/spack/spack/pull/20273",
+        "diff_url": "https://github.com/spack/spack/pull/20273.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20273.patch"
+    },
+    "body": "- advance from v0.4.3 to v0.9 of margo\r\n- change spack package name to \"mochi-margo\" to match preferred naming convention\r\n- add stub mochi package as placeholder for deprecated name",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23127",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23127/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23127/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23127/events",
+    "html_url": "https://github.com/spack/spack/pull/23127",
+    "id": 862392498,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE4OTcyNjA0",
+    "number": 23127,
+    "title": "preparing to refactor spack solver setup",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-20T04:09:48Z",
+    "updated_at": "2021-07-24T21:43:12Z",
+    "closed_at": "2021-07-24T21:43:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23127",
+        "html_url": "https://github.com/spack/spack/pull/23127",
+        "diff_url": "https://github.com/spack/spack/pull/23127.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23127.patch"
+    },
+    "body": "In anticipation of being able to run one or more custom models (for testing or future production) we need to untangle the spack solver setup from the single asp.py, and have a means to automatically discover (and then ask to use) one or more setups. In this case, a setup includes a full class that expects a driver to generate facts, and associated with that class is one or more logic programs to run. To keep things tidy, the logic programs are now stored in their own logic directory. Since this PR is just refactoring the current (and we only have one) there is no argument exposed in spack.cmd.solve. However, when I add more models (e.g., for symbols) there will be this option.\r\n\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

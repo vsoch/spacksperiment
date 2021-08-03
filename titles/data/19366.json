@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19366",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19366/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19366/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19366/events",
+    "html_url": "https://github.com/spack/spack/pull/19366",
+    "id": 724730363,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA2MDcwNTI4",
+    "number": 19366,
+    "title": "Remove version in extends",
+    "user": {
+        "login": "schmitts",
+        "id": 1502412,
+        "node_id": "MDQ6VXNlcjE1MDI0MTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1502412?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/schmitts",
+        "html_url": "https://github.com/schmitts",
+        "followers_url": "https://api.github.com/users/schmitts/followers",
+        "following_url": "https://api.github.com/users/schmitts/following{/other_user}",
+        "gists_url": "https://api.github.com/users/schmitts/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/schmitts/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/schmitts/subscriptions",
+        "organizations_url": "https://api.github.com/users/schmitts/orgs",
+        "repos_url": "https://api.github.com/users/schmitts/repos",
+        "events_url": "https://api.github.com/users/schmitts/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/schmitts/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-19T15:24:45Z",
+    "updated_at": "2020-10-19T18:26:38Z",
+    "closed_at": "2020-10-19T18:26:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19366",
+        "html_url": "https://github.com/spack/spack/pull/19366",
+        "diff_url": "https://github.com/spack/spack/pull/19366.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19366.patch"
+    },
+    "body": "extends expects the package name only.\n\nCf. #12480.\n",
+    "performed_via_github_app": null
+}

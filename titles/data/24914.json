@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24914",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24914/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24914/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24914/events",
+    "html_url": "https://github.com/spack/spack/pull/24914",
+    "id": 945798398,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxMDc0ODM2",
+    "number": 24914,
+    "title": "makes cuda a direct dependency, so it still shows up when using exter\u2026",
+    "user": {
+        "login": "frankwillmore",
+        "id": 508437,
+        "node_id": "MDQ6VXNlcjUwODQzNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/508437?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frankwillmore",
+        "html_url": "https://github.com/frankwillmore",
+        "followers_url": "https://api.github.com/users/frankwillmore/followers",
+        "following_url": "https://api.github.com/users/frankwillmore/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frankwillmore/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frankwillmore/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frankwillmore/subscriptions",
+        "organizations_url": "https://api.github.com/users/frankwillmore/orgs",
+        "repos_url": "https://api.github.com/users/frankwillmore/repos",
+        "events_url": "https://api.github.com/users/frankwillmore/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frankwillmore/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-07-15T22:32:33Z",
+    "updated_at": "2021-07-15T22:55:36Z",
+    "closed_at": "2021-07-15T22:39:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24914",
+        "html_url": "https://github.com/spack/spack/pull/24914",
+        "diff_url": "https://github.com/spack/spack/pull/24914.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24914.patch"
+    },
+    "body": "The compiler in use is currently detected from: \r\n\r\n``` \r\nself.compiler.cc =  /gpfs/mira-home/willmore/spack/opt/spack/linux-ubun\r\ntu18.04-x86_64/gcc-7.5.0/nvhpc-21.5-c4a4ab5yemaxeibnhtqzqfmvepmm2gv5/Linux_x86_6\r\n4/21.5/compilers/bin/nvc\r\n```\r\n\r\nThis is a hacky patch that correct for the use case where the compiler being used (e.g. nvhpc in my case) is falsely detected as gcc or clang because it was built with gcc or clang. I'm asking around to see if there's a better way to detect, will update if I learn more. \r\n",
+    "performed_via_github_app": null
+}

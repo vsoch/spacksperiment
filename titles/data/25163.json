@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25163",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25163/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25163/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25163/events",
+    "html_url": "https://github.com/spack/spack/pull/25163",
+    "id": 957056471,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNTU4NzE1",
+    "number": 25163,
+    "title": "e4s ci stack: update package preferences",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1491154932,
+            "node_id": "MDU6TGFiZWwxNDkxMTU0OTMy",
+            "url": "https://api.github.com/repos/spack/spack/labels/gitlab",
+            "name": "gitlab",
+            "color": "f7b094",
+            "default": false,
+            "description": "Issues related to gitlab integration"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-30T21:00:45Z",
+    "updated_at": "2021-07-30T21:00:49Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25163",
+        "html_url": "https://github.com/spack/spack/pull/25163",
+        "diff_url": "https://github.com/spack/spack/pull/25163.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25163.patch"
+    },
+    "body": "`e4s ci stack` updated package preferences to reflect current state of E4S as tested at UO\r\n\r\n@scottwittenburg @wspear ",
+    "performed_via_github_app": null
+}

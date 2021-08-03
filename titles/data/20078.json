@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20078",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20078/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20078/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20078/events",
+    "html_url": "https://github.com/spack/spack/pull/20078",
+    "id": 750206039,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI2OTA2ODIy",
+    "number": 20078,
+    "title": "Qt: add options to disable docs and gui",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-11-25T00:48:03Z",
+    "updated_at": "2020-11-30T14:42:09Z",
+    "closed_at": "2020-11-29T01:10:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20078",
+        "html_url": "https://github.com/spack/spack/pull/20078",
+        "diff_url": "https://github.com/spack/spack/pull/20078.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20078.patch"
+    },
+    "body": "- Add `~gui` option for minimal build\r\n- Add `+doc` option to install docs, and attempt to disable the implicit\r\n  llvm dependency if not\r\n- Removes the 'freetype' option which hasn't worked reliably in qt5, as\r\n  many of the gui components implicitly rely on freetype.\r\n- Add and test version 5.15 (and skip qtlocation if disabling opengl)\r\n- Refactor some of the dependency logic\r\n\r\nI've tested this on linux with 5.15.2 and 4.8.7 in a couple of different\r\nconfigurations.",
+    "performed_via_github_app": null
+}

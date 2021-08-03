@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21225",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21225/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21225/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21225/events",
+    "html_url": "https://github.com/spack/spack/pull/21225",
+    "id": 792240508,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYwMTU2OTA2",
+    "number": 21225,
+    "title": "use module and package flags to get more correct mypy behavior",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2583834777,
+            "node_id": "MDU6TGFiZWwyNTgzODM0Nzc3",
+            "url": "https://api.github.com/repos/spack/spack/labels/mypy",
+            "name": "mypy",
+            "color": "98c635",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-22T19:09:47Z",
+    "updated_at": "2021-01-23T00:24:16Z",
+    "closed_at": "2021-01-23T00:24:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21225",
+        "html_url": "https://github.com/spack/spack/pull/21225",
+        "diff_url": "https://github.com/spack/spack/pull/21225.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21225.patch"
+    },
+    "body": "The first of my two upstream patches to mypy landed in the 0.800 tag that was released this morning, which lets us use module and package parameters with a `.mypy.ini` file that has a `files` key.  This uses those parameters to check all of spack in style, but leaves the packages out for now since they are still very, very broken.  If no package has been modified, the packages are not checked, but if one has they are.  Includes some fixes for the log tests since they were not type checking.\r\n\r\nShould also fix all failures related to \"duplicate module named package\" errors.\r\n\r\nHopefully the next drop of mypy will include my other patch so we can just specify the modules and packages in the config file to begin with, but for now we'll have to live with a bare `mypy` doing a check of the libs but not the packages.",
+    "performed_via_github_app": null
+}

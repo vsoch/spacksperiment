@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21452",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21452/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21452/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21452/events",
+    "html_url": "https://github.com/spack/spack/pull/21452",
+    "id": 799715870,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY2MzE2ODI5",
+    "number": 21452,
+    "title": "sensei: add versions and fix dependencies",
+    "user": {
+        "login": "danlipsa",
+        "id": 6180727,
+        "node_id": "MDQ6VXNlcjYxODA3Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6180727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danlipsa",
+        "html_url": "https://github.com/danlipsa",
+        "followers_url": "https://api.github.com/users/danlipsa/followers",
+        "following_url": "https://api.github.com/users/danlipsa/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danlipsa/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danlipsa/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danlipsa/subscriptions",
+        "organizations_url": "https://api.github.com/users/danlipsa/orgs",
+        "repos_url": "https://api.github.com/users/danlipsa/repos",
+        "events_url": "https://api.github.com/users/danlipsa/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danlipsa/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-02T21:41:26Z",
+    "updated_at": "2021-02-26T15:52:41Z",
+    "closed_at": "2021-02-26T15:52:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21452",
+        "html_url": "https://github.com/spack/spack/pull/21452",
+        "diff_url": "https://github.com/spack/spack/pull/21452.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21452.patch"
+    },
+    "body": "@devel should work with all options.\r\n\r\nReleases don't work with ~catalyst\r\nSee https://gitlab.kitware.com/sensei/sensei/-/merge_requests/240 for the fix for develop.\r\n\r\nReleases work only with paraview 5.7 and 5.6\r\nSee https://gitlab.kitware.com/sensei/sensei/-/merge_requests/239 for the fix for develop (which works with 5.9)",
+    "performed_via_github_app": null
+}

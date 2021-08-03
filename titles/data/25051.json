@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25051",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25051/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25051/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25051/events",
+    "html_url": "https://github.com/spack/spack/pull/25051",
+    "id": 951207078,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk1NjMzMTM2",
+    "number": 25051,
+    "title": "xsdk: remove 0.2.0 and custom package versions",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-07-23T03:01:07Z",
+    "updated_at": "2021-08-01T22:35:58Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25051",
+        "html_url": "https://github.com/spack/spack/pull/25051",
+        "diff_url": "https://github.com/spack/spack/pull/25051.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25051.patch"
+    },
+    "body": "@balay I would like to remove xsdk 0.2.0 because the existence of special \"xsdk\" versions complicates version specifications for packages that expect a linear progression of version numbers. (For instance, `trilinos@:11.0` concretizes on develop to `trilinos@xsdk-0.2.0`.) Currently xsdk@0.2.0 won't even install due to missing hypre packages and disabled xsdktrilinos.\r\n\r\nThis also removes the unused `xsdktrilinos` package -- referenced only in a commented-out line in xsdk, and an inactive github project for four years.\r\n\r\nSee https://github.com/spack/spack/issues/17145 .",
+    "performed_via_github_app": null
+}

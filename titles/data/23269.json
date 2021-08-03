@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23269",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23269/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23269/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23269/events",
+    "html_url": "https://github.com/spack/spack/pull/23269",
+    "id": 868209871,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIzNzcwNDYy",
+    "number": 23269,
+    "title": "Improve llnl.util.lang.load_module_from_file",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025851999,
+            "node_id": "MDU6TGFiZWwxMDI1ODUxOTk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/imports",
+            "name": "imports",
+            "color": "80f2ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-04-26T21:16:22Z",
+    "updated_at": "2021-05-06T10:04:29Z",
+    "closed_at": "2021-05-06T09:53:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23269",
+        "html_url": "https://github.com/spack/spack/pull/23269",
+        "diff_url": "https://github.com/spack/spack/pull/23269.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23269.patch"
+    },
+    "body": "This PR improves `llnl.util.lang.load_module_from_file` in the following ways:\r\n- [x] Put a module object in `sys.modules` before the code of the module is executed to avoid unbounded recursion or reloading.\r\n- [x] Exit early if the module to be constructed is already in `sys.modules`\r\n- [x] Improve test by ensuring that multiple calls to the function will not reload the same module multiple times\r\n",
+    "performed_via_github_app": null
+}

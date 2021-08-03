@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22066",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22066/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22066/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22066/events",
+    "html_url": "https://github.com/spack/spack/pull/22066",
+    "id": 821671777,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg0NDIxNjAy",
+    "number": 22066,
+    "title": "unifyfs: Fix strncpy build error of version 0.9.1",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-03-04T01:49:56Z",
+    "updated_at": "2021-03-04T15:46:19Z",
+    "closed_at": "2021-03-04T15:46:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22066",
+        "html_url": "https://github.com/spack/spack/pull/22066",
+        "diff_url": "https://github.com/spack/spack/pull/22066.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22066.patch"
+    },
+    "body": "I have fixed the following issues:\r\n      349    ./spack-stage/spack-stage-unifyfs-0.9.1-5yrndwau6kzqyfo4ev62fpwzcodchfro/spack-src/client/src/unifyfs-sysio.c:248:13: error:\r\n            'strncpy' specified bound depends on the length of the source argument [-Werror=stringop-overflow=]\r\n     350                 strncpy(buf, unifyfs_cwd, len);\r\n     351                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     352    ./spack-stage/spack-stage-unifyfs-0.9.1-5yrndwau6kzqyfo4ev62fpwzcodchfro/spack-src/client/src/unifyfs-sysio.c:216:18: note: l\r\n            ength computed here\r\n     353         size_t len = strlen(unifyfs_cwd) + 1;\r\n\r\nThe location of the error is as follows.\r\nI think the error is occurring because the length of len specified in strncpy is longer than unifyfs_cwd.\r\n         buf = (char*) malloc(len);\r\n         if (buf != NULL) {\r\n            strncpy(buf, unifyfs_cwd, len);\r\n\r\nI thought I could fix it by changing len to strlen (unifyfs_cwd), but I couldn't avoid the error so I decided to use memcpy.\r\nI'm thinking of upstream this fix patch.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21479",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21479/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21479/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21479/events",
+    "html_url": "https://github.com/spack/spack/pull/21479",
+    "id": 800958902,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY3MzU3NDc2",
+    "number": 21479,
+    "title": "py-numpy: Fix for new version of numpy with Fujitsu compiler.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-02-04T05:55:38Z",
+    "updated_at": "2021-02-05T07:40:50Z",
+    "closed_at": "2021-02-04T16:58:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21479",
+        "html_url": "https://github.com/spack/spack/pull/21479",
+        "diff_url": "https://github.com/spack/spack/pull/21479.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21479.patch"
+    },
+    "body": "* Change the version to apply patches.\r\nFixes of adition Fujitsu compiler is involved in version 1.20.0. So, I fixed to apply add_fj_compiler.patch only up to version 1.19.5.\r\n\r\n* Change the name of the Fujitsu compiler to 'fujitsu' in numpy.\r\nIn upstream of `numpy`, Setting name of Fujitsu compiler is `fujitsu`. So, I changed the setting name of the Fujitsu compiler used in the patch of `py-numpy` and the setting value of `config_fc` specified in `py-scipy`.\r\n\r\nFixes #21482",
+    "performed_via_github_app": null
+}

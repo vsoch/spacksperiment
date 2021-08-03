@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21345",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21345/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21345/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21345/events",
+    "html_url": "https://github.com/spack/spack/pull/21345",
+    "id": 795248750,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyNjI5Mzk4",
+    "number": 21345,
+    "title": "py-dictdiffer: fix offline dependencies",
+    "user": {
+        "login": "Andrew-Dunning-NNL",
+        "id": 67964561,
+        "node_id": "MDQ6VXNlcjY3OTY0NTYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67964561?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Andrew-Dunning-NNL",
+        "html_url": "https://github.com/Andrew-Dunning-NNL",
+        "followers_url": "https://api.github.com/users/Andrew-Dunning-NNL/followers",
+        "following_url": "https://api.github.com/users/Andrew-Dunning-NNL/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Andrew-Dunning-NNL/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Andrew-Dunning-NNL/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Andrew-Dunning-NNL/subscriptions",
+        "organizations_url": "https://api.github.com/users/Andrew-Dunning-NNL/orgs",
+        "repos_url": "https://api.github.com/users/Andrew-Dunning-NNL/repos",
+        "events_url": "https://api.github.com/users/Andrew-Dunning-NNL/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Andrew-Dunning-NNL/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-27T16:24:24Z",
+    "updated_at": "2021-02-02T17:21:59Z",
+    "closed_at": "2021-02-02T17:21:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21345",
+        "html_url": "https://github.com/spack/spack/pull/21345",
+        "diff_url": "https://github.com/spack/spack/pull/21345.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21345.patch"
+    },
+    "body": "Add py-testrunner dependency to support offline build/install",
+    "performed_via_github_app": null
+}

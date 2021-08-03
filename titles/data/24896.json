@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24896",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24896/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24896/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24896/events",
+    "html_url": "https://github.com/spack/spack/pull/24896",
+    "id": 944814164,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkwMjM5OTA0",
+    "number": 24896,
+    "title": "Fixing/Improving Candle benchmarks",
+    "user": {
+        "login": "0luhancheng0",
+        "id": 29231220,
+        "node_id": "MDQ6VXNlcjI5MjMxMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29231220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/0luhancheng0",
+        "html_url": "https://github.com/0luhancheng0",
+        "followers_url": "https://api.github.com/users/0luhancheng0/followers",
+        "following_url": "https://api.github.com/users/0luhancheng0/following{/other_user}",
+        "gists_url": "https://api.github.com/users/0luhancheng0/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/0luhancheng0/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/0luhancheng0/subscriptions",
+        "organizations_url": "https://api.github.com/users/0luhancheng0/orgs",
+        "repos_url": "https://api.github.com/users/0luhancheng0/repos",
+        "events_url": "https://api.github.com/users/0luhancheng0/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/0luhancheng0/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 3129125322,
+            "node_id": "MDU6TGFiZWwzMTI5MTI1MzIy",
+            "url": "https://api.github.com/repos/spack/spack/labels/extends",
+            "name": "extends",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-07-14T21:34:09Z",
+    "updated_at": "2021-08-01T17:37:34Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24896",
+        "html_url": "https://github.com/spack/spack/pull/24896",
+        "diff_url": "https://github.com/spack/spack/pull/24896.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24896.patch"
+    },
+    "body": "Fixing a number of issue\r\n* py-theano need `+cuda` instead `+gpu`\r\n* opencv dose not have `zlib` or `python` variants, and `~imgproc` conflict with `+highgui` option, therefore i deleted `+highgui`\r\n* add numba dependency",
+    "performed_via_github_app": null
+}

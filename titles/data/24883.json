@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24883",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24883/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24883/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24883/events",
+    "html_url": "https://github.com/spack/spack/pull/24883",
+    "id": 944506883,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg5OTgwNDI3",
+    "number": 24883,
+    "title": "Fix compilation with `arm` and `nvhpc` compilers",
+    "user": {
+        "login": "rj-jesus",
+        "id": 11319180,
+        "node_id": "MDQ6VXNlcjExMzE5MTgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11319180?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rj-jesus",
+        "html_url": "https://github.com/rj-jesus",
+        "followers_url": "https://api.github.com/users/rj-jesus/followers",
+        "following_url": "https://api.github.com/users/rj-jesus/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rj-jesus/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rj-jesus/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rj-jesus/subscriptions",
+        "organizations_url": "https://api.github.com/users/rj-jesus/orgs",
+        "repos_url": "https://api.github.com/users/rj-jesus/repos",
+        "events_url": "https://api.github.com/users/rj-jesus/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rj-jesus/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-07-14T14:48:01Z",
+    "updated_at": "2021-08-01T17:40:49Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24883",
+        "html_url": "https://github.com/spack/spack/pull/24883",
+        "diff_url": "https://github.com/spack/spack/pull/24883.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24883.patch"
+    },
+    "body": "This commit (i) patches `meme` so that it compiles with `armclang` and (ii) modifies the `spack` `meme` package so that it uses the `spack` versions of `libxml2` and `libxslt`. Using the built-in versions of these packages was resulting in several linkage errors, at least when compiling with `nvhpc@21.2`.\r\n\r\nI've successfully built this package with `arm@21.0.0.879`, `gcc@10.3.0`, and `nvhpc@21.2` (provided `libxslt` is patched as per #24873).",
+    "performed_via_github_app": null
+}

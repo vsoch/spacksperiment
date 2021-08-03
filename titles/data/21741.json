@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21741",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21741/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21741/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21741/events",
+    "html_url": "https://github.com/spack/spack/pull/21741",
+    "id": 810576465,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc1MjQ0NDM4",
+    "number": 21741,
+    "title": "py-fenics-ffc: new package to support fenics",
+    "user": {
+        "login": "emai-imcs",
+        "id": 26089869,
+        "node_id": "MDQ6VXNlcjI2MDg5ODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26089869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/emai-imcs",
+        "html_url": "https://github.com/emai-imcs",
+        "followers_url": "https://api.github.com/users/emai-imcs/followers",
+        "following_url": "https://api.github.com/users/emai-imcs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/emai-imcs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/emai-imcs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/emai-imcs/subscriptions",
+        "organizations_url": "https://api.github.com/users/emai-imcs/orgs",
+        "repos_url": "https://api.github.com/users/emai-imcs/repos",
+        "events_url": "https://api.github.com/users/emai-imcs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/emai-imcs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-17T22:09:49Z",
+    "updated_at": "2021-02-22T20:19:20Z",
+    "closed_at": "2021-02-22T18:36:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21741",
+        "html_url": "https://github.com/spack/spack/pull/21741",
+        "diff_url": "https://github.com/spack/spack/pull/21741.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21741.patch"
+    },
+    "body": "New package, required to support the FEniCS 2018 and 2019 versions in the `fenics` package.\r\n\r\nPredecessor of `py-fenics-ffcx` package (used for `fenics-dolfinx`).\r\n\r\nOutsourced PR from [FEniCS 2019.1.0 PR.](https://github.com/spack/spack/pull/21207)",
+    "performed_via_github_app": null
+}

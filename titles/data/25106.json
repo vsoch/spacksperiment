@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25106",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25106/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25106/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25106/events",
+    "html_url": "https://github.com/spack/spack/pull/25106",
+    "id": 953869386,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk3ODQ5MDUx",
+    "number": 25106,
+    "title": "AOCC support for CloverLeaf",
+    "user": {
+        "login": "amd-toolchain-support",
+        "id": 73240730,
+        "node_id": "MDQ6VXNlcjczMjQwNzMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/73240730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amd-toolchain-support",
+        "html_url": "https://github.com/amd-toolchain-support",
+        "followers_url": "https://api.github.com/users/amd-toolchain-support/followers",
+        "following_url": "https://api.github.com/users/amd-toolchain-support/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amd-toolchain-support/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amd-toolchain-support/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amd-toolchain-support/subscriptions",
+        "organizations_url": "https://api.github.com/users/amd-toolchain-support/orgs",
+        "repos_url": "https://api.github.com/users/amd-toolchain-support/repos",
+        "events_url": "https://api.github.com/users/amd-toolchain-support/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amd-toolchain-support/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-07-27T13:12:02Z",
+    "updated_at": "2021-08-02T05:15:28Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25106",
+        "html_url": "https://github.com/spack/spack/pull/25106",
+        "diff_url": "https://github.com/spack/spack/pull/25106.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25106.patch"
+    },
+    "body": "- Added AOCC support for CloverLeaf_ref from master branch\r\n- Added \"debug\" and \"ieee\" variants\r\n- Added \"master\" version ",
+    "performed_via_github_app": null
+}

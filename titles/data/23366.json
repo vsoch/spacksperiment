@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23366",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23366/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23366/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23366/events",
+    "html_url": "https://github.com/spack/spack/pull/23366",
+    "id": 872752434,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI3NjI2NTg2",
+    "number": 23366,
+    "title": "disable locks on windows testing",
+    "user": {
+        "login": "loulawrence",
+        "id": 72574166,
+        "node_id": "MDQ6VXNlcjcyNTc0MTY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72574166?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/loulawrence",
+        "html_url": "https://github.com/loulawrence",
+        "followers_url": "https://api.github.com/users/loulawrence/followers",
+        "following_url": "https://api.github.com/users/loulawrence/following{/other_user}",
+        "gists_url": "https://api.github.com/users/loulawrence/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/loulawrence/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/loulawrence/subscriptions",
+        "organizations_url": "https://api.github.com/users/loulawrence/orgs",
+        "repos_url": "https://api.github.com/users/loulawrence/repos",
+        "events_url": "https://api.github.com/users/loulawrence/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/loulawrence/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-30T15:51:06Z",
+    "updated_at": "2021-05-04T13:53:59Z",
+    "closed_at": "2021-05-04T13:53:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23366",
+        "html_url": "https://github.com/spack/spack/pull/23366",
+        "diff_url": "https://github.com/spack/spack/pull/23366.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23366.patch"
+    },
+    "body": "-win_locks fixture to disable locks on windows testing\r\n-windows path changes in test/cmd/env.py\r\n-disable test/cmd/blame.py::git_blame on windows to prevent hanging",
+    "performed_via_github_app": null
+}

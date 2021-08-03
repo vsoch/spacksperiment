@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21879",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21879/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21879/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21879/events",
+    "html_url": "https://github.com/spack/spack/pull/21879",
+    "id": 814409061,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc4NDAyMjEy",
+    "number": 21879,
+    "title": "New Package: perl-fth",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-23T12:15:14Z",
+    "updated_at": "2021-06-10T13:06:33Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21879",
+        "html_url": "https://github.com/spack/spack/pull/21879",
+        "diff_url": "https://github.com/spack/spack/pull/21879.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21879.patch"
+    },
+    "body": "Ftagshtml is a Fortran (and simple C) to HTML browsing, it resolves static interface overload.\r\nIt can handle some LaTeX comments inside the source files (with -hevea)\r\nIt only needs to be put somewhere into your disk since it uses Perl.\r\nIt also provides javatex2.pl initmak.pl getin.pl and view.pl :\r\n- javatex is a post-process for LaTex2HTML making a tree view,\r\n- initmak finds f90 dependencies but can also make them optional when interface is not changed to avoid recompiling all,\r\n- getin is a powerfull grep (when a variable is set/declared/changes name at calls)\r\n- view is when you have a Web server and a cgi-bin (through suExec typically)\r\n",
+    "performed_via_github_app": null
+}

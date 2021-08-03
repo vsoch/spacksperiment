@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22821",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22821/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22821/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22821/events",
+    "html_url": "https://github.com/spack/spack/pull/22821",
+    "id": 852182196,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEwNDc3Nzkz",
+    "number": 22821,
+    "title": "Integrate oneAPI 2021.2.0 release",
+    "user": {
+        "login": "vdanilin",
+        "id": 19992467,
+        "node_id": "MDQ6VXNlcjE5OTkyNDY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19992467?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vdanilin",
+        "html_url": "https://github.com/vdanilin",
+        "followers_url": "https://api.github.com/users/vdanilin/followers",
+        "following_url": "https://api.github.com/users/vdanilin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vdanilin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vdanilin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vdanilin/subscriptions",
+        "organizations_url": "https://api.github.com/users/vdanilin/orgs",
+        "repos_url": "https://api.github.com/users/vdanilin/repos",
+        "events_url": "https://api.github.com/users/vdanilin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vdanilin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-04-07T08:55:50Z",
+    "updated_at": "2021-04-07T16:44:13Z",
+    "closed_at": "2021-04-07T16:44:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22821",
+        "html_url": "https://github.com/spack/spack/pull/22821",
+        "diff_url": "https://github.com/spack/spack/pull/22821.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22821.patch"
+    },
+    "body": "Add oneAPI packages from the 2021.2 release\r\n\r\nI did manual checks of units test, style checking and oneapi-tests on the local machine. \r\noneapi-test CI results: https://github.com/DanVev/oneapi-spack-tests/actions/runs/725842061  \r\nAll is good except VPL issue, but it a package-wide problem and it might be release-noted etc. \r\nI'll update the VPL package in case it will be repackaged.\r\n\r\nFYI: @rscohn2 ",
+    "performed_via_github_app": null
+}

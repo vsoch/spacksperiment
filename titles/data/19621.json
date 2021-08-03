@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19621",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19621/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19621/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19621/events",
+    "html_url": "https://github.com/spack/spack/pull/19621",
+    "id": 732956644,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEyODE5NTc4",
+    "number": 19621,
+    "title": "graphviz: Fix implicit patch",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-30T07:43:30Z",
+    "updated_at": "2020-10-30T09:16:56Z",
+    "closed_at": "2020-10-30T09:16:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19621",
+        "html_url": "https://github.com/spack/spack/pull/19621",
+        "diff_url": "https://github.com/spack/spack/pull/19621.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19621.patch"
+    },
+    "body": "The patch seems to be included in version 2.44.1 already. Moreover, it is necessary to specify `level=0` to make it apply.",
+    "performed_via_github_app": null
+}

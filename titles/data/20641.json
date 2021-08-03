@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20641",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20641/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20641/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20641/events",
+    "html_url": "https://github.com/spack/spack/pull/20641",
+    "id": 777419961,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ3NzI1OTQ1",
+    "number": 20641,
+    "title": "Update copyright year for 2021",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1025497628,
+            "node_id": "MDU6TGFiZWwxMDI1NDk3NjI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/licenses",
+            "name": "licenses",
+            "color": "f97296",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 742534409,
+            "node_id": "MDU6TGFiZWw3NDI1MzQ0MDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-command",
+            "name": "new-command",
+            "color": "275e99",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-02T07:23:53Z",
+    "updated_at": "2021-01-02T20:12:02Z",
+    "closed_at": "2021-01-02T20:12:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20641",
+        "html_url": "https://github.com/spack/spack/pull/20641",
+        "diff_url": "https://github.com/spack/spack/pull/20641.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20641.patch"
+    },
+    "body": "This PR adds a new command, `spack license update-copyright-year`, that automatically updates the copyright year in files that should have a license header.\r\n\r\nIt also updates the set of licensed files, and uses the command to update all copyright headers for 2021.\r\n    \r\n- [x] add `spack license update-copyright-year` command + test\r\n- [x] add `concretize.lp`, `spack.yaml`, etc. to licensed files\r\n- [x] update all licensed files to say 2013-2021 using `spack license update-copyright-year`\r\n\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20207",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20207/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20207/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20207/events",
+    "html_url": "https://github.com/spack/spack/pull/20207",
+    "id": 754843662,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMwNjcwMDY2",
+    "number": 20207,
+    "title": "bootstrapping: bootstrap spack dependencies (executable and python module)",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-12-02T01:02:29Z",
+    "updated_at": "2021-07-22T02:03:53Z",
+    "closed_at": "2021-07-22T02:03:53Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20207",
+        "html_url": "https://github.com/spack/spack/pull/20207",
+        "diff_url": "https://github.com/spack/spack/pull/20207.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20207.patch"
+    },
+    "body": "This PR allows Spack to search for executables and modules, and if requested install them, to satisfy its own dependencies. It ensures that the bootstrapped package is built with the python under which Spack is running, to ensure compatibility for python modules and to speed up installs in both cases.\r\n\r\nSearch order:\r\n    1. sys.path for modules, PATH for executables\r\n    2. installed packages\r\n    3. install it (optional)\r\n\r\nSo far, this is implemented for the `clingo` python module and the `flake8` executable.'\r\n\r\nAs part of this PR, I had to fix our PythonPackage class to be able to install against system python on MacOS. @adamjstewart do those changes look acceptable to you?\r\n\r\n@tgamblin @alalazo @cosmicexplorer \r\n\r\nThis currently has rough edges, TODO's include appropriate error messages, testing.",
+    "performed_via_github_app": null
+}

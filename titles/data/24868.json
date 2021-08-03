@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24868",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24868/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24868/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24868/events",
+    "html_url": "https://github.com/spack/spack/pull/24868",
+    "id": 943871181,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg5NDM5NDM3",
+    "number": 24868,
+    "title": "modfiy hip-rocclr references for 4.1.0 and 4.2.0 releases",
+    "user": {
+        "login": "srekolam",
+        "id": 67086238,
+        "node_id": "MDQ6VXNlcjY3MDg2MjM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67086238?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srekolam",
+        "html_url": "https://github.com/srekolam",
+        "followers_url": "https://api.github.com/users/srekolam/followers",
+        "following_url": "https://api.github.com/users/srekolam/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srekolam/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srekolam/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srekolam/subscriptions",
+        "organizations_url": "https://api.github.com/users/srekolam/orgs",
+        "repos_url": "https://api.github.com/users/srekolam/repos",
+        "events_url": "https://api.github.com/users/srekolam/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srekolam/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-07-13T22:21:26Z",
+    "updated_at": "2021-08-02T18:16:48Z",
+    "closed_at": "2021-08-02T18:16:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24868",
+        "html_url": "https://github.com/spack/spack/pull/24868",
+        "diff_url": "https://github.com/spack/spack/pull/24868.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24868.patch"
+    },
+    "body": "I found the addition of hip-rocclr is not required for some of the recipes. only rocrand is requiring it .\r\ni built these changes for rocm-4.1.0 and rocm-4.2.0 to check if there are any failures and did not encounter them.\r\nany inputs for additional testing i am okay to do and confirm.\r\nrocm-opencl-runtime is not required as there is another recipe rocm-opencl.",
+    "performed_via_github_app": null
+}

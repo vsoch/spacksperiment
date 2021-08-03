@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19382",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19382/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19382/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19382/events",
+    "html_url": "https://github.com/spack/spack/pull/19382",
+    "id": 725095826,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA2MzgxMTcz",
+    "number": 19382,
+    "title": "update version to avoid compile error",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-20T01:06:41Z",
+    "updated_at": "2021-03-06T03:10:13Z",
+    "closed_at": "2021-01-06T09:23:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19382",
+        "html_url": "https://github.com/spack/spack/pull/19382",
+        "diff_url": "https://github.com/spack/spack/pull/19382.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19382.patch"
+    },
+    "body": "update version to avoid this issue:\r\n```\r\n/home/spack-develop/lib/spack/env/gcc/g++ -std=gnu++11 -shared -L/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-4.0.2-kyflwfdhj63kvb67y5z7fqbxsb6sxcfe/rlib/R/lib -L/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-4.0.2-kyflwfdhj63kvb67y5z7fqbxsb6sxcfe/rlib/R/lib -Wl,-rpath,/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-4.0.2-kyflwfdhj63kvb67y5z7fqbxsb6sxcfe/rlib/R/lib -o genefilter.so half_range_mode.o init.o nd.o pAUC.o rowPAUCs.o rowttests.o ttest.o -lgfortran -lm -L/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-4.0.2-kyflwfdhj63kvb67y5z7fqbxsb6sxcfe/rlib/R/lib -lR\r\ninstalling to /home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-genefilter-1.66.0-yrlczxbuim4tcivg2marptqkjgpxuafu/rlib/R/library/00LOCK-spack-src/00new/genefilter/libs\r\n** R\r\n** data\r\n*** moving datasets to lazyload DB\r\n** inst\r\n** byte-compile and prepare package for lazy loading\r\nError: objects 'rowSums', 'colSums', 'rowMeans', 'colMeans' are not exported by 'namespace:S4Vectors'\r\nExecution halted\r\nERROR: lazy loading failed for package 'genefilter'\r\n* removing '/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/r-genefilter-1.66.0-yrlczxbuim4tcivg2marptqkjgpxuafu/rlib/R/library/genefilter'\r\n```",
+    "performed_via_github_app": null
+}

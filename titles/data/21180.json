@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21180",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21180/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21180/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21180/events",
+    "html_url": "https://github.com/spack/spack/pull/21180",
+    "id": 790368039,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU4NTY4Njk1",
+    "number": 21180,
+    "title": "openssl: remove preprocessor flags incompatible with NVIDIA HPC SDK",
+    "user": {
+        "login": "samcmill",
+        "id": 18687225,
+        "node_id": "MDQ6VXNlcjE4Njg3MjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18687225?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/samcmill",
+        "html_url": "https://github.com/samcmill",
+        "followers_url": "https://api.github.com/users/samcmill/followers",
+        "following_url": "https://api.github.com/users/samcmill/following{/other_user}",
+        "gists_url": "https://api.github.com/users/samcmill/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/samcmill/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/samcmill/subscriptions",
+        "organizations_url": "https://api.github.com/users/samcmill/orgs",
+        "repos_url": "https://api.github.com/users/samcmill/repos",
+        "events_url": "https://api.github.com/users/samcmill/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/samcmill/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2431484299,
+            "node_id": "MDU6TGFiZWwyNDMxNDg0Mjk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/nvhpc",
+            "name": "nvhpc",
+            "color": "e0641d",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-20T22:03:31Z",
+    "updated_at": "2021-01-21T03:42:55Z",
+    "closed_at": "2021-01-21T03:42:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21180",
+        "html_url": "https://github.com/spack/spack/pull/21180",
+        "diff_url": "https://github.com/spack/spack/pull/21180.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21180.patch"
+    },
+    "body": "Patch OpenSSL so that it builds successfully with the NVIDIA HPC SDK",
+    "performed_via_github_app": null
+}

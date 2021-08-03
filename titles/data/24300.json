@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24300",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24300/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24300/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24300/events",
+    "html_url": "https://github.com/spack/spack/pull/24300",
+    "id": 920546887,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY5NjgwMTIw",
+    "number": 24300,
+    "title": "Configure docbook packages",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-14T15:48:15Z",
+    "updated_at": "2021-07-23T19:43:22Z",
+    "closed_at": "2021-07-07T18:41:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24300",
+        "html_url": "https://github.com/spack/spack/pull/24300",
+        "diff_url": "https://github.com/spack/spack/pull/24300.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24300.patch"
+    },
+    "body": "This PR configures the spack docbook packages\r\n- docbook-xsl\r\n- docbook-xml\r\n\r\nThe public entities are now mapped to the locally installed files of the\r\nrespective packages. The example catalogs are left in place and\r\nXML_CATALOG_FILES points to the newly created catalogs.\r\n\r\n- Fixed environment reference in docbook-xml\r\n- added libxml2 as a build dependency",
+    "performed_via_github_app": null
+}

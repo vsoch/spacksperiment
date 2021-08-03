@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22971",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22971/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22971/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22971/events",
+    "html_url": "https://github.com/spack/spack/pull/22971",
+    "id": 857241658,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE0Njk0Mjcy",
+    "number": 22971,
+    "title": "fix building suite-sparse with CUDA-11",
+    "user": {
+        "login": "finkandreas",
+        "id": 15714790,
+        "node_id": "MDQ6VXNlcjE1NzE0Nzkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15714790?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/finkandreas",
+        "html_url": "https://github.com/finkandreas",
+        "followers_url": "https://api.github.com/users/finkandreas/followers",
+        "following_url": "https://api.github.com/users/finkandreas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/finkandreas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/finkandreas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/finkandreas/subscriptions",
+        "organizations_url": "https://api.github.com/users/finkandreas/orgs",
+        "repos_url": "https://api.github.com/users/finkandreas/repos",
+        "events_url": "https://api.github.com/users/finkandreas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/finkandreas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-13T19:04:27Z",
+    "updated_at": "2021-04-15T11:28:46Z",
+    "closed_at": "2021-04-15T11:28:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22971",
+        "html_url": "https://github.com/spack/spack/pull/22971",
+        "diff_url": "https://github.com/spack/spack/pull/22971.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22971.patch"
+    },
+    "body": "I tested building suite-sparse@5.9.0. I do not expect problems with older versions, but I did not test it, that is why I did not include older versions for patching, but feel free to add also older versions",
+    "performed_via_github_app": null
+}

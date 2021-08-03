@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19502",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19502/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19502/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19502/events",
+    "html_url": "https://github.com/spack/spack/pull/19502",
+    "id": 728521441,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5MjE1MTM1",
+    "number": 19502,
+    "title": "changes to support hip build of camp",
+    "user": {
+        "login": "dtaller",
+        "id": 66029857,
+        "node_id": "MDQ6VXNlcjY2MDI5ODU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66029857?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dtaller",
+        "html_url": "https://github.com/dtaller",
+        "followers_url": "https://api.github.com/users/dtaller/followers",
+        "following_url": "https://api.github.com/users/dtaller/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dtaller/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dtaller/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dtaller/subscriptions",
+        "organizations_url": "https://api.github.com/users/dtaller/orgs",
+        "repos_url": "https://api.github.com/users/dtaller/repos",
+        "events_url": "https://api.github.com/users/dtaller/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dtaller/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2020-10-23T21:01:20Z",
+    "updated_at": "2020-10-30T20:33:57Z",
+    "closed_at": "2020-10-30T20:33:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19502",
+        "html_url": "https://github.com/spack/spack/pull/19502",
+        "diff_url": "https://github.com/spack/spack/pull/19502.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19502.patch"
+    },
+    "body": "There are issues with how hip detects spack that need to be resolved. Please see the confluence page https://lc.llnl.gov/confluence/pages/viewpage.action?pageId=669526837 for a warkaround. Thanks to Robert Blake, Greg Becker, and others for their help during the debugging process and for helping to make the Wiki to document the issue for future users.\r\n\r\nPlease wait until Monday at least to merge so that David Beckinsale, Todd Gamblin, and others have a chance to take a look at the confluence page above and give their input on the (non-ideal) workaround for packages depending on hip.",
+    "performed_via_github_app": null
+}

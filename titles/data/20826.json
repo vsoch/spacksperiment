@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20826",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20826/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20826/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20826/events",
+    "html_url": "https://github.com/spack/spack/pull/20826",
+    "id": 784819421,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzOTQ2OTEx",
+    "number": 20826,
+    "title": "hpctoolkit: add variant to support rocm",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-01-13T06:09:29Z",
+    "updated_at": "2021-01-21T00:07:26Z",
+    "closed_at": "2021-01-13T08:54:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20826",
+        "html_url": "https://github.com/spack/spack/pull/20826",
+        "diff_url": "https://github.com/spack/spack/pull/20826.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20826.patch"
+    },
+    "body": "Add early support for ROCM on AMD GPUs, for develop branch only.\r\nRequires ROCM packages to be specified as external packages.\r\n\r\n----------\r\n\r\nNo, it doesn't work to add ROCmPackage.  That adds dependencies for\r\nhip, hsa-rocr-dev and llvm-amdgpu.\r\n\r\nHpctoolkit is not a ROCM application, it is a tool for analyzing apps.\r\nFor ROCM, we need hip, rocm-dbgapi and roctracer-dev.",
+    "performed_via_github_app": null
+}

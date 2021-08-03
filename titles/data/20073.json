@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20073",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20073/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20073/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20073/events",
+    "html_url": "https://github.com/spack/spack/pull/20073",
+    "id": 750076094,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI2NzkzMTQ0",
+    "number": 20073,
+    "title": "gnuradio: add gui support",
+    "user": {
+        "login": "aweits",
+        "id": 6664568,
+        "node_id": "MDQ6VXNlcjY2NjQ1Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aweits",
+        "html_url": "https://github.com/aweits",
+        "followers_url": "https://api.github.com/users/aweits/followers",
+        "following_url": "https://api.github.com/users/aweits/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aweits/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aweits/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aweits/subscriptions",
+        "organizations_url": "https://api.github.com/users/aweits/orgs",
+        "repos_url": "https://api.github.com/users/aweits/repos",
+        "events_url": "https://api.github.com/users/aweits/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aweits/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-24T21:19:08Z",
+    "updated_at": "2021-02-08T21:35:29Z",
+    "closed_at": "2020-11-30T07:54:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20073",
+        "html_url": "https://github.com/spack/spack/pull/20073",
+        "diff_url": "https://github.com/spack/spack/pull/20073.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20073.patch"
+    },
+    "body": "- [x] use cppzmq, not libzmq\r\n- [x] fix gsettings-desktop-schemas for usage purposes\r\n- [x] add hicolor-icon-theme  ",
+    "performed_via_github_app": null
+}

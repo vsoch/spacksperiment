@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19650",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19650/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19650/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19650/events",
+    "html_url": "https://github.com/spack/spack/issues/19650",
+    "id": 733867895,
+    "node_id": "MDU6SXNzdWU3MzM4Njc4OTU=",
+    "number": 19650,
+    "title": "netlib-scalapack: reversed (or previously applied) patch detected",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-01T04:48:06Z",
+    "updated_at": "2020-11-01T23:15:05Z",
+    "closed_at": "2020-11-01T23:15:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Using `spack@develop` (77fc458d2964490c83863d667df10b9a740ce05e from `Sun Nov 1 01:05:13 2020 +0100`)\r\n\r\nCan't install `netlib-scalapack` ([netlib-scalapack.spec.yaml.txt](https://github.com/spack/spack/files/5470201/netlib-scalapack.spec.yaml.txt)) on:\r\n* `Ubuntu 18.04`\r\n* `ppc64le`\r\n\r\n```\r\n$> spack install -f ./netlib-scalapack.spec.yaml\r\n...\r\n==> Installing netlib-scalapack\r\n==> No binary for netlib-scalapack found: installing from source\r\n==> Using cached archive: /opt/spack/var/spack/cache/_source-cache/archive/61/61d9216cf81d246944720cfce96255878a3f85dec13b9351f1fa0fd6768220a6.tgz\r\nReversed (or previously applied) patch detected!  Assume -R? [n] <HIT ENTER | 'n' | 'y'>\r\nApply anyway? [n] <HIT ENTER | 'n' | 'y'>\r\n\r\n5 out of 5 hunks ignored -- saving rejects to file PBLAS/SRC/pdamax_.c.rej\r\nReversed (or previously applied) patch detected!  Assume -R? [n]\r\n...\r\ngoes on indefinitely\r\n...\r\nCtrl+C\r\n\r\n==> Error: Keyboard interrupt.\r\n```\r\n\r\nBehavior is exactly the same on first fetch:\r\n```\r\n$> spack install -f ./netlib-scalapack.spec.yaml\r\n...\r\n==> Installing netlib-scalapack\r\n==> No binary for netlib-scalapack found: installing from source\r\n==> Fetching https://spack-llnl-mirror.s3-us-west-2.amazonaws.com/_source-cache/archive/61/61d9216cf81d246944720cfce96255878a3f85dec13b9351f1fa0fd6768220a6.tgz\r\n################################################################################################################################################################################## 100.0%\r\nReversed (or previously applied) patch detected!  Assume -R? [n]\r\n.....\r\n```\r\n\r\nOffending commit looks to be:\r\nhttps://github.com/spack/spack/commit/51a9473bf867af3e5f8f024d124c71b5b03384a0#diff-4adf527004d5d4cf80265f7ee109f54d6ca3b75431bdd216f237dcc526c3c8cc\r\n\r\nThis is kind of a big problem as it breaks ability of E4S to build all packages that depend on `netlib-scalapack` in automated builds, which include at least:\r\n1. `strumpack`\r\n2. `trilinos`\r\n3. `omega-h`\r\n4. `slate`\r\n\r\n@vkallesh @adamjstewart @t-karatsu @becker33 @scottwittenburg \r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

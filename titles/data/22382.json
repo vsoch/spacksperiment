@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22382",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22382/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22382/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22382/events",
+    "html_url": "https://github.com/spack/spack/pull/22382",
+    "id": 835045764,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk1NzYyNDIz",
+    "number": 22382,
+    "title": "Start of work to add rpm package.",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-03-18T16:54:36Z",
+    "updated_at": "2021-03-22T16:47:57Z",
+    "closed_at": "2021-03-22T16:47:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22382",
+        "html_url": "https://github.com/spack/spack/pull/22382",
+        "diff_url": "https://github.com/spack/spack/pull/22382.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22382.patch"
+    },
+    "body": "The original goal was to generate the debugedit tool that is packaged with rpm, but further investigation reveals that the tool is being removed from this package (and does not even have required symbols in the newest releases to build) so we will not do it here. For rpm to build with lua, we additionally need to add a lua.pc file (added as a patch) that the configure script can find. If there is a better way to do the symlink than what I did, let's discuss and I can change it!\r\n\r\nThe patch is from: https://git.pantherx.org/mirror/guix/-/blob/dcaf70897a0bad38a4638a2905aaa3c46b1f1402/gnu/packages/patches/lua-pkgconfig.patch\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

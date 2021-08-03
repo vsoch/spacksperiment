@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22935",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22935/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22935/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22935/events",
+    "html_url": "https://github.com/spack/spack/pull/22935",
+    "id": 856128383,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEzNzU3MjEx",
+    "number": 22935,
+    "title": "hdf5: libtool patch for NAG compiler",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-04-12T16:05:40Z",
+    "updated_at": "2021-05-18T07:49:39Z",
+    "closed_at": "2021-04-15T09:23:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22935",
+        "html_url": "https://github.com/spack/spack/pull/22935",
+        "diff_url": "https://github.com/spack/spack/pull/22935.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22935.patch"
+    },
+    "body": "We will switch to CMake someday (#18937). Until then, this enables building when `%nag+fortran+mpi+shared`.",
+    "performed_via_github_app": null
+}

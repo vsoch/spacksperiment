@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19385",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19385/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19385/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19385/events",
+    "html_url": "https://github.com/spack/spack/pull/19385",
+    "id": 725242470,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA2NTA2NTY1",
+    "number": 19385,
+    "title": "py-cvxopt: refine dependency @1.1.9 and update version to @1.2.5",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-20T06:18:37Z",
+    "updated_at": "2021-01-14T06:17:43Z",
+    "closed_at": "2020-10-21T15:22:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19385",
+        "html_url": "https://github.com/spack/spack/pull/19385",
+        "diff_url": "https://github.com/spack/spack/pull/19385.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19385.patch"
+    },
+    "body": "some build error report when install `py-cvxopt`:\r\n```\r\n==> py-cvxopt: Executing phase: 'build'\r\n==> [2020-09-25-12:10:19.070288] '/home/spack-develop/opt/spack/linux-centos8-aarch64/gcc-8.3.1/python-3.8.5-rvp2d3s6nyt65vfrkkbikqp5pt4wfknj/bin/python3.8' '-s' 'setup.py' '--no-user-cfg' 'build'\r\nTraceback (most recent call last):\r\n  File \"setup.py\", line 59, in <module>\r\n    lnx_dist = platform.linux_distribution()\r\nAttributeError: module 'platform' has no attribute 'linux_distribution'\r\n```\r\n\r\nwe can fix this error by using `python@:3.7.999` or using the latest version `1.2.5`",
+    "performed_via_github_app": null
+}

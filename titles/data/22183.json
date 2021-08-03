@@ -1,0 +1,134 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22183",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22183/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22183/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22183/events",
+    "html_url": "https://github.com/spack/spack/pull/22183",
+    "id": 825090601,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg3MjE5OTUw",
+    "number": 22183,
+    "title": "sundials: use CudaPackage and ROCmPackage and add spack tests",
+    "user": {
+        "login": "balos1",
+        "id": 5669480,
+        "node_id": "MDQ6VXNlcjU2Njk0ODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5669480?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balos1",
+        "html_url": "https://github.com/balos1",
+        "followers_url": "https://api.github.com/users/balos1/followers",
+        "following_url": "https://api.github.com/users/balos1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balos1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balos1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balos1/subscriptions",
+        "organizations_url": "https://api.github.com/users/balos1/orgs",
+        "repos_url": "https://api.github.com/users/balos1/repos",
+        "events_url": "https://api.github.com/users/balos1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balos1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-03-09T00:19:05Z",
+    "updated_at": "2021-06-24T18:00:28Z",
+    "closed_at": "2021-03-20T11:43:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22183",
+        "html_url": "https://github.com/spack/spack/pull/22183",
+        "diff_url": "https://github.com/spack/spack/pull/22183.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22183.patch"
+    },
+    "body": "Updates the sundials package to use inherit from CudaPackage instead of using our own cuda variant. Also adds support for ROCm and `spack test`.\r\n\r\nCC: @gardner48 ",
+    "performed_via_github_app": null
+}

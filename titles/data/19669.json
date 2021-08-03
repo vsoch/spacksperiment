@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19669",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19669/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19669/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19669/events",
+    "html_url": "https://github.com/spack/spack/pull/19669",
+    "id": 734249056,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEzODQ1MDU4",
+    "number": 19669,
+    "title": "add spack recipe for rocm version of the tensile",
+    "user": {
+        "login": "srekolam",
+        "id": 67086238,
+        "node_id": "MDQ6VXNlcjY3MDg2MjM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67086238?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srekolam",
+        "html_url": "https://github.com/srekolam",
+        "followers_url": "https://api.github.com/users/srekolam/followers",
+        "following_url": "https://api.github.com/users/srekolam/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srekolam/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srekolam/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srekolam/subscriptions",
+        "organizations_url": "https://api.github.com/users/srekolam/orgs",
+        "repos_url": "https://api.github.com/users/srekolam/repos",
+        "events_url": "https://api.github.com/users/srekolam/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srekolam/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-02T07:08:40Z",
+    "updated_at": "2020-11-11T16:55:24Z",
+    "closed_at": "2020-11-11T16:55:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19669",
+        "html_url": "https://github.com/spack/spack/pull/19669",
+        "diff_url": "https://github.com/spack/spack/pull/19669.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19669.patch"
+    },
+    "body": "@haampie , need your inputs.. when trying to install, i see an error related to boost include headers..\r\n\r\nIn file included from /tmp/root/spack-stage/spack-stage-rocm-tensile-3.8.0-4zazgcse3gln27mrykm5l2bmekjp345o/spack-src/Ten\r\n            sile/Source/client/source/DataInitialization.cpp:27:\r\n  >> 203    /tmp/root/spack-stage/spack-stage-rocm-tensile-3.8.0-4zazgcse3gln27mrykm5l2bmekjp345o/spack-src/Tensile/Source/client/inc\r\n            lude/DataInitialization.hpp:29:10: fatal error: 'boost/program_options.hpp' file not found\r\n     204    #include <boost/program_options.hpp>\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25049",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25049/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25049/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25049/events",
+    "html_url": "https://github.com/spack/spack/pull/25049",
+    "id": 951095433,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk1NTM5Mzc5",
+    "number": 25049,
+    "title": "Smoke test for darshan-runtime, builds a test code, runs it and check\u2026",
+    "user": {
+        "login": "kevin-harms",
+        "id": 19574311,
+        "node_id": "MDQ6VXNlcjE5NTc0MzEx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19574311?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kevin-harms",
+        "html_url": "https://github.com/kevin-harms",
+        "followers_url": "https://api.github.com/users/kevin-harms/followers",
+        "following_url": "https://api.github.com/users/kevin-harms/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kevin-harms/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kevin-harms/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kevin-harms/subscriptions",
+        "organizations_url": "https://api.github.com/users/kevin-harms/orgs",
+        "repos_url": "https://api.github.com/users/kevin-harms/repos",
+        "events_url": "https://api.github.com/users/kevin-harms/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kevin-harms/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-22T22:04:42Z",
+    "updated_at": "2021-07-26T08:04:39Z",
+    "closed_at": "2021-07-26T08:04:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25049",
+        "html_url": "https://github.com/spack/spack/pull/25049",
+        "diff_url": "https://github.com/spack/spack/pull/25049.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25049.patch"
+    },
+    "body": "This provide a smoke test for the darshan-runtime package. The test compiles a binary and runs it with interception enabled. The tests will confirm the darshan log was created and that the file is non-zero in size. Current test supports on MPI builds (which is the darshan default)\r\n\r\nkharms@shuttleworth:~/working/darshan/spack$ spack install darshan-runtime\r\n[+] /home/kharms/working/darshan/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/libsigsegv-2.13-o2wgkh4f5rm7pykjjc55vznzzsjx6ayt\r\n... CLIP ...\r\n[+] /home/kharms/working/darshan/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/openmpi-4.1.1-qobxdreouwkvtleu6aldh6sww7tqxd4d\r\n==> Installing darshan-runtime-3.3.1-3fqhtuhinxmp27wuw2mce6olo5bff23p\r\n==> No binary for darshan-runtime-3.3.1-3fqhtuhinxmp27wuw2mce6olo5bff23p found: installing from source\r\n==> Using cached archive: /home/kharms/working/darshan/spack/var/spack/cache/_source-cache/archive/28/281d871335977d0592a49d053df93d68ce1840f6fdec27fea7a59586a84395f7.tar.gz\r\n==> No patches needed for darshan-runtime\r\n==> darshan-runtime: Executing phase: 'autoreconf'\r\n==> darshan-runtime: Executing phase: 'configure'\r\n==> darshan-runtime: Executing phase: 'build'\r\n==> darshan-runtime: Executing phase: 'install'\r\n==> darshan-runtime: Successfully installed darshan-runtime-3.3.1-3fqhtuhinxmp27wuw2mce6olo5bff23p\r\n  Fetch: 0.02s.  Build: 22.77s.  Total: 22.79s.\r\n[+] /home/kharms/working/darshan/spack/opt/spack/linux-ubuntu20.04-sandybridge/gcc-9.3.0/darshan-runtime-3.3.1-3fqhtuhinxmp27wuw2mce6olo5bff23p\r\n\r\nkharms@shuttleworth:~/working/darshan/spack$ spack test run --keep-stage darshan-runtime\r\n==> Spack test 6zz3l2lunffg7sspv3befs3n2wdkgo3n\r\n==> Testing package darshan-runtime-3.3.1-3fqhtuh\r\n\r\n",
+    "performed_via_github_app": null
+}

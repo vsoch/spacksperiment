@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24802",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24802/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24802/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24802/events",
+    "html_url": "https://github.com/spack/spack/pull/24802",
+    "id": 940537454,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg2NTkzMzI1",
+    "number": 24802,
+    "title": "mypy: move configuration to pyproject.toml",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 976371064,
+            "node_id": "MDU6TGFiZWw5NzYzNzEwNjQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/style",
+            "name": "style",
+            "color": "dbc83b",
+            "default": false,
+            "description": "code style"
+        },
+        {
+            "id": 1483227126,
+            "node_id": "MDU6TGFiZWwxNDgzMjI3MTI2",
+            "url": "https://api.github.com/repos/spack/spack/labels/workflow",
+            "name": "workflow",
+            "color": "4a47ff",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-09T08:21:01Z",
+    "updated_at": "2021-07-09T09:52:25Z",
+    "closed_at": "2021-07-09T09:52:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24802",
+        "html_url": "https://github.com/spack/spack/pull/24802",
+        "diff_url": "https://github.com/spack/spack/pull/24802.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24802.patch"
+    },
+    "body": "This moves our `mypy` configuration from `.mypy.ini` to `.pyproject.toml` and increases the minimum `mypy` version in the tests.\r\n\r\n- [x] move `mypy` configuration to `pyproject.toml`\r\n- [x] remove `.mypy.ini`\r\n- [x] ensure that `mypy` version .900 or higher is used in tests",
+    "performed_via_github_app": null
+}

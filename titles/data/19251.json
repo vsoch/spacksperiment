@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19251",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19251/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19251/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19251/events",
+    "html_url": "https://github.com/spack/spack/pull/19251",
+    "id": 718451996,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAwODQ1MDY1",
+    "number": 19251,
+    "title": "make py-pillow the default for pil",
+    "user": {
+        "login": "AndrewGaspar",
+        "id": 2292643,
+        "node_id": "MDQ6VXNlcjIyOTI2NDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2292643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AndrewGaspar",
+        "html_url": "https://github.com/AndrewGaspar",
+        "followers_url": "https://api.github.com/users/AndrewGaspar/followers",
+        "following_url": "https://api.github.com/users/AndrewGaspar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AndrewGaspar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AndrewGaspar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AndrewGaspar/subscriptions",
+        "organizations_url": "https://api.github.com/users/AndrewGaspar/orgs",
+        "repos_url": "https://api.github.com/users/AndrewGaspar/repos",
+        "events_url": "https://api.github.com/users/AndrewGaspar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AndrewGaspar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-09T22:18:19Z",
+    "updated_at": "2020-10-12T15:23:18Z",
+    "closed_at": "2020-10-10T17:55:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19251",
+        "html_url": "https://github.com/spack/spack/pull/19251",
+        "diff_url": "https://github.com/spack/spack/pull/19251.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19251.patch"
+    },
+    "body": "py-pillow-simd is not portable to non-Intel architectures.\r\n\r\nFixes #19250 \r\n\r\ncc @adamjstewart ",
+    "performed_via_github_app": null
+}

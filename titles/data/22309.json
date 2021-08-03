@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22309",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22309/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22309/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22309/events",
+    "html_url": "https://github.com/spack/spack/pull/22309",
+    "id": 832204629,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTkzNDAyODE5",
+    "number": 22309,
+    "title": "add zstr package",
+    "user": {
+        "login": "bvanessen",
+        "id": 6210171,
+        "node_id": "MDQ6VXNlcjYyMTAxNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6210171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bvanessen",
+        "html_url": "https://github.com/bvanessen",
+        "followers_url": "https://api.github.com/users/bvanessen/followers",
+        "following_url": "https://api.github.com/users/bvanessen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bvanessen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bvanessen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bvanessen/subscriptions",
+        "organizations_url": "https://api.github.com/users/bvanessen/orgs",
+        "repos_url": "https://api.github.com/users/bvanessen/repos",
+        "events_url": "https://api.github.com/users/bvanessen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bvanessen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-03-15T21:24:41Z",
+    "updated_at": "2021-03-25T18:14:21Z",
+    "closed_at": "2021-03-25T18:13:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22309",
+        "html_url": "https://github.com/spack/spack/pull/22309",
+        "diff_url": "https://github.com/spack/spack/pull/22309.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22309.patch"
+    },
+    "body": "Add a package for the Zstr header only library.  Add it as adependency for LBANN.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23036",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23036/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23036/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23036/events",
+    "html_url": "https://github.com/spack/spack/issues/23036",
+    "id": 859886716,
+    "node_id": "MDU6SXNzdWU4NTk4ODY3MTY=",
+    "number": 23036,
+    "title": "Installation issue: LLVM fails on MacOS with clang and microarchitecture flags",
+    "user": {
+        "login": "renderdude",
+        "id": 8058439,
+        "node_id": "MDQ6VXNlcjgwNTg0Mzk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8058439?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/renderdude",
+        "html_url": "https://github.com/renderdude",
+        "followers_url": "https://api.github.com/users/renderdude/followers",
+        "following_url": "https://api.github.com/users/renderdude/following{/other_user}",
+        "gists_url": "https://api.github.com/users/renderdude/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/renderdude/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/renderdude/subscriptions",
+        "organizations_url": "https://api.github.com/users/renderdude/orgs",
+        "repos_url": "https://api.github.com/users/renderdude/repos",
+        "events_url": "https://api.github.com/users/renderdude/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/renderdude/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-04-16T14:51:37Z",
+    "updated_at": "2021-04-26T18:31:29Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "### Steps to reproduce the issue\r\n\r\nEnsure that the clang compiler is **not** a mixed toolchain in compilers.yaml:\r\n\r\n```yaml\r\ncompilers:\r\n- compiler:\r\n    spec: apple-clang@12.0.0\r\n    paths:\r\n      cc: /usr/bin/clang\r\n      cxx: /usr/bin/clang++\r\n      f77: null\r\n      fc: null\r\n    operating_system: catalina\r\n    target: x86_64\r\n    modules: []\r\n    environment: {}\r\n    extra_rpaths: []\r\n```\r\n```console\r\n$ spack install llvm\r\n...\r\n  >> 3736    clang: error: the clang compiler does not support '-march=skylake'\r\n  >> 3737    make[2]: *** [projects/compiler-rt/lib/builtins/CMakeFiles/clang_r\r\n             t.builtins_arm64_osx.dir/comparetf2.c.o] Error 1\r\n```\r\nMake the clang compiler a mixed toolchain (in my case, I build gcc and copy the f77 & fc lines)\r\n```console\r\n$ spack install llvm\r\n==> No binary for llvm-11.1.0-capkkllvmkkcl3wkyviaegdqxwxw5xfq found: installing from source\r\n==> Warning: Missing a source id for apple-libuuid@1353.100.2\r\n==> Warning: microarchitecture specific optimizations are not supported yet on mixed compiler toolchains [check apple-clang@12.0.0 for further details]\r\n...\r\n```\r\nSuccess\r\n### Information on your system\r\nmacOS catalina, 10.15.7\r\n\r\n<!-- Please include the output of `spack debug report` -->\r\n* **Spack:** 0.16.0-2323-a568903a64\r\n* **Python:** 3.7.9\r\n* **Platform:** darwin-catalina-skylake\r\n* **Concretizer:** original\r\n\r\n[spack-build-out.txt](https://github.com/spack/spack/files/6325976/spack-build-out.txt)\r\n\r\n<!-- If you have any relevant configuration detail (custom `packages.yaml` or `modules.yaml`, etc.) you can add that here as well. -->\r\n\r\n### Additional information\r\n\r\n@naromero77\r\n@trws\r\n### General information\r\n\r\n<!-- These boxes can be checked by replacing [ ] with [x] or by clicking them after submitting the issue. -->\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have run `spack maintainers <name-of-the-package>` and @mentioned any maintainers\r\n- [x] I have uploaded the build log and environment files\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n",
+    "performed_via_github_app": null
+}

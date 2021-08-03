@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19731",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19731/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19731/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19731/events",
+    "html_url": "https://github.com/spack/spack/pull/19731",
+    "id": 736185625,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE1NDQzMzc2",
+    "number": 19731,
+    "title": "Fix trilinos error (when building packages that depend in it? dtk, petsc..)",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-04T15:02:00Z",
+    "updated_at": "2020-11-04T16:28:16Z",
+    "closed_at": "2020-11-04T16:28:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19731",
+        "html_url": "https://github.com/spack/spack/pull/19731",
+        "diff_url": "https://github.com/spack/spack/pull/19731.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19731.patch"
+    },
+    "body": "```\r\n==> Installing datatransferkit\r\n==> No binary for datatransferkit found: installing from source\r\n==> Warning: gcc@7.4.0 cannot build optimized binaries for \"cascadelake\". Using best target possible: \"skylake_avx512\"\r\n==> Warning: Missing a source id for trilinos@13.0.1\r\n==> Warning: Missing a source id for xsdk@0.6.0\r\n==> Error: NameError: name 'spec' is not defined\r\n\r\n/data/balay/spack-xsdk/var/spack/repos/builtin/packages/trilinos/package.py:423, in setup_dependent_package:\r\n        422    def setup_dependent_package(self, module, dependent_spec):\r\n  >>    423        if '+wrapper' in spec:\r\n        424            self.spec.kokkos_cxx = self.spec[\"kokkos-nvcc-wrapper\"].kokkos_cxx\r\n        425        else:\r\n        426            self.spec.kokkos_cxx = spack_cxx\r\n\r\n\r\n==> Installing petsc\r\n==> No binary for petsc found: installing from source\r\n==> Warning: Skipping build of xsdk since datatransferkit failed\r\n==> Error: NameError: name 'spec' is not defined\r\n\r\n/data/balay/spack-xsdk/var/spack/repos/builtin/packages/trilinos/package.py:423, in setup_dependent_package:\r\n        422    def setup_dependent_package(self, module, dependent_spec):\r\n  >>    423        if '+wrapper' in spec:\r\n        424            self.spec.kokkos_cxx = self.spec[\"kokkos-nvcc-wrapper\"].kokkos_cxx\r\n        425        else:\r\n        426            self.spec.kokkos_cxx = spack_cxx\r\n```\r\n\r\nIssue from #19119",
+    "performed_via_github_app": null
+}

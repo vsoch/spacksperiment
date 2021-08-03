@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22732",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22732/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22732/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22732/events",
+    "html_url": "https://github.com/spack/spack/pull/22732",
+    "id": 848742694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA3NjMyMDM2",
+    "number": 22732,
+    "title": "Mvapich2: Address issue with external MPI under Cray",
+    "user": {
+        "login": "jjellio",
+        "id": 21248657,
+        "node_id": "MDQ6VXNlcjIxMjQ4NjU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/21248657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jjellio",
+        "html_url": "https://github.com/jjellio",
+        "followers_url": "https://api.github.com/users/jjellio/followers",
+        "following_url": "https://api.github.com/users/jjellio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jjellio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jjellio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jjellio/subscriptions",
+        "organizations_url": "https://api.github.com/users/jjellio/orgs",
+        "repos_url": "https://api.github.com/users/jjellio/repos",
+        "events_url": "https://api.github.com/users/jjellio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jjellio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-04-01T19:48:28Z",
+    "updated_at": "2021-04-10T22:53:14Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22732",
+        "html_url": "https://github.com/spack/spack/pull/22732",
+        "diff_url": "https://github.com/spack/spack/pull/22732.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22732.patch"
+    },
+    "body": "The `mvapich2` package has some assumptions about how to setup external packages that can be problematic.\r\n\r\nThe issue is `if external_modules and 'cray' in external_modules[0]:`, which is the logic used to determine whether MPI's compilers will be set as `mpicc` or spack's wrapper.  With Cray, you should use spack's wrappers which point to cray's wrappers (not to mvapich's mpi compilers).\r\n\r\nThe problem with the logic used is it assumes the first module will have 'cray' in the name - which is necessarily true (and I am uses spack recipes provided by Cray that are breaking this assumption). \r\n\r\nI would like the maintainers to consider a more intuitive approach.\r\n\r\nGiven the package name is `mvapich2`, I propose search the modules for a module name containing `mvapich` or `cray-mvapich`. If this is the case, then almost certainly you are using the Cray toolchain and envs like `MPICC` and the spec's compiler `mpicc` should point to `spack_cc`\r\n\r\nI've used this logic in the two areas where the issues arrises (setting up dependent packages and setting the compiler env)\r\n\r\nThis patch resolved some odd ball behavior I was observing on a Cray platform - that at first glance would be blamed on a bad package (pnetcdf in this case) - or a bug spack's external modules (there sorta is one) - which will be submitted in a separate issue.\r\n\r\nEither way, I propose not using an undocumented assumption on how the user will list modules in their external declaration - if this patch can pass the regression tests, I'd like it considered for mainstream use!\r\n\r\n@nithintsk @harisubramoni",
+    "performed_via_github_app": null
+}

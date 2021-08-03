@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22434",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22434/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22434/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22434/events",
+    "html_url": "https://github.com/spack/spack/pull/22434",
+    "id": 837055855,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk3NDY5NzQ3",
+    "number": 22434,
+    "title": "lammps: patch for CUDA-11.x with lammps 21 Jul 2020",
+    "user": {
+        "login": "tz-rrze",
+        "id": 6088631,
+        "node_id": "MDQ6VXNlcjYwODg2MzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6088631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tz-rrze",
+        "html_url": "https://github.com/tz-rrze",
+        "followers_url": "https://api.github.com/users/tz-rrze/followers",
+        "following_url": "https://api.github.com/users/tz-rrze/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tz-rrze/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tz-rrze/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tz-rrze/subscriptions",
+        "organizations_url": "https://api.github.com/users/tz-rrze/orgs",
+        "repos_url": "https://api.github.com/users/tz-rrze/repos",
+        "events_url": "https://api.github.com/users/tz-rrze/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tz-rrze/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-21T11:49:20Z",
+    "updated_at": "2021-03-22T14:46:15Z",
+    "closed_at": "2021-03-22T14:34:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22434",
+        "html_url": "https://github.com/spack/spack/pull/22434",
+        "diff_url": "https://github.com/spack/spack/pull/22434.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22434.patch"
+    },
+    "body": "- apply upstream patch to make lammps 21 Jul 2020 work with CUDA-11.x (support for compute_30 removed)",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20680",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20680/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20680/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20680/events",
+    "html_url": "https://github.com/spack/spack/pull/20680",
+    "id": 779121267,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ5MTIyNzI1",
+    "number": 20680,
+    "title": "concretizer: make rules on virtual packages more linear",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-05T14:44:28Z",
+    "updated_at": "2021-01-06T06:57:25Z",
+    "closed_at": "2021-01-06T00:59:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20680",
+        "html_url": "https://github.com/spack/spack/pull/20680",
+        "diff_url": "https://github.com/spack/spack/pull/20680.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20680.patch"
+    },
+    "body": "fixes #20679\r\n\r\nIn this refactor we have a single cardinality rule on the provider, which triggers a rule transforming a dependency on a virtual package into a dependency on the provider of the virtual.",
+    "performed_via_github_app": null
+}

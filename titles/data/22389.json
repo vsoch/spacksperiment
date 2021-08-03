@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22389",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22389/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22389/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22389/events",
+    "html_url": "https://github.com/spack/spack/pull/22389",
+    "id": 835145157,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk1ODQ0MjE1",
+    "number": 22389,
+    "title": "notify and error out on more unsupported versions",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-03-18T18:54:30Z",
+    "updated_at": "2021-03-20T15:01:24Z",
+    "closed_at": "2021-03-20T15:01:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22389",
+        "html_url": "https://github.com/spack/spack/pull/22389",
+        "diff_url": "https://github.com/spack/spack/pull/22389.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22389.patch"
+    },
+    "body": "This is to help debug situations like #22383, where python3.4 is\r\naccidentally preferred over python2.  It will also help on systems where\r\nthere is no python2 available or some other issue.",
+    "performed_via_github_app": null
+}

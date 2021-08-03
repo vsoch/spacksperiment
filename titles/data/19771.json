@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19771",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19771/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19771/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19771/events",
+    "html_url": "https://github.com/spack/spack/pull/19771",
+    "id": 737398675,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE2NDQ3MDI2",
+    "number": 19771,
+    "title": "env: add pre_cmd script option",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-06T02:08:06Z",
+    "updated_at": "2021-07-22T02:02:44Z",
+    "closed_at": "2021-07-22T02:02:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19771",
+        "html_url": "https://github.com/spack/spack/pull/19771",
+        "diff_url": "https://github.com/spack/spack/pull/19771.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19771.patch"
+    },
+    "body": "Allow environments to define a pre_cmd which runs before every individual command.\r\n\r\nThis is intended to allow developers to put conditions on their environments to warn users or raise errors.\r\n\r\nFor an environment that warns the user if they run it from a different environment (to help avoid \"wrong environment loaded\" bugs)\r\n```\r\nspack:\r\n  pre_cmd: |\r\n    import llnl.util.tty as tty\r\n    import os\r\n    if os.getcwd() != self.path:\r\n        tty.warn(\"RUNNING ENV %s FROM ALTERNATIVE DIRECTORY\" % self.name)\r\n  specs: []\r\n  ...\r\n```\r\n\r\nFor an environment that raises an error if a given environment variable is not defined.\r\n```\r\nspack:\r\n  pre_cmd: |\r\n    import os\r\n    assert 'CANARY' in os.environ, \"CANARY not set in environment\"\r\n  specs:\r\n  ...\r\n```\r\n\r\nThis PR already includes tests, I will add documentation if reviewers find the general architecture acceptable.",
+    "performed_via_github_app": null
+}

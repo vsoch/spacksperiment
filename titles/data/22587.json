@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22587",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22587/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22587/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22587/events",
+    "html_url": "https://github.com/spack/spack/pull/22587",
+    "id": 842356946,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjAxOTU0Mzc2",
+    "number": 22587,
+    "title": "bugfix for active when pkg is already active error",
+    "user": {
+        "login": "cyrush",
+        "id": 1194526,
+        "node_id": "MDQ6VXNlcjExOTQ1MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1194526?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrush",
+        "html_url": "https://github.com/cyrush",
+        "followers_url": "https://api.github.com/users/cyrush/followers",
+        "following_url": "https://api.github.com/users/cyrush/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrush/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrush/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrush/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrush/orgs",
+        "repos_url": "https://api.github.com/users/cyrush/repos",
+        "events_url": "https://api.github.com/users/cyrush/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrush/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-03-26T23:30:32Z",
+    "updated_at": "2021-03-30T17:12:31Z",
+    "closed_at": "2021-03-30T00:09:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22587",
+        "html_url": "https://github.com/spack/spack/pull/22587",
+        "diff_url": "https://github.com/spack/spack/pull/22587.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22587.patch"
+    },
+    "body": "resolves #22530\r\n\r\ninstead of throwing an error for an already active package, prints a message and returns to avoid an attempt to re-activate.  ",
+    "performed_via_github_app": null
+}

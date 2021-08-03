@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22852",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22852/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22852/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22852/events",
+    "html_url": "https://github.com/spack/spack/pull/22852",
+    "id": 852805417,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjExMDAwOTQ0",
+    "number": 22852,
+    "title": "kvtree: add variant and new releases",
+    "user": {
+        "login": "CamStan",
+        "id": 12384825,
+        "node_id": "MDQ6VXNlcjEyMzg0ODI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12384825?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CamStan",
+        "html_url": "https://github.com/CamStan",
+        "followers_url": "https://api.github.com/users/CamStan/followers",
+        "following_url": "https://api.github.com/users/CamStan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CamStan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CamStan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CamStan/subscriptions",
+        "organizations_url": "https://api.github.com/users/CamStan/orgs",
+        "repos_url": "https://api.github.com/users/CamStan/repos",
+        "events_url": "https://api.github.com/users/CamStan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CamStan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-07T20:55:47Z",
+    "updated_at": "2021-04-20T23:35:37Z",
+    "closed_at": "2021-04-16T22:32:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22852",
+        "html_url": "https://github.com/spack/spack/pull/22852",
+        "diff_url": "https://github.com/spack/spack/pull/22852.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22852.patch"
+    },
+    "body": "KVTree released several new versions recently.\r\n\r\nThis updates the url and adds three versions to the package.\r\nThis also adds a variant for the KVTree \"file_lock\" cmake option.",
+    "performed_via_github_app": null
+}

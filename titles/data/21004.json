@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21004",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21004/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21004/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21004/events",
+    "html_url": "https://github.com/spack/spack/pull/21004",
+    "id": 787361447,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2MDg3MDU4",
+    "number": 21004,
+    "title": "py-pycairo: update version and fix setup.py test error",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-16T06:30:25Z",
+    "updated_at": "2021-03-06T03:06:18Z",
+    "closed_at": "2021-01-18T18:34:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21004",
+        "html_url": "https://github.com/spack/spack/pull/21004",
+        "diff_url": "https://github.com/spack/spack/pull/21004.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21004.patch"
+    },
+    "body": "There are two issues for this package:\r\n1. pycairo fails to build with Python 3.8\r\nhttps://bugzilla.redhat.com/show_bug.cgi?id=1717658\r\n2. run `python setup.py test` fail:\r\n![image](https://user-images.githubusercontent.com/29532367/104799100-3c066700-5807-11eb-93be-747b1d860f48.png)\r\n\r\nSo, we need update pycairo to using the latest python and open `cairo` `pdf` variant.",
+    "performed_via_github_app": null
+}

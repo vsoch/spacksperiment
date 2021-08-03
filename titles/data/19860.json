@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19860/events",
+    "html_url": "https://github.com/spack/spack/pull/19860",
+    "id": 740858060,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE5Mjc0OTg0",
+    "number": 19860,
+    "title": "Add comment to mvapich2 fabrics variant to address run-time errors",
+    "user": {
+        "login": "nithintsk",
+        "id": 52734841,
+        "node_id": "MDQ6VXNlcjUyNzM0ODQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52734841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nithintsk",
+        "html_url": "https://github.com/nithintsk",
+        "followers_url": "https://api.github.com/users/nithintsk/followers",
+        "following_url": "https://api.github.com/users/nithintsk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nithintsk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nithintsk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nithintsk/subscriptions",
+        "organizations_url": "https://api.github.com/users/nithintsk/orgs",
+        "repos_url": "https://api.github.com/users/nithintsk/repos",
+        "events_url": "https://api.github.com/users/nithintsk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nithintsk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-11-11T15:32:01Z",
+    "updated_at": "2020-11-19T12:47:58Z",
+    "closed_at": "2020-11-19T12:47:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19860",
+        "html_url": "https://github.com/spack/spack/pull/19860",
+        "diff_url": "https://github.com/spack/spack/pull/19860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19860.patch"
+    },
+    "body": "The new upstream-fabrics variant will be true by default so that the dependencies behave in the same way as how it did before this change. But if upstream-fabrics is set to False, spack will not install rdma-core, psm or opa-psm2.\r\n\r\n@harisubramoni ",
+    "performed_via_github_app": null
+}

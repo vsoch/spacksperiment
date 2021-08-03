@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21705",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21705/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21705/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21705/events",
+    "html_url": "https://github.com/spack/spack/pull/21705",
+    "id": 809624317,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc0NDU1MjYx",
+    "number": 21705,
+    "title": "STRUMPACK: Add e4s testsuite-inspired smoke test",
+    "user": {
+        "login": "sshudler",
+        "id": 6598723,
+        "node_id": "MDQ6VXNlcjY1OTg3MjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6598723?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sshudler",
+        "html_url": "https://github.com/sshudler",
+        "followers_url": "https://api.github.com/users/sshudler/followers",
+        "following_url": "https://api.github.com/users/sshudler/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sshudler/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sshudler/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sshudler/subscriptions",
+        "organizations_url": "https://api.github.com/users/sshudler/orgs",
+        "repos_url": "https://api.github.com/users/sshudler/repos",
+        "events_url": "https://api.github.com/users/sshudler/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sshudler/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-02-16T20:28:31Z",
+    "updated_at": "2021-02-22T18:47:06Z",
+    "closed_at": "2021-02-22T18:46:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21705",
+        "html_url": "https://github.com/spack/spack/pull/21705",
+        "diff_url": "https://github.com/spack/spack/pull/21705.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21705.patch"
+    },
+    "body": "This PR represents a preliminary smoke test for the `strumpack` package and is intended to serve the following purposes:\r\n\r\n1. leverage the current E4S test suite for the software; and\r\n2. demonstrate to package maintainers how to start a Spack smoke test.\r\n\r\n@pghysels these are the changes I mentioned in the meeting today.",
+    "performed_via_github_app": null
+}

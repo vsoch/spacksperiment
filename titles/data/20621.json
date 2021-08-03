@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20621",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20621/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20621/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20621/events",
+    "html_url": "https://github.com/spack/spack/pull/20621",
+    "id": 776508971,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ2OTg2ODQ2",
+    "number": 20621,
+    "title": "dealii: added support for simplices, updated sundials",
+    "user": {
+        "login": "luca-heltai",
+        "id": 2919756,
+        "node_id": "MDQ6VXNlcjI5MTk3NTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2919756?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luca-heltai",
+        "html_url": "https://github.com/luca-heltai",
+        "followers_url": "https://api.github.com/users/luca-heltai/followers",
+        "following_url": "https://api.github.com/users/luca-heltai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luca-heltai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luca-heltai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luca-heltai/subscriptions",
+        "organizations_url": "https://api.github.com/users/luca-heltai/orgs",
+        "repos_url": "https://api.github.com/users/luca-heltai/repos",
+        "events_url": "https://api.github.com/users/luca-heltai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luca-heltai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-12-30T15:26:14Z",
+    "updated_at": "2021-01-27T16:02:16Z",
+    "closed_at": "2021-01-27T16:02:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20621",
+        "html_url": "https://github.com/spack/spack/pull/20621",
+        "diff_url": "https://github.com/spack/spack/pull/20621.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20621.patch"
+    },
+    "body": "This is in preparation for 9.3 release: added support for simplices <s>and for taskflow</s> (removed in last commit).",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23249",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23249/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23249/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23249/events",
+    "html_url": "https://github.com/spack/spack/pull/23249",
+    "id": 867769115,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIzMzg2NzI1",
+    "number": 23249,
+    "title": "openfoam: update to OpenFOAM-v2012_210414 (patch release)",
+    "user": {
+        "login": "olesenm",
+        "id": 76406,
+        "node_id": "MDQ6VXNlcjc2NDA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/76406?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olesenm",
+        "html_url": "https://github.com/olesenm",
+        "followers_url": "https://api.github.com/users/olesenm/followers",
+        "following_url": "https://api.github.com/users/olesenm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olesenm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olesenm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olesenm/subscriptions",
+        "organizations_url": "https://api.github.com/users/olesenm/orgs",
+        "repos_url": "https://api.github.com/users/olesenm/repos",
+        "events_url": "https://api.github.com/users/olesenm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olesenm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-26T14:30:30Z",
+    "updated_at": "2021-05-18T10:36:59Z",
+    "closed_at": "2021-05-17T09:32:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23249",
+        "html_url": "https://github.com/spack/spack/pull/23249",
+        "diff_url": "https://github.com/spack/spack/pull/23249.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23249.patch"
+    },
+    "body": "- add provision for intel oneapi compiler mapping",
+    "performed_via_github_app": null
+}

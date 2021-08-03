@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23147",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23147/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23147/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23147/events",
+    "html_url": "https://github.com/spack/spack/pull/23147",
+    "id": 863181155,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE5NjM0MjE2",
+    "number": 23147,
+    "title": "Bootstrap with -O3 in cmake",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-04-20T19:51:11Z",
+    "updated_at": "2021-04-23T17:10:10Z",
+    "closed_at": "2021-04-23T17:10:10Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23147",
+        "html_url": "https://github.com/spack/spack/pull/23147",
+        "diff_url": "https://github.com/spack/spack/pull/23147.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23147.patch"
+    },
+    "body": "For some reason bootstrapping cmake on a cray machine with lustre filesystem is laughably slow (8 minutes!)\r\n\r\nTurns out setting -O3 flags for the initial bootstrap itself helps a lot (5 minutes, still 5x slower than my desktop).\r\n\r\nNote that this -O3 is just for the initial tools it compiles to detect system stuff, so it's unrelated to `build_type=Release` (which is used during `make`)\r\n\r\nOn my desktop (amd cpu) the improved runtime is exactly offset by the increased compile time by adding -O3, so no change. \r\n\r\nThanks to https://github.com/spack/spack/issues/10385 for the suggestion!\r\n",
+    "performed_via_github_app": null
+}

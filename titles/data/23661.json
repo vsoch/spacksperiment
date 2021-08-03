@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23661",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23661/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23661/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23661/events",
+    "html_url": "https://github.com/spack/spack/pull/23661",
+    "id": 892560882,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ1MjM1OTMz",
+    "number": 23661,
+    "title": "performance: speed up existence checks in packages",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2061910540,
+            "node_id": "MDU6TGFiZWwyMDYxOTEwNTQw",
+            "url": "https://api.github.com/repos/spack/spack/labels/run-environment",
+            "name": "run-environment",
+            "color": "57f9c6",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 24,
+    "created_at": "2021-05-15T23:50:27Z",
+    "updated_at": "2021-05-17T18:20:49Z",
+    "closed_at": "2021-05-17T08:20:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23661",
+        "html_url": "https://github.com/spack/spack/pull/23661",
+        "diff_url": "https://github.com/spack/spack/pull/23661.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23661.patch"
+    },
+    "body": "Fixes #19871.\r\n\r\nSpack doesn't require users to manually index their repos; it reindexes the indexes automatically when things change. To determine when to do this, it has to `stat()` all package files in each repository to make sure that indexes up to date with packages. We currently index virtual providers, patches by sha256, and tags on packages.\r\n\r\nWhen this was originally implemented, we ran the checker all the time, at startup, but that was slow (see #7587). But we didn't go far enough -- it still consults the checker and does all the stat operations just to see if a package exists (`Repo.exists()`).  That might've been a wash in 2018, but as the number of packages has grown, it's gotten slower -- checking 5k packages is expensive and users see this for small operations.  It's a win now to make `Repo.exists()` check files directly.\r\n\r\n**Fix:**\r\n\r\nThis PR does a number of things to speed up `spack load`, `spack info`, and other commands:\r\n\r\n- [x] Make `Repo.exists()` check files directly again with `os.path.exists()` (this is the big one)\r\n- [x] Refactor `Spec.satisfies()` so that a checking for virtual packages only happens if needed\r\n      (avoids some calls to exists())\r\n- [x] Avoid calling `Repo.exists(spec)` in `Repo.get()`. `Repo.get()` will ultimately try to load\r\n      a `package.py` file anyway; we can let the failure to load it indicate that the package doesn't\r\n      exist, and avoid another call to exists().\r\n- [x] Fix up some comments in spec parsing\r\n- [x] Call `UnknownPackageError` more consistently in `repo.py`\r\n\r\nI am not sure yet whether this last change will make some operations slower.  Comments would be appreciated if it does.",
+    "performed_via_github_app": null
+}

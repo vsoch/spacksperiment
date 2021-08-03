@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20253",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20253/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20253/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20253/events",
+    "html_url": "https://github.com/spack/spack/pull/20253",
+    "id": 757459972,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMyODMzODM1",
+    "number": 20253,
+    "title": "minimal zsh completion",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-12-04T22:55:27Z",
+    "updated_at": "2020-12-19T01:26:16Z",
+    "closed_at": "2020-12-19T01:26:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20253",
+        "html_url": "https://github.com/spack/spack/pull/20253",
+        "diff_url": "https://github.com/spack/spack/pull/20253.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20253.patch"
+    },
+    "body": "Since zsh can load bash completion files natively, seems reasonable to just turn this on.  The only changes are to switch from `type -t` which zsh doesn't support to using `type` with a regex and adding a new arm to the sourcing of the completions to allow it to work for zsh as well as bash.\r\n\r\nCould use more bash/dash/etc testing probably, but everything I've thought to try has worked so far.",
+    "performed_via_github_app": null
+}

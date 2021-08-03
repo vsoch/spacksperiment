@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23861/events",
+    "html_url": "https://github.com/spack/spack/pull/23861",
+    "id": 898943603,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwNzMyMTg4",
+    "number": 23861,
+    "title": "Use default compilers for pure build dependencies.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-05-23T05:48:26Z",
+    "updated_at": "2021-05-25T20:48:20Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23861",
+        "html_url": "https://github.com/spack/spack/pull/23861",
+        "diff_url": "https://github.com/spack/spack/pull/23861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23861.patch"
+    },
+    "body": "This is a draft for now, as I want to evaluate it a bit first.  But it occurred to me that it wouldn't take much to implement and I wanted to get @eugeneswalker to try it.\r\n\r\nThis does not do fully separate concretization of build dependencies (i.e., a dependency of a build dependency must still be consistent with other dependencies in the same DAG), but it relaxes the compiler matching constraint for pure build dependencies so that we tend to compile build dependencies (and their dependencies) with the default compiler.\r\n\r\nConsider this graph:\r\n\r\n```\r\n$ spack install A %intel\r\n\r\n   A %intel\r\n   |\r\n   +-[l]- B % intel\r\n   |\r\n   +-[b]- C % gcc\r\n        |\r\n        +-[l]- D % gcc\r\n```\r\n\r\nThe `%intel` constraint on `A` will cause Spack to prefer `%intel` for `B` because it is a `link` dependency, but Spack will no longer try to force `C` to use `%intel`, as it is a pure build dependency (i.e., not also a `link`, `run`, or `test` dependnency. `C` will fall back to the default compiler (here, `gcc`). Because `D` is not reachable from any root via a chain of non-`build` dependencies, it also falls back to the default.\r\n\r\nNow consider a diamond instead:\r\n\r\n```\r\n$ spack install A %intel\r\n\r\n   A %intel\r\n   |\r\n   +-[l]--------------- B % intel\r\n   |                    |\r\n   +-[b]- C % gcc      [l]\r\n          |             |\r\n          +-----[l]---- D % intel\r\n```\r\n\r\nNow there are two link dependencies for `D`, and one of them (`B -> D`) has a path of all `link` dependencies back to the root (`A`). `D` is \"`link`-reachable\", so Spack tries to build it with `%intel`. Because the path `A -> C -> D` has a pure build dependency, nothing after the build dependency is forced to match with another compiler.",
+    "performed_via_github_app": null
+}

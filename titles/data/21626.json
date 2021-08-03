@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21626",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21626/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21626/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21626/events",
+    "html_url": "https://github.com/spack/spack/pull/21626",
+    "id": 806546319,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcxOTQ2MTcw",
+    "number": 21626,
+    "title": "eospac: add cpuinfo_comp_flags_key.patch",
+    "user": {
+        "login": "gaber",
+        "id": 28980,
+        "node_id": "MDQ6VXNlcjI4OTgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28980?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gaber",
+        "html_url": "https://github.com/gaber",
+        "followers_url": "https://api.github.com/users/gaber/followers",
+        "following_url": "https://api.github.com/users/gaber/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gaber/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gaber/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gaber/subscriptions",
+        "organizations_url": "https://api.github.com/users/gaber/orgs",
+        "repos_url": "https://api.github.com/users/gaber/repos",
+        "events_url": "https://api.github.com/users/gaber/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gaber/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-02-11T16:26:09Z",
+    "updated_at": "2021-03-11T01:47:14Z",
+    "closed_at": "2021-03-11T01:47:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21626",
+        "html_url": "https://github.com/spack/spack/pull/21626",
+        "diff_url": "https://github.com/spack/spack/pull/21626.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21626.patch"
+    },
+    "body": "Patch eospac's Makefile.-linux-gnu.hashes to consider only `$(notdir $(F90))` when constructing a key to look up compiler flags in the _F90-CPUINFO_COMP_FLAGS associative array.\r\n\r\nThis patch was accepted into eospac itself after the release of 6.4.2beta, so apply it only to 6.4.2beta and earlier releases.",
+    "performed_via_github_app": null
+}

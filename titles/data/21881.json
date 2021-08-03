@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21881",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21881/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21881/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21881/events",
+    "html_url": "https://github.com/spack/spack/pull/21881",
+    "id": 814614675,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc4NTc0NzY5",
+    "number": 21881,
+    "title": "[bad merge] py-pyprecice: Add version 2.1.1.2 and 2.2.0.1 ",
+    "user": {
+        "login": "ajaust",
+        "id": 18347253,
+        "node_id": "MDQ6VXNlcjE4MzQ3MjUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18347253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ajaust",
+        "html_url": "https://github.com/ajaust",
+        "followers_url": "https://api.github.com/users/ajaust/followers",
+        "following_url": "https://api.github.com/users/ajaust/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ajaust/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ajaust/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ajaust/subscriptions",
+        "organizations_url": "https://api.github.com/users/ajaust/orgs",
+        "repos_url": "https://api.github.com/users/ajaust/repos",
+        "events_url": "https://api.github.com/users/ajaust/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ajaust/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-23T16:17:35Z",
+    "updated_at": "2021-02-27T20:34:06Z",
+    "closed_at": "2021-02-27T16:59:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21881",
+        "html_url": "https://github.com/spack/spack/pull/21881",
+        "diff_url": "https://github.com/spack/spack/pull/21881.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21881.patch"
+    },
+    "body": "This adds the updated Python bindings for the current versions preCICE (https://github.com/spack/spack/pull/19264 and https://github.com/spack/spack/pull/21166)\r\n\r\nThe installation procedure has been improved such that we need the patch `deactivate-version-check-via-pip.patch` only for versions `<= 2.1.1.1` of the bindings. This is reflected accordingly in the Spack recipe.\r\n\r\n",
+    "performed_via_github_app": null
+}

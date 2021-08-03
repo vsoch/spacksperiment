@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19712",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19712/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19712/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19712/events",
+    "html_url": "https://github.com/spack/spack/pull/19712",
+    "id": 735520236,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE0ODk4MjU0",
+    "number": 19712,
+    "title": "Use commit instead of branch as version for dtk 3.1-rc2",
+    "user": {
+        "login": "masterleinad",
+        "id": 2423533,
+        "node_id": "MDQ6VXNlcjI0MjM1MzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2423533?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/masterleinad",
+        "html_url": "https://github.com/masterleinad",
+        "followers_url": "https://api.github.com/users/masterleinad/followers",
+        "following_url": "https://api.github.com/users/masterleinad/following{/other_user}",
+        "gists_url": "https://api.github.com/users/masterleinad/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/masterleinad/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/masterleinad/subscriptions",
+        "organizations_url": "https://api.github.com/users/masterleinad/orgs",
+        "repos_url": "https://api.github.com/users/masterleinad/repos",
+        "events_url": "https://api.github.com/users/masterleinad/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/masterleinad/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-03T17:47:41Z",
+    "updated_at": "2020-11-03T18:25:27Z",
+    "closed_at": "2020-11-03T18:25:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19712",
+        "html_url": "https://github.com/spack/spack/pull/19712",
+        "diff_url": "https://github.com/spack/spack/pull/19712.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19712.patch"
+    },
+    "body": "The release is in fact a tagged commit not corresponding to a separate branch, see https://github.com/ORNL-CEES/DataTransferKit/tags.",
+    "performed_via_github_app": null
+}

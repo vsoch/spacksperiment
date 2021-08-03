@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22891",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22891/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22891/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22891/events",
+    "html_url": "https://github.com/spack/spack/pull/22891",
+    "id": 854057905,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyMDY1MTQ3",
+    "number": 22891,
+    "title": "bugfix/rdma-core: resolve missing PYTHON_* CMake errors",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-09T01:03:44Z",
+    "updated_at": "2021-04-13T21:48:21Z",
+    "closed_at": "2021-04-13T21:48:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22891",
+        "html_url": "https://github.com/spack/spack/pull/22891",
+        "diff_url": "https://github.com/spack/spack/pull/22891.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22891.patch"
+    },
+    "body": "Fixes #22890 ",
+    "performed_via_github_app": null
+}

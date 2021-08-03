@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19498",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19498/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19498/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19498/events",
+    "html_url": "https://github.com/spack/spack/pull/19498",
+    "id": 728358918,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5MDgwNDE5",
+    "number": 19498,
+    "title": "Patched hypre to better add flags based on compiler.",
+    "user": {
+        "login": "frobnitzem",
+        "id": 2243447,
+        "node_id": "MDQ6VXNlcjIyNDM0NDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2243447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frobnitzem",
+        "html_url": "https://github.com/frobnitzem",
+        "followers_url": "https://api.github.com/users/frobnitzem/followers",
+        "following_url": "https://api.github.com/users/frobnitzem/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frobnitzem/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frobnitzem/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frobnitzem/subscriptions",
+        "organizations_url": "https://api.github.com/users/frobnitzem/orgs",
+        "repos_url": "https://api.github.com/users/frobnitzem/repos",
+        "events_url": "https://api.github.com/users/frobnitzem/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frobnitzem/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-23T16:34:44Z",
+    "updated_at": "2020-10-30T19:55:23Z",
+    "closed_at": "2020-10-30T19:55:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19498",
+        "html_url": "https://github.com/spack/spack/pull/19498",
+        "diff_url": "https://github.com/spack/spack/pull/19498.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19498.patch"
+    },
+    "body": "This new patch is required to build hypre with openmp.\r\nThe root cause is explained here: https://github.com/hypre-space/hypre/pull/225\r\nhypre's build system doesn't add the -fopenmp flag unless the compiler name matches some preset ones, and absolute paths break that logic.\r\n\r\nThere have been a few changes to the configure script, so the line numbers might be off.  It might be better to rephrase this patch with a sed command.  I don't know how to do that.",
+    "performed_via_github_app": null
+}

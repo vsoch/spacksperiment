@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23774",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23774/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23774/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23774/events",
+    "html_url": "https://github.com/spack/spack/pull/23774",
+    "id": 894857735,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ3MTYwMTMx",
+    "number": 23774,
+    "title": "Enforcing PETSc version [3.13, 3.15) in ExaGO Package",
+    "user": {
+        "login": "CameronRutherford",
+        "id": 28022856,
+        "node_id": "MDQ6VXNlcjI4MDIyODU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28022856?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CameronRutherford",
+        "html_url": "https://github.com/CameronRutherford",
+        "followers_url": "https://api.github.com/users/CameronRutherford/followers",
+        "following_url": "https://api.github.com/users/CameronRutherford/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CameronRutherford/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CameronRutherford/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CameronRutherford/subscriptions",
+        "organizations_url": "https://api.github.com/users/CameronRutherford/orgs",
+        "repos_url": "https://api.github.com/users/CameronRutherford/repos",
+        "events_url": "https://api.github.com/users/CameronRutherford/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CameronRutherford/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-05-18T23:25:24Z",
+    "updated_at": "2021-05-21T07:20:59Z",
+    "closed_at": "2021-05-21T07:20:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23774",
+        "html_url": "https://github.com/spack/spack/pull/23774",
+        "diff_url": "https://github.com/spack/spack/pull/23774.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23774.patch"
+    },
+    "body": "Enforcing a specific version of PETSc per ExaGO issue 199\r\n\r\ncc @haampie as you have so generously reviewed a few previous PRs\r\ncc @ashermancinelli ",
+    "performed_via_github_app": null
+}

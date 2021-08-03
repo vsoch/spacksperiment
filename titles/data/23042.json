@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23042",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23042/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23042/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23042/events",
+    "html_url": "https://github.com/spack/spack/pull/23042",
+    "id": 860101716,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE3MDY0MDU0",
+    "number": 23042,
+    "title": "FLEXI: Updates cmake options according to recent changes",
+    "user": {
+        "login": "Julius-Plehn",
+        "id": 7644104,
+        "node_id": "MDQ6VXNlcjc2NDQxMDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7644104?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Julius-Plehn",
+        "html_url": "https://github.com/Julius-Plehn",
+        "followers_url": "https://api.github.com/users/Julius-Plehn/followers",
+        "following_url": "https://api.github.com/users/Julius-Plehn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Julius-Plehn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Julius-Plehn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Julius-Plehn/subscriptions",
+        "organizations_url": "https://api.github.com/users/Julius-Plehn/orgs",
+        "repos_url": "https://api.github.com/users/Julius-Plehn/repos",
+        "events_url": "https://api.github.com/users/Julius-Plehn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Julius-Plehn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-16T19:20:17Z",
+    "updated_at": "2021-04-25T21:26:12Z",
+    "closed_at": "2021-04-25T21:26:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23042",
+        "html_url": "https://github.com/spack/spack/pull/23042",
+        "diff_url": "https://github.com/spack/spack/pull/23042.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23042.patch"
+    },
+    "body": "- Updates some CMake options which changed recently: https://github.com/flexi-framework/flexi/commit/d061978e5d96cfc96c06edc1bae9d92cbe540c18\r\n- Adds the latest version\r\n- Adds several optional tools",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22472",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22472/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22472/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22472/events",
+    "html_url": "https://github.com/spack/spack/pull/22472",
+    "id": 838589576,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4NzQ1NzY1",
+    "number": 22472,
+    "title": "OpenFOAM-org: Fix compilation of version 2.4.0.",
+    "user": {
+        "login": "RemiLacroix-IDRIS",
+        "id": 11938940,
+        "node_id": "MDQ6VXNlcjExOTM4OTQw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11938940?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RemiLacroix-IDRIS",
+        "html_url": "https://github.com/RemiLacroix-IDRIS",
+        "followers_url": "https://api.github.com/users/RemiLacroix-IDRIS/followers",
+        "following_url": "https://api.github.com/users/RemiLacroix-IDRIS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RemiLacroix-IDRIS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RemiLacroix-IDRIS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RemiLacroix-IDRIS/subscriptions",
+        "organizations_url": "https://api.github.com/users/RemiLacroix-IDRIS/orgs",
+        "repos_url": "https://api.github.com/users/RemiLacroix-IDRIS/repos",
+        "events_url": "https://api.github.com/users/RemiLacroix-IDRIS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RemiLacroix-IDRIS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-23T10:45:23Z",
+    "updated_at": "2021-03-23T19:05:35Z",
+    "closed_at": "2021-03-23T18:34:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22472",
+        "html_url": "https://github.com/spack/spack/pull/22472",
+        "diff_url": "https://github.com/spack/spack/pull/22472.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22472.patch"
+    },
+    "body": "Fix \"isnan\" errors when compiling version 2.4.0 with recent compilers.",
+    "performed_via_github_app": null
+}

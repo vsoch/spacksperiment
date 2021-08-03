@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25064",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25064/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25064/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25064/events",
+    "html_url": "https://github.com/spack/spack/pull/25064",
+    "id": 951899362,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2MjEyNzgy",
+    "number": 25064,
+    "title": "gurobi: new version and extend python",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 3129125322,
+            "node_id": "MDU6TGFiZWwzMTI5MTI1MzIy",
+            "url": "https://api.github.com/repos/spack/spack/labels/extends",
+            "name": "extends",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-23T21:11:47Z",
+    "updated_at": "2021-07-28T23:01:45Z",
+    "closed_at": "2021-07-28T15:29:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25064",
+        "html_url": "https://github.com/spack/spack/pull/25064",
+        "diff_url": "https://github.com/spack/spack/pull/25064.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25064.patch"
+    },
+    "body": "- add version 9.1.2\r\n- set a license file\r\n- set the license environment variable\r\n- remove the download and license information out of the description so\r\n  it does not show up in environment modules\r\n- extend python and set python version constraints\r\n- build gurobipy to be used in any compatible python, used for more\r\n  extensive computations than the gurobi shell\r\n- remove preexisting PYTHONPATH from gurobi.sh as the shell uses a\r\n  built-in python, which will likely be different from \"system\" python\r\n- add myself as maintainer",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24121",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24121/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24121/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24121/events",
+    "html_url": "https://github.com/spack/spack/pull/24121",
+    "id": 910846843,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxMjA3OTA2",
+    "number": 24121,
+    "title": "correctly handle #! prefix which is not part of an actual shebang",
+    "user": {
+        "login": "hpcbjdic",
+        "id": 6594368,
+        "node_id": "MDQ6VXNlcjY1OTQzNjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6594368?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hpcbjdic",
+        "html_url": "https://github.com/hpcbjdic",
+        "followers_url": "https://api.github.com/users/hpcbjdic/followers",
+        "following_url": "https://api.github.com/users/hpcbjdic/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hpcbjdic/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hpcbjdic/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hpcbjdic/subscriptions",
+        "organizations_url": "https://api.github.com/users/hpcbjdic/orgs",
+        "repos_url": "https://api.github.com/users/hpcbjdic/repos",
+        "events_url": "https://api.github.com/users/hpcbjdic/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hpcbjdic/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1747000960,
+            "node_id": "MDU6TGFiZWwxNzQ3MDAwOTYw",
+            "url": "https://api.github.com/repos/spack/spack/labels/sbang",
+            "name": "sbang",
+            "color": "095e8c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-03T20:56:07Z",
+    "updated_at": "2021-06-04T08:00:03Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24121",
+        "html_url": "https://github.com/spack/spack/pull/24121",
+        "diff_url": "https://github.com/spack/spack/pull/24121.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24121.patch"
+    },
+    "body": "Tecplot (https://www.tecplot.com/) generates files with suffix .plt.\r\nSuch files are e.g. distributed with Spack's foam-extend package.\r\nThey begin with #!TDV<version>. The current implementation interprets\r\nthis as a shebang, however it is not intended to be a shebang.\r\nUnfortunately, this can trigger errors (e.g. unprintable character\r\nin my case).\r\n\r\nAccording to https://en.wikipedia.org/wiki/Shebang_(Unix), shebangs\r\nare available on unixoid systems only. We hence can assume a slash\r\nto follow the first two characters. However, according to the same\r\nreference, at least one whitespace may follow the first two\r\ncharacters.\r\n\r\nThis pull request tries to improve the detection of actual shebangs\r\nfollowing the reference mentioned above.",
+    "performed_via_github_app": null
+}

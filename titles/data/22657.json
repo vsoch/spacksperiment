@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22657",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22657/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22657/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22657/events",
+    "html_url": "https://github.com/spack/spack/pull/22657",
+    "id": 845433436,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA0NjAwMTAz",
+    "number": 22657,
+    "title": "--no-add installs only specified specs and only if already present in\u2026",
+    "user": {
+        "login": "scottwittenburg",
+        "id": 6527504,
+        "node_id": "MDQ6VXNlcjY1Mjc1MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6527504?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scottwittenburg",
+        "html_url": "https://github.com/scottwittenburg",
+        "followers_url": "https://api.github.com/users/scottwittenburg/followers",
+        "following_url": "https://api.github.com/users/scottwittenburg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scottwittenburg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scottwittenburg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scottwittenburg/subscriptions",
+        "organizations_url": "https://api.github.com/users/scottwittenburg/orgs",
+        "repos_url": "https://api.github.com/users/scottwittenburg/repos",
+        "events_url": "https://api.github.com/users/scottwittenburg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scottwittenburg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2021-03-30T23:08:57Z",
+    "updated_at": "2021-05-07T17:07:54Z",
+    "closed_at": "2021-05-07T17:07:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22657",
+        "html_url": "https://github.com/spack/spack/pull/22657",
+        "diff_url": "https://github.com/spack/spack/pull/22657.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22657.patch"
+    },
+    "body": "\u2026 env\r\n\r\nFixes #23333\r\n\r\nAllow installing one or more specs from command line as long as they are\r\nalready present in the environment.  ~~Change spec parsing to check active\r\nenvironment for dag hash (in addition to checking installation database).~~\r\n\r\n~~Instead of changing spec parsing, this now relies on #23194 for that functionality.~~\r\n\r\nThis is now decoupled from parsing hashes of env specs on the command line, and thus no longer requires #23194.",
+    "performed_via_github_app": null
+}

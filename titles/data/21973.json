@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21973",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21973/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21973/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21973/events",
+    "html_url": "https://github.com/spack/spack/pull/21973",
+    "id": 816737948,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTgwMzQ3MDEw",
+    "number": 21973,
+    "title": "openPMD-api: Use CMake Helpers",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-25T19:43:22Z",
+    "updated_at": "2021-03-06T00:07:09Z",
+    "closed_at": "2021-02-26T09:29:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21973",
+        "html_url": "https://github.com/spack/spack/pull/21973",
+        "diff_url": "https://github.com/spack/spack/pull/21973.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21973.patch"
+    },
+    "body": "Modernize the `openpmd-api` package to use fancy `CMakePackage` helpers #14376 when setting options from variants :-)",
+    "performed_via_github_app": null
+}

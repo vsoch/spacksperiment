@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24963",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24963/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24963/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24963/events",
+    "html_url": "https://github.com/spack/spack/pull/24963",
+    "id": 947971250,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkyODc1ODA2",
+    "number": 24963,
+    "title": "RMBlast depends on cpio during build",
+    "user": {
+        "login": "crabhi",
+        "id": 1015246,
+        "node_id": "MDQ6VXNlcjEwMTUyNDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1015246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/crabhi",
+        "html_url": "https://github.com/crabhi",
+        "followers_url": "https://api.github.com/users/crabhi/followers",
+        "following_url": "https://api.github.com/users/crabhi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/crabhi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/crabhi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/crabhi/subscriptions",
+        "organizations_url": "https://api.github.com/users/crabhi/orgs",
+        "repos_url": "https://api.github.com/users/crabhi/repos",
+        "events_url": "https://api.github.com/users/crabhi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/crabhi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-19T19:47:17Z",
+    "updated_at": "2021-07-20T07:44:33Z",
+    "closed_at": "2021-07-20T07:44:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24963",
+        "html_url": "https://github.com/spack/spack/pull/24963",
+        "diff_url": "https://github.com/spack/spack/pull/24963.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24963.patch"
+    },
+    "body": "Although `cpio` is present in many environments, it may not be always available.\r\n\r\nThe failure to build this package can be reproduced in a fresh Docker image `debian:10`. Explicitly depending on cpio during build lets the build succeed.",
+    "performed_via_github_app": null
+}

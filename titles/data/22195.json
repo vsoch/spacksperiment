@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22195",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22195/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22195/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22195/events",
+    "html_url": "https://github.com/spack/spack/pull/22195",
+    "id": 826233560,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg4MjUxMjE1",
+    "number": 22195,
+    "title": "gearshifft: Add version 0.4.0, remove faulty version 0.2.0-lw",
+    "user": {
+        "login": "zyzzyxdonta",
+        "id": 15108787,
+        "node_id": "MDQ6VXNlcjE1MTA4Nzg3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15108787?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zyzzyxdonta",
+        "html_url": "https://github.com/zyzzyxdonta",
+        "followers_url": "https://api.github.com/users/zyzzyxdonta/followers",
+        "following_url": "https://api.github.com/users/zyzzyxdonta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zyzzyxdonta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zyzzyxdonta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zyzzyxdonta/subscriptions",
+        "organizations_url": "https://api.github.com/users/zyzzyxdonta/orgs",
+        "repos_url": "https://api.github.com/users/zyzzyxdonta/repos",
+        "events_url": "https://api.github.com/users/zyzzyxdonta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zyzzyxdonta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-03-09T16:42:59Z",
+    "updated_at": "2021-03-11T00:19:07Z",
+    "closed_at": "2021-03-10T21:03:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22195",
+        "html_url": "https://github.com/spack/spack/pull/22195",
+        "diff_url": "https://github.com/spack/spack/pull/22195.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22195.patch"
+    },
+    "body": "- Change maintainer\r\n- Change gearshifft version\r\n- Add patch to rename CMake variable that already exists in newer CMake\r\n  versions\r\n- Take renamed CMake variables for different backends into account\r\n  (`-DGEARSHIFFT_BACKEND_*`)\r\n- Only use GEARSHIFFT_BACKEND_FFTW_PTHREADS if ~openmp\r\n- Explicitly disable float16 support\r\n- Use correct minimum required Boost version\r\n- Add variants for Intel MKL and ROCm rocfft\r\n\r\nCC: @psteinb @ax3l @haampie @h-denpo @tldahlgren \r\n\r\nMy follow-up to #21437. Installing `gearshifft~cufft~clfft~rocfft~mkl+openmp` and `gearshifft~cufft~clfft~rocfft~mkl~openmp` seems to work fine. The other variants were not tested, yet.",
+    "performed_via_github_app": null
+}

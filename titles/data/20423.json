@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20423",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20423/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20423/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20423/events",
+    "html_url": "https://github.com/spack/spack/pull/20423",
+    "id": 768609778,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQxMDA2NjEy",
+    "number": 20423,
+    "title": "concretizer: move conditional dependency logic into `concretize.lp`",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-16T09:06:51Z",
+    "updated_at": "2020-12-20T15:00:49Z",
+    "closed_at": "2020-12-20T15:00:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20423",
+        "html_url": "https://github.com/spack/spack/pull/20423",
+        "diff_url": "https://github.com/spack/spack/pull/20423.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20423.patch"
+    },
+    "body": "Continuing to convert everything in `asp.py` into facts, make the generation of ground rules for conditional dependencies use facts, and move the semantics into `concretize.lp`.\r\n\r\nThis is probably the most complex logic in Spack, as dependencies can be conditional on anything, and we need conditional ASP rules to accumulate and map all the dependency conditions to spec attributes.\r\n\r\nThe logic looks complicated, but essentially it accumulates any constraints associated with particular conditions into a fact associated with the condition by id. Then, if *any* condition id's fact is True, we trigger the dependency.  This simplifies the way `declared_dependency()` works -- the dependency is now declared regardless of whether it is conditional, and the conditions are handled by `dependency_condition()` facts.\r\n\r\nThere's a nit in the loop structure here: we currently emit a bunch of extra `declared_dependency` facts.  Need to think about how best to remove those.\r\n\r\n- [x] simplify by making `spec_clauses` transitive by default\r\n- [x] move conditional dependency logic into `concretize.lp`, including:\r\n  - [x] conditions from `when=` clauses\r\n  - [x] constraints imposed on the dependency (e.g., `@1.0` in `depends_on(\"foo@1.0\")`)\r\n- [x] don't generate so many `declared_dependency` facts\r\n- [x] `depends_on` clauses are numbered globally and identified only by ID, to simplify grounding",
+    "performed_via_github_app": null
+}

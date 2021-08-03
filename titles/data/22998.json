@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22998",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22998/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22998/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22998/events",
+    "html_url": "https://github.com/spack/spack/pull/22998",
+    "id": 858296180,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE1NTcyODEw",
+    "number": 22998,
+    "title": "[AMD] - rocm-openmp-extras 4.1 updates.",
+    "user": {
+        "login": "estewart08",
+        "id": 17113718,
+        "node_id": "MDQ6VXNlcjE3MTEzNzE4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17113718?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/estewart08",
+        "html_url": "https://github.com/estewart08",
+        "followers_url": "https://api.github.com/users/estewart08/followers",
+        "following_url": "https://api.github.com/users/estewart08/following{/other_user}",
+        "gists_url": "https://api.github.com/users/estewart08/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/estewart08/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/estewart08/subscriptions",
+        "organizations_url": "https://api.github.com/users/estewart08/orgs",
+        "repos_url": "https://api.github.com/users/estewart08/repos",
+        "events_url": "https://api.github.com/users/estewart08/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/estewart08/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-04-14T21:57:31Z",
+    "updated_at": "2021-04-22T19:41:11Z",
+    "closed_at": "2021-04-22T19:11:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22998",
+        "html_url": "https://github.com/spack/spack/pull/22998",
+        "diff_url": "https://github.com/spack/spack/pull/22998.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22998.patch"
+    },
+    "body": "Update package with 4.1 sha keys.\r\nUse variant to disable openmp in the build of llvm-amdgpu.\r\nSet CPATH, LIBRARY_PATH so that clang knows to look in the rocm-openmp-extras for headers/libraries.\r\nDisable flang warnings as Spack thinks they are errors.\r\nIn ROCm 4.1, the plugin changed names from hsa -> amdgpu.\r\nUpdate HSA_INCLUDE for 4.1.0.",
+    "performed_via_github_app": null
+}

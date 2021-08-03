@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19775",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19775/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19775/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19775/events",
+    "html_url": "https://github.com/spack/spack/pull/19775",
+    "id": 737582505,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE2NTk4MTA2",
+    "number": 19775,
+    "title": "[root] fix package definition",
+    "user": {
+        "login": "tmadlener",
+        "id": 16774861,
+        "node_id": "MDQ6VXNlcjE2Nzc0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16774861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tmadlener",
+        "html_url": "https://github.com/tmadlener",
+        "followers_url": "https://api.github.com/users/tmadlener/followers",
+        "following_url": "https://api.github.com/users/tmadlener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tmadlener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tmadlener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tmadlener/subscriptions",
+        "organizations_url": "https://api.github.com/users/tmadlener/orgs",
+        "repos_url": "https://api.github.com/users/tmadlener/repos",
+        "events_url": "https://api.github.com/users/tmadlener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tmadlener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-06T08:47:00Z",
+    "updated_at": "2020-11-07T03:04:24Z",
+    "closed_at": "2020-11-07T03:04:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19775",
+        "html_url": "https://github.com/spack/spack/pull/19775",
+        "diff_url": "https://github.com/spack/spack/pull/19775.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19775.patch"
+    },
+    "body": "Need braces not parenthesis here, otherwise we run into a `TypeError`:\r\n\r\n```\r\n==> Error: TypeError: 'Spec' object is not callable\r\n\r\n/home/tmadlener/work/spack/var/spack/repos/builtin/packages/root/package.py:438, in cmake_args:\r\n        435                                  True))\r\n        436\r\n        437        if '+x+opengl' in self.spec:\r\n  >>    438            ftgl_prefix = self.spec('ftgl').prefix\r\n        439            options.append(define('FTGL_ROOT_DIR', ftgl_prefix))\r\n        440            options.append(define('FTGL_INCLUDE_DIR', ftgl_prefix.include))\r\n        441        if '+python' in self.spec:\r\n\r\nSee build log for details:\r\n  /tmp/tmadlener/spack-stage/spack-stage-root-6.20.04-4pbhpedobzxtcfkonhms55gq2vq6neso/spack-build-out.txt\r\n```\r\n",
+    "performed_via_github_app": null
+}

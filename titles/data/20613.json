@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20613",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20613/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20613/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20613/events",
+    "html_url": "https://github.com/spack/spack/pull/20613",
+    "id": 776138493,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ2Njc3OTcy",
+    "number": 20613,
+    "title": "Clean up .gitignore, add Python.gitignore",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2583834777,
+            "node_id": "MDU6TGFiZWwyNTgzODM0Nzc3",
+            "url": "https://api.github.com/repos/spack/spack/labels/mypy",
+            "name": "mypy",
+            "color": "98c635",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2020-12-30T00:05:26Z",
+    "updated_at": "2021-02-09T21:14:43Z",
+    "closed_at": "2021-02-09T20:55:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20613",
+        "html_url": "https://github.com/spack/spack/pull/20613",
+        "diff_url": "https://github.com/spack/spack/pull/20613.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20613.patch"
+    },
+    "body": "We recently added `spack style`, which runs `mypy`, but we weren't ignoring the `.mypy_cache` directory. We also weren't ignoring the debug logs created by `spack debug create-db-tarball`. This PR includes the following changes:\r\n\r\n- [x] Add all ignores from https://github.com/github/gitignore/blob/master/Python.gitignore (includes mypy)\r\n- [x] Ignore file created by `spack debug create-db-tarball`\r\n- [x] Remove ignores for ancient versions of Spack (dotkit)\r\n\r\nLet me know if any of the weird things like `/db`, `/etc/spackconfig`, or `/bin/spackc` were there for a reason.\r\n\r\nFixes #20798",
+    "performed_via_github_app": null
+}

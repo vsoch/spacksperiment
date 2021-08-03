@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21494",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21494/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21494/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21494/events",
+    "html_url": "https://github.com/spack/spack/pull/21494",
+    "id": 801601278,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY3ODg3NDc1",
+    "number": 21494,
+    "title": "lammps: Add support for a number of new LAMMPS add-on packages",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-04T20:12:32Z",
+    "updated_at": "2021-02-19T15:56:05Z",
+    "closed_at": "2021-02-04T21:29:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21494",
+        "html_url": "https://github.com/spack/spack/pull/21494",
+        "diff_url": "https://github.com/spack/spack/pull/21494.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21494.patch"
+    },
+    "body": "Add support for a bunch of LAMMPS packages:\r\n\r\nmliap\r\nuser-adios\r\nuser-awpmd\r\nuser-bocs\r\nuser-cgsdk\r\nuser-colvars\r\nuser-diffraction\r\nuser-dpd\r\nuser-drude\r\nuser-eff\r\nuser-fep\r\nuser-manifold\r\nuser-mesodpd\r\nuser-mesont\r\nuser-mgpt\r\nuser-mofff\r\nuser-phonon\r\nuser-plumed\r\nuser-ptm\r\nuser-qtb\r\nuser-reaction\r\nuser-sdpd\r\nuser-smd\r\nuser-smtbq\r\nuser-sph\r\nuser-tally\r\nuser-uef\r\nuser-yaff",
+    "performed_via_github_app": null
+}

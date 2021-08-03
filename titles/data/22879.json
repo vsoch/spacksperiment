@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22879",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22879/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22879/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22879/events",
+    "html_url": "https://github.com/spack/spack/pull/22879",
+    "id": 853807447,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjExODQxNjM5",
+    "number": 22879,
+    "title": "Update augustus package",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-04-08T19:39:40Z",
+    "updated_at": "2021-04-23T15:39:54Z",
+    "closed_at": "2021-04-23T13:56:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22879",
+        "html_url": "https://github.com/spack/spack/pull/22879",
+        "diff_url": "https://github.com/spack/spack/pull/22879.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22879.patch"
+    },
+    "body": "Depends on:\r\n#22876\r\n#22877 \r\n#22873 if using mariadb-c-client\r\n\r\n- add version 3.4.0\r\n- add patch for bam2wig when version 3.4.0\r\n- url format changed again, hopefully stable now\r\n- added missing python dependency when version >3.3.1\r\n- have older version compile with htslib, samtools ,bcftools\r\n- new dependencies for version 3.4.0\r\n    - sqlite\r\n    - mysql-client\r\n    - mysqlpp\r\n    - lp-solve\r\n    - suite-sparse\r\n- refactored filtering code\r\n- set python interpreter in scripts",
+    "performed_via_github_app": null
+}

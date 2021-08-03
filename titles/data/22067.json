@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22067",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22067/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22067/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22067/events",
+    "html_url": "https://github.com/spack/spack/pull/22067",
+    "id": 821684211,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg0NDMxMDU1",
+    "number": 22067,
+    "title": "BLAS++: CUDA default (false)",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-03-04T02:19:33Z",
+    "updated_at": "2021-03-06T00:06:44Z",
+    "closed_at": "2021-03-04T11:07:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22067",
+        "html_url": "https://github.com/spack/spack/pull/22067",
+        "diff_url": "https://github.com/spack/spack/pull/22067.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22067.patch"
+    },
+    "body": "For opt-in packages in Spack, its common that the `cuda` variant is disabled by default. (See e.g. `CudaPackage` mixin class.)\r\n\r\nThis also simplifies downstream usage in multi-variants for backends in user code.\r\nAlso, `blaspp` will not fail to build on macOS by default (no CUDA anymore on macOS).\r\n\r\nThe other BLAS++ dependent in Spack at the moment, `slate`, controls the BLAS++ variant in `depends_on` explicitly and needs no change.\r\n\r\ncc @G-Ragghianti @mgates3",
+    "performed_via_github_app": null
+}

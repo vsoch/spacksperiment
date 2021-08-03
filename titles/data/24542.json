@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24542",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24542/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24542/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24542/events",
+    "html_url": "https://github.com/spack/spack/pull/24542",
+    "id": 930520015,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc4MTk1NDE2",
+    "number": 24542,
+    "title": "pandoc: add 2.11.4 and 2.14.0.3",
+    "user": {
+        "login": "manuelakuhn",
+        "id": 36827019,
+        "node_id": "MDQ6VXNlcjM2ODI3MDE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36827019?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/manuelakuhn",
+        "html_url": "https://github.com/manuelakuhn",
+        "followers_url": "https://api.github.com/users/manuelakuhn/followers",
+        "following_url": "https://api.github.com/users/manuelakuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/manuelakuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/manuelakuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/manuelakuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/manuelakuhn/orgs",
+        "repos_url": "https://api.github.com/users/manuelakuhn/repos",
+        "events_url": "https://api.github.com/users/manuelakuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/manuelakuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-25T21:40:56Z",
+    "updated_at": "2021-07-02T20:33:12Z",
+    "closed_at": "2021-06-28T06:50:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24542",
+        "html_url": "https://github.com/spack/spack/pull/24542",
+        "diff_url": "https://github.com/spack/spack/pull/24542.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24542.patch"
+    },
+    "body": "I could only test this for linux amd64, so could someone test it for macOS and arm64 please?",
+    "performed_via_github_app": null
+}

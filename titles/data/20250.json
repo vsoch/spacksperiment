@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20250",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20250/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20250/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20250/events",
+    "html_url": "https://github.com/spack/spack/pull/20250",
+    "id": 757225307,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMyNjM2NjM1",
+    "number": 20250,
+    "title": "geant4, geant4-data: versions 10.6.3 and 10.7.0",
+    "user": {
+        "login": "drbenmorgan",
+        "id": 1102642,
+        "node_id": "MDQ6VXNlcjExMDI2NDI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1102642?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/drbenmorgan",
+        "html_url": "https://github.com/drbenmorgan",
+        "followers_url": "https://api.github.com/users/drbenmorgan/followers",
+        "following_url": "https://api.github.com/users/drbenmorgan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/drbenmorgan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/drbenmorgan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/drbenmorgan/subscriptions",
+        "organizations_url": "https://api.github.com/users/drbenmorgan/orgs",
+        "repos_url": "https://api.github.com/users/drbenmorgan/repos",
+        "events_url": "https://api.github.com/users/drbenmorgan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/drbenmorgan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1281134171,
+            "node_id": "MDU6TGFiZWwxMjgxMTM0MTcx",
+            "url": "https://api.github.com/repos/spack/spack/labels/hep",
+            "name": "hep",
+            "color": "bfdadc",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-04T16:19:56Z",
+    "updated_at": "2021-03-01T13:49:58Z",
+    "closed_at": "2020-12-04T18:22:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20250",
+        "html_url": "https://github.com/spack/spack/pull/20250",
+        "diff_url": "https://github.com/spack/spack/pull/20250.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20250.patch"
+    },
+    "body": "Update geant4-data and individual datasets for Geant4 versions 10.6.3 and 10.7.0.\r\n\r\nUpdate geant4 package with new versions 10.6.3 and 10.7.0. Update dependencies on CLHEP and VecGeom with versions required for Geant4 10.7.\r\n\r\nAdd `GEANT4_INSTALL_PACKAGE_CACHE=OFF` to CMake args for 10.6 onwards. Prevents install of the \"package cache\" file that contains hard-coded paths for dependencies, improving relocatability. It relies on Spack setting CMAKE_PREFIX_PATH correctly in build/use environments that consume the geant4 package. This has been tested locally in a simple environment to build a Geant4 example, and appears to function correctly.\r\n\r\nReviewers requested, also pinging @vvolkl and @ChristianTackeGSI for their info.",
+    "performed_via_github_app": null
+}

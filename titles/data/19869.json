@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19869",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19869/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19869/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19869/events",
+    "html_url": "https://github.com/spack/spack/pull/19869",
+    "id": 741197356,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE5NTU0NDkx",
+    "number": 19869,
+    "title": "kokkos add \"graviton\" to spack_micro_arch_map",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-12T01:32:51Z",
+    "updated_at": "2020-11-12T14:55:39Z",
+    "closed_at": "2020-11-12T14:55:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19869",
+        "html_url": "https://github.com/spack/spack/pull/19869",
+        "diff_url": "https://github.com/spack/spack/pull/19869.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19869.patch"
+    },
+    "body": "```\r\n==> Installing trilinos\r\n==> No binary for trilinos found: installing from source\r\n==> trilinos: Executing phase: 'cmake'\r\n==> Error: KeyError: 'graviton'\r\n\r\n/home/balay/spack/var/spack/repos/builtin/packages/trilinos/package.py:744, in cmake_args:\r\n        741\r\n        742        options.append(define(\r\n        743            \"Kokkos_ARCH_\" +\r\n  >>    744            Kokkos.spack_micro_arch_map[spec.target.name].upper(),\r\n        745            True))\r\n        746\r\n        747        # ################# Miscellaneous Stuff ######################\r\n```\r\n\r\ncc: @jjwilke ",
+    "performed_via_github_app": null
+}

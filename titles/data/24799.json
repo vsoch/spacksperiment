@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24799",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24799/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24799/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24799/events",
+    "html_url": "https://github.com/spack/spack/pull/24799",
+    "id": 940439456,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg2NTEwMjQ5",
+    "number": 24799,
+    "title": "CachedCMakePackage: Remove unnecessary compiler id override for XL",
+    "user": {
+        "login": "white238",
+        "id": 595301,
+        "node_id": "MDQ6VXNlcjU5NTMwMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/595301?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/white238",
+        "html_url": "https://github.com/white238",
+        "followers_url": "https://api.github.com/users/white238/followers",
+        "following_url": "https://api.github.com/users/white238/following{/other_user}",
+        "gists_url": "https://api.github.com/users/white238/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/white238/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/white238/subscriptions",
+        "organizations_url": "https://api.github.com/users/white238/orgs",
+        "repos_url": "https://api.github.com/users/white238/repos",
+        "events_url": "https://api.github.com/users/white238/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/white238/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-09T05:48:10Z",
+    "updated_at": "2021-07-09T16:20:55Z",
+    "closed_at": "2021-07-09T16:20:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24799",
+        "html_url": "https://github.com/spack/spack/pull/24799",
+        "diff_url": "https://github.com/spack/spack/pull/24799.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24799.patch"
+    },
+    "body": "This overriding was necessary a long time ago due to compilers lying about their compiler family on BlueOS.  This also possibly was also put in defensively against possibly wrong compiler flags that could result from everything returning clang.\r\n\r\nEither way this is now causing problems for some packages (Umpire) and I did a full battery of tests through Axom (where this originated).  I could not reproduce any failures from removing these lines.\r\n\r\n@davidbeckingsale  @kennyweiss ",
+    "performed_via_github_app": null
+}

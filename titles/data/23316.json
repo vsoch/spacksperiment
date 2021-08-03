@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23316",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23316/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23316/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23316/events",
+    "html_url": "https://github.com/spack/spack/pull/23316",
+    "id": 869969040,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI1MjQ0MTY3",
+    "number": 23316,
+    "title": "qt: update versions and URLs",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-04-28T13:47:34Z",
+    "updated_at": "2021-04-30T17:21:48Z",
+    "closed_at": "2021-04-30T17:21:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23316",
+        "html_url": "https://github.com/spack/spack/pull/23316",
+        "diff_url": "https://github.com/spack/spack/pull/23316.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23316.patch"
+    },
+    "body": "- Add LTS releases of 5.12.10, 5.9.9, 5.6.3\r\n- Mark other minor versions of 5 as deprecated\r\n- Use https\r\n- The URL for older QT versions changed recently to \"new_archive\"\r\n- Prefer xz instead of gz for >=5.6 because 5.6.3 isn't available as gz. This invalidates the SHA of 5.7-5.8, so I am deleting them rather than updating and marking as deprecated",
+    "performed_via_github_app": null
+}

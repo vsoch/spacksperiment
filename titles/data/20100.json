@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20100",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20100/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20100/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20100/events",
+    "html_url": "https://github.com/spack/spack/issues/20100",
+    "id": 751098144,
+    "node_id": "MDU6SXNzdWU3NTEwOTgxNDQ=",
+    "number": 20100,
+    "title": "Installation issue: py-numpy with GCC 7.5",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-11-25T20:25:07Z",
+    "updated_at": "2020-12-01T00:09:38Z",
+    "closed_at": "2020-12-01T00:09:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "### Steps to reproduce the issue\r\n\r\n```console\r\n$  spack install py-numpy %gcc@7.5.0\r\n```\r\n\r\n### Information on your system\r\n\r\nUbuntu 20.04 on x86_64\r\n\r\n### Additional information\r\n\r\n```\r\n==> Error: Conflicts in concretized spec \"py-numpy@1.19.4%gcc@7.5.0+blas+lapack arch=linux-ubuntu20.04-skylake/lwh4kwo\"\r\nList of matching conflicts for spec:\r\n\r\n    openblas@0.3.12%gcc@7.5.0~consistent_fpcsr~ilp64+pic+shared threads=none arch=linux-ubuntu20.04-skylake\r\n\r\n1. \"%gcc@:8.2.99\" conflicts with \"openblas@0.3.11:\"\r\n```\r\n\r\nI think the concretizer should pick an older version of openblas here. cc @tgamblin \r\n\r\nRelated to #19932 #19975\r\n\r\n### General information\r\n\r\n<!-- These boxes can be checked by replacing [ ] with [x] or by clicking them after submitting the issue. -->\r\n- [ ] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have run `spack maintainers <name-of-the-package>` and @mentioned any maintainers: @adamjstewart \r\n- [ ] I have uploaded the build log and environment files\r\n- [ ] I have searched the issues of this repo and believe this is not a duplicate\r\n",
+    "performed_via_github_app": null
+}

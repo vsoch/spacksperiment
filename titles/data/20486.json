@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20486",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20486/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20486/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20486/events",
+    "html_url": "https://github.com/spack/spack/pull/20486",
+    "id": 771289340,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyODY2MzAz",
+    "number": 20486,
+    "title": "GDB: Better Python debugging support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 23,
+    "created_at": "2020-12-19T03:03:32Z",
+    "updated_at": "2020-12-29T16:05:01Z",
+    "closed_at": "2020-12-29T16:04:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20486",
+        "html_url": "https://github.com/spack/spack/pull/20486",
+        "diff_url": "https://github.com/spack/spack/pull/20486.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20486.patch"
+    },
+    "body": "@robertu94 Here's a first draft. `gdb` seems to be able to find the right file without adding anything to `.gdbinit`, but it's crashing for me:\r\n```console\r\n$ gdb\r\n/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/gdb-10.1-vlrhtgaqhz7ntwf6pudrdjzzfzrl3pnq/share/gdb/python/gdb/__init__.py:23: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses\r\n  from imp import reload\r\nGNU gdb (GDB) 10.1\r\nCopyright (C) 2020 Free Software Foundation, Inc.\r\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\r\nThis is free software: you are free to change and redistribute it.\r\nThere is NO WARRANTY, to the extent permitted by law.\r\nType \"show copying\" and \"show warranty\" for details.\r\nThis GDB was configured as \"x86_64-apple-darwin19.6.0\".\r\nType \"show configuration\" for configuration details.\r\nFor bug reporting instructions, please see:\r\n<https://www.gnu.org/software/gdb/bugs/>.\r\nFind the GDB manual and other documentation resources online at:\r\n    <http://www.gnu.org/software/gdb/documentation/>.\r\n\r\nFor help, type \"help\".\r\nType \"apropos word\" to search for commands related to \"word\".\r\n(gdb) set debug auto-load\r\n(gdb) file python3\r\nReading symbols from python3...\r\nwarning: `/private/var/folders/21/hwq39zyj4g36x6zjfyl5l8080000gn/T/Adam/spack-stage/spack-stage-python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/spack-src/spack-build/Programs/python.o': can't open to read symbols: No such file or directory.\r\n(No debugging symbols found in python3)\r\nauto-load: Attempted file \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.gdb\" does not exist.\r\nauto-load: Searching 'set auto-load scripts-directory' path \":${prefix}/share/auto-load\".\r\nauto-load: Attempted file \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.gdb\" does not exist.\r\nauto-load: Attempted file \"${prefix}/share/auto-load/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.gdb\" does not exist.\r\nauto-load: Attempted file \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.py\" exists.\r\nauto-load: Loading python script \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.py\" by extension for objfile \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9\".\r\nauto-load: Matching file \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.py\" to pattern \"\"\r\nauto-load: Matched - empty pattern\r\nauto-load: File \"/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/python-3.9.1-rn4ofx2ajnjo5vd5n7352kn244k22qqe/bin/python3.9-gdb.py\" matches directory \"\".\r\n/var/folders/21/hwq39zyj4g36x6zjfyl5l8080000gn/T/Adam/spack-stage/spack-stage-gdb-10.1-vlrhtgaqhz7ntwf6pudrdjzzfzrl3pnq/spack-src/gdb/thread.c:95: internal-error: struct thread_info *inferior_thread(): Assertion `current_thread_ != nullptr' failed.\r\nA problem internal to GDB has been detected,\r\nfurther debugging may prove unreliable.\r\nQuit this debugging session? (y or n) y\r\n\r\nThis is a bug, please report it.  For instructions, see:\r\n<https://www.gnu.org/software/gdb/bugs/>.\r\n\r\n/var/folders/21/hwq39zyj4g36x6zjfyl5l8080000gn/T/Adam/spack-stage/spack-stage-gdb-10.1-vlrhtgaqhz7ntwf6pudrdjzzfzrl3pnq/spack-src/gdb/thread.c:95: internal-error: struct thread_info *inferior_thread(): Assertion `current_thread_ != nullptr' failed.\r\nA problem internal to GDB has been detected,\r\nfurther debugging may prove unreliable.\r\nCreate a core file of GDB? (y or n) y\r\nAbort trap\r\n```\r\nIt looks like something still refers to the build stage instead of the installation directory. Adding `+debug` doesn't seem to help. Any ideas?\r\n\r\nCloses #20483 ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20164",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20164/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20164/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20164/events",
+    "html_url": "https://github.com/spack/spack/pull/20164",
+    "id": 753066260,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5MjE3MTQ5",
+    "number": 20164,
+    "title": "libQGLViewer: add new package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 657167326,
+            "node_id": "MDU6TGFiZWw2NTcxNjczMjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/qmake",
+            "name": "qmake",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-30T01:02:41Z",
+    "updated_at": "2020-11-30T16:09:42Z",
+    "closed_at": "2020-11-30T15:25:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20164",
+        "html_url": "https://github.com/spack/spack/pull/20164",
+        "diff_url": "https://github.com/spack/spack/pull/20164.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20164.patch"
+    },
+    "body": "Successfully builds on macOS 10.15.6 with Apple Clang 12.0.0 and on Ubuntu 18.04 with GCC 7.5.0.\r\n\r\nI had to add a bit of functionality to the `QMakePackage` base class to enable building in a sub-directory.\r\n\r\n@sethrj I see that you are listed as a maintainer for `qt`. You may be interested in this PR. Let me know if you want to maintain the `QMakePackage` base class as well. So far, the following packages use it:\r\n```console\r\n$ grep QMakePackage */package.py\r\ncbtf-argonavis-gui/package.py:class CbtfArgonavisGui(QMakePackage):\r\ngatepet2stir/package.py:class Gatepet2stir(QMakePackage):\r\nlibqglviewer/package.py:class Libqglviewer(QMakePackage):\r\nqcachegrind/package.py:class Qcachegrind(QMakePackage):\r\nqscintilla/package.py:class Qscintilla(QMakePackage):\r\nqt-creator/package.py:class QtCreator(QMakePackage):\r\nqtgraph/package.py:class Qtgraph(QMakePackage):\r\nqwt/package.py:class Qwt(QMakePackage):\r\nqwtpolar/package.py:class Qwtpolar(QMakePackage):\r\ntexstudio/package.py:class Texstudio(QMakePackage):\r\n```",
+    "performed_via_github_app": null
+}

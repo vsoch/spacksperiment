@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22683",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22683/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22683/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22683/events",
+    "html_url": "https://github.com/spack/spack/pull/22683",
+    "id": 846955174,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA2MDA1NTAz",
+    "number": 22683,
+    "title": "hotfix: make `ifx` work with `autoconf` <= 2.69 in spack",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2869792777,
+            "node_id": "MDU6TGFiZWwyODY5NzkyNzc3",
+            "url": "https://api.github.com/repos/spack/spack/labels/fortran",
+            "name": "fortran",
+            "color": "0052cc",
+            "default": false,
+            "description": "Fortran"
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-03-31T16:47:30Z",
+    "updated_at": "2021-05-06T22:35:07Z",
+    "closed_at": "2021-03-31T21:47:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22683",
+        "html_url": "https://github.com/spack/spack/pull/22683",
+        "diff_url": "https://github.com/spack/spack/pull/22683.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22683.patch"
+    },
+    "body": "Fixes #22643.\r\n\r\nAutoconf before 2.70 will erroneously pass `ifx`'s -loopopt argument to the linker, requiring all packages to use autoconf 2.70 or newer to use `ifx`.\r\n\r\nThis is a hotfix enabling `ifx` to be used in Spack. Instead of bothering to upgrade autoconf for every package, we'll just strip out the problematic flag if we're in `ld` mode.\r\n\r\n- [x] Add a conditional to the `cc` wrapper to skip `-loopopt` in `ld` mode. This can probably be generalized in the future to strip more things (e.g., via an environment variable we can constrol from Spack) but it's good enough for now.\r\n\r\n- [x] Add a test ensuring that `-loopopt` arguments are stripped in link mode, but not in compile mode.",
+    "performed_via_github_app": null
+}

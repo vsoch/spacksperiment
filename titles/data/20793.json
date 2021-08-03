@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20793",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20793/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20793/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20793/events",
+    "html_url": "https://github.com/spack/spack/pull/20793",
+    "id": 784298324,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzNTEyMTQx",
+    "number": 20793,
+    "title": "fractions.gcd was removed in python 3.9, use math.gcd instead",
+    "user": {
+        "login": "sly2j",
+        "id": 5870061,
+        "node_id": "MDQ6VXNlcjU4NzAwNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5870061?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sly2j",
+        "html_url": "https://github.com/sly2j",
+        "followers_url": "https://api.github.com/users/sly2j/followers",
+        "following_url": "https://api.github.com/users/sly2j/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sly2j/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sly2j/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sly2j/subscriptions",
+        "organizations_url": "https://api.github.com/users/sly2j/orgs",
+        "repos_url": "https://api.github.com/users/sly2j/repos",
+        "events_url": "https://api.github.com/users/sly2j/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sly2j/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-12T14:43:05Z",
+    "updated_at": "2021-01-12T18:45:12Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20793",
+        "html_url": "https://github.com/spack/spack/pull/20793",
+        "diff_url": "https://github.com/spack/spack/pull/20793.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20793.patch"
+    },
+    "body": "This PR fixes an issue when using xcb-proto in an environment with python 3.9. xcb-proto uses fractions.gcd which has been deprecated since python 3.5 and was removed in python 3.9. \r\n\r\nSee\r\nhttps://docs.python.org/3.5/library/math.html#math.gcd",
+    "performed_via_github_app": null
+}

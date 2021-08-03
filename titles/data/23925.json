@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23925",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23925/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23925/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23925/events",
+    "html_url": "https://github.com/spack/spack/pull/23925",
+    "id": 902550683,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUzOTA3Mzky",
+    "number": 23925,
+    "title": "Log performance improvement",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3033683528,
+            "node_id": "MDU6TGFiZWwzMDMzNjgzNTI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/logging",
+            "name": "logging",
+            "color": "B0F68E",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2021-05-26T15:19:33Z",
+    "updated_at": "2021-06-01T03:33:14Z",
+    "closed_at": "2021-06-01T03:33:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23925",
+        "html_url": "https://github.com/spack/spack/pull/23925",
+        "diff_url": "https://github.com/spack/spack/pull/23925.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23925.patch"
+    },
+    "body": "Running some builds with a substantial amount of output, I was noticing an entire core being burned by the log handler and some delay in output handling.  This is an attempt to address that while preserving the responsive behavior of input on standard input.\r\n\r\nSummary of changes:\r\n* When reading from in_pipe read as much as possible (polling with select to determine whether more is available) up to 100 lines before re-entering the blocking select, avoiding having to repeatedly set up and tear down signal handlers and so-forth\r\n* Only scan the input line once in the common case, using subn to avoid the findall (which should be changed to either using a function on the sub, or just using \"in\" or similar since we don't care how many just which, leaving that for later since it's a small perf difference)\r\n* Always flush, but flush *after* writing all input that got read in this block rather than on every line",
+    "performed_via_github_app": null
+}

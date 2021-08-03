@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22773",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22773/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22773/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22773/events",
+    "html_url": "https://github.com/spack/spack/pull/22773",
+    "id": 849958130,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA4NjA4OTI5",
+    "number": 22773,
+    "title": "doxygen: add version restriction",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-04T20:47:33Z",
+    "updated_at": "2021-04-06T07:09:02Z",
+    "closed_at": "2021-04-06T07:09:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22773",
+        "html_url": "https://github.com/spack/spack/pull/22773",
+        "diff_url": "https://github.com/spack/spack/pull/22773.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22773.patch"
+    },
+    "body": "This triggered on my mac because clingo seems to have bootstrapped a very old version distributed by apple.\r\n\r\n```\r\n    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/rnsdhpc/code/spack/opt/spack/apple-clang/doxygen/qi3msaz' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_FIND_FRAMEWORK:STRING=LAST' '-DCMAKE_FIND_APPBUNDLE:STRING=LAST' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/rnsdhpc/code/spack/opt/spack/apple-clang/doxygen/qi3msaz/lib;/rnsdhpc/code/spack/opt/spack/apple-clang/doxygen/qi3msaz/lib64;/rnsdhpc/code/spack/opt/spack/apple-clang/libiconv/tj3twqm/lib' '-DCMAKE_PREFIX_PATH:STRING=/usr/local/Cellar/cmake/3.20.0;/rnsdhpc/code/spack/opt/spack/apple-clang/flex/ephtsaz;/rnsdhpc/code/spack/opt/spack/apple-clang/libiconv/tj3twqm;/rnsdhpc/code/spack/opt/spack/apple-clang/python/caziios' '/var/folders/gy/mrg1ffts2h945qj9k29s1l1dvvmbqb/T/s3j/spack-stage/spack-stage-doxygen-1.9.1-qi3msazkuiypgj3pvzsoe4qaxtl6klfe/spack-src'\r\n\r\n1 error found in build log:\r\n     12    -- Check for working CXX compiler: /rnsdhpc/code/spack/lib/spack/env/clang/clang++ - skippe\r\n           d\r\n     13    -- Detecting CXX compile features\r\n     14    -- Detecting CXX compile features - done\r\n     15    -- Found PythonInterp: /rnsdhpc/code/spack/opt/spack/apple-clang/python/caziios/bin/python\r\n           (found version \"3.8.8\")\r\n     16    -- Found FLEX: /rnsdhpc/code/spack/opt/spack/apple-clang/flex/ephtsaz/bin/flex (found versi\r\n           on \"2.6.4\")\r\n     17    -- Found BISON: /usr/bin/bison (found version \"2.3\")\r\n  >> 18    CMake Error at CMakeLists.txt:108 (message):\r\n     19      Doxygen requires at least bison version 2.7 (installed: 2.3)\r\n     20\r\n     21\r\n     22    -- Looking for pthread.h\r\n     23    -- Looking for pthread.h - found\r\n     24    -- Performing Test CMAKE_HAVE_LIBC_PTHREAD\r\n```",
+    "performed_via_github_app": null
+}

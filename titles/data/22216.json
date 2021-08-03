@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22216",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22216/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22216/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22216/events",
+    "html_url": "https://github.com/spack/spack/pull/22216",
+    "id": 827552101,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg5NDUxMDg1",
+    "number": 22216,
+    "title": "meson: apply rpath patch for current versions",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 964162604,
+            "node_id": "MDU6TGFiZWw5NjQxNjI2MDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/meson",
+            "name": "meson",
+            "color": "66d657",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-10T11:06:59Z",
+    "updated_at": "2021-03-10T18:42:40Z",
+    "closed_at": "2021-03-10T18:42:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22216",
+        "html_url": "https://github.com/spack/spack/pull/22216",
+        "diff_url": "https://github.com/spack/spack/pull/22216.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22216.patch"
+    },
+    "body": "meson now only selectively strips rpaths but can still strip required ones (like glib's pcre dependency).",
+    "performed_via_github_app": null
+}

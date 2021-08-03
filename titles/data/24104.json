@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24104",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24104/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24104/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24104/events",
+    "html_url": "https://github.com/spack/spack/pull/24104",
+    "id": 910629874,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxMDIzMjcw",
+    "number": 24104,
+    "title": "setup-env: fix inverted logic for modules check",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-06-03T15:51:31Z",
+    "updated_at": "2021-06-10T14:01:10Z",
+    "closed_at": "2021-06-10T14:01:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24104",
+        "html_url": "https://github.com/spack/spack/pull/24104",
+        "diff_url": "https://github.com/spack/spack/pull/24104.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24104.patch"
+    },
+    "body": "Sourcing `setup-env.sh` upon startup takes ~10 sec for me on my laptop, where modules are not installed. With the following change, this now take ~1 sec. I believe the logic was inverted, as there's no reason to set `MODULEPATH` if modules isn't installed.\r\n\r\nAlso fixed the `setup-env.fish` file. The `setup-env.csh` file doesn't seem to have support for this. Should we add it? We should also add tests for this.",
+    "performed_via_github_app": null
+}

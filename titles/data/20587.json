@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20587",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20587/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20587/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20587/events",
+    "html_url": "https://github.com/spack/spack/pull/20587",
+    "id": 775584003,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ2MjM1NjIx",
+    "number": 20587,
+    "title": "nalu-wind: add variant for wind-utils",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-28T20:56:57Z",
+    "updated_at": "2020-12-30T17:07:45Z",
+    "closed_at": "2020-12-30T17:07:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20587",
+        "html_url": "https://github.com/spack/spack/pull/20587",
+        "diff_url": "https://github.com/spack/spack/pull/20587.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20587.patch"
+    },
+    "body": "* add `submodules=True` to `nalu-wind` `@master` version\r\n* add variant `wind-utils` to enable build of wind-utils (adds `-DENABLE_WIND_UTILS=ON` for CMake)\r\n\r\n@jrood-nrel @psakievich ",
+    "performed_via_github_app": null
+}

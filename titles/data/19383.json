@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19383",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19383/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19383/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19383/events",
+    "html_url": "https://github.com/spack/spack/pull/19383",
+    "id": 725137919,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA2NDE2NTM5",
+    "number": 19383,
+    "title": "quantum-espresso: fix build fail @6.6 and add conflicts a64fx.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-10-20T02:42:51Z",
+    "updated_at": "2020-10-21T15:03:55Z",
+    "closed_at": "2020-10-21T15:03:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19383",
+        "html_url": "https://github.com/spack/spack/pull/19383",
+        "diff_url": "https://github.com/spack/spack/pull/19383.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19383.patch"
+    },
+    "body": "When we specify FFT_LIBS to configure of quantum-espresso 6.6, fft related macro are not defined.\r\nand FFTXlib/fft_scalar.f90 is not compiled.\r\nThis PR fixed if FFTW_INCLUDE is defined, __FFTW is defined.\r\n\r\nquantum-espresso is cause internal compiler error when gcc 8 and a64fx.\r\n(gcc8 and thunderX2 is OK, I think that is gcc and SVE problem,)\r\nThis PR add conflicts when gcc8 and a64fx.\r\n",
+    "performed_via_github_app": null
+}

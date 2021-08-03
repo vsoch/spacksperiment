@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19514",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19514/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19514/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19514/events",
+    "html_url": "https://github.com/spack/spack/pull/19514",
+    "id": 729122783,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5NjY5MDA5",
+    "number": 19514,
+    "title": "Axom: update package.py",
+    "user": {
+        "login": "adityakavalur",
+        "id": 33232772,
+        "node_id": "MDQ6VXNlcjMzMjMyNzcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33232772?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adityakavalur",
+        "html_url": "https://github.com/adityakavalur",
+        "followers_url": "https://api.github.com/users/adityakavalur/followers",
+        "following_url": "https://api.github.com/users/adityakavalur/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adityakavalur/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adityakavalur/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adityakavalur/subscriptions",
+        "organizations_url": "https://api.github.com/users/adityakavalur/orgs",
+        "repos_url": "https://api.github.com/users/adityakavalur/repos",
+        "events_url": "https://api.github.com/users/adityakavalur/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adityakavalur/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-10-25T21:52:15Z",
+    "updated_at": "2021-01-28T02:12:37Z",
+    "closed_at": "2021-01-28T02:12:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19514",
+        "html_url": "https://github.com/spack/spack/pull/19514",
+        "diff_url": "https://github.com/spack/spack/pull/19514.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19514.patch"
+    },
+    "body": "For cray systems we need to pass the cray compilers rather than spack compilers. The check/method is the same as that adopted for spack package: conduit",
+    "performed_via_github_app": null
+}

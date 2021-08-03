@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19701",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19701/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19701/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19701/events",
+    "html_url": "https://github.com/spack/spack/pull/19701",
+    "id": 735049401,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE0NTA4OTcy",
+    "number": 19701,
+    "title": "llvm: add variant: llvm_dylib (LLVM_BUILD_LLVM_DYLIB:Bool)",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-11-03T06:15:00Z",
+    "updated_at": "2020-11-16T22:10:22Z",
+    "closed_at": "2020-11-16T22:10:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19701",
+        "html_url": "https://github.com/spack/spack/pull/19701",
+        "diff_url": "https://github.com/spack/spack/pull/19701.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19701.patch"
+    },
+    "body": "Add `llvm` variant:\r\n* `+llvm_dylib` adds `-DLLVM_BUILD_LLVM_DYLIB:Bool=ON` to the cmake args",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24307",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24307/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24307/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24307/events",
+    "html_url": "https://github.com/spack/spack/pull/24307",
+    "id": 920714854,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY5ODIyODY2",
+    "number": 24307,
+    "title": "paraver: rename package to wxparaver, add new versions and fix installation",
+    "user": {
+        "login": "hyviquel",
+        "id": 1702404,
+        "node_id": "MDQ6VXNlcjE3MDI0MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1702404?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hyviquel",
+        "html_url": "https://github.com/hyviquel",
+        "followers_url": "https://api.github.com/users/hyviquel/followers",
+        "following_url": "https://api.github.com/users/hyviquel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hyviquel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hyviquel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hyviquel/subscriptions",
+        "organizations_url": "https://api.github.com/users/hyviquel/orgs",
+        "repos_url": "https://api.github.com/users/hyviquel/repos",
+        "events_url": "https://api.github.com/users/hyviquel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hyviquel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-06-14T19:36:11Z",
+    "updated_at": "2021-06-19T17:06:20Z",
+    "closed_at": "2021-06-14T23:46:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24307",
+        "html_url": "https://github.com/spack/spack/pull/24307",
+        "diff_url": "https://github.com/spack/spack/pull/24307.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24307.patch"
+    },
+    "body": "Installation is working fine on my system for all versions except for v4.6.2 that does not have a global configure file. If someone could help me to write a specific configuration for this version bypassing basic verification of AutotoolsPackage. I already tried several things without success. Here is the current error:\r\n```\r\n/home/hyviquel/Workspace/repos/spack/lib/spack/spack/build_systems/autotools.py:300, in set_configure_or_die:\r\n        297        \"\"\"\r\n        298        # Check if a configure script is there. If not raise a RuntimeError.\r\n        299        if not os.path.exists(self.configure_abs_path):\r\n  >>    300            msg = 'configure script not found in {0}'\r\n        301            raise RuntimeError(msg.format(self.configure_directory))\r\n        302\r\n        303        # Monkey-patch the configure script in the corresponding module\r\n```\r\n\r\nAn alternative would be to remove this version from the list.\r\n\r\nCloses #13643",
+    "performed_via_github_app": null
+}

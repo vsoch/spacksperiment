@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23079",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23079/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23079/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23079/events",
+    "html_url": "https://github.com/spack/spack/pull/23079",
+    "id": 861004687,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE3NzQ1NzY4",
+    "number": 23079,
+    "title": "amp: cleanup of the recipe",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-19T07:39:01Z",
+    "updated_at": "2021-05-06T15:12:10Z",
+    "closed_at": "2021-05-06T15:10:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23079",
+        "html_url": "https://github.com/spack/spack/pull/23079",
+        "diff_url": "https://github.com/spack/spack/pull/23079.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23079.patch"
+    },
+    "body": "Recipe was not verified with a build, but it was wrong in many ways, e.g. referring to non-existing variants or missing dependencies.\r\n\r\nIssues have been found by using the prototype tool in #23053 which returns:\r\n```console\r\n% spack  audit packages --name=amp\r\nPKG-DIRECTIVES: 7 issues found\r\n1. amp: wrong variant in \"depends_on\" directive\r\n    'boost'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n2. amp: wrong variant in \"depends_on\" directive\r\n    'petsc'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n3. amp: wrong variant in \"depends_on\" directive\r\n    'trilinos'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n4. amp: wrong variant in \"depends_on\" directive\r\n    'hdf5'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n5. amp: wrong variant in \"depends_on\" directive\r\n    'silo'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n6. amp: wrong variant in \"depends_on\" directive\r\n    'zlib'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n7. amp: wrong variant in \"depends_on\" directive\r\n    'mpi'\r\n    in /Users/culpo/PycharmProjects/spack/var/spack/repos/builtin/packages/amp/package.py\r\n``` ",
+    "performed_via_github_app": null
+}

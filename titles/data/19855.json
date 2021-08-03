@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19855",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19855/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19855/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19855/events",
+    "html_url": "https://github.com/spack/spack/pull/19855",
+    "id": 740419637,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE4OTExNDYz",
+    "number": 19855,
+    "title": "py-matplotlib: set LIBRARY_PATH to locate link deps",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-11T03:08:49Z",
+    "updated_at": "2020-11-12T20:51:21Z",
+    "closed_at": "2020-11-12T20:50:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19855",
+        "html_url": "https://github.com/spack/spack/pull/19855",
+        "diff_url": "https://github.com/spack/spack/pull/19855.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19855.patch"
+    },
+    "body": "Fixes #19843 \r\n\r\n@joequant can you test this?\r\n\r\nAlso adds v3.3.3: https://github.com/matplotlib/matplotlib/releases/tag/v3.3.3",
+    "performed_via_github_app": null
+}

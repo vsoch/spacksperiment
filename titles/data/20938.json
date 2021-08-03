@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20938",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20938/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20938/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20938/events",
+    "html_url": "https://github.com/spack/spack/pull/20938",
+    "id": 786918850,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU1NzE4Njg0",
+    "number": 20938,
+    "title": "amrex: Remove build_type variant",
+    "user": {
+        "login": "eschnett",
+        "id": 213514,
+        "node_id": "MDQ6VXNlcjIxMzUxNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/213514?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eschnett",
+        "html_url": "https://github.com/eschnett",
+        "followers_url": "https://api.github.com/users/eschnett/followers",
+        "following_url": "https://api.github.com/users/eschnett/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eschnett/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eschnett/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eschnett/subscriptions",
+        "organizations_url": "https://api.github.com/users/eschnett/orgs",
+        "repos_url": "https://api.github.com/users/eschnett/repos",
+        "events_url": "https://api.github.com/users/eschnett/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eschnett/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-15T14:02:31Z",
+    "updated_at": "2021-01-20T13:58:24Z",
+    "closed_at": "2021-01-19T18:17:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20938",
+        "html_url": "https://github.com/spack/spack/pull/20938",
+        "diff_url": "https://github.com/spack/spack/pull/20938.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20938.patch"
+    },
+    "body": "This variant is already provided by CMakePackage.",
+    "performed_via_github_app": null
+}

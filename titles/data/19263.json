@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19263",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19263/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19263/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19263/events",
+    "html_url": "https://github.com/spack/spack/pull/19263",
+    "id": 719153850,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxMzkyMjQx",
+    "number": 19263,
+    "title": "Add new package: parabricks/GenomeWorks",
+    "user": {
+        "login": "dunatotatos",
+        "id": 6135895,
+        "node_id": "MDQ6VXNlcjYxMzU4OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6135895?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dunatotatos",
+        "html_url": "https://github.com/dunatotatos",
+        "followers_url": "https://api.github.com/users/dunatotatos/followers",
+        "following_url": "https://api.github.com/users/dunatotatos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dunatotatos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dunatotatos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dunatotatos/subscriptions",
+        "organizations_url": "https://api.github.com/users/dunatotatos/orgs",
+        "repos_url": "https://api.github.com/users/dunatotatos/repos",
+        "events_url": "https://api.github.com/users/dunatotatos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dunatotatos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-10-12T07:52:17Z",
+    "updated_at": "2020-10-16T08:17:34Z",
+    "closed_at": "2020-10-16T08:17:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19263",
+        "html_url": "https://github.com/spack/spack/pull/19263",
+        "diff_url": "https://github.com/spack/spack/pull/19263.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19263.patch"
+    },
+    "body": "The dependencies match the requirements on the GitHub repo: https://github.com/clara-parabricks/GenomeWorks\r\nExcept CUDA which is bumped to @11, for 2 reasons:\r\n- Cuda <11 can only be compiled with gcc@4.8.5 on RHEL 7, but GenomeWorks requires gcc@5.4.0:\r\n- the provided patch to ignore CUB only works with Cuda@11",
+    "performed_via_github_app": null
+}

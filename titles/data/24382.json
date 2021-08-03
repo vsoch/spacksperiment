@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24382",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24382/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24382/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24382/events",
+    "html_url": "https://github.com/spack/spack/pull/24382",
+    "id": 924103706,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjcyNzg4MDMx",
+    "number": 24382,
+    "title": "Updated lock tests to skip on Windows",
+    "user": {
+        "login": "stephencrowell",
+        "id": 85647068,
+        "node_id": "MDQ6VXNlcjg1NjQ3MDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85647068?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stephencrowell",
+        "html_url": "https://github.com/stephencrowell",
+        "followers_url": "https://api.github.com/users/stephencrowell/followers",
+        "following_url": "https://api.github.com/users/stephencrowell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stephencrowell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stephencrowell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stephencrowell/subscriptions",
+        "organizations_url": "https://api.github.com/users/stephencrowell/orgs",
+        "repos_url": "https://api.github.com/users/stephencrowell/repos",
+        "events_url": "https://api.github.com/users/stephencrowell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stephencrowell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-17T16:11:08Z",
+    "updated_at": "2021-07-09T21:33:29Z",
+    "closed_at": "2021-07-09T21:33:29Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24382",
+        "html_url": "https://github.com/spack/spack/pull/24382",
+        "diff_url": "https://github.com/spack/spack/pull/24382.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24382.patch"
+    },
+    "body": "Added a comment about the test failing even during a skip. This may or may not be an actual issue, but seemed like something to document for future developers.",
+    "performed_via_github_app": null
+}

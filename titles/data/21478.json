@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21478",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21478/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21478/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21478/events",
+    "html_url": "https://github.com/spack/spack/pull/21478",
+    "id": 800928683,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY3MzMyMjI3",
+    "number": 21478,
+    "title": "mpas-model: add a necessary resource",
+    "user": {
+        "login": "m-shunji",
+        "id": 76516098,
+        "node_id": "MDQ6VXNlcjc2NTE2MDk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/76516098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/m-shunji",
+        "html_url": "https://github.com/m-shunji",
+        "followers_url": "https://api.github.com/users/m-shunji/followers",
+        "following_url": "https://api.github.com/users/m-shunji/following{/other_user}",
+        "gists_url": "https://api.github.com/users/m-shunji/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/m-shunji/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/m-shunji/subscriptions",
+        "organizations_url": "https://api.github.com/users/m-shunji/orgs",
+        "repos_url": "https://api.github.com/users/m-shunji/repos",
+        "events_url": "https://api.github.com/users/m-shunji/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/m-shunji/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475567363,
+            "node_id": "MDU6TGFiZWw0NzU1NjczNjM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/resources",
+            "name": "resources",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-04T04:51:14Z",
+    "updated_at": "2021-02-07T11:47:55Z",
+    "closed_at": "2021-02-07T11:47:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21478",
+        "html_url": "https://github.com/spack/spack/pull/21478",
+        "diff_url": "https://github.com/spack/spack/pull/21478.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21478.patch"
+    },
+    "body": "The current mpas-model package requires fetching an additional resource from the Internet if we don't have it.\r\nThis PR adds the resource so that we don't need Internet access during the building procedure.\r\n",
+    "performed_via_github_app": null
+}

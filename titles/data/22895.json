@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22895",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22895/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22895/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22895/events",
+    "html_url": "https://github.com/spack/spack/pull/22895",
+    "id": 854420774,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyMzY3NzY2",
+    "number": 22895,
+    "title": "Bootstrap fix compiler flags being passed to linker",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2542559486,
+            "node_id": "MDU6TGFiZWwyNTQyNTU5NDg2",
+            "url": "https://api.github.com/repos/spack/spack/labels/bootstrap",
+            "name": "bootstrap",
+            "color": "743ec4",
+            "default": false,
+            "description": "Issues occurring while spack builds its own dependencies."
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-09T11:06:15Z",
+    "updated_at": "2021-04-12T21:15:06Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22895",
+        "html_url": "https://github.com/spack/spack/pull/22895",
+        "diff_url": "https://github.com/spack/spack/pull/22895.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22895.patch"
+    },
+    "body": "These flags are not linker flags but gcc flags:\n\n```\n$ ld -static-libstdc++\nld: unrecognized -a option `tic-libstdc++'\n```\n\n\n\n",
+    "performed_via_github_app": null
+}

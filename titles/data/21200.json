@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21200",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21200/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21200/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21200/events",
+    "html_url": "https://github.com/spack/spack/pull/21200",
+    "id": 791387022,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU5NDU0OTQ5",
+    "number": 21200,
+    "title": "cuda: add installation workaround for version 10.1.243 on ppc64le",
+    "user": {
+        "login": "jonglezb",
+        "id": 30461003,
+        "node_id": "MDQ6VXNlcjMwNDYxMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30461003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jonglezb",
+        "html_url": "https://github.com/jonglezb",
+        "followers_url": "https://api.github.com/users/jonglezb/followers",
+        "following_url": "https://api.github.com/users/jonglezb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jonglezb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jonglezb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jonglezb/subscriptions",
+        "organizations_url": "https://api.github.com/users/jonglezb/orgs",
+        "repos_url": "https://api.github.com/users/jonglezb/repos",
+        "events_url": "https://api.github.com/users/jonglezb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jonglezb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-21T18:16:50Z",
+    "updated_at": "2021-01-22T22:27:34Z",
+    "closed_at": "2021-01-22T22:27:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21200",
+        "html_url": "https://github.com/spack/spack/pull/21200",
+        "diff_url": "https://github.com/spack/spack/pull/21200.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21200.patch"
+    },
+    "body": "Fixes #21170",
+    "performed_via_github_app": null
+}

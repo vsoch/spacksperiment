@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19506",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19506/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19506/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19506/events",
+    "html_url": "https://github.com/spack/spack/pull/19506",
+    "id": 728635346,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5MzA5ODM1",
+    "number": 19506,
+    "title": "New package: Intel OneAPI",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 512483406,
+            "node_id": "MDU6TGFiZWw1MTI0ODM0MDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-high",
+            "name": "impact-high",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-10-24T02:21:50Z",
+    "updated_at": "2021-01-09T00:30:52Z",
+    "closed_at": "2021-01-09T00:30:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19506",
+        "html_url": "https://github.com/spack/spack/pull/19506",
+        "diff_url": "https://github.com/spack/spack/pull/19506.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19506.patch"
+    },
+    "body": "This includes the `icx`/`ifx` executables. and is intended to \r\n\r\nThis is similar to https://github.com/spack/spack/pull/19033 but differs in that this is a separate package rather than exposed as a new version of `intel`. This package does not appear to have the same requirements so it looked like it could be separated out.\r\n\r\nAt least one concern brought up by @rscohn2 was that both this and and Spack's `intel` package provide `icc` executables, so it may be confusing for users who want to install `icc`. I think this could be resolved by adding an `icc` virtual (provided by `intel` and `intel-oneapi`).\r\n\r\n@rscohn I had a couple questions:\r\n\r\n* Is `icc` distinct from `icx` (i.e. do they produce different compiled executables)?\r\n* If the answer to the first question is \"no\", will `icx` be completely replacing `icc` at some point in the future?\r\n\r\nTODOs\r\n\r\n- [ ] I may need to tweak this to support bootstrapping of compiler installs (so that `spack install foo%intel-oneapi` will automatically install `intel-oneapi`\r\n\r\nSee also: https://github.com/spack/spack/pull/19330 (which adds the compiler definition)",
+    "performed_via_github_app": null
+}

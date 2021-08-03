@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20546",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20546/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20546/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20546/events",
+    "html_url": "https://github.com/spack/spack/pull/20546",
+    "id": 774550717,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ1NDU2NTA2",
+    "number": 20546,
+    "title": "fftw: PGI compiler has trouble with avx2/avx-512 SIMD support ",
+    "user": {
+        "login": "quellyn",
+        "id": 33294773,
+        "node_id": "MDQ6VXNlcjMzMjk0Nzcz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33294773?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/quellyn",
+        "html_url": "https://github.com/quellyn",
+        "followers_url": "https://api.github.com/users/quellyn/followers",
+        "following_url": "https://api.github.com/users/quellyn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quellyn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/quellyn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quellyn/subscriptions",
+        "organizations_url": "https://api.github.com/users/quellyn/orgs",
+        "repos_url": "https://api.github.com/users/quellyn/repos",
+        "events_url": "https://api.github.com/users/quellyn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/quellyn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2431484299,
+            "node_id": "MDU6TGFiZWwyNDMxNDg0Mjk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/nvhpc",
+            "name": "nvhpc",
+            "color": "e0641d",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616910686,
+            "node_id": "MDU6TGFiZWw2MTY5MTA2ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pgi",
+            "name": "pgi",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-24T20:11:17Z",
+    "updated_at": "2021-01-06T17:35:02Z",
+    "closed_at": "2020-12-25T04:33:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20546",
+        "html_url": "https://github.com/spack/spack/pull/20546",
+        "diff_url": "https://github.com/spack/spack/pull/20546.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20546.patch"
+    },
+    "body": "There appears to be a [long-standing bug](https://github.com/FFTW/fftw3/issues/78) that prevents compilation of `fftw` with PGI if either the `avx2` or `avx512` SIMD features are enabled.\r\n\r\nI confirmed this using PGI 19.7 on an Intel Skylake node. See the attached [Spack build output](https://github.com/spack/spack/files/5740447/spack-build-out_fftw-BROKEN.txt) for details.\r\n\r\nThis patch simply disables both of these features when `pgi` is in use.",
+    "performed_via_github_app": null
+}

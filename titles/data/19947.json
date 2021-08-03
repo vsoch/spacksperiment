@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19947",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19947/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19947/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19947/events",
+    "html_url": "https://github.com/spack/spack/pull/19947",
+    "id": 744204649,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIxOTY5OTA1",
+    "number": 19947,
+    "title": "[pythia6] needs CFLAGS/FFLAGS=-fcommon when %gcc@10:",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-16T21:31:14Z",
+    "updated_at": "2020-11-16T23:30:55Z",
+    "closed_at": "2020-11-16T22:12:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19947",
+        "html_url": "https://github.com/spack/spack/pull/19947",
+        "diff_url": "https://github.com/spack/spack/pull/19947.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19947.patch"
+    },
+    "body": "Pythia6 uses fortran common blocks which are now [by default disallowed in gcc-10](https://gcc.gnu.org/gcc-10/porting_to.html). In this particular case, the common blocks are in e.g. pydata.f:\r\n```fortran\r\nCOMMON/PYDAT1/MSTU(200),PARU(200),MSTJ(200),PARJ(200)\r\n```\r\nand collected in pythia6_common_address.c:\r\n```c\r\nint pydat1[200+2*200+200+2*200];\r\n```\r\nThis fix adds `CFLAGS=-fcommon` and `FFLAGS=-fcommon` (both are needed) to the build environment for gcc-10 or later.\r\n\r\nAn alternative fix (adding `extern` in all relevant lines in `pythia6_common_address.c`) would have required a patch and some more testing, but I'm happy to implement that instead if requested. Since pythia6 is unmaintained, there won't be any future releases to invalidate the patch.\r\n\r\nNo maintainer to tag.",
+    "performed_via_github_app": null
+}

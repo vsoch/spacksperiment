@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20550",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20550/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20550/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20550/events",
+    "html_url": "https://github.com/spack/spack/pull/20550",
+    "id": 774653112,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ1NTMzMzYw",
+    "number": 20550,
+    "title": "dpdk: add conflicts('target=aarch64:')",
+    "user": {
+        "login": "h-denpo",
+        "id": 57649496,
+        "node_id": "MDQ6VXNlcjU3NjQ5NDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57649496?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/h-denpo",
+        "html_url": "https://github.com/h-denpo",
+        "followers_url": "https://api.github.com/users/h-denpo/followers",
+        "following_url": "https://api.github.com/users/h-denpo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/h-denpo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/h-denpo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/h-denpo/subscriptions",
+        "organizations_url": "https://api.github.com/users/h-denpo/orgs",
+        "repos_url": "https://api.github.com/users/h-denpo/repos",
+        "events_url": "https://api.github.com/users/h-denpo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/h-denpo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-25T06:50:07Z",
+    "updated_at": "2021-03-09T07:42:41Z",
+    "closed_at": "2020-12-25T22:43:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20550",
+        "html_url": "https://github.com/spack/spack/pull/20550",
+        "diff_url": "https://github.com/spack/spack/pull/20550.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20550.patch"
+    },
+    "body": "Dpdk is not supported on aarch64.\r\nhttps://core.dpdk.org/supported/cpus/arm/\r\n\r\n> BlueField\r\n> DPAA\r\n> DPAA2\r\n> OCTEON TX\r\n> OCTEON TX2",
+    "performed_via_github_app": null
+}

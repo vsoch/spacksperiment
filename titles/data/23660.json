@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23660",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23660/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23660/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23660/events",
+    "html_url": "https://github.com/spack/spack/pull/23660",
+    "id": 892540550,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ1MjIwNDk1",
+    "number": 23660,
+    "title": "installation: make install output more useful",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-05-15T21:12:06Z",
+    "updated_at": "2021-05-21T07:46:28Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23660",
+        "html_url": "https://github.com/spack/spack/pull/23660",
+        "diff_url": "https://github.com/spack/spack/pull/23660.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23660.patch"
+    },
+    "body": "- [x] We used to print out where source code was staged. Bring this back.\r\n- [x] Simplify message when binaries are not found (we don't need the name/hash)\r\n- [x] Clean up warning when modules are not regenerated. Users are distracted by this; they think there is an issue. Make it a simple message with instructions to regenerate.\r\n\r\nBefore:\r\n\r\n```\r\n==> Installing zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n==> No binary for zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach found: installing from source\r\n==> Using cached archive: /Users/gamblin2/Workspace/spack/var/spack/cache/_source-cache/archive/c3/c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1.tar.gz\r\n==> No patches needed for zlib\r\n==> zlib: Executing phase: 'install'\r\n==> Warning: Module file already exists : skipping creation\r\nfile : /Users/gamblin2/Workspace/spack/share/spack/modules/darwin-catalina-skylake/zlib-1.2.11-apple-clang-12.0.0-f7owbzf\r\nspec : zlib@1.2.11%apple-clang@12.0.0+optimize+pic+shared arch=darwin-catalina-skylake\r\n==> zlib: Successfully installed zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n  Fetch: 0.00s.  Build: 3.65s.  Total: 3.66s.\r\n[+] /Users/gamblin2/Workspace/spack/opt/spack/darwin-catalina-skylake/apple-clang-12.0.0/zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n```\r\n\r\nAfter:\r\n\r\n```\r\n==> Installing zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n==> No binary found, installing from source\r\n==> Using cached archive: /Users/gamblin2/Workspace/spack/var/spack/cache/_source-cache/archive/c3/c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1.tar.gz\r\n==> Source code staged at: /var/folders/0s/q_y0zhfj6xdd5n7rn780zz6h001qr7/T/gamblin2/spack-stage/spack-stage-zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n==> No patches needed for zlib\r\n==> zlib: Executing phase: 'install'\r\n==> Module file exists; won't overwrite. Use `spack module` to refresh.\r\n==> zlib: Successfully installed zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n  Fetch: 0.00s.  Build: 3.22s.  Total: 3.22s.\r\n[+] /Users/gamblin2/Workspace/spack/opt/spack/darwin-catalina-skylake/apple-clang-12.0.0/zlib-1.2.11-f7owbzfu4zsr6yn7x7hljransoof6ach\r\n```",
+    "performed_via_github_app": null
+}

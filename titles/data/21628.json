@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21628",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21628/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21628/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21628/events",
+    "html_url": "https://github.com/spack/spack/pull/21628",
+    "id": 806584157,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcxOTc3OTUz",
+    "number": 21628,
+    "title": "Update to py-numpy for pristine environments",
+    "user": {
+        "login": "scrappinak",
+        "id": 5692973,
+        "node_id": "MDQ6VXNlcjU2OTI5NzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5692973?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scrappinak",
+        "html_url": "https://github.com/scrappinak",
+        "followers_url": "https://api.github.com/users/scrappinak/followers",
+        "following_url": "https://api.github.com/users/scrappinak/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scrappinak/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scrappinak/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scrappinak/subscriptions",
+        "organizations_url": "https://api.github.com/users/scrappinak/orgs",
+        "repos_url": "https://api.github.com/users/scrappinak/repos",
+        "events_url": "https://api.github.com/users/scrappinak/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scrappinak/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-02-11T17:13:50Z",
+    "updated_at": "2021-02-11T18:00:40Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21628",
+        "html_url": "https://github.com/spack/spack/pull/21628",
+        "diff_url": "https://github.com/spack/spack/pull/21628.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21628.patch"
+    },
+    "body": "In the builtin package for numpy, when using intel, a check of the\r\nunderlying gcc version is performed. This breaks spack in a pristine\r\nenvironment as spack does not load compiler modules during the setup\r\nphase of building a module. There is no clean work around for this\r\nand so we'll just rip out the check. If an environment is incorporating\r\ngcc < 4.8 then there are likely larger issues, anyway.",
+    "performed_via_github_app": null
+}

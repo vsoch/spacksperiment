@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21192",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21192/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21192/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21192/events",
+    "html_url": "https://github.com/spack/spack/pull/21192",
+    "id": 790923395,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU5MDYwNzUx",
+    "number": 21192,
+    "title": "Add Quantum ESPRESSO version 6.7.",
+    "user": {
+        "login": "greschd",
+        "id": 5692808,
+        "node_id": "MDQ6VXNlcjU2OTI4MDg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5692808?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/greschd",
+        "html_url": "https://github.com/greschd",
+        "followers_url": "https://api.github.com/users/greschd/followers",
+        "following_url": "https://api.github.com/users/greschd/following{/other_user}",
+        "gists_url": "https://api.github.com/users/greschd/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/greschd/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/greschd/subscriptions",
+        "organizations_url": "https://api.github.com/users/greschd/orgs",
+        "repos_url": "https://api.github.com/users/greschd/repos",
+        "events_url": "https://api.github.com/users/greschd/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/greschd/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-21T10:36:13Z",
+    "updated_at": "2021-01-22T09:15:01Z",
+    "closed_at": "2021-01-22T08:58:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21192",
+        "html_url": "https://github.com/spack/spack/pull/21192",
+        "diff_url": "https://github.com/spack/spack/pull/21192.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21192.patch"
+    },
+    "body": "Adds the 6.7 release for package `quantum-espresso`. Since the git tag used to publish this version has a suffix `MaX-Release`, the `url` needs to be explicitly specified for this version.\r\n\r\nFor previous versions there were both tags with and without the `MaX` suffix, but according to information on the mailing list [1] this is the final release for 6.7.\r\n\r\nThe patch https://gitlab.com/QEF/q-e/-/commit/cf1fedefc20d39f5cd7551ded700ea4c77ad6e8f.diff which was applied on 6.6 is now included in the release, and is not necessary for this version.\r\n\r\nBesides installing it locally I haven't done any manual testing, is there anything else that should be done?\r\n\r\n[1] https://www.mail-archive.com/users@lists.quantum-espresso.org/msg39828.html\r\n\r\n@naromero77, thanks for maintaining this package.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24189",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24189/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24189/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24189/events",
+    "html_url": "https://github.com/spack/spack/pull/24189",
+    "id": 913942957,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYzOTAzNDA4",
+    "number": 24189,
+    "title": "gatk: make r a variant",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-07T20:48:42Z",
+    "updated_at": "2021-06-09T18:57:08Z",
+    "closed_at": "2021-06-08T09:08:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24189",
+        "html_url": "https://github.com/spack/spack/pull/24189",
+        "diff_url": "https://github.com/spack/spack/pull/24189.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24189.patch"
+    },
+    "body": "According to the docs, r is needed for plotting, but plotting is\r\nuntested. In addition, the specific version requirement of java for gatk\r\ncould lead to multiple installations of r being triggered in an\r\nenvironment. That might cause people to have to be deliberate about\r\njava in a deployment. All in all, it seems that r is better as a\r\nvariant for gatk.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20006",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20006/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20006/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20006/events",
+    "html_url": "https://github.com/spack/spack/pull/20006",
+    "id": 746932953,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI0MjM4OTM4",
+    "number": 20006,
+    "title": "WRF: Fixes compile time errors",
+    "user": {
+        "login": "MichaelLaufer",
+        "id": 70094649,
+        "node_id": "MDQ6VXNlcjcwMDk0NjQ5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/70094649?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MichaelLaufer",
+        "html_url": "https://github.com/MichaelLaufer",
+        "followers_url": "https://api.github.com/users/MichaelLaufer/followers",
+        "following_url": "https://api.github.com/users/MichaelLaufer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MichaelLaufer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MichaelLaufer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MichaelLaufer/subscriptions",
+        "organizations_url": "https://api.github.com/users/MichaelLaufer/orgs",
+        "repos_url": "https://api.github.com/users/MichaelLaufer/repos",
+        "events_url": "https://api.github.com/users/MichaelLaufer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MichaelLaufer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-11-19T21:21:13Z",
+    "updated_at": "2020-12-01T22:22:38Z",
+    "closed_at": "2020-12-01T22:21:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20006",
+        "html_url": "https://github.com/spack/spack/pull/20006",
+        "diff_url": "https://github.com/spack/spack/pull/20006.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20006.patch"
+    },
+    "body": "Fixes a couple of bugs introduced in  #19882 \r\n- result_buf was not receiving the build output, so the run_compile_script function always returned false.\r\n\r\nNote: this was checked for V4.2. \r\nV3.9.1.1 may also require a followup. \r\n@ptooley please take a look :) \r\n",
+    "performed_via_github_app": null
+}

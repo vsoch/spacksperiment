@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23470",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23470/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23470/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23470/events",
+    "html_url": "https://github.com/spack/spack/pull/23470",
+    "id": 877433877,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjMxMzg5ODMz",
+    "number": 23470,
+    "title": "Fixes for cray-mpich on Alps/Eiger",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-06T12:15:59Z",
+    "updated_at": "2021-05-18T08:53:13Z",
+    "closed_at": "2021-05-18T08:25:15Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23470",
+        "html_url": "https://github.com/spack/spack/pull/23470",
+        "diff_url": "https://github.com/spack/spack/pull/23470.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23470.patch"
+    },
+    "body": "Ping @dev-zero\r\n\r\nNote that this does not fix the warning mentioned in #23445, but it gets the right path through the `external_prefix` property (similar to cray-libsci/package.py).\r\n\r\n```\r\n$ ./spack/bin/spack -e . python -c \"from spack.spec import Spec; x = Spec('cray-mpich'); x.concretize(); x['cray-mpich:f90'].libs\"\r\n==> Warning: Extracted path from module does not exist [module=cray-mpich/8.1.4, path=/opt/cray/pe/mpich/8.1.4/gtl/lib\")]\r\nLibraryList(['/opt/cray/pe/mpich/8.1.4/ofi/aocc/2.2/lib/libmpich.so', '/opt/cray/pe/mpich/8.1.4/ofi/aocc/2.2/lib/libmpichf90.so'])\r\n```\r\n\r\nThe above warning is gone after #23472",
+    "performed_via_github_app": null
+}

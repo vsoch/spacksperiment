@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20330",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20330/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20330/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20330/events",
+    "html_url": "https://github.com/spack/spack/pull/20330",
+    "id": 761717021,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM2MzQyMjAx",
+    "number": 20330,
+    "title": "comgr: disable hip compile test from /opt/rocm",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-12-10T23:41:25Z",
+    "updated_at": "2020-12-15T12:56:16Z",
+    "closed_at": "2020-12-15T12:55:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20330",
+        "html_url": "https://github.com/spack/spack/pull/20330",
+        "diff_url": "https://github.com/spack/spack/pull/20330.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20330.patch"
+    },
+    "body": "Fixes #20132\r\n\r\nFilter comgr/test/CMakeLists.txt to remove 'PATHS /opt/rocm/hip' from\r\nfind_package().  Spack should not be using /opt/rocm, and this breaks\r\nthe build when /opt/rocm exitst.\r\n\r\nTighten the cmake dependency versions.\r\n\r\nping @srekolam @haampie for review.\r\n\r\n----------\r\n\r\nThe effect of filter_file on test/CMakeLists.txt is this diff:\r\n\r\n```\r\n--- CMakeLists.txt~\t2020-12-10 17:12:07.066654363 -0600\r\n+++ CMakeLists.txt\t2020-12-10 17:12:07.066654363 -0600\r\n@@ -119,7 +119,7 @@\r\n add_comgr_test(include_subdirectory_test)\r\n add_comgr_test(options_test)\r\n # Test : Compile HIP only if HIP-Clang is installed.\r\n-find_package(hip CONFIG PATHS /opt/rocm/hip QUIET)\r\n+find_package(hip CONFIG  QUIET)\r\n if (DEFINED HIP_COMPILER AND \"${HIP_COMPILER}\" STREQUAL \"clang\")\r\n   add_comgr_test(compile_hip_test)\r\n   add_comgr_test(compile_hip_test_in_process)\r\n```",
+    "performed_via_github_app": null
+}

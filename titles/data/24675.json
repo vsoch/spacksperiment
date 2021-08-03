@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24675",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24675/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24675/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24675/events",
+    "html_url": "https://github.com/spack/spack/pull/24675",
+    "id": 935943368,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgyNzc1MjI0",
+    "number": 24675,
+    "title": "make --enable-locks actually enable locks",
+    "user": {
+        "login": "dylex",
+        "id": 106587,
+        "node_id": "MDQ6VXNlcjEwNjU4Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106587?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dylex",
+        "html_url": "https://github.com/dylex",
+        "followers_url": "https://api.github.com/users/dylex/followers",
+        "following_url": "https://api.github.com/users/dylex/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dylex/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dylex/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dylex/subscriptions",
+        "organizations_url": "https://api.github.com/users/dylex/orgs",
+        "repos_url": "https://api.github.com/users/dylex/repos",
+        "events_url": "https://api.github.com/users/dylex/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dylex/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3092446637,
+            "node_id": "MDU6TGFiZWwzMDkyNDQ2NjM3",
+            "url": "https://api.github.com/repos/spack/spack/labels/core",
+            "name": "core",
+            "color": "215A80",
+            "default": false,
+            "description": "PR affects Spack core functionality"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-02T17:18:09Z",
+    "updated_at": "2021-07-02T17:35:39Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24675",
+        "html_url": "https://github.com/spack/spack/pull/24675",
+        "diff_url": "https://github.com/spack/spack/pull/24675.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24675.patch"
+    },
+    "body": "Instead of disabling them. (I won't admit how much time this cost me.)",
+    "performed_via_github_app": null
+}

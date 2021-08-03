@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20582",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20582/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20582/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20582/events",
+    "html_url": "https://github.com/spack/spack/pull/20582",
+    "id": 775465107,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ2MTQyOTc3",
+    "number": 20582,
+    "title": "Update NEURON simulator package : new versions and cmake build system",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 26,
+    "created_at": "2020-12-28T15:51:16Z",
+    "updated_at": "2021-01-26T22:05:49Z",
+    "closed_at": "2021-01-19T08:42:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20582",
+        "html_url": "https://github.com/spack/spack/pull/20582",
+        "diff_url": "https://github.com/spack/spack/pull/20582.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20582.patch"
+    },
+    "body": "* Newer version of NEURON supports CMake (preferred build system)\r\n* Updated recipe for CMake, still keep autotools for older versions\r\n* Updated variants and dependencies\r\n* Removed legacy bluegene options\r\n* Added CoreNEURON variant (CPU only for now)\r\n* Added patch for last release 7.8.2  (see neuronsimulator/nrn/pull/831)\r\n* Added maintainers \r\n\r\n\r\n(see neuronsimulator/nrn/issues/886)\r\n",
+    "performed_via_github_app": null
+}

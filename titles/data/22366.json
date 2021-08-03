@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22366",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22366/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22366/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22366/events",
+    "html_url": "https://github.com/spack/spack/pull/22366",
+    "id": 834171174,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk1MDQ1MjM1",
+    "number": 22366,
+    "title": "root/intel-tbb interaction",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-17T20:55:47Z",
+    "updated_at": "2021-03-19T13:03:55Z",
+    "closed_at": "2021-03-18T23:19:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22366",
+        "html_url": "https://github.com/spack/spack/pull/22366",
+        "diff_url": "https://github.com/spack/spack/pull/22366.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22366.patch"
+    },
+    "body": "root 6.22 does not work with intel-tbb 2021.1.1.\r\n\r\nSo:\r\n* Introduce `conflicts()`\r\n  (a fitting depends_on in the comments, but does not help with the classic conretizer.)\r\n* Mark 2020.3 as preferred to help concretizer, when newer\r\n  versions come up.\r\n* Previous discussion:\r\n  https://github.com/spack/spack/pull/22263#issuecomment-797606475\r\n* Relevant ROOT issue:\r\n  https://github.com/root-project/root/issues/6933\r\n\r\nMaintainer-ping: @chissg, @HadrienG2, @drbenmorgan, @vvolkl",
+    "performed_via_github_app": null
+}

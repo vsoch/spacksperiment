@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24202",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24202/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24202/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24202/events",
+    "html_url": "https://github.com/spack/spack/pull/24202",
+    "id": 915180281,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY1MDI2Njc0",
+    "number": 24202,
+    "title": "pumi: support building tests",
+    "user": {
+        "login": "cwsmith",
+        "id": 1024438,
+        "node_id": "MDQ6VXNlcjEwMjQ0Mzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1024438?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cwsmith",
+        "html_url": "https://github.com/cwsmith",
+        "followers_url": "https://api.github.com/users/cwsmith/followers",
+        "following_url": "https://api.github.com/users/cwsmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cwsmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cwsmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cwsmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/cwsmith/orgs",
+        "repos_url": "https://api.github.com/users/cwsmith/repos",
+        "events_url": "https://api.github.com/users/cwsmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cwsmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-08T15:32:31Z",
+    "updated_at": "2021-06-09T00:28:35Z",
+    "closed_at": "2021-06-09T00:28:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24202",
+        "html_url": "https://github.com/spack/spack/pull/24202",
+        "diff_url": "https://github.com/spack/spack/pull/24202.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24202.patch"
+    },
+    "body": "This PR adds a cmake flag to build pumi tests and fixes the sub directory path to the meshes git submodule.",
+    "performed_via_github_app": null
+}

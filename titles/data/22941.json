@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22941",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22941/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22941/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22941/events",
+    "html_url": "https://github.com/spack/spack/pull/22941",
+    "id": 856200071,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEzODE3MjQz",
+    "number": 22941,
+    "title": "Fix intersection if a version is a prefix of another",
+    "user": {
+        "login": "BenWeber42",
+        "id": 7927333,
+        "node_id": "MDQ6VXNlcjc5MjczMzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7927333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BenWeber42",
+        "html_url": "https://github.com/BenWeber42",
+        "followers_url": "https://api.github.com/users/BenWeber42/followers",
+        "following_url": "https://api.github.com/users/BenWeber42/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BenWeber42/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BenWeber42/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BenWeber42/subscriptions",
+        "organizations_url": "https://api.github.com/users/BenWeber42/orgs",
+        "repos_url": "https://api.github.com/users/BenWeber42/repos",
+        "events_url": "https://api.github.com/users/BenWeber42/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BenWeber42/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-12T17:39:45Z",
+    "updated_at": "2021-04-28T14:28:09Z",
+    "closed_at": "2021-04-28T14:28:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22941",
+        "html_url": "https://github.com/spack/spack/pull/22941",
+        "diff_url": "https://github.com/spack/spack/pull/22941.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22941.patch"
+    },
+    "body": "Intersection of versions currently seems broken for cases where one version is a prefix of another:\r\n\r\n```bash\r\n$ spack python\r\nSpack version 0.16.1\r\nPython 3.9.2, Linux x86_64\r\n>>> from spack.version import ver\r\n>>> ver(\"11.2\").satisfies(ver(\"11\"))\r\nTrue\r\n>>> ver(\"11\").satisfies(ver(\"11.2\"))\r\nFalse\r\n>>> ver(\"11.2\") in ver(\"11\")\r\nTrue\r\n>>> ver(\"11\") in ver(\"11.2\")\r\nFalse\r\n>>> ver(\"11\").overlaps(ver(\"11.2\"))\r\nTrue\r\n>>> ver(\"11.2\").overlaps(ver(\"11\"))\r\nTrue\r\n>>> ver(\"11\").intersection(ver(\"11.2\"))\r\n[]\r\n>>> ver(\"11.2\").intersection(ver(\"11\"))\r\n[]\r\n>>> exit()\r\n```\r\n\r\nEven though, '11' and '11.2' overlap, they don't intersect. Also, while '11.2' satisfies '11', they don't intersect.",
+    "performed_via_github_app": null
+}

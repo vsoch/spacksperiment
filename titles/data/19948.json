@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19948",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19948/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19948/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19948/events",
+    "html_url": "https://github.com/spack/spack/pull/19948",
+    "id": 744246077,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIyMDA0OTc2",
+    "number": 19948,
+    "title": "qt: patch missing includes for 5.14",
+    "user": {
+        "login": "angel-devicente",
+        "id": 10155829,
+        "node_id": "MDQ6VXNlcjEwMTU1ODI5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10155829?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/angel-devicente",
+        "html_url": "https://github.com/angel-devicente",
+        "followers_url": "https://api.github.com/users/angel-devicente/followers",
+        "following_url": "https://api.github.com/users/angel-devicente/following{/other_user}",
+        "gists_url": "https://api.github.com/users/angel-devicente/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/angel-devicente/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/angel-devicente/subscriptions",
+        "organizations_url": "https://api.github.com/users/angel-devicente/orgs",
+        "repos_url": "https://api.github.com/users/angel-devicente/repos",
+        "events_url": "https://api.github.com/users/angel-devicente/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/angel-devicente/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 20,
+    "created_at": "2020-11-16T22:34:30Z",
+    "updated_at": "2020-11-29T22:45:42Z",
+    "closed_at": "2020-11-29T22:45:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19948",
+        "html_url": "https://github.com/spack/spack/pull/19948",
+        "diff_url": "https://github.com/spack/spack/pull/19948.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19948.patch"
+    },
+    "body": "Not sure if this happens with other distributions. In ArchLinux, Qt does not compile cleanly. Applying the changes in the included patch fixes it. ",
+    "performed_via_github_app": null
+}

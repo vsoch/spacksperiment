@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19658",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19658/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19658/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19658/events",
+    "html_url": "https://github.com/spack/spack/pull/19658",
+    "id": 734055757,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEzNjg4MjU5",
+    "number": 19658,
+    "title": "meson: add new version, external find support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 964162604,
+            "node_id": "MDU6TGFiZWw5NjQxNjI2MDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/meson",
+            "name": "meson",
+            "color": "66d657",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-01T20:36:20Z",
+    "updated_at": "2020-11-01T21:33:16Z",
+    "closed_at": "2020-11-01T21:33:15Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19658",
+        "html_url": "https://github.com/spack/spack/pull/19658",
+        "diff_url": "https://github.com/spack/spack/pull/19658.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19658.patch"
+    },
+    "body": "Successfully builds on macOS 10.15.7 with Apple Clang 12.0.0.\r\n\r\nAlso finds the external package correctly:\r\n```yaml\r\n  meson:\r\n    externals:\r\n    - spec: meson@0.56.0\r\n      prefix: /Users/Adam/spack/opt/spack/darwin-catalina-x86_64/apple-clang-12.0.0/meson-0.56.0-cbq23hnkpssutxc6vsg4pxxaywt3pndy\r\n```",
+    "performed_via_github_app": null
+}

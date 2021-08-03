@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21804",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21804/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21804/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21804/events",
+    "html_url": "https://github.com/spack/spack/pull/21804",
+    "id": 812014726,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc2NDUwODU2",
+    "number": 21804,
+    "title": "proj: adding recent DATA and recent release up to 7.2.1",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-19T13:16:10Z",
+    "updated_at": "2021-02-19T22:24:41Z",
+    "closed_at": "2021-02-19T14:57:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21804",
+        "html_url": "https://github.com/spack/spack/pull/21804",
+        "diff_url": "https://github.com/spack/spack/pull/21804.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21804.patch"
+    },
+    "body": "It seems DATA=https://github.com/OSGeo/PROJ-data/releases\r\nand prog=https://github.com/OSGeo/PROJ/releases are now synchronized.\r\nSo, when updating from 7.1.0 to 7.2.0 and 7.2.1, added the resources\r\nproj-data-1.3 and proj-data-1.4",
+    "performed_via_github_app": null
+}

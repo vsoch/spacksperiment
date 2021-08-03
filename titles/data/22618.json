@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22618",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22618/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22618/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22618/events",
+    "html_url": "https://github.com/spack/spack/pull/22618",
+    "id": 843600170,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjAyOTU5NDg1",
+    "number": 22618,
+    "title": "claw: support for gcc10",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-29T17:24:05Z",
+    "updated_at": "2021-04-14T06:49:35Z",
+    "closed_at": "2021-03-30T18:33:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22618",
+        "html_url": "https://github.com/spack/spack/pull/22618",
+        "diff_url": "https://github.com/spack/spack/pull/22618.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22618.patch"
+    },
+    "body": "We need to build with `-fcommon` when building with `gcc@10:` (as described [here](https://gcc.gnu.org/gcc-10/porting_to.html)).\r\n\r\nOtherwise, we get:\r\n```console\r\n/path/to/spack/lib/spack/env/gcc/gcc -DGNU_INTRINSIC_EXTENSION -DNDEBUG -DBUGFIX -D__XCODEML__ -DYYDEBUG -I/path/to/spack/opt/spack/linux-debian9-haswell/gcc-10.2.0/libxml2-2.9.10-j477kg7qyyejzp3vpxalinoim6vrnhqt/include//libxml2 -I../../include -o F_Front F95-main.o C-expr-mem.o C-exprcode.o F-datatype.o F-ident.o F95-parser.o F-mem.o F-compile.o F-compile-decl.o F-compile-expr.o F-opt-expv.o F-output-xcodeml.o F-io-xcodeml.o F-data.o F-datasub.o F-equiv.o F-varutil.o F-intrinsic.o F-intrinsics-table.o F-OMP.o F-ACC.o F-XMP.o xcodeml-node.o xcodeml-parse.o xcodeml-util.o xcodeml-type.o xcodeml-traverse.o xcodeml-output-F.o F-dump.o F-type-attr-tbl.o module-manager.o hash.o F-input-xmod.o F-module-procedure.o F-second-pass.o -L/path/to/spack/opt/spack/linux-debian9-haswell/gcc-10.2.0/libxml2-2.9.10-j477kg7qyyejzp3vpxalinoim6vrnhqt/lib -lxml2 -lm\r\nxcodeml-parse.o:(.bss+0x0): multiple definition of `current_symbol_stack'\r\nxcodeml-node.o:(.bss+0x0): first defined here\r\nxcodeml-util.o:(.bss+0x0): multiple definition of `current_symbol_stack'\r\nxcodeml-node.o:(.bss+0x0): first defined here\r\nxcodeml-type.o:(.bss+0x0): multiple definition of `current_symbol_stack'\r\nxcodeml-node.o:(.bss+0x0): first defined here\r\nxcodeml-traverse.o:(.bss+0x0): multiple definition of `current_symbol_stack'\r\nxcodeml-node.o:(.bss+0x0): first defined here\r\nxcodeml-output-F.o:(.bss+0x0): multiple definition of `current_symbol_stack'\r\nxcodeml-node.o:(.bss+0x0): first defined here\r\ncollect2: error: ld returned 1 exit status\r\nMakefile:52: recipe for target 'F_Front' failed\r\n```\r\n\r\n@clementval",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21807",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21807/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21807/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21807/events",
+    "html_url": "https://github.com/spack/spack/pull/21807",
+    "id": 812038578,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc2NDcwNTg0",
+    "number": 21807,
+    "title": "asciidoc: sourceforge a2x needs python2, adds more recent for py3",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-19T13:49:00Z",
+    "updated_at": "2021-02-26T18:27:18Z",
+    "closed_at": "2021-02-26T16:04:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21807",
+        "html_url": "https://github.com/spack/spack/pull/21807",
+        "diff_url": "https://github.com/spack/spack/pull/21807.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21807.patch"
+    },
+    "body": "Current asciidoc package provides the sourceforge version 8.6.9 made for python2, we add the github location for release 9.1.0\r\nthat is made for python3. It is important to make asccidoc@8.6.9 depend on python2, not python.\r\nIt could be merged with asciidoc-py3 which is also based on 9 series, although it is not yet updated.",
+    "performed_via_github_app": null
+}

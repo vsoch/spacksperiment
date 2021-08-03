@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20031",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20031/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20031/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20031/events",
+    "html_url": "https://github.com/spack/spack/pull/20031",
+    "id": 748032541,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI1MTM5NTY3",
+    "number": 20031,
+    "title": "Dealing with \"Cannot locate ScaLAPACK/BLACS libraries\" error with macOS in intel.py",
+    "user": {
+        "login": "zhiyuanzhai",
+        "id": 37478391,
+        "node_id": "MDQ6VXNlcjM3NDc4Mzkx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/37478391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zhiyuanzhai",
+        "html_url": "https://github.com/zhiyuanzhai",
+        "followers_url": "https://api.github.com/users/zhiyuanzhai/followers",
+        "following_url": "https://api.github.com/users/zhiyuanzhai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zhiyuanzhai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zhiyuanzhai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zhiyuanzhai/subscriptions",
+        "organizations_url": "https://api.github.com/users/zhiyuanzhai/orgs",
+        "repos_url": "https://api.github.com/users/zhiyuanzhai/repos",
+        "events_url": "https://api.github.com/users/zhiyuanzhai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zhiyuanzhai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-21T14:42:53Z",
+    "updated_at": "2020-11-24T02:33:01Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20031",
+        "html_url": "https://github.com/spack/spack/pull/20031",
+        "diff_url": "https://github.com/spack/spack/pull/20031.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20031.patch"
+    },
+    "body": "To fix #19937. \r\nActually I'm not sure if this fix is appropriate... It may cause some problem. But it can fix my problem. \r\n",
+    "performed_via_github_app": null
+}

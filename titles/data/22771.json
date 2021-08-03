@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22771",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22771/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22771/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22771/events",
+    "html_url": "https://github.com/spack/spack/pull/22771",
+    "id": 849853178,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA4NTI5NDY0",
+    "number": 22771,
+    "title": "Perl: 5.32.1 conflict when using intel@19.1.2.254",
+    "user": {
+        "login": "ikitayama",
+        "id": 962791,
+        "node_id": "MDQ6VXNlcjk2Mjc5MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/962791?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ikitayama",
+        "html_url": "https://github.com/ikitayama",
+        "followers_url": "https://api.github.com/users/ikitayama/followers",
+        "following_url": "https://api.github.com/users/ikitayama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ikitayama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ikitayama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ikitayama/subscriptions",
+        "organizations_url": "https://api.github.com/users/ikitayama/orgs",
+        "repos_url": "https://api.github.com/users/ikitayama/repos",
+        "events_url": "https://api.github.com/users/ikitayama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ikitayama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-04-04T11:17:47Z",
+    "updated_at": "2021-04-09T21:32:27Z",
+    "closed_at": "2021-04-09T21:32:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22771",
+        "html_url": "https://github.com/spack/spack/pull/22771",
+        "diff_url": "https://github.com/spack/spack/pull/22771.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22771.patch"
+    },
+    "body": "When perl is @5.32.1, building it with intel@19.1.2.254 leads to an error.\r\n\r\nadd a conflicts line.\r\n\r\n@haampie could you review this?",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19384",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19384/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19384/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19384/events",
+    "html_url": "https://github.com/spack/spack/pull/19384",
+    "id": 725142738,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA2NDIwNjYz",
+    "number": 19384,
+    "title": "refine setuptools version to avoid spec conflict",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-20T02:53:41Z",
+    "updated_at": "2021-03-06T03:10:14Z",
+    "closed_at": "2020-10-20T15:56:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19384",
+        "html_url": "https://github.com/spack/spack/pull/19384",
+        "diff_url": "https://github.com/spack/spack/pull/19384.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19384.patch"
+    },
+    "body": "`ambari` stage fail as:\r\n```\r\n[root@Estuary-CentOS8 ~]# spack stage ambari\r\n==> Error: An unsatisfiable version constraint has been detected for spec:\r\n\r\n    python@2.7.18%gcc@8.2.1+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib arch=linux-centos8-aarch64\r\n        ^bzip2\r\n            ^diffutils\r\n                ^iconv\r\n        ^expat\r\n        ^gdbm\r\n            ^readline\r\n                ^ncurses\r\n                    ^pkgconf@1.7.3%gcc@8.2.1 arch=linux-centos8-aarch64\r\n        ^gettext+libxml2\r\n            ^libxml2\r\n                ^xz\r\n                ^zlib@1.1.3:\r\n        ^libffi\r\n        ^libuuid\r\n        ^openssl\r\n            ^perl@5.14.0:\r\n                ^berkeley-db\r\n        ^sqlite@3.0.8:\r\n\r\n\r\nwhile trying to concretize the partial spec:\r\n\r\n    py-setuptools@50.1.0%gcc@8.2.1 arch=linux-centos8-aarch64\r\n```\r\n\r\naccording to \r\n```\r\n    depends_on('python@3.5:', type=('build', 'run'), when='@45.0.0:')\r\n    depends_on('python@2.7:2.8,3.5:', type=('build', 'run'), when='@44.0.0:44.99.99')\r\n    depends_on('python@2.7:2.8,3.4:', type=('build', 'run'), when='@:43.99.99')\r\n```\r\nin `py-setuptools`\r\n\r\nWe can use `setuptools@:44.99.99`",
+    "performed_via_github_app": null
+}

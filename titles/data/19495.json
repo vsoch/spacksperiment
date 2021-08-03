@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19495",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19495/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19495/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19495/events",
+    "html_url": "https://github.com/spack/spack/pull/19495",
+    "id": 728276433,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5MDEzMDYy",
+    "number": 19495,
+    "title": "CMake fix: narrow versions that the PGI patch is applied to",
+    "user": {
+        "login": "samcmill",
+        "id": 18687225,
+        "node_id": "MDQ6VXNlcjE4Njg3MjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18687225?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/samcmill",
+        "html_url": "https://github.com/samcmill",
+        "followers_url": "https://api.github.com/users/samcmill/followers",
+        "following_url": "https://api.github.com/users/samcmill/following{/other_user}",
+        "gists_url": "https://api.github.com/users/samcmill/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/samcmill/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/samcmill/subscriptions",
+        "organizations_url": "https://api.github.com/users/samcmill/orgs",
+        "repos_url": "https://api.github.com/users/samcmill/repos",
+        "events_url": "https://api.github.com/users/samcmill/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/samcmill/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431484299,
+            "node_id": "MDU6TGFiZWwyNDMxNDg0Mjk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/nvhpc",
+            "name": "nvhpc",
+            "color": "e0641d",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616910686,
+            "node_id": "MDU6TGFiZWw2MTY5MTA2ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pgi",
+            "name": "pgi",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-10-23T14:42:58Z",
+    "updated_at": "2020-10-23T20:33:06Z",
+    "closed_at": "2020-10-23T16:00:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19495",
+        "html_url": "https://github.com/spack/spack/pull/19495",
+        "diff_url": "https://github.com/spack/spack/pull/19495.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19495.patch"
+    },
+    "body": "Fix issue reported by @opadron in https://github.com/spack/spack/pull/19452#issuecomment-714892360.\r\n\r\nThe patch to remove the `-A` option from the PGI compiler command line does not cleanly apply to CMake 3.9 - 3.14 (inclusive) since there were other changes to the affected file starting in 3.15.\r\n\r\nBefore this fix:\r\n```\r\n$ spack install cmake@3.14.7\r\n...\r\n==> Installing cmake\r\n==> No binary for cmake found: installing from source\r\n==> Fetching https://github.com/Kitware/CMake/releases/download/v3.14.7/cmake-3.14.7.tar.gz\r\n######################################################################### 100.0%######################################################################### 100.0%\r\n1 out of 1 hunk FAILED -- saving rejects to file Modules/Compiler/PGI-CXX.cmake.rej\r\n==> Patch /home/smcmillan/git/smcmillan/spack/var/spack/repos/builtin/packages/cmake/pgi-cxx-ansi.patch failed.\r\n==> Error: ProcessError: Command exited with status 1:\r\n    '/usr/bin/patch' '-s' '-p' '1' '-i' '/home/smcmillan/git/smcmillan/spack/var/spack/repos/builtin/packages/cmake/pgi-cxx-ansi.patch' '-d' '.'\r\n```\r\n\r\nWith this fix:\r\n```\r\n$ spack install cmake@3.14.7\r\n...\r\n==> Installing cmake\r\n==> No binary for cmake found: installing from source\r\n==> Using cached archive: /home/smcmillan/git/smcmillan/spack/var/spack/cache/_source-cache/archive/92/9221993e0af3e6d10124d840ff24f5b2f3b884416fca04d3312cb0388dec1385.tar.gz\r\n==> cmake: Executing phase: 'bootstrap'\r\n==> cmake: Executing phase: 'build'\r\n==> cmake: Executing phase: 'install'\r\n[+] /home/smcmillan/git/smcmillan/spack/opt/spack/linux-centos8-haswell/gcc-8.3.1/cmake-3.14.7-aijhohpcj3rr3hvjojvdqi4qwuqecc56\r\n```",
+    "performed_via_github_app": null
+}

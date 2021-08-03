@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23254/events",
+    "html_url": "https://github.com/spack/spack/pull/23254",
+    "id": 867846621,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIzNDUwMDU2",
+    "number": 23254,
+    "title": "Update the openspeedshop and cbtf related packages including patches to libmonitor",
+    "user": {
+        "login": "jgalarowicz",
+        "id": 630197,
+        "node_id": "MDQ6VXNlcjYzMDE5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/630197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jgalarowicz",
+        "html_url": "https://github.com/jgalarowicz",
+        "followers_url": "https://api.github.com/users/jgalarowicz/followers",
+        "following_url": "https://api.github.com/users/jgalarowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jgalarowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jgalarowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jgalarowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/jgalarowicz/orgs",
+        "repos_url": "https://api.github.com/users/jgalarowicz/repos",
+        "events_url": "https://api.github.com/users/jgalarowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jgalarowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2021-04-26T15:45:12Z",
+    "updated_at": "2021-05-18T20:34:23Z",
+    "closed_at": "2021-05-18T16:40:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23254",
+        "html_url": "https://github.com/spack/spack/pull/23254",
+        "diff_url": "https://github.com/spack/spack/pull/23254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23254.patch"
+    },
+    "body": "Update the openspeedshop and cbtf related package versions and update openspeedshop/cbtf patches to libmonitor.   This is an update to the versions/branches for OpenSpeedShop (application performance tool) and libmonitor's openspeedshop related patches.  Also, unify the elf requirements.",
+    "performed_via_github_app": null
+}

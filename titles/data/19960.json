@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19960",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19960/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19960/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19960/events",
+    "html_url": "https://github.com/spack/spack/pull/19960",
+    "id": 745114011,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIyNzI4NTUy",
+    "number": 19960,
+    "title": "Tell the libyogrt installer to create a yogrt.conf file, specifying requested scheduler library",
+    "user": {
+        "login": "robertkb",
+        "id": 9001420,
+        "node_id": "MDQ6VXNlcjkwMDE0MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9001420?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertkb",
+        "html_url": "https://github.com/robertkb",
+        "followers_url": "https://api.github.com/users/robertkb/followers",
+        "following_url": "https://api.github.com/users/robertkb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertkb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertkb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertkb/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertkb/orgs",
+        "repos_url": "https://api.github.com/users/robertkb/repos",
+        "events_url": "https://api.github.com/users/robertkb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertkb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-11-17T21:51:22Z",
+    "updated_at": "2021-01-21T14:54:01Z",
+    "closed_at": "2021-01-19T09:01:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19960",
+        "html_url": "https://github.com/spack/spack/pull/19960",
+        "diff_url": "https://github.com/spack/spack/pull/19960.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19960.patch"
+    },
+    "body": "The libyogrt installer does not select a scheduler library to query for job time remaining. Since there is already a variant flag for libyogrt, the value of the variant flag can be put into etc/yogrt.conf, so that the spack build correctly queries the selected scheduler library.\r\n",
+    "performed_via_github_app": null
+}

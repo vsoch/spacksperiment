@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24141",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24141/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24141/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24141/events",
+    "html_url": "https://github.com/spack/spack/pull/24141",
+    "id": 911642105,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxODg4NTky",
+    "number": 24141,
+    "title": "Add libdeflate as variant for htslib",
+    "user": {
+        "login": "CreRecombinase",
+        "id": 3493159,
+        "node_id": "MDQ6VXNlcjM0OTMxNTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3493159?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CreRecombinase",
+        "html_url": "https://github.com/CreRecombinase",
+        "followers_url": "https://api.github.com/users/CreRecombinase/followers",
+        "following_url": "https://api.github.com/users/CreRecombinase/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CreRecombinase/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CreRecombinase/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CreRecombinase/subscriptions",
+        "organizations_url": "https://api.github.com/users/CreRecombinase/orgs",
+        "repos_url": "https://api.github.com/users/CreRecombinase/repos",
+        "events_url": "https://api.github.com/users/CreRecombinase/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CreRecombinase/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-06-04T15:52:28Z",
+    "updated_at": "2021-06-14T17:53:31Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24141",
+        "html_url": "https://github.com/spack/spack/pull/24141",
+        "diff_url": "https://github.com/spack/spack/pull/24141.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24141.patch"
+    },
+    "body": "Now that libdeflate is in spack I thought it would be nice to add a libdeflate variant to htslib.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22180",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22180/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22180/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22180/events",
+    "html_url": "https://github.com/spack/spack/pull/22180",
+    "id": 824856288,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg3MDIyMTg0",
+    "number": 22180,
+    "title": "netcdf-c: patch detection of pnetcdf for spectrum-mpi",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-08T18:59:39Z",
+    "updated_at": "2021-03-09T23:12:21Z",
+    "closed_at": "2021-03-09T23:11:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22180",
+        "html_url": "https://github.com/spack/spack/pull/22180",
+        "diff_url": "https://github.com/spack/spack/pull/22180.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22180.patch"
+    },
+    "body": "`netcdf-c@4.7.3:4.7.4+parallel-netcdf` can't detect `parallel-netcdf` with `spectrum-mpi`. This has been fixed in `netcdf-c@master`.\r\n\r\nThis PR patches `netcdf-c@4.7.3:4.7.4+parallel-netcdf`.\r\n\r\nhttps://github.com/Unidata/netcdf-c/pull/1752\r\n\r\n@sayerhs @jrood-nrel @skosukhin @WardF",
+    "performed_via_github_app": null
+}

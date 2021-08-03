@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22900",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22900/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22900/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22900/events",
+    "html_url": "https://github.com/spack/spack/pull/22900",
+    "id": 854492258,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNDI5MzA0",
+    "number": 22900,
+    "title": "add debug variant for paraview",
+    "user": {
+        "login": "Billae",
+        "id": 65948826,
+        "node_id": "MDQ6VXNlcjY1OTQ4ODI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65948826?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Billae",
+        "html_url": "https://github.com/Billae",
+        "followers_url": "https://api.github.com/users/Billae/followers",
+        "following_url": "https://api.github.com/users/Billae/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Billae/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Billae/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Billae/subscriptions",
+        "organizations_url": "https://api.github.com/users/Billae/orgs",
+        "repos_url": "https://api.github.com/users/Billae/repos",
+        "events_url": "https://api.github.com/users/Billae/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Billae/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-04-09T12:46:38Z",
+    "updated_at": "2021-04-19T16:52:27Z",
+    "closed_at": "2021-04-19T16:52:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22900",
+        "html_url": "https://github.com/spack/spack/pull/22900",
+        "diff_url": "https://github.com/spack/spack/pull/22900.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22900.patch"
+    },
+    "body": "this variant set the Cmake build_type for debug and add debugs flags. For now, I only add the VTK_DEBUG_LEAK, but feel free to give me other usefull flag to add in this variant.\r\n\r\n@danlipsa @vicentebolea  which flags are needed in the debug mode ?\r\n\r\nElo\u00efse",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19588",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19588/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19588/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19588/events",
+    "html_url": "https://github.com/spack/spack/pull/19588",
+    "id": 731838116,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTExODc3NTIw",
+    "number": 19588,
+    "title": "glew: Refactor as CMakePackage",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-28T22:39:40Z",
+    "updated_at": "2020-10-31T16:41:46Z",
+    "closed_at": "2020-10-30T19:52:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19588",
+        "html_url": "https://github.com/spack/spack/pull/19588",
+        "diff_url": "https://github.com/spack/spack/pull/19588.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19588.patch"
+    },
+    "body": "In #18394 it was noted, that this package should be changed from a generic \"Package\" to a \"CMakePackage\". It makes a bunch of things easier.\r\n\r\nAnd it uses all the common cmake code.\r\n\r\npinging @adamjstewart who asked about this conversion in https://github.com/spack/spack/pull/18394#issuecomment-683339463",
+    "performed_via_github_app": null
+}

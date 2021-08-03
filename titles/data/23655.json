@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23655",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23655/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23655/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23655/events",
+    "html_url": "https://github.com/spack/spack/pull/23655",
+    "id": 892498730,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ1MTg4OTM5",
+    "number": 23655,
+    "title": "Use define_from_variant in numerous CMakePackages",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-05-15T17:24:42Z",
+    "updated_at": "2021-05-19T10:59:10Z",
+    "closed_at": "2021-05-19T10:59:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23655",
+        "html_url": "https://github.com/spack/spack/pull/23655",
+        "diff_url": "https://github.com/spack/spack/pull/23655.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23655.patch"
+    },
+    "body": "This is a find-replace job for a lot of different ways to express `self.define_from_variant('foo', 'bar')`. I'm not sure if the best approach to this is to do one huge merge request and try to ping all 83 packages that this touched... or to just have a couple people spot check and address potential issues as they crop up.\r\n\r\nThere's a possibility that this will cause some package recipes to fail by exposing previously hidden typos due to `'+nonexistent_variant' in spec` returning `False` rather than raising an error.",
+    "performed_via_github_app": null
+}

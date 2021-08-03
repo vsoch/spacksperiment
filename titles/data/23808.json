@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23808",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23808/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23808/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23808/events",
+    "html_url": "https://github.com/spack/spack/pull/23808",
+    "id": 896456602,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ4NTYyNjY5",
+    "number": 23808,
+    "title": "py-awkward: add version 1.2.3",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-20T08:09:28Z",
+    "updated_at": "2021-06-12T20:20:54Z",
+    "closed_at": "2021-05-20T16:28:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23808",
+        "html_url": "https://github.com/spack/spack/pull/23808",
+        "diff_url": "https://github.com/spack/spack/pull/23808.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23808.patch"
+    },
+    "body": "... and fix some issues I noticed while doing a test build.\r\n\r\ndlpack: was trying to install master even though released versions available, so I added those\r\npy-pybind11: missing a test dependency (maintainer ping: @ax3l )",
+    "performed_via_github_app": null
+}

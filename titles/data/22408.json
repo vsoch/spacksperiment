@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22408",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22408/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22408/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22408/events",
+    "html_url": "https://github.com/spack/spack/pull/22408",
+    "id": 835878879,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk2NDY5Nzgy",
+    "number": 22408,
+    "title": "Exclude Python 3.5 3.6 3.7 3.8 from PRs",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-03-19T11:30:36Z",
+    "updated_at": "2021-03-21T10:47:22Z",
+    "closed_at": "2021-03-21T10:47:21Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22408",
+        "html_url": "https://github.com/spack/spack/pull/22408",
+        "diff_url": "https://github.com/spack/spack/pull/22408.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22408.patch"
+    },
+    "body": "CI runs unbearably slow, so why don't stick to testing newest and oldest supported python in PRs, and test all supported versions when merged.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19456",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19456/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19456/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19456/events",
+    "html_url": "https://github.com/spack/spack/pull/19456",
+    "id": 726927419,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA3OTE3MTU2",
+    "number": 19456,
+    "title": "tests: increase tolerance of termios tests",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-21T23:21:57Z",
+    "updated_at": "2020-10-22T01:12:50Z",
+    "closed_at": "2020-10-22T01:12:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19456",
+        "html_url": "https://github.com/spack/spack/pull/19456",
+        "diff_url": "https://github.com/spack/spack/pull/19456.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19456.patch"
+    },
+    "body": "Synchronization on GitHub macOS runners seems to be very slow, and frequently the foreground/background tests fail due to the race this causes. This increases the tolerance for slowness a bit more, to allow up to 4 spurious output lines in the tests.\r\n\r\nThis should hopefully result in no more false negatives on these tests for macOS on GitHub.\r\n\r\nI looked through the tests results and only saw failures with 3 `\"off\"` results (just above the current limit of 2).  If this were really not working, we should see quite a few more.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21184",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21184/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21184/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21184/events",
+    "html_url": "https://github.com/spack/spack/pull/21184",
+    "id": 790719852,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU4ODg2OTc0",
+    "number": 21184,
+    "title": "LBANN FFT and HWLOC variants",
+    "user": {
+        "login": "bvanessen",
+        "id": 6210171,
+        "node_id": "MDQ6VXNlcjYyMTAxNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6210171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bvanessen",
+        "html_url": "https://github.com/bvanessen",
+        "followers_url": "https://api.github.com/users/bvanessen/followers",
+        "following_url": "https://api.github.com/users/bvanessen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bvanessen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bvanessen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bvanessen/subscriptions",
+        "organizations_url": "https://api.github.com/users/bvanessen/orgs",
+        "repos_url": "https://api.github.com/users/bvanessen/repos",
+        "events_url": "https://api.github.com/users/bvanessen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bvanessen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-21T05:47:20Z",
+    "updated_at": "2021-01-21T19:07:50Z",
+    "closed_at": "2021-01-21T16:49:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21184",
+        "html_url": "https://github.com/spack/spack/pull/21184",
+        "diff_url": "https://github.com/spack/spack/pull/21184.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21184.patch"
+    },
+    "body": "Add support for building with an FFT layer in LBANN.  Updated the\r\nHWLOC requirements to properly include CUDA and NVML variants as\r\nappropriate.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24484",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24484/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24484/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24484/events",
+    "html_url": "https://github.com/spack/spack/pull/24484",
+    "id": 927967945,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc2MDQyMDYy",
+    "number": 24484,
+    "title": "Fix broken CI for package only PRs, make dateutil not strictly required",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 876167697,
+            "node_id": "MDU6TGFiZWw4NzYxNjc2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hotfix",
+            "name": "hotfix",
+            "color": "a54727",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-23T07:55:47Z",
+    "updated_at": "2021-06-23T12:15:33Z",
+    "closed_at": "2021-06-23T11:56:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24484",
+        "html_url": "https://github.com/spack/spack/pull/24484",
+        "diff_url": "https://github.com/spack/spack/pull/24484.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24484.patch"
+    },
+    "body": "Modifications:\r\n- [x] Enforce the Python interpreter being used by setting `SPACK_PYTHON`\r\n- [x] Revert modification on `python-dateutil` not being present in Python 2.7\r\n- [x] Make `python-dateutil` not a hard requirement for unit tests   ",
+    "performed_via_github_app": null
+}

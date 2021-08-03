@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19166",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19166/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19166/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19166/events",
+    "html_url": "https://github.com/spack/spack/pull/19166",
+    "id": 715725838,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk4NTg0OTY1",
+    "number": 19166,
+    "title": "make `spack fetch` work with environments",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 26,
+    "created_at": "2020-10-06T14:21:58Z",
+    "updated_at": "2021-04-27T08:24:22Z",
+    "closed_at": "2021-02-26T08:02:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19166",
+        "html_url": "https://github.com/spack/spack/pull/19166",
+        "diff_url": "https://github.com/spack/spack/pull/19166.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19166.patch"
+    },
+    "body": "I was trying to setup shop on a new supercomputer and since I'm using environments now on my own machine I thought I could just use that. Turns out you need to fetch things from the login node, rather than do that on the compute node...\r\n\r\nHad to teach `spack fetch` to gather its todo list from an environment. Let me know if you want to keep this \r\n\r\n* previously: `spack fetch` required the explicit statement of\r\n              the specs to be fetched, even when in an environment\r\n* now: if there is no spec(s) provided to `spack fetch` we check\r\n       if an environment is active and if yes we fetch all\r\n       uninstalled specs.",
+    "performed_via_github_app": null
+}

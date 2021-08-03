@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24057",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24057/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24057/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24057/events",
+    "html_url": "https://github.com/spack/spack/pull/24057",
+    "id": 908234922,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU4OTU3MDcz",
+    "number": 24057,
+    "title": "Make cuda conflicts useful for cray too",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-06-01T12:21:47Z",
+    "updated_at": "2021-06-03T10:17:29Z",
+    "closed_at": "2021-06-03T09:46:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24057",
+        "html_url": "https://github.com/spack/spack/pull/24057",
+        "diff_url": "https://github.com/spack/spack/pull/24057.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24057.patch"
+    },
+    "body": "The CUDA compiler conflicts are valid on Cray too, and likely on Darwin x86_64 with %gcc and %clang in case you'd build these compilers instead of using apple-clang, so drop platform=linux in the conflicts entirely.\n\nAlso add a note about missing conflicts for %apple-clang on Darwin; the comment there was a bit outdated.\n\nThis PR is not meant to add more conflicts for %apple-clang, since I don't have access to these macos+nvidia machines at all.\n",
+    "performed_via_github_app": null
+}

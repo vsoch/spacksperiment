@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20099",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20099/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20099/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20099/events",
+    "html_url": "https://github.com/spack/spack/pull/20099",
+    "id": 751088493,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI3NjY4NTQw",
+    "number": 20099,
+    "title": "concretizer: try to infer the real version of compilers if spec fails",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-25T20:07:19Z",
+    "updated_at": "2020-12-02T19:30:33Z",
+    "closed_at": "2020-12-02T19:30:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20099",
+        "html_url": "https://github.com/spack/spack/pull/20099",
+        "diff_url": "https://github.com/spack/spack/pull/20099.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20099.patch"
+    },
+    "body": "fixes #20055\r\n\r\nCompiler with custom versions like `gcc@foo` are not currently matched to the appropriate targets. This is because the version of spec doesn't match the real version of the compiler. This PR replicates the strategy used in the original concretizer to deal with that and tries to detect the real version of compilers if the version in the spec returns no results for targets.",
+    "performed_via_github_app": null
+}

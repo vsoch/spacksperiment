@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20258",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20258/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20258/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20258/events",
+    "html_url": "https://github.com/spack/spack/pull/20258",
+    "id": 757951211,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMzMjE1MTM1",
+    "number": 20258,
+    "title": "support strict version inequalities in specs",
+    "user": {
+        "login": "cosmicexplorer",
+        "id": 1305167,
+        "node_id": "MDQ6VXNlcjEzMDUxNjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305167?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cosmicexplorer",
+        "html_url": "https://github.com/cosmicexplorer",
+        "followers_url": "https://api.github.com/users/cosmicexplorer/followers",
+        "following_url": "https://api.github.com/users/cosmicexplorer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cosmicexplorer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cosmicexplorer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cosmicexplorer/subscriptions",
+        "organizations_url": "https://api.github.com/users/cosmicexplorer/orgs",
+        "repos_url": "https://api.github.com/users/cosmicexplorer/repos",
+        "events_url": "https://api.github.com/users/cosmicexplorer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cosmicexplorer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1893105003,
+            "node_id": "MDU6TGFiZWwxODkzMTA1MDAz",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretizer-use-case",
+            "name": "concretizer-use-case",
+            "color": "1d76db",
+            "default": false,
+            "description": "interesting dependency hierarchy that would challenge the current concretizer"
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2020-12-06T15:27:38Z",
+    "updated_at": "2021-05-31T06:20:43Z",
+    "closed_at": "2021-05-31T06:20:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20258",
+        "html_url": "https://github.com/spack/spack/pull/20258",
+        "diff_url": "https://github.com/spack/spack/pull/20258.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20258.patch"
+    },
+    "body": "### Problem\r\n\r\nThis is phase 1 of proposed extensions for the spec syntax: see https://github.com/spack/spack/issues/20256#issuecomment-739434724:\r\n\r\n> 1. Support pip requirements.txt version comparators and wildcards:\r\n>    - <=,=>, and == already exist.\r\n>    - ==9.2.* => >=9.2,<9.3 (reduce to subproblem)\r\n>    - !=9.2.0 => <9.2.0,>9.2.0 (reduce to subproblem)\r\n>    - imprecise:\r\n>        - <9.2.0 => :9.1.999\r\n>        - >9.2.0 => 9.2.0.0.0.1\r\n>        - **Spack is unable to represent strict inequalities (<,>) without this feature.**\r\n>    - Breakage: none.\r\n\r\n### Solution\r\n- Extend the Spec parser to process all of the above new inequality notations.\r\n- Extend the Lexer to allow for more than 2 modes (this is useful setup for any further work on the spec syntax).\r\n- Extend VersionRange a bit to support the notion of \"including the left/right endpoint\", which is used to ensure `__contains__` and `__lt__` still work on the new edge cases.\r\n- Add testing.\r\n\r\n### Result\r\n`@:!3` and `@3!:` should let users avoid needing to type out the `.999.999` or `.0.0.0.1` suffixes (which I personally find difficult to maintain and ultimately incorrect).",
+    "performed_via_github_app": null
+}

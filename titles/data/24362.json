@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24362",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24362/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24362/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24362/events",
+    "html_url": "https://github.com/spack/spack/pull/24362",
+    "id": 923008430,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjcxODE3NjI1",
+    "number": 24362,
+    "title": "codecov: disable inline annotations on PRs",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-06-16T19:27:34Z",
+    "updated_at": "2021-06-17T18:22:24Z",
+    "closed_at": "2021-06-17T18:22:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24362",
+        "html_url": "https://github.com/spack/spack/pull/24362",
+        "diff_url": "https://github.com/spack/spack/pull/24362.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24362.patch"
+    },
+    "body": "Inline codecov annotations make the code hard to read, and they add annotations in files that seemingly have nothing to do with the PR. Sadly, they add a whole lot of noise and not a lot of benefit over looking at the PR on codecov. We should just have people look at the coverage on codecov itself.\r\n\r\nThis PR adds the lines documented [here](https://docs.codecov.com/docs/github-checks#disabling-github-checks-patch-annotations-via-yaml) to `.codecov.yml`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19582",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19582/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19582/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19582/events",
+    "html_url": "https://github.com/spack/spack/pull/19582",
+    "id": 731795662,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTExODQyMDI0",
+    "number": 19582,
+    "title": "sbang: vendor sbang",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1747000960,
+            "node_id": "MDU6TGFiZWwxNzQ3MDAwOTYw",
+            "url": "https://api.github.com/repos/spack/spack/labels/sbang",
+            "name": "sbang",
+            "color": "095e8c",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 1029761810,
+            "node_id": "MDU6TGFiZWwxMDI5NzYxODEw",
+            "url": "https://api.github.com/repos/spack/spack/labels/vendored-dependencies",
+            "name": "vendored-dependencies",
+            "color": "b1fc49",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-28T21:14:27Z",
+    "updated_at": "2020-10-29T03:20:26Z",
+    "closed_at": "2020-10-29T00:43:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19582",
+        "html_url": "https://github.com/spack/spack/pull/19582",
+        "diff_url": "https://github.com/spack/spack/pull/19582.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19582.patch"
+    },
+    "body": "`sbang` now lives at https://github.com/spack/sbang, and it has its own test suite that's more extensive than what's in Spack. We'll leave sbang tests to sbang from now on, and just vendor `bin/sbang` directly. Remaining `sbang` tests have to do with patching files, not with `sbang`'s functionality.\r\n\r\nThis update also fixes a bug with `sbang` and multiple command line arguments that was introduced in #19529. See:\r\n  * https://github.com/spack/sbang/pull/1\r\n  * https://github.com/spack/sbang/pull/2\r\n\r\n- [x] include latest `sbang` from https://github.com/spack/sbang\r\n- [x] remove old `sbang` tests from Spack\r\n- [x] update `COPYRIGHT`",
+    "performed_via_github_app": null
+}

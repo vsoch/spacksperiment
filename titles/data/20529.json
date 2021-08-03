@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20529",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20529/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20529/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20529/events",
+    "html_url": "https://github.com/spack/spack/pull/20529",
+    "id": 773469578,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ0NTU2MDc1",
+    "number": 20529,
+    "title": "silo: HDF5 1.10.0+ introduces a new \"terminate\" member in the H5FD_class_t structure",
+    "user": {
+        "login": "quellyn",
+        "id": 33294773,
+        "node_id": "MDQ6VXNlcjMzMjk0Nzcz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33294773?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/quellyn",
+        "html_url": "https://github.com/quellyn",
+        "followers_url": "https://api.github.com/users/quellyn/followers",
+        "following_url": "https://api.github.com/users/quellyn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quellyn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/quellyn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quellyn/subscriptions",
+        "organizations_url": "https://api.github.com/users/quellyn/orgs",
+        "repos_url": "https://api.github.com/users/quellyn/repos",
+        "events_url": "https://api.github.com/users/quellyn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/quellyn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-12-23T04:06:53Z",
+    "updated_at": "2021-01-04T17:55:09Z",
+    "closed_at": "2020-12-25T04:35:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20529",
+        "html_url": "https://github.com/spack/spack/pull/20529",
+        "diff_url": "https://github.com/spack/spack/pull/20529.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20529.patch"
+    },
+    "body": "Starting with HDF5 1.10.0, the `H5FD_class_t` structure has a new `terminate` member.  This patch adds that and initializes it to `NULL`.\r\n\r\nWithout this patch, `silo` fails to build using PGI 19.7 (see the [attached Spack build output](https://github.com/spack/spack/files/5733183/spack-build-out_silo-BROKEN.txt) for details).",
+    "performed_via_github_app": null
+}

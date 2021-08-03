@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24873",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24873/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24873/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24873/events",
+    "html_url": "https://github.com/spack/spack/pull/24873",
+    "id": 944184857,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg5NzAzMzMw",
+    "number": 24873,
+    "title": "Remove `-Wmissing-format-attribute` from `libxslt` if compiling with `nvhpc`",
+    "user": {
+        "login": "rj-jesus",
+        "id": 11319180,
+        "node_id": "MDQ6VXNlcjExMzE5MTgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11319180?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rj-jesus",
+        "html_url": "https://github.com/rj-jesus",
+        "followers_url": "https://api.github.com/users/rj-jesus/followers",
+        "following_url": "https://api.github.com/users/rj-jesus/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rj-jesus/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rj-jesus/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rj-jesus/subscriptions",
+        "organizations_url": "https://api.github.com/users/rj-jesus/orgs",
+        "repos_url": "https://api.github.com/users/rj-jesus/repos",
+        "events_url": "https://api.github.com/users/rj-jesus/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rj-jesus/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-07-14T08:34:11Z",
+    "updated_at": "2021-07-19T10:25:13Z",
+    "closed_at": "2021-07-19T10:25:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24873",
+        "html_url": "https://github.com/spack/spack/pull/24873",
+        "diff_url": "https://github.com/spack/spack/pull/24873.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24873.patch"
+    },
+    "body": "The Nvidia compiler does not recognise `-Wmissing-format-attribute`, which makes the build fail. I think it's safe to remove it when compiling with NVHPC.",
+    "performed_via_github_app": null
+}

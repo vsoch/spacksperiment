@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23852",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23852/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23852/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23852/events",
+    "html_url": "https://github.com/spack/spack/pull/23852",
+    "id": 898607022,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwNDY2MTY2",
+    "number": 23852,
+    "title": "intel-tbb: explicitly set OS var and pass to TBB",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-05-21T22:15:40Z",
+    "updated_at": "2021-06-08T22:21:00Z",
+    "closed_at": "2021-06-08T22:06:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23852",
+        "html_url": "https://github.com/spack/spack/pull/23852",
+        "diff_url": "https://github.com/spack/spack/pull/23852.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23852.patch"
+    },
+    "body": "The common.inc script in TBB uses the environ var 'OS' to determine\r\nthe platform it's on.  On Linux, this is normally empty and TBB falls\r\nback to uname.  But some systems set this to 'CentOS Linux 8' which is\r\ndescriptive, but not exactly what common.inc is looking for.\r\n\r\nInstead, take the value from python and explicitly set OS to what TBB\r\nexpects to avoid this problem.\r\n\r\n----------\r\n\r\nI've built intel-tbb for 4 years without this problem until ONE system\r\nactually sets OS to 'CentOS Linux 8'.  Blech  :-)\r\n",
+    "performed_via_github_app": null
+}

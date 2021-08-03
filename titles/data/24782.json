@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24782",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24782/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24782/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24782/events",
+    "html_url": "https://github.com/spack/spack/pull/24782",
+    "id": 939924405,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg2MDcxNjU2",
+    "number": 24782,
+    "title": "Fixes for SOMBRERO package, new releases added",
+    "user": {
+        "login": "mmesiti",
+        "id": 8956864,
+        "node_id": "MDQ6VXNlcjg5NTY4NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8956864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mmesiti",
+        "html_url": "https://github.com/mmesiti",
+        "followers_url": "https://api.github.com/users/mmesiti/followers",
+        "following_url": "https://api.github.com/users/mmesiti/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mmesiti/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mmesiti/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mmesiti/subscriptions",
+        "organizations_url": "https://api.github.com/users/mmesiti/orgs",
+        "repos_url": "https://api.github.com/users/mmesiti/repos",
+        "events_url": "https://api.github.com/users/mmesiti/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mmesiti/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-07-08T14:32:26Z",
+    "updated_at": "2021-07-09T11:02:27Z",
+    "closed_at": "2021-07-09T11:02:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24782",
+        "html_url": "https://github.com/spack/spack/pull/24782",
+        "diff_url": "https://github.com/spack/spack/pull/24782.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24782.patch"
+    },
+    "body": "SOMBRERO v1.0 was not compatible with Spack\r\n(build system needed changes).\r\n- Fixed SOMBRERO, added new release pointing to fixed version\r\n- added maintainers",
+    "performed_via_github_app": null
+}

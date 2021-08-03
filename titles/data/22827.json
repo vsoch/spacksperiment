@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22827",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22827/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22827/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22827/events",
+    "html_url": "https://github.com/spack/spack/pull/22827",
+    "id": 852409486,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEwNjY2ODY1",
+    "number": 22827,
+    "title": "Py py spy add libunwind 1",
+    "user": {
+        "login": "evili",
+        "id": 2150480,
+        "node_id": "MDQ6VXNlcjIxNTA0ODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2150480?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evili",
+        "html_url": "https://github.com/evili",
+        "followers_url": "https://api.github.com/users/evili/followers",
+        "following_url": "https://api.github.com/users/evili/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evili/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evili/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evili/subscriptions",
+        "organizations_url": "https://api.github.com/users/evili/orgs",
+        "repos_url": "https://api.github.com/users/evili/repos",
+        "events_url": "https://api.github.com/users/evili/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evili/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-07T13:27:16Z",
+    "updated_at": "2021-04-08T06:54:17Z",
+    "closed_at": "2021-04-07T16:10:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22827",
+        "html_url": "https://github.com/spack/spack/pull/22827",
+        "diff_url": "https://github.com/spack/spack/pull/22827.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22827.patch"
+    },
+    "body": "libunwind is needed. If not, py-py-spy fails to build with:\r\n= note: /bin/ld: cannot find -lunwind\r\n/bin/ld: cannot find -lunwind-ptrace\r\n/bin/ld: cannot find -lunwind-x86_64\r\ncollect2: error: ld returned 1 exit status",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20435",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20435/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20435/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20435/events",
+    "html_url": "https://github.com/spack/spack/pull/20435",
+    "id": 769310882,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQxNDcxNzgw",
+    "number": 20435,
+    "title": "Pipelines: DAG Pruning",
+    "user": {
+        "login": "scottwittenburg",
+        "id": 6527504,
+        "node_id": "MDQ6VXNlcjY1Mjc1MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6527504?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scottwittenburg",
+        "html_url": "https://github.com/scottwittenburg",
+        "followers_url": "https://api.github.com/users/scottwittenburg/followers",
+        "following_url": "https://api.github.com/users/scottwittenburg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scottwittenburg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scottwittenburg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scottwittenburg/subscriptions",
+        "organizations_url": "https://api.github.com/users/scottwittenburg/orgs",
+        "repos_url": "https://api.github.com/users/scottwittenburg/repos",
+        "events_url": "https://api.github.com/users/scottwittenburg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scottwittenburg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491156024,
+            "node_id": "MDU6TGFiZWwxNDkxMTU2MDI0",
+            "url": "https://api.github.com/repos/spack/spack/labels/pipelines",
+            "name": "pipelines",
+            "color": "b22353",
+            "default": false,
+            "description": "Issues related to spack's pipeline features"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-12-16T22:17:13Z",
+    "updated_at": "2021-02-16T16:12:41Z",
+    "closed_at": "2021-02-16T16:12:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20435",
+        "html_url": "https://github.com/spack/spack/pull/20435",
+        "diff_url": "https://github.com/spack/spack/pull/20435.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20435.patch"
+    },
+    "body": "Check specs against configured mirrors during the staging process, so we avoid scheduling them in the pipeline if they are already up to date on at least one of the mirrors.\r\n\r\nStill TODO:\r\n\r\n- [x] Make sure per-PR mirror is configured and available during pipeline generation\r\n- [ ] ~Fix the stages (currently we don't account for stages going away)~ - This is not necessary for pipeline correctness.\r\n- [x] Make sure something sensible happens if an empty pipeline is generated\r\n- [x] Make this functionality optional via a cli arg\r\n- [x] Finish updating `pipelines.rst` to describe changes, especially DAG pruning.\r\n- [x] Fix whatever is wrong with restructured text and breaking the docs\r\n- [x] Add some tests\r\n- [x] Test that this behaves as expected in the presence of compiler bootstrapping\r\n- [x] Clean up",
+    "performed_via_github_app": null
+}

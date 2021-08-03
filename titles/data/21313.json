@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21313",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21313/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21313/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21313/events",
+    "html_url": "https://github.com/spack/spack/pull/21313",
+    "id": 794820989,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyMjcxMTMw",
+    "number": 21313,
+    "title": "libpeas: Fix aclocal_pkg_list and python_pc_file",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-27T06:43:22Z",
+    "updated_at": "2021-01-28T08:31:55Z",
+    "closed_at": "2021-01-28T08:31:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21313",
+        "html_url": "https://github.com/spack/spack/pull/21313",
+        "diff_url": "https://github.com/spack/spack/pull/21313.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21313.patch"
+    },
+    "body": "I have fixed the following issues:\r\n1)  Error: KeyError: 'No spec with name pkg-config\r\n2) link error\r\n\u3000I've found many entry names, so I'll list only two entry names.\r\n    594   ./spack-src/tests/libpeas/extension-py.c:142: undefined reference to `Py_IsInitialized'\r\n    595   ./spack-src/tests/libpeas/extension-py.c:143: undefined reference to `Py_InitializeEx'\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

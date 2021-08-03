@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21471",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21471/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21471/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21471/events",
+    "html_url": "https://github.com/spack/spack/pull/21471",
+    "id": 800768863,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY3MjAxMDk4",
+    "number": 21471,
+    "title": "[gnutls] added dependency libidn2 without restrictions",
+    "user": {
+        "login": "qwertos",
+        "id": 2219302,
+        "node_id": "MDQ6VXNlcjIyMTkzMDI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2219302?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/qwertos",
+        "html_url": "https://github.com/qwertos",
+        "followers_url": "https://api.github.com/users/qwertos/followers",
+        "following_url": "https://api.github.com/users/qwertos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/qwertos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/qwertos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/qwertos/subscriptions",
+        "organizations_url": "https://api.github.com/users/qwertos/orgs",
+        "repos_url": "https://api.github.com/users/qwertos/repos",
+        "events_url": "https://api.github.com/users/qwertos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/qwertos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-03T22:59:52Z",
+    "updated_at": "2021-06-14T14:34:17Z",
+    "closed_at": "2021-06-12T11:44:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21471",
+        "html_url": "https://github.com/spack/spack/pull/21471",
+        "diff_url": "https://github.com/spack/spack/pull/21471.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21471.patch"
+    },
+    "body": "Adding libidn2 as a dependency of gnutls in all cases. Unknown why this was version limited in the first place. Leaving that limitation in place just incase there was a good reason. See: #11257.",
+    "performed_via_github_app": null
+}

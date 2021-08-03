@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22662",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22662/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22662/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22662/events",
+    "html_url": "https://github.com/spack/spack/pull/22662",
+    "id": 845726430,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA0ODcwNjM2",
+    "number": 22662,
+    "title": "spack.database.Database._query() will now apply filters to concrete specs",
+    "user": {
+        "login": "myan-rarcellino-nnl",
+        "id": 67644978,
+        "node_id": "MDQ6VXNlcjY3NjQ0OTc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67644978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/myan-rarcellino-nnl",
+        "html_url": "https://github.com/myan-rarcellino-nnl",
+        "followers_url": "https://api.github.com/users/myan-rarcellino-nnl/followers",
+        "following_url": "https://api.github.com/users/myan-rarcellino-nnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/myan-rarcellino-nnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/myan-rarcellino-nnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/myan-rarcellino-nnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/myan-rarcellino-nnl/orgs",
+        "repos_url": "https://api.github.com/users/myan-rarcellino-nnl/repos",
+        "events_url": "https://api.github.com/users/myan-rarcellino-nnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/myan-rarcellino-nnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-31T03:01:39Z",
+    "updated_at": "2021-07-19T10:48:26Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22662",
+        "html_url": "https://github.com/spack/spack/pull/22662",
+        "diff_url": "https://github.com/spack/spack/pull/22662.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22662.patch"
+    },
+    "body": "Currently, if a concrete spec is passed to `spack.database.Database._query()` only the `hashes` filter is applied. This PR applies the same logic to concrete and abstract specs and adds tests for all `_query()` parameters.\r\n\r\nExample use case where false positives are returned:\r\n```python\r\nconcrete_spec = ...  # a concrete spec based on result of 'spack find -X'\r\nspack.store.db.query(query_spec=concrete_spec, explicit=True)  # returns implicit and explicit specs with same hash as concrete_spec\r\n```\r\n",
+    "performed_via_github_app": null
+}

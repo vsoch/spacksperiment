@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24211",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24211/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24211/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24211/events",
+    "html_url": "https://github.com/spack/spack/pull/24211",
+    "id": 915568489,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY1MzcxMTI4",
+    "number": 24211,
+    "title": "texlive: update live version to 2021",
+    "user": {
+        "login": "snehring",
+        "id": 7978778,
+        "node_id": "MDQ6VXNlcjc5Nzg3Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7978778?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/snehring",
+        "html_url": "https://github.com/snehring",
+        "followers_url": "https://api.github.com/users/snehring/followers",
+        "following_url": "https://api.github.com/users/snehring/following{/other_user}",
+        "gists_url": "https://api.github.com/users/snehring/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/snehring/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/snehring/subscriptions",
+        "organizations_url": "https://api.github.com/users/snehring/orgs",
+        "repos_url": "https://api.github.com/users/snehring/repos",
+        "events_url": "https://api.github.com/users/snehring/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/snehring/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-08T21:58:31Z",
+    "updated_at": "2021-06-09T00:09:17Z",
+    "closed_at": "2021-06-08T23:55:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24211",
+        "html_url": "https://github.com/spack/spack/pull/24211",
+        "diff_url": "https://github.com/spack/spack/pull/24211.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24211.patch"
+    },
+    "body": "The 'live' version of texlive is currently using the 2020 installer, but tries to install from the 2021 repos, which fails.\r\n\r\nThis PR updates the installer for the 'live' version to the 2021 installer.",
+    "performed_via_github_app": null
+}

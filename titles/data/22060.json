@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22060",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22060/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22060/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22060/events",
+    "html_url": "https://github.com/spack/spack/pull/22060",
+    "id": 821288199,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg0MTA1NDY5",
+    "number": 22060,
+    "title": "SCR: Specify @master for component libraries as dependencies for scr@develop",
+    "user": {
+        "login": "robertkb",
+        "id": 9001420,
+        "node_id": "MDQ6VXNlcjkwMDE0MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9001420?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertkb",
+        "html_url": "https://github.com/robertkb",
+        "followers_url": "https://api.github.com/users/robertkb/followers",
+        "following_url": "https://api.github.com/users/robertkb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertkb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertkb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertkb/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertkb/orgs",
+        "repos_url": "https://api.github.com/users/robertkb/repos",
+        "events_url": "https://api.github.com/users/robertkb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertkb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-03-03T16:44:36Z",
+    "updated_at": "2021-03-31T16:47:29Z",
+    "closed_at": "2021-03-31T16:14:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22060",
+        "html_url": "https://github.com/spack/spack/pull/22060",
+        "diff_url": "https://github.com/spack/spack/pull/22060.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22060.patch"
+    },
+    "body": "The scr@develop branch now requires er@master and shuffile@master to build correctly. It currently still builds with the default specs for the rankstr, filo, and spath component libraries, but those specs may eventually need to be changed as well. Update just these two, of fix the whole batch at once?\r\n",
+    "performed_via_github_app": null
+}

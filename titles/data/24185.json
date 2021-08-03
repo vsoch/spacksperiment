@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24185",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24185/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24185/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24185/events",
+    "html_url": "https://github.com/spack/spack/pull/24185",
+    "id": 913792833,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYzNzczMDA0",
+    "number": 24185,
+    "title": "Pipelines: Fix default generated rebuild job script",
+    "user": {
+        "login": "scottwittenburg",
+        "id": 6527504,
+        "node_id": "MDQ6VXNlcjY1Mjc1MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6527504?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scottwittenburg",
+        "html_url": "https://github.com/scottwittenburg",
+        "followers_url": "https://api.github.com/users/scottwittenburg/followers",
+        "following_url": "https://api.github.com/users/scottwittenburg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scottwittenburg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scottwittenburg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scottwittenburg/subscriptions",
+        "organizations_url": "https://api.github.com/users/scottwittenburg/orgs",
+        "repos_url": "https://api.github.com/users/scottwittenburg/repos",
+        "events_url": "https://api.github.com/users/scottwittenburg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scottwittenburg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-07T17:38:49Z",
+    "updated_at": "2021-06-08T20:33:49Z",
+    "closed_at": "2021-06-08T20:33:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24185",
+        "html_url": "https://github.com/spack/spack/pull/24185",
+        "diff_url": "https://github.com/spack/spack/pull/24185.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24185.patch"
+    },
+    "body": "Fix the default generated job script so it doesn't pass the invalid `--prepare` option to `spack ci rebuild`.  Also remove the `install.sh` invocation, as that is invoked internally within `spack ci rebuild`.",
+    "performed_via_github_app": null
+}

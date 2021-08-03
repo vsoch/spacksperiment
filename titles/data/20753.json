@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20753",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20753/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20753/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20753/events",
+    "html_url": "https://github.com/spack/spack/pull/20753",
+    "id": 782268902,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUxODU0ODg4",
+    "number": 20753,
+    "title": "include libpng configuration in R spec",
+    "user": {
+        "login": "jasonbuechler",
+        "id": 34217071,
+        "node_id": "MDQ6VXNlcjM0MjE3MDcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34217071?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jasonbuechler",
+        "html_url": "https://github.com/jasonbuechler",
+        "followers_url": "https://api.github.com/users/jasonbuechler/followers",
+        "following_url": "https://api.github.com/users/jasonbuechler/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jasonbuechler/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jasonbuechler/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jasonbuechler/subscriptions",
+        "organizations_url": "https://api.github.com/users/jasonbuechler/orgs",
+        "repos_url": "https://api.github.com/users/jasonbuechler/repos",
+        "events_url": "https://api.github.com/users/jasonbuechler/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jasonbuechler/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-08T17:06:32Z",
+    "updated_at": "2021-02-17T23:39:06Z",
+    "closed_at": "2021-02-17T23:39:06Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20753",
+        "html_url": "https://github.com/spack/spack/pull/20753",
+        "diff_url": "https://github.com/spack/spack/pull/20753.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20753.patch"
+    },
+    "body": "appears (http://www.libpng.org/pub/png/libpng.html) libpng depends on zlib which is already a dependency for this spec so just added the variant, virtual dep, and args\r\n\r\nCloses #20731",
+    "performed_via_github_app": null
+}

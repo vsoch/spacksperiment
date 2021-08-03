@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21128",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21128/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21128/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21128/events",
+    "html_url": "https://github.com/spack/spack/pull/21128",
+    "id": 788091151,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2NjU5NzQz",
+    "number": 21128,
+    "title": "[acts] Add version 4.1, bump minimal dependencies",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-18T09:25:27Z",
+    "updated_at": "2021-01-19T04:35:51Z",
+    "closed_at": "2021-01-18T18:49:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21128",
+        "html_url": "https://github.com/spack/spack/pull/21128",
+        "diff_url": "https://github.com/spack/spack/pull/21128.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21128.patch"
+    },
+    "body": "As usual, this PR is pending a test build on my side before it is ready to be merged, but published early for the benefit of other people who use the `acts` spackage and want to know/review what's going on ahead of time.\r\n\r\nIt adds support for [acts v4.1.0](https://github.com/acts-project/acts/releases/tag/v4.1.0) and bumps the minimal dependency requirements accordingly.\r\n\r\nThe later is debatable in the context of a package manager that can build old versions of a package like spack, but I do it anyway according to the following rationale:\r\n\r\n- The old package dependency specification stated that such a dependency bump is okay, so if the bump was not okay for some old acts releases, the dependency specification was wrong and must be corrected (as was done for e.g. ROOT and DD4hep deps).\r\n- To keep the acts package maintainable, it is best to keep the package.py as simple as possible. Keeping track of precise dependency requirements for all old release is at odds with that goal, as it leads to a gradual explosion in the number of package.py lines of code.\r\n- If you're using spack, you have access to the latest version of all dependencies anyway.\r\n- If for some reason you absolutely must use a version of the acts spackage that supports the old versions of the dependencies, you can still find one in the git history of the spack repository.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,116 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19133",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19133/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19133/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19133/events",
+    "html_url": "https://github.com/spack/spack/pull/19133",
+    "id": 713801599,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk3MDUzMDUx",
+    "number": 19133,
+    "title": "make opengl and spectrum-mpi set has_code = False",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 471440001,
+            "node_id": "MDU6TGFiZWw0NzE0NDAwMDE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/bundles",
+            "name": "bundles",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1022989250,
+            "node_id": "MDU6TGFiZWwxMDIyOTg5MjUw",
+            "url": "https://api.github.com/repos/spack/spack/labels/opengl",
+            "name": "opengl",
+            "color": "c2d9f9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1504562794,
+            "node_id": "MDU6TGFiZWwxNTA0NTYyNzk0",
+            "url": "https://api.github.com/repos/spack/spack/labels/robustness",
+            "name": "robustness",
+            "color": "e0694c",
+            "default": false,
+            "description": "Enhancements to reduce fragility under different conditions."
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-10-02T17:55:57Z",
+    "updated_at": "2020-10-15T19:13:26Z",
+    "closed_at": "2020-10-15T19:13:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19133",
+        "html_url": "https://github.com/spack/spack/pull/19133",
+        "diff_url": "https://github.com/spack/spack/pull/19133.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19133.patch"
+    },
+    "body": "Fixes multiple issues with opengl and spectrum-mpi packages, which are written to be external-only.",
+    "performed_via_github_app": null
+}

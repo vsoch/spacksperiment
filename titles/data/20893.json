@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20893",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20893/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20893/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20893/events",
+    "html_url": "https://github.com/spack/spack/pull/20893",
+    "id": 785657462,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU0NjQ4OTYz",
+    "number": 20893,
+    "title": "libzmq: Add platform conditions to the previously modified dependencies",
+    "user": {
+        "login": "a-saitoh-fj",
+        "id": 63334055,
+        "node_id": "MDQ6VXNlcjYzMzM0MDU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63334055?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/a-saitoh-fj",
+        "html_url": "https://github.com/a-saitoh-fj",
+        "followers_url": "https://api.github.com/users/a-saitoh-fj/followers",
+        "following_url": "https://api.github.com/users/a-saitoh-fj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/a-saitoh-fj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/a-saitoh-fj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/a-saitoh-fj/subscriptions",
+        "organizations_url": "https://api.github.com/users/a-saitoh-fj/orgs",
+        "repos_url": "https://api.github.com/users/a-saitoh-fj/repos",
+        "events_url": "https://api.github.com/users/a-saitoh-fj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/a-saitoh-fj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-14T05:13:32Z",
+    "updated_at": "2021-01-28T05:18:30Z",
+    "closed_at": "2021-01-15T08:50:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20893",
+        "html_url": "https://github.com/spack/spack/pull/20893",
+        "diff_url": "https://github.com/spack/spack/pull/20893.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20893.patch"
+    },
+    "body": "Added libbsd dependency in #20828.\r\nHowever, libbsd is subject to conflict on MacOS.\r\nTherefore, the problem was pointed out in #20828.\r\nAdd platform conditions to this dependency.",
+    "performed_via_github_app": null
+}

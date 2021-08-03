@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22826",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22826/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22826/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22826/events",
+    "html_url": "https://github.com/spack/spack/pull/22826",
+    "id": 852374091,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEwNjM3MDkw",
+    "number": 22826,
+    "title": "py-ray needs exact bazel dependency",
+    "user": {
+        "login": "evili",
+        "id": 2150480,
+        "node_id": "MDQ6VXNlcjIxNTA0ODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2150480?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evili",
+        "html_url": "https://github.com/evili",
+        "followers_url": "https://api.github.com/users/evili/followers",
+        "following_url": "https://api.github.com/users/evili/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evili/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evili/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evili/subscriptions",
+        "organizations_url": "https://api.github.com/users/evili/orgs",
+        "repos_url": "https://api.github.com/users/evili/repos",
+        "events_url": "https://api.github.com/users/evili/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evili/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1724606298,
+            "node_id": "MDU6TGFiZWwxNzI0NjA2Mjk4",
+            "url": "https://api.github.com/repos/spack/spack/labels/bazel",
+            "name": "bazel",
+            "color": "97ed93",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-07T12:47:52Z",
+    "updated_at": "2021-04-08T06:54:00Z",
+    "closed_at": "2021-04-07T15:44:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22826",
+        "html_url": "https://github.com/spack/spack/pull/22826",
+        "diff_url": "https://github.com/spack/spack/pull/22826.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22826.patch"
+    },
+    "body": "As stated at:\r\n\r\nhttps://github.com/ray-project/ray/issues/11237\r\n\r\nThe py-ray package needs bazel@3.2.0 (exact version) since the \"--experimental_ui_deduplicate\" has disappeared in recent versions.",
+    "performed_via_github_app": null
+}

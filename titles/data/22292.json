@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22292",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22292/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22292/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22292/events",
+    "html_url": "https://github.com/spack/spack/pull/22292",
+    "id": 831346468,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTkyNjgwMjY3",
+    "number": 22292,
+    "title": "OpenCV: add new version, simplify package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-03-15T02:14:06Z",
+    "updated_at": "2021-03-16T21:04:43Z",
+    "closed_at": "2021-03-15T21:41:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22292",
+        "html_url": "https://github.com/spack/spack/pull/22292",
+        "diff_url": "https://github.com/spack/spack/pull/22292.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22292.patch"
+    },
+    "body": "Successfully builds on macOS 10.15.7 with Python 3.8.8 and Apple Clang 12.0.0.\r\n\r\nFor some reason, when I try to use this package, I see:\r\n```python\r\n>>> import cv2\r\n>>> cv2.imread()\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\nAttributeError: module 'cv2' has no attribute 'imread'\r\n```\r\nI have no idea why this is the case or how to fix it. I'm installing `opencv+python+contrib`.\r\n\r\n@bvanessen ",
+    "performed_via_github_app": null
+}

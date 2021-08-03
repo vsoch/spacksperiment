@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19482",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19482/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19482/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19482/events",
+    "html_url": "https://github.com/spack/spack/pull/19482",
+    "id": 727705046,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA4NTQ1Njcw",
+    "number": 19482,
+    "title": "5 gcc master zstd patch fix",
+    "user": {
+        "login": "tomgreen66",
+        "id": 2301394,
+        "node_id": "MDQ6VXNlcjIzMDEzOTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2301394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tomgreen66",
+        "html_url": "https://github.com/tomgreen66",
+        "followers_url": "https://api.github.com/users/tomgreen66/followers",
+        "following_url": "https://api.github.com/users/tomgreen66/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tomgreen66/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tomgreen66/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tomgreen66/subscriptions",
+        "organizations_url": "https://api.github.com/users/tomgreen66/orgs",
+        "repos_url": "https://api.github.com/users/tomgreen66/repos",
+        "events_url": "https://api.github.com/users/tomgreen66/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tomgreen66/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-22T20:38:22Z",
+    "updated_at": "2020-10-23T07:32:07Z",
+    "closed_at": "2020-10-23T07:32:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19482",
+        "html_url": "https://github.com/spack/spack/pull/19482",
+        "diff_url": "https://github.com/spack/spack/pull/19482.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19482.patch"
+    },
+    "body": "To fix the patch on gcc@master we have to set the versions that the zstd patch is applied since current latest code of gcc has the patch already applied.\r\n\r\nFixes #19478 ",
+    "performed_via_github_app": null
+}

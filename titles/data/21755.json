@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21755",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21755/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21755/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21755/events",
+    "html_url": "https://github.com/spack/spack/pull/21755",
+    "id": 810853874,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc1NDc1OTE0",
+    "number": 21755,
+    "title": "bugfix: relax racy test in fg/bg output",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-18T07:54:14Z",
+    "updated_at": "2021-02-18T20:55:10Z",
+    "closed_at": "2021-02-18T08:33:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21755",
+        "html_url": "https://github.com/spack/spack/pull/21755",
+        "diff_url": "https://github.com/spack/spack/pull/21755.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21755.patch"
+    },
+    "body": "Since signals are fundamentally racy, We can't bound the amount of time that the `test_foreground_background_output` test will take to get to 'on', we can only observe that it transitions to 'on'. So instead of using an arbitrary limit, just adjust the test to allow either 'on', or 'off' followed by 'on'.\r\n\r\nThis should eliminate the spurious errors we see in CI (for example, [here](https://github.com/spack/spack/runs/1923243564?check_suite_focus=true)).",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21349",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21349/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21349/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21349/events",
+    "html_url": "https://github.com/spack/spack/pull/21349",
+    "id": 795262322,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyNjQwODI2",
+    "number": 21349,
+    "title": "openmc: updated package recipe",
+    "user": {
+        "login": "bryanherman",
+        "id": 63422190,
+        "node_id": "MDQ6VXNlcjYzNDIyMTkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63422190?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bryanherman",
+        "html_url": "https://github.com/bryanherman",
+        "followers_url": "https://api.github.com/users/bryanherman/followers",
+        "following_url": "https://api.github.com/users/bryanherman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bryanherman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bryanherman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bryanherman/subscriptions",
+        "organizations_url": "https://api.github.com/users/bryanherman/orgs",
+        "repos_url": "https://api.github.com/users/bryanherman/repos",
+        "events_url": "https://api.github.com/users/bryanherman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bryanherman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-27T16:40:53Z",
+    "updated_at": "2021-01-29T01:32:00Z",
+    "closed_at": "2021-01-28T16:04:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21349",
+        "html_url": "https://github.com/spack/spack/pull/21349",
+        "diff_url": "https://github.com/spack/spack/pull/21349.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21349.patch"
+    },
+    "body": "The OpenMC recipe was updated for latest versions, Git support and variants.",
+    "performed_via_github_app": null
+}

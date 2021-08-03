@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22498",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22498/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22498/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22498/events",
+    "html_url": "https://github.com/spack/spack/pull/22498",
+    "id": 839203155,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk5MjU1NTIw",
+    "number": 22498,
+    "title": "openmpi: do not over specify hwloc version dep",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-23T23:26:40Z",
+    "updated_at": "2021-03-24T16:29:35Z",
+    "closed_at": "2021-03-24T16:29:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22498",
+        "html_url": "https://github.com/spack/spack/pull/22498",
+        "diff_url": "https://github.com/spack/spack/pull/22498.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22498.patch"
+    },
+    "body": "related to #22497\r\n\r\nSigned-off-by: Howard Pritchard <hppritcha@gmail.com>",
+    "performed_via_github_app": null
+}

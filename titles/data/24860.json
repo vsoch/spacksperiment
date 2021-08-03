@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24860/events",
+    "html_url": "https://github.com/spack/spack/pull/24860",
+    "id": 943691267,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg5Mjg1MjQ2",
+    "number": 24860,
+    "title": "specs: emit better parsing errors for specs.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-13T17:59:16Z",
+    "updated_at": "2021-07-13T20:09:41Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24860",
+        "html_url": "https://github.com/spack/spack/pull/24860",
+        "diff_url": "https://github.com/spack/spack/pull/24860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24860.patch"
+    },
+    "body": "Parse error information is kept for specs, but it doesn't seem like we propagate it to the user when we encounter an error.  This fixes that.\r\n\r\ne.g., for this error in a package:\r\n\r\n```python\r\n    depends_on(\"python@:3.8\", when=\"0.900:\")\r\n```\r\n\r\nBefore, with no context and no clue that it's even from a particular spec:\r\n\r\n```\r\n==> Error: Unexpected token: ':'\r\n```\r\n\r\nWith this PR:\r\n\r\n```\r\n==> Error: Unexpected token: ':'\r\n  Encountered when parsing spec:\r\n    0.900:\r\n         ^\r\n```\r\n\r\nI would like to show context like we do with actual build-time package errors, but that's more work because it seems like the import mechanism strips package frames off the stack.  We can try to preserve context like that from directives, but it'll take more implemetnation and I am not sure how much it'll cost in terms of package import time. This is at least an improvement.\r\n\r\n- [x] implement better long error message for `SpecParseError`\r\n- [ ] tests",
+    "performed_via_github_app": null
+}

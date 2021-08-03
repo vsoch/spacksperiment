@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19137",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19137/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19137/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19137/events",
+    "html_url": "https://github.com/spack/spack/pull/19137",
+    "id": 713914038,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk3MTQ1MTI5",
+    "number": 19137,
+    "title": "Reorganise deal.II package and add some new settings",
+    "user": {
+        "login": "jppelteret",
+        "id": 10460610,
+        "node_id": "MDQ6VXNlcjEwNDYwNjEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10460610?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jppelteret",
+        "html_url": "https://github.com/jppelteret",
+        "followers_url": "https://api.github.com/users/jppelteret/followers",
+        "following_url": "https://api.github.com/users/jppelteret/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jppelteret/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jppelteret/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jppelteret/subscriptions",
+        "organizations_url": "https://api.github.com/users/jppelteret/orgs",
+        "repos_url": "https://api.github.com/users/jppelteret/repos",
+        "events_url": "https://api.github.com/users/jppelteret/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jppelteret/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-10-02T21:32:54Z",
+    "updated_at": "2020-10-10T18:02:12Z",
+    "closed_at": "2020-10-10T13:20:53Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19137",
+        "html_url": "https://github.com/spack/spack/pull/19137",
+        "diff_url": "https://github.com/spack/spack/pull/19137.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19137.patch"
+    },
+    "body": "@luca-heltai, this is all up for discussion: \r\n\r\nI have added a few new variants (choosing the C++ standard, choosing to build the examples, adding ninja the chosen build tool build tool). At the same time I noticed that this package is getting really large and unwieldy. So I propose shuffling around and categorising all of the settings, to make this package easier to navigate.",
+    "performed_via_github_app": null
+}

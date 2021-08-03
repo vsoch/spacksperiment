@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24035",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24035/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24035/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24035/events",
+    "html_url": "https://github.com/spack/spack/pull/24035",
+    "id": 907652612,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU4NDY2MDY5",
+    "number": 24035,
+    "title": "Remove dead code in installer",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-05-31T18:27:21Z",
+    "updated_at": "2021-06-02T12:05:52Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24035",
+        "html_url": "https://github.com/spack/spack/pull/24035",
+        "diff_url": "https://github.com/spack/spack/pull/24035.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24035.patch"
+    },
+    "body": "The `InstallDirectoryAlreadyExistsError` exception is never raised since the code path only ever happens when the install directory does not exist.\r\n\r\nSee https://github.com/spack/spack/blob/develop/lib/spack/spack/installer.py#L1294-L1297, this the only call site of create_install_directory, except for the tests in lib/spack/spack/test/directory_layout.py, but they use the function as a helper where the install prefix indeed does not exist.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19636",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19636/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19636/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19636/events",
+    "html_url": "https://github.com/spack/spack/pull/19636",
+    "id": 733592000,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEzMzQ0NTc3",
+    "number": 19636,
+    "title": "sbang: fixes for sbang relocation",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1747000960,
+            "node_id": "MDU6TGFiZWwxNzQ3MDAwOTYw",
+            "url": "https://api.github.com/repos/spack/spack/labels/sbang",
+            "name": "sbang",
+            "color": "095e8c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-10-31T00:45:04Z",
+    "updated_at": "2020-11-02T00:23:50Z",
+    "closed_at": "2020-11-02T00:23:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19636",
+        "html_url": "https://github.com/spack/spack/pull/19636",
+        "diff_url": "https://github.com/spack/spack/pull/19636.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19636.patch"
+    },
+    "body": "This fixes sbang relocation when using old binary packages, and updates code in `relocate.py`.\r\n\r\nThere are really two places where we would want to handle an `sbang` relocation:\r\n\r\n1. Installing an old package that uses `sbang` with shebang lines like `#!/bin/bash $spack_prefix/sbang`\r\n2. Installing a *new* package that uses `sbang` with shebang lines like `#!/bin/sh $install_tree/sbang` (see #11598, #19529, #19582).\r\n\r\nThe second case is actually handled automatically by our text relocation; we don't need any special relocation logic for new shebangs, as our relocation logic already changes references to the build-time `install_tree` to point to the `install_tree` at intall-time.\r\n\r\nCase 1 was not properly handled -- we would not take an old binary package and point its shebangs at the new `sbang` location. This PR fixes that and updates the code in `relocation.py` with some notes.\r\n\r\nThere is one more case we don't currently handle: if a binary package is created from an installation in a short prefix that does *not* need `sbang` and is installed to a long prefix that *does* need `sbang`, we won't do anything. We should just patch the file as we would for a normal install. In some upcoming PR we should probably change *all* `sbang` relocation logic to be idempotent and to apply to any sort of shebang'd file. Then we'd only have to worry about which files to `sbang`-ify at install time and wouldn't need to care about these special cases.",
+    "performed_via_github_app": null
+}

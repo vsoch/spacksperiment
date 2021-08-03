@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25167",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25167/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25167/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25167/events",
+    "html_url": "https://github.com/spack/spack/pull/25167",
+    "id": 957206698,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNjgwNTU5",
+    "number": 25167,
+    "title": "refactor: convert `build_process` to use `BuildProcessInstaller`",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-31T09:05:46Z",
+    "updated_at": "2021-08-02T20:17:30Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25167",
+        "html_url": "https://github.com/spack/spack/pull/25167",
+        "diff_url": "https://github.com/spack/spack/pull/25167.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25167.patch"
+    },
+    "body": "`build_process` has been around a long time but it's become a very large, unwieldy method. It's hard to work with because it has a lot of local variables that need to persist across all of the code.\r\n\r\n- [x] To address this, convert it its own `BuildInfoProcess` class.\r\n- [x] Start breaking the method apart by factoring out the main installation logic into its own function.",
+    "performed_via_github_app": null
+}

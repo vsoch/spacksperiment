@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23848",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23848/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23848/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23848/events",
+    "html_url": "https://github.com/spack/spack/pull/23848",
+    "id": 898165318,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwMDY5Mjg4",
+    "number": 23848,
+    "title": "New package: skit",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-21T15:39:33Z",
+    "updated_at": "2021-05-22T21:54:32Z",
+    "closed_at": "2021-05-22T20:25:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23848",
+        "html_url": "https://github.com/spack/spack/pull/23848",
+        "diff_url": "https://github.com/spack/spack/pull/23848.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23848.patch"
+    },
+    "body": "This is SPARSEKIT the (old) basic tool-kit for sparse matrix computations from Y. Saad, University of Minnesota.\r\nIt may be used by getDP from https://getdp.info but also from teaching of for fast building students codes.\r\nIt is only compiled and an archive is made, statically. It is Fortran only, it needs blas when using.\r\n",
+    "performed_via_github_app": null
+}

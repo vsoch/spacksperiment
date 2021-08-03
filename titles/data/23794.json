@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23794",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23794/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23794/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23794/events",
+    "html_url": "https://github.com/spack/spack/pull/23794",
+    "id": 895759379,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ3OTQwMjc0",
+    "number": 23794,
+    "title": "ghostscript: add tesseract variant",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-19T18:35:00Z",
+    "updated_at": "2021-05-21T14:30:50Z",
+    "closed_at": "2021-05-21T07:22:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23794",
+        "html_url": "https://github.com/spack/spack/pull/23794",
+        "diff_url": "https://github.com/spack/spack/pull/23794.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23794.patch"
+    },
+    "body": "`ghostscript` tries to build a vendored copy of `tesseract` by default. Unfortunately, this doesn't seem to build correctly on macOS: https://trac.macports.org/ticket/62832\r\n\r\nThis PR adds a variant to control this (off by default) and adds conflicts to warn users.\r\n\r\nSuccessfully builds on macOS 10.15.7 with Apple Clang 12.0.0.",
+    "performed_via_github_app": null
+}

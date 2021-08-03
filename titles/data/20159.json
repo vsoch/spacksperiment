@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20159",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20159/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20159/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20159/events",
+    "html_url": "https://github.com/spack/spack/pull/20159",
+    "id": 752903718,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5MTAwNTQ5",
+    "number": 20159,
+    "title": "clean up how spack builds clingo",
+    "user": {
+        "login": "cosmicexplorer",
+        "id": 1305167,
+        "node_id": "MDQ6VXNlcjEzMDUxNjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305167?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cosmicexplorer",
+        "html_url": "https://github.com/cosmicexplorer",
+        "followers_url": "https://api.github.com/users/cosmicexplorer/followers",
+        "following_url": "https://api.github.com/users/cosmicexplorer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cosmicexplorer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cosmicexplorer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cosmicexplorer/subscriptions",
+        "organizations_url": "https://api.github.com/users/cosmicexplorer/orgs",
+        "repos_url": "https://api.github.com/users/cosmicexplorer/repos",
+        "events_url": "https://api.github.com/users/cosmicexplorer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cosmicexplorer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2542559486,
+            "node_id": "MDU6TGFiZWwyNTQyNTU5NDg2",
+            "url": "https://api.github.com/repos/spack/spack/labels/bootstrap",
+            "name": "bootstrap",
+            "color": "743ec4",
+            "default": false,
+            "description": "Issues occurring while spack builds its own dependencies."
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-11-29T12:17:19Z",
+    "updated_at": "2020-12-31T04:39:25Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20159",
+        "html_url": "https://github.com/spack/spack/pull/20159",
+        "diff_url": "https://github.com/spack/spack/pull/20159.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20159.patch"
+    },
+    "body": "### Problem\r\n\r\nFixes #20123, subsumes #20218.\r\n\r\n**Note:** this PR does **not** attempt to address the problem of actually making spack build clingo on demand in such environments. We will rely on #20207 for that.\r\n\r\n### Solution\r\n- Require `clingo+python` to depend on `python+shared` (this was already necessary, but was working because the `python` package defaults to `+shared`).\r\n  - #20116 fixes this.\r\n- Pull in the changes from #20139 and #20218.\r\n- Add support for building clingo on python 2.6.\r\n- **TODO** Add a test for installation in the centos6 test shard.\r\n\r\n### Result\r\n1. A bootstrap mechanism is created for `clingo` to bootstrap itself in python 2.6-only environments.\r\n2. Spack is able to avoid sneakily modifying the user's running python version (so no python code breaks because spack installed its own interpreter).\r\n3. This is tested in CI!",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19549",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19549/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19549/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19549/events",
+    "html_url": "https://github.com/spack/spack/pull/19549",
+    "id": 730610836,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEwODg2NDM4",
+    "number": 19549,
+    "title": "[julia]: CPU names are LLVM-style, must map across",
+    "user": {
+        "login": "staticfloat",
+        "id": 130920,
+        "node_id": "MDQ6VXNlcjEzMDkyMA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/130920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/staticfloat",
+        "html_url": "https://github.com/staticfloat",
+        "followers_url": "https://api.github.com/users/staticfloat/followers",
+        "following_url": "https://api.github.com/users/staticfloat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/staticfloat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/staticfloat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/staticfloat/subscriptions",
+        "organizations_url": "https://api.github.com/users/staticfloat/orgs",
+        "repos_url": "https://api.github.com/users/staticfloat/repos",
+        "events_url": "https://api.github.com/users/staticfloat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/staticfloat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-27T16:28:45Z",
+    "updated_at": "2020-11-03T18:04:30Z",
+    "closed_at": "2020-11-03T18:04:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19549",
+        "html_url": "https://github.com/spack/spack/pull/19549",
+        "diff_url": "https://github.com/spack/spack/pull/19549.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19549.patch"
+    },
+    "body": "In this case, the `zen2` architecture is unknown; Spack must use the\r\nLLVM-style `znver2` target instead.  I haven't done an exhaustive test, this was just the architecture of my dev machine.",
+    "performed_via_github_app": null
+}

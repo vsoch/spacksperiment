@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21572",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21572/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21572/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21572/events",
+    "html_url": "https://github.com/spack/spack/pull/21572",
+    "id": 804776933,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcwNDg4NDEz",
+    "number": 21572,
+    "title": "root: 6.22.04 works with xrootd 5",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-09T17:50:49Z",
+    "updated_at": "2021-02-09T19:56:02Z",
+    "closed_at": "2021-02-09T19:33:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21572",
+        "html_url": "https://github.com/spack/spack/pull/21572",
+        "diff_url": "https://github.com/spack/spack/pull/21572.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21572.patch"
+    },
+    "body": "ROOT version 6.22.04 has been ported to support xrootd 5.\r\nSo let's support that.\r\n\r\nSee: https://github.com/root-project/root/commit/a33b156e3bf809343eda08150666154a\r\n\r\nMaintainer-Ping: @chissg, @HadrienG2, @drbenmorgan, @vvolkl",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19513",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19513/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19513/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19513/events",
+    "html_url": "https://github.com/spack/spack/pull/19513",
+    "id": 729118402,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5NjY1Njk0",
+    "number": 19513,
+    "title": "Conduit: update package.py",
+    "user": {
+        "login": "adityakavalur",
+        "id": 33232772,
+        "node_id": "MDQ6VXNlcjMzMjMyNzcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33232772?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adityakavalur",
+        "html_url": "https://github.com/adityakavalur",
+        "followers_url": "https://api.github.com/users/adityakavalur/followers",
+        "following_url": "https://api.github.com/users/adityakavalur/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adityakavalur/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adityakavalur/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adityakavalur/subscriptions",
+        "organizations_url": "https://api.github.com/users/adityakavalur/orgs",
+        "repos_url": "https://api.github.com/users/adityakavalur/repos",
+        "events_url": "https://api.github.com/users/adityakavalur/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adityakavalur/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-25T21:28:17Z",
+    "updated_at": "2020-10-27T19:08:02Z",
+    "closed_at": "2020-10-27T18:24:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19513",
+        "html_url": "https://github.com/spack/spack/pull/19513",
+        "diff_url": "https://github.com/spack/spack/pull/19513.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19513.patch"
+    },
+    "body": "On Cori(Cray-XC40), I need to pass the entire path for the compilers, this is what is saved in c_compiler, cpp_compiler, f_compiler. Therefore, when for the MPI wrappers only the binary name is provided I run into the same issue. There is no drawback of passing the entire path, this is set by the user through the compiler path anyways.",
+    "performed_via_github_app": null
+}

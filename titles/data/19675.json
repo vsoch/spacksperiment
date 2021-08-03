@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19675",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19675/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19675/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19675/events",
+    "html_url": "https://github.com/spack/spack/pull/19675",
+    "id": 734605720,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE0MTQyMDIy",
+    "number": 19675,
+    "title": "Fix issue with NAMD patch not applying cleanly",
+    "user": {
+        "login": "samcmill",
+        "id": 18687225,
+        "node_id": "MDQ6VXNlcjE4Njg3MjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18687225?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/samcmill",
+        "html_url": "https://github.com/samcmill",
+        "followers_url": "https://api.github.com/users/samcmill/followers",
+        "following_url": "https://api.github.com/users/samcmill/following{/other_user}",
+        "gists_url": "https://api.github.com/users/samcmill/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/samcmill/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/samcmill/subscriptions",
+        "organizations_url": "https://api.github.com/users/samcmill/orgs",
+        "repos_url": "https://api.github.com/users/samcmill/repos",
+        "events_url": "https://api.github.com/users/samcmill/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/samcmill/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-02T15:37:06Z",
+    "updated_at": "2020-11-02T16:12:16Z",
+    "closed_at": "2020-11-02T16:12:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19675",
+        "html_url": "https://github.com/spack/spack/pull/19675",
+        "diff_url": "https://github.com/spack/spack/pull/19675.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19675.patch"
+    },
+    "body": "Fix #19647\r\n\r\nNarrow the application of the inherited member patches to specific versions.\r\n\r\n@adamjstewart ",
+    "performed_via_github_app": null
+}

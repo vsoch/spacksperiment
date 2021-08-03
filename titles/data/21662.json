@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21662",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21662/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21662/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21662/events",
+    "html_url": "https://github.com/spack/spack/pull/21662",
+    "id": 808023020,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTczMTM2NDk5",
+    "number": 21662,
+    "title": "Apple Clang: add correct PATH for compiler wrappers",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-14T18:59:57Z",
+    "updated_at": "2021-02-18T00:32:44Z",
+    "closed_at": "2021-02-17T23:54:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21662",
+        "html_url": "https://github.com/spack/spack/pull/21662",
+        "diff_url": "https://github.com/spack/spack/pull/21662.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21662.patch"
+    },
+    "body": "Follow-up to #17110\r\n\r\n### Before\r\n```bash\r\nCC=/Users/Adam/spack/lib/spack/env/clang/clang; export CC\r\nSPACK_CC=/usr/bin/clang; export SPACK_CC\r\nPATH=...:/Users/Adam/spack/lib/spack/env/apple-clang:/Users/Adam/spack/lib/spack/env/case-insensitive:/Users/Adam/spack/lib/spack/env:...; export PATH\r\n```\r\n\r\n### After\r\n```bash\r\nCC=/Users/Adam/spack/lib/spack/env/clang/clang; export CC\r\nSPACK_CC=/usr/bin/clang; export SPACK_CC\r\nPATH=...:/Users/Adam/spack/lib/spack/env/clang:/Users/Adam/spack/lib/spack/env/case-insensitive:/Users/Adam/spack/lib/spack/env:...; export PATH\r\n```\r\n\r\n`CC` and `SPACK_CC` were being set correctly, but `PATH` was using the name of the compiler `apple-clang` instead of `clang`. For most packages, since `CC` was set correctly, nothing broke. But for packages using `Makefiles` that set `CC` based on `which clang`, it was using the system compilers instead of the compiler wrappers. Discovered when working on `py-xgboost@0.90`.\r\n\r\nAn alternative fix would be to copy the symlinks in `env/clang` to `env/apple-clang`. Let me know if you think there's a better way to do this, or to test this.",
+    "performed_via_github_app": null
+}

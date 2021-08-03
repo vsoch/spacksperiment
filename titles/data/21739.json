@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21739",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21739/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21739/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21739/events",
+    "html_url": "https://github.com/spack/spack/issues/21739",
+    "id": 810546014,
+    "node_id": "MDU6SXNzdWU4MTA1NDYwMTQ=",
+    "number": 21739,
+    "title": "Ascent from binary cache not fixing path correctly, can cause runtime failure",
+    "user": {
+        "login": "EthanS94",
+        "id": 33101855,
+        "node_id": "MDQ6VXNlcjMzMTAxODU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33101855?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/EthanS94",
+        "html_url": "https://github.com/EthanS94",
+        "followers_url": "https://api.github.com/users/EthanS94/followers",
+        "following_url": "https://api.github.com/users/EthanS94/following{/other_user}",
+        "gists_url": "https://api.github.com/users/EthanS94/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/EthanS94/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/EthanS94/subscriptions",
+        "organizations_url": "https://api.github.com/users/EthanS94/orgs",
+        "repos_url": "https://api.github.com/users/EthanS94/repos",
+        "events_url": "https://api.github.com/users/EthanS94/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/EthanS94/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2021-02-17T21:18:45Z",
+    "updated_at": "2021-02-19T01:21:57Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "<!-- Explain, in a clear and concise way, the command you ran and the result you were trying to achieve.\r\nExample: \"I ran `spack find` to list all the installed packages and ...\" -->\r\n\r\n### Steps to reproduce the issue\r\n\r\nWith access to summit, this can be reproduced using workflow in https://github.com/cinemascienceworkflows/2020-10_Nyx . I can help with running this if needed.\r\n\r\n```console\r\n$ git clone https://github.com/cinemascienceworkflows/2020-10_Nyx.git\r\n$ cd 2020-10_Nyx\r\n$ vi bootstrap.env # Set WarningNotSet to appropriate variables\r\n$ ./execute\r\n```\r\n\r\n### Error Message\r\n\r\n<!-- If Spack reported an error, provide the error message. If it did not report an error but the output appears incorrect, provide the incorrect output. If there was no error message and no output but the result is incorrect, describe how it does not match what you expect. -->\r\nThe workflow pulls ascent and its dependencies from E4S cache, then builds Nyx using that ascent. The Nyx build is successful, but fails at runtime with: \r\n```console\r\n$ vi <install_location>/pantheon/ECP-Examples_Nyx-002/results/Nyx64_Test.744775\r\n...\r\n[Error] Ascent::execute\r\nfile: /tmp/lpeyrala/spack-stage/spack-stage-ascent-0.6.0-bpoqtmc5f6kjhxeto2e6xqynicfrorpr/spack-src/src/ascent/utils/ascent_web_interface.cpp\r\nline: 100\r\nmessage:\r\nWeb client root directory (/dev/shm/pantheon-spack/spack_path_placeholder/spack_path_placeholder/spack_path_placeholder/spack_path_placeholde/linux-rhel7-power9le/gcc-6.4.0/ascent-0.6.0-bpoqtmc5f6kjhxeto2e6xqynicfrorpr/share/ascent/web_clients)  is missing\r\n\r\nUser defined signal 2\r\n```\r\n\r\nI could be wrong, but I think the problem is this path:\r\n`/dev/shm/pantheon-spack/spack_path_placeholder/spack_path_placeholder/spack_path_placeholder/spack_path_placeholde/linux-rhel7-power9le/gcc-6.4.0/ascent-0.6.0-bpoqtmc5f6kjhxeto2e6xqynicfrorpr/share/ascent/web_clients`\r\n\r\nIsn't being rewritten to the correct path, which for me would be:\r\n`/gpfs/alpine/csc420/scratch/stam/pantheon/ECP-Examples_Nyx-002/spack/opt/spack/linux-rhel7-power9le/gcc-6.4.0/ascent-0.6.0-bpoqtmc5f6kjhxeto2e6xqynicfrorpr/share/ascent/web_clients`\r\n\r\n### Information on your system\r\n\r\n<!-- Please include the output of `spack debug report` -->\r\n\r\n```console\r\n$ spack debug report\r\n* **Spack:** 0.16.0-6-676d68a\r\n* **Python:** 2.7.5\r\n* **Platform:** linux-rhel7-power9le\r\n```\r\n\r\n<!-- If you have any relevant configuration detail (custom `packages.yaml` or `modules.yaml`, etc.) you can add that here as well. -->\r\n\r\n### Additional information\r\n\r\n<!-- These boxes can be checked by replacing [ ] with [x] or by clicking them after submitting the issue. -->\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [ ] I have run the failing commands in debug mode and reported the output\r\n\r\n<!-- We encourage you to try, as much as possible, to reduce your problem to the minimal example that still reproduces the issue. That would help us a lot in fixing it quickly and effectively!\r\n\r\nIf you want to ask a question about the tool (how to use it, what it can currently do, etc.), try the `#general` channel on our Slack first. We have a welcoming community and chances are you'll get your reply faster and without opening an issue.\r\n\r\nOther than that, thanks for taking the time to contribute to Spack! -->\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20528",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20528/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20528/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20528/events",
+    "html_url": "https://github.com/spack/spack/pull/20528",
+    "id": 773446863,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ0NTM3NTA1",
+    "number": 20528,
+    "title": "libquo: Add +pic variant to help support PGI compilation",
+    "user": {
+        "login": "quellyn",
+        "id": 33294773,
+        "node_id": "MDQ6VXNlcjMzMjk0Nzcz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33294773?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/quellyn",
+        "html_url": "https://github.com/quellyn",
+        "followers_url": "https://api.github.com/users/quellyn/followers",
+        "following_url": "https://api.github.com/users/quellyn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quellyn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/quellyn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quellyn/subscriptions",
+        "organizations_url": "https://api.github.com/users/quellyn/orgs",
+        "repos_url": "https://api.github.com/users/quellyn/repos",
+        "events_url": "https://api.github.com/users/quellyn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/quellyn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-12-23T03:10:37Z",
+    "updated_at": "2021-01-06T17:34:59Z",
+    "closed_at": "2020-12-28T11:57:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20528",
+        "html_url": "https://github.com/spack/spack/pull/20528",
+        "diff_url": "https://github.com/spack/spack/pull/20528.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20528.patch"
+    },
+    "body": "[PGI compilation of libquo fails unless PIC is explicitly enabled](https://github.com/lanl/libquo/issues/41).\r\n\r\nI confirmed this using PGI 19.7 on an Intel Skylake node. See the attached [Spack build output](https://github.com/spack/spack/files/5733058/spack-build-out_libquo-BROKEN.txt) for details.\r\n\r\nThis patch adds a `+pic` variant to `libquo`. Mentioning package maintainer @samuelkgutierrez so he can weigh in on this.",
+    "performed_via_github_app": null
+}

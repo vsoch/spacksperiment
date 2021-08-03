@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21401",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21401/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21401/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21401/events",
+    "html_url": "https://github.com/spack/spack/pull/21401",
+    "id": 797339732,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0MzYzNzU2",
+    "number": 21401,
+    "title": "libgcrypt: add versions up to 1.9.1",
+    "user": {
+        "login": "nightlark",
+        "id": 3969255,
+        "node_id": "MDQ6VXNlcjM5NjkyNTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969255?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nightlark",
+        "html_url": "https://github.com/nightlark",
+        "followers_url": "https://api.github.com/users/nightlark/followers",
+        "following_url": "https://api.github.com/users/nightlark/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nightlark/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nightlark/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nightlark/subscriptions",
+        "organizations_url": "https://api.github.com/users/nightlark/orgs",
+        "repos_url": "https://api.github.com/users/nightlark/repos",
+        "events_url": "https://api.github.com/users/nightlark/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nightlark/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-30T05:19:03Z",
+    "updated_at": "2021-02-01T18:12:01Z",
+    "closed_at": "2021-02-01T18:11:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21401",
+        "html_url": "https://github.com/spack/spack/pull/21401",
+        "diff_url": "https://github.com/spack/spack/pull/21401.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21401.patch"
+    },
+    "body": "Adds versions of libgcrypt up to 1.9.1 (except 1.9.0 which should not be used).",
+    "performed_via_github_app": null
+}

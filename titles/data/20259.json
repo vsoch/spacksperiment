@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20259",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20259/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20259/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20259/events",
+    "html_url": "https://github.com/spack/spack/pull/20259",
+    "id": 757995939,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMzMjQ3NTE1",
+    "number": 20259,
+    "title": "concretizer: refactor handling of special variants dev_build: and patches",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-12-06T18:55:00Z",
+    "updated_at": "2021-02-04T22:19:39Z",
+    "closed_at": "2020-12-08T01:18:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20259",
+        "html_url": "https://github.com/spack/spack/pull/20259",
+        "diff_url": "https://github.com/spack/spack/pull/20259.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20259.patch"
+    },
+    "body": "Refactoring a few things in anticipation of adding reuse of installed dependencies.\r\n\r\nOther parts of the concretizer code build up lists of things we can't know without traversing all specs and packages, and they output these list at the very end.\r\n\r\nThe code for this for variant values from spec literals was intertwined with the code for traversing the input specs. This only covers the input specs and misses variant values that might come from directives in packages.\r\n\r\n- [x] move ad-hoc value handling code into spec_clauses so we do it in one place for CLI and packages\r\n- [x] move handling of `variant_possible_value`, etc. into `concretize.lp`, where we can automatically infer variant existence\r\n  more concisely.\r\n- [x] simplify/clarify some of the code for variants in `spec_clauses()`",
+    "performed_via_github_app": null
+}

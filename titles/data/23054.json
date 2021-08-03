@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23054",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23054/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23054/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23054/events",
+    "html_url": "https://github.com/spack/spack/pull/23054",
+    "id": 860220276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE3MTY0MzM4",
+    "number": 23054,
+    "title": "Make OpenJDK portable for Mac OS and add new versions",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-16T22:20:32Z",
+    "updated_at": "2021-04-17T06:32:30Z",
+    "closed_at": "2021-04-17T02:10:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23054",
+        "html_url": "https://github.com/spack/spack/pull/23054",
+        "diff_url": "https://github.com/spack/spack/pull/23054.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23054.patch"
+    },
+    "body": " * Add 11.02 and 11.0.1 versions for Mac OS\r\n * Update `install` method compatible for Mac OS\r\n\r\nSee also discussion in #21173\r\n\r\nTested on OS X as:\r\n\r\n```console\r\n\u00b1 |develop \u2192 origin \u21911 U:1 \u2717| \u2192 module load openjdk-11.0.2-apple-clang-12.0.0-kvhanir\r\n\u00b1 |develop \u2192 origin \u21911 U:1 \u2717| \u2192 java --version\r\nopenjdk 11.0.2 2019-01-15\r\nOpenJDK Runtime Environment 18.9 (build 11.0.2+9)\r\nOpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)\r\n```",
+    "performed_via_github_app": null
+}

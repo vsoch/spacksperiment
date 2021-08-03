@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23856",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23856/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23856/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23856/events",
+    "html_url": "https://github.com/spack/spack/pull/23856",
+    "id": 898851395,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwNjYzODA4",
+    "number": 23856,
+    "title": "Fix makefile filter suggestions",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 624275116,
+            "node_id": "MDU6TGFiZWw2MjQyNzUxMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/makefile",
+            "name": "makefile",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-22T17:53:01Z",
+    "updated_at": "2021-05-22T20:24:28Z",
+    "closed_at": "2021-05-22T18:47:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23856",
+        "html_url": "https://github.com/spack/spack/pull/23856",
+        "diff_url": "https://github.com/spack/spack/pull/23856.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23856.patch"
+    },
+    "body": "Bash has a builtin `fc` that will override the compiler if you use \"fc\", so it's better to use the full spack-supplied compiler path.\r\n\r\nAdditionally, the filter regex in the docs was wrong: it replaced the entire assignment operation with the RHS.\r\n\r\nSee https://github.com/spack/spack/pull/23848#discussion_r637430286 for context.",
+    "performed_via_github_app": null
+}

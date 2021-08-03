@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20836",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20836/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20836/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20836/events",
+    "html_url": "https://github.com/spack/spack/pull/20836",
+    "id": 785183629,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU0MjUyMTM3",
+    "number": 20836,
+    "title": "py-healpy: Add version 1.14.0",
+    "user": {
+        "login": "steffen-AEI",
+        "id": 30238236,
+        "node_id": "MDQ6VXNlcjMwMjM4MjM2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30238236?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/steffen-AEI",
+        "html_url": "https://github.com/steffen-AEI",
+        "followers_url": "https://api.github.com/users/steffen-AEI/followers",
+        "following_url": "https://api.github.com/users/steffen-AEI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/steffen-AEI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/steffen-AEI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/steffen-AEI/subscriptions",
+        "organizations_url": "https://api.github.com/users/steffen-AEI/orgs",
+        "repos_url": "https://api.github.com/users/steffen-AEI/repos",
+        "events_url": "https://api.github.com/users/steffen-AEI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/steffen-AEI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-13T15:06:43Z",
+    "updated_at": "2021-01-15T08:39:44Z",
+    "closed_at": "2021-01-13T19:03:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20836",
+        "html_url": "https://github.com/spack/spack/pull/20836",
+        "diff_url": "https://github.com/spack/spack/pull/20836.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20836.patch"
+    },
+    "body": "1.14.0 compiles with gcc@10.2.0, while 1.13.0 doesn't",
+    "performed_via_github_app": null
+}

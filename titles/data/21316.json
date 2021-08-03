@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21316",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21316/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21316/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21316/events",
+    "html_url": "https://github.com/spack/spack/pull/21316",
+    "id": 794940110,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyMzcwNzE1",
+    "number": 21316,
+    "title": "util.module_cmd: add bash module function to env",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-27T09:45:58Z",
+    "updated_at": "2021-01-28T19:14:42Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21316",
+        "html_url": "https://github.com/spack/spack/pull/21316",
+        "diff_url": "https://github.com/spack/spack/pull/21316.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21316.patch"
+    },
+    "body": "When using shells other than bash, e.g., zsh, modules can only be\nsourced in the current shell. Bash has the module handling function\nexported into a bash-specific environment variable that will allow other\nbash run in subprocesses to inherit said function.\n\nHere I'm proposing to populate the environment for `/bin/bash` with said\nfunction in case the user runs a different shell. As mentioned in the\ncomments, this would require `modulecmd` to be found in PATH, which\nseems to be a reasonable assumption. This will make `module_cmd.load`\netc work for hopefully all shells, not just bash.\n",
+    "performed_via_github_app": null
+}

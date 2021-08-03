@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22219",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22219/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22219/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22219/events",
+    "html_url": "https://github.com/spack/spack/pull/22219",
+    "id": 827634829,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg5NTI1NDM3",
+    "number": 22219,
+    "title": "spack recipe for AOCC 3.0 release",
+    "user": {
+        "login": "amd-toolchain-support",
+        "id": 73240730,
+        "node_id": "MDQ6VXNlcjczMjQwNzMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/73240730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amd-toolchain-support",
+        "html_url": "https://github.com/amd-toolchain-support",
+        "followers_url": "https://api.github.com/users/amd-toolchain-support/followers",
+        "following_url": "https://api.github.com/users/amd-toolchain-support/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amd-toolchain-support/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amd-toolchain-support/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amd-toolchain-support/subscriptions",
+        "organizations_url": "https://api.github.com/users/amd-toolchain-support/orgs",
+        "repos_url": "https://api.github.com/users/amd-toolchain-support/repos",
+        "events_url": "https://api.github.com/users/amd-toolchain-support/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amd-toolchain-support/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-03-10T12:09:22Z",
+    "updated_at": "2021-03-17T15:06:26Z",
+    "closed_at": "2021-03-17T15:06:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22219",
+        "html_url": "https://github.com/spack/spack/pull/22219",
+        "diff_url": "https://github.com/spack/spack/pull/22219.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22219.patch"
+    },
+    "body": "This pull request has been created to add AOCC-3.0.0 to SPACK community.\r\nAMD Optimizing C/C++ Compiler (AOCC) is a highly optimized C, C++, and Fortran compiler for x86 targets, especially for Zen based AMD processors.\r\nIt supports Flang as the default Fortran front-end compiler.\r\n\r\n\r\nIn AOCC-3.0.0 we have identified a last minute compilation issue against SQLite and we found that workaround is to have an additional default compiler flag for AOCC-3.0.0 only using \u2018spack/lib/spack/spack/compilers/aocc.py\u2019. \r\n\r\nThis workaround avoids manual modification of compilers.yaml file using command \"spack config edit compilers\". \r\n\r\nPlease note that we have tested the same and the behavior is as expected.\r\n\r\nFile:spack/lib/spack/spack/compilers/aocc.py\r\n--snip\u2014\r\n    @property\r\n    def cflags(self):\r\n        if self.real_version == ver('3.0.0'):\r\n            return \"-mllvm -eliminate-similar-expr=false\"\r\n\r\n    @property\r\n    def cxxflags(self):\r\n        if self.real_version == ver('3.0.0'):\r\n            return \"-mllvm -eliminate-similar-expr=false\"\r\n\r\n    @property\r\n    def fflags(self):\r\n        if self.real_version == ver('3.0.0'):\r\n            return \"-mllvm -eliminate-similar-expr=false\"\r\n--snip\u2014",
+    "performed_via_github_app": null
+}

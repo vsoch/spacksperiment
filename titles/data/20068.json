@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20068",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20068/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20068/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20068/events",
+    "html_url": "https://github.com/spack/spack/pull/20068",
+    "id": 749740713,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI2NTA3MzI5",
+    "number": 20068,
+    "title": "Add a mechanism for Spack to bootstrap clingo",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-11-24T14:13:20Z",
+    "updated_at": "2020-12-02T09:01:50Z",
+    "closed_at": "2020-12-02T09:01:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20068",
+        "html_url": "https://github.com/spack/spack/pull/20068",
+        "diff_url": "https://github.com/spack/spack/pull/20068.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20068.patch"
+    },
+    "body": "This PR adds the ability to bootstrap clingo for any interpreter that is used to run Spack:\r\n```console\r\n[mculpo02@login02 spack]$ spack solve zlib\r\n==> Do you want Spack to bootstrap clingo? [The process will take several minutes] [Y/n] \r\n==> Warning: Missing a source id for python@2.7.5\r\n==> Installing libiconv-1.16-zczi37byglq3f5vweadydldeqadhr52u\r\n==> Warning: Spack will not check SSL certificates. You need to update your Python to enable certificate verification.\r\n==> No binary for libiconv-1.16-zczi37byglq3f5vweadydldeqadhr52u found: installing from source\r\n==> Using cached archive: /m100/home/userexternal/mculpo02/github/spack/var/spack/cache/_source-cache/archive/e6/e6a1b1b589654277ee790cce3734f07876ac4ccfaecbee8afa0b649cf529cc04.tar.gz\r\n==> libiconv: Executing phase: 'autoreconf'\r\n==> libiconv: Executing phase: 'configure'\r\n[ ... ]\r\n```\r\nAt the moment the process is interactive, to avoid starting a ~15 mins. build without the user being aware of it, but ideally it should be automated (if made fast enough) or be interactive only for command line use of Spack. A Spack environment is used to bootstrap the software and install it at a fixed location. \r\n\r\nImprovements that can be made on top of this:\r\n\r\n- [ ] Look for dependencies that are already in the system (e.g. cmake) and use them as \"externals\"\r\n- [ ] Remove interactive confirmation from user, at least for non cli use of Spack\r\n- [ ] Check prerequisites for building `clingo` (e.g. compiler with support for C++14)\r\n\r\nSubmitting as draft to get some early feedback.\r\n\r\n@becker33 @tgamblin @cosmicexplorer ",
+    "performed_via_github_app": null
+}

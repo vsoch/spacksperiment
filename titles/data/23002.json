@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23002",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23002/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23002/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23002/events",
+    "html_url": "https://github.com/spack/spack/pull/23002",
+    "id": 858426721,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE1Njc0MTE4",
+    "number": 23002,
+    "title": "hack for paraview clingo issue",
+    "user": {
+        "login": "psakievich",
+        "id": 12102506,
+        "node_id": "MDQ6VXNlcjEyMTAyNTA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12102506?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/psakievich",
+        "html_url": "https://github.com/psakievich",
+        "followers_url": "https://api.github.com/users/psakievich/followers",
+        "following_url": "https://api.github.com/users/psakievich/following{/other_user}",
+        "gists_url": "https://api.github.com/users/psakievich/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/psakievich/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/psakievich/subscriptions",
+        "organizations_url": "https://api.github.com/users/psakievich/orgs",
+        "repos_url": "https://api.github.com/users/psakievich/repos",
+        "events_url": "https://api.github.com/users/psakievich/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/psakievich/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1893105003,
+            "node_id": "MDU6TGFiZWwxODkzMTA1MDAz",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretizer-use-case",
+            "name": "concretizer-use-case",
+            "color": "1d76db",
+            "default": false,
+            "description": "interesting dependency hierarchy that would challenge the current concretizer"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-04-15T02:55:53Z",
+    "updated_at": "2021-04-27T15:32:11Z",
+    "closed_at": "2021-04-27T15:32:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23002",
+        "html_url": "https://github.com/spack/spack/pull/23002",
+        "diff_url": "https://github.com/spack/spack/pull/23002.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23002.patch"
+    },
+    "body": "This is a hack to deal with the legacy cuda families for `paraview` as noted in #22970.  I haven't tested this on a cuda build, but it at least allows clingo to concretize.\r\n\r\nI imagine we will need to add in some of the logic like vtk-m to get this to work.  Ideally it would be nice to just drop this cuda family stuff in `paraview` and move to the gencode like the vast majority of other packages. Looking at `vtk-m` it seems that they use the gencode for defining the variant and then use a map to fulfill their own cmake args.  It would be nice if `paraview` would pursue the same model (assuming it's the same requirement), but I'm not sure how much of a burden that would be on the users. \r\n\r\nTo support both the quickest thing I could think of was to append the list of values. I guess we could also do an inverse of the  map `vtk-m` has and then change the spec value for the `cuda_arch` variant.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19558",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19558/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19558/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19558/events",
+    "html_url": "https://github.com/spack/spack/pull/19558",
+    "id": 730782432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTExMDMxMDMz",
+    "number": 19558,
+    "title": "New package: py-pyprecice",
+    "user": {
+        "login": "ajaust",
+        "id": 18347253,
+        "node_id": "MDQ6VXNlcjE4MzQ3MjUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18347253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ajaust",
+        "html_url": "https://github.com/ajaust",
+        "followers_url": "https://api.github.com/users/ajaust/followers",
+        "following_url": "https://api.github.com/users/ajaust/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ajaust/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ajaust/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ajaust/subscriptions",
+        "organizations_url": "https://api.github.com/users/ajaust/orgs",
+        "repos_url": "https://api.github.com/users/ajaust/repos",
+        "events_url": "https://api.github.com/users/ajaust/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ajaust/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-10-27T20:15:46Z",
+    "updated_at": "2020-10-30T18:07:53Z",
+    "closed_at": "2020-10-30T16:40:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19558",
+        "html_url": "https://github.com/spack/spack/pull/19558",
+        "diff_url": "https://github.com/spack/spack/pull/19558.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19558.patch"
+    },
+    "body": "This package includes the python bindings for preCICE which is also available via Spack.  \r\n\r\n\r\nLink to binding's repository: https://github.com/precice/python-bindings\r\n\r\nAdding @BenjaminRueth for reference as he co-authored the package.",
+    "performed_via_github_app": null
+}

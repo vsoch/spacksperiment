@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19881",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19881/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19881/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19881/events",
+    "html_url": "https://github.com/spack/spack/pull/19881",
+    "id": 741776237,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIwMDMxMDE0",
+    "number": 19881,
+    "title": "[acts] conflicts with %gcc@:7 since @0.23: due to c++17 <charconv> header",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-11-12T17:12:27Z",
+    "updated_at": "2020-11-12T19:08:13Z",
+    "closed_at": "2020-11-12T19:08:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19881",
+        "html_url": "https://github.com/spack/spack/pull/19881",
+        "diff_url": "https://github.com/spack/spack/pull/19881.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19881.patch"
+    },
+    "body": "Since v0.23.00, the acts framework #includes <charconv> in [Examples/Framework/src/Utilities/Paths.cpp](https://github.com/acts-project/acts/blob/v0.23.00/Examples/Framework/src/Utilities/Paths.cpp).\r\n\r\nThis c++17 system header [is not available](https://github.com/gcc-mirror/gcc/blob/releases/gcc-7.5.0/libstdc++-v3/include/std/charconv) in gcc-7, but [is available](https://github.com/gcc-mirror/gcc/blob/releases/gcc-8.1.0/libstdc++-v3/include/std/charconv) starting with gcc-8.\r\n\r\nThis commit adds a conflict to avoid installing acts 0.23 or newer with gcc-7 or older (e.g. ubuntu 18.04 LTS).",
+    "performed_via_github_app": null
+}

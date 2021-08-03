@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20462",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20462/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20462/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20462/events",
+    "html_url": "https://github.com/spack/spack/pull/20462",
+    "id": 770559812,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyMjgwODcz",
+    "number": 20462,
+    "title": "alps: fix for latest gcc and test bug",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-18T04:34:02Z",
+    "updated_at": "2021-01-06T04:24:51Z",
+    "closed_at": "2021-01-06T04:24:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20462",
+        "html_url": "https://github.com/spack/spack/pull/20462",
+        "diff_url": "https://github.com/spack/spack/pull/20462.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20462.patch"
+    },
+    "body": "In order to support latest gcc\r\n- add `#include <climits>` to use INT_MAX\r\n- add temporally `x`\r\n- add `this->`\r\n- remove unused and obsolete style functions\r\n\r\nAdd `NO_SYSTEM_ENVIRONMENT_PATH` to test right `time`, not `/usr/bin/time`",
+    "performed_via_github_app": null
+}

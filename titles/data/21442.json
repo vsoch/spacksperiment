@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21442",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21442/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21442/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21442/events",
+    "html_url": "https://github.com/spack/spack/pull/21442",
+    "id": 799297705,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY1OTY0MzA2",
+    "number": 21442,
+    "title": "Add context managers to swap parts of Spack in code",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-02T13:48:33Z",
+    "updated_at": "2021-02-11T08:09:14Z",
+    "closed_at": "2021-02-11T00:50:10Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21442",
+        "html_url": "https://github.com/spack/spack/pull/21442",
+        "diff_url": "https://github.com/spack/spack/pull/21442.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21442.patch"
+    },
+    "body": "Fixes #17966\r\n\r\nThis PR adds several context managers to the current API of Spack. These context managers may be used to swap part of the current configuration within the context. For instance:\r\n```python\r\nwith spack.repo.use_repositories(*paths_to_repos) as repo_path:\r\n    pass\r\n```\r\ncan be used to swap the repositories that are hooked into Spack for the duration of the context. Context managers are currently provided for:\r\n- [x] Package repositories\r\n- [x] Configuration scopes\r\n- [x] Store\r\n- [x] Platform   \r\n\r\nand others may be added as needed.\r\n\r\nThese context managers are used in this PR to resolve a longstanding issue with our testing framework, which was modifying global variables in `conftest.py` to avoid later failures. Now these modifications are done in fixtures and can be undone during tests, if need be, by nested context managers.\r\n\r\nAnother use of these context managers is in #20207 (or derived PRs) to fix a few aspects of the configuration for bootstrapping Spack, regardless of the use case under consideration. This permits, for instance, to use a bootstrapped clingo to run unit tests (where a mock \"test\" platform is substituted to the host platform) or to bootstrap clingo a single time when trying to concretize environments defining a custom store location.",
+    "performed_via_github_app": null
+}

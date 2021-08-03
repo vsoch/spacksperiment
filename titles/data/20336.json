@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20336",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20336/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20336/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20336/events",
+    "html_url": "https://github.com/spack/spack/pull/20336",
+    "id": 762230320,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM2Nzk5Nzc2",
+    "number": 20336,
+    "title": "Add new versions of gmsh",
+    "user": {
+        "login": "lrtfm",
+        "id": 1192812,
+        "node_id": "MDQ6VXNlcjExOTI4MTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1192812?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lrtfm",
+        "html_url": "https://github.com/lrtfm",
+        "followers_url": "https://api.github.com/users/lrtfm/followers",
+        "following_url": "https://api.github.com/users/lrtfm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lrtfm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lrtfm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lrtfm/subscriptions",
+        "organizations_url": "https://api.github.com/users/lrtfm/orgs",
+        "repos_url": "https://api.github.com/users/lrtfm/repos",
+        "events_url": "https://api.github.com/users/lrtfm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lrtfm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-11T10:50:08Z",
+    "updated_at": "2020-12-28T11:47:55Z",
+    "closed_at": "2020-12-28T11:47:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20336",
+        "html_url": "https://github.com/spack/spack/pull/20336",
+        "diff_url": "https://github.com/spack/spack/pull/20336.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20336.patch"
+    },
+    "body": "Add new version of gmsh to the packages, including\r\n```\r\n4.5.5\r\n4.5.6\r\n4.6.0\r\n4.7.0\r\n4.7.1\r\n```\r\n\r\nIn addition, a patch file is added for version 4.7.1 to the build error when `CGNS` option `CGNS_SCOPE_ENUMS` is on.\r\nSee [gmsh issue 1108](https://gitlab.onelab.info/gmsh/gmsh/-/issues/1108) and  [commit b0b3ece](https://gitlab.onelab.info/gmsh/gmsh/-/commit/b0b3ece698718bf1a79f50778d24d51c207f8727)\r\n",
+    "performed_via_github_app": null
+}

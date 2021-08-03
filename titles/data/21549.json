@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21549",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21549/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21549/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21549/events",
+    "html_url": "https://github.com/spack/spack/pull/21549",
+    "id": 803967848,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY5ODE0ODEx",
+    "number": 21549,
+    "title": "Fix groff build with long interpeter line",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-08T21:09:29Z",
+    "updated_at": "2021-02-09T22:19:22Z",
+    "closed_at": "2021-02-09T21:54:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21549",
+        "html_url": "https://github.com/spack/spack/pull/21549",
+        "diff_url": "https://github.com/spack/spack/pull/21549.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21549.patch"
+    },
+    "body": "This PR fixes the case where groff fails to build if the spack install\r\npath is really long. There are a couple of perl scripts that get built,\r\nand used, during the build phase that will fail when the perl\r\ninterpreter line is too long. Filtering the lines will not work because\r\nthe files don not exist after the configure phase and patching after the\r\nbuild phase is too late.  This PR runs the scripts explicitly with the\r\nspack perl via the $(PERL) variable in the call to the script.",
+    "performed_via_github_app": null
+}

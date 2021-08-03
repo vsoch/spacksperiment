@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20642",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20642/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20642/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20642/events",
+    "html_url": "https://github.com/spack/spack/pull/20642",
+    "id": 777453756,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ3NzQ5NDI4",
+    "number": 20642,
+    "title": "doxygen: add support for external_package",
+    "user": {
+        "login": "robertu94",
+        "id": 7604212,
+        "node_id": "MDQ6VXNlcjc2MDQyMTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7604212?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertu94",
+        "html_url": "https://github.com/robertu94",
+        "followers_url": "https://api.github.com/users/robertu94/followers",
+        "following_url": "https://api.github.com/users/robertu94/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertu94/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertu94/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertu94/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertu94/orgs",
+        "repos_url": "https://api.github.com/users/robertu94/repos",
+        "events_url": "https://api.github.com/users/robertu94/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertu94/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-02T12:35:14Z",
+    "updated_at": "2021-02-09T13:34:43Z",
+    "closed_at": "2021-01-29T20:05:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20642",
+        "html_url": "https://github.com/spack/spack/pull/20642",
+        "diff_url": "https://github.com/spack/spack/pull/20642.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20642.patch"
+    },
+    "body": "doxygen can now determine if it has been installed externally.",
+    "performed_via_github_app": null
+}

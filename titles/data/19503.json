@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19503",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19503/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19503/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19503/events",
+    "html_url": "https://github.com/spack/spack/pull/19503",
+    "id": 728529761,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA5MjIxOTY0",
+    "number": 19503,
+    "title": "PyTorch: future needed at run-time for Python 2",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1483030398,
+            "node_id": "MDU6TGFiZWwxNDgzMDMwMzk4",
+            "url": "https://api.github.com/repos/spack/spack/labels/python2",
+            "name": "python2",
+            "color": "fcf99c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-23T21:18:47Z",
+    "updated_at": "2020-10-27T16:54:08Z",
+    "closed_at": "2020-10-27T16:53:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19503",
+        "html_url": "https://github.com/spack/spack/pull/19503",
+        "diff_url": "https://github.com/spack/spack/pull/19503.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19503.patch"
+    },
+    "body": "Without this I see the following error:\r\n```\r\n>>> import torch\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/Users/Adam/Documents/UIUC/Homework/CS598MAV/cs598mav_fa20/.spack-env/view/lib/python2.7/site-packages/torch/__init__.py\", line 17, in <module>\r\n    from ._six import string_classes as _string_classes\r\n  File \"/Users/Adam/Documents/UIUC/Homework/CS598MAV/cs598mav_fa20/.spack-env/view/lib/python2.7/site-packages/torch/_six.py\", line 23, in <module>\r\n    import builtins\r\nImportError: No module named builtins\r\n```",
+    "performed_via_github_app": null
+}

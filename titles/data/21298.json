@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21298",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21298/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21298/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21298/events",
+    "html_url": "https://github.com/spack/spack/pull/21298",
+    "id": 794430963,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYxOTQ4OTYw",
+    "number": 21298,
+    "title": "mxnet: Fix python lib installation",
+    "user": {
+        "login": "jonglezb",
+        "id": 30461003,
+        "node_id": "MDQ6VXNlcjMwNDYxMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30461003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jonglezb",
+        "html_url": "https://github.com/jonglezb",
+        "followers_url": "https://api.github.com/users/jonglezb/followers",
+        "following_url": "https://api.github.com/users/jonglezb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jonglezb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jonglezb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jonglezb/subscriptions",
+        "organizations_url": "https://api.github.com/users/jonglezb/orgs",
+        "repos_url": "https://api.github.com/users/jonglezb/repos",
+        "events_url": "https://api.github.com/users/jonglezb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jonglezb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-26T17:43:14Z",
+    "updated_at": "2021-01-27T14:08:06Z",
+    "closed_at": "2021-01-27T13:53:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21298",
+        "html_url": "https://github.com/spack/spack/pull/21298",
+        "diff_url": "https://github.com/spack/spack/pull/21298.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21298.patch"
+    },
+    "body": "The python install process only installed the \"benchmark\" and \"ci\"\r\ndirectories and missed the actual \"mxnet\" python package.  This is because\r\nit only looks at top-level directories in the mxnet sources.\r\n\r\nFix this by changing directory before launching setup.py\r\n\r\nWhile at it, add setup.py options that prevent installing an egg and\r\ninstead directly install the library (see PythonPackage class).  We can't\r\ninherit from PythonPackage because the setup.py is not at the root of the\r\nmxnet souces.",
+    "performed_via_github_app": null
+}

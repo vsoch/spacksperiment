@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22652",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22652/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22652/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22652/events",
+    "html_url": "https://github.com/spack/spack/pull/22652",
+    "id": 845251681,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA0NDI5MTEw",
+    "number": 22652,
+    "title": "Do not set CPATH in nvhpc package",
+    "user": {
+        "login": "samcmill",
+        "id": 18687225,
+        "node_id": "MDQ6VXNlcjE4Njg3MjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18687225?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/samcmill",
+        "html_url": "https://github.com/samcmill",
+        "followers_url": "https://api.github.com/users/samcmill/followers",
+        "following_url": "https://api.github.com/users/samcmill/following{/other_user}",
+        "gists_url": "https://api.github.com/users/samcmill/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/samcmill/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/samcmill/subscriptions",
+        "organizations_url": "https://api.github.com/users/samcmill/orgs",
+        "repos_url": "https://api.github.com/users/samcmill/repos",
+        "events_url": "https://api.github.com/users/samcmill/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/samcmill/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-03-30T20:55:52Z",
+    "updated_at": "2021-03-31T18:19:17Z",
+    "closed_at": "2021-03-31T18:19:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22652",
+        "html_url": "https://github.com/spack/spack/pull/22652",
+        "diff_url": "https://github.com/spack/spack/pull/22652.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22652.patch"
+    },
+    "body": "Fix for PETSc issue reported in #22520\r\n\r\n@s-sajid-ali ",
+    "performed_via_github_app": null
+}

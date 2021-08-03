@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21877",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21877/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21877/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21877/events",
+    "html_url": "https://github.com/spack/spack/pull/21877",
+    "id": 814391544,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc4Mzg3MDkx",
+    "number": 21877,
+    "title": "Silo: make it compile with +silex on Ubuntu18-20 platform",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-23T11:50:55Z",
+    "updated_at": "2021-02-25T07:24:24Z",
+    "closed_at": "2021-02-24T20:45:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21877",
+        "html_url": "https://github.com/spack/spack/pull/21877",
+        "diff_url": "https://github.com/spack/spack/pull/21877.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21877.patch"
+    },
+    "body": "Silo does not compile on Ubuntu 18-20 while requesting for silex (configure --enable-silex=yes).\r\nIn spack, Silo now compiles after adding the libXmu dependency.\r\nBefore, there was an error at ax_try_4 line 28101 because -lXmu was not found,\r\nthe message was 'Failed to find matching components of a complete Qt installation'.\r\nMoreover, support for szip compresssion is added.",
+    "performed_via_github_app": null
+}

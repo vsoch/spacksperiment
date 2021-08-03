@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21890",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21890/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21890/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21890/events",
+    "html_url": "https://github.com/spack/spack/pull/21890",
+    "id": 814811124,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc4NzM4Mzcw",
+    "number": 21890,
+    "title": "Workarounds for install errors on Windows",
+    "user": {
+        "login": "BetsyMcPhail",
+        "id": 8505893,
+        "node_id": "MDQ6VXNlcjg1MDU4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8505893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BetsyMcPhail",
+        "html_url": "https://github.com/BetsyMcPhail",
+        "followers_url": "https://api.github.com/users/BetsyMcPhail/followers",
+        "following_url": "https://api.github.com/users/BetsyMcPhail/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BetsyMcPhail/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BetsyMcPhail/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BetsyMcPhail/subscriptions",
+        "organizations_url": "https://api.github.com/users/BetsyMcPhail/orgs",
+        "repos_url": "https://api.github.com/users/BetsyMcPhail/repos",
+        "events_url": "https://api.github.com/users/BetsyMcPhail/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BetsyMcPhail/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-23T20:37:00Z",
+    "updated_at": "2021-02-25T20:48:30Z",
+    "closed_at": "2021-02-25T20:48:27Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21890",
+        "html_url": "https://github.com/spack/spack/pull/21890",
+        "diff_url": "https://github.com/spack/spack/pull/21890.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21890.patch"
+    },
+    "body": "1. Forwarding sys.stdin, e.g. use input_multiprocess_fd,\r\ngives an error on Windows. Skipping for now\r\n\r\n2. pywintypes.OVERLAPPED in the Windows lock implementation cannot be\r\npickled. Commenting out (for now).\r\n\r\n3.  subprocess_context needs to serialize for Windows, like it does\r\nfor Mac.",
+    "performed_via_github_app": null
+}

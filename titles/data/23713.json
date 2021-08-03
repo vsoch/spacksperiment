@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23713",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23713/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23713/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23713/events",
+    "html_url": "https://github.com/spack/spack/pull/23713",
+    "id": 893864001,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ2MzEyNTIx",
+    "number": 23713,
+    "title": "Stand-alone/Smoke tests: copy cached test sources to test stage",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-05-18T02:00:04Z",
+    "updated_at": "2021-05-25T14:24:33Z",
+    "closed_at": "2021-05-25T14:24:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23713",
+        "html_url": "https://github.com/spack/spack/pull/23713",
+        "diff_url": "https://github.com/spack/spack/pull/23713.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23713.patch"
+    },
+    "body": "Fixes #23673 \r\n\r\nThis PR automatically copies test source files cached at build time to the test stage directory to\r\n\r\n1. Keep the install directory clean; and\r\n2. Facilitate test debugging.\r\n\r\nIt also ensures that installed binaries are tested (through changes to the package test process).\r\n\r\nThis process is more consistent with that used to build and run custom test files (https://spack.readthedocs.io/en/latest/packaging_guide.html#adding-custom-files) when appropriate.\r\n\r\nTODO\r\n\r\n- [x] Update a couple of packages as examples: hypre, OpenMPI\r\n- [x] Add unit test and update those affected by new mock package\r\n- [x] Update `Checking an installation` documentation\r\n\r\nThe current plan is to update additional packages in separate PRs to reduce the review burden.",
+    "performed_via_github_app": null
+}

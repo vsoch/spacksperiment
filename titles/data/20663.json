@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20663",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20663/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20663/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20663/events",
+    "html_url": "https://github.com/spack/spack/pull/20663",
+    "id": 778317136,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ4NDI0NjUy",
+    "number": 20663,
+    "title": "Support old installations using Cray MPICH",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-01-04T19:41:20Z",
+    "updated_at": "2021-01-05T01:19:09Z",
+    "closed_at": "2021-01-05T01:19:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20663",
+        "html_url": "https://github.com/spack/spack/pull/20663",
+        "diff_url": "https://github.com/spack/spack/pull/20663.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20663.patch"
+    },
+    "body": "Restore pre-#20076 logic in the `mpich` package for preexisting Cray MPICH installations;\r\n\r\nThis preserves the separate `cray-mpich` package added by 20076 and should find some way to encourage users to define an external with that instead of using 'mpich'",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19085",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19085/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19085/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19085/events",
+    "html_url": "https://github.com/spack/spack/pull/19085",
+    "id": 712325085,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk1ODI1NzQx",
+    "number": 19085,
+    "title": "buildcache list: add listed specs to database as not installed",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-09-30T22:34:15Z",
+    "updated_at": "2021-07-22T02:04:32Z",
+    "closed_at": "2021-07-22T02:04:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19085",
+        "html_url": "https://github.com/spack/spack/pull/19085",
+        "diff_url": "https://github.com/spack/spack/pull/19085.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19085.patch"
+    },
+    "body": "This allows the following worflow\r\n\r\n```\r\nspack buildcache list -l  # note hash for desired package is abcdefg\r\nspack install --cache-only /abcdefg\r\n```\r\n\r\nIncluded work: Database.add: allow packages to be added without being marked installed",
+    "performed_via_github_app": null
+}

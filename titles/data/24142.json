@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24142",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24142/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24142/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24142/events",
+    "html_url": "https://github.com/spack/spack/pull/24142",
+    "id": 911716523,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxOTUxMjQ3",
+    "number": 24142,
+    "title": "libceed: bugfix: Update the hip-related variant",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-04T17:43:52Z",
+    "updated_at": "2021-06-04T19:45:14Z",
+    "closed_at": "2021-06-04T19:45:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24142",
+        "html_url": "https://github.com/spack/spack/pull/24142",
+        "diff_url": "https://github.com/spack/spack/pull/24142.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24142.patch"
+    },
+    "body": "PR #22735 Switched to using `ROCmPackage` but forgot to fix the the `hip`-related variant conflict.\r\n\r\nThis PR corrects the conflict.",
+    "performed_via_github_app": null
+}

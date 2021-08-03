@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20064",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20064/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20064/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20064/events",
+    "html_url": "https://github.com/spack/spack/pull/20064",
+    "id": 749528107,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI2MzMyODA4",
+    "number": 20064,
+    "title": "[fetch_strategy] add a header request fallback when checking for exis\u2026",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-24T09:20:46Z",
+    "updated_at": "2021-03-31T10:01:41Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20064",
+        "html_url": "https://github.com/spack/spack/pull/20064",
+        "diff_url": "https://github.com/spack/spack/pull/20064.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20064.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/20050 by trying a header request when the first range request fails, when checking for urls. Probably adds a little bit of overhead when checking for many  non-existing urls, but makes it more robust when dealing with strange server configurations.",
+    "performed_via_github_app": null
+}

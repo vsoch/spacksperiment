@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24600",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24600/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24600/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24600/events",
+    "html_url": "https://github.com/spack/spack/pull/24600",
+    "id": 933111283,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgwMzY5Njkw",
+    "number": 24600,
+    "title": "nfft: fix broken build, update package",
+    "user": {
+        "login": "trmwzm",
+        "id": 627692,
+        "node_id": "MDQ6VXNlcjYyNzY5Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/627692?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trmwzm",
+        "html_url": "https://github.com/trmwzm",
+        "followers_url": "https://api.github.com/users/trmwzm/followers",
+        "following_url": "https://api.github.com/users/trmwzm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trmwzm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trmwzm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trmwzm/subscriptions",
+        "organizations_url": "https://api.github.com/users/trmwzm/orgs",
+        "repos_url": "https://api.github.com/users/trmwzm/repos",
+        "events_url": "https://api.github.com/users/trmwzm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trmwzm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-29T21:18:21Z",
+    "updated_at": "2021-06-30T16:23:34Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24600",
+        "html_url": "https://github.com/spack/spack/pull/24600",
+        "diff_url": "https://github.com/spack/spack/pull/24600.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24600.patch"
+    },
+    "body": "Attempted fix for broken package.  Mirrored FFTW `package.py`, ... however not an expert.",
+    "performed_via_github_app": null
+}

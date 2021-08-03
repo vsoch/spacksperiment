@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23201",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23201/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23201/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23201/events",
+    "html_url": "https://github.com/spack/spack/pull/23201",
+    "id": 864997390,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIxMTMyNzI0",
+    "number": 23201,
+    "title": "[random123] Update patchfile to allow nvcc+xl builds",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-22T14:09:14Z",
+    "updated_at": "2021-04-22T18:10:12Z",
+    "closed_at": "2021-04-22T18:10:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23201",
+        "html_url": "https://github.com/spack/spack/pull/23201",
+        "diff_url": "https://github.com/spack/spack/pull/23201.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23201.patch"
+    },
+    "body": "+ Allow the GPU enabled (nvcc) Random123 code branch to work when the C++ compiler is xlC.\r\n+ We've been using this version for a few months and it seems to work well.\r\n+ This patch was also provided to the software maintainer (DEShawResearch) for inclusion in their next release.",
+    "performed_via_github_app": null
+}

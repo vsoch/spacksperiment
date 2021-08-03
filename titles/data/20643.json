@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20643",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20643/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20643/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20643/events",
+    "html_url": "https://github.com/spack/spack/pull/20643",
+    "id": 777465008,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ3NzU3MjA4",
+    "number": 20643,
+    "title": "libzmq: add drafts variant",
+    "user": {
+        "login": "albestro",
+        "id": 9337627,
+        "node_id": "MDQ6VXNlcjkzMzc2Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337627?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/albestro",
+        "html_url": "https://github.com/albestro",
+        "followers_url": "https://api.github.com/users/albestro/followers",
+        "following_url": "https://api.github.com/users/albestro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/albestro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/albestro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/albestro/subscriptions",
+        "organizations_url": "https://api.github.com/users/albestro/orgs",
+        "repos_url": "https://api.github.com/users/albestro/repos",
+        "events_url": "https://api.github.com/users/albestro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/albestro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-02T14:00:01Z",
+    "updated_at": "2021-01-26T06:54:44Z",
+    "closed_at": "2021-01-25T21:32:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20643",
+        "html_url": "https://github.com/spack/spack/pull/20643",
+        "diff_url": "https://github.com/spack/spack/pull/20643.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20643.patch"
+    },
+    "body": "I think it is worth exposing it as variant, making it more transparent to the user.\r\n\r\nThis option is set by default to ON when building from a git repo, otherwise it is OFF. Without this variant, we don't have control over this option and we have to rely on default values.\r\n\r\nIn particular, this may create problems building dependent libraries, e.g. `cppzmq`. In fact, if `libzmq` is built from `tar.gz` while `cppzmq` is built from a git branch, the default values for the option diverges resulting in linking problems. https://github.com/zeromq/cppzmq/issues/430#issuecomment-753460584\r\n\r\nI started doing the same for `cppzmq`, but I don't have knowledge about version mapping between `libzmq` and `cppzmq`. But, that's another problem I may address elsewhere.",
+    "performed_via_github_app": null
+}

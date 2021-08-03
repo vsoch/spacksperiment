@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19279",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19279/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19279/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19279/events",
+    "html_url": "https://github.com/spack/spack/pull/19279",
+    "id": 719707207,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxODUyMTA0",
+    "number": 19279,
+    "title": "Make DEAL_II_MPI_WITH_CUDA_SUPPORT conditional on mpi package option.",
+    "user": {
+        "login": "frobnitzem",
+        "id": 2243447,
+        "node_id": "MDQ6VXNlcjIyNDM0NDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2243447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frobnitzem",
+        "html_url": "https://github.com/frobnitzem",
+        "followers_url": "https://api.github.com/users/frobnitzem/followers",
+        "following_url": "https://api.github.com/users/frobnitzem/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frobnitzem/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frobnitzem/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frobnitzem/subscriptions",
+        "organizations_url": "https://api.github.com/users/frobnitzem/orgs",
+        "repos_url": "https://api.github.com/users/frobnitzem/repos",
+        "events_url": "https://api.github.com/users/frobnitzem/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frobnitzem/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-12T22:23:30Z",
+    "updated_at": "2020-10-13T18:23:05Z",
+    "closed_at": "2020-10-13T18:23:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19279",
+        "html_url": "https://github.com/spack/spack/pull/19279",
+        "diff_url": "https://github.com/spack/spack/pull/19279.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19279.patch"
+    },
+    "body": "This addresses the last-minute discussion on DEAL_II_MPI_WITH_CUDA_SUPPORT by enabling only if mpi has the +cuda option.  According to the discussion there, at present this would work for a properly annotated openmpi, but isn't set in a standard way for the other mpi-s.",
+    "performed_via_github_app": null
+}

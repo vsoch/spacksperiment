@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21633",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21633/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21633/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21633/events",
+    "html_url": "https://github.com/spack/spack/pull/21633",
+    "id": 806726985,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcyMDk3MTk3",
+    "number": 21633,
+    "title": "cmake: patches for HPE/Cray apollo PE",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-11T20:45:59Z",
+    "updated_at": "2021-02-16T18:34:59Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21633",
+        "html_url": "https://github.com/spack/spack/pull/21633",
+        "diff_url": "https://github.com/spack/spack/pull/21633.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21633.patch"
+    },
+    "body": "patches to enable use of cmake 3.19.0,1 with CCE compilers on HPE apollo Programming Environment.\r\n\r\nIn the course of testing this patch, by the way, I discovered that cmake 3.19.3 and 3.19.4 are not available for download.\r\n\r\nSigned-off-by: Howard Pritchard <hppritcha@gmail.com>",
+    "performed_via_github_app": null
+}

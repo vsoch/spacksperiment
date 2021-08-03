@@ -1,0 +1,143 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24650",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24650/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24650/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24650/events",
+    "html_url": "https://github.com/spack/spack/pull/24650",
+    "id": 934793283,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgxODEzMjEy",
+    "number": 24650,
+    "title": "Add `when` context manager to group common constraints in packages",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475567363,
+            "node_id": "MDU6TGFiZWw0NzU1NjczNjM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/resources",
+            "name": "resources",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-07-01T12:30:11Z",
+    "updated_at": "2021-07-02T17:34:02Z",
+    "closed_at": "2021-07-02T15:43:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24650",
+        "html_url": "https://github.com/spack/spack/pull/24650",
+        "diff_url": "https://github.com/spack/spack/pull/24650.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24650.patch"
+    },
+    "body": "This PR adds a context manager that permit to group the common part of a `when=` argument and add that to the context:\r\n```python\r\nclass Gcc(AutotoolsPackage):\r\n    with when('+nvptx'):\r\n        depends_on('cuda')\r\n        conflicts('@:6', msg='NVPTX only supported in gcc 7 and above')\r\n        conflicts('languages=ada')\r\n        conflicts('languages=brig')\r\n        conflicts('languages=go')\r\n```\r\nThe above snippet is equivalent to:\r\n```python\r\nclass Gcc(AutotoolsPackage):\r\n    depends_on('cuda', when='+nvptx')\r\n    conflicts('@:6', when='+nvptx', msg='NVPTX only supported in gcc 7 and above')\r\n    conflicts('languages=ada', when='+nvptx')\r\n    conflicts('languages=brig', when='+nvptx')\r\n    conflicts('languages=go', when='+nvptx')\r\n```\r\nwhich needs a repetition of the `when='+nvptx'` argument. The context manager might help improving readability and permits to group together directives related to the same semantic aspect (e.g. all the directives needed to model the behavior of `gcc` when `+nvptx` is active). \r\n\r\nModifications:\r\n\r\n- [x] Added a `when` context manager to be used with package directives\r\n- [x] Add unit tests and documentation for the new feature\r\n- [x] Modified `cp2k` and `gcc` to show the use of the context manager \r\n",
+    "performed_via_github_app": null
+}

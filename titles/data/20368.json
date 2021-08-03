@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20368",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20368/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20368/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20368/events",
+    "html_url": "https://github.com/spack/spack/pull/20368",
+    "id": 766317435,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM5Mzc1Mzg2",
+    "number": 20368,
+    "title": "Update of Eccodes to 2.19.1",
+    "user": {
+        "login": "MBlaschek",
+        "id": 8898319,
+        "node_id": "MDQ6VXNlcjg4OTgzMTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8898319?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MBlaschek",
+        "html_url": "https://github.com/MBlaschek",
+        "followers_url": "https://api.github.com/users/MBlaschek/followers",
+        "following_url": "https://api.github.com/users/MBlaschek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MBlaschek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MBlaschek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MBlaschek/subscriptions",
+        "organizations_url": "https://api.github.com/users/MBlaschek/orgs",
+        "repos_url": "https://api.github.com/users/MBlaschek/repos",
+        "events_url": "https://api.github.com/users/MBlaschek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MBlaschek/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-14T11:23:21Z",
+    "updated_at": "2021-01-05T16:09:12Z",
+    "closed_at": "2021-01-05T16:09:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20368",
+        "html_url": "https://github.com/spack/spack/pull/20368",
+        "diff_url": "https://github.com/spack/spack/pull/20368.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20368.patch"
+    },
+    "body": "Update of Eccodes to version 2.19.1\r\n\r\nConfirmed working:\r\neccodes@2.19.1~aec+fortran~ipo+memfs+netcdf+openmp+png~pthreads~python build_type=RelWithDebInfo jp2k=openjpeg\r\nwith \r\nintel-parallel-studio@composer.2020.2~advisor~clck+daal~gdb~ilp64~inspector+ipp~itac+mkl~mpi~newdtags+rpath+shared+tbb~vtune auto_dispatch=none threads=none\r\n",
+    "performed_via_github_app": null
+}

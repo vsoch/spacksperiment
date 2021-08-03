@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20028",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20028/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20028/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20028/events",
+    "html_url": "https://github.com/spack/spack/pull/20028",
+    "id": 747912589,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI1MDQ4ODEz",
+    "number": 20028,
+    "title": "Fix bug for command find with option d, which print specs in wrong group",
+    "user": {
+        "login": "lrtfm",
+        "id": 1192812,
+        "node_id": "MDQ6VXNlcjExOTI4MTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1192812?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lrtfm",
+        "html_url": "https://github.com/lrtfm",
+        "followers_url": "https://api.github.com/users/lrtfm/followers",
+        "following_url": "https://api.github.com/users/lrtfm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lrtfm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lrtfm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lrtfm/subscriptions",
+        "organizations_url": "https://api.github.com/users/lrtfm/orgs",
+        "repos_url": "https://api.github.com/users/lrtfm/repos",
+        "events_url": "https://api.github.com/users/lrtfm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lrtfm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-11-21T03:23:36Z",
+    "updated_at": "2021-02-03T01:22:30Z",
+    "closed_at": "2021-01-29T19:05:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20028",
+        "html_url": "https://github.com/spack/spack/pull/20028",
+        "diff_url": "https://github.com/spack/spack/pull/20028.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20028.patch"
+    },
+    "body": "When we issue the command `spack find` with the option `-d`, it will print the specs in the wrong group like this:\r\n```\r\nyzz@DESKTOP-4EOODD5:~/spack$ spack find gcc\r\n==> 2 installed packages\r\n-- linux-ubuntu20.04-skylake / gcc@9.3.0 ------------------------\r\ngcc@10.1.0\r\n\r\n-- linux-ubuntu20.04-skylake / gcc@10.1.0 -----------------------\r\ngcc@9.3.0\r\nyzz@DESKTOP-4EOODD5:~/spack$ spack find -d gcc\r\n==> 2 installed packages\r\n-- linux-ubuntu20.04-skylake / gcc@9.3.0 ------------------------\r\n\r\n-- linux-ubuntu20.04-skylake / gcc@10.1.0 -----------------------\r\ngcc@10.1.0\r\n    gmp@6.1.2\r\n    isl@0.21\r\n    mpc@1.1.0\r\n        mpfr@4.0.2\r\n    zlib@1.2.11\r\n    zstd@1.4.5\r\n\r\ngcc@9.3.0\r\n    binutils@2.35.1\r\n        gettext@0.21\r\n            bzip2@1.0.8\r\n            libiconv@1.16\r\n            libxml2@2.9.10\r\n                xz@5.2.5\r\n                zlib@1.2.11\r\n            ncurses@6.2\r\n            tar@1.32\r\n    gmp@6.1.2\r\n    isl@0.20\r\n    mpc@1.1.0\r\n        mpfr@3.1.6\r\n```\r\n\r\nThis is now fixed.\r\n\r\nFixes #21374",
+    "performed_via_github_app": null
+}

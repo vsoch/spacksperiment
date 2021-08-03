@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24452",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24452/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24452/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24452/events",
+    "html_url": "https://github.com/spack/spack/pull/24452",
+    "id": 926432956,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc0NzM4MTU1",
+    "number": 24452,
+    "title": "spack external find: expand symlinks in package prefix",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-06-21T17:17:52Z",
+    "updated_at": "2021-07-06T15:53:23Z",
+    "closed_at": "2021-07-06T15:53:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24452",
+        "html_url": "https://github.com/spack/spack/pull/24452",
+        "diff_url": "https://github.com/spack/spack/pull/24452.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24452.patch"
+    },
+    "body": "@bcdarwin can you see if this fixes #24418?",
+    "performed_via_github_app": null
+}

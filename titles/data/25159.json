@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25159",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25159/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25159/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25159/events",
+    "html_url": "https://github.com/spack/spack/pull/25159",
+    "id": 956954220,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNDcyMTAz",
+    "number": 25159,
+    "title": "add MIOPEN_AMDGCN_ASSEMBLER to cmake args",
+    "user": {
+        "login": "srekolam",
+        "id": 67086238,
+        "node_id": "MDQ6VXNlcjY3MDg2MjM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67086238?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srekolam",
+        "html_url": "https://github.com/srekolam",
+        "followers_url": "https://api.github.com/users/srekolam/followers",
+        "following_url": "https://api.github.com/users/srekolam/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srekolam/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srekolam/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srekolam/subscriptions",
+        "organizations_url": "https://api.github.com/users/srekolam/orgs",
+        "repos_url": "https://api.github.com/users/srekolam/repos",
+        "events_url": "https://api.github.com/users/srekolam/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srekolam/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-30T17:52:58Z",
+    "updated_at": "2021-08-02T07:38:35Z",
+    "closed_at": "2021-08-02T07:38:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25159",
+        "html_url": "https://github.com/spack/spack/pull/25159",
+        "diff_url": "https://github.com/spack/spack/pull/25159.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25159.patch"
+    },
+    "body": "when there is /opt/rocm/rocm-ver installed , while testing the spack packages for miopen-hip and miopen-opencl i found from the cmakecache.txt ,that it is picking the below \r\nAMDGCN assembler: /opt/rocm/llvm/bin/clang   MIOPEN_AMDGCN_ASSEMBLER:FILEPATH=/opt/rocm/llvm/bin/clang\r\ni modified the spack packages so that it can look at the clang from the llvm-amdgpu prefix path and use that instead.",
+    "performed_via_github_app": null
+}

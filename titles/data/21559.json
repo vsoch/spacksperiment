@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21559",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21559/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21559/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21559/events",
+    "html_url": "https://github.com/spack/spack/pull/21559",
+    "id": 804294011,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcwMDg3NDE4",
+    "number": 21559,
+    "title": "ocamlbuild: new package",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-02-09T07:31:17Z",
+    "updated_at": "2021-02-15T06:19:28Z",
+    "closed_at": "2021-02-12T13:42:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21559",
+        "html_url": "https://github.com/spack/spack/pull/21559",
+        "diff_url": "https://github.com/spack/spack/pull/21559.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21559.patch"
+    },
+    "body": "Adding the ocamlbuild package that depends on ocaml ; this is required by \"hevea\" that shall be added later on.",
+    "performed_via_github_app": null
+}

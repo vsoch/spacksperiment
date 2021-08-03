@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21997",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21997/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21997/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21997/events",
+    "html_url": "https://github.com/spack/spack/pull/21997",
+    "id": 817616929,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTgxMDc5NTU1",
+    "number": 21997,
+    "title": "adds flag to turn off NLOPT_OCTAVE in CMAKE when -octave",
+    "user": {
+        "login": "rviertel",
+        "id": 12927899,
+        "node_id": "MDQ6VXNlcjEyOTI3ODk5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12927899?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rviertel",
+        "html_url": "https://github.com/rviertel",
+        "followers_url": "https://api.github.com/users/rviertel/followers",
+        "following_url": "https://api.github.com/users/rviertel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rviertel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rviertel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rviertel/subscriptions",
+        "organizations_url": "https://api.github.com/users/rviertel/orgs",
+        "repos_url": "https://api.github.com/users/rviertel/repos",
+        "events_url": "https://api.github.com/users/rviertel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rviertel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-26T19:45:34Z",
+    "updated_at": "2021-02-26T23:35:18Z",
+    "closed_at": "2021-02-26T23:35:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21997",
+        "html_url": "https://github.com/spack/spack/pull/21997",
+        "diff_url": "https://github.com/spack/spack/pull/21997.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21997.patch"
+    },
+    "body": "Apparently nlopt now builds with octave bindings by default, but the spack package has ~octave as default so the dependency is never pulled. Rather than change the spack default, I added these lines to not try to build with octave on when it spack has it set to ~octave",
+    "performed_via_github_app": null
+}

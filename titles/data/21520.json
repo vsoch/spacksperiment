@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21520",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21520/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21520/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21520/events",
+    "html_url": "https://github.com/spack/spack/pull/21520",
+    "id": 802754157,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY4ODI2Mjcx",
+    "number": 21520,
+    "title": "py-matplotlib: clarify backend variant description",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-06T17:59:46Z",
+    "updated_at": "2021-02-08T13:33:14Z",
+    "closed_at": "2021-02-08T08:36:36Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21520",
+        "html_url": "https://github.com/spack/spack/pull/21520",
+        "diff_url": "https://github.com/spack/spack/pull/21520.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21520.patch"
+    },
+    "body": "Fixes #21511 \r\n\r\n```console\r\n$ spack info py-matplotlib\r\n...\r\nVariants:\r\n    Name [Default]      Allowed values          Description\r\n    ================    ====================    ==============================\r\n\r\n    animation [off]     on, off                 Enable animation support\r\n    backend [macosx]    gtk3agg, gtk3cairo,     Default backend. All backends\r\n                        macosx, nbagg,          are installed and functional\r\n                        qt4agg, qt4cairo,       as long as dependencies are\r\n                        qt5agg, qt5cairo,       found at run-time\r\n                        tkagg, tkcairo,         \r\n                        webagg, wx, wxagg,      \r\n                        wxcairo, agg, cairo,    \r\n                        pdf, pgf, ps, svg,      \r\n                        template                \r\n    fonts [off]         on, off                 Enable support for system font\r\n                                                detection\r\n    image [on]          on, off                 Enable reading/saving JPEG,\r\n                                                BMP and TIFF files\r\n    latex [off]         on, off                 Enable LaTeX text rendering\r\n                                                support\r\n    movies [off]        on, off                 Enable support for saving\r\n                                                movies\r\n```\r\n\r\n@lrtfm does this look good to you?",
+    "performed_via_github_app": null
+}

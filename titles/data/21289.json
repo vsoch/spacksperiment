@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21289",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21289/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21289/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21289/events",
+    "html_url": "https://github.com/spack/spack/pull/21289",
+    "id": 794267249,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYxODEyNjYy",
+    "number": 21289,
+    "title": "Speed-up the ASP based solver",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2021-01-26T14:18:02Z",
+    "updated_at": "2021-07-28T14:35:34Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21289",
+        "html_url": "https://github.com/spack/spack/pull/21289",
+        "diff_url": "https://github.com/spack/spack/pull/21289.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21289.patch"
+    },
+    "body": "depends on #21148 (it incorporates the same small change)\r\n\r\nThis PR speeds-up the ASP based solver most of the times by:\r\n1. Trying a first solve with a reduced number of facts (only preferred targets, compilers and providers)\r\n2. Reverting back to solve using all the facts we know if 1 is unsat\r\n\r\nI'll post data on the speed-up in the comments below, but most of the time it's roughly a 30%-50% cut of the wall-time compared to `develop`. \r\n\r\nBeing based on an heuristic reduction of the search space, I found during development that sometimes 1. may yield different results than 2. when soft-preferences are involved. One thing we should decide during review is therefore if we want this strategy to be:\r\n- hard-wired like it is now (maybe skipped in potentially problematic cases)\r\n- opt-in (by default use all the facts)\r\n- opt-out (by default use the fast strategy, but skip it on demand)",
+    "performed_via_github_app": null
+}

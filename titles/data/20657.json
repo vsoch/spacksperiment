@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20657",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20657/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20657/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20657/events",
+    "html_url": "https://github.com/spack/spack/pull/20657",
+    "id": 778233509,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ4MzU4MTE2",
+    "number": 20657,
+    "title": "Updates to support clingo-cffi",
+    "user": {
+        "login": "joshessman-llnl",
+        "id": 68349992,
+        "node_id": "MDQ6VXNlcjY4MzQ5OTky",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68349992?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joshessman-llnl",
+        "html_url": "https://github.com/joshessman-llnl",
+        "followers_url": "https://api.github.com/users/joshessman-llnl/followers",
+        "following_url": "https://api.github.com/users/joshessman-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joshessman-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joshessman-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joshessman-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/joshessman-llnl/orgs",
+        "repos_url": "https://api.github.com/users/joshessman-llnl/repos",
+        "events_url": "https://api.github.com/users/joshessman-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joshessman-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-01-04T17:05:52Z",
+    "updated_at": "2021-02-24T15:21:33Z",
+    "closed_at": "2021-02-23T23:46:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20657",
+        "html_url": "https://github.com/spack/spack/pull/20657",
+        "diff_url": "https://github.com/spack/spack/pull/20657.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20657.patch"
+    },
+    "body": "Clingo recently merged in a new Python module option based on `cffi`.  \r\n\r\nCompatibility with this module requires a few changes to spack - it does not automatically convert strings/ints/etc to `Symbol` and `clingo.Symbol.string` throws on failure.",
+    "performed_via_github_app": null
+}

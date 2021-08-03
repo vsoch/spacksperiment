@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20464",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20464/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20464/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20464/events",
+    "html_url": "https://github.com/spack/spack/pull/20464",
+    "id": 770568832,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyMjg4MTEw",
+    "number": 20464,
+    "title": "Updates and Enhancements to AOMP Recipe. Added version 3.10.0.",
+    "user": {
+        "login": "estewart08",
+        "id": 17113718,
+        "node_id": "MDQ6VXNlcjE3MTEzNzE4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17113718?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/estewart08",
+        "html_url": "https://github.com/estewart08",
+        "followers_url": "https://api.github.com/users/estewart08/followers",
+        "following_url": "https://api.github.com/users/estewart08/following{/other_user}",
+        "gists_url": "https://api.github.com/users/estewart08/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/estewart08/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/estewart08/subscriptions",
+        "organizations_url": "https://api.github.com/users/estewart08/orgs",
+        "repos_url": "https://api.github.com/users/estewart08/repos",
+        "events_url": "https://api.github.com/users/estewart08/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/estewart08/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-12-18T04:59:38Z",
+    "updated_at": "2021-01-05T19:39:58Z",
+    "closed_at": "2021-01-05T19:39:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20464",
+        "html_url": "https://github.com/spack/spack/pull/20464",
+        "diff_url": "https://github.com/spack/spack/pull/20464.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20464.patch"
+    },
+    "body": "Reduced repitition with version hashes.\r\nExpanded dependency versioning.\r\nReduced repitition with cmake args.\r\nAdded version 3.10.0.",
+    "performed_via_github_app": null
+}

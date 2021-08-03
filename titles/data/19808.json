@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19808",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19808/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19808/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19808/events",
+    "html_url": "https://github.com/spack/spack/pull/19808",
+    "id": 738742389,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE3NTI0NjE1",
+    "number": 19808,
+    "title": "commands: add `spack tutorial` command",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472074049,
+            "node_id": "MDU6TGFiZWwxNDcyMDc0MDQ5",
+            "url": "https://api.github.com/repos/spack/spack/labels/tutorial",
+            "name": "tutorial",
+            "color": "efa7bf",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-09T06:52:12Z",
+    "updated_at": "2020-11-09T11:47:10Z",
+    "closed_at": "2020-11-09T11:47:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19808",
+        "html_url": "https://github.com/spack/spack/pull/19808",
+        "diff_url": "https://github.com/spack/spack/pull/19808.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19808.patch"
+    },
+    "body": "Added a command to set up Spack for our tutorial at https://spack-tutorial.readthedocs.io.\r\n\r\nThe command does some common operations we need first-time users to do.\r\n\r\nSpecifically:\r\n\r\n- checks out a particular branch of Spack\r\n- deletes spurious configuration in `~/.spack` that might be\r\n  left over from prior parts of the tutorial\r\n- adds a mirror and trusts its public key\r\n\r\nExample usage:\r\n\r\n```console\r\n$ spack tutorial\r\n==> This command will set up Spack for the tutorial at https://spack-tutorial.readthedocs.io.\r\n  \r\n==> Warning: This will modify your Spack configuration by:\r\n    - deleting some configuration in ~/.spack\r\n    - adding a mirror and trusting its public key\r\n    - checking out a particular branch of Spack\r\n  \r\n==> Are you sure you want to proceed? [y/n] y\r\n==> Reverting compiler and repository configuration\r\n  rm -f ~/.spack/linux/compilers.yaml\r\n  rm -f ~/.spack/packages.yaml\r\n  rm -f ~/.spack/mirrors.yaml\r\n  rm -f ~/.spack/repos.yaml\r\n==> Ensuring that the tutorial binary mirror is configured:\r\n  spack mirrror add tutorial s3://spack-tutorial-container/mirror/\r\n==> Ensuring that we trust tutorial binaries\r\n  spack gpg trust /home/spack7/spack/share/spack/keys/tutorial.pub\r\ngpgconf: socketdir is '/run/user/1007/gnupg'\r\ngpg: key 95F8681195E239D8: \"Spack Build Pipeline (Demo Key) <key@spack.demo>\" not changed\r\ngpg: Total number processed: 1\r\ngpg:              unchanged: 1\r\n==> Ensuring we're on the releases/v0.15 branch\r\nSwitched to branch 'releases/v0.15'\r\nYour branch is up to date with 'origin/releases/v0.15'.\r\n```\r\n",
+    "performed_via_github_app": null
+}

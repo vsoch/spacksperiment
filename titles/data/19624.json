@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19624",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19624/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19624/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19624/events",
+    "html_url": "https://github.com/spack/spack/pull/19624",
+    "id": 733089061,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEyOTI1MTg0",
+    "number": 19624,
+    "title": "clingo: compilation error - needs a patch",
+    "user": {
+        "login": "teonnik",
+        "id": 8088032,
+        "node_id": "MDQ6VXNlcjgwODgwMzI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8088032?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/teonnik",
+        "html_url": "https://github.com/teonnik",
+        "followers_url": "https://api.github.com/users/teonnik/followers",
+        "following_url": "https://api.github.com/users/teonnik/following{/other_user}",
+        "gists_url": "https://api.github.com/users/teonnik/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/teonnik/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/teonnik/subscriptions",
+        "organizations_url": "https://api.github.com/users/teonnik/orgs",
+        "repos_url": "https://api.github.com/users/teonnik/repos",
+        "events_url": "https://api.github.com/users/teonnik/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/teonnik/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-30T11:13:38Z",
+    "updated_at": "2020-10-30T18:36:54Z",
+    "closed_at": "2020-10-30T18:36:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19624",
+        "html_url": "https://github.com/spack/spack/pull/19624",
+        "diff_url": "https://github.com/spack/spack/pull/19624.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19624.patch"
+    },
+    "body": "`clingo` needs a patch for versions 5.4 and 5.3 due to compilation errors:  \r\n - https://github.com/potassco/clingo/issues/244\r\n- https://github.com/potassco/clingo/pull/167\r\n\r\nDiscovered while trying this PR out: https://github.com/spack/spack/pull/19501 .",
+    "performed_via_github_app": null
+}

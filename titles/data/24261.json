@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24261",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24261/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24261/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24261/events",
+    "html_url": "https://github.com/spack/spack/pull/24261",
+    "id": 918054823,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY3NTI4Njc4",
+    "number": 24261,
+    "title": "Don't use login shell for spack ci rebuild subprocess",
+    "user": {
+        "login": "qwofford",
+        "id": 10124523,
+        "node_id": "MDQ6VXNlcjEwMTI0NTIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10124523?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/qwofford",
+        "html_url": "https://github.com/qwofford",
+        "followers_url": "https://api.github.com/users/qwofford/followers",
+        "following_url": "https://api.github.com/users/qwofford/following{/other_user}",
+        "gists_url": "https://api.github.com/users/qwofford/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/qwofford/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/qwofford/subscriptions",
+        "organizations_url": "https://api.github.com/users/qwofford/orgs",
+        "repos_url": "https://api.github.com/users/qwofford/repos",
+        "events_url": "https://api.github.com/users/qwofford/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/qwofford/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-10T23:44:52Z",
+    "updated_at": "2021-06-16T19:11:32Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24261",
+        "html_url": "https://github.com/spack/spack/pull/24261",
+        "diff_url": "https://github.com/spack/spack/pull/24261.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24261.patch"
+    },
+    "body": "Addresses #24260 \r\n\r\nNot clear if this will break other stuff...review with caution.",
+    "performed_via_github_app": null
+}

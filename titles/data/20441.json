@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20441",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20441/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20441/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20441/events",
+    "html_url": "https://github.com/spack/spack/pull/20441",
+    "id": 769498301,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQxNTkxNTQ2",
+    "number": 20441,
+    "title": "Python 3.10 support: collections.abc",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2020-12-17T04:23:36Z",
+    "updated_at": "2021-02-01T17:30:27Z",
+    "closed_at": "2021-02-01T17:30:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20441",
+        "html_url": "https://github.com/spack/spack/pull/20441",
+        "diff_url": "https://github.com/spack/spack/pull/20441.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20441.patch"
+    },
+    "body": "From https://docs.python.org/3/library/collections.html:\r\n\r\n> _Deprecated since version 3.3, will be removed in version 3.10:_ Moved [Collections Abstract Base Classes](https://docs.python.org/3/library/collections.abc.html#collections-abstract-base-classes) to the [`collections.abc`](https://docs.python.org/3/library/collections.abc.html#module-collections.abc) module. For backwards compatibility, they continue to be visible in this module through Python 3.9.\r\n\r\nCloses #20434\r\n\r\n@mrmundt ",
+    "performed_via_github_app": null
+}

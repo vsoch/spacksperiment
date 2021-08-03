@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19717",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19717/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19717/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19717/events",
+    "html_url": "https://github.com/spack/spack/pull/19717",
+    "id": 735632435,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE0OTg5MTEz",
+    "number": 19717,
+    "title": "Axom: update package",
+    "user": {
+        "login": "white238",
+        "id": 595301,
+        "node_id": "MDQ6VXNlcjU5NTMwMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/595301?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/white238",
+        "html_url": "https://github.com/white238",
+        "followers_url": "https://api.github.com/users/white238/followers",
+        "following_url": "https://api.github.com/users/white238/following{/other_user}",
+        "gists_url": "https://api.github.com/users/white238/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/white238/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/white238/subscriptions",
+        "organizations_url": "https://api.github.com/users/white238/orgs",
+        "repos_url": "https://api.github.com/users/white238/repos",
+        "events_url": "https://api.github.com/users/white238/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/white238/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-03T21:01:37Z",
+    "updated_at": "2020-11-04T23:20:15Z",
+    "closed_at": "2020-11-04T20:37:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19717",
+        "html_url": "https://github.com/spack/spack/pull/19717",
+        "diff_url": "https://github.com/spack/spack/pull/19717.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19717.patch"
+    },
+    "body": "* Add 0.4.0 release\r\n* Add `cpp14` variant\r\n* Explicitly turn off clang-format unless `devtools` variant is turned on\r\n* Loosen more locked down variants in general\r\n* Remove `cub` variant",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21820",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21820/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21820/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21820/events",
+    "html_url": "https://github.com/spack/spack/pull/21820",
+    "id": 812411636,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc2NzgyNDQ4",
+    "number": 21820,
+    "title": "VTK-m: No `pic` variant",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-19T22:51:04Z",
+    "updated_at": "2021-04-02T19:01:21Z",
+    "closed_at": "2021-02-20T08:47:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21820",
+        "html_url": "https://github.com/spack/spack/pull/21820",
+        "diff_url": "https://github.com/spack/spack/pull/21820.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21820.patch"
+    },
+    "body": "A leftover conflict between `shared` and `pic` variants, the latter is not part of the package anymore, leads to a solver error with clingo.\r\n\r\nThis removes the outdated conflict section.\r\n\r\n```bash\r\nspack solve vtk-m\r\n```\r\n\r\nAlso updates the changed HIP/rocM architecture options and variants in Kokkos (not runtime tested by me).\r\n\r\n### Fixes\r\n- [x] `==> Error: 'pic'`\r\n- [x] `==> Error: 'amd_gpu_arch'`\r\n\r\n## Background\r\n\r\n- https://github.com/spack/spack/pull/21787#issuecomment-782103993\r\n- #21811\r\n\r\ncc @robertmaynard @kmorel @vicentebolea",
+    "performed_via_github_app": null
+}

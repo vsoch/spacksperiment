@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23021",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23021/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23021/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23021/events",
+    "html_url": "https://github.com/spack/spack/pull/23021",
+    "id": 859300383,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE2NDA0NjQ5",
+    "number": 23021,
+    "title": "spack does not have a variant debug for libelf",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-15T22:42:20Z",
+    "updated_at": "2021-04-16T07:29:43Z",
+    "closed_at": "2021-04-16T07:29:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23021",
+        "html_url": "https://github.com/spack/spack/pull/23021",
+        "diff_url": "https://github.com/spack/spack/pull/23021.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23021.patch"
+    },
+    "body": "This is just a small documentation fix - libelf doesn't have a variant debug=True. It would be weird for the user to try out the example and get an error message.\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23476",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23476/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23476/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23476/events",
+    "html_url": "https://github.com/spack/spack/pull/23476",
+    "id": 877779128,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjMxNjc4MDIy",
+    "number": 23476,
+    "title": "env views: make view updates atomic",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1959390341,
+            "node_id": "MDU6TGFiZWwxOTU5MzkwMzQx",
+            "url": "https://api.github.com/repos/spack/spack/labels/breaking-change",
+            "name": "breaking-change",
+            "color": "ea1076",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2021-05-06T17:35:47Z",
+    "updated_at": "2021-06-04T19:45:38Z",
+    "closed_at": "2021-05-13T06:56:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23476",
+        "html_url": "https://github.com/spack/spack/pull/23476",
+        "diff_url": "https://github.com/spack/spack/pull/23476.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23476.patch"
+    },
+    "body": "Currently, environment views blink out of existence during the view regeneration, and are slowly built back up to their new and improved state. This is not good if other processes attempt to access the view -- they can see it in an inconsistent state.\r\n\r\nThis PR fixes makes environment view updates atomic. This requires a level of indirection (via symlink, similar to nix or guix) from the view root to the underlying implementation on the filesystem. \r\n\r\nNow, an environment view at `/path/to/foo` is a symlink to `/path/to/._foo/<hash>`, where `<hash>` is a hash of the contents of the view.  We construct the view in its content-keyed hash directory, create a new symlink to this directory, and atomically replace the symlink with one to the new view.\r\n\r\nThis PR also future-proofs environment views so that we can implement rollback.\r\n\r\nFor background:\r\n* there is no atomic operation in posix that allows for a non-empty directory to be replaced.\r\n* There is an atomic `renameat2` in the linux kernel starting in version 3.15, but many filesystems don't support the system call, including NFS3 and NFS4, which makes it a poor implementation choice for an HPC tool, so we use the symlink approach that others tools like nix and guix have used successfully.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21169",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21169/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21169/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21169/events",
+    "html_url": "https://github.com/spack/spack/pull/21169",
+    "id": 790133229,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU4MzY5NDk3",
+    "number": 21169,
+    "title": "Fix git svn modules",
+    "user": {
+        "login": "bryanherman",
+        "id": 63422190,
+        "node_id": "MDQ6VXNlcjYzNDIyMTkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63422190?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bryanherman",
+        "html_url": "https://github.com/bryanherman",
+        "followers_url": "https://api.github.com/users/bryanherman/followers",
+        "following_url": "https://api.github.com/users/bryanherman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bryanherman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bryanherman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bryanherman/subscriptions",
+        "organizations_url": "https://api.github.com/users/bryanherman/orgs",
+        "repos_url": "https://api.github.com/users/bryanherman/repos",
+        "events_url": "https://api.github.com/users/bryanherman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bryanherman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430708,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA3MDg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/subversion",
+            "name": "subversion",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-20T16:29:15Z",
+    "updated_at": "2021-01-23T19:31:40Z",
+    "closed_at": "2021-01-23T15:33:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21169",
+        "html_url": "https://github.com/spack/spack/pull/21169",
+        "diff_url": "https://github.com/spack/spack/pull/21169.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21169.patch"
+    },
+    "body": "Fixes behavior when module/spack loading git when using the +svn variant. The run env for Git was updated to point to the location of the dynamic libs to load. In addition apr-util needed to be type link as well in the perl-alien-svn recipe. A change was also made to highlight that the path stitching for LD_LIBRARY_PATH is only valid on linux platforms.",
+    "performed_via_github_app": null
+}

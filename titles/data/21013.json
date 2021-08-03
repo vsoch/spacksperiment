@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21013",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21013/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21013/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21013/events",
+    "html_url": "https://github.com/spack/spack/pull/21013",
+    "id": 787543203,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2MjI2ODE4",
+    "number": 21013,
+    "title": "Make git fetching even quieter",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-16T20:09:35Z",
+    "updated_at": "2021-01-28T19:47:51Z",
+    "closed_at": "2021-01-28T19:41:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21013",
+        "html_url": "https://github.com/spack/spack/pull/21013",
+        "diff_url": "https://github.com/spack/spack/pull/21013.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21013.patch"
+    },
+    "body": "Follow-up to #3180\r\nCloses #3179 \r\n\r\n@BarrySmith @davydden \r\n\r\nNot sure what versions of git this flag is supported for.\r\n\r\n### Before\r\n\r\n```console\r\n$ spack fetch py-torch\r\nNote: switching to '57bffc3a8e4fee0cce31e1ff1f662ccf7b16db57'.\r\n\r\nYou are in 'detached HEAD' state. You can look around, make experimental\r\nchanges and commit them, and you can discard any commits you make in this\r\nstate without impacting any branches by switching back to a branch.\r\n\r\nIf you want to create a new branch to retain commits you create, you may\r\ndo so (now or later) by using -c with the switch command. Example:\r\n\r\n  git switch -c <new-branch-name>\r\n\r\nOr undo this operation with:\r\n\r\n  git switch -\r\n\r\nTurn off this advice by setting config variable advice.detachedHead to false\r\n\r\n```\r\n\r\n### After\r\n```console\r\n$ spack fetch py-torch\r\n```",
+    "performed_via_github_app": null
+}

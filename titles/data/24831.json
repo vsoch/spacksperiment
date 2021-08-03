@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24831",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24831/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24831/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24831/events",
+    "html_url": "https://github.com/spack/spack/pull/24831",
+    "id": 942021591,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg3ODA5MDUz",
+    "number": 24831,
+    "title": "Update caffe package for cuda9",
+    "user": {
+        "login": "jkelling",
+        "id": 19977047,
+        "node_id": "MDQ6VXNlcjE5OTc3MDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19977047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jkelling",
+        "html_url": "https://github.com/jkelling",
+        "followers_url": "https://api.github.com/users/jkelling/followers",
+        "following_url": "https://api.github.com/users/jkelling/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jkelling/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jkelling/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jkelling/subscriptions",
+        "organizations_url": "https://api.github.com/users/jkelling/orgs",
+        "repos_url": "https://api.github.com/users/jkelling/repos",
+        "events_url": "https://api.github.com/users/jkelling/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jkelling/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-12T12:42:32Z",
+    "updated_at": "2021-07-13T05:16:16Z",
+    "closed_at": "2021-07-12T22:31:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24831",
+        "html_url": "https://github.com/spack/spack/pull/24831",
+        "diff_url": "https://github.com/spack/spack/pull/24831.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24831.patch"
+    },
+    "body": "Add modifications for caffe (+opencv) to build with cuda 9. Later cuda version are only supported by `opencv@4:`, which is not compatible with caffe 1.0.",
+    "performed_via_github_app": null
+}

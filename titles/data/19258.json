@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19258",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19258/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19258/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19258/events",
+    "html_url": "https://github.com/spack/spack/pull/19258",
+    "id": 718825980,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxMTMwMDgy",
+    "number": 19258,
+    "title": "autotools: refactor search paths for aclocal in its own method",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-11T12:29:39Z",
+    "updated_at": "2020-10-12T14:36:03Z",
+    "closed_at": "2020-10-12T14:35:53Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19258",
+        "html_url": "https://github.com/spack/spack/pull/19258",
+        "diff_url": "https://github.com/spack/spack/pull/19258.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19258.patch"
+    },
+    "body": "closes #18582\r\n\r\nThis commit refactors the computation of the search path for aclocal in its own method, so that it's easier to reuse for packages that need to have a custom autoreconf phase. It's an alternative to #18582 that doesn't duplicate the way we pass this information to autotools. \r\n\r\nThe difference between using ACLOCAL_PATH and the `-I` option is that the latter takes precedence over the former, so if we adopt this PR we'll still be using the \"most authorative\" way of extending the search path.",
+    "performed_via_github_app": null
+}

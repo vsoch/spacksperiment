@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22899",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22899/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22899/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22899/events",
+    "html_url": "https://github.com/spack/spack/pull/22899",
+    "id": 854470223,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNDEwNTEw",
+    "number": 22899,
+    "title": "Drop cxx berkeley-db",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-04-09T12:15:42Z",
+    "updated_at": "2021-05-25T17:56:31Z",
+    "closed_at": "2021-04-10T02:30:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22899",
+        "html_url": "https://github.com/spack/spack/pull/22899",
+        "diff_url": "https://github.com/spack/spack/pull/22899.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22899.patch"
+    },
+    "body": "Drop the dependency on libstdc++ by default, which could help with bootstrapping potentially.\n\nberkeley db is used by perl is used by git is used by spack.\n\nperl barely needs berkeley-db, and if it does, it definitely doesn't need a c++ interface.\n",
+    "performed_via_github_app": null
+}

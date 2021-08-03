@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24072",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24072/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24072/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24072/events",
+    "html_url": "https://github.com/spack/spack/pull/24072",
+    "id": 908658411,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU5MzE3ODQ2",
+    "number": 24072,
+    "title": "WarpX: 21.06",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-06-01T20:22:25Z",
+    "updated_at": "2021-06-04T22:37:38Z",
+    "closed_at": "2021-06-02T07:35:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24072",
+        "html_url": "https://github.com/spack/spack/pull/24072",
+        "diff_url": "https://github.com/spack/spack/pull/24072.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24072.patch"
+    },
+    "body": "Also fix a little dependency issue in HIP and openPMD-api.\r\n\r\ncc @dpgrote @MaxThevenet @RemiLehe for approval",
+    "performed_via_github_app": null
+}

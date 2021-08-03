@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19341",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19341/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19341/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19341/events",
+    "html_url": "https://github.com/spack/spack/pull/19341",
+    "id": 723084318,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA0NzMxOTE5",
+    "number": 19341,
+    "title": "Revert \"ipopt: Add condition for 'aarch64' to Ipopt/config.guess\"",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 883727171,
+            "node_id": "MDU6TGFiZWw4ODM3MjcxNzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/power",
+            "name": "power",
+            "color": "8a8edb",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-16T10:04:05Z",
+    "updated_at": "2020-10-19T05:08:37Z",
+    "closed_at": "2020-10-19T03:59:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19341",
+        "html_url": "https://github.com/spack/spack/pull/19341",
+        "diff_url": "https://github.com/spack/spack/pull/19341.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19341.patch"
+    },
+    "body": "Reverts spack/spack#13499\r\n\r\nNow that #18347 has been merged I think this is not necessary anymore.",
+    "performed_via_github_app": null
+}

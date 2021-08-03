@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19824",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19824/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19824/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19824/events",
+    "html_url": "https://github.com/spack/spack/pull/19824",
+    "id": 739337631,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE4MDE4NDgw",
+    "number": 19824,
+    "title": "Fix scalapack build error",
+    "user": {
+        "login": "jppelteret",
+        "id": 10460610,
+        "node_id": "MDQ6VXNlcjEwNDYwNjEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10460610?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jppelteret",
+        "html_url": "https://github.com/jppelteret",
+        "followers_url": "https://api.github.com/users/jppelteret/followers",
+        "following_url": "https://api.github.com/users/jppelteret/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jppelteret/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jppelteret/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jppelteret/subscriptions",
+        "organizations_url": "https://api.github.com/users/jppelteret/orgs",
+        "repos_url": "https://api.github.com/users/jppelteret/repos",
+        "events_url": "https://api.github.com/users/jppelteret/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jppelteret/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-11-09T20:23:58Z",
+    "updated_at": "2020-11-12T14:55:59Z",
+    "closed_at": "2020-11-12T14:55:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19824",
+        "html_url": "https://github.com/spack/spack/pull/19824",
+        "diff_url": "https://github.com/spack/spack/pull/19824.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19824.patch"
+    },
+    "body": "On MacOS Catalina 10.15.7 building Scalapack 2.0.2 and 2.1.0 is not possible due to this warning\r\n```\r\n/<PATH>/spack-stage-netlib-scalapack-2.1.0-mnjgrebekoi6272ut6i3zyldgorynvcp/spack-src/BLACS/SRC/sgsum2d_.c:154:7: error: implicit declaration of function 'BI_smvcopy' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\r\n      BI_smvcopy(Mpval(m), Mpval(n), A, tlda, bp->Buff);\r\n      ^\r\n/<PATH>/spack-stage-netlib-scalapack-2.1.0-mnjgrebekoi6272ut6i3zyldgorynvcp/spack-src/BLACS/SRC/dgsum2d_.c:154:7: error: implicit declaration of function 'BI_dmvcopy' is invalid in C99 [-Werror,-Wimplicit-function-declaration]\r\n      BI_dmvcopy(Mpval(m), Mpval(n), A, tlda, bp->Buff);\r\n```\r\nbeing promoted to an error. Although this should probably be fixed upstream, it does look like the warning has been around [for some time](https://clang.debian.net/logs/2013-01-28/blacs-mpi_1.1-31_unstable_clang.log) and so I'm guessing that its not a critical error. It builds fine for me, but I have not yet tested it.\r\n\r\nRelates to https://github.com/dealii/dealii/issues/11138",
+    "performed_via_github_app": null
+}

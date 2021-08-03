@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20189",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20189/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20189/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20189/events",
+    "html_url": "https://github.com/spack/spack/pull/20189",
+    "id": 753864853,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5ODYwNzA3",
+    "number": 20189,
+    "title": "Improve gcc detection in llvm.",
+    "user": {
+        "login": "tomgreen66",
+        "id": 2301394,
+        "node_id": "MDQ6VXNlcjIzMDEzOTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2301394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tomgreen66",
+        "html_url": "https://github.com/tomgreen66",
+        "followers_url": "https://api.github.com/users/tomgreen66/followers",
+        "following_url": "https://api.github.com/users/tomgreen66/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tomgreen66/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tomgreen66/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tomgreen66/subscriptions",
+        "organizations_url": "https://api.github.com/users/tomgreen66/orgs",
+        "repos_url": "https://api.github.com/users/tomgreen66/repos",
+        "events_url": "https://api.github.com/users/tomgreen66/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tomgreen66/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-11-30T22:59:45Z",
+    "updated_at": "2021-01-15T08:22:59Z",
+    "closed_at": "2021-01-15T08:22:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20189",
+        "html_url": "https://github.com/spack/spack/pull/20189",
+        "diff_url": "https://github.com/spack/spack/pull/20189.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20189.patch"
+    },
+    "body": "Have hit this issue on a few systems now where location of gcc cannot be trusted to give a consistent location for the install prefix.  By querying the gcc execuable itself it seems it provides a better approach.\r\n\r\nErrors I would get during llvm build would be:\r\n```\r\n     80847        /apps/spack/opt/linux-rhel7-skylake_avx512/gcc-8.1.0/llvm-11.\r\n              0.0-s4pz3g4h3dladmlwlrldac5eflo44izh/bin/clang      -rdynamic CMa\r\n              keFiles/cmTC_b709c.dir/testCCompiler.c.o  -o cmTC_b709c\r\n  >> 80848    ld: cannot find crtbegin.o: No such file or directory\r\n  >> 80849        ld: cannot find -lgcc\r\n  >> 80850        ld: cannot find -lgcc_s\r\n  >> 80851        clang-11: error: linker command failed with exit code 1 (use\r\n              -v to see invocation)\r\n  >> 80852        gmake[1]: *** [cmTC_b709c] Error 1\r\n```\r\n\r\nBy applying this patch it helps.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21407",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21407/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21407/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21407/events",
+    "html_url": "https://github.com/spack/spack/pull/21407",
+    "id": 797429218,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0NDMwODYy",
+    "number": 21407,
+    "title": "spack external find: allow to search by tags",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-30T14:09:54Z",
+    "updated_at": "2021-02-04T12:17:38Z",
+    "closed_at": "2021-02-04T12:17:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21407",
+        "html_url": "https://github.com/spack/spack/pull/21407",
+        "diff_url": "https://github.com/spack/spack/pull/21407.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21407.patch"
+    },
+    "body": "This commit adds an option to the:\r\n```\r\nspack external find\r\n```\r\ncommand that allows it to search by tags. In this way group of executables with common purposes can be grouped under a single name and a simple command can be used to detect all of them. As an example introduce the \"build-tools\" tag to search for common development tools on a system.\r\n\r\nExample of use:\r\n```console\r\n% spack external find -t build-tools\r\n==> The following specs have been detected on this system and added to /Users/culpo/.spack/packages.yaml\r\nautoconf@2.69  automake@1.16.2  cmake@3.19.1  flex@2.5.35  gmake@3.81  libtool@2.4.6  m4@1.4.6  pkgconf@1.7.3\r\n```",
+    "performed_via_github_app": null
+}

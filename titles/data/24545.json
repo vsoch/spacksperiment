@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24545",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24545/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24545/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24545/events",
+    "html_url": "https://github.com/spack/spack/pull/24545",
+    "id": 930606895,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc4MjY4NjQ2",
+    "number": 24545,
+    "title": "setup-env: allow users to skip slow parts",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-26T03:50:52Z",
+    "updated_at": "2021-07-08T15:09:04Z",
+    "closed_at": "2021-07-08T15:07:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24545",
+        "html_url": "https://github.com/spack/spack/pull/24545",
+        "diff_url": "https://github.com/spack/spack/pull/24545.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24545.patch"
+    },
+    "body": "This is a follow-up to #24236 \r\n\r\nOriginally, I thought `spack --print-shell-vars sh,modules` was slowing down my shell initialization times. I didn't realize that in the else-clause we also call `spack --print-shell-vars sh`. Both options only set variables related to modules, and I don't use modules, so these are entirely useless to me. With this PR, users who set `SPACK_SKIP_MODULES` will have significantly faster startup times, especially on clusters where Spack is slow to run.\r\n\r\n@michaelkuhn @eugeneswalker @alalazo @JBlaschke ",
+    "performed_via_github_app": null
+}

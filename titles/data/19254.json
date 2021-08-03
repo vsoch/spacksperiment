@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19254/events",
+    "html_url": "https://github.com/spack/spack/pull/19254",
+    "id": 718729167,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxMDU3MjAx",
+    "number": 19254,
+    "title": "Added CUDAHOSTCXX variable needed to compile with cuda and mpi.",
+    "user": {
+        "login": "frobnitzem",
+        "id": 2243447,
+        "node_id": "MDQ6VXNlcjIyNDM0NDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2243447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frobnitzem",
+        "html_url": "https://github.com/frobnitzem",
+        "followers_url": "https://api.github.com/users/frobnitzem/followers",
+        "following_url": "https://api.github.com/users/frobnitzem/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frobnitzem/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frobnitzem/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frobnitzem/subscriptions",
+        "organizations_url": "https://api.github.com/users/frobnitzem/orgs",
+        "repos_url": "https://api.github.com/users/frobnitzem/repos",
+        "events_url": "https://api.github.com/users/frobnitzem/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frobnitzem/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-10-11T00:28:33Z",
+    "updated_at": "2020-10-12T22:26:20Z",
+    "closed_at": "2020-10-12T09:28:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19254",
+        "html_url": "https://github.com/spack/spack/pull/19254",
+        "diff_url": "https://github.com/spack/spack/pull/19254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19254.patch"
+    },
+    "body": "Spack seems to set the CUDAHOSTCXX environment variable in the build environment, which cmake picks up and passes to nvcc as -ccbin=(...)  Mine was g++-6.\r\n\r\nWhen compiling with mpi, cuda files cannot include <mpi.h> unless the host compiler points to the mpi wrapper.  Without this environment variable specifically set, no amount of cmake options could switch over the -ccbin from g++-6.\r\n\r\nShouldn't spack automatically set CUDAHOSTCXX to the right thing when using mpi?  Maybe I missed some documentation on this.",
+    "performed_via_github_app": null
+}

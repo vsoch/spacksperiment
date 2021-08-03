@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20230",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20230/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20230/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20230/events",
+    "html_url": "https://github.com/spack/spack/pull/20230",
+    "id": 756197393,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMxNzgwNDY5",
+    "number": 20230,
+    "title": "openmpi: if using external slurm and +pmi, libevent is external as well",
+    "user": {
+        "login": "aweits",
+        "id": 6664568,
+        "node_id": "MDQ6VXNlcjY2NjQ1Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aweits",
+        "html_url": "https://github.com/aweits",
+        "followers_url": "https://api.github.com/users/aweits/followers",
+        "following_url": "https://api.github.com/users/aweits/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aweits/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aweits/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aweits/subscriptions",
+        "organizations_url": "https://api.github.com/users/aweits/orgs",
+        "repos_url": "https://api.github.com/users/aweits/repos",
+        "events_url": "https://api.github.com/users/aweits/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aweits/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-03T13:31:40Z",
+    "updated_at": "2021-03-04T17:49:10Z",
+    "closed_at": "2021-03-04T17:48:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20230",
+        "html_url": "https://github.com/spack/spack/pull/20230",
+        "diff_url": "https://github.com/spack/spack/pull/20230.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20230.patch"
+    },
+    "body": "needed to build 4.0.5 in our environment (NOTE: not yet run-tested) @hppritcha\r\n\r\nwithout this, build failure will look as follows:\r\n\r\n```console\r\n1 error found in build log:\r\n     1825    --- MCA component pmix:ext3x (m4 configuration macro)\r\n     1826    checking for MCA component pmix:ext3x compile mode... static\r\n     1827    checking if external component is version 3.x... yes\r\n     1828    configure: WARNING: EXTERNAL PMIX SUPPORT REQUIRES USE OF EXTERNAL LIBEVENT\r\n     1829    configure: WARNING: LIBRARY. THIS LIBRARY MUST POINT TO THE SAME ONE USED\r\n     1830    configure: WARNING: TO BUILD PMIX OR ELSE UNPREDICTABLE BEHAVIOR MAY RESULT\r\n  >> 1831    configure: error: PLEASE CORRECT THE CONFIGURE COMMAND LINE AND REBUILD\r\n```",
+    "performed_via_github_app": null
+}

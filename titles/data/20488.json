@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20488",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20488/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20488/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20488/events",
+    "html_url": "https://github.com/spack/spack/pull/20488",
+    "id": 771861541,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQzMjM4MDc3",
+    "number": 20488,
+    "title": "nbdkit: Fix configure arg",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-21T05:43:35Z",
+    "updated_at": "2020-12-24T23:18:06Z",
+    "closed_at": "2020-12-24T23:18:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20488",
+        "html_url": "https://github.com/spack/spack/pull/20488",
+        "diff_url": "https://github.com/spack/spack/pull/20488.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20488.patch"
+    },
+    "body": "I have fixed the following installation error.\r\n\u3000/usr/bin/install: cannot create regular file '/usr/share/bash-completion/completions/nbdkit': Permission denied\r\n\r\nI have confirmed that it can be built on x86_64 and aarch64 machines.",
+    "performed_via_github_app": null
+}

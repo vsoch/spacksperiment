@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22565",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22565/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22565/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22565/events",
+    "html_url": "https://github.com/spack/spack/issues/22565",
+    "id": 841757962,
+    "node_id": "MDU6SXNzdWU4NDE3NTc5NjI=",
+    "number": 22565,
+    "title": "The ASP-based solver sometimes prefer to build a new version over using an external",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 512483390,
+            "node_id": "MDU6TGFiZWw1MTI0ODMzOTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-medium",
+            "name": "impact-medium",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-26T09:27:33Z",
+    "updated_at": "2021-03-29T23:06:12Z",
+    "closed_at": "2021-03-29T23:06:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "This error has been reported by @bvanessen When using the ASP-based solver, sometimes, Spack prefers to build a new version of a package over using a declared external that match the requirements if `buildable: true`.\r\n\r\n### Steps to reproduce the issue\r\n\r\nUsing the following `packages.yaml`:\r\n```yaml\r\npackages:\r\n  python:\r\n    externals:\r\n    - spec: python@3.7.2+bz2+ctypes+dbm+lzma+nis+pyexpat+readline+sqlite3+ssl+tix+tkinter+uuid+zlib\r\n      prefix: /usr/tce\r\n```\r\nand trying to concretize with Spack, one obtains:\r\n```console\r\n$ spack -C . solve python\r\n==> Best of 0 answers.\r\n==> Optimization: [0, 0, 0, 0, 30, 0, 1, 0, 0, -20, 0]\r\npython@3.8.8%gcc@10.1.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87 arch=linux-ubuntu18.04-broadwell\r\n    ^bzip2@1.0.8%gcc@10.1.0+shared arch=linux-ubuntu18.04-broadwell\r\n        ^diffutils@3.7%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n            ^libiconv@1.16%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n    ^expat@2.2.10%gcc@10.1.0+libbsd arch=linux-ubuntu18.04-broadwell\r\n        ^libbsd@0.10.0%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n    ^gdbm@1.19%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n        ^readline@8.0%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n            ^ncurses@6.2%gcc@10.1.0~symlinks+termlib arch=linux-ubuntu18.04-broadwell\r\n                ^pkgconf@1.7.3%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n    ^gettext@0.21%gcc@10.1.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu18.04-broadwell\r\n        ^libxml2@2.9.10%gcc@10.1.0~python arch=linux-ubuntu18.04-broadwell\r\n            ^xz@5.2.5%gcc@10.1.0~pic arch=linux-ubuntu18.04-broadwell\r\n            ^zlib@1.2.11%gcc@10.1.0+optimize+pic+shared arch=linux-ubuntu18.04-broadwell\r\n        ^tar@1.32%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n    ^libffi@3.3%gcc@10.1.0 patches=26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0 arch=linux-ubuntu18.04-broadwell\r\n    ^openssl@1.1.1k%gcc@10.1.0~docs+systemcerts arch=linux-ubuntu18.04-broadwell\r\n        ^perl@5.32.1%gcc@10.1.0+cpanm+shared+threads arch=linux-ubuntu18.04-broadwell\r\n            ^berkeley-db@18.1.40%gcc@10.1.0~docs patches=b231fcc4d5cff05e5c3a4814f6a5af0e9a966428dc2176540d2c05aff41de522 arch=linux-ubuntu18.04-broadwell\r\n    ^sqlite@3.34.0%gcc@10.1.0+column_metadata+fts~functions~rtree arch=linux-ubuntu18.04-broadwell\r\n    ^util-linux-uuid@2.36%gcc@10.1.0 arch=linux-ubuntu18.04-broadwell\r\n```\r\nNote that the preferred version weight is `0`. For externals it is expected that version weights are negative, so they are preferred during minimization.\r\n\r\n### Error Message\r\n\r\nThere's no error message, and the solution is valid - but one would expect instead:\r\n```console\r\n$ spack -C . solve python\r\n==> Best of 0 answers.\r\n==> Optimization: [-1, 3, 0, 0, 0, 0, 1, -1, 0, 0, 0]\r\npython@3.7.2%gcc@10.1.0+bz2+ctypes+dbm~debug+libxml2+lzma+nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl+tix+tkinter~ucs4+uuid+zlib patches=c129e34472ee39b1083c38a49ad06a8573d8b3b208743a120ca4c0818cdf1801 arch=linux-ubuntu18.04-broadwell\r\n```\r\n\r\n### Information on your system\r\n\r\n* **Spack:** 0.16.1-1896-0bed64503d\r\n* **Python:** 3.6.9\r\n* **Platform:** linux-ubuntu18.04-broadwell\r\n* **Concretizer:** clingo\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output\r\n",
+    "performed_via_github_app": null
+}

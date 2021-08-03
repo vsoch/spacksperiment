@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22421",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22421/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22421/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22421/events",
+    "html_url": "https://github.com/spack/spack/pull/22421",
+    "id": 836213488,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk2NzUzOTA4",
+    "number": 22421,
+    "title": "CI: treat push to develop in the same way as PRs",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-19T17:21:15Z",
+    "updated_at": "2021-03-19T22:12:04Z",
+    "closed_at": "2021-03-19T22:08:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22421",
+        "html_url": "https://github.com/spack/spack/pull/22421",
+        "diff_url": "https://github.com/spack/spack/pull/22421.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22421.patch"
+    },
+    "body": "This change will make pushes to develop behave the same as the corresponding PR for CI:\r\n-  If we merge to develop only changes to packages we'll run a reduced set of unit tests with no coverage\r\n-  If we change anything outside the built-in repository we'll run the full unit-test suite with coverage\r\n\r\nGiven the ratio of package only PRs / core changes this should have a great impact on the cpu-time required for CI.",
+    "performed_via_github_app": null
+}

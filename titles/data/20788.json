@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20788",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20788/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20788/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20788/events",
+    "html_url": "https://github.com/spack/spack/pull/20788",
+    "id": 783784533,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzMDg1NjQx",
+    "number": 20788,
+    "title": "Impi",
+    "user": {
+        "login": "frankwillmore",
+        "id": 508437,
+        "node_id": "MDQ6VXNlcjUwODQzNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/508437?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frankwillmore",
+        "html_url": "https://github.com/frankwillmore",
+        "followers_url": "https://api.github.com/users/frankwillmore/followers",
+        "following_url": "https://api.github.com/users/frankwillmore/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frankwillmore/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frankwillmore/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frankwillmore/subscriptions",
+        "organizations_url": "https://api.github.com/users/frankwillmore/orgs",
+        "repos_url": "https://api.github.com/users/frankwillmore/repos",
+        "events_url": "https://api.github.com/users/frankwillmore/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frankwillmore/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-11T23:37:46Z",
+    "updated_at": "2021-01-21T00:12:05Z",
+    "closed_at": "2021-01-12T19:56:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20788",
+        "html_url": "https://github.com/spack/spack/pull/20788",
+        "diff_url": "https://github.com/spack/spack/pull/20788.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20788.patch"
+    },
+    "body": "I worked in some environment vars and LD_LIBRARY_PATHs so that the module will now contain enough info to build using the mpicc, etc. wrappers. \r\n\r\n",
+    "performed_via_github_app": null
+}

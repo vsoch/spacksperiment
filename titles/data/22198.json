@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22198",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22198/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22198/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22198/events",
+    "html_url": "https://github.com/spack/spack/pull/22198",
+    "id": 826473311,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg4NDc0MTIx",
+    "number": 22198,
+    "title": "cmd/env tests will now run on windows",
+    "user": {
+        "login": "BetsyMcPhail",
+        "id": 8505893,
+        "node_id": "MDQ6VXNlcjg1MDU4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8505893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BetsyMcPhail",
+        "html_url": "https://github.com/BetsyMcPhail",
+        "followers_url": "https://api.github.com/users/BetsyMcPhail/followers",
+        "following_url": "https://api.github.com/users/BetsyMcPhail/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BetsyMcPhail/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BetsyMcPhail/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BetsyMcPhail/subscriptions",
+        "organizations_url": "https://api.github.com/users/BetsyMcPhail/orgs",
+        "repos_url": "https://api.github.com/users/BetsyMcPhail/repos",
+        "events_url": "https://api.github.com/users/BetsyMcPhail/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BetsyMcPhail/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-09T18:56:58Z",
+    "updated_at": "2021-03-09T20:10:09Z",
+    "closed_at": "2021-03-09T19:29:26Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22198",
+        "html_url": "https://github.com/spack/spack/pull/22198",
+        "diff_url": "https://github.com/spack/spack/pull/22198.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22198.patch"
+    },
+    "body": "Many tests fail and some tests are skipped but the test suite will run\r\nand provide a summary of results.",
+    "performed_via_github_app": null
+}

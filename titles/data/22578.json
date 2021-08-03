@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22578",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22578/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22578/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22578/events",
+    "html_url": "https://github.com/spack/spack/pull/22578",
+    "id": 842237074,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjAxODUzMjc5",
+    "number": 22578,
+    "title": "Add setup_dependent_build_environment() method to nvhpc package",
+    "user": {
+        "login": "samcmill",
+        "id": 18687225,
+        "node_id": "MDQ6VXNlcjE4Njg3MjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18687225?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/samcmill",
+        "html_url": "https://github.com/samcmill",
+        "followers_url": "https://api.github.com/users/samcmill/followers",
+        "following_url": "https://api.github.com/users/samcmill/following{/other_user}",
+        "gists_url": "https://api.github.com/users/samcmill/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/samcmill/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/samcmill/subscriptions",
+        "organizations_url": "https://api.github.com/users/samcmill/orgs",
+        "repos_url": "https://api.github.com/users/samcmill/repos",
+        "events_url": "https://api.github.com/users/samcmill/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/samcmill/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2570766785,
+            "node_id": "MDU6TGFiZWwyNTcwNzY2Nzg1",
+            "url": "https://api.github.com/repos/spack/spack/labels/nvidia",
+            "name": "nvidia",
+            "color": "c2e0c6",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-26T19:18:51Z",
+    "updated_at": "2021-03-30T18:37:27Z",
+    "closed_at": "2021-03-30T18:37:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22578",
+        "html_url": "https://github.com/spack/spack/pull/22578",
+        "diff_url": "https://github.com/spack/spack/pull/22578.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22578.patch"
+    },
+    "body": "Fix #22520",
+    "performed_via_github_app": null
+}

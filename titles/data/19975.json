@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19975",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19975/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19975/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19975/events",
+    "html_url": "https://github.com/spack/spack/pull/19975",
+    "id": 745834938,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIzMzI5MzU4",
+    "number": 19975,
+    "title": "OpenBLAS 0.3.11: conflicts with GCC pre 8.3.0",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-18T16:59:35Z",
+    "updated_at": "2020-11-19T04:52:33Z",
+    "closed_at": "2020-11-19T04:52:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19975",
+        "html_url": "https://github.com/spack/spack/pull/19975",
+        "diff_url": "https://github.com/spack/spack/pull/19975.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19975.patch"
+    },
+    "body": "GCC less than 8.3.0 cannot build `OpenBLAS 0.3.11:` due to this:\r\n* https://github.com/xianyi/OpenBLAS/issues/2949\r\n\r\nThis PR makes the conflict explicit.\r\n\r\nResolves https://github.com/spack/spack/issues/19932\r\n\r\n@siko1056 @scottwittenburg @t-karatsu ",
+    "performed_via_github_app": null
+}

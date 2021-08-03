@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19581",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19581/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19581/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19581/events",
+    "html_url": "https://github.com/spack/spack/pull/19581",
+    "id": 731788339,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTExODM1OTE1",
+    "number": 19581,
+    "title": "Fix sbang to properly quote command line arguments",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 468766000,
+            "node_id": "MDU6TGFiZWw0Njg3NjYwMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/broken-develop",
+            "name": "broken-develop",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-10-28T21:02:13Z",
+    "updated_at": "2021-02-03T17:13:12Z",
+    "closed_at": "2020-10-28T23:03:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19581",
+        "html_url": "https://github.com/spack/spack/pull/19581",
+        "diff_url": "https://github.com/spack/spack/pull/19581.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19581.patch"
+    },
+    "body": "Fixes #19580 \r\n\r\nSince #19529 sbang improperly quotes command line arguments to pass on, resulting in autoreconf failing for most packages.  This should quote them correctly.",
+    "performed_via_github_app": null
+}

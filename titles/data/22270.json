@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22270",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22270/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22270/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22270/events",
+    "html_url": "https://github.com/spack/spack/pull/22270",
+    "id": 830778052,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTkyMjY4ODU1",
+    "number": 22270,
+    "title": "openblas: prevent microarch flags for generic targets",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-13T02:15:00Z",
+    "updated_at": "2021-03-13T11:54:32Z",
+    "closed_at": "2021-03-13T11:00:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22270",
+        "html_url": "https://github.com/spack/spack/pull/22270",
+        "diff_url": "https://github.com/spack/spack/pull/22270.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22270.patch"
+    },
+    "body": "As of OpenBLAS 0.3.13, leaving off `TARGET` by default optimizes most\r\ncode for the host system -- adding flags that cause the resulting\r\nlibrary to fail (SIGILL) on older systems.  This change should ensure\r\nthat a \"x86_64\" target for example will work across deployment systems.\r\n\r\nSee https://github.com/xianyi/OpenBLAS/issues/3139",
+    "performed_via_github_app": null
+}

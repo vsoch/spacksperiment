@@ -1,0 +1,134 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25053",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25053/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25053/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25053/events",
+    "html_url": "https://github.com/spack/spack/pull/25053",
+    "id": 951319276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk1NzI2NzUx",
+    "number": 25053,
+    "title": "Make it possible to have more than one lexer mode at once!",
+    "user": {
+        "login": "cosmicexplorer",
+        "id": 1305167,
+        "node_id": "MDQ6VXNlcjEzMDUxNjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305167?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cosmicexplorer",
+        "html_url": "https://github.com/cosmicexplorer",
+        "followers_url": "https://api.github.com/users/cosmicexplorer/followers",
+        "following_url": "https://api.github.com/users/cosmicexplorer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cosmicexplorer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cosmicexplorer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cosmicexplorer/subscriptions",
+        "organizations_url": "https://api.github.com/users/cosmicexplorer/orgs",
+        "repos_url": "https://api.github.com/users/cosmicexplorer/repos",
+        "events_url": "https://api.github.com/users/cosmicexplorer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cosmicexplorer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430621,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2MjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/flake8",
+            "name": "flake8",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1029761810,
+            "node_id": "MDU6TGFiZWwxMDI5NzYxODEw",
+            "url": "https://api.github.com/repos/spack/spack/labels/vendored-dependencies",
+            "name": "vendored-dependencies",
+            "color": "b1fc49",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-23T07:20:31Z",
+    "updated_at": "2021-07-29T10:26:28Z",
+    "closed_at": "2021-07-29T10:26:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25053",
+        "html_url": "https://github.com/spack/spack/pull/25053",
+        "diff_url": "https://github.com/spack/spack/pull/25053.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25053.patch"
+    },
+    "body": "*This PR is on top of #21720--see the diff vs that one at https://github.com/cosmicexplorer/spack/compare/compat-collections...arbitrary-lexer-modes?expand=1.*\r\n\r\n### Problem\r\n\r\n*This PR is a component of #24025.*\r\n\r\nThe current `Lexer` class only allows specifically two modes. While this is fine for spack's purposes, there is reason to believe we might want more than two at some point (see #20256).\r\n\r\n### Solution\r\n\r\n- Allow the `Lexer` to accept a dictionary of values.",
+    "performed_via_github_app": null
+}

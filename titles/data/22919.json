@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22919",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22919/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22919/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22919/events",
+    "html_url": "https://github.com/spack/spack/pull/22919",
+    "id": 855041461,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyODc5NzIy",
+    "number": 22919,
+    "title": "Add conflict for Mac OS for STAT package",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-10T11:03:06Z",
+    "updated_at": "2021-04-12T19:16:14Z",
+    "closed_at": "2021-04-12T19:14:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22919",
+        "html_url": "https://github.com/spack/spack/pull/22919",
+        "diff_url": "https://github.com/spack/spack/pull/22919.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22919.patch"
+    },
+    "body": "* stat is not supported on Mac OS\r\n* see https://github.com/LLNL/STAT/issues/19",
+    "performed_via_github_app": null
+}

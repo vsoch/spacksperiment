@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21708",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21708/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21708/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21708/events",
+    "html_url": "https://github.com/spack/spack/pull/21708",
+    "id": 809725167,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc0NTM5MDU3",
+    "number": 21708,
+    "title": "py-fenics-fiat: amendment and fix of package",
+    "user": {
+        "login": "emai-imcs",
+        "id": 26089869,
+        "node_id": "MDQ6VXNlcjI2MDg5ODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26089869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/emai-imcs",
+        "html_url": "https://github.com/emai-imcs",
+        "followers_url": "https://api.github.com/users/emai-imcs/followers",
+        "following_url": "https://api.github.com/users/emai-imcs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/emai-imcs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/emai-imcs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/emai-imcs/subscriptions",
+        "organizations_url": "https://api.github.com/users/emai-imcs/orgs",
+        "repos_url": "https://api.github.com/users/emai-imcs/repos",
+        "events_url": "https://api.github.com/users/emai-imcs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/emai-imcs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-16T23:31:43Z",
+    "updated_at": "2021-02-18T03:44:12Z",
+    "closed_at": "2021-02-18T03:44:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21708",
+        "html_url": "https://github.com/spack/spack/pull/21708",
+        "diff_url": "https://github.com/spack/spack/pull/21708.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21708.patch"
+    },
+    "body": "Added support for fiat version 2016.2.0\r\n\r\nFix to compilation error of `dolfin` in `fenics` package with pre 2019.1.0 versions (observed during `fenics` package uplift).\r\n\r\nOutsourced PR from [FEniCS 2019.1.0 PR](https://github.com/spack/spack/pull/21207).",
+    "performed_via_github_app": null
+}

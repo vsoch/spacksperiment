@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24305",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24305/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24305/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24305/events",
+    "html_url": "https://github.com/spack/spack/pull/24305",
+    "id": 920654616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY5NzcxNDM1",
+    "number": 24305,
+    "title": "Made mxnet's cuda dependency conditional on +cuda.",
+    "user": {
+        "login": "frobnitzem",
+        "id": 2243447,
+        "node_id": "MDQ6VXNlcjIyNDM0NDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2243447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frobnitzem",
+        "html_url": "https://github.com/frobnitzem",
+        "followers_url": "https://api.github.com/users/frobnitzem/followers",
+        "following_url": "https://api.github.com/users/frobnitzem/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frobnitzem/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frobnitzem/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frobnitzem/subscriptions",
+        "organizations_url": "https://api.github.com/users/frobnitzem/orgs",
+        "repos_url": "https://api.github.com/users/frobnitzem/repos",
+        "events_url": "https://api.github.com/users/frobnitzem/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frobnitzem/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-14T18:07:25Z",
+    "updated_at": "2021-06-14T20:23:09Z",
+    "closed_at": "2021-06-14T20:23:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24305",
+        "html_url": "https://github.com/spack/spack/pull/24305",
+        "diff_url": "https://github.com/spack/spack/pull/24305.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24305.patch"
+    },
+    "body": "`mxnet~cuda~cudnn` still pulls in cuda.  This patch fixes that behavior.",
+    "performed_via_github_app": null
+}

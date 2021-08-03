@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19288",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19288/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19288/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19288/events",
+    "html_url": "https://github.com/spack/spack/pull/19288",
+    "id": 720238616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAyMzAwODgz",
+    "number": 19288,
+    "title": "uqtk: Add version and fixes for Fujitsu compiler.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-13T13:17:32Z",
+    "updated_at": "2020-10-15T01:11:57Z",
+    "closed_at": "2020-10-14T16:44:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19288",
+        "html_url": "https://github.com/spack/spack/pull/19288",
+        "diff_url": "https://github.com/spack/spack/pull/19288.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19288.patch"
+    },
+    "body": "`Uqtk` always uses internal blas/lapack library until version 3.0.4, so I added version 3.1.0: it also assumes that it takes in external library. And I fixed some processes to use on Spack.\r\n- Modify the process of directly specifying blas/lapack as the library name.\r\n- (For Fujitsu compiler) Do not link the gfortran library when using the Fujitsu compiler.",
+    "performed_via_github_app": null
+}

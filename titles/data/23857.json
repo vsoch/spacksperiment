@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23857",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23857/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23857/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23857/events",
+    "html_url": "https://github.com/spack/spack/pull/23857",
+    "id": 898865435,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwNjczODI1",
+    "number": 23857,
+    "title": "Spack can Use RHEL8's `platform-python` if nothing else is available.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-22T19:15:05Z",
+    "updated_at": "2021-05-22T22:35:08Z",
+    "closed_at": "2021-05-22T22:35:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23857",
+        "html_url": "https://github.com/spack/spack/pull/23857",
+        "diff_url": "https://github.com/spack/spack/pull/23857.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23857.patch"
+    },
+    "body": "This adds RHEL8's `/usr/libexec/platform-python` to Spack's list of preferred pythons. It will only be used if no other `python` is available in the `PATH`.\r\n\r\nWe have been testing with this python for a while now, and it seems to do all that we need. If Spack one day isn't able to work with it, we'll take it out, but for now it is useful to allow Spack to be used on RHEL8 without a dedicated `python` installation.\r\n\r\n- [x] add `platform-python` to list of pythons tried by `bin/spack`\r\n- [x] don't set `SPACK_PYTHON` in the `platform-python` test anymore",
+    "performed_via_github_app": null
+}

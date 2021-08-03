@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24639",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24639/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24639/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24639/events",
+    "html_url": "https://github.com/spack/spack/pull/24639",
+    "id": 934166127,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgxMjY4NTMx",
+    "number": 24639,
+    "title": "Adding ability to compare git references to spack install",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 23,
+    "created_at": "2021-06-30T22:12:25Z",
+    "updated_at": "2021-07-23T22:17:32Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24639",
+        "html_url": "https://github.com/spack/spack/pull/24639",
+        "diff_url": "https://github.com/spack/spack/pull/24639.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24639.patch"
+    },
+    "body": "This will allow a user to (from the command line) install a spack package at a particular commit, and be able to make comparisons with releases in the history based on commits (or with other commits). We do this by way of:\r\n\r\n - Adding a property, is_commit, to a version, meaning I can always check if a version is a commit and then change some action.\r\n - in fetch_strategy.py for_package_version we can then detect that a commit is wanted, and then prepare a GitFetchStrategy fetcher for it, targeting the commit. Since the versions will need to be able to make comparisons between one another, we also generate (or load if it exists) a cache of git commits. This works by way of having two new caches - one for git repos we can clone once (the whole tree) and the other for extracted metadata:\r\n\r\n```python\r\nuser_repos_cache_path = os.path.join(user_config_path, 'git_repos')\r\nuser_repos_metadata_path = os.path.join(user_config_path, 'git_metadata')\r\n```\r\nHere is how the storage looks:\r\n\r\n```python\r\n$ ls /home/vanessa/.spack/git_metadata/\r\ngithub.com-rpm-software-management-rpm.json\r\n\r\n$ ls /home/vanessa/.spack/git_repos/github.com/\r\nrpm-software-management\r\n```\r\n\r\nThe metadata is a json file of all the commits, and for each one, a previous and next spack known version associated. We also store the order to make comparison between commits easy and fast - it's just a lookup of the two commits and then comparing a number. In the case that a commit is not found in the cache, we assume the catch is old and re-pull and re-fetch from the cloned repository. And of course if the metadata file doesn't exist, we clone the entire repository and then do the same.\r\n\r\n - Once we have the cache data generated, it's kept alongside the version object for easy reference, and we return the git fetcher to do its thing. Comparisons between versions that are commits can then use this cached data. If any commit does not have known releases before it, then the previous is None and we cannot determine the relationship and return False. For all of the version comparison functions, we take our best shot at finding the closest (meaning after but not before) version that spack knows about to the commit.\r\n\r\nOne thing I'm thinking of now, is that we can easily find versions in all git tags, regardless if they are part of spack, and then call them versions in the lookup to compare things to. This will mean a lot fewer Nones in the file (e.g., I tested on rpm which has a ton of releases on GitHub but only 2 that spack knows about). Let me know if you want this updated, along with how to go about testing this.\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

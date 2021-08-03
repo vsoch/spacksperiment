@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20940",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20940/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20940/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20940/events",
+    "html_url": "https://github.com/spack/spack/pull/20940",
+    "id": 787055654,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU1ODMwOTYz",
+    "number": 20940,
+    "title": "[podio] Make sure sio library is properly propagated",
+    "user": {
+        "login": "tmadlener",
+        "id": 16774861,
+        "node_id": "MDQ6VXNlcjE2Nzc0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16774861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tmadlener",
+        "html_url": "https://github.com/tmadlener",
+        "followers_url": "https://api.github.com/users/tmadlener/followers",
+        "following_url": "https://api.github.com/users/tmadlener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tmadlener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tmadlener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tmadlener/subscriptions",
+        "organizations_url": "https://api.github.com/users/tmadlener/orgs",
+        "repos_url": "https://api.github.com/users/tmadlener/repos",
+        "events_url": "https://api.github.com/users/tmadlener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tmadlener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-15T17:16:02Z",
+    "updated_at": "2021-01-19T04:52:28Z",
+    "closed_at": "2021-01-19T04:52:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20940",
+        "html_url": "https://github.com/spack/spack/pull/20940",
+        "diff_url": "https://github.com/spack/spack/pull/20940.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20940.patch"
+    },
+    "body": "It seems that without this packages that depend on a package that depends on `podio` will no longer be able find `sio` in the CMake stage. From reading the documentation, it seems that `link` is necessary to have `sio` appear in the environment such that a call to `find_package` is able to actually find the appropriate one.",
+    "performed_via_github_app": null
+}

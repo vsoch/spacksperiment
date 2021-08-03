@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22483",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22483/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22483/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22483/events",
+    "html_url": "https://github.com/spack/spack/pull/22483",
+    "id": 838753582,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4ODc5MzU3",
+    "number": 22483,
+    "title": "Channelflow: Fix the package.",
+    "user": {
+        "login": "RemiLacroix-IDRIS",
+        "id": 11938940,
+        "node_id": "MDQ6VXNlcjExOTM4OTQw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11938940?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RemiLacroix-IDRIS",
+        "html_url": "https://github.com/RemiLacroix-IDRIS",
+        "followers_url": "https://api.github.com/users/RemiLacroix-IDRIS/followers",
+        "following_url": "https://api.github.com/users/RemiLacroix-IDRIS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RemiLacroix-IDRIS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RemiLacroix-IDRIS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RemiLacroix-IDRIS/subscriptions",
+        "organizations_url": "https://api.github.com/users/RemiLacroix-IDRIS/orgs",
+        "repos_url": "https://api.github.com/users/RemiLacroix-IDRIS/repos",
+        "events_url": "https://api.github.com/users/RemiLacroix-IDRIS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RemiLacroix-IDRIS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-23T13:55:45Z",
+    "updated_at": "2021-03-23T17:46:48Z",
+    "closed_at": "2021-03-23T17:04:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22483",
+        "html_url": "https://github.com/spack/spack/pull/22483",
+        "diff_url": "https://github.com/spack/spack/pull/22483.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22483.patch"
+    },
+    "body": "A search and replace went wrong in 2264e30d99d8b9fbdec8fa69b594e53d8ced15a1.\r\n\r\nThanks to @wadudmiah who reported this issue.\r\n\r\n/cc @adamjstewart ",
+    "performed_via_github_app": null
+}

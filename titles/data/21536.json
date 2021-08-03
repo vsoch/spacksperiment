@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21536",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21536/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21536/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21536/events",
+    "html_url": "https://github.com/spack/spack/pull/21536",
+    "id": 803427303,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY5MzU4NjU3",
+    "number": 21536,
+    "title": "amdtoolchain support for openfoam",
+    "user": {
+        "login": "amd-toolchain-support",
+        "id": 73240730,
+        "node_id": "MDQ6VXNlcjczMjQwNzMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/73240730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amd-toolchain-support",
+        "html_url": "https://github.com/amd-toolchain-support",
+        "followers_url": "https://api.github.com/users/amd-toolchain-support/followers",
+        "following_url": "https://api.github.com/users/amd-toolchain-support/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amd-toolchain-support/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amd-toolchain-support/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amd-toolchain-support/subscriptions",
+        "organizations_url": "https://api.github.com/users/amd-toolchain-support/orgs",
+        "repos_url": "https://api.github.com/users/amd-toolchain-support/repos",
+        "events_url": "https://api.github.com/users/amd-toolchain-support/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amd-toolchain-support/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2431483522,
+            "node_id": "MDU6TGFiZWwyNDMxNDgzNTIy",
+            "url": "https://api.github.com/repos/spack/spack/labels/aocc",
+            "name": "aocc",
+            "color": "e021d0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-02-08T10:34:35Z",
+    "updated_at": "2021-02-08T19:23:00Z",
+    "closed_at": "2021-02-08T19:23:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21536",
+        "html_url": "https://github.com/spack/spack/pull/21536",
+        "diff_url": "https://github.com/spack/spack/pull/21536.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21536.patch"
+    },
+    "body": "- Mapping spack compiler names to OpenFOAM compiler names for AOCC\r\n- Replacing `fftw` with `fftw-api` so that openfoam can use either implementation",
+    "performed_via_github_app": null
+}

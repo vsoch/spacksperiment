@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19264",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19264/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19264/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19264/events",
+    "html_url": "https://github.com/spack/spack/pull/19264",
+    "id": 719242329,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxNDYzMDc4",
+    "number": 19264,
+    "title": "precice: Add version 2.1.1",
+    "user": {
+        "login": "fsimonis",
+        "id": 13552216,
+        "node_id": "MDQ6VXNlcjEzNTUyMjE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13552216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fsimonis",
+        "html_url": "https://github.com/fsimonis",
+        "followers_url": "https://api.github.com/users/fsimonis/followers",
+        "following_url": "https://api.github.com/users/fsimonis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fsimonis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fsimonis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fsimonis/subscriptions",
+        "organizations_url": "https://api.github.com/users/fsimonis/orgs",
+        "repos_url": "https://api.github.com/users/fsimonis/repos",
+        "events_url": "https://api.github.com/users/fsimonis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fsimonis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-12T09:55:37Z",
+    "updated_at": "2020-10-12T12:13:30Z",
+    "closed_at": "2020-10-12T11:25:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19264",
+        "html_url": "https://github.com/spack/spack/pull/19264",
+        "diff_url": "https://github.com/spack/spack/pull/19264.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19264.patch"
+    },
+    "body": "This PR adds version 2.1.1 of the xSDK member preCICE.\r\n\r\nThe precice release fixes a compilation error with the Intel C++ Compiler, so this is relevant for xSDK version 0.6.0.\r\nThis solves https://github.com/xsdk-project/xsdk-issues/issues/119.",
+    "performed_via_github_app": null
+}

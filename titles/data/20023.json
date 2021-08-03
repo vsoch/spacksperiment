@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20023",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20023/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20023/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20023/events",
+    "html_url": "https://github.com/spack/spack/pull/20023",
+    "id": 747760069,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI0OTIzMjIx",
+    "number": 20023,
+    "title": "PythonPackage: add import module smoke tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1492788682,
+            "node_id": "MDU6TGFiZWwxNDkyNzg4Njgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/sip",
+            "name": "sip",
+            "color": "d33bd1",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-11-20T20:02:40Z",
+    "updated_at": "2020-12-16T23:16:37Z",
+    "closed_at": "2020-12-16T23:15:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20023",
+        "html_url": "https://github.com/spack/spack/pull/20023",
+        "diff_url": "https://github.com/spack/spack/pull/20023.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20023.patch"
+    },
+    "body": "This PR adds smoke tests for the 1,255 Python packages in Spack. It has been tested on the 180+ Python packages I have installed on my system.\r\n\r\nSpecifically, this PR makes the following changes:\r\n\r\n- [x] Automatically detect `import_modules`\r\n- [x] Run import module tests as smoke tests and install tests\r\n- [x] Update existing packages that no longer need to set `import_modules`\r\n- [x] Remove `build_test` and `install_test` phases\r\n- [x] Update existing packages that use `build_test` and `install_test`\r\n- [x] Remove no longer needed test deps\r\n- [x] Update PythonPackage build system docs\r\n\r\nReboot of #15370\r\nCloses #20079\r\nCloses #20090 ",
+    "performed_via_github_app": null
+}

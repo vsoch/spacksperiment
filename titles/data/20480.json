@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20480/events",
+    "html_url": "https://github.com/spack/spack/pull/20480",
+    "id": 771060616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyNjg1Njcw",
+    "number": 20480,
+    "title": "VTK: add -no-ipo for builds using intel compiler",
+    "user": {
+        "login": "andymwood",
+        "id": 7825213,
+        "node_id": "MDQ6VXNlcjc4MjUyMTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7825213?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andymwood",
+        "html_url": "https://github.com/andymwood",
+        "followers_url": "https://api.github.com/users/andymwood/followers",
+        "following_url": "https://api.github.com/users/andymwood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/andymwood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/andymwood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/andymwood/subscriptions",
+        "organizations_url": "https://api.github.com/users/andymwood/orgs",
+        "repos_url": "https://api.github.com/users/andymwood/repos",
+        "events_url": "https://api.github.com/users/andymwood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/andymwood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-12-18T17:44:08Z",
+    "updated_at": "2021-01-05T21:11:41Z",
+    "closed_at": "2021-01-05T21:11:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20480",
+        "html_url": "https://github.com/spack/spack/pull/20480",
+        "diff_url": "https://github.com/spack/spack/pull/20480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20480.patch"
+    },
+    "body": "Fixes #20471, avoiding an internal compiler error.",
+    "performed_via_github_app": null
+}

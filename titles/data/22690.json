@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22690",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22690/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22690/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22690/events",
+    "html_url": "https://github.com/spack/spack/pull/22690",
+    "id": 847365951,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA2Mzg1MTQ2",
+    "number": 22690,
+    "title": "Check against a list of known-broken specs in `ci generate`",
+    "user": {
+        "login": "zackgalbreath",
+        "id": 224720,
+        "node_id": "MDQ6VXNlcjIyNDcyMA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/224720?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zackgalbreath",
+        "html_url": "https://github.com/zackgalbreath",
+        "followers_url": "https://api.github.com/users/zackgalbreath/followers",
+        "following_url": "https://api.github.com/users/zackgalbreath/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zackgalbreath/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zackgalbreath/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zackgalbreath/subscriptions",
+        "organizations_url": "https://api.github.com/users/zackgalbreath/orgs",
+        "repos_url": "https://api.github.com/users/zackgalbreath/repos",
+        "events_url": "https://api.github.com/users/zackgalbreath/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zackgalbreath/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-31T21:26:01Z",
+    "updated_at": "2021-04-02T23:40:47Z",
+    "closed_at": "2021-04-02T23:40:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22690",
+        "html_url": "https://github.com/spack/spack/pull/22690",
+        "diff_url": "https://github.com/spack/spack/pull/22690.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22690.patch"
+    },
+    "body": "This is the first half of our goal of maintaining a (hopefully short!) list of specs that are known to be broken in develop. Having such a list will allow us to \"fail early\" in CI and not waste resources trying to build packages that are doomed to fail. A follow-up PR will add the functionality to add/remove packages from the broken list.",
+    "performed_via_github_app": null
+}

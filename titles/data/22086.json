@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22086",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22086/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22086/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22086/events",
+    "html_url": "https://github.com/spack/spack/pull/22086",
+    "id": 822343996,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg0OTg0NzQ3",
+    "number": 22086,
+    "title": "openmpi: allow to build with slurm and ~pmi for >3.0.0 with PMIx",
+    "user": {
+        "login": "aweits",
+        "id": 6664568,
+        "node_id": "MDQ6VXNlcjY2NjQ1Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aweits",
+        "html_url": "https://github.com/aweits",
+        "followers_url": "https://api.github.com/users/aweits/followers",
+        "following_url": "https://api.github.com/users/aweits/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aweits/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aweits/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aweits/subscriptions",
+        "organizations_url": "https://api.github.com/users/aweits/orgs",
+        "repos_url": "https://api.github.com/users/aweits/repos",
+        "events_url": "https://api.github.com/users/aweits/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aweits/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-03-04T17:26:48Z",
+    "updated_at": "2021-04-06T11:29:09Z",
+    "closed_at": "2021-04-06T07:40:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22086",
+        "html_url": "https://github.com/spack/spack/pull/22086",
+        "diff_url": "https://github.com/spack/spack/pull/22086.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22086.patch"
+    },
+    "body": "--with-pmi is causing problems in our 4.0.5/4.1.0 builds.\r\n\r\n@hppritcha \r\n\r\nmore detail: when building openmpi@4.1.0+pmi, we see errors like this at runtime:\r\n\r\n```shell\r\n[skl-a-00.rc.rit.edu:13428] PMI_Get_clique_size [pmix_s1.c:281:s1_init]: Operation failed\r\n--------------------------------------------------------------------------\r\nThe application appears to have been direct launched using \"srun\",\r\nbut OMPI was not built with SLURM's PMI support and therefore cannot\r\nexecute. There are several options for building PMI support under\r\nSLURM, depending upon the SLURM version you are using:\r\n  \r\n  version 16.05 or later: you can use SLURM's PMIx support. This\r\n  requires that you configure and build SLURM --with-pmix.\r\n  \r\n  Versions earlier than 16.05: you must use either SLURM's PMI-1 or\r\n  PMI-2 support. SLURM builds PMI-1 by default, or you can manually\r\n  install PMI-2. You must then build Open MPI using --with-pmi pointing\r\n  to the SLURM PMI library location.\r\n\r\nPlease configure as appropriate and try again.\r\n--------------------------------------------------------------------------\r\n\r\n```\r\nThese errors do not occur if we compile --without-pmi and just rely on pmix. Suggestions as to alternatives welcome.",
+    "performed_via_github_app": null
+}

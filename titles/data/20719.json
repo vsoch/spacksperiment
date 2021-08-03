@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20719",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20719/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20719/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20719/events",
+    "html_url": "https://github.com/spack/spack/pull/20719",
+    "id": 780907595,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUwNzIyMTY3",
+    "number": 20719,
+    "title": "llvm-doe: add new package",
+    "user": {
+        "login": "shintaro-iwasaki",
+        "id": 15073003,
+        "node_id": "MDQ6VXNlcjE1MDczMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15073003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shintaro-iwasaki",
+        "html_url": "https://github.com/shintaro-iwasaki",
+        "followers_url": "https://api.github.com/users/shintaro-iwasaki/followers",
+        "following_url": "https://api.github.com/users/shintaro-iwasaki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shintaro-iwasaki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shintaro-iwasaki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shintaro-iwasaki/subscriptions",
+        "organizations_url": "https://api.github.com/users/shintaro-iwasaki/orgs",
+        "repos_url": "https://api.github.com/users/shintaro-iwasaki/repos",
+        "events_url": "https://api.github.com/users/shintaro-iwasaki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shintaro-iwasaki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2021-01-06T23:18:59Z",
+    "updated_at": "2021-02-05T15:05:16Z",
+    "closed_at": "2021-01-14T18:20:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20719",
+        "html_url": "https://github.com/spack/spack/pull/20719",
+        "diff_url": "https://github.com/spack/spack/pull/20719.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20719.patch"
+    },
+    "body": "This PR creates a new package that provides a collection of the experimental LLVM projects created by the US DOE research and development teams.  Specifically, this package is expected to ease the ECP CI efforts for these projects.  This package contains:\r\n- Clacc (https://csmd.ornl.gov/project/clacc)\r\n- SOLLVE's loop transformation optimizations (https://www.bnl.gov/compsci/projects/SOLLVE/)\r\n- SOLLVE BOLT OpenMP (https://www.bolt-omp.org/)\r\n\r\nThe default branch is `doe`, which is currently the same as the LLVM upstream but will merge all the efforts above.\r\n\r\nThe base of `package.py` is that of LLVM, but I dropped support of old versions.  The links are modified too.\r\n\r\nAll the components (`llvm-doe`, `llvm-doe@clacc`, `llvm-doe@pragma-omp-tile`,  ...) were successfully compiled and installed on our Intel Skylake server (Linux + GCC 7.5).\r\n\r\n(@clementval, @jdoerfert, @Meinersbur)\r\n",
+    "performed_via_github_app": null
+}

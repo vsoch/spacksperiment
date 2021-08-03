@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22978",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22978/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22978/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22978/events",
+    "html_url": "https://github.com/spack/spack/pull/22978",
+    "id": 857417668,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE0ODQxODc5",
+    "number": 22978,
+    "title": "QMCPACK April 2021",
+    "user": {
+        "login": "naromero77",
+        "id": 7633854,
+        "node_id": "MDQ6VXNlcjc2MzM4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7633854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/naromero77",
+        "html_url": "https://github.com/naromero77",
+        "followers_url": "https://api.github.com/users/naromero77/followers",
+        "following_url": "https://api.github.com/users/naromero77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/naromero77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/naromero77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/naromero77/subscriptions",
+        "organizations_url": "https://api.github.com/users/naromero77/orgs",
+        "repos_url": "https://api.github.com/users/naromero77/repos",
+        "events_url": "https://api.github.com/users/naromero77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/naromero77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-14T00:33:08Z",
+    "updated_at": "2021-04-14T21:52:04Z",
+    "closed_at": "2021-04-14T21:52:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22978",
+        "html_url": "https://github.com/spack/spack/pull/22978",
+        "diff_url": "https://github.com/spack/spack/pull/22978.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22978.patch"
+    },
+    "body": "- Support latest release of QMCPACK\r\n- Change default `phdf5` variant to `False`\r\n- Fix boost dependency",
+    "performed_via_github_app": null
+}

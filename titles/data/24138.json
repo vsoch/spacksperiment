@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24138",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24138/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24138/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24138/events",
+    "html_url": "https://github.com/spack/spack/pull/24138",
+    "id": 911501142,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxNzY4MTY2",
+    "number": 24138,
+    "title": "py-pyprecice: Add version 2.2.0.2 and 2.2.1.1",
+    "user": {
+        "login": "ajaust",
+        "id": 18347253,
+        "node_id": "MDQ6VXNlcjE4MzQ3MjUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18347253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ajaust",
+        "html_url": "https://github.com/ajaust",
+        "followers_url": "https://api.github.com/users/ajaust/followers",
+        "following_url": "https://api.github.com/users/ajaust/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ajaust/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ajaust/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ajaust/subscriptions",
+        "organizations_url": "https://api.github.com/users/ajaust/orgs",
+        "repos_url": "https://api.github.com/users/ajaust/repos",
+        "events_url": "https://api.github.com/users/ajaust/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ajaust/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-04T13:28:14Z",
+    "updated_at": "2021-06-04T15:27:21Z",
+    "closed_at": "2021-06-04T15:06:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24138",
+        "html_url": "https://github.com/spack/spack/pull/24138",
+        "diff_url": "https://github.com/spack/spack/pull/24138.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24138.patch"
+    },
+    "body": "This PR adds the updated Python bindings for the latest version of preCICE (2.2.1, https://github.com/spack/spack/pull/23743) and a bugfix release of `pyprecice`\r\n\r\nThe following changes have been made to the Spack recipe:\r\n- Added version 2.2.1.1 of `pyprecice` \r\n    - Therefore `precice@2.2.1` was added as dependency\r\n- Added bugfix release 2.2.0.2 of `pyprecice`\r\n- Added @IshaanDesai as maintainer of the Spack recipe. Ishaan is one of the developers of `pyprecice`.\r\n\r\nAdding @BenjaminRodenberg for reference.",
+    "performed_via_github_app": null
+}

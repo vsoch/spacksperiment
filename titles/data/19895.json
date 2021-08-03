@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19895",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19895/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19895/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19895/events",
+    "html_url": "https://github.com/spack/spack/pull/19895",
+    "id": 742424134,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIwNTYwMjE4",
+    "number": 19895,
+    "title": "fix tumbleweed naming",
+    "user": {
+        "login": "mslacken",
+        "id": 2189930,
+        "node_id": "MDQ6VXNlcjIxODk5MzA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2189930?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mslacken",
+        "html_url": "https://github.com/mslacken",
+        "followers_url": "https://api.github.com/users/mslacken/followers",
+        "following_url": "https://api.github.com/users/mslacken/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mslacken/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mslacken/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mslacken/subscriptions",
+        "organizations_url": "https://api.github.com/users/mslacken/orgs",
+        "repos_url": "https://api.github.com/users/mslacken/repos",
+        "events_url": "https://api.github.com/users/mslacken/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mslacken/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-13T12:44:59Z",
+    "updated_at": "2021-06-12T10:56:58Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19895",
+        "html_url": "https://github.com/spack/spack/pull/19895",
+        "diff_url": "https://github.com/spack/spack/pull/19895.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19895.patch"
+    },
+    "body": " openSUSE Tumbleweed is a rolling release which can change more than once in a week, so set version to tumbleweed\r\n",
+    "performed_via_github_app": null
+}

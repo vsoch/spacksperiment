@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21207",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21207/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21207/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21207/events",
+    "html_url": "https://github.com/spack/spack/pull/21207",
+    "id": 791514309,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU5NTYwMzcy",
+    "number": 21207,
+    "title": "FEniCS: update of packages to support 2019.1.0",
+    "user": {
+        "login": "emai-imcs",
+        "id": 26089869,
+        "node_id": "MDQ6VXNlcjI2MDg5ODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26089869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/emai-imcs",
+        "html_url": "https://github.com/emai-imcs",
+        "followers_url": "https://api.github.com/users/emai-imcs/followers",
+        "following_url": "https://api.github.com/users/emai-imcs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/emai-imcs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/emai-imcs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/emai-imcs/subscriptions",
+        "organizations_url": "https://api.github.com/users/emai-imcs/orgs",
+        "repos_url": "https://api.github.com/users/emai-imcs/repos",
+        "events_url": "https://api.github.com/users/emai-imcs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/emai-imcs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-01-21T21:41:55Z",
+    "updated_at": "2021-03-05T14:27:36Z",
+    "closed_at": "2021-03-05T14:27:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21207",
+        "html_url": "https://github.com/spack/spack/pull/21207",
+        "diff_url": "https://github.com/spack/spack/pull/21207.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21207.patch"
+    },
+    "body": "PR to introduce FEniCS 2019.1.0 support for spack, which is the latest stable version prior to FEniCS-X. The PR is based on the previous PR by [benzwick](https://github.com/spack/spack/pull/10240) and the local spack repo of [JaroslavHron](https://github.com/JaroslavHron/spack_repo/tree/master/fenics).\r\n\r\nThe changes comprise the 4 python packages,\r\n\r\n- FFC: py-fenics-ffc,\r\n- UFL: py-fenics-ufl,\r\n- FIAT: py-fenics-fiat,\r\n- Dijitso: py-fenics-dijitso,\r\n\r\nand the main Dolfin package,\r\n\r\n- fenics2019.\r\n\r\nThe dolfin package builds and installs the c++ as well as the python interface of FEniCS. To fix an compilation error with the latest boost package a patch file is provided.",
+    "performed_via_github_app": null
+}

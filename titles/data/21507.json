@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21507",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21507/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21507/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21507/events",
+    "html_url": "https://github.com/spack/spack/pull/21507",
+    "id": 802020121,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY4MjM0MTE3",
+    "number": 21507,
+    "title": "py-numpy: check if execute commands are feasible.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-02-05T09:52:34Z",
+    "updated_at": "2021-02-14T18:40:35Z",
+    "closed_at": "2021-02-14T18:22:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21507",
+        "html_url": "https://github.com/spack/spack/pull/21507",
+        "diff_url": "https://github.com/spack/spack/pull/21507.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21507.patch"
+    },
+    "body": "With the fix in the pull request below, `F90` is now always set :\r\nhttps://github.com/spack/spack/pull/19818\r\n\r\nHowever, I got a following error.\r\n```\r\n  File \"/home/users/ea01/ea0114/spack/oss-job/spack/spack/opt/spack/linux-rhel8-a64fx/fj-4.2.1a/py-numpy-1.19.4-2xiwdvcjbqhbjvs6oj7gp2repg5xufpt/lib/python3.8/site-packages/numpy/distutils/ccompiler.py\", line 657, in CCompiler_get_version\r\n    version = matcher(output)\r\n  File \"/home/users/ea01/ea0114/spack/oss-job/spack/spack/opt/spack/linux-rhel8-a64fx/fj-4.2.1a/py-numpy-1.19.4-2xiwdvcjbqhbjvs6oj7gp2repg5xufpt/lib/python3.8/site-packages/numpy/distutils/fcompiler/gnu.py\", line 278, in version_match\r\n    v = self.gnu_version_match(version_string)\r\n  File \"/home/users/ea01/ea0114/spack/oss-job/spack/spack/opt/spack/linux-rhel8-a64fx/fj-4.2.1a/py-numpy-1.19.4-2xiwdvcjbqhbjvs6oj7gp2repg5xufpt/lib/python3.8/site-packages/numpy/distutils/fcompiler/gnu.py\", line 80, in gnu_version_match\r\n    raise ValueError(err + version_string)\r\nValueError: A valid Fortran version was not found in this string:\r\nfrt: warning: -dumpversion is unrecognized option.\r\nusage: frt [options] files.\r\n```\r\n\r\n`numpy` checks which compiler is currently used by the process described for each compiler.\r\n```\r\n\u30fbnumpy/distutils/fcompiler/gnu.py\r\n    executables = {\r\n        'version_cmd'  : [\"<F90>\", \"-dumpversion\"],\r\n```\r\nThis is a command to check the version written for gcc. If the environment variable `F90` is set, the command is imported as it is. For example, if you are using the Fujitsu compiler, the it uses `frt -dumpversion` to try getting the version, but an error will occur because the \"-dumpversion\" option cannot be recognized.\r\n\r\nTherefore, in the process of selecting the command to be used in the process for each compiler, I fixed to compare the command set in `F77` and `F90` and the command specified for each compiler(e.g. `possible_executables = ['gfortran', 'f95']` in gnu.py).\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

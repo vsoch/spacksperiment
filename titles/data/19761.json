@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19761",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19761/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19761/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19761/events",
+    "html_url": "https://github.com/spack/spack/pull/19761",
+    "id": 737141739,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE2MjM0ODQw",
+    "number": 19761,
+    "title": "Don't use prefix.lib in tcl/tk/glib/etc",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-11-05T17:48:33Z",
+    "updated_at": "2020-11-14T14:29:38Z",
+    "closed_at": "2020-11-14T11:42:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19761",
+        "html_url": "https://github.com/spack/spack/pull/19761",
+        "diff_url": "https://github.com/spack/spack/pull/19761.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19761.patch"
+    },
+    "body": "Fixes #19546 \r\n\r\nPackages I would like to have tested before merging:\r\n\r\n- [x] tcl (%apple-clang and %gcc)\r\n- [x] tk (%apple-clang and %gcc)\r\n- [x] tix (%gcc but not %apple-clang)\r\n- [x] tcl-itcl\r\n- [x] tcl-tcllib\r\n- [x] tcl-tclxml (%gcc but not %apple-clang)\r\n- [x] environment-modules\r\n- [x] lmod\r\n- [x] python+tkinter\r\n- [ ] r+X (build failure, even on develop: #19788)\r\n- [x] ruby\r\n- [x] expect (%gcc but not %apple-clang: #19767)\r\n- [x] glib\r\n\r\n@andymwood can you help test this on your system?",
+    "performed_via_github_app": null
+}

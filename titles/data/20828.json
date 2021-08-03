@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20828",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20828/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20828/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20828/events",
+    "html_url": "https://github.com/spack/spack/pull/20828",
+    "id": 784850239,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzOTczMDEz",
+    "number": 20828,
+    "title": "libzmq: Add libbsd as a dependency",
+    "user": {
+        "login": "a-saitoh-fj",
+        "id": 63334055,
+        "node_id": "MDQ6VXNlcjYzMzM0MDU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63334055?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/a-saitoh-fj",
+        "html_url": "https://github.com/a-saitoh-fj",
+        "followers_url": "https://api.github.com/users/a-saitoh-fj/followers",
+        "following_url": "https://api.github.com/users/a-saitoh-fj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/a-saitoh-fj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/a-saitoh-fj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/a-saitoh-fj/subscriptions",
+        "organizations_url": "https://api.github.com/users/a-saitoh-fj/orgs",
+        "repos_url": "https://api.github.com/users/a-saitoh-fj/repos",
+        "events_url": "https://api.github.com/users/a-saitoh-fj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/a-saitoh-fj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-13T07:08:03Z",
+    "updated_at": "2021-01-21T00:06:02Z",
+    "closed_at": "2021-01-13T08:48:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20828",
+        "html_url": "https://github.com/spack/spack/pull/20828",
+        "diff_url": "https://github.com/spack/spack/pull/20828.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20828.patch"
+    },
+    "body": "For example, if you load py-sphinx and then spack install libzmq, you will get the following error:\r\n\r\n>> 414    /usr/bin/ld: warning: libbsd.so.0, needed by src/.libs/libzmq.so, not found (try using -rpath or -rpath-link)\r\n>> 415    src/.libs/libzmq.so: undefined reference to `strlcpy@@LIBBSD_0.0'\r\n>> 416    collect2: error: ld returned 1 exit status\r\n\r\nIt seems that libzmq 4.3.3 started using strlcpy.\r\nIn libzmq 4.3.2, this does not happen.\r\n\r\nTherefore, add libbsd to the dependency.",
+    "performed_via_github_app": null
+}

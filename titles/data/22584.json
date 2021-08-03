@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22584",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22584/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22584/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22584/events",
+    "html_url": "https://github.com/spack/spack/pull/22584",
+    "id": 842310300,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjAxOTE1MjU5",
+    "number": 22584,
+    "title": "use pytest stdout/err capture",
+    "user": {
+        "login": "loulawrence",
+        "id": 72574166,
+        "node_id": "MDQ6VXNlcjcyNTc0MTY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72574166?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/loulawrence",
+        "html_url": "https://github.com/loulawrence",
+        "followers_url": "https://api.github.com/users/loulawrence/followers",
+        "following_url": "https://api.github.com/users/loulawrence/following{/other_user}",
+        "gists_url": "https://api.github.com/users/loulawrence/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/loulawrence/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/loulawrence/subscriptions",
+        "organizations_url": "https://api.github.com/users/loulawrence/orgs",
+        "repos_url": "https://api.github.com/users/loulawrence/repos",
+        "events_url": "https://api.github.com/users/loulawrence/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/loulawrence/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-26T21:33:46Z",
+    "updated_at": "2021-04-01T19:34:57Z",
+    "closed_at": "2021-04-01T19:34:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22584",
+        "html_url": "https://github.com/spack/spack/pull/22584",
+        "diff_url": "https://github.com/spack/spack/pull/22584.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22584.patch"
+    },
+    "body": "On windows, use pytest stdout/err capture to avoid conflicting with logger on cmd tests\r\nTo Test:\r\n-  `spack unit-test lib\\spack\\spack\\test\\cmd\\[any modified test file]`\r\n\r\nConsiderations:\r\n- some tests on Linux explicitly disable pytest capturing - how to handle this? \r\n- Is there another way to capture output without resorting to redirection?",
+    "performed_via_github_app": null
+}

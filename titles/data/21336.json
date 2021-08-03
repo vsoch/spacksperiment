@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21336",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21336/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21336/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21336/events",
+    "html_url": "https://github.com/spack/spack/pull/21336",
+    "id": 795149735,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyNTQ2MjYw",
+    "number": 21336,
+    "title": "openfoam: modified 'setup_run_environment'",
+    "user": {
+        "login": "ShunIto-FJ",
+        "id": 77147313,
+        "node_id": "MDQ6VXNlcjc3MTQ3MzEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/77147313?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ShunIto-FJ",
+        "html_url": "https://github.com/ShunIto-FJ",
+        "followers_url": "https://api.github.com/users/ShunIto-FJ/followers",
+        "following_url": "https://api.github.com/users/ShunIto-FJ/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ShunIto-FJ/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ShunIto-FJ/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ShunIto-FJ/subscriptions",
+        "organizations_url": "https://api.github.com/users/ShunIto-FJ/orgs",
+        "repos_url": "https://api.github.com/users/ShunIto-FJ/repos",
+        "events_url": "https://api.github.com/users/ShunIto-FJ/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ShunIto-FJ/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2021-01-27T14:28:51Z",
+    "updated_at": "2021-02-26T08:17:55Z",
+    "closed_at": "2021-02-26T08:17:08Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21336",
+        "html_url": "https://github.com/spack/spack/pull/21336",
+        "diff_url": "https://github.com/spack/spack/pull/21336.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21336.patch"
+    },
+    "body": "Added the setting of environment variables at running openfoam when using the FJ compiler.\r\n(I confirmed that Ver.1812 can be run.)",
+    "performed_via_github_app": null
+}

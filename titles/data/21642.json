@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21642",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21642/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21642/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21642/events",
+    "html_url": "https://github.com/spack/spack/pull/21642",
+    "id": 806907515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcyMjQ0ODEx",
+    "number": 21642,
+    "title": "\"spack build-env\" searches env for relevant spec",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-02-12T03:02:33Z",
+    "updated_at": "2021-03-16T10:32:27Z",
+    "closed_at": "2021-02-23T19:45:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21642",
+        "html_url": "https://github.com/spack/spack/pull/21642",
+        "diff_url": "https://github.com/spack/spack/pull/21642.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21642.patch"
+    },
+    "body": "If you install packages using `spack install` in an environment with complex spec constraints, and the install fails, you may want to test out the build using `spack build-env`; one issue (particularly if you use `concretize: together`) is that it may be hard to pass the appropriate spec that matches what the environment is attempting to install.\r\n\r\nThis updates the `build-env` command to default to pulling a matching spec from the environment rather than concretizing what the user provides on the command line independently.\r\n\r\nThis makes a similar change to `spack cd`.\r\n\r\nIf the user-provided spec matches multiple specs in the environment, then these commands will now report an error and display all matching specs (to help the user specify).\r\n\r\n@bvanessen I'm wondering if this helps you with your work",
+    "performed_via_github_app": null
+}

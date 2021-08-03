@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25093",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25093/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25093/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25093/events",
+    "html_url": "https://github.com/spack/spack/issues/25093",
+    "id": 953097134,
+    "node_id": "MDU6SXNzdWU5NTMwOTcxMzQ=",
+    "number": 25093,
+    "title": "Some spack tests fail because they find system executables instead of spack-provided",
+    "user": {
+        "login": "wspear",
+        "id": 7329201,
+        "node_id": "MDQ6VXNlcjczMjkyMDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7329201?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wspear",
+        "html_url": "https://github.com/wspear",
+        "followers_url": "https://api.github.com/users/wspear/followers",
+        "following_url": "https://api.github.com/users/wspear/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wspear/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wspear/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wspear/subscriptions",
+        "organizations_url": "https://api.github.com/users/wspear/orgs",
+        "repos_url": "https://api.github.com/users/wspear/repos",
+        "events_url": "https://api.github.com/users/wspear/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wspear/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 512483390,
+            "node_id": "MDU6TGFiZWw1MTI0ODMzOTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-medium",
+            "name": "impact-medium",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-26T16:52:22Z",
+    "updated_at": "2021-07-29T18:55:26Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "We observed this issue operating on the spock system at olcf using the gnu-PrgEnv module and the latest pull of spack to install the e4s environment. Running `spack test run` to do all internal smoke tests resulted in several errors indicating that the spack test for some basic utilities was finding the system executable instead of the one provided by spack. We did not attempt to find any externals in this install of spack.\r\n\r\nThe error takes the form:\r\n\r\n`Executable 'perl' expected in prefix, found in /usr/bin/perl instead`\r\n\r\nPackages that exhibited this testing result were: binutils (for 11 of its internally provided executables), cmake, m4 and perl.",
+    "performed_via_github_app": null
+}

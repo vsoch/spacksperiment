@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21875",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21875/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21875/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21875/events",
+    "html_url": "https://github.com/spack/spack/issues/21875",
+    "id": 814331639,
+    "node_id": "MDU6SXNzdWU4MTQzMzE2Mzk=",
+    "number": 21875,
+    "title": "shell test kcov suggestion does not work",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-02-23T10:32:57Z",
+    "updated_at": "2021-02-25T10:55:56Z",
+    "closed_at": "2021-02-25T10:55:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "### Steps to reproduce the issue\r\n\r\n```console\r\n$ ./share/spack/qa/run-shell-tests \r\nERROR: kcov is required to run this script.\r\n\r\nTo install with Spack, run:\r\n    $ spack install kcov\r\nThen add the bin directory to your PATH.\r\n$ spack load kcov\r\n$ ./share/spack/qa/run-shell-tests \r\nERROR: kcov is required to run this script.\r\n\r\nTo install with Spack, run:\r\n    $ spack install kcov\r\nThen add the bin directory to your PATH.\r\n```\r\n\r\nSeems like there is no kcov binary:\r\n\r\n```\r\n$ kcov\r\n\r\nCommand 'kcov' not found, but can be installed with:\r\n\r\nsudo apt install kcov\r\n```\r\n\r\n* **Spack:** 0.16.0-1501-e8eb76c198\r\n* **Python:** 3.8.7\r\n* **Platform:** linux-ubuntu20.04-zen2\r\n* **Concretizer:** clingo\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

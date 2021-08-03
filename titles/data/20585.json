@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20585",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20585/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20585/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20585/events",
+    "html_url": "https://github.com/spack/spack/issues/20585",
+    "id": 775519315,
+    "node_id": "MDU6SXNzdWU3NzU1MTkzMTU=",
+    "number": 20585,
+    "title": "spack gpg trust fails on RHEL7: \"--create-socketdir\": invalid option",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1491156024,
+            "node_id": "MDU6TGFiZWwxNDkxMTU2MDI0",
+            "url": "https://api.github.com/repos/spack/spack/labels/pipelines",
+            "name": "pipelines",
+            "color": "b22353",
+            "default": false,
+            "description": "Issues related to spack's pipeline features"
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-12-28T18:00:44Z",
+    "updated_at": "2021-01-06T20:29:01Z",
+    "closed_at": "2021-01-06T20:29:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "`spack gpg trust` is now returning non-zero exit status on RHEL7 even when the *spack* command itself is being properly used.\r\n\r\nSpack info:\r\n* `spack@develop` (8919226dc6110403ac0f0ef6fa01abe59d493f89)\r\n* `Mon Dec 28 17:56:15 2020 +0100`):\r\n\r\nI'm using the following Docker images, which are based on the official RHEL 7 UBI image (`registry.access.redhat.com/ubi7/ubi:7.6-239`)\r\n* `ecpe4s/rhel7-runner-x86_64:2020-12-01`\r\n* `ecpe4s/rhel7-runner-ppc64le:2020-12-01`\r\n\r\nGPG version info:\r\n```\r\n$> gpg --version\r\ngpg (GnuPG) 2.0.22\r\nlibgcrypt 1.5.3\r\n...\r\n```\r\n\r\nHere's the problem as it presents itself:\r\n```\r\n$> spack --version\r\n0.16.0-389-8919226\r\n```\r\n\r\n```\r\n$> spack gpg trust e4s.pub\r\ngpgconf: invalid option \"--create-socketdir\"\r\n==> Error: None: No such file or directory: 'None'\r\nCommand: 'None' '--create-socketdir'\r\n```\r\n\r\n```\r\n$> spack -d gpg trust e4s.pub\r\n==> [2020-12-28-17:57:13.255469] Imported gpg from built-in commands\r\n==> [2020-12-28-17:57:13.257931] Imported gpg from built-in commands\r\n==> [2020-12-28-17:57:13.258679] '/usr/bin/gpgconf' '--version'\r\n==> [2020-12-28-17:57:13.260456] '/usr/bin/gpgconf' '--dry-run' '--create-socketdir'\r\ngpgconf: invalid option \"--create-socketdir\"\r\n==> [2020-12-28-17:57:13.262194] '/usr/bin/gpg2' '--version'\r\n==> [2020-12-28-17:57:13.264410] 'None' '--create-socketdir'\r\n==> [2020-12-28-17:57:13.265610] ProcessError: None: No such file or directory: 'None'\r\n    Command: 'None' '--create-socketdir'\r\n==> [2020-12-28-17:57:13.265703] Error: None: No such file or directory: 'None'\r\nCommand: 'None' '--create-socketdir'\r\nTraceback (most recent call last):\r\n  File \"/opt/spack/lib/spack/spack/util/executable.py\", line 170, in __call__\r\n    env=env)\r\n  File \"/usr/local/lib/python3.7/subprocess.py\", line 775, in __init__\r\n    restore_signals, start_new_session)\r\n  File \"/usr/local/lib/python3.7/subprocess.py\", line 1522, in _execute_child\r\n    raise child_exception_type(errno_num, err_msg, err_filename)\r\nFileNotFoundError: [Errno 2] No such file or directory: 'None': 'None'\r\n\r\nDuring handling of the above exception, another exception occurred:\r\n\r\nTraceback (most recent call last):\r\n  File \"/opt/spack/lib/spack/spack/main.py\", line 762, in main\r\n    return _invoke_command(command, parser, args, unknown)\r\n  File \"/opt/spack/lib/spack/spack/main.py\", line 490, in _invoke_command\r\n    return_val = command(parser, args)\r\n  File \"/opt/spack/lib/spack/spack/cmd/gpg.py\", line 201, in gpg\r\n    args.func(args)\r\n  File \"/opt/spack/lib/spack/spack/cmd/gpg.py\", line 159, in gpg_trust\r\n    spack.util.gpg.trust(args.keyfile)\r\n  File \"/opt/spack/lib/spack/spack/util/gpg.py\", line 410, in trust\r\n    return get_global_gpg_instance().trust(*args, **kwargs)\r\n  File \"/opt/spack/lib/spack/spack/util/gpg.py\", line 345, in trust\r\n    self('--import', keyfile)\r\n  File \"/opt/spack/lib/spack/spack/util/gpg.py\", line 307, in __call__\r\n    if self.prep:\r\n  File \"/opt/spack/lib/spack/llnl/util/lang.py\", line 197, in _memoized_function\r\n    func.cache[args] = func(*args)\r\n  File \"/opt/spack/lib/spack/spack/util/gpg.py\", line 290, in prep\r\n    self.gpgconf_exe('--create-socketdir')\r\n  File \"/opt/spack/lib/spack/spack/util/executable.py\", line 204, in __call__\r\n    '%s: %s' % (self.exe[0], e.strerror), 'Command: ' + cmd_line)\r\nspack.util.executable.ProcessError: None: No such file or directory: 'None'\r\n    Command: 'None' '--create-socketdir'\r\n```\r\n\r\nThe commit that introduced the issue is:\r\n* 857749a9ba3619f8190cc8b817d66125cf846c94\r\n* `Tue Dec 22 21:39:10 2020 -0800`\r\n\r\nI'm not seeing this problem on RHEL8, Ubuntu 18.04 or Ubuntu 20.04.\r\n\r\n@opadron @shahzebsiddiqui @scottwittenburg @trws ",
+    "performed_via_github_app": null
+}

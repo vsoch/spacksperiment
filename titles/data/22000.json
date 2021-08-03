@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22000",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22000/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22000/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22000/events",
+    "html_url": "https://github.com/spack/spack/pull/22000",
+    "id": 817717702,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTgxMTY2MzIz",
+    "number": 22000,
+    "title": "Combine URLFetchStrategy and CurlFetchStrategy into one class",
+    "user": {
+        "login": "BetsyMcPhail",
+        "id": 8505893,
+        "node_id": "MDQ6VXNlcjg1MDU4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8505893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BetsyMcPhail",
+        "html_url": "https://github.com/BetsyMcPhail",
+        "followers_url": "https://api.github.com/users/BetsyMcPhail/followers",
+        "following_url": "https://api.github.com/users/BetsyMcPhail/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BetsyMcPhail/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BetsyMcPhail/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BetsyMcPhail/subscriptions",
+        "organizations_url": "https://api.github.com/users/BetsyMcPhail/orgs",
+        "repos_url": "https://api.github.com/users/BetsyMcPhail/repos",
+        "events_url": "https://api.github.com/users/BetsyMcPhail/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BetsyMcPhail/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-26T22:14:45Z",
+    "updated_at": "2021-03-01T17:43:32Z",
+    "closed_at": "2021-03-01T17:43:29Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22000",
+        "html_url": "https://github.com/spack/spack/pull/22000",
+        "diff_url": "https://github.com/spack/spack/pull/22000.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22000.patch"
+    },
+    "body": "This simplifies the logic in other files and ensures that the intended\r\nfetch strategy is used.\r\n\r\nNote that cache_fetch::fetch currently fails on Windows",
+    "performed_via_github_app": null
+}

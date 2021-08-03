@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25066",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25066/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25066/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25066/events",
+    "html_url": "https://github.com/spack/spack/pull/25066",
+    "id": 951908982,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2MjIwODk3",
+    "number": 25066,
+    "title": "Add Rclone v1.56.0",
+    "user": {
+        "login": "alecbcs",
+        "id": 19558067,
+        "node_id": "MDQ6VXNlcjE5NTU4MDY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19558067?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alecbcs",
+        "html_url": "https://github.com/alecbcs",
+        "followers_url": "https://api.github.com/users/alecbcs/followers",
+        "following_url": "https://api.github.com/users/alecbcs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alecbcs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alecbcs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alecbcs/subscriptions",
+        "organizations_url": "https://api.github.com/users/alecbcs/orgs",
+        "repos_url": "https://api.github.com/users/alecbcs/repos",
+        "events_url": "https://api.github.com/users/alecbcs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alecbcs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-23T21:32:41Z",
+    "updated_at": "2021-07-25T12:09:08Z",
+    "closed_at": "2021-07-25T12:09:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25066",
+        "html_url": "https://github.com/spack/spack/pull/25066",
+        "diff_url": "https://github.com/spack/spack/pull/25066.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25066.patch"
+    },
+    "body": "Update Rclone to 1.56.0 which includes bug fixes and new supported backends.\r\n\r\n**Changelog:**\r\n- New backends -- Uptobox (buengese).\r\n- Rework config system so it can be used non-interactively via cli and rc API.\r\n- Librclone - export the rclone RC as a C library.\r\n- Accounting: Calculate rolling average speed.\r\n\r\nThe full changelog can be found [here](https://rclone.org/changelog/#v1-56-0-2021-07-20).\r\n\r\n**Test Plan:**\r\nRclone 1.56.0 built successfully within the Autamus Pipeline [here](https://github.com/autamus/registry/runs/3124657690).",
+    "performed_via_github_app": null
+}

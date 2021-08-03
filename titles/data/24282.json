@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24282",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24282/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24282/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24282/events",
+    "html_url": "https://github.com/spack/spack/pull/24282",
+    "id": 919132005,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjY4NDg3NTY1",
+    "number": 24282,
+    "title": "Features/windows support failing tests",
+    "user": {
+        "login": "stephencrowell",
+        "id": 85647068,
+        "node_id": "MDQ6VXNlcjg1NjQ3MDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85647068?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stephencrowell",
+        "html_url": "https://github.com/stephencrowell",
+        "followers_url": "https://api.github.com/users/stephencrowell/followers",
+        "following_url": "https://api.github.com/users/stephencrowell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stephencrowell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stephencrowell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stephencrowell/subscriptions",
+        "organizations_url": "https://api.github.com/users/stephencrowell/orgs",
+        "repos_url": "https://api.github.com/users/stephencrowell/repos",
+        "events_url": "https://api.github.com/users/stephencrowell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stephencrowell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-11T19:32:21Z",
+    "updated_at": "2021-06-16T13:52:53Z",
+    "closed_at": "2021-06-16T13:52:52Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24282",
+        "html_url": "https://github.com/spack/spack/pull/24282",
+        "diff_url": "https://github.com/spack/spack/pull/24282.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24282.patch"
+    },
+    "body": "Added Windows support for the tests. \r\n\r\ntest_read_unicode: changed encoding and the way the executable is run\r\ntest_which: Added alternative flow that changes the extension of a file instead of using set_executable. The which function also checks for a .exe extension instead.\r\n\r\nChanged the Executable.path output to print out a path with \\ chars on Windows.",
+    "performed_via_github_app": null
+}

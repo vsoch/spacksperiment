@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20158",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20158/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20158/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20158/events",
+    "html_url": "https://github.com/spack/spack/pull/20158",
+    "id": 752885337,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5MDg4NjE3",
+    "number": 20158,
+    "title": "Write  junit-report to reports directory to allow installation from read-only spack",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-11-29T10:30:25Z",
+    "updated_at": "2021-05-19T22:27:00Z",
+    "closed_at": "2021-05-19T16:28:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20158",
+        "html_url": "https://github.com/spack/spack/pull/20158",
+        "diff_url": "https://github.com/spack/spack/pull/20158.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20158.patch"
+    },
+    "body": "Together with https://github.com/spack/spack/pull/20137 this lets me use spack instances on read-only filesystems. It seemed like `misc_cache` was fine to use here, but I can also introduce a separate config entry.",
+    "performed_via_github_app": null
+}

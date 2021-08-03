@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23555",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23555/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23555/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23555/events",
+    "html_url": "https://github.com/spack/spack/pull/23555",
+    "id": 886587986,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjM5ODYxMzQ2",
+    "number": 23555,
+    "title": "med: add HDF5 support and other variants",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-05-11T09:09:40Z",
+    "updated_at": "2021-05-11T13:40:04Z",
+    "closed_at": "2021-05-11T13:01:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23555",
+        "html_url": "https://github.com/spack/spack/pull/23555",
+        "diff_url": "https://github.com/spack/spack/pull/23555.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23555.patch"
+    },
+    "body": "HDF5 compatibility was tight ; it has been checked that med-4 can accept HDF5 1.10 series starting at 1.10.2, despite these releases are generally not compatible, for med-4 they are.\r\nAlso med-3 accepts all 1.8 HDF5 releases since these are compatible [refer to https://portal.hdfgroup.org/display/HDF5/Software+Changes+from+Release+to+Release+for+HDF5-1.8]\r\nA new release is added, 4.1.0 (thanks to @bfovet), but not set as the default since it fails to link when using static.\r\nMPI dependency is now conditional.\r\nOptions added are 'shared' (especially useful for 4.1.0 since it does not link otherwise) and 'fortran'.\r\nThese enhancement should allow gmsh to have a proper med dependency without too narrow an HDF5 compatibility, as well as mofem-cephas.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19463",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19463/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19463/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19463/events",
+    "html_url": "https://github.com/spack/spack/pull/19463",
+    "id": 727359208,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA4MjY2MTM5",
+    "number": 19463,
+    "title": "Add opencl-headers and use ocl-icd as OpenCL provider",
+    "user": {
+        "login": "lorddavidiii",
+        "id": 20240690,
+        "node_id": "MDQ6VXNlcjIwMjQwNjkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20240690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lorddavidiii",
+        "html_url": "https://github.com/lorddavidiii",
+        "followers_url": "https://api.github.com/users/lorddavidiii/followers",
+        "following_url": "https://api.github.com/users/lorddavidiii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lorddavidiii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lorddavidiii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lorddavidiii/subscriptions",
+        "organizations_url": "https://api.github.com/users/lorddavidiii/orgs",
+        "repos_url": "https://api.github.com/users/lorddavidiii/repos",
+        "events_url": "https://api.github.com/users/lorddavidiii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lorddavidiii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2165627345,
+            "node_id": "MDU6TGFiZWwyMTY1NjI3MzQ1",
+            "url": "https://api.github.com/repos/spack/spack/labels/opencl",
+            "name": "opencl",
+            "color": "720cb2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-22T12:49:09Z",
+    "updated_at": "2020-10-22T20:00:42Z",
+    "closed_at": "2020-10-22T20:00:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19463",
+        "html_url": "https://github.com/spack/spack/pull/19463",
+        "diff_url": "https://github.com/spack/spack/pull/19463.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19463.patch"
+    },
+    "body": "This PR adds a bundled package `opencl-headers`, which bundles the official OpenCL C headers and the  OpenCL C++ headers from the Khronos Group ( they are added as two separated packages: `opencl-c-headers` and `opencl-clhpp` ).\r\n\r\nAlso it adds a new variant `headers` to `ocl-icd`, so one could use this as OpenCL provider, as this is enough to build and execute OpenCL programs and usually one uses the OpenCL implementation of the GPU driver in the end.\r\n\r\nFurthermore I fix a few build problems of `ocl-icd` and add a new release, which fixes these build problems also. Also I add `ruby` as dependency, as it is needed, and `asciidoc-py3` and `xmlto` for generating the man page.\r\n\r\nThe new release (2.2.13) from `ocl-icd` already provides OpenCL 3.0, but for the headers there was not an official release since the final version of the specifications were release, hence `ocl-icd+headers` now provides OpenCL 2.2. I am not aware of any program which will uses OpenCL 3.0, so we can wait until they make releases of the header files I think. Surprising to me there is already a driver, which supports it, i.e the Intel OpenCL driver since the [latest release](https://github.com/intel/compute-runtime/releases/tag/20.41.18123)\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22468",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22468/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22468/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22468/events",
+    "html_url": "https://github.com/spack/spack/pull/22468",
+    "id": 838568531,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4NzI4OTA4",
+    "number": 22468,
+    "title": "[intel-oneapi-mpi] Enable compiler wrappers for dependent build stage",
+    "user": {
+        "login": "stephenmsachs",
+        "id": 26097448,
+        "node_id": "MDQ6VXNlcjI2MDk3NDQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26097448?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stephenmsachs",
+        "html_url": "https://github.com/stephenmsachs",
+        "followers_url": "https://api.github.com/users/stephenmsachs/followers",
+        "following_url": "https://api.github.com/users/stephenmsachs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stephenmsachs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stephenmsachs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stephenmsachs/subscriptions",
+        "organizations_url": "https://api.github.com/users/stephenmsachs/orgs",
+        "repos_url": "https://api.github.com/users/stephenmsachs/repos",
+        "events_url": "https://api.github.com/users/stephenmsachs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stephenmsachs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1445245539,
+            "node_id": "MDU6TGFiZWwxNDQ1MjQ1NTM5",
+            "url": "https://api.github.com/repos/spack/spack/labels/build",
+            "name": "build",
+            "color": "a83f25",
+            "default": false,
+            "description": "General build capability"
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-03-23T10:20:45Z",
+    "updated_at": "2021-03-26T22:19:39Z",
+    "closed_at": "2021-03-26T22:19:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22468",
+        "html_url": "https://github.com/spack/spack/pull/22468",
+        "diff_url": "https://github.com/spack/spack/pull/22468.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22468.patch"
+    },
+    "body": "This adds MPICC=/path/to/intel-oneapi/mpicc etc to he dependents build stage\r\nenabling the use of the compiler wrappers.\r\n",
+    "performed_via_github_app": null
+}

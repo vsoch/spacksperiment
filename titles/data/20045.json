@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20045",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20045/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20045/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20045/events",
+    "html_url": "https://github.com/spack/spack/pull/20045",
+    "id": 748176193,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI1MjM1ODMy",
+    "number": 20045,
+    "title": "extends: add type kwarg",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-22T05:46:26Z",
+    "updated_at": "2020-12-30T17:10:00Z",
+    "closed_at": "2020-12-30T17:09:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20045",
+        "html_url": "https://github.com/spack/spack/pull/20045",
+        "diff_url": "https://github.com/spack/spack/pull/20045.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20045.patch"
+    },
+    "body": "In packages, `extends` implies `depends_on`, but until now there was no way to control what deptype to use. Since `depends_on` defaults to `type=('build', 'link')`, all extensions were marked as this deptype. It was possible to add `type=('build', 'run')`, but Spack would simply merge this and the deptype would become `type=('build', 'link', 'run')`.\r\n\r\nThis PR adds a `type` kwarg to the `extends` directive, which is then passed to the `depends_on` call. The deptype for this defaults to `type=('build', 'run')`, as is the case for (almost?) every extension currently in Spack.\r\n\r\nThis behavior is so intuitive that the following packages already use it, even though it didn't work until now:\r\n\r\n* heffte\r\n* tasmanian\r\n* the-platinum-searcher\r\n\r\n### Before\r\n\r\n```console\r\n$ spack spec -t py-setuptools\r\n...\r\n[blr ]      ^python@3.8.6%apple-clang@12.0.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87 arch=darwin-catalina-x86_64\r\n```\r\n\r\n### After\r\n\r\n```console\r\n$ spack spec -t py-setuptools\r\n...\r\n[b r ]      ^python@3.8.6%apple-clang@12.0.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87 arch=darwin-catalina-x86_64\r\n```\r\n\r\n**Note**: this will likely break some packages that link to the Python libs/headers but don't explicitly declare a link dependency. I would love to have better PR testing to make sure that this change doesn't break anything, but I'm also fine with dealing with issues as they are reported.",
+    "performed_via_github_app": null
+}

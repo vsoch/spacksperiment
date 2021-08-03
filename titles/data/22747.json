@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22747",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22747/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22747/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22747/events",
+    "html_url": "https://github.com/spack/spack/pull/22747",
+    "id": 849024171,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA3ODY2NDU3",
+    "number": 22747,
+    "title": "py-mo-pack: add LDFLAGS to fix build error",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-02T07:07:55Z",
+    "updated_at": "2021-04-08T16:06:58Z",
+    "closed_at": "2021-04-08T16:06:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22747",
+        "html_url": "https://github.com/spack/spack/pull/22747",
+        "diff_url": "https://github.com/spack/spack/pull/22747.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22747.patch"
+    },
+    "body": "add LDFLAGS to fix this error in `SUSE`:\r\n```\r\n/usr/lib64/gcc/aarch64-suse-linux/7/../../../../aarch64-suse-linux/bin/ld: cannot find -lmo_unpack\r\ncollect2: error: ld returned 1 exit status\r\n/home/spack-develop/opt/spack/linux-sles15-aarch64/gcc-7.4.0/py-cython-0.29.21-whxyzywlh5a6tz6iil5pgzdsp3wjwjbo/lib/python3.8/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /home/spack-stage/root/spack-stage-py-mo-pack-0.2.0-wrnpnrmbhd3l7w2zs3e5qzegvjjc7tlp/spack-src/lib/mo_pack/_packing.pyx\r\n  tree = Parsing.p_module(s, pxd, full_module_name)\r\nerror: command '/usr/bin/gcc-7' failed with exit status 1\r\n```\r\n",
+    "performed_via_github_app": null
+}

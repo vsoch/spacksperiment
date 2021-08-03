@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19866",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19866/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19866/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19866/events",
+    "html_url": "https://github.com/spack/spack/pull/19866",
+    "id": 741033882,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE5NDIxMTY3",
+    "number": 19866,
+    "title": "yaml-cpp: Improve shared library building",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-11T20:03:10Z",
+    "updated_at": "2020-11-12T12:00:00Z",
+    "closed_at": "2020-11-12T02:05:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19866",
+        "html_url": "https://github.com/spack/spack/pull/19866",
+        "diff_url": "https://github.com/spack/spack/pull/19866.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19866.patch"
+    },
+    "body": "* No version of yaml-cpp in spack can build shared AND static libraries at the same time. So drop the \"static\" variant and let \"shared\" handle that alone.\r\n\r\n  Or in other words: No version handles the BUILD_STATIC_LIBS flag.\r\n\r\n* The flag for building shared libraries changed from BUILD_SHARED_LIBS to YAML_BUILD_SHARED_LIBS at some point. So just pass both flags.\r\n\r\n* Use the newer define_from_variant.",
+    "performed_via_github_app": null
+}

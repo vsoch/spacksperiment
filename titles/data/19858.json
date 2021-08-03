@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19858",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19858/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19858/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19858/events",
+    "html_url": "https://github.com/spack/spack/pull/19858",
+    "id": 740556611,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE5MDI1NDI1",
+    "number": 19858,
+    "title": "py-numpy: Add Fujitsu Fortran compiler to compiler type.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-11T08:01:43Z",
+    "updated_at": "2021-02-05T07:43:02Z",
+    "closed_at": "2020-11-16T16:05:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19858",
+        "html_url": "https://github.com/spack/spack/pull/19858",
+        "diff_url": "https://github.com/spack/spack/pull/19858.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19858.patch"
+    },
+    "body": "When building `py-scipy` with Fujitsu compiler, gcc's commands were recognized as f90/fix compiler.\r\n```\r\nFortran f77 compiler: /pathtospack/spack/lib/spack/env/fj/frt -Wall -g -ffixed-form -fno-second-underscore -fPIC\r\nFortran f90 compiler: /usr/bin/gfortran -Wall -g -fno-second-underscore -fPIC\r\nFortran fix compiler: /usr/bin/gfortran -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -fPIC\r\n```\r\nSo, I added Fujitsu fortran compiler to compiler types of `py-numpy`.\r\n(I'm considering proposing this fix to upstream as well)\r\nAnd I specified Fujitsu to fortran compiler types when building `py-scipy` with Fujitsu compiler.",
+    "performed_via_github_app": null
+}

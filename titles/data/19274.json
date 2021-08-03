@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19274",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19274/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19274/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19274/events",
+    "html_url": "https://github.com/spack/spack/pull/19274",
+    "id": 719534531,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTAxNzA1MjU2",
+    "number": 19274,
+    "title": "pexsi: Add -fopenmp flag to fortran flags if dependencies use OpenMP",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-12T17:17:00Z",
+    "updated_at": "2020-10-15T13:58:53Z",
+    "closed_at": "2020-10-15T13:41:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19274",
+        "html_url": "https://github.com/spack/spack/pull/19274",
+        "diff_url": "https://github.com/spack/spack/pull/19274.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19274.patch"
+    },
+    "body": "Closes #18578\r\n\r\nThis patch causes OpenMP flags to be added to fortran compilation flags if superlu-dist or openblas dependencies use openmp.",
+    "performed_via_github_app": null
+}

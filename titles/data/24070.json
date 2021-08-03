@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24070",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24070/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24070/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24070/events",
+    "html_url": "https://github.com/spack/spack/pull/24070",
+    "id": 908604294,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU5MjcxOTIz",
+    "number": 24070,
+    "title": "Add: HiPACE",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-06-01T19:07:12Z",
+    "updated_at": "2021-06-14T17:58:11Z",
+    "closed_at": "2021-06-14T17:34:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24070",
+        "html_url": "https://github.com/spack/spack/pull/24070",
+        "diff_url": "https://github.com/spack/spack/pull/24070.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24070.patch"
+    },
+    "body": "Add the new HiPACE++ code.\r\n\r\ncc @MaxThevenet @SeverinDiederichs\r\n\r\n## To Do\r\n\r\n- [x] Linux testing @ax3l (OpenMP)\r\n- [x] Linux testing (CUDA), macOS testing @SeverinDiederichs @MaxThevenet",
+    "performed_via_github_app": null
+}

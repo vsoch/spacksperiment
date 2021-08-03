@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20544",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20544/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20544/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20544/events",
+    "html_url": "https://github.com/spack/spack/pull/20544",
+    "id": 774252439,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ1MTk3Nzg5",
+    "number": 20544,
+    "title": "babelflow: Add spec",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-24T07:54:21Z",
+    "updated_at": "2020-12-24T22:54:25Z",
+    "closed_at": "2020-12-24T22:54:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20544",
+        "html_url": "https://github.com/spack/spack/pull/20544",
+        "diff_url": "https://github.com/spack/spack/pull/20544.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20544.patch"
+    },
+    "body": "I fixed the following error.\r\n==> Error: NameError: name 'spec' is not defined\r\n\r\nI have confirmed that it can be built on x86_64 and aarch64 machines.",
+    "performed_via_github_app": null
+}

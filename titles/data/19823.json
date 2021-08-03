@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19823",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19823/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19823/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19823/events",
+    "html_url": "https://github.com/spack/spack/pull/19823",
+    "id": 739336224,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE4MDE3MzAz",
+    "number": 19823,
+    "title": "[opencascade] depends_on libxext, libxmu, libxt, libxi",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-09T20:21:44Z",
+    "updated_at": "2020-11-09T22:24:53Z",
+    "closed_at": "2020-11-09T22:24:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19823",
+        "html_url": "https://github.com/spack/spack/pull/19823",
+        "diff_url": "https://github.com/spack/spack/pull/19823.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19823.patch"
+    },
+    "body": "opencascade depends on libxext, libxmu, libxt, libxi.\r\n\r\nNo maintainer to tag here.\r\n\r\nRelevant excerpt of `adm/cmake/occt_csf.cmake`:\r\n```cmake\r\n  elseif (UNIX)\r\n    set (CSF_ThreadLibs  \"pthread rt stdc++\")\r\n    if (USE_GLES2)\r\n      set (CSF_OpenGlLibs  \"EGL GLESv2\")\r\n    else()\r\n      set (CSF_OpenGlLibs  \"GL\")\r\n    endif()\r\n    set (CSF_XwLibs      \"X11 Xext Xmu Xi\")\r\n    set (CSF_dl          \"dl\")\r\n    set (CSF_fontconfig  \"fontconfig\")\r\n  endif()\r\n```\r\n\r\nRelevant excerpt of `dox/dev_guides/building/3rdparty/3rdparty_linux.md`:\r\n```\r\nAll 3rd-party products required for building of  OCCT could be installed\r\nfrom official repositories. You may install them from  console using apt-get utility:\r\n\r\n    sudo apt-get install tcllib tklib tcl-dev tk-dev libfreetype-dev libxt-dev libxmu-dev libxi-dev libgl1-mesa-dev libglu1-mesa-dev libfreeimage-dev libtbb-dev\r\n```\r\n\r\nThis fixes a linker error in a non-X11 centos7 build container (which was limited to xmu and xi, because the other libraries were pulled in transitively).",
+    "performed_via_github_app": null
+}

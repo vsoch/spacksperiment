@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24140",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24140/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24140/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24140/events",
+    "html_url": "https://github.com/spack/spack/pull/24140",
+    "id": 911576363,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjYxODMyMTUx",
+    "number": 24140,
+    "title": "Add int64 back for hypre in nalu-wind",
+    "user": {
+        "login": "psakievich",
+        "id": 12102506,
+        "node_id": "MDQ6VXNlcjEyMTAyNTA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12102506?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/psakievich",
+        "html_url": "https://github.com/psakievich",
+        "followers_url": "https://api.github.com/users/psakievich/followers",
+        "following_url": "https://api.github.com/users/psakievich/following{/other_user}",
+        "gists_url": "https://api.github.com/users/psakievich/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/psakievich/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/psakievich/subscriptions",
+        "organizations_url": "https://api.github.com/users/psakievich/orgs",
+        "repos_url": "https://api.github.com/users/psakievich/repos",
+        "events_url": "https://api.github.com/users/psakievich/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/psakievich/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-04T14:52:12Z",
+    "updated_at": "2021-06-07T14:35:26Z",
+    "closed_at": "2021-06-07T14:35:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24140",
+        "html_url": "https://github.com/spack/spack/pull/24140",
+        "diff_url": "https://github.com/spack/spack/pull/24140.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24140.patch"
+    },
+    "body": "To concretize the entire exawind environment together we need `hypre` to be built with the same flags for `nalu-wind` and `amr-wind`.  \r\n@jrood-nrel",
+    "performed_via_github_app": null
+}

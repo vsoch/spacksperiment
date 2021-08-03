@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23386",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23386/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23386/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23386/events",
+    "html_url": "https://github.com/spack/spack/pull/23386",
+    "id": 874001502,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI4NjQ4Nzk4",
+    "number": 23386,
+    "title": "py-hdf5: restore py-h5py~mpi ^hdf5+mpi",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2021-05-02T17:44:52Z",
+    "updated_at": "2021-07-08T13:52:35Z",
+    "closed_at": "2021-05-03T13:00:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23386",
+        "html_url": "https://github.com/spack/spack/pull/23386",
+        "diff_url": "https://github.com/spack/spack/pull/23386.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23386.patch"
+    },
+    "body": "Reverts spack/spack#21955, which\r\n- was not a change to py-tensorflow but rather to py-h5py\r\n- breaks the ability to build `py-h5py~mpi ^hdf5+mpi` which is valid and works in my experience.",
+    "performed_via_github_app": null
+}

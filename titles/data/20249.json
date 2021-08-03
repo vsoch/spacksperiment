@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20249",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20249/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20249/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20249/events",
+    "html_url": "https://github.com/spack/spack/pull/20249",
+    "id": 757203100,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTMyNjE4MTc4",
+    "number": 20249,
+    "title": "Compiler wrapper linting",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-04T15:50:01Z",
+    "updated_at": "2020-12-08T02:58:20Z",
+    "closed_at": "2020-12-08T02:58:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20249",
+        "html_url": "https://github.com/spack/spack/pull/20249",
+        "diff_url": "https://github.com/spack/spack/pull/20249.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20249.patch"
+    },
+    "body": "- Fix duplicate entries in case\n- make sure the arg is not interpreted as two items in a list\n- use -n over ! -z\n\nThanks to https://www.shellcheck.net/\n",
+    "performed_via_github_app": null
+}

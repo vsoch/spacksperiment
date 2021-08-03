@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24793",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24793/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24793/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24793/events",
+    "html_url": "https://github.com/spack/spack/pull/24793",
+    "id": 940201631,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg2MzA5MDcw",
+    "number": 24793,
+    "title": "New package: intel-oneapi-dpl",
+    "user": {
+        "login": "rscohn2",
+        "id": 1936730,
+        "node_id": "MDQ6VXNlcjE5MzY3MzA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1936730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rscohn2",
+        "html_url": "https://github.com/rscohn2",
+        "followers_url": "https://api.github.com/users/rscohn2/followers",
+        "following_url": "https://api.github.com/users/rscohn2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rscohn2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rscohn2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rscohn2/subscriptions",
+        "organizations_url": "https://api.github.com/users/rscohn2/orgs",
+        "repos_url": "https://api.github.com/users/rscohn2/repos",
+        "events_url": "https://api.github.com/users/rscohn2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rscohn2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 936777283,
+            "node_id": "MDU6TGFiZWw5MzY3NzcyODM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/headers",
+            "name": "headers",
+            "color": "782caa",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-08T20:35:53Z",
+    "updated_at": "2021-07-09T09:56:03Z",
+    "closed_at": "2021-07-09T09:56:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24793",
+        "html_url": "https://github.com/spack/spack/pull/24793",
+        "diff_url": "https://github.com/spack/spack/pull/24793.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24793.patch"
+    },
+    "body": "Adding a new package for oneapi Data Parallel C++ Library (DPL)\r\n@DanVev \r\n\r\nAdded a test: https://github.com/rscohn2/oneapi-spack-tests/pull/13",
+    "performed_via_github_app": null
+}

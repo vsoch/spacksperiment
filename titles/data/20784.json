@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20784",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20784/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20784/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20784/events",
+    "html_url": "https://github.com/spack/spack/pull/20784",
+    "id": 783737004,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzMDQ2NTAz",
+    "number": 20784,
+    "title": "Fix cuda arch conflicts in asp concretizer for dbcsr and cp2k",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2021-01-11T22:01:47Z",
+    "updated_at": "2021-01-21T00:14:47Z",
+    "closed_at": "2021-01-12T17:01:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20784",
+        "html_url": "https://github.com/spack/spack/pull/20784",
+        "diff_url": "https://github.com/spack/spack/pull/20784.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20784.patch"
+    },
+    "body": "Ping @dev-zero. Currently on develop there's a problem with the new concretizer and dbcsr:\r\n\r\n```bash\r\n$ spack solve dbcsr\r\n==> Error: invalid values for variant \"cuda_arch\" in package \"dbcsr\": ['10']\r\n```\r\n\r\nI've tracked it down to 1343a815c02421fb94ddb2b80af76d35760bf4c4, and the advise was to no redefine `cuda_arch` and instead use conflicts, so that the conflicts regarding `cuda_arch=10` in the parent class `CudaPackage` would still make sense.\r\n",
+    "performed_via_github_app": null
+}

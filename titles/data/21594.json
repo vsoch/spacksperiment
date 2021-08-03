@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21594",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21594/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21594/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21594/events",
+    "html_url": "https://github.com/spack/spack/pull/21594",
+    "id": 805593702,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTcxMTY5MzQ1",
+    "number": 21594,
+    "title": "Windows: url_fetch test passes",
+    "user": {
+        "login": "BetsyMcPhail",
+        "id": 8505893,
+        "node_id": "MDQ6VXNlcjg1MDU4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8505893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BetsyMcPhail",
+        "html_url": "https://github.com/BetsyMcPhail",
+        "followers_url": "https://api.github.com/users/BetsyMcPhail/followers",
+        "following_url": "https://api.github.com/users/BetsyMcPhail/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BetsyMcPhail/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BetsyMcPhail/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BetsyMcPhail/subscriptions",
+        "organizations_url": "https://api.github.com/users/BetsyMcPhail/orgs",
+        "repos_url": "https://api.github.com/users/BetsyMcPhail/repos",
+        "events_url": "https://api.github.com/users/BetsyMcPhail/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BetsyMcPhail/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-10T15:02:28Z",
+    "updated_at": "2021-06-25T17:24:18Z",
+    "closed_at": "2021-02-11T14:42:51Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21594",
+        "html_url": "https://github.com/spack/spack/pull/21594",
+        "diff_url": "https://github.com/spack/spack/pull/21594.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21594.patch"
+    },
+    "body": "url_fetch tests pass on Windows (if curl is available), requires #20412.\r\n    \r\nOn Windows, locks are disabled for many tests as locking by range is not currently supported.\r\n\r\nWith these changes and #21398, url_fetch tests should also pass with urllib on Windows.\r\n\r\n\r\nNote: After ensuring that tests pass, will change base branch to be merged onto **features/windows-support**\r\n\r\n",
+    "performed_via_github_app": null
+}

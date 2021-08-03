@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23444",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23444/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23444/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23444/events",
+    "html_url": "https://github.com/spack/spack/pull/23444",
+    "id": 876301617,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjMwNDc1MjUw",
+    "number": 23444,
+    "title": "Update the CCE compiler module's CXX standard flags",
+    "user": {
+        "login": "jjellio",
+        "id": 21248657,
+        "node_id": "MDQ6VXNlcjIxMjQ4NjU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/21248657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jjellio",
+        "html_url": "https://github.com/jjellio",
+        "followers_url": "https://api.github.com/users/jjellio/followers",
+        "following_url": "https://api.github.com/users/jjellio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jjellio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jjellio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jjellio/subscriptions",
+        "organizations_url": "https://api.github.com/users/jjellio/orgs",
+        "repos_url": "https://api.github.com/users/jjellio/repos",
+        "events_url": "https://api.github.com/users/jjellio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jjellio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-05-05T10:23:35Z",
+    "updated_at": "2021-06-01T09:45:32Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23444",
+        "html_url": "https://github.com/spack/spack/pull/23444",
+        "diff_url": "https://github.com/spack/spack/pull/23444.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23444.patch"
+    },
+    "body": "This adds definitions for clang-based CCE up to what I know is officially supported.\r\n\r\nThe logic will throw for non-clang CCE, as I don't know what that supports (probably stopped at C++11)\r\n\r\nTested on Cray platform using CCE 12\r\n\r\nCloses #23443",
+    "performed_via_github_app": null
+}

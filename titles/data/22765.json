@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22765",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22765/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22765/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22765/events",
+    "html_url": "https://github.com/spack/spack/pull/22765",
+    "id": 849679649,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA4NDAxODM0",
+    "number": 22765,
+    "title": "m4: export environment variable for autoconf etc",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-03T15:27:04Z",
+    "updated_at": "2021-04-06T10:52:45Z",
+    "closed_at": "2021-04-06T10:21:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22765",
+        "html_url": "https://github.com/spack/spack/pull/22765",
+        "diff_url": "https://github.com/spack/spack/pull/22765.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22765.patch"
+    },
+    "body": "I have the autotools  packages (m4, autoconf, etc.) loaded as externals through homebrew. To my consternation, a clean build of my toolchain with a clean homebrew+spack fails during any autotools package:\r\n```\r\n+ aclocal -I Tools/config\r\nautom4te: error: need GNU m4 1.4 or later: /usr/local/opt/m4/bin/m4\r\naclocal: error: autom4te failed with exit status: 1\r\n```\r\ndigging into this I found that the brew-installed autoconf (specifically `autom4te`) has the wrong default prefix, since Homebrew no longer symlinks m4 to `opt/`:\r\n```perl\r\nmy $m4 = $ENV{\"M4\"} || '/usr/local/opt/m4/bin/m4';\r\n```\r\n\r\nSo I've added code in the `m4` spack package to export this environment variable.\r\n\r\nI'm not sure where the right place in homebrew is to report the error, since it seems like an installation with Homebrew. (It's definitely not spack's fault.) Regardless, exporting the M4 environment variable should make spack's autotools toolchain more robust, and it fixes my problem without waiting for a homebrew update.",
+    "performed_via_github_app": null
+}

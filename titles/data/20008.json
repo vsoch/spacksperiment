@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20008",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20008/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20008/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20008/events",
+    "html_url": "https://github.com/spack/spack/pull/20008",
+    "id": 747004515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI0Mjk4MzQ5",
+    "number": 20008,
+    "title": "libtheora: fix how package is configured",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2020-11-19T23:27:09Z",
+    "updated_at": "2020-12-02T16:24:38Z",
+    "closed_at": "2020-12-02T16:24:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20008",
+        "html_url": "https://github.com/spack/spack/pull/20008",
+        "diff_url": "https://github.com/spack/spack/pull/20008.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20008.patch"
+    },
+    "body": "Not sure how this was ever working before, but here's what I'm seeing trying to build paraview, which now has a dependency on libtheora:\r\n```\r\n==> libtheora: Executing phase: 'autoreconf'\r\n==> libtheora: Executing phase: 'configure'\r\n==> Error: ProcessError: Command exited with status 1:\r\n    '/tmp/hpp/spack-stage/spack-stage-libtheora-1.1.1-4ujjd67rwaly4ca36pf2pfnex6p4bokx/spack-src/configure' '--prefix=/users/hpp/spack/opt/spack/cray-rhel8-aarch64/gcc-8.3.1/libtheora-1.1.1-4ujjd67rwaly4ca36pf2pfnex6p4bokx'\r\n\r\n1 error found in build log:\r\n     225    checking for a BSD-compatible install... /usr/bin/install -c\r\n     226    checking whether build environment is sane... yes\r\n     227    checking for a thread-safe mkdir -p... /usr/bin/mkdir -p\r\n     228    checking for gawk... gawk\r\n     229    checking whether make sets $(MAKE)... yes\r\n     230    checking whether make supports nested variables... yes\r\n  >> 231    configure: error: source directory already configured; run \"make distclean\" there first\r\n```\r\nThe problem is the autogen.sh script in the package also runs configure.  So when spack goes ahead and tries to run a configure stage, things don't work.\r\n\r\nThis commit reworks the build process to avoid this unneeded configure step\r\n\r\nSigned-off-by: Howard Pritchard <howardp@lanl.gov>",
+    "performed_via_github_app": null
+}

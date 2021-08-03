@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22250",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22250/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22250/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22250/events",
+    "html_url": "https://github.com/spack/spack/pull/22250",
+    "id": 829363964,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTkxMDQwNTM1",
+    "number": 22250,
+    "title": "py-tensorflow: remove bazel restriction to /tmp",
+    "user": {
+        "login": "abrandenb",
+        "id": 22345774,
+        "node_id": "MDQ6VXNlcjIyMzQ1Nzc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22345774?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/abrandenb",
+        "html_url": "https://github.com/abrandenb",
+        "followers_url": "https://api.github.com/users/abrandenb/followers",
+        "following_url": "https://api.github.com/users/abrandenb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/abrandenb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/abrandenb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/abrandenb/subscriptions",
+        "organizations_url": "https://api.github.com/users/abrandenb/orgs",
+        "repos_url": "https://api.github.com/users/abrandenb/repos",
+        "events_url": "https://api.github.com/users/abrandenb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/abrandenb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2021-03-11T17:30:44Z",
+    "updated_at": "2021-03-22T15:06:06Z",
+    "closed_at": "2021-03-22T15:06:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22250",
+        "html_url": "https://github.com/spack/spack/pull/22250",
+        "diff_url": "https://github.com/spack/spack/pull/22250.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22250.patch"
+    },
+    "body": "Currently, the temporary directory of bazel is hardcoded to `/tmp`. If you are building on a system with low disk space on root, this can prevent you from building (and so it did for me). In my opinion, it is cleaner to let `tempfile.mkdtemp` decide on an appropriate file location instead of hardcoding `/tmp`. This allows users to define other partitions that are better fitted for compiling large projects.\r\n\r\nFrom the documentation of `tempfile.mkdtemp` ([link](https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp)):\r\n> If dir is not None, the file will be created in that directory; otherwise, a default directory is used. The default directory is chosen from a platform-dependent list, but **the user of the application can control the directory location by setting the TMPDIR, TEMP or TMP environment variables.** There is thus no guarantee that the generated filename will have any nice properties, such as not requiring quoting when passed to external commands via os.popen().\r\n\r\nRelated to  #20212",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22886",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22886/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22886/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22886/events",
+    "html_url": "https://github.com/spack/spack/pull/22886",
+    "id": 853992041,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyMDA5NTc3",
+    "number": 22886,
+    "title": "Avoid picking up system cert paths in curl",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-04-08T22:34:58Z",
+    "updated_at": "2021-05-04T09:55:28Z",
+    "closed_at": "2021-05-04T09:55:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22886",
+        "html_url": "https://github.com/spack/spack/pull/22886",
+        "diff_url": "https://github.com/spack/spack/pull/22886.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22886.patch"
+    },
+    "body": "When compiling curl on ubuntu the configure script detects this path:\n\n/etc/ssl/certs/ca-certificates.crt\n\nAnd compiles it into the binary, which doesn't work on other systems when using a buildcache.\n\nOn some cray system I get `curl-config --ca` to be an empty string, so I guess it can't hurt to disable these options.\n",
+    "performed_via_github_app": null
+}

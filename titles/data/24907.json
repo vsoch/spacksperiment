@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24907",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24907/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24907/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24907/events",
+    "html_url": "https://github.com/spack/spack/pull/24907",
+    "id": 945486829,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkwODEwNDIw",
+    "number": 24907,
+    "title": "Allow matching specs with wildcards",
+    "user": {
+        "login": "dylex",
+        "id": 106587,
+        "node_id": "MDQ6VXNlcjEwNjU4Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106587?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dylex",
+        "html_url": "https://github.com/dylex",
+        "followers_url": "https://api.github.com/users/dylex/followers",
+        "following_url": "https://api.github.com/users/dylex/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dylex/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dylex/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dylex/subscriptions",
+        "organizations_url": "https://api.github.com/users/dylex/orgs",
+        "repos_url": "https://api.github.com/users/dylex/repos",
+        "events_url": "https://api.github.com/users/dylex/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dylex/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-15T15:07:53Z",
+    "updated_at": "2021-08-01T17:32:37Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24907",
+        "html_url": "https://github.com/spack/spack/pull/24907",
+        "diff_url": "https://github.com/spack/spack/pull/24907.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24907.patch"
+    },
+    "body": "It would be useful to be able to match specs by glob/wildcard in some contexts.  For example, you could easily create a view with all python packages (`select: py-*`), or change the projection for R packages (`r-*: R/{name}/{version}`), or uninstall `intel-oneapi-*`.\r\n\r\nThis is less a PR and more a feature request with a proof-of-concept implementation. This simple change works fine for the basic case, but doesn't cover namespaces properly and allows `*` some places it probably shouldn't be. It might also be nice to allow full globs (`?[]`).\r\n\r\nIf this seems useful, I'm happy to work this into a full implementation with some guidance, including proper checks, tests, and documenation.",
+    "performed_via_github_app": null
+}

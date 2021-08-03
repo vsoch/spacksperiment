@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25072",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25072/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25072/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25072/events",
+    "html_url": "https://github.com/spack/spack/pull/25072",
+    "id": 951951688,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2MjU1MTAw",
+    "number": 25072,
+    "title": "Axom: add more directories to implicit link exclusion",
+    "user": {
+        "login": "white238",
+        "id": 595301,
+        "node_id": "MDQ6VXNlcjU5NTMwMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/595301?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/white238",
+        "html_url": "https://github.com/white238",
+        "followers_url": "https://api.github.com/users/white238/followers",
+        "following_url": "https://api.github.com/users/white238/following{/other_user}",
+        "gists_url": "https://api.github.com/users/white238/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/white238/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/white238/subscriptions",
+        "organizations_url": "https://api.github.com/users/white238/orgs",
+        "repos_url": "https://api.github.com/users/white238/repos",
+        "events_url": "https://api.github.com/users/white238/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/white238/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-23T23:30:28Z",
+    "updated_at": "2021-07-28T21:01:17Z",
+    "closed_at": "2021-07-28T21:01:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25072",
+        "html_url": "https://github.com/spack/spack/pull/25072",
+        "diff_url": "https://github.com/spack/spack/pull/25072.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25072.patch"
+    },
+    "body": "Fixes issue reported by @adrienbernede in Axom repo:\r\n\r\nhttps://github.com/LLNL/axom/issues/616\r\n\r\nThis passes the battery of Axom TPL tests...",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20481",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20481/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20481/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20481/events",
+    "html_url": "https://github.com/spack/spack/pull/20481",
+    "id": 771087034,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyNzA3MDk5",
+    "number": 20481,
+    "title": "branson: dropped parmetis dependency in 0.82 release",
+    "user": {
+        "login": "kjeverson",
+        "id": 22566672,
+        "node_id": "MDQ6VXNlcjIyNTY2Njcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22566672?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kjeverson",
+        "html_url": "https://github.com/kjeverson",
+        "followers_url": "https://api.github.com/users/kjeverson/followers",
+        "following_url": "https://api.github.com/users/kjeverson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kjeverson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kjeverson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kjeverson/subscriptions",
+        "organizations_url": "https://api.github.com/users/kjeverson/orgs",
+        "repos_url": "https://api.github.com/users/kjeverson/repos",
+        "events_url": "https://api.github.com/users/kjeverson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kjeverson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-18T18:31:07Z",
+    "updated_at": "2020-12-24T23:32:34Z",
+    "closed_at": "2020-12-24T23:32:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20481",
+        "html_url": "https://github.com/spack/spack/pull/20481",
+        "diff_url": "https://github.com/spack/spack/pull/20481.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20481.patch"
+    },
+    "body": "Branson's 0.82 release (latest release) removed the ParMetis dependency entirely ",
+    "performed_via_github_app": null
+}

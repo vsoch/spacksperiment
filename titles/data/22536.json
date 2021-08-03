@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22536",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22536/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22536/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22536/events",
+    "html_url": "https://github.com/spack/spack/pull/22536",
+    "id": 840981080,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjAwNzgzNjY3",
+    "number": 22536,
+    "title": "Add dev variant to cuda to make cuda-gdb useable",
+    "user": {
+        "login": "lorddavidiii",
+        "id": 20240690,
+        "node_id": "MDQ6VXNlcjIwMjQwNjkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20240690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lorddavidiii",
+        "html_url": "https://github.com/lorddavidiii",
+        "followers_url": "https://api.github.com/users/lorddavidiii/followers",
+        "following_url": "https://api.github.com/users/lorddavidiii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lorddavidiii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lorddavidiii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lorddavidiii/subscriptions",
+        "organizations_url": "https://api.github.com/users/lorddavidiii/orgs",
+        "repos_url": "https://api.github.com/users/lorddavidiii/repos",
+        "events_url": "https://api.github.com/users/lorddavidiii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lorddavidiii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-03-25T14:21:38Z",
+    "updated_at": "2021-03-30T18:06:08Z",
+    "closed_at": "2021-03-30T14:57:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22536",
+        "html_url": "https://github.com/spack/spack/pull/22536",
+        "diff_url": "https://github.com/spack/spack/pull/22536.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22536.patch"
+    },
+    "body": "`cuda-gdb` needs `libncurses.so.5`, ( see https://docs.nvidia.com/cuda/cuda-gdb/index.html#common-issues-oss ). \r\nHence I first add a new variant to `ncurses` to build the ABI for version 5 and add this as runtime dependency for a 'dev' variant for `cuda`, which is useful for developing cuda apps.",
+    "performed_via_github_app": null
+}

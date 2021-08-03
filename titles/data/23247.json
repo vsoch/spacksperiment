@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23247",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23247/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23247/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23247/events",
+    "html_url": "https://github.com/spack/spack/pull/23247",
+    "id": 867731176,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIzMzU1NDU0",
+    "number": 23247,
+    "title": "[tau]: Use compiler name instead of basename",
+    "user": {
+        "login": "robertu94",
+        "id": 7604212,
+        "node_id": "MDQ6VXNlcjc2MDQyMTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7604212?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertu94",
+        "html_url": "https://github.com/robertu94",
+        "followers_url": "https://api.github.com/users/robertu94/followers",
+        "following_url": "https://api.github.com/users/robertu94/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertu94/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertu94/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertu94/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertu94/orgs",
+        "repos_url": "https://api.github.com/users/robertu94/repos",
+        "events_url": "https://api.github.com/users/robertu94/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertu94/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-26T13:54:01Z",
+    "updated_at": "2021-04-29T12:49:06Z",
+    "closed_at": "2021-04-28T03:12:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23247",
+        "html_url": "https://github.com/spack/spack/pull/23247",
+        "diff_url": "https://github.com/spack/spack/pull/23247.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23247.patch"
+    },
+    "body": "Previously the tau package got the cxx and cc names from\r\nos.path.basename(self.compiler.cxx), however if the path to the compiler\r\nlooks like \"/usr/bin/g++-10.2.0\" then tau's custom build system doesn't\r\nrecognize it.  What we want instead is something that looks like \"g++\"\r\nwhich is exactly what cxx_names[0] gives us.  We already did this for\r\nfortran, so I am not sure why we didn't do it here.  Not doing this\r\ncauses a build failure when tau tries to use a polyfill (vector.h,\r\niostream.h) that doesn't seem to be packaged with tau.\r\n\r\nAdditionally, tau needs some help finding mpi include directories when\r\nbuilding with MPI, so we provide them.  Unfortunately, we can't just say\r\nthat the compilers are mpicc and mpicxx in the previous fix to have\r\nthese things found automatically.  This is because tau assumes we always\r\nneed the polyfill when the compilers are set to these values which again\r\ncauses a build failure.\r\n\r\nCC maintainers: @eugeneswalker  @khuck  @sameershende  @wspear\r\n@sameershende you did the original change away from `cxx_names[0]`; is there a reason why this was done that I missed?\r\n\r\n",
+    "performed_via_github_app": null
+}

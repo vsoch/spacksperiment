@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19984",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19984/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19984/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19984/events",
+    "html_url": "https://github.com/spack/spack/issues/19984",
+    "id": 746004920,
+    "node_id": "MDU6SXNzdWU3NDYwMDQ5MjA=",
+    "number": 19984,
+    "title": "Wrong indent config.yaml release 0.16.0",
+    "user": {
+        "login": "gdolle",
+        "id": 2409477,
+        "node_id": "MDQ6VXNlcjI0MDk0Nzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2409477?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gdolle",
+        "html_url": "https://github.com/gdolle",
+        "followers_url": "https://api.github.com/users/gdolle/followers",
+        "following_url": "https://api.github.com/users/gdolle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gdolle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gdolle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gdolle/subscriptions",
+        "organizations_url": "https://api.github.com/users/gdolle/orgs",
+        "repos_url": "https://api.github.com/users/gdolle/repos",
+        "events_url": "https://api.github.com/users/gdolle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gdolle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 446623247,
+            "node_id": "MDU6TGFiZWw0NDY2MjMyNDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/unreproducible",
+            "name": "unreproducible",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-11-18T21:09:30Z",
+    "updated_at": "2020-11-19T09:56:11Z",
+    "closed_at": "2020-11-19T09:55:03Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "Hi,\r\n\r\nI got a yaml parser error with the default config.yaml for the last archive release 0.16.0. Coming from this line\r\nhttps://github.com/spack/spack/blob/develop/etc/spack/defaults/config.yaml#L20\r\n\r\nRe-indent seems to fix the problem.\r\n",
+    "performed_via_github_app": null
+}

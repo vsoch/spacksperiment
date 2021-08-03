@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22950",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22950/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22950/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22950/events",
+    "html_url": "https://github.com/spack/spack/pull/22950",
+    "id": 856434797,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE0MDEyODI4",
+    "number": 22950,
+    "title": "VTKM: change preferred version",
+    "user": {
+        "login": "vicentebolea",
+        "id": 939798,
+        "node_id": "MDQ6VXNlcjkzOTc5OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/939798?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vicentebolea",
+        "html_url": "https://github.com/vicentebolea",
+        "followers_url": "https://api.github.com/users/vicentebolea/followers",
+        "following_url": "https://api.github.com/users/vicentebolea/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vicentebolea/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vicentebolea/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vicentebolea/subscriptions",
+        "organizations_url": "https://api.github.com/users/vicentebolea/orgs",
+        "repos_url": "https://api.github.com/users/vicentebolea/repos",
+        "events_url": "https://api.github.com/users/vicentebolea/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vicentebolea/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-04-12T23:30:53Z",
+    "updated_at": "2021-04-13T18:14:25Z",
+    "closed_at": "2021-04-13T18:14:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22950",
+        "html_url": "https://github.com/spack/spack/pull/22950",
+        "diff_url": "https://github.com/spack/spack/pull/22950.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22950.patch"
+    },
+    "body": "In the previous change in the spack package  https://github.com/spack/spack/pull/22855 the preferred version of vtkm was regressed from 1.5.5 -> 1.5.1 to consistently match with the official releases of VTKm, last official release of VTKm was 1.5.1.\r\n\r\nThis change broke some of our users' spack builds which depended in changes added on those unofficial release.\r\n\r\nI am reverting this change since we are soon releasing the final 1.6.0 release and this will be the new preferred release then\r\n\r\n@cyrush",
+    "performed_via_github_app": null
+}

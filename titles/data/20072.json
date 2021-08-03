@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20072",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20072/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20072/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20072/events",
+    "html_url": "https://github.com/spack/spack/pull/20072",
+    "id": 750075017,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI2NzkyMjI0",
+    "number": 20072,
+    "title": "[WIP] Update dynamic import: avoid deprecated method",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1025851999,
+            "node_id": "MDU6TGFiZWwxMDI1ODUxOTk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/imports",
+            "name": "imports",
+            "color": "80f2ad",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2020-11-24T21:17:21Z",
+    "updated_at": "2021-04-28T12:24:40Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20072",
+        "html_url": "https://github.com/spack/spack/pull/20072",
+        "diff_url": "https://github.com/spack/spack/pull/20072.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20072.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/20005 (although I'm not sure why)\r\n\r\n@tgamblin \r\n\r\nUpdate `importlib_importer.load_source` (used for Spack hook modules) to use non-deprecated methods (originally it was using `load_module` which is marked deprecated); fix resulting cyclic imports. This follows the \"recipe\" advertised in the Python documentation for direct import of a source file (https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly).\r\n\r\nI did this as part of trying to figure out the root cause of #20005 and it appears to fix #20005. I'm not yet sure why taking this approach fixes the issue. Although I tried it because https://github.com/spack/spack/issues/20005#issuecomment-731707332 points out that `import spack.hooks.sbang` doesn't work after running `spack.hooks.all_hook_modules` (note this is only true if `import spack.hooks.sbang` has not occurred before the first call to `spack.hooks.all_hook_modules`) so I suspected something was not working properly with our dynamic import implementation.\r\n\r\nNotes:\r\n\r\n* This uncovered some problematic interactions between the `mock_packages` and `mutable_mock_repo` fixture (see https://github.com/spack/spack/pull/20072#issuecomment-806009818). These are not fixed here: all tests (except `test_reuse_installed_packages`) only need to use one or the other.\r\n* (4/6) There are remaining issues when tests successively recreate a `Repo` object: this can lead to discrepancies between `sys.modules` and `Repo._get_pkg_module` (this is in addition to the discrepancies observed in the prior point). This hasn't generally be an issue except that Python's pickling logic specifically checks to make sure that a given class object matches the class obtained from `sys.modules` (i.e. by retrieving the class as an attribute from the associated module)",
+    "performed_via_github_app": null
+}

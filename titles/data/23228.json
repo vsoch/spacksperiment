@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23228",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23228/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23228/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23228/events",
+    "html_url": "https://github.com/spack/spack/issues/23228",
+    "id": 866344408,
+    "node_id": "MDU6SXNzdWU4NjYzNDQ0MDg=",
+    "number": 23228,
+    "title": "LD_LIBRARY_PATH (or equivalent) is not set on Cray platforms",
+    "user": {
+        "login": "carns",
+        "id": 5541937,
+        "node_id": "MDQ6VXNlcjU1NDE5Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5541937?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carns",
+        "html_url": "https://github.com/carns",
+        "followers_url": "https://api.github.com/users/carns/followers",
+        "following_url": "https://api.github.com/users/carns/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carns/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carns/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carns/subscriptions",
+        "organizations_url": "https://api.github.com/users/carns/orgs",
+        "repos_url": "https://api.github.com/users/carns/repos",
+        "events_url": "https://api.github.com/users/carns/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carns/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2426379301,
+            "node_id": "MDU6TGFiZWwyNDI2Mzc5MzAx",
+            "url": "https://api.github.com/repos/spack/spack/labels/alcf",
+            "name": "alcf",
+            "color": "17669e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-04-23T18:36:22Z",
+    "updated_at": "2021-05-04T15:06:54Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "On conventional Linux systems, loading a Spack package will add it's library path to LD_LIBRARY_PATH.\r\n\r\nThis does not happen on Cray systems, however.  This makes it difficult for library developers to document how to use their libraries at run time because the behavior is inconsistent across platforms.\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n# NOTE: This problem is not peculiar to the libunwind package; I am just using it as an example because it builds quickly\r\n#             and has no additional dependencies to satisfy.\r\nspack install libunwind\r\nspack load  -r libunwind\r\nenv |grep LIB |grep unwind\r\n```\r\n\r\n### Error Message\r\n\r\n```\r\n# On a laptop, the last command listed above displays the following or similar:\r\n$ env |grep LIB |grep unwind\r\nLD_LIBRARY_PATH=/home/carns/working/src/spack/opt/spack/linux-ubuntu20.10-skylake/gcc-10.2.0/libunwind-1.5.0-enb3aln2cmueqdz6tuvdxkvj7trmrddl/lib\r\n\r\n# On a Cray system such as Cori (NERSC) or Theta (ALCF) the desired library is not in LD_LIBRARY_PATH\r\n$ env |grep LIB |grep unwind\r\n$\r\n```\r\n\r\nThe core problem is that external (i.e. non-spack, and could use cmake, autotools, gnu make, or any other build system) applications that link against our library packages do not have a consistent way to determine runtime library paths once the application has been built.\r\n\r\n### Information on your system\r\n\r\nAn example packages.yaml as used on Theta can be found at https://github.com/mochi-hpc-experiments/mochi-tests/blob/main/perf-regression/theta/packages.yaml\r\n\r\n### Additional information\r\n\r\n- [ ] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [ ] I have run the failing commands in debug mode and reported the output\r\n\r\n@frankwillmore @roblatham00 ",
+    "performed_via_github_app": null
+}

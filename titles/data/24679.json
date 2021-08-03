@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24679",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24679/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24679/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24679/events",
+    "html_url": "https://github.com/spack/spack/pull/24679",
+    "id": 935977757,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgyODA0MzQ0",
+    "number": 24679,
+    "title": "Revert \"Moving some commits back over from techx/features/windows-support-dev\"",
+    "user": {
+        "login": "BetsyMcPhail",
+        "id": 8505893,
+        "node_id": "MDQ6VXNlcjg1MDU4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8505893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BetsyMcPhail",
+        "html_url": "https://github.com/BetsyMcPhail",
+        "followers_url": "https://api.github.com/users/BetsyMcPhail/followers",
+        "following_url": "https://api.github.com/users/BetsyMcPhail/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BetsyMcPhail/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BetsyMcPhail/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BetsyMcPhail/subscriptions",
+        "organizations_url": "https://api.github.com/users/BetsyMcPhail/orgs",
+        "repos_url": "https://api.github.com/users/BetsyMcPhail/repos",
+        "events_url": "https://api.github.com/users/BetsyMcPhail/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BetsyMcPhail/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3136237419,
+            "node_id": "MDU6TGFiZWwzMTM2MjM3NDE5",
+            "url": "https://api.github.com/repos/spack/spack/labels/architecture",
+            "name": "architecture",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-02T18:21:08Z",
+    "updated_at": "2021-07-02T18:30:52Z",
+    "closed_at": "2021-07-02T18:30:49Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24679",
+        "html_url": "https://github.com/spack/spack/pull/24679",
+        "diff_url": "https://github.com/spack/spack/pull/24679.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24679.patch"
+    },
+    "body": "This reverts commit d97456812dc3205ca95951037586082e26624b37.",
+    "performed_via_github_app": null
+}

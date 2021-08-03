@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24976",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24976/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24976/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24976/events",
+    "html_url": "https://github.com/spack/spack/pull/24976",
+    "id": 948659440,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkzNDcxMTQ4",
+    "number": 24976,
+    "title": "Set pubkey trust to ultimate during `gpg trust`",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-20T13:33:17Z",
+    "updated_at": "2021-07-20T13:53:36Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24976",
+        "html_url": "https://github.com/spack/spack/pull/24976",
+        "diff_url": "https://github.com/spack/spack/pull/24976.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24976.patch"
+    },
+    "body": "Tries to solve the same problem as #24760 without surpressing stderr\r\nfrom gpg commands.\r\n\r\nThis PR makes every imported key trusted in the gpg database.\r\n\r\nThe output is like this:\r\n\r\n```\r\n$ spack gpg trust ./public_key.asc\r\n...\r\ngpg: key 9348461C2515CABE: public key \"name <name@mail.xyz>\" imported\r\ngpg: Total number processed: 1\r\ngpg:               imported: 1\r\ngpg: inserting ownertrust of 6\r\n\r\n$ spack install ...\r\n==> Installing fftw-3.3.9-d5imv7npndvzyb5kgemckbtereianyub\r\ngpg: Signature made Mon Jul 19 14:08:27 2021 UTC\r\ngpg:                using RSA key C0A013FE0ED9F8AEB6D852379348461C2515CABE\r\n...\r\ngpg: Good signature from \"name <name@mail.xyz>\" [ultimate]\r\n```\r\n\r\nNote: I've outlined [here](https://github.com/spack/spack/pull/24760#issuecomment-883183175) that gpg's trust model makes sense, since how\r\ncan we trust a random public key we download from a binary cache?\r\nIf others find that a compelling argument, then we should not move\r\nforward with this PR...\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20944",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20944/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20944/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20944/events",
+    "html_url": "https://github.com/spack/spack/pull/20944",
+    "id": 787076922,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU1ODQ4NzM1",
+    "number": 20944,
+    "title": "sollve: remove sollve package",
+    "user": {
+        "login": "shintaro-iwasaki",
+        "id": 15073003,
+        "node_id": "MDQ6VXNlcjE1MDczMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15073003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shintaro-iwasaki",
+        "html_url": "https://github.com/shintaro-iwasaki",
+        "followers_url": "https://api.github.com/users/shintaro-iwasaki/followers",
+        "following_url": "https://api.github.com/users/shintaro-iwasaki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shintaro-iwasaki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shintaro-iwasaki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shintaro-iwasaki/subscriptions",
+        "organizations_url": "https://api.github.com/users/shintaro-iwasaki/orgs",
+        "repos_url": "https://api.github.com/users/shintaro-iwasaki/repos",
+        "events_url": "https://api.github.com/users/shintaro-iwasaki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shintaro-iwasaki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-01-15T17:49:06Z",
+    "updated_at": "2021-02-10T02:24:23Z",
+    "closed_at": "2021-02-10T02:24:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20944",
+        "html_url": "https://github.com/spack/spack/pull/20944",
+        "diff_url": "https://github.com/spack/spack/pull/20944.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20944.patch"
+    },
+    "body": "This PR removes `sollve`, which is superseded by `llvm-doe` (#20719).\r\n\r\nSince #20767 has not been merged. I would like to remove `sollve`. As far as I checked with users, removal is okay (`llvm-doe` should be used instead).\r\n\r\n(@clementval, @jdoerfert, @Meinersbur, @vlkale)\r\n",
+    "performed_via_github_app": null
+}

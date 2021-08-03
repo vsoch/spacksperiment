@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19861/events",
+    "html_url": "https://github.com/spack/spack/pull/19861",
+    "id": 740883443,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTE5Mjk2MTAy",
+    "number": 19861,
+    "title": "openfoam: remove mplibUSER provisioning",
+    "user": {
+        "login": "olesenm",
+        "id": 76406,
+        "node_id": "MDQ6VXNlcjc2NDA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/76406?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olesenm",
+        "html_url": "https://github.com/olesenm",
+        "followers_url": "https://api.github.com/users/olesenm/followers",
+        "following_url": "https://api.github.com/users/olesenm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olesenm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olesenm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olesenm/subscriptions",
+        "organizations_url": "https://api.github.com/users/olesenm/orgs",
+        "repos_url": "https://api.github.com/users/olesenm/repos",
+        "events_url": "https://api.github.com/users/olesenm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olesenm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-11T16:06:15Z",
+    "updated_at": "2020-11-11T16:38:52Z",
+    "closed_at": "2020-11-11T16:38:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19861",
+        "html_url": "https://github.com/spack/spack/pull/19861",
+        "diff_url": "https://github.com/spack/spack/pull/19861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19861.patch"
+    },
+    "body": "- has never been used by the spack package or by the upstream package",
+    "performed_via_github_app": null
+}

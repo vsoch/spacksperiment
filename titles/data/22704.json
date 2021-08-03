@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22704",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22704/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22704/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22704/events",
+    "html_url": "https://github.com/spack/spack/pull/22704",
+    "id": 847468776,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA2NDgyMTEw",
+    "number": 22704,
+    "title": "CUDA fix : Add CUPTI libraries to LD_LIBRARY_PATH",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2061910540,
+            "node_id": "MDU6TGFiZWwyMDYxOTEwNTQw",
+            "url": "https://api.github.com/repos/spack/spack/labels/run-environment",
+            "name": "run-environment",
+            "color": "57f9c6",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-03-31T22:41:48Z",
+    "updated_at": "2021-04-01T17:57:44Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22704",
+        "html_url": "https://github.com/spack/spack/pull/22704",
+        "diff_url": "https://github.com/spack/spack/pull/22704.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22704.patch"
+    },
+    "body": " * In order to use pc_sampling feature with nvprof\r\n   or ncu, CUPTI must be in LD_LIBRARY_PATH\r\n * This issue was debugged with Max Kartz from NVIDIA",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20783",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20783/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20783/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20783/events",
+    "html_url": "https://github.com/spack/spack/pull/20783",
+    "id": 783712483,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTUzMDI2NTA5",
+    "number": 20783,
+    "title": "rdma-core: require GCC 10+",
+    "user": {
+        "login": "maxim-belkin",
+        "id": 13123663,
+        "node_id": "MDQ6VXNlcjEzMTIzNjYz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13123663?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maxim-belkin",
+        "html_url": "https://github.com/maxim-belkin",
+        "followers_url": "https://api.github.com/users/maxim-belkin/followers",
+        "following_url": "https://api.github.com/users/maxim-belkin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maxim-belkin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maxim-belkin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maxim-belkin/subscriptions",
+        "organizations_url": "https://api.github.com/users/maxim-belkin/orgs",
+        "repos_url": "https://api.github.com/users/maxim-belkin/repos",
+        "events_url": "https://api.github.com/users/maxim-belkin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maxim-belkin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-01-11T21:19:24Z",
+    "updated_at": "2021-02-10T22:28:13Z",
+    "closed_at": "2021-02-10T22:26:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20783",
+        "html_url": "https://github.com/spack/spack/pull/20783",
+        "diff_url": "https://github.com/spack/spack/pull/20783.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20783.patch"
+    },
+    "body": "I believe rdma-core requires gcc 10 because symver attribute was added in GCC 10.\r\nRelated links:\r\n - https://gcc.gnu.org/onlinedocs/gcc-10.2.0/gcc/Common-Function-Attributes.html\r\n - https://github.com/linux-rdma/rdma-core/commit/f03f7022901466b6d6ead01e48a7057fa574cc3b\r\n\r\nNot sure if this should be limited to some specific versions.",
+    "performed_via_github_app": null
+}

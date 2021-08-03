@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22960",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22960/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22960/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22960/events",
+    "html_url": "https://github.com/spack/spack/pull/22960",
+    "id": 856933400,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjE0NDM1Mzk0",
+    "number": 22960,
+    "title": "berkeley-db: making +cxx and +stl default to True",
+    "user": {
+        "login": "mdorier",
+        "id": 598250,
+        "node_id": "MDQ6VXNlcjU5ODI1MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/598250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mdorier",
+        "html_url": "https://github.com/mdorier",
+        "followers_url": "https://api.github.com/users/mdorier/followers",
+        "following_url": "https://api.github.com/users/mdorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mdorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mdorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mdorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/mdorier/orgs",
+        "repos_url": "https://api.github.com/users/mdorier/repos",
+        "events_url": "https://api.github.com/users/mdorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mdorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2879308478,
+            "node_id": "MDU6TGFiZWwyODc5MzA4NDc4",
+            "url": "https://api.github.com/repos/spack/spack/labels/fixed-by-new-concretizer",
+            "name": "fixed-by-new-concretizer",
+            "color": "04EC31",
+            "default": false,
+            "description": "An issue that is resolved by the ASP-based concretizer"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-13T12:54:35Z",
+    "updated_at": "2021-04-15T07:05:41Z",
+    "closed_at": "2021-04-13T13:18:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22960",
+        "html_url": "https://github.com/spack/spack/pull/22960",
+        "diff_url": "https://github.com/spack/spack/pull/22960.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22960.patch"
+    },
+    "body": "This PR makes the +cxx and +stl variants in the berkeley-db package default to True.\r\nSee discussion here https://github.com/spack/spack/pull/22899 for the reason behind this change.",
+    "performed_via_github_app": null
+}

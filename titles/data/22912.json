@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22912",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22912/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22912/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22912/events",
+    "html_url": "https://github.com/spack/spack/pull/22912",
+    "id": 854738549,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNjM0NDIx",
+    "number": 22912,
+    "title": "vtk: fix Python 3.7 version range",
+    "user": {
+        "login": "bryanherman",
+        "id": 63422190,
+        "node_id": "MDQ6VXNlcjYzNDIyMTkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63422190?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bryanherman",
+        "html_url": "https://github.com/bryanherman",
+        "followers_url": "https://api.github.com/users/bryanherman/followers",
+        "following_url": "https://api.github.com/users/bryanherman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bryanherman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bryanherman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bryanherman/subscriptions",
+        "organizations_url": "https://api.github.com/users/bryanherman/orgs",
+        "repos_url": "https://api.github.com/users/bryanherman/repos",
+        "events_url": "https://api.github.com/users/bryanherman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bryanherman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-09T17:54:01Z",
+    "updated_at": "2021-04-16T22:44:51Z",
+    "closed_at": "2021-04-16T22:44:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22912",
+        "html_url": "https://github.com/spack/spack/pull/22912",
+        "diff_url": "https://github.com/spack/spack/pull/22912.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22912.patch"
+    },
+    "body": "When installing VTK version 8, Python was restricted to max 3.7.9. This PR changes this to allow any 3.7 patch version for VTK version 8.",
+    "performed_via_github_app": null
+}

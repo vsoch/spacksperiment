@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24069",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24069/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24069/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24069/events",
+    "html_url": "https://github.com/spack/spack/pull/24069",
+    "id": 908529769,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjU5MjA3OTI1",
+    "number": 24069,
+    "title": "Adding spell checking for docs and spack root",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1483219753,
+            "node_id": "MDU6TGFiZWwxNDgzMjE5NzUz",
+            "url": "https://api.github.com/repos/spack/spack/labels/actions",
+            "name": "actions",
+            "color": "a1bce0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-06-01T17:28:46Z",
+    "updated_at": "2021-07-24T21:44:35Z",
+    "closed_at": "2021-07-24T21:44:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24069",
+        "html_url": "https://github.com/spack/spack/pull/24069",
+        "diff_url": "https://github.com/spack/spack/pull/24069.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24069.patch"
+    },
+    "body": "Spack has a lot of spelling errors! And it's because we're human :laughing: But maybe we can help with some automation?\r\n\r\nI found this tool typos (a rust library) and created a GitHub action for it this weekend. If we run it during CI, it can alert us to spelling errors! I am currently running for the spack docs and spack root, and we can add other spack subfolders when --exclude is supported (see issue https://github.com/crate-ci/typos/issues/269) \r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

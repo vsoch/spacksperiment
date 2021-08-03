@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22785",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22785/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22785/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22785/events",
+    "html_url": "https://github.com/spack/spack/pull/22785",
+    "id": 850690695,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA5MjIyMDU3",
+    "number": 22785,
+    "title": "Update and fix repeatmasker",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-05T21:21:17Z",
+    "updated_at": "2021-04-06T15:22:57Z",
+    "closed_at": "2021-04-06T06:35:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22785",
+        "html_url": "https://github.com/spack/spack/pull/22785",
+        "diff_url": "https://github.com/spack/spack/pull/22785.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22785.patch"
+    },
+    "body": "- version 4.0.7 was not building\r\n- version 4.0.9 was not setting search correctly due to an extra \"return\"\r\n  in config\r\n- added version 4.1.2-p1\r\n- new version needs py-h5py\r\n- new version does not need utf8 patch\r\n- url format changed",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20139",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20139/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20139/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20139/events",
+    "html_url": "https://github.com/spack/spack/pull/20139",
+    "id": 752270822,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI4NjI2ODk5",
+    "number": 20139,
+    "title": "clingo: use python from spec",
+    "user": {
+        "login": "severinstrobl",
+        "id": 10728360,
+        "node_id": "MDQ6VXNlcjEwNzI4MzYw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10728360?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/severinstrobl",
+        "html_url": "https://github.com/severinstrobl",
+        "followers_url": "https://api.github.com/users/severinstrobl/followers",
+        "following_url": "https://api.github.com/users/severinstrobl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/severinstrobl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/severinstrobl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/severinstrobl/subscriptions",
+        "organizations_url": "https://api.github.com/users/severinstrobl/orgs",
+        "repos_url": "https://api.github.com/users/severinstrobl/repos",
+        "events_url": "https://api.github.com/users/severinstrobl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/severinstrobl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-11-27T13:55:28Z",
+    "updated_at": "2021-03-16T11:22:30Z",
+    "closed_at": "2021-03-16T11:22:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20139",
+        "html_url": "https://github.com/spack/spack/pull/20139",
+        "diff_url": "https://github.com/spack/spack/pull/20139.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20139.patch"
+    },
+    "body": "Without explicitly providing the path to the Python executable, clingo is prone to pick up the wrong Python package. As a safeguard, the required version is set explicitly based on the spec.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23546",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23546/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23546/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23546/events",
+    "html_url": "https://github.com/spack/spack/pull/23546",
+    "id": 884746447,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjM4MTA2MDY0",
+    "number": 23546,
+    "title": "Bugfix/Docs: Correct force_autoreconf method syntax",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-10T17:52:19Z",
+    "updated_at": "2021-05-10T19:31:11Z",
+    "closed_at": "2021-05-10T19:31:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23546",
+        "html_url": "https://github.com/spack/spack/pull/23546",
+        "diff_url": "https://github.com/spack/spack/pull/23546.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23546.patch"
+    },
+    "body": "Removed erroneous colon at the end of a `return` statement in the `force_autoreconf` property example.\r\n\r\nSee https://spack.readthedocs.io/en/latest/build_systems/autotoolspackage.html?highlight=def%20autoreconf#force-autoreconf.",
+    "performed_via_github_app": null
+}

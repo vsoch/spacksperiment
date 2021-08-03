@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21119",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21119/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21119/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21119/events",
+    "html_url": "https://github.com/spack/spack/pull/21119",
+    "id": 787808984,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2NDIzNjU1",
+    "number": 21119,
+    "title": "R: add maintainer(s)",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-01-17T22:23:59Z",
+    "updated_at": "2021-02-01T17:33:35Z",
+    "closed_at": "2021-02-01T17:33:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21119",
+        "html_url": "https://github.com/spack/spack/pull/21119",
+        "diff_url": "https://github.com/spack/spack/pull/21119.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21119.patch"
+    },
+    "body": "I talked to @glennpj and he offered to be a maintainer for Spack's R recipe and R packages.\r\n\r\nWould anyone else like to join him? You don't have to be a Spack expert, it just gives us someone to ping when users report build issues or submit PRs related to R or R packages. You can also choose to maintain only a subset of R packages if you don't want to maintain all of them.\r\n\r\nPinging some other known Spack + R users: @HenrikBengtsson @JavierCVilla @codeandkey @odoublewen @hartzell @cosmicexplorer \r\n\r\nSome ideas for future work related to R:\r\n\r\n* Create a `cran` attribute similar to #17587 to simplify homepage/url/list_url\r\n* Add package tests similar to #20023 to test installations\r\n* Create bundle packages for Bioconductor so you can install `bioconductor@3.12`\r\n* Automate adding new packages/versions or integrate with the builtin package manager\r\n\r\nP.S. If you get a chance, take a look at https://github.com/spack/spack/labels/r and see if you can close any of these issues",
+    "performed_via_github_app": null
+}

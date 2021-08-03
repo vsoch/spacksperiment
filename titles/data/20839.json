@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20839",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20839/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20839/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20839/events",
+    "html_url": "https://github.com/spack/spack/pull/20839",
+    "id": 785320256,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU0MzY1ODY0",
+    "number": 20839,
+    "title": "[lcio, sio] Add newest versions and add variants",
+    "user": {
+        "login": "tmadlener",
+        "id": 16774861,
+        "node_id": "MDQ6VXNlcjE2Nzc0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16774861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tmadlener",
+        "html_url": "https://github.com/tmadlener",
+        "followers_url": "https://api.github.com/users/tmadlener/followers",
+        "following_url": "https://api.github.com/users/tmadlener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tmadlener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tmadlener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tmadlener/subscriptions",
+        "organizations_url": "https://api.github.com/users/tmadlener/orgs",
+        "repos_url": "https://api.github.com/users/tmadlener/repos",
+        "events_url": "https://api.github.com/users/tmadlener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tmadlener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-01-13T18:03:02Z",
+    "updated_at": "2021-01-19T08:20:45Z",
+    "closed_at": "2021-01-19T08:20:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20839",
+        "html_url": "https://github.com/spack/spack/pull/20839",
+        "diff_url": "https://github.com/spack/spack/pull/20839.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20839.patch"
+    },
+    "body": "- Adding newest versions for LCIO\r\n- Add the dependency on sio (starting from LCIO version 2.14)\r\n- Add newest versions for sio\r\n- Expose the `SIO_BUILTIN_ZLIB` cmake option via the `builtin_zlib` variant\r\n\r\n@vvolkl @gaede can you have a look if this is OK?",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23128",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23128/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23128/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23128/events",
+    "html_url": "https://github.com/spack/spack/issues/23128",
+    "id": 862591806,
+    "node_id": "MDU6SXNzdWU4NjI1OTE4MDY=",
+    "number": 23128,
+    "title": "Mirror creation fails if `=` or `?` characters are in a patch url",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 512483297,
+            "node_id": "MDU6TGFiZWw1MTI0ODMyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-low",
+            "name": "impact-low",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-20T09:01:22Z",
+    "updated_at": "2021-04-20T09:07:14Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "From https://github.com/spack/spack/pull/22393#discussion_r616222128\r\n> To reiterate, having an active mirror that does not have the patch, but does have the package directory in the local mirror, and the patch source has ? and = characters, causes the patch stage to fail.\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n$ spack mirror list\r\nlocal           file:///opt/packages/gpjohnsn/argon_mirror\r\nspack-public    https://spack-llnl-mirror.s3-us-west-2.amazonaws.com/\r\n\r\n$ spack mirror --destroy --mirror-name local\r\n$ spack mirror create --directory /opt/packages/gpjohnsn/argon_mirror/ ghostscript                             \r\n==> Adding package ghostscript@9.50 to mirror\r\n==> Fetching file:///opt/packages/gpjohnsn/argon_mirror/ghostscript/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b-254532a\r\n\r\n==> Fetching file:///opt/packages/gpjohnsn/argon_mirror/ghostscript/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b-254532a\r\n\r\n==> Fetching file:///opt/packages/gpjohnsn/argon_mirror/ghostscript/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b-254532a\r\n\r\n==> Warning: Error while fetching ghostscript@9.50\r\n  [Errno 2] No such file or directory: '/tmp/gpjohnsn/spack-stage/spack-stage-0dvv_qm3/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b.part' -> '/tmp/gpjohnsn/spack-stage/spack-stage-0dvv_qm3/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b'\r\n==> Successfully updated mirror in file:///opt/packages/gpjohnsn/argon_mirror\r\n  Archive stats:\r\n    1    already present\r\n    0    added\r\n    1    failed to fetch.\r\n==> Error: Failed downloads:\r\nghostscript@9.50\r\n```\r\nRemoving the local mirror makes everything work:\r\n```console\r\n$ spack mirror rm local\r\n==> Removed mirror local.\r\n\r\n$ spack patch ghostscript\r\n==> Using cached archive: /opt/packages/gpjohnsn/spack/var/spack/cache/_source-cache/archive/0f/0f53e89fd647815828fc5171613e860e8535b68f7afbc91bf89aee886769ce89.tar.gz\r\n==> Fetching https://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b\r\n######################################################################## 100.0%\r\n==> Applied patch https://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff_plain;h=41ef9a0bc36b\r\n==> Ran patch() for ghostscript\r\n```\r\n\r\n### Information on your system\r\n\r\nNot relevant, see https://github.com/spack/spack/pull/22393#discussion_r616222128 for details\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output\r\n",
+    "performed_via_github_app": null
+}

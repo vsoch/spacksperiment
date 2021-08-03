@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24821",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24821/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24821/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24821/events",
+    "html_url": "https://github.com/spack/spack/pull/24821",
+    "id": 941340698,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg3MjUwNjg1",
+    "number": 24821,
+    "title": "docs: fix reference to count of system packages",
+    "user": {
+        "login": "Smattr",
+        "id": 203893,
+        "node_id": "MDQ6VXNlcjIwMzg5Mw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/203893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Smattr",
+        "html_url": "https://github.com/Smattr",
+        "followers_url": "https://api.github.com/users/Smattr/followers",
+        "following_url": "https://api.github.com/users/Smattr/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Smattr/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Smattr/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Smattr/subscriptions",
+        "organizations_url": "https://api.github.com/users/Smattr/orgs",
+        "repos_url": "https://api.github.com/users/Smattr/repos",
+        "events_url": "https://api.github.com/users/Smattr/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Smattr/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-10T23:36:29Z",
+    "updated_at": "2021-07-11T18:49:19Z",
+    "closed_at": "2021-07-11T18:49:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24821",
+        "html_url": "https://github.com/spack/spack/pull/24821",
+        "diff_url": "https://github.com/spack/spack/pull/24821.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24821.patch"
+    },
+    "body": "015e29efe105ddd039e8b395e12cf78a3787ebb3 that introduced this section to the\r\ndocumentation said \u201ctwo\u201d here instead of the actual count, three.\r\n9f54cea5c500bb19d2301149460c741e96be1f8b then added a fourth, BLAS/LAPACK.\r\nRather than trying to keep this leading count in sync, this change just replaces\r\nthe wording with something more generic/stable.",
+    "performed_via_github_app": null
+}

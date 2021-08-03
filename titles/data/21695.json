@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21695",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21695/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21695/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21695/events",
+    "html_url": "https://github.com/spack/spack/pull/21695",
+    "id": 809019923,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTczOTU0ODgy",
+    "number": 21695,
+    "title": "py-llvmlite: Specified llvm version for aarch64.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-02-16T06:14:54Z",
+    "updated_at": "2021-02-17T15:07:06Z",
+    "closed_at": "2021-02-17T15:07:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21695",
+        "html_url": "https://github.com/spack/spack/pull/21695",
+        "diff_url": "https://github.com/spack/spack/pull/21695.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21695.patch"
+    },
+    "body": "Corrected the `llvm` version specification according to the following requirements:\r\nhttps://github.com/numba/llvmlite#compatibility\r\n\r\nThis recipe can only be installed with the new concretizer. If not,\r\nhttps://github.com/spack/spack/pull/21229\r\nan error occurs because the `flang` variant added in this PR conflicts in most `llvm` versions.\r\n(...Is it as expected that the `flang` variant is True by default?)",
+    "performed_via_github_app": null
+}

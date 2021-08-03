@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24925",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24925/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24925/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24925/events",
+    "html_url": "https://github.com/spack/spack/pull/24925",
+    "id": 946372319,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxNTU2Mzg0",
+    "number": 24925,
+    "title": "MSVC with Intel Fortran compilers",
+    "user": {
+        "login": "jpopelar",
+        "id": 21320358,
+        "node_id": "MDQ6VXNlcjIxMzIwMzU4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/21320358?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jpopelar",
+        "html_url": "https://github.com/jpopelar",
+        "followers_url": "https://api.github.com/users/jpopelar/followers",
+        "following_url": "https://api.github.com/users/jpopelar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jpopelar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jpopelar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jpopelar/subscriptions",
+        "organizations_url": "https://api.github.com/users/jpopelar/orgs",
+        "repos_url": "https://api.github.com/users/jpopelar/repos",
+        "events_url": "https://api.github.com/users/jpopelar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jpopelar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2021-07-16T15:01:14Z",
+    "updated_at": "2021-07-28T15:56:22Z",
+    "closed_at": "2021-07-27T17:11:28Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24925",
+        "html_url": "https://github.com/spack/spack/pull/24925",
+        "diff_url": "https://github.com/spack/spack/pull/24925.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24925.patch"
+    },
+    "body": "This PR allows for automatic detection and integration of Intel's IFX Fortran compiler into the MSVC compiler blocks written by spack compiler find. If there is more than one version of MSVC installed on a machine and detected by spack, only the first version in compilers.yaml will be written with the IFX executable as fc and f77. We also include support for detecting the IFX compiler on Windows and writing a separate Intel compiler block in compilers.yaml with it",
+    "performed_via_github_app": null
+}

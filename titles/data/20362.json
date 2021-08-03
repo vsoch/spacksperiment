@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20362",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20362/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20362/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20362/events",
+    "html_url": "https://github.com/spack/spack/pull/20362",
+    "id": 765710688,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM5MDQ3Njkw",
+    "number": 20362,
+    "title": "concretizer: remove clingo command-line driver",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-14T00:00:48Z",
+    "updated_at": "2020-12-14T08:35:55Z",
+    "closed_at": "2020-12-14T08:35:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20362",
+        "html_url": "https://github.com/spack/spack/pull/20362",
+        "diff_url": "https://github.com/spack/spack/pull/20362.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20362.patch"
+    },
+    "body": "I was keeping the old `clingo` driver code around in case we had to run using the command line tool instad of through the Python interface.\r\n\r\nSo far, the command line is faster than running through Python, but I'm working on fixing that.  I found that if I do this:\r\n\r\n```python\r\ncontrol = clingo.Control()\r\ncontrol.load(\"concretize.lp\")\r\ncontrol.load(\"hdf5.lp\")       # code from spack solve --show asp hdf5\r\ncontrol.load(\"display.lp\")\r\n\r\ncontrol.ground([(\"base\", [])])\r\ncontrol.solve(...)\r\n```\r\n\r\nIt's just as fast as the command line tool. So we can always generate the code and load it manually if we need to -- we don't need two drivers for clingo. Given that the python interface is also the only way to get unsat cores, I think we pretty much have to use it.\r\n\r\nSo, I'm removing the old command line driver and other unused code. We can dig it up again from the history if it is needed.",
+    "performed_via_github_app": null
+}

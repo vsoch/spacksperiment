@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20141",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20141/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20141/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20141/events",
+    "html_url": "https://github.com/spack/spack/pull/20141",
+    "id": 752275785,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI4NjMwOTEy",
+    "number": 20141,
+    "title": "Openmpi fixes with lustre and legacylaunchers",
+    "user": {
+        "login": "loveshack",
+        "id": 6197299,
+        "node_id": "MDQ6VXNlcjYxOTcyOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6197299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/loveshack",
+        "html_url": "https://github.com/loveshack",
+        "followers_url": "https://api.github.com/users/loveshack/followers",
+        "following_url": "https://api.github.com/users/loveshack/following{/other_user}",
+        "gists_url": "https://api.github.com/users/loveshack/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/loveshack/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/loveshack/subscriptions",
+        "organizations_url": "https://api.github.com/users/loveshack/orgs",
+        "repos_url": "https://api.github.com/users/loveshack/repos",
+        "events_url": "https://api.github.com/users/loveshack/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/loveshack/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-11-27T14:03:34Z",
+    "updated_at": "2021-01-27T12:03:14Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20141",
+        "html_url": "https://github.com/spack/spack/pull/20141",
+        "diff_url": "https://github.com/spack/spack/pull/20141.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20141.patch"
+    },
+    "body": "This addresses #20138 and #20140. Note the comments about getting the configuration right with lustre and the +gpfs default; perhaps there's something I've missed to sort that out.\r\n\r\n@hppritcha",
+    "performed_via_github_app": null
+}

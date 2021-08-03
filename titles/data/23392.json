@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23392",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23392/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23392/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23392/events",
+    "html_url": "https://github.com/spack/spack/pull/23392",
+    "id": 874438703,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI4OTk4NDA0",
+    "number": 23392,
+    "title": "Package silo : zlib system dependency altered as in hdf5",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-03T10:16:18Z",
+    "updated_at": "2021-05-03T14:09:14Z",
+    "closed_at": "2021-05-03T12:57:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23392",
+        "html_url": "https://github.com/spack/spack/pull/23392",
+        "diff_url": "https://github.com/spack/spack/pull/23392.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23392.patch"
+    },
+    "body": "Alike in hdf5 and PR #21900, silo's dependency to zlib in case of a system zlib is altered.\r\nTo be noted that on Ubuntu, the system zlib (on /usr/lib/x86_64-linux-gnu) was improperly provided to Silo (on /usr/lib) leading to compilation failure.\r\nI did not report an issue for that.",
+    "performed_via_github_app": null
+}

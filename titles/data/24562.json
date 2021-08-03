@@ -1,0 +1,237 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24562",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24562/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24562/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24562/events",
+    "html_url": "https://github.com/spack/spack/pull/24562",
+    "id": 931494593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc4OTgxOTIz",
+    "number": 24562,
+    "title": "MFEM 4.2 compiles with Hypre up to 2.20, develop is OK.",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430621,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2MjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/flake8",
+            "name": "flake8",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1491154932,
+            "node_id": "MDU6TGFiZWwxNDkxMTU0OTMy",
+            "url": "https://api.github.com/repos/spack/spack/labels/gitlab",
+            "name": "gitlab",
+            "color": "f7b094",
+            "default": false,
+            "description": "Issues related to gitlab integration"
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1483227126,
+            "node_id": "MDU6TGFiZWwxNDgzMjI3MTI2",
+            "url": "https://api.github.com/repos/spack/spack/labels/workflow",
+            "name": "workflow",
+            "color": "4a47ff",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "assignees": [
+        {
+            "login": "alalazo",
+            "id": 4199709,
+            "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/alalazo",
+            "html_url": "https://github.com/alalazo",
+            "followers_url": "https://api.github.com/users/alalazo/followers",
+            "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+            "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+            "organizations_url": "https://api.github.com/users/alalazo/orgs",
+            "repos_url": "https://api.github.com/users/alalazo/repos",
+            "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/alalazo/received_events",
+            "type": "User",
+            "site_admin": false
+        }
+    ],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-06-28T12:01:18Z",
+    "updated_at": "2021-06-30T09:37:54Z",
+    "closed_at": "2021-06-30T09:37:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24562",
+        "html_url": "https://github.com/spack/spack/pull/24562",
+        "diff_url": "https://github.com/spack/spack/pull/24562.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24562.patch"
+    },
+    "body": "As reported by @alalazo in https://github.com/spack/spack/pull/24445#pullrequestreview-693701411\r\nMFEM 4.2 does not compile with recent Hypre releases 2.21 or 2.22.\r\nBut MFEM git master is OK with these two Hypre releases, introducing a proper hypre test around the 'hypre_ParcsrAdd' call.",
+    "performed_via_github_app": null
+}

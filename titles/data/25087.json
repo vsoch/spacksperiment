@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25087",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25087/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25087/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25087/events",
+    "html_url": "https://github.com/spack/spack/pull/25087",
+    "id": 952781454,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2OTI0MjYz",
+    "number": 25087,
+    "title": "[yoda] Only depend on root if explicitly desired",
+    "user": {
+        "login": "tmadlener",
+        "id": 16774861,
+        "node_id": "MDQ6VXNlcjE2Nzc0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16774861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tmadlener",
+        "html_url": "https://github.com/tmadlener",
+        "followers_url": "https://api.github.com/users/tmadlener/followers",
+        "following_url": "https://api.github.com/users/tmadlener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tmadlener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tmadlener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tmadlener/subscriptions",
+        "organizations_url": "https://api.github.com/users/tmadlener/orgs",
+        "repos_url": "https://api.github.com/users/tmadlener/repos",
+        "events_url": "https://api.github.com/users/tmadlener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tmadlener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-26T11:04:54Z",
+    "updated_at": "2021-07-26T11:50:01Z",
+    "closed_at": "2021-07-26T11:50:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25087",
+        "html_url": "https://github.com/spack/spack/pull/25087",
+        "diff_url": "https://github.com/spack/spack/pull/25087.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25087.patch"
+    },
+    "body": "root has to be explicitly disabled if variant `root` is not activated, otherwise configuration will fail. Also fixing a small issue with defining the config args for boost.",
+    "performed_via_github_app": null
+}

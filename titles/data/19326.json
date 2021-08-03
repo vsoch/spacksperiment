@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19326",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19326/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19326/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19326/events",
+    "html_url": "https://github.com/spack/spack/pull/19326",
+    "id": 722548593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA0MjgwMDIx",
+    "number": 19326,
+    "title": "mfem: Fix support for SUNDIALS and PETSc features",
+    "user": {
+        "login": "joshessman-llnl",
+        "id": 68349992,
+        "node_id": "MDQ6VXNlcjY4MzQ5OTky",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68349992?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joshessman-llnl",
+        "html_url": "https://github.com/joshessman-llnl",
+        "followers_url": "https://api.github.com/users/joshessman-llnl/followers",
+        "following_url": "https://api.github.com/users/joshessman-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joshessman-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joshessman-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joshessman-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/joshessman-llnl/orgs",
+        "repos_url": "https://api.github.com/users/joshessman-llnl/repos",
+        "events_url": "https://api.github.com/users/joshessman-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joshessman-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-10-15T17:59:07Z",
+    "updated_at": "2020-10-20T21:26:35Z",
+    "closed_at": "2020-10-20T21:26:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19326",
+        "html_url": "https://github.com/spack/spack/pull/19326",
+        "diff_url": "https://github.com/spack/spack/pull/19326.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19326.patch"
+    },
+    "body": "PETSc_DIR is specified so the Makefile logic can detect the proper link flags, see https://github.com/mfem/mfem/issues/1755\r\n\r\nCVODES (not CVODE) is the required SUNDIALS component, and `nvecmpiplusx` is now required as of https://github.com/mfem/mfem/commit/e70cf4c5d6dab24f64c3a41affe4e974c6c9820b",
+    "performed_via_github_app": null
+}

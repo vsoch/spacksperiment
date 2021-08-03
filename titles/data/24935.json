@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24935",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24935/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24935/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24935/events",
+    "html_url": "https://github.com/spack/spack/pull/24935",
+    "id": 946528194,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxNjg2NDY4",
+    "number": 24935,
+    "title": "Add Julia v1.6.2",
+    "user": {
+        "login": "alecbcs",
+        "id": 19558067,
+        "node_id": "MDQ6VXNlcjE5NTU4MDY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19558067?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alecbcs",
+        "html_url": "https://github.com/alecbcs",
+        "followers_url": "https://api.github.com/users/alecbcs/followers",
+        "following_url": "https://api.github.com/users/alecbcs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alecbcs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alecbcs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alecbcs/subscriptions",
+        "organizations_url": "https://api.github.com/users/alecbcs/orgs",
+        "repos_url": "https://api.github.com/users/alecbcs/repos",
+        "events_url": "https://api.github.com/users/alecbcs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alecbcs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-07-16T19:00:50Z",
+    "updated_at": "2021-07-23T21:00:57Z",
+    "closed_at": "2021-07-20T04:08:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24935",
+        "html_url": "https://github.com/spack/spack/pull/24935",
+        "diff_url": "https://github.com/spack/spack/pull/24935.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24935.patch"
+    },
+    "body": "Update Julia to 1.6.2 which is the second patch release of the 1.6 series.\r\n\r\n**Changelog:**\r\n- Fix Rational{T} constructor for abstract T.\r\n- fix threadcall for new ccall lookup strategy.\r\n\r\nFull changelog can be found [here](https://github.com/JuliaLang/julia/compare/v1.6.1...v1.6.2).\r\n\r\n**Test Plan:**\r\nJulia 1.6.2 built successfully within the Autamus pipeline [here](https://github.com/autamus/registry/runs/3070414423).",
+    "performed_via_github_app": null
+}

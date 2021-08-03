@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24794",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24794/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24794/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24794/events",
+    "html_url": "https://github.com/spack/spack/pull/24794",
+    "id": 940249536,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg2MzQ5NTM0",
+    "number": 24794,
+    "title": "locks: only open lockfiles once instead of for every lock held",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-08T21:55:10Z",
+    "updated_at": "2021-07-08T21:55:44Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24794",
+        "html_url": "https://github.com/spack/spack/pull/24794",
+        "diff_url": "https://github.com/spack/spack/pull/24794.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24794.patch"
+    },
+    "body": "This is WIP to fix #23891, which @adamjstewart reported.\r\n\r\nThe issue is that we hit the OS limits for filehandles when doing installs of large environments.  My hunch on this is because `installer.py` maintains read locks on everything it needs to install (so that we don't remove the dependencies of things we're installing), and we currently open a file every time we take a lock.  Really, Spack should be able to have a single open filehandle per lockfile, even if multiple byte ranges are held.\r\n\r\nThis isn't working but I figured I'd get a WIP PR in case anyone wants to look at it.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24442",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24442/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24442/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24442/events",
+    "html_url": "https://github.com/spack/spack/pull/24442",
+    "id": 925797080,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc0MTkzNzk4",
+    "number": 24442,
+    "title": "MAGMA: add patch to build with CUDA sm_37",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-21T04:01:02Z",
+    "updated_at": "2021-06-22T12:23:10Z",
+    "closed_at": "2021-06-22T03:18:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24442",
+        "html_url": "https://github.com/spack/spack/pull/24442",
+        "diff_url": "https://github.com/spack/spack/pull/24442.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24442.patch"
+    },
+    "body": "Same patch as my previous PR but without the new version. Successfully builds on Ubuntu 18.04 with GCC 7.5.0 and CUDA 10.1.243.\r\n\r\n@G-Ragghianti @luszczek @stomov ",
+    "performed_via_github_app": null
+}

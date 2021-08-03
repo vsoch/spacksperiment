@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20378",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20378/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20378/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20378/events",
+    "html_url": "https://github.com/spack/spack/pull/20378",
+    "id": 766836477,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM5NzM4NzQ3",
+    "number": 20378,
+    "title": "OpenCV: add new versions, variants",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-14T19:11:44Z",
+    "updated_at": "2020-12-17T16:37:24Z",
+    "closed_at": "2020-12-17T16:06:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20378",
+        "html_url": "https://github.com/spack/spack/pull/20378",
+        "diff_url": "https://github.com/spack/spack/pull/20378.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20378.patch"
+    },
+    "body": "Both 4.5.0 and 3.4.12 successfully build for me on macOS 10.15.7 with Apple Clang 12.0.0.\r\n\r\nThis PR includes the following changes:\r\n\r\n- [x] Simplified description\r\n- [x] Updated homepage and URL\r\n- [x] Added new versions 4.5.0 and 3.4.12\r\n- [x] Removed `-openvino` versions (not sure what these are, do we need these?)\r\n- [x] Added myself as a maintainer (I maintain all the other ML packages anyway)\r\n- [x] Added new variant `+imgcodecs`\r\n- [x] Fixed `+contrib` for several versions\r\n- [x] Added a conflict for `+calib3d~flann`\r\n\r\nThe conflict is needed because if you build `+calib3d~flann` it silently disables `+calib3d` with the following warning msg:\r\n```\r\nModule opencv_calib3d disabled because opencv_flann dependency can't be resolved!\r\n```\r\n\r\nFuture work that still needs to be done:\r\n\r\n1. It looks like there are several other modules that don't yet have variants. We need to add variants for these and figure out which versions they are valid for\r\n2. There may be other variants that are missing conflicts. Is there a way to crash instead of silently fail?\r\n3. Need to figure out a better way to handle `+contrib` so it doesn't get forgotten. Can we loop through all versions of the package?\r\n\r\n@bvanessen can you review? Those future work suggestions are just suggestions, they probably won't happen in this PR but feel free to take a stab at them if you want in a follow-up PR.",
+    "performed_via_github_app": null
+}

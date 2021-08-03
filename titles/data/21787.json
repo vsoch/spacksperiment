@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21787",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21787/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21787/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21787/events",
+    "html_url": "https://github.com/spack/spack/pull/21787",
+    "id": 811702529,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc2MTg4Nzc0",
+    "number": 21787,
+    "title": "WarpX: CMake",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-02-19T05:23:08Z",
+    "updated_at": "2021-02-25T19:09:04Z",
+    "closed_at": "2021-02-25T18:54:53Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21787",
+        "html_url": "https://github.com/spack/spack/pull/21787",
+        "diff_url": "https://github.com/spack/spack/pull/21787.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21787.patch"
+    },
+    "body": "This transitions the WarpX package to use its new CMake build logic.\r\n\r\nIntroduces packages:\r\n- `py-picmistandard`: https://github.com/picmi-standard/picmi\r\n- `py-warpx` for the PICMI python bindings of WarpX\r\n\r\nAccording to my tests, this should also fix the installation errors that we currently observe in nightly setup tests: https://dev.azure.com/ECP-WarpX/WarpX/_build/results?buildId=1529&view=results\r\n\r\nRequires #21770 to build by workaround-free with RZ geometry.\r\n\r\nI'll start introducing fixed versions after the next major release, so long we build from `development`.\r\n\r\ncc @dpgrote @remilehe",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24952",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24952/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24952/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24952/events",
+    "html_url": "https://github.com/spack/spack/pull/24952",
+    "id": 947407415,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkyMzkyOTUx",
+    "number": 24952,
+    "title": "Fix S3 urlparse scheme error and add test",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-19T08:31:15Z",
+    "updated_at": "2021-07-19T11:39:20Z",
+    "closed_at": "2021-07-19T11:39:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24952",
+        "html_url": "https://github.com/spack/spack/pull/24952",
+        "diff_url": "https://github.com/spack/spack/pull/24952.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24952.patch"
+    },
+    "body": "This is fixing the same error as https://github.com/spack/spack/pull/24686 but for buildcache:\n\n```\n$ spack buildcache check ...\n==> Error: 'NoneType' object has no attribute 'replace'\n```\n",
+    "performed_via_github_app": null
+}

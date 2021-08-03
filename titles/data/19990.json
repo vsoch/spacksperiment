@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19990",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19990/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19990/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19990/events",
+    "html_url": "https://github.com/spack/spack/pull/19990",
+    "id": 746118059,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIzNTcyMzU3",
+    "number": 19990,
+    "title": "mfem: Add support for AmgX, fix to version extensions",
+    "user": {
+        "login": "joshessman-llnl",
+        "id": 68349992,
+        "node_id": "MDQ6VXNlcjY4MzQ5OTky",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68349992?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joshessman-llnl",
+        "html_url": "https://github.com/joshessman-llnl",
+        "followers_url": "https://api.github.com/users/joshessman-llnl/followers",
+        "following_url": "https://api.github.com/users/joshessman-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joshessman-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joshessman-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joshessman-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/joshessman-llnl/orgs",
+        "repos_url": "https://api.github.com/users/joshessman-llnl/repos",
+        "events_url": "https://api.github.com/users/joshessman-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joshessman-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-11-18T23:22:21Z",
+    "updated_at": "2020-11-23T18:21:33Z",
+    "closed_at": "2020-11-19T20:03:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19990",
+        "html_url": "https://github.com/spack/spack/pull/19990",
+        "diff_url": "https://github.com/spack/spack/pull/19990.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19990.patch"
+    },
+    "body": "This PR adds support for AmgX (added in MFEM 4.2).\r\n\r\nIt also removes the unnecessary leading `.` in the `extension` argument on the versions.  This results in the downloaded file being named `mfem-4.2.0..tar.gz` as opposed to `mfem-4.2.0.tar.gz`.",
+    "performed_via_github_app": null
+}

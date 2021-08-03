@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22328",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22328/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22328/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22328/events",
+    "html_url": "https://github.com/spack/spack/pull/22328",
+    "id": 833047845,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk0MTEyMTYy",
+    "number": 22328,
+    "title": "fix weird failure in variant values",
+    "user": {
+        "login": "cosmicexplorer",
+        "id": 1305167,
+        "node_id": "MDQ6VXNlcjEzMDUxNjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305167?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cosmicexplorer",
+        "html_url": "https://github.com/cosmicexplorer",
+        "followers_url": "https://api.github.com/users/cosmicexplorer/followers",
+        "following_url": "https://api.github.com/users/cosmicexplorer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cosmicexplorer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cosmicexplorer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cosmicexplorer/subscriptions",
+        "organizations_url": "https://api.github.com/users/cosmicexplorer/orgs",
+        "repos_url": "https://api.github.com/users/cosmicexplorer/repos",
+        "events_url": "https://api.github.com/users/cosmicexplorer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cosmicexplorer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-03-16T17:37:43Z",
+    "updated_at": "2021-03-16T23:04:52Z",
+    "closed_at": "2021-03-16T23:04:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22328",
+        "html_url": "https://github.com/spack/spack/pull/22328",
+        "diff_url": "https://github.com/spack/spack/pull/22328.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22328.patch"
+    },
+    "body": "This failure occurs on python 3, and occurs when a value is `None`, which gets stringified, instead of tuplified. We may be able to use mypy types in a followup PR to help ensure that we return `Tuple[Hashable, ...]` instead of possibly just `None`.",
+    "performed_via_github_app": null
+}

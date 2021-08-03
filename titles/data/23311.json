@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23311",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23311/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23311/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23311/events",
+    "html_url": "https://github.com/spack/spack/pull/23311",
+    "id": 869943308,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI1MjIyNjMw",
+    "number": 23311,
+    "title": "archspec: updated external dependency",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-28T13:22:20Z",
+    "updated_at": "2021-05-04T06:53:16Z",
+    "closed_at": "2021-05-04T05:27:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23311",
+        "html_url": "https://github.com/spack/spack/pull/23311",
+        "diff_url": "https://github.com/spack/spack/pull/23311.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23311.patch"
+    },
+    "body": "fixes #22088\r\n\r\nModifications:\r\n- [x] Added initial support for Apple M1\r\n- [x] Extended support for zen3 with more compiler flags",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19162",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19162/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19162/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19162/events",
+    "html_url": "https://github.com/spack/spack/pull/19162",
+    "id": 715393790,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk4MzEwNTA5",
+    "number": 19162,
+    "title": "spack: add nvidia compiler support",
+    "user": {
+        "login": "Nischay-Pro",
+        "id": 15060256,
+        "node_id": "MDQ6VXNlcjE1MDYwMjU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15060256?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Nischay-Pro",
+        "html_url": "https://github.com/Nischay-Pro",
+        "followers_url": "https://api.github.com/users/Nischay-Pro/followers",
+        "following_url": "https://api.github.com/users/Nischay-Pro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Nischay-Pro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Nischay-Pro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Nischay-Pro/subscriptions",
+        "organizations_url": "https://api.github.com/users/Nischay-Pro/orgs",
+        "repos_url": "https://api.github.com/users/Nischay-Pro/repos",
+        "events_url": "https://api.github.com/users/Nischay-Pro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Nischay-Pro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2431484299,
+            "node_id": "MDU6TGFiZWwyNDMxNDg0Mjk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/nvhpc",
+            "name": "nvhpc",
+            "color": "e0641d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-10-06T06:44:57Z",
+    "updated_at": "2020-10-17T05:08:56Z",
+    "closed_at": "2020-10-16T21:04:28Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19162",
+        "html_url": "https://github.com/spack/spack/pull/19162",
+        "diff_url": "https://github.com/spack/spack/pull/19162.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19162.patch"
+    },
+    "body": "This adds preliminary support to detection of nvidia compilers provided by nvidia hpc sdk. Possible solution to #17930 ",
+    "performed_via_github_app": null
+}

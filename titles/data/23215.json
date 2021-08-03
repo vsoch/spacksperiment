@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23215",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23215/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23215/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23215/events",
+    "html_url": "https://github.com/spack/spack/pull/23215",
+    "id": 865631000,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjIxNjgzNjQw",
+    "number": 23215,
+    "title": "Docs: Updated copyrights in files still using 2020 as ending year",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-04-23T00:34:18Z",
+    "updated_at": "2021-04-23T05:23:10Z",
+    "closed_at": "2021-04-23T05:23:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23215",
+        "html_url": "https://github.com/spack/spack/pull/23215",
+        "diff_url": "https://github.com/spack/spack/pull/23215.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23215.patch"
+    },
+    "body": "This issue first came to my attention when practicing for the ECPAM's `package creation` tutorial section when skeletons were being created with `Copyright 2013-2020`.\r\n\r\nThis PR should update all of the files that (still) have last year as the ending year.",
+    "performed_via_github_app": null
+}

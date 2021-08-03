@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19453",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19453/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19453/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19453/events",
+    "html_url": "https://github.com/spack/spack/pull/19453",
+    "id": 726870238,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTA3ODY5NDEw",
+    "number": 19453,
+    "title": "unzip: fix build for XCode 12 on macosx",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-10-21T21:17:55Z",
+    "updated_at": "2020-10-21T22:32:28Z",
+    "closed_at": "2020-10-21T22:31:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19453",
+        "html_url": "https://github.com/spack/spack/pull/19453",
+        "diff_url": "https://github.com/spack/spack/pull/19453.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19453.patch"
+    },
+    "body": "- [x] `build_targets` should use `macosx` on macOS, `generic` on other systems\r\n- [x] enable `LARGE_FILE_SUPPORT` by default",
+    "performed_via_github_app": null
+}

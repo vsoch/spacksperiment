@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24689",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24689/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24689/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24689/events",
+    "html_url": "https://github.com/spack/spack/pull/24689",
+    "id": 936325087,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgzMDc2MzE4",
+    "number": 24689,
+    "title": "bugfix: `spack config edit` should work in a bad environment",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-03T20:50:20Z",
+    "updated_at": "2021-07-04T05:48:38Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24689",
+        "html_url": "https://github.com/spack/spack/pull/24689",
+        "diff_url": "https://github.com/spack/spack/pull/24689.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24689.patch"
+    },
+    "body": "Fixes #2468. (this may have been fixed already but it's related)\r\n\r\nThis PR fixes a number of bugs (one per commit -- this should be rebased not squashed) to get to the main one:\r\n\r\n1. `spack --debug` wasn't in the right place and wouldn't take effect for things at the beginning of `main()`.\r\n2. Config errors had gotten really verbose -- they print a full stack trace and don't just show the user where the error is like they used to.\r\n3. `spack config get <section>` and `spack config --scope <scope> edit <section>` weren't working in environments. `spack config get <section>  should return the combined configuration for that section (including anything from `spack.yaml`), even in an environment, and `spack config edit` should respect the scope argument.\r\n4. If you don't format `spack.yaml` correctly, `spack config edit` still fails and you have to edit your `spack.yaml` manually. Spack should be smarter than this.\r\n\r\n- [x] Rework `_main()` and add some notes for maintainers on where things need to go for configuration to work properly.\r\n- [x] Move config setup to *after* command-line parsing is done.\r\n- [x] Add some code to `_main()` to defer `ConfigFormatError` when loading the environment, until we know what command is being run.  \r\n- [x] Make `spack config edit` use `SPACK_ENV` instead of the config scope object to find `spack.yaml`, so it can work even if the environment is bad.\r\n- [x] Reorder conditions in `cmd/config.py` to fix environment issues.\r\n- [ ] Tests",
+    "performed_via_github_app": null
+}

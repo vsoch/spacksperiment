@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22370",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22370/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22370/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22370/events",
+    "html_url": "https://github.com/spack/spack/pull/22370",
+    "id": 834304746,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk1MTQ5Mzk2",
+    "number": 22370,
+    "title": "Add udunits2 v2.2.28 and target the new UCAR repository",
+    "user": {
+        "login": "rhoneyager",
+        "id": 7389890,
+        "node_id": "MDQ6VXNlcjczODk4OTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7389890?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rhoneyager",
+        "html_url": "https://github.com/rhoneyager",
+        "followers_url": "https://api.github.com/users/rhoneyager/followers",
+        "following_url": "https://api.github.com/users/rhoneyager/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rhoneyager/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rhoneyager/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rhoneyager/subscriptions",
+        "organizations_url": "https://api.github.com/users/rhoneyager/orgs",
+        "repos_url": "https://api.github.com/users/rhoneyager/repos",
+        "events_url": "https://api.github.com/users/rhoneyager/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rhoneyager/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-18T01:26:04Z",
+    "updated_at": "2021-03-18T16:12:56Z",
+    "closed_at": "2021-03-18T12:47:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22370",
+        "html_url": "https://github.com/spack/spack/pull/22370",
+        "diff_url": "https://github.com/spack/spack/pull/22370.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22370.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/22365. Older package versions are accessible via the Spack mirrors. Unidata will keep historic packages on their website from now on.",
+    "performed_via_github_app": null
+}

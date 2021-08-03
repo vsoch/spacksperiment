@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24867",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24867/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24867/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24867/events",
+    "html_url": "https://github.com/spack/spack/pull/24867",
+    "id": 943868186,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg5NDM2Nzc1",
+    "number": 24867,
+    "title": "Fix namespace in exception constructor",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3092446637,
+            "node_id": "MDU6TGFiZWwzMDkyNDQ2NjM3",
+            "url": "https://api.github.com/repos/spack/spack/labels/core",
+            "name": "core",
+            "color": "215A80",
+            "default": false,
+            "description": "PR affects Spack core functionality"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-13T22:16:08Z",
+    "updated_at": "2021-07-14T20:17:49Z",
+    "closed_at": "2021-07-14T18:58:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24867",
+        "html_url": "https://github.com/spack/spack/pull/24867",
+        "diff_url": "https://github.com/spack/spack/pull/24867.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24867.patch"
+    },
+    "body": "`repo_for_pkg` accepts a `spec` argument that may be a spec or a string. The name and namespace are computed from that string or spec, and used throughout the method.\r\n\r\nThe exception raised when the repo is not found includes the namespace in its constructor. This PR fixes it to use `namespace` instead of `spec.namespace`, since the latter may not be a valid attribute if `spec` is a string.",
+    "performed_via_github_app": null
+}

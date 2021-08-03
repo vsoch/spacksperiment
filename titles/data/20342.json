@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20342",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20342/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20342/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20342/events",
+    "html_url": "https://github.com/spack/spack/pull/20342",
+    "id": 762761416,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM3Mjc2MzE1",
+    "number": 20342,
+    "title": "WarpX: PSATD on",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-11T18:54:08Z",
+    "updated_at": "2021-04-02T19:01:05Z",
+    "closed_at": "2020-12-14T09:15:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20342",
+        "html_url": "https://github.com/spack/spack/pull/20342",
+        "diff_url": "https://github.com/spack/spack/pull/20342.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20342.patch"
+    },
+    "body": "Enabling PSATD is [not mutually exclusive with other runtime options anymore](https://github.com/ECP-WarpX/WarpX/pull/1300/), so we can always compile with support for it to ease usability.\r\n\r\ncc @dpgrote @MaxThevenet @RemiLehe",
+    "performed_via_github_app": null
+}

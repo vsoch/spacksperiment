@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20163",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20163/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20163/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20163/events",
+    "html_url": "https://github.com/spack/spack/pull/20163",
+    "id": 753064429,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI5MjE1ODI3",
+    "number": 20163,
+    "title": "Add libs properties to a few packages",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-30T00:55:45Z",
+    "updated_at": "2020-11-30T13:52:31Z",
+    "closed_at": "2020-11-30T07:34:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20163",
+        "html_url": "https://github.com/spack/spack/pull/20163",
+        "diff_url": "https://github.com/spack/spack/pull/20163.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20163.patch"
+    },
+    "body": "The following packages weren't detected because the default glob is case-sensitive:\r\n\r\n* libxi\r\n* libxrandr\r\n* libxxf86vm\r\n\r\nThe following packages weren't detected on Ubuntu because the libraries are found in `/usr/lib/x86_64-linux-gnu`:\r\n\r\n* opengl\r\n* openglu\r\n\r\nWith this PR, the `spec['foo'].libs` property works as expected for all of these packages.",
+    "performed_via_github_app": null
+}

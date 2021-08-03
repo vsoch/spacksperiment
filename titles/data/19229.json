@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19229",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19229/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19229/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19229/events",
+    "html_url": "https://github.com/spack/spack/pull/19229",
+    "id": 717221158,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk5ODIwNDYy",
+    "number": 19229,
+    "title": "eigen: add a patch for 3.3.8",
+    "user": {
+        "login": "melven",
+        "id": 3668878,
+        "node_id": "MDQ6VXNlcjM2Njg4Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3668878?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/melven",
+        "html_url": "https://github.com/melven",
+        "followers_url": "https://api.github.com/users/melven/followers",
+        "following_url": "https://api.github.com/users/melven/following{/other_user}",
+        "gists_url": "https://api.github.com/users/melven/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/melven/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/melven/subscriptions",
+        "organizations_url": "https://api.github.com/users/melven/orgs",
+        "repos_url": "https://api.github.com/users/melven/repos",
+        "events_url": "https://api.github.com/users/melven/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/melven/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-08T10:29:42Z",
+    "updated_at": "2020-10-11T01:09:22Z",
+    "closed_at": "2020-10-11T01:09:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19229",
+        "html_url": "https://github.com/spack/spack/pull/19229",
+        "diff_url": "https://github.com/spack/spack/pull/19229.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19229.patch"
+    },
+    "body": "Adds a patch to a regression in the new eigen 3.3.8 release, see https://gitlab.com/libeigen/eigen/-/issues/2011.\r\n\r\nWithout the patch, some other packages (that depend on eigen) fail to compile (e.g. opencv).",
+    "performed_via_github_app": null
+}

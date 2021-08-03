@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25012",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25012/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25012/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25012/events",
+    "html_url": "https://github.com/spack/spack/pull/25012",
+    "id": 949637965,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njk0MzEyMzg0",
+    "number": 25012,
+    "title": "Fix bootstrap from sources",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2542559486,
+            "node_id": "MDU6TGFiZWwyNTQyNTU5NDg2",
+            "url": "https://api.github.com/repos/spack/spack/labels/bootstrap",
+            "name": "bootstrap",
+            "color": "743ec4",
+            "default": false,
+            "description": "Issues occurring while spack builds its own dependencies."
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 876167697,
+            "node_id": "MDU6TGFiZWw4NzYxNjc2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hotfix",
+            "name": "hotfix",
+            "color": "a54727",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-07-21T12:06:32Z",
+    "updated_at": "2021-07-21T14:50:54Z",
+    "closed_at": "2021-07-21T14:22:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25012",
+        "html_url": "https://github.com/spack/spack/pull/25012",
+        "diff_url": "https://github.com/spack/spack/pull/25012.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25012.patch"
+    },
+    "body": "fixes #25011\r\n\r\n#24095 introduced a couple of bugs, which are fixed here:\r\n\r\n1. The module path is computed incorrectly for bootstrapped clingo\r\n2. We remove too many paths for `sys.path` in case of failures",
+    "performed_via_github_app": null
+}

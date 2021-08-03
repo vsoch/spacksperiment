@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21219",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21219/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21219/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21219/events",
+    "html_url": "https://github.com/spack/spack/pull/21219",
+    "id": 792039840,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU5OTkyODI3",
+    "number": 21219,
+    "title": "petsc: add a +mkl-pardiso variant",
+    "user": {
+        "login": "lpoirel",
+        "id": 4563513,
+        "node_id": "MDQ6VXNlcjQ1NjM1MTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4563513?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lpoirel",
+        "html_url": "https://github.com/lpoirel",
+        "followers_url": "https://api.github.com/users/lpoirel/followers",
+        "following_url": "https://api.github.com/users/lpoirel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lpoirel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lpoirel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lpoirel/subscriptions",
+        "organizations_url": "https://api.github.com/users/lpoirel/orgs",
+        "repos_url": "https://api.github.com/users/lpoirel/repos",
+        "events_url": "https://api.github.com/users/lpoirel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lpoirel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-22T14:17:23Z",
+    "updated_at": "2021-01-24T18:09:36Z",
+    "closed_at": "2021-01-24T18:09:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21219",
+        "html_url": "https://github.com/spack/spack/pull/21219",
+        "diff_url": "https://github.com/spack/spack/pull/21219.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21219.patch"
+    },
+    "body": "mkl_pardiso solver is distributed with intel-mkl\r\nrelated to issue #21197 ",
+    "performed_via_github_app": null
+}

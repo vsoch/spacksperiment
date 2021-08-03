@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19565",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19565/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19565/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19565/events",
+    "html_url": "https://github.com/spack/spack/pull/19565",
+    "id": 731204238,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTExMzU3NzEz",
+    "number": 19565,
+    "title": "Update strelka",
+    "user": {
+        "login": "dunatotatos",
+        "id": 6135895,
+        "node_id": "MDQ6VXNlcjYxMzU4OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6135895?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dunatotatos",
+        "html_url": "https://github.com/dunatotatos",
+        "followers_url": "https://api.github.com/users/dunatotatos/followers",
+        "following_url": "https://api.github.com/users/dunatotatos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dunatotatos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dunatotatos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dunatotatos/subscriptions",
+        "organizations_url": "https://api.github.com/users/dunatotatos/orgs",
+        "repos_url": "https://api.github.com/users/dunatotatos/repos",
+        "events_url": "https://api.github.com/users/dunatotatos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dunatotatos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-28T08:03:54Z",
+    "updated_at": "2020-10-28T15:58:31Z",
+    "closed_at": "2020-10-28T15:58:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19565",
+        "html_url": "https://github.com/spack/spack/pull/19565",
+        "diff_url": "https://github.com/spack/spack/pull/19565.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19565.patch"
+    },
+    "body": "Thie PR adds newer versions of Strelka and removes the shebang patch which is breaking the installation when the path to Python is too long. This patch is anyway unnecessary if the dependencies are loaded when running Strelka.",
+    "performed_via_github_app": null
+}

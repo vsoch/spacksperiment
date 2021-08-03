@@ -1,0 +1,116 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24820",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24820/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24820/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24820/events",
+    "html_url": "https://github.com/spack/spack/pull/24820",
+    "id": 941257872,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njg3MTg4OTI1",
+    "number": 24820,
+    "title": "trilinos: simplify some variants",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1491154932,
+            "node_id": "MDU6TGFiZWwxNDkxMTU0OTMy",
+            "url": "https://api.github.com/repos/spack/spack/labels/gitlab",
+            "name": "gitlab",
+            "color": "f7b094",
+            "default": false,
+            "description": "Issues related to gitlab integration"
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 32,
+    "created_at": "2021-07-10T14:11:35Z",
+    "updated_at": "2021-07-19T05:08:30Z",
+    "closed_at": "2021-07-16T18:36:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24820",
+        "html_url": "https://github.com/spack/spack/pull/24820",
+        "diff_url": "https://github.com/spack/spack/pull/24820.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24820.patch"
+    },
+    "body": "- Use hwloc iff kokkos\r\n    See #19119, also the HWLOC tpl name was misspelled so this was being ignored before.\r\n- Remove package meta-options\r\n    - XSDK settings and \"all opt packages\" are not used anywhere\r\n    - all optional packages are dangerous\r\n- Update dependencies, removing unused\r\n    - GLM, X11 are unused (x11 lacks dependency specs too)\r\n    - Python variant is more like a TPL so rearrange that\r\n    - Gtest internal package shouldn't be compiled or exported\r\n    - Add MPI4PY requirement for pytrilinos\r\n- Group top-level dependencies\r\n- Automatically enable teuchos and remove variant\r\n    - Basically everything in trilinos needs teuchos\r\n    - Simplify dealii dependencies (@jppelteret @luca-heltai)\r\n- Remove metis variant, enable if zoltan or if other transitive dependencies use it\r\n  - Trilinos packages usually conflict if the metis/parmetis options are not locked to the availability of strumpack and superlu-dist \r\n- Rename basker variant\r\n    - The Basker solver is part of amesos2 but is clearer without the extra prefix\r\nscoping.\r\n- Default to disabling external trilinos dependencies (except for mpi)\r\n  - Some of these are troublemakers (e.g. mumps) and get turned off by most downstream spack packages",
+    "performed_via_github_app": null
+}

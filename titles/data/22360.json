@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22360",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22360/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22360/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22360/events",
+    "html_url": "https://github.com/spack/spack/pull/22360",
+    "id": 834053719,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk0OTQ4Njg5",
+    "number": 22360,
+    "title": "Make -j flag less exceptional",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1445245539,
+            "node_id": "MDU6TGFiZWwxNDQ1MjQ1NTM5",
+            "url": "https://api.github.com/repos/spack/spack/labels/build",
+            "name": "build",
+            "color": "a83f25",
+            "default": false,
+            "description": "General build capability"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-03-17T18:12:16Z",
+    "updated_at": "2021-03-30T19:12:57Z",
+    "closed_at": "2021-03-30T19:03:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22360",
+        "html_url": "https://github.com/spack/spack/pull/22360",
+        "diff_url": "https://github.com/spack/spack/pull/22360.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22360.patch"
+    },
+    "body": "The -j flag in spack behaves different from make, ctest, ninja, etc,\r\nbecause it caps the number of jobs to an arbitrary number 16.\r\n\r\nWhat makes a lot more sense is if `spack install` uses some reasonable\r\ndefault, and `spack install -j <num>` *overrides* that default. This is\r\nhow it's done in all other build systems.\r\n\r\nIn particular I want to be able to write `spack install -j256` on some\r\nAMD EPYC system if I feel like it, and spack shouldn't silently stop me\r\nfrom doing that. Maybe spack was meant for HPC login nodes, but even\r\nlogin nodes get fat and in some centers you are encouraged to compile on\r\nlogin nodes with many cores instead of on compute nodes.\r\n\r\nAlso if I don't specify `-j` on the command line, I'm fine if spack\r\nlimits the number of build jobs to `min(number of cpus, 16)` -- I can\r\nsee that's a reasonable default, although the 16 is still quite peculiar\r\nand unlike other build systems -- however, as it is right now, spack\r\ndoes a poor job at determining the number of cpus on linux, since it\r\ndoesn't take cgroups into account. In particular this is problematic if\r\nyou use distributed builds with slurm. On an AMD EPYC machine with 256\r\nthreads, if I would build a big spack environment with many tasks like\r\n`srun -c2 -n128 spack -e my_env install`, spack will happily start 128\r\nprocesses using make -j256, instead of actually checking the process\r\naffinity, which reveals only 2 threads can be used. So this PR\r\nintroduces `spack.util.cpus.cpus_available()` which does the sensible\r\nthing on linux. This should also improve the situation with Docker /\r\nKubernetes, which also use cgroups.\r\n\r\nCloses #17598 \r\n",
+    "performed_via_github_app": null
+}

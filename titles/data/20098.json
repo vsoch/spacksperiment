@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20098",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20098/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20098/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20098/events",
+    "html_url": "https://github.com/spack/spack/pull/20098",
+    "id": 751038805,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTI3NjI3OTQ1",
+    "number": 20098,
+    "title": "Arch swapping features for specs",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2542559486,
+            "node_id": "MDU6TGFiZWwyNTQyNTU5NDg2",
+            "url": "https://api.github.com/repos/spack/spack/labels/bootstrap",
+            "name": "bootstrap",
+            "color": "743ec4",
+            "default": false,
+            "description": "Issues occurring while spack builds its own dependencies."
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-11-25T18:33:21Z",
+    "updated_at": "2021-01-06T10:22:40Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20098",
+        "html_url": "https://github.com/spack/spack/pull/20098",
+        "diff_url": "https://github.com/spack/spack/pull/20098.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20098.patch"
+    },
+    "body": "This is preliminary work for bootstrapping for the new concretizer. The goal is to eventually vendor a concrete spec that can be applied to different architectures and download appropriate binaries for bootstrapping.\r\n\r\n@tgamblin @alalazo @cosmicexplorer",
+    "performed_via_github_app": null
+}

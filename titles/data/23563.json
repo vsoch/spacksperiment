@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23563",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23563/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23563/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23563/events",
+    "html_url": "https://github.com/spack/spack/pull/23563",
+    "id": 887832688,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjQxMDQwODEx",
+    "number": 23563,
+    "title": "gmsh: fix variant flags and dependencies",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2021-05-11T16:38:55Z",
+    "updated_at": "2021-05-12T19:42:36Z",
+    "closed_at": "2021-05-12T18:40:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23563",
+        "html_url": "https://github.com/spack/spack/pull/23563",
+        "diff_url": "https://github.com/spack/spack/pull/23563.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23563.patch"
+    },
+    "body": "GMSH provided libs such as Metis, Netgen, or now Eigen, Alglib, Voropp can also be replaced by external libs.\r\nThe dependencies to the external to GMSH libs were not clear.\r\nAlso, the CMake setting needs ENABLE_STUFF:BOOL=val not merely STUFF:BOOL=val.\r\nUnluckily it seems impossible to compile GMSH with an external Metis.\r\nI hope @sethrj could give advises. ",
+    "performed_via_github_app": null
+}

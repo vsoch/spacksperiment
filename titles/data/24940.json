@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24940",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24940/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24940/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24940/events",
+    "html_url": "https://github.com/spack/spack/pull/24940",
+    "id": 946773033,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxODkxNjkw",
+    "number": 24940,
+    "title": "Fenicsx updates",
+    "user": {
+        "login": "chrisrichardson",
+        "id": 4329467,
+        "node_id": "MDQ6VXNlcjQzMjk0Njc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4329467?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chrisrichardson",
+        "html_url": "https://github.com/chrisrichardson",
+        "followers_url": "https://api.github.com/users/chrisrichardson/followers",
+        "following_url": "https://api.github.com/users/chrisrichardson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chrisrichardson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chrisrichardson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chrisrichardson/subscriptions",
+        "organizations_url": "https://api.github.com/users/chrisrichardson/orgs",
+        "repos_url": "https://api.github.com/users/chrisrichardson/repos",
+        "events_url": "https://api.github.com/users/chrisrichardson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chrisrichardson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-17T08:59:46Z",
+    "updated_at": "2021-07-20T08:03:03Z",
+    "closed_at": "2021-07-20T08:03:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24940",
+        "html_url": "https://github.com/spack/spack/pull/24940",
+        "diff_url": "https://github.com/spack/spack/pull/24940.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24940.patch"
+    },
+    "body": "* fixes some issues with cmake and hdf5\r\n* better support when on main branch",
+    "performed_via_github_app": null
+}

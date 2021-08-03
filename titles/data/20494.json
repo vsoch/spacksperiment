@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20494",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20494/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20494/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20494/events",
+    "html_url": "https://github.com/spack/spack/pull/20494",
+    "id": 772388893,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTQzNjY0MDky",
+    "number": 20494,
+    "title": "concretizer: refactor version, compiler version and platform rules",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-12-21T18:51:59Z",
+    "updated_at": "2021-04-27T16:00:37Z",
+    "closed_at": "2021-04-27T16:00:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20494",
+        "html_url": "https://github.com/spack/spack/pull/20494",
+        "diff_url": "https://github.com/spack/spack/pull/20494.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20494.patch"
+    },
+    "body": "This adds an explicit rule to ensure that concrete versions from an abstract spec are always concretizable.\r\n\r\nIt also removes `versions_weights` in favor of `version/3` that contains a package, a version and a weights. Using the same function avoids by design to infer the weight from a declaration and the actual version from another.\r\n\r\nRequire that all selected versions are declared either in `package.py`, `packages.yaml` or in an abstract_spec.\r\n\r\nCardinality constraints on compiler versions and platforms are reworked as integrity constraints, to avoid looping on 2 variables in the grounder.",
+    "performed_via_github_app": null
+}

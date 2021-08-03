@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23480/events",
+    "html_url": "https://github.com/spack/spack/pull/23480",
+    "id": 877919214,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjMxODAyNzM4",
+    "number": 23480,
+    "title": "geos: Fix config issues with python bindings using python3 (#23479)",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-06T19:31:25Z",
+    "updated_at": "2021-06-04T19:26:32Z",
+    "closed_at": "2021-05-07T17:27:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23480",
+        "html_url": "https://github.com/spack/spack/pull/23480",
+        "diff_url": "https://github.com/spack/spack/pull/23480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23480.patch"
+    },
+    "body": "This should fix some config issues when building geos with python\r\nbindings and using python3 --- the geos configuration scripts had\r\na few python2-isms.\r\n\r\nI only tested (lightly; geos built and I can import geos in python3)\r\non 3.8.1, but I did check that the patch can at least be applied\r\nin 3.5.\r\n\r\nI belatedly discovered that geos dropped all the SWIG bindings\r\nin @3.9, so I also added some conflicts on the +python and +ruby\r\noptions to note that they are not supported in 3.9.\r\n\r\nFixes #23479",
+    "performed_via_github_app": null
+}

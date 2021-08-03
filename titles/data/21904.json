@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21904",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21904/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21904/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21904/events",
+    "html_url": "https://github.com/spack/spack/pull/21904",
+    "id": 815428013,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc5MjU5NDc0",
+    "number": 21904,
+    "title": "oneapi standalones",
+    "user": {
+        "login": "rscohn2",
+        "id": 1936730,
+        "node_id": "MDQ6VXNlcjE5MzY3MzA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1936730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rscohn2",
+        "html_url": "https://github.com/rscohn2",
+        "followers_url": "https://api.github.com/users/rscohn2/followers",
+        "following_url": "https://api.github.com/users/rscohn2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rscohn2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rscohn2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rscohn2/subscriptions",
+        "organizations_url": "https://api.github.com/users/rscohn2/orgs",
+        "repos_url": "https://api.github.com/users/rscohn2/repos",
+        "events_url": "https://api.github.com/users/rscohn2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rscohn2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2431479212,
+            "node_id": "MDU6TGFiZWwyNDMxNDc5MjEy",
+            "url": "https://api.github.com/repos/spack/spack/labels/oneapi",
+            "name": "oneapi",
+            "color": "b3f490",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 27,
+    "created_at": "2021-02-24T12:22:27Z",
+    "updated_at": "2021-03-09T03:35:41Z",
+    "closed_at": "2021-03-09T03:35:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21904",
+        "html_url": "https://github.com/spack/spack/pull/21904",
+        "diff_url": "https://github.com/spack/spack/pull/21904.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21904.patch"
+    },
+    "body": "Align oneapi spack packages to oneapi component directories in the install tree. \r\n\r\nThis PR replaces #21821.\r\n\r\n@scheibelp @frankwillmore @glennpj \r\n\r\nWIP in title to indicate this needs cleanup and is published for feedback\r\n\r\nPending items:\r\n\r\n* versioning requirements for dependencies\r\n\r\n\r\n\r\n## Background on oneAPI\r\n\r\n### File layout\r\n\r\nThe standard oneapi install has a single prefix with one directory for each component: compiler, mkl, tbb, etc, and a subdirectory for each version. Each of the components has an associated standalone installer. A standalone installer contains the actual component + any dependencies. The dependencies are packaged as a subset of the full component and placed in the same location as they are placed in the full standalone. For example, the OMP runtime is part of the compiler package, so since MKL needs OMP, the MKL standalone installer places a compiler directory in the root which contains runtimes libraries but not the actual compiler. Installing MKL followed by compiler has the same result as installing compiler followed by MKL.\r\n\r\n### Environment\r\n\r\nEach component has a vars.sh script which sets LD_LIBRARY_PATH, MPATH, CPATH, PATH, etc. Many of the components have dependencies on other components: MKL depends on OMP  in compiler & TBB for a parallel runtime. Components find each other through these same environment variables, not by relative navigation. Dependencies also come with vars.sh script. To use MKL, you source the vars.sh for MKL, TBB, and compiler. The oneapi root contains a setvars.sh that sources all the vars.sh under the root.\r\n\r\n## Spack oneapi design\r\n\r\nThere is one spack package for every oneapi component directory, which comes from a single oneapi standalone. When a oneapi component has a dependence on another oneapi component, the spack package will have a depends_on. For example MKL depends_on TBB and the compiler.\r\n\r\n### Naming\r\n\r\nPackage names are: intel-oneapi-X: intel-oneapi-mkl, intel-oneapi-mpi, intel-oneapi-compilers\r\n\r\n### Runtime environment\r\n\r\nRuntime environment is setup from the vars.sh for the component. Since the standalone installer may install the actual component and dependencies in the same prefix, MKL would have a vars.sh for itself, as well as compiler and tbb directories with their own vars.sh. The vars.sh of dependencies are ignored. We only use the vars.sh for the mkl spack package. This avoids the problem where there might be multiple copies of tbb runtime across MKL, DAL, \u2026 and not having control over which one is loaded.\r\n\r\n### Version dependence\r\n\r\nWhen a component depends on a runtime library in another component, it requires whatever was the latest of the dependence at the time of release of the depending component. It is always OK to use a newer dependence. It may work to use an older dependence, but we do not test for that.\r\n\r\n### Compiler\r\n\r\nThe compiler is an exception to the one component, one spack package, one installer rule. The compiler is in 2 component directories: compiler & dev-utilities and is distributed in 2 installers: fortran and cpp. The spack package for the compiler treats all this as a single unit. It always installs both compilers and it always loads both components.\r\n",
+    "performed_via_github_app": null
+}

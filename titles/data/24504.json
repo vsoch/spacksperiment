@@ -1,0 +1,188 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24504",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24504/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24504/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24504/events",
+    "html_url": "https://github.com/spack/spack/pull/24504",
+    "id": 929451712,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc3MzAxMDEx",
+    "number": 24504,
+    "title": "Add Github Actions for Windows",
+    "user": {
+        "login": "johnwparent",
+        "id": 45471568,
+        "node_id": "MDQ6VXNlcjQ1NDcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45471568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/johnwparent",
+        "html_url": "https://github.com/johnwparent",
+        "followers_url": "https://api.github.com/users/johnwparent/followers",
+        "following_url": "https://api.github.com/users/johnwparent/following{/other_user}",
+        "gists_url": "https://api.github.com/users/johnwparent/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/johnwparent/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/johnwparent/subscriptions",
+        "organizations_url": "https://api.github.com/users/johnwparent/orgs",
+        "repos_url": "https://api.github.com/users/johnwparent/repos",
+        "events_url": "https://api.github.com/users/johnwparent/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/johnwparent/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3136237419,
+            "node_id": "MDU6TGFiZWwzMTM2MjM3NDE5",
+            "url": "https://api.github.com/repos/spack/spack/labels/architecture",
+            "name": "architecture",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1371552534,
+            "node_id": "MDU6TGFiZWwxMzcxNTUyNTM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/stage",
+            "name": "stage",
+            "color": "b50fc1",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1837510255,
+            "node_id": "MDU6TGFiZWwxODM3NTEwMjU1",
+            "url": "https://api.github.com/repos/spack/spack/labels/windows",
+            "name": "windows",
+            "color": "ed89e1",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1483227126,
+            "node_id": "MDU6TGFiZWwxNDgzMjI3MTI2",
+            "url": "https://api.github.com/repos/spack/spack/labels/workflow",
+            "name": "workflow",
+            "color": "4a47ff",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-06-24T17:27:14Z",
+    "updated_at": "2021-07-09T20:39:58Z",
+    "closed_at": "2021-07-09T20:39:58Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24504",
+        "html_url": "https://github.com/spack/spack/pull/24504",
+        "diff_url": "https://github.com/spack/spack/pull/24504.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24504.patch"
+    },
+    "body": "Rebased edition of #23251 ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21713",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21713/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21713/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21713/events",
+    "html_url": "https://github.com/spack/spack/pull/21713",
+    "id": 809801811,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTc0NjAwODc3",
+    "number": 21713,
+    "title": "py-numpydoc: Add new version, and care for old version.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-02-17T02:35:56Z",
+    "updated_at": "2021-02-18T00:37:00Z",
+    "closed_at": "2021-02-18T00:36:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21713",
+        "html_url": "https://github.com/spack/spack/pull/21713",
+        "diff_url": "https://github.com/spack/spack/pull/21713.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21713.patch"
+    },
+    "body": "- Add new version 1.1.0. \r\n- Solve the problem for version 0.6.0.\r\nIn version 0.6.0, the following error occurred when using `py-numpydoc`.\r\n```\r\nExtension error:\r\nCould not import extension numpydoc (exception: cannot import name 'Directive' from 'sphinx.util.compat' (/home/tkaratsu/work/x86/spack/opt/spack/linux-rhel8-skylake_avx512/gcc-8.3.1/py-sphinx-3.2.0-hbnpadlcsr7wbt6y6wuz5ve7zu4fcixy/lib/python3.8/site-packages/sphinx/util/compat.py))\r\n```\r\nhttps://github.com/readthedocs/readthedocs.org/issues/4057\r\nAccording to this issue, `Directive` is no longer available from version 1.7.0 of `py-sphinx`.\r\nSo, in version 0.6.0, Limit `py-sphinx` version to `1.6.7`.",
+    "performed_via_github_app": null
+}

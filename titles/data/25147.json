@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25147",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25147/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25147/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25147/events",
+    "html_url": "https://github.com/spack/spack/pull/25147",
+    "id": 956716935,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwMjY3OTQ0",
+    "number": 25147,
+    "title": "Backport to 0.16: Fix use of quotes in Python build system (#22279)",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-30T12:49:12Z",
+    "updated_at": "2021-07-30T12:49:17Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25147",
+        "html_url": "https://github.com/spack/spack/pull/25147",
+        "diff_url": "https://github.com/spack/spack/pull/25147.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25147.patch"
+    },
+    "body": "Seems to me that this should be in the latest stable release branch, too.",
+    "performed_via_github_app": null
+}

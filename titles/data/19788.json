@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19788",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19788/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19788/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19788/events",
+    "html_url": "https://github.com/spack/spack/issues/19788",
+    "id": 738073790,
+    "node_id": "MDU6SXNzdWU3MzgwNzM3OTA=",
+    "number": 19788,
+    "title": "Installation issue: r+X on macOS",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 470680435,
+            "node_id": "MDU6TGFiZWw0NzA2ODA0MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/X11",
+            "name": "X11",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-06T22:15:18Z",
+    "updated_at": "2021-01-17T22:53:42Z",
+    "closed_at": "2021-01-17T22:53:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "### Steps to reproduce the issue\r\n\r\n```console\r\n$ spack install r@4.0.3+X\r\n...\r\n/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/hfs/hfs_format.h:794:2: error: unknown type name 'uuid_string_t'; did you mean 'io_string_t'?\r\n...\r\n/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/hfs/hfs_format.h:796:20: error: use of undeclared identifier 'uuid_string_t'\r\n...\r\n/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/hfs/hfs_format.h:794:2: error: unknown type name 'uuid_string_t'; did you mean 'io_string_t'?\r\n...\r\n/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/hfs/hfs_format.h:796:20: error: use of undeclared identifier 'uuid_string_t'\r\n...\r\n```\r\n\r\n### Information on your system\r\n\r\n* **Spack:** 0.15.4-1838-f59bbf9c3a\r\n* **Python:** 3.8.6\r\n* **Platform:** darwin-catalina-ivybridge\r\n\r\n### Additional information \r\n\r\n* [spack-build-out.txt](https://github.com/spack/spack/files/5503746/spack-build-out.txt)\r\n* [spack-build-env.txt](https://github.com/spack/spack/files/5503748/spack-build-env.txt)\r\n\r\nR 4.0.2 (the current version of the package) has a ton of build issues with Apple Clang 12. R 4.0.3 seems to have fewer, but I still see the above error.\r\n\r\n### General information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have run `spack maintainers <name-of-the-package>` and @mentioned any maintainers\r\n- [x] I have uploaded the build log and environment files\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n",
+    "performed_via_github_app": null
+}

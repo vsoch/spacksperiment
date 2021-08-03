@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19547",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19547/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19547/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19547/events",
+    "html_url": "https://github.com/spack/spack/pull/19547",
+    "id": 730528623,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEwODE3ODYy",
+    "number": 19547,
+    "title": "asciidoc-py3 add docbook dependency and fix a enviroment variable problem for docbook-{xml,xsl}",
+    "user": {
+        "login": "lorddavidiii",
+        "id": 20240690,
+        "node_id": "MDQ6VXNlcjIwMjQwNjkw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20240690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lorddavidiii",
+        "html_url": "https://github.com/lorddavidiii",
+        "followers_url": "https://api.github.com/users/lorddavidiii/followers",
+        "following_url": "https://api.github.com/users/lorddavidiii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lorddavidiii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lorddavidiii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lorddavidiii/subscriptions",
+        "organizations_url": "https://api.github.com/users/lorddavidiii/orgs",
+        "repos_url": "https://api.github.com/users/lorddavidiii/repos",
+        "events_url": "https://api.github.com/users/lorddavidiii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lorddavidiii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-10-27T14:56:02Z",
+    "updated_at": "2020-10-28T01:11:38Z",
+    "closed_at": "2020-10-28T01:11:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19547",
+        "html_url": "https://github.com/spack/spack/pull/19547",
+        "diff_url": "https://github.com/spack/spack/pull/19547.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19547.patch"
+    },
+    "body": "additional to https://github.com/spack/spack/pull/19491 I add `docbook-{xml,xsl}` as dependency, which also the old python2 package `asciidoc` has. \r\n\r\nThis fixes a build problem of `ocl-icd` as these catalogs are needed to build the manpage.  Also `XML_CATALOG_FILES` needs to be exported in the build environment for `ocl-icd` as else way it won't be found, hence I added this to  `docbook-xml` and fix `docbook-xsl`, so it do not get overwrote or prepended with the wrong separator.",
+    "performed_via_github_app": null
+}

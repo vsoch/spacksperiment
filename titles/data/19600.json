@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19600",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19600/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19600/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19600/events",
+    "html_url": "https://github.com/spack/spack/pull/19600",
+    "id": 732288154,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEyMjUzMzY5",
+    "number": 19600,
+    "title": "Make archspec a vendored dependency",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1029761810,
+            "node_id": "MDU6TGFiZWwxMDI5NzYxODEw",
+            "url": "https://api.github.com/repos/spack/spack/labels/vendored-dependencies",
+            "name": "vendored-dependencies",
+            "color": "b1fc49",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-10-29T12:53:06Z",
+    "updated_at": "2020-10-30T20:02:34Z",
+    "closed_at": "2020-10-30T20:02:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19600",
+        "html_url": "https://github.com/spack/spack/pull/19600",
+        "diff_url": "https://github.com/spack/spack/pull/19600.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19600.patch"
+    },
+    "body": "fixes #13481\r\nfixes #19553 \r\nfixes #19552 \r\ncloses #18893 \r\n\r\nModifications:\r\n- [x] Added archspec to the list of vendored dependencies\r\n- [x] Added support for `apple-clang` flags\r\n- [x] Added support for Graviton and Graviton 2\r\n- [x] Removed every reference to llnl.util.cpu\r\n- [x] Removed tests from Spack code base",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21394",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21394/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21394/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21394/events",
+    "html_url": "https://github.com/spack/spack/pull/21394",
+    "id": 796965512,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0MDUzOTE4",
+    "number": 21394,
+    "title": "lhapdf: Removed boost dependence and other outdated bits",
+    "user": {
+        "login": "kkauder",
+        "id": 5784983,
+        "node_id": "MDQ6VXNlcjU3ODQ5ODM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5784983?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kkauder",
+        "html_url": "https://github.com/kkauder",
+        "followers_url": "https://api.github.com/users/kkauder/followers",
+        "following_url": "https://api.github.com/users/kkauder/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kkauder/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kkauder/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kkauder/subscriptions",
+        "organizations_url": "https://api.github.com/users/kkauder/orgs",
+        "repos_url": "https://api.github.com/users/kkauder/repos",
+        "events_url": "https://api.github.com/users/kkauder/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kkauder/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2021-01-29T15:20:08Z",
+    "updated_at": "2021-02-07T11:07:00Z",
+    "closed_at": "2021-02-07T11:07:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21394",
+        "html_url": "https://github.com/spack/spack/pull/21394",
+        "diff_url": "https://github.com/spack/spack/pull/21394.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21394.patch"
+    },
+    "body": "Package already only supports version 6.2.3+. \r\nStarting with 6.2, boost was no longer needed, but the package still contained it as a dependency along with other bits only relevant for the (unsupported) 6.1.5.",
+    "performed_via_github_app": null
+}

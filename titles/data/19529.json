@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19529",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19529/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19529/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19529/events",
+    "html_url": "https://github.com/spack/spack/pull/19529",
+    "id": 729877296,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEwMjg0MTc0",
+    "number": 19529,
+    "title": "sbang: convert sbang script to POSIX shell",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1747000960,
+            "node_id": "MDU6TGFiZWwxNzQ3MDAwOTYw",
+            "url": "https://api.github.com/repos/spack/spack/labels/sbang",
+            "name": "sbang",
+            "color": "095e8c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-10-26T20:21:10Z",
+    "updated_at": "2020-10-27T20:59:48Z",
+    "closed_at": "2020-10-27T20:59:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19529",
+        "html_url": "https://github.com/spack/spack/pull/19529",
+        "diff_url": "https://github.com/spack/spack/pull/19529.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19529.patch"
+    },
+    "body": "`sbang` was previously a bash script but did not need to be. This converts it to a plain old POSIX shell script and adds some options. This also allows us to simplify sbang shebangs to `#!/bin/sh /path/to/sbang` instead of `#!/bin/bash /path/to/sbang`.\r\n\r\nThe new script passes shellcheck (with a few exceptions noted in the file)\r\n\r\n- [x] `SBANG_DEBUG` env var enables printing what *would* be executed\r\n- [x] `sbang` checks whether it has been passed an option and fails gracefully\r\n- [x] `sbang` will now fail if it can't find a second shebang line, or if\r\n      the second line happens to be sbang (avoid infinite loops)\r\n- [x] add more rigorous tests for `sbang` behavior using `SBANG_DEBUG`",
+    "performed_via_github_app": null
+}

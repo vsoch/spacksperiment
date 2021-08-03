@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22726",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22726/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22726/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22726/events",
+    "html_url": "https://github.com/spack/spack/pull/22726",
+    "id": 848579214,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA3NDk1MjEx",
+    "number": 22726,
+    "title": "py-scipy: Fix for Intel compiler, needed F90 env var set",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-04-01T15:40:59Z",
+    "updated_at": "2021-04-01T20:37:59Z",
+    "closed_at": "2021-04-01T20:37:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22726",
+        "html_url": "https://github.com/spack/spack/pull/22726",
+        "diff_url": "https://github.com/spack/spack/pull/22726.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22726.patch"
+    },
+    "body": "`py-scipy` needs the `F90` env var to be set, in order to properly pick up `ifort` instead of defaulting to `gfortran`.  This was a known issue in SpackLand, but had not been incorporated into a PR until now.\r\n",
+    "performed_via_github_app": null
+}

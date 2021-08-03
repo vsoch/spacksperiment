@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24427",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24427/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24427/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24427/events",
+    "html_url": "https://github.com/spack/spack/pull/24427",
+    "id": 925385448,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjczODczNzMw",
+    "number": 24427,
+    "title": "Add dependency on rocm-cmake to various ROCm related packages",
+    "user": {
+        "login": "UweSauter",
+        "id": 19325781,
+        "node_id": "MDQ6VXNlcjE5MzI1Nzgx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19325781?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/UweSauter",
+        "html_url": "https://github.com/UweSauter",
+        "followers_url": "https://api.github.com/users/UweSauter/followers",
+        "following_url": "https://api.github.com/users/UweSauter/following{/other_user}",
+        "gists_url": "https://api.github.com/users/UweSauter/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/UweSauter/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/UweSauter/subscriptions",
+        "organizations_url": "https://api.github.com/users/UweSauter/orgs",
+        "repos_url": "https://api.github.com/users/UweSauter/repos",
+        "events_url": "https://api.github.com/users/UweSauter/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/UweSauter/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-19T12:32:29Z",
+    "updated_at": "2021-06-23T09:49:31Z",
+    "closed_at": "2021-06-23T09:35:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24427",
+        "html_url": "https://github.com/spack/spack/pull/24427",
+        "diff_url": "https://github.com/spack/spack/pull/24427.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24427.patch"
+    },
+    "body": "Currently, the packages download and build their own version of rocm-cmake because they don't know that Spack already installed rocm-cmake.\r\nThese changes make the packages depend on rocm-cmake so that the already present installation is used at build time.\r\n\r\nCloses #24377",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21247",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21247/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21247/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21247/events",
+    "html_url": "https://github.com/spack/spack/pull/21247",
+    "id": 792668388,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYwNTAzMzY4",
+    "number": 21247,
+    "title": "mumps: don't put absolute path in soname",
+    "user": {
+        "login": "lpoirel",
+        "id": 4563513,
+        "node_id": "MDQ6VXNlcjQ1NjM1MTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4563513?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lpoirel",
+        "html_url": "https://github.com/lpoirel",
+        "followers_url": "https://api.github.com/users/lpoirel/followers",
+        "following_url": "https://api.github.com/users/lpoirel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lpoirel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lpoirel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lpoirel/subscriptions",
+        "organizations_url": "https://api.github.com/users/lpoirel/orgs",
+        "repos_url": "https://api.github.com/users/lpoirel/repos",
+        "events_url": "https://api.github.com/users/lpoirel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lpoirel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-23T23:06:59Z",
+    "updated_at": "2021-02-08T09:30:28Z",
+    "closed_at": "2021-02-08T09:30:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21247",
+        "html_url": "https://github.com/spack/spack/pull/21247",
+        "diff_url": "https://github.com/spack/spack/pull/21247.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21247.patch"
+    },
+    "body": "Without this fix, doing `readelf -d libdmumps.so` for instance would show the full absolute path in the (SONAME). In turn, any lib linked with it would have the full absolute path in its (NEEDED) section.\r\n",
+    "performed_via_github_app": null
+}

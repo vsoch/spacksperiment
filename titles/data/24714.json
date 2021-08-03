@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24714",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24714/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24714/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24714/events",
+    "html_url": "https://github.com/spack/spack/pull/24714",
+    "id": 937315655,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjgzODkyMDYx",
+    "number": 24714,
+    "title": "buildcache create: gpg: require user-specified keys to be unambiguous, fail otherwise",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-05T19:11:22Z",
+    "updated_at": "2021-07-27T09:05:33Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24714",
+        "html_url": "https://github.com/spack/spack/pull/24714",
+        "diff_url": "https://github.com/spack/spack/pull/24714.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24714.patch"
+    },
+    "body": "Spack will currently proceed with `spack buildcache create --key <ID> ...` even when `<ID>` is ambiguous. It will select one of the two matching keys and go foward.\r\n\r\nThis PR makes requires a user-specified key to be unambiguous and will fail if that isn't the case.\r\n\r\n**Pre-PR behavior**\r\n```\r\n$> spack gpg list --signing\r\ngpgconf: socketdir is '/Users/walker/.gnupg'\r\ngpgconf: \tno /run/user dir\r\ngpgconf: \tusing homedir as fallback\r\n/Users/walker/spack/opt/spack/gpg/pubring.kbx\r\n---------------------------------------------\r\npub   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      E71A44702F3735330EEA83A29281F0C65F2225C8\r\nuid           [ unknown] prl\r\nsub   cv25519 2021-07-02 [E]\r\n\r\npub   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      0AF82F37CFF43EDA39E134EB1ED1F82618DA13C6\r\nuid           [ unknown] prl\r\nsub   cv25519 2021-07-02 [E]\r\n\r\n/Users/walker/spack/opt/spack/gpg/pubring.kbx\r\n---------------------------------------------\r\nsec   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      E71A44702F3735330EEA83A29281F0C65F2225C8\r\nuid           [ unknown] prl\r\nssb   cv25519 2021-07-02 [E]\r\n\r\nsec   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      0AF82F37CFF43EDA39E134EB1ED1F82618DA13C6\r\nuid           [ unknown] prl\r\nssb   cv25519 2021-07-02 [E]\r\n\r\n\r\n$> spack buildcache create -af -d . --key prl zlib\r\n==> Buildcache files will be output to ...\r\ngpgconf: socketdir is '/Users/walker/.gnupg'\r\ngpgconf: \tno /run/user dir\r\ngpgconf: \tusing homedir as fallback\r\ngpg: using \"prl\" as default secret key for signing\r\n```\r\n\r\n**Post-PR behavior**\r\n```\r\n$> spack gpg list --signing\r\ngpgconf: socketdir is '/Users/walker/.gnupg'\r\ngpgconf: \tno /run/user dir\r\ngpgconf: \tusing homedir as fallback\r\n/Users/walker/spack/opt/spack/gpg/pubring.kbx\r\n---------------------------------------------\r\npub   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      E71A44702F3735330EEA83A29281F0C65F2225C8\r\nuid           [ unknown] prl\r\nsub   cv25519 2021-07-02 [E]\r\n\r\npub   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      0AF82F37CFF43EDA39E134EB1ED1F82618DA13C6\r\nuid           [ unknown] prl\r\nsub   cv25519 2021-07-02 [E]\r\n\r\n/Users/walker/spack/opt/spack/gpg/pubring.kbx\r\n---------------------------------------------\r\nsec   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      E71A44702F3735330EEA83A29281F0C65F2225C8\r\nuid           [ unknown] prl\r\nssb   cv25519 2021-07-02 [E]\r\n\r\nsec   ed25519 2021-07-02 [SC] [expires: 2023-07-02]\r\n      0AF82F37CFF43EDA39E134EB1ED1F82618DA13C6\r\nuid           [ unknown] prl\r\nssb   cv25519 2021-07-02 [E]\r\n\r\n\r\n$> spack buildcache create -af -d . --key prl zlib\r\n==> Buildcache files will be output to ...\r\ngpgconf: socketdir is '/Users/walker/.gnupg'\r\ngpgconf: \tno /run/user dir\r\ngpgconf: \tusing homedir as fallback\r\n==> Error: Multiple keys available for signing\r\n---\r\n1.  User ID: prl\r\n    Fingerprint: 701B8145CE0B3F10E8607AB08B6375B19D94B27F\r\n\r\n2.  User ID: prl\r\n    Fingerprint: 6DC00513AE82C7E152F976170E2DD6534CE14084\r\n---\r\nSpecify your key choice unambiguously using `--key <ID>`. <ID> can be the fingerprint or user-id.\r\n\r\n$> spack buildcache create -af -d . --key 6DC00513AE82C7E152F976170E2DD6534CE14084 zlib\r\n==> Buildcache files will be output to ...\r\ngpgconf: socketdir is '/Users/walker/.gnupg'\r\ngpgconf: \tno /run/user dir\r\ngpgconf: \tusing homedir as fallback\r\ngpg: using \"6DC00513AE82C7E152F976170E2DD6534CE14084\" as default secret key for signing\r\n```\r\n\r\n@alalazo ",
+    "performed_via_github_app": null
+}

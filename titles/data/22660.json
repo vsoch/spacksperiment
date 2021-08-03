@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22660",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22660/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22660/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22660/events",
+    "html_url": "https://github.com/spack/spack/pull/22660",
+    "id": 845659422,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjA0ODA5ODQ4",
+    "number": 22660,
+    "title": "xfsdump: Fix install error",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-31T02:09:53Z",
+    "updated_at": "2021-04-02T01:09:27Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22660",
+        "html_url": "https://github.com/spack/spack/pull/22660",
+        "diff_url": "https://github.com/spack/spack/pull/22660.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22660.patch"
+    },
+    "body": "I fixed the following install error:\r\nBuilding include\r\nBuilding librmt\r\nBuilding common\r\nBuilding inventory\r\nBuilding m4\r\nBuilding man\r\nBuilding doc\r\nBuilding po\r\nBuilding debian\r\nBuilding invutil\r\nBuilding dump\r\nBuilding restore\r\nBuilding man8\r\nchmod: changing permissions of '//sbin': Operation not permitted\r\nchmod: gmake[1]: *** [Makefile:100: install] Error 1\r\n\r\nThe cause is that / sbin is specified in the variable PKG_ROOT_SBIN_DIR specified in the Makefile.",
+    "performed_via_github_app": null
+}

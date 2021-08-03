@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21360",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21360/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21360/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21360/events",
+    "html_url": "https://github.com/spack/spack/pull/21360",
+    "id": 795512790,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTYyODQ3NTE0",
+    "number": 21360,
+    "title": "libtheora: use utf8 for latex build to avoid log error",
+    "user": {
+        "login": "danlipsa",
+        "id": 6180727,
+        "node_id": "MDQ6VXNlcjYxODA3Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6180727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danlipsa",
+        "html_url": "https://github.com/danlipsa",
+        "followers_url": "https://api.github.com/users/danlipsa/followers",
+        "following_url": "https://api.github.com/users/danlipsa/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danlipsa/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danlipsa/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danlipsa/subscriptions",
+        "organizations_url": "https://api.github.com/users/danlipsa/orgs",
+        "repos_url": "https://api.github.com/users/danlipsa/repos",
+        "events_url": "https://api.github.com/users/danlipsa/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danlipsa/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2021-01-27T23:04:37Z",
+    "updated_at": "2021-01-28T20:58:56Z",
+    "closed_at": "2021-01-28T20:58:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21360",
+        "html_url": "https://github.com/spack/spack/pull/21360",
+        "diff_url": "https://github.com/spack/spack/pull/21360.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21360.patch"
+    },
+    "body": "Avoid the following error:\r\n  File \"/home/danlipsa/projects/spack/lib/spack/llnl/util/tty/log.py\", line 768, in _writer_daemon\r\n    line = _retry(in_pipe.readline)()\r\n  File \"/home/danlipsa/projects/spack/lib/spack/llnl/util/tty/log.py\", line 830, in wrapped\r\n    return function(*args, **kwargs)\r\n  File \"/usr/lib/python3.8/codecs.py\", line 322, in decode\r\n    (result, consumed) = self._buffer_decode(data, self.errors, final)\r\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0x97 in position 220: invalid start byte",
+    "performed_via_github_app": null
+}

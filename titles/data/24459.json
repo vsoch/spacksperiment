@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24459",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24459/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24459/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24459/events",
+    "html_url": "https://github.com/spack/spack/pull/24459",
+    "id": 926668377,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Njc0OTQzNjA4",
+    "number": 24459,
+    "title": "axom/conduit: allow use of hdf5+cxx+fortran",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-21T22:51:06Z",
+    "updated_at": "2021-06-21T23:03:41Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24459",
+        "html_url": "https://github.com/spack/spack/pull/24459",
+        "diff_url": "https://github.com/spack/spack/pull/24459.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24459.patch"
+    },
+    "body": "Conduit used to require `hdf5~cxx` for reasons that no longer apply\r\n\r\nAxom (which depends on Conduit) required `hdf5~cxx` to avoid conflicts. Axom also required `hdf5~fortran`, and this PR removes this constraint as it wasn't needed by Conduit.",
+    "performed_via_github_app": null
+}

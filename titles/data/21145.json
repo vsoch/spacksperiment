@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21145",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21145/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21145/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21145/events",
+    "html_url": "https://github.com/spack/spack/pull/21145",
+    "id": 789009422,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU3NDE5MTM1",
+    "number": 21145,
+    "title": "Added @property stdcxx_libs to return -lstdc++ for AOCC compiler",
+    "user": {
+        "login": "amd-toolchain-support",
+        "id": 73240730,
+        "node_id": "MDQ6VXNlcjczMjQwNzMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/73240730?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amd-toolchain-support",
+        "html_url": "https://github.com/amd-toolchain-support",
+        "followers_url": "https://api.github.com/users/amd-toolchain-support/followers",
+        "following_url": "https://api.github.com/users/amd-toolchain-support/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amd-toolchain-support/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amd-toolchain-support/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amd-toolchain-support/subscriptions",
+        "organizations_url": "https://api.github.com/users/amd-toolchain-support/orgs",
+        "repos_url": "https://api.github.com/users/amd-toolchain-support/repos",
+        "events_url": "https://api.github.com/users/amd-toolchain-support/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amd-toolchain-support/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 2431483522,
+            "node_id": "MDU6TGFiZWwyNDMxNDgzNTIy",
+            "url": "https://api.github.com/repos/spack/spack/labels/aocc",
+            "name": "aocc",
+            "color": "e021d0",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-01-19T13:09:43Z",
+    "updated_at": "2021-01-22T15:58:05Z",
+    "closed_at": "2021-01-22T15:58:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21145",
+        "html_url": "https://github.com/spack/spack/pull/21145",
+        "diff_url": "https://github.com/spack/spack/pull/21145.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21145.patch"
+    },
+    "body": "Please note that we have added  - @property stdcxx_libs to return -lstdc++ for AOCC compiler\r\nKindly review and let us know for any changes.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24937",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24937/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24937/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24937/events",
+    "html_url": "https://github.com/spack/spack/pull/24937",
+    "id": 946587379,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxNzM1MzQz",
+    "number": 24937,
+    "title": "Modified the siesta package.py",
+    "user": {
+        "login": "joanvyc",
+        "id": 22316346,
+        "node_id": "MDQ6VXNlcjIyMzE2MzQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22316346?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joanvyc",
+        "html_url": "https://github.com/joanvyc",
+        "followers_url": "https://api.github.com/users/joanvyc/followers",
+        "following_url": "https://api.github.com/users/joanvyc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joanvyc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joanvyc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joanvyc/subscriptions",
+        "organizations_url": "https://api.github.com/users/joanvyc/orgs",
+        "repos_url": "https://api.github.com/users/joanvyc/repos",
+        "events_url": "https://api.github.com/users/joanvyc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joanvyc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-07-16T20:48:00Z",
+    "updated_at": "2021-08-01T17:15:42Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24937",
+        "html_url": "https://github.com/spack/spack/pull/24937",
+        "diff_url": "https://github.com/spack/spack/pull/24937.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24937.patch"
+    },
+    "body": "Modified the siesta package so it updates the config.guess and config.sub, in order to identify newer architectures like aarch64.\r\n\r\nThe original files in the siesta project are from 2006.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21538",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21538/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21538/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21538/events",
+    "html_url": "https://github.com/spack/spack/pull/21538",
+    "id": 803478990,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTY5NDAxNzE2",
+    "number": 21538,
+    "title": "persist the binary cache index in the misc cache and expose remote specs to `spack spec`",
+    "user": {
+        "login": "cosmicexplorer",
+        "id": 1305167,
+        "node_id": "MDQ6VXNlcjEzMDUxNjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305167?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cosmicexplorer",
+        "html_url": "https://github.com/cosmicexplorer",
+        "followers_url": "https://api.github.com/users/cosmicexplorer/followers",
+        "following_url": "https://api.github.com/users/cosmicexplorer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cosmicexplorer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cosmicexplorer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cosmicexplorer/subscriptions",
+        "organizations_url": "https://api.github.com/users/cosmicexplorer/orgs",
+        "repos_url": "https://api.github.com/users/cosmicexplorer/repos",
+        "events_url": "https://api.github.com/users/cosmicexplorer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cosmicexplorer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2021-02-08T11:35:20Z",
+    "updated_at": "2021-03-24T00:38:05Z",
+    "closed_at": "2021-03-24T00:38:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21538",
+        "html_url": "https://github.com/spack/spack/pull/21538",
+        "diff_url": "https://github.com/spack/spack/pull/21538.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21538.patch"
+    },
+    "body": "### Description\r\nCloses #19085. Intends to solve the same problem.\r\n\r\n### Changes\r\n1. Add the test which uses `spack buildcache create` from #19085.\r\n\r\nThe PR has been split into several independent commits, with all of the work below in the final commit:\r\n\r\n2. Make `spack buildcache list` use the directory `~/.spack/caches/indices` (using `config:misc_cache` as the root) to persist the `BinaryCacheIndex`.\r\n2. Create `spec_index.py`:\r\n    1. Move `InstallRecord` from `database.py`.\r\n    1. Create `IndexQuery` class which performs the logic of `Database._query()`.\r\n    1. Create a singleton `SpecIndex` to expose only local, only remote, or both local and remote specs for querying.\r\n2. Make `spack spec`, `spack find`, and `spack install` concretize specs by referring to the appropriate `SpecIndex` instance.\r\n\r\n### Result\r\nThe following works:\r\n```bash\r\n> spack buildcache list -l  # note hash for desired package is abcdefg \r\n> spack install /abcdefg    # if /abcdefg is from a remote buildcache\r\n```",
+    "performed_via_github_app": null
+}

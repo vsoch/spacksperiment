@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23863",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23863/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23863/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23863/events",
+    "html_url": "https://github.com/spack/spack/pull/23863",
+    "id": 899036620,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjUwODAxNzMy",
+    "number": 23863,
+    "title": "SuperLU: new version and cmake tweaks",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-05-23T14:47:19Z",
+    "updated_at": "2021-05-24T11:04:22Z",
+    "closed_at": "2021-05-24T11:04:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23863",
+        "html_url": "https://github.com/spack/spack/pull/23863",
+        "diff_url": "https://github.com/spack/spack/pull/23863.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23863.patch"
+    },
+    "body": "- Changed to cmake package with backward compatibility with older  makefile\r\n- Added new version 5.2.2 which  necessary change to external blas variable\r\n- Removed unused cmake variable 'blas_blas_libs'\r\n- Remove unused tcsh dependency\r\n- Change URL to use git repository for current and future versions\r\n- Add older 4.2 version\r\n- Add conflict for older versions with apple-clang\r\n- Update smoke test for new EXAMPLE dir",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22036",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22036/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22036/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22036/events",
+    "html_url": "https://github.com/spack/spack/pull/22036",
+    "id": 819551211,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTgyNjQ1OTI1",
+    "number": 22036,
+    "title": "py-adb-enhanced: update version to fix runtime error",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-02T02:51:48Z",
+    "updated_at": "2021-03-06T02:59:04Z",
+    "closed_at": "2021-03-04T02:57:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22036",
+        "html_url": "https://github.com/spack/spack/pull/22036",
+        "diff_url": "https://github.com/spack/spack/pull/22036.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22036.patch"
+    },
+    "body": "run `python -m unittest` failed on `py-adb-enhanced`:\r\n![image](https://user-images.githubusercontent.com/29532367/109589204-ed0d5a80-7b44-11eb-8622-be8b7eca8af2.png)\r\n\r\nThat issue is caused by `py-asyncio`, and it's not a dependency in the latest `py-adb-enhanced` version.",
+    "performed_via_github_app": null
+}

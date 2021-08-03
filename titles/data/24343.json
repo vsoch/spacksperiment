@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/24343",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/24343/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/24343/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/24343/events",
+    "html_url": "https://github.com/spack/spack/pull/24343",
+    "id": 921802595,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjcwNzUwNzE1",
+    "number": 24343,
+    "title": "openmolcas: new version and adding in mpi variant",
+    "user": {
+        "login": "snehring",
+        "id": 7978778,
+        "node_id": "MDQ6VXNlcjc5Nzg3Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7978778?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/snehring",
+        "html_url": "https://github.com/snehring",
+        "followers_url": "https://api.github.com/users/snehring/followers",
+        "following_url": "https://api.github.com/users/snehring/following{/other_user}",
+        "gists_url": "https://api.github.com/users/snehring/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/snehring/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/snehring/subscriptions",
+        "organizations_url": "https://api.github.com/users/snehring/orgs",
+        "repos_url": "https://api.github.com/users/snehring/repos",
+        "events_url": "https://api.github.com/users/snehring/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/snehring/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-06-15T21:09:59Z",
+    "updated_at": "2021-06-16T18:16:53Z",
+    "closed_at": "2021-06-16T08:37:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/24343",
+        "html_url": "https://github.com/spack/spack/pull/24343",
+        "diff_url": "https://github.com/spack/spack/pull/24343.diff",
+        "patch_url": "https://github.com/spack/spack/pull/24343.patch"
+    },
+    "body": "This PR updates openmolcas to the latest release. It also adds in an mpi variant that adds mpi support.",
+    "performed_via_github_app": null
+}

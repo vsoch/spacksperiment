@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19637",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19637/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19637/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19637/events",
+    "html_url": "https://github.com/spack/spack/pull/19637",
+    "id": 733595383,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTEzMzQ3MTYy",
+    "number": 19637,
+    "title": "hip: setup run environments",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-10-31T01:01:17Z",
+    "updated_at": "2020-11-02T08:06:45Z",
+    "closed_at": "2020-11-02T03:52:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19637",
+        "html_url": "https://github.com/spack/spack/pull/19637",
+        "diff_url": "https://github.com/spack/spack/pull/19637.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19637.patch"
+    },
+    "body": "* make `rocminfo` a run dependency (needed to set env vars used by `hipcc`)\r\n* sets environment variables needed by `hipcc` in run environment\r\n\r\nwithout these changes:\r\n\r\n```\r\nroot@c5b69e3ae101:/# spack load hip\r\nroot@c5b69e3ae101:/# hipcc --version\r\nCan't exec \"/opt/rocm/llvm/bin/clang++\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 141.\r\nUse of uninitialized value $HIP_CLANG_VERSION in pattern match (m//) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 142.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 145.\r\nCan't exec \"/opt/rocm/llvm/bin/clang++\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 141.\r\nUse of uninitialized value $HIP_CLANG_VERSION in pattern match (m//) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 142.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 145.\r\nCan't exec \"/opt/rocm/llvm/bin/clang++\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 141.\r\nUse of uninitialized value $HIP_CLANG_VERSION in pattern match (m//) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 142.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 145.\r\nCan't exec \"/opt/rocm/llvm/bin/clang++\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 141.\r\nUse of uninitialized value $HIP_CLANG_VERSION in pattern match (m//) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 142.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipconfig line 145.\r\nCan't exec \"/opt/rocm/llvm/bin/clang\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 203.\r\nUse of uninitialized value $HIP_CLANG_VERSION in pattern match (m//) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 204.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 208.\r\nUse of uninitialized value $HIP_CLANG_INCLUDE_PATH in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 233.\r\nUse of uninitialized value $HIP_CLANG_INCLUDE_PATH in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 234.\r\nCan't exec \"/opt/rocm/bin/rocm_agent_enumerator\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 725.\r\nUse of uninitialized value $targetsStr in substitution (s///) at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 726.\r\nUse of uninitialized value $targetsStr in split at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 732.\r\nUse of uninitialized value $HIP_CLANG_VERSION in concatenation (.) or string at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 849.\r\nHIP version: 3.8.20436-\r\nCan't exec \"/opt/rocm/llvm/bin/clang\": No such file or directory at /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/hip-3.8.0-7nko7g6nqh5v6fydefxhdc7de4kkakqt/bin/hipcc line 898.\r\nfailed to execute: No such file or directory\r\n```\r\n\r\nwith these changes:\r\n```\r\nroot@c5b69e3ae101:/# spack load hip\r\nroot@c5b69e3ae101:/# hipcc --version\r\nHIP version: 3.8.20436-\r\nclang version 11.0.0\r\nTarget: x86_64-unknown-linux-gnu\r\nThread model: posix\r\nInstalledDir: /opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/llvm-amdgpu-3.8.0-4tggbkqapj7luocehu26tva7sqxydgsu/bin\r\n```\r\n\r\n\r\n@haampie @srekolam @arjun-raj-kuppala @becker33 @dtaller ",
+    "performed_via_github_app": null
+}

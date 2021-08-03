@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22025",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22025/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22025/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22025/events",
+    "html_url": "https://github.com/spack/spack/pull/22025",
+    "id": 819114818,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTgyMjY3NTYz",
+    "number": 22025,
+    "title": "amrex: must use AMReX_CUDA_ARCH for version > 20.11",
+    "user": {
+        "login": "mic84",
+        "id": 28547062,
+        "node_id": "MDQ6VXNlcjI4NTQ3MDYy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28547062?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mic84",
+        "html_url": "https://github.com/mic84",
+        "followers_url": "https://api.github.com/users/mic84/followers",
+        "following_url": "https://api.github.com/users/mic84/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mic84/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mic84/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mic84/subscriptions",
+        "organizations_url": "https://api.github.com/users/mic84/orgs",
+        "repos_url": "https://api.github.com/users/mic84/repos",
+        "events_url": "https://api.github.com/users/mic84/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mic84/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2021-03-01T18:02:32Z",
+    "updated_at": "2021-03-01T19:45:34Z",
+    "closed_at": "2021-03-01T19:45:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22025",
+        "html_url": "https://github.com/spack/spack/pull/22025",
+        "diff_url": "https://github.com/spack/spack/pull/22025.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22025.patch"
+    },
+    "body": "Closes #22003 ",
+    "performed_via_github_app": null
+}

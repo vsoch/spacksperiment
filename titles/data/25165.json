@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/25165",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/25165/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/25165/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/25165/events",
+    "html_url": "https://github.com/spack/spack/pull/25165",
+    "id": 957140256,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNjMwOTQ3",
+    "number": 25165,
+    "title": "Retain 'build' and 'test' dependencies in the database",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 3092446637,
+            "node_id": "MDU6TGFiZWwzMDkyNDQ2NjM3",
+            "url": "https://api.github.com/repos/spack/spack/labels/core",
+            "name": "core",
+            "color": "215A80",
+            "default": false,
+            "description": "PR affects Spack core functionality"
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-07-31T01:06:10Z",
+    "updated_at": "2021-07-31T01:06:15Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/25165",
+        "html_url": "https://github.com/spack/spack/pull/25165",
+        "diff_url": "https://github.com/spack/spack/pull/25165.diff",
+        "patch_url": "https://github.com/spack/spack/pull/25165.patch"
+    },
+    "body": "With the introduction of `spack test` (i.e., stand-alone tests), packages can re-use software (e.g., examples, tests) from their repository.  With some tweaks, they could also re-use their build-time tests.  The problem is, Spack is currently only retaining entries in the database for dependency types `link` and `run`.  In some cases, key build dependencies (e.g., a critical version of `CMake` that was used to build the software) is not available to build these cached tests.\r\n\r\nAdditionally, there is a proliferation of hard-coded dependency types related to different aspects or phases of Spack processing that include hash calculations that somewhat obscure the necessary changes.\r\n\r\nThis PR addresses the database dependency retention problem by ensuring the database retains `build` and `test` dependencies.  Unfortunately, it is not sufficient to just tell the database to track the additional types.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/23419",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/23419/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/23419/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/23419/events",
+    "html_url": "https://github.com/spack/spack/pull/23419",
+    "id": 875398236,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NjI5NzQ4OTY3",
+    "number": 23419,
+    "title": "New version 0.65 and xsltproc(libxslt) dependency added",
+    "user": {
+        "login": "cessenat",
+        "id": 40771352,
+        "node_id": "MDQ6VXNlcjQwNzcxMzUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40771352?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cessenat",
+        "html_url": "https://github.com/cessenat",
+        "followers_url": "https://api.github.com/users/cessenat/followers",
+        "following_url": "https://api.github.com/users/cessenat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cessenat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cessenat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cessenat/subscriptions",
+        "organizations_url": "https://api.github.com/users/cessenat/orgs",
+        "repos_url": "https://api.github.com/users/cessenat/repos",
+        "events_url": "https://api.github.com/users/cessenat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cessenat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-05-04T12:10:34Z",
+    "updated_at": "2021-05-04T18:02:53Z",
+    "closed_at": "2021-05-04T17:42:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/23419",
+        "html_url": "https://github.com/spack/spack/pull/23419",
+        "diff_url": "https://github.com/spack/spack/pull/23419.diff",
+        "patch_url": "https://github.com/spack/spack/pull/23419.patch"
+    },
+    "body": "Moreutils called xsltproc in build phase but dependency to libxslt was missing.\r\nBTW added release 0.65 see https://joeyh.name/code/moreutils/news/version_0.65/\r\n",
+    "performed_via_github_app": null
+}

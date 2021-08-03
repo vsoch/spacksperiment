@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22225",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22225/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22225/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22225/events",
+    "html_url": "https://github.com/spack/spack/pull/22225",
+    "id": 827887516,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTg5NzUzMzMx",
+    "number": 22225,
+    "title": "Rivet: syntax fixes",
+    "user": {
+        "login": "iarspider",
+        "id": 636602,
+        "node_id": "MDQ6VXNlcjYzNjYwMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/636602?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iarspider",
+        "html_url": "https://github.com/iarspider",
+        "followers_url": "https://api.github.com/users/iarspider/followers",
+        "following_url": "https://api.github.com/users/iarspider/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iarspider/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iarspider/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iarspider/subscriptions",
+        "organizations_url": "https://api.github.com/users/iarspider/orgs",
+        "repos_url": "https://api.github.com/users/iarspider/repos",
+        "events_url": "https://api.github.com/users/iarspider/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iarspider/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-10T15:10:15Z",
+    "updated_at": "2021-03-12T21:14:22Z",
+    "closed_at": "2021-03-12T17:52:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22225",
+        "html_url": "https://github.com/spack/spack/pull/22225",
+        "diff_url": "https://github.com/spack/spack/pull/22225.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22225.patch"
+    },
+    "body": "It turns out you can't use `@when` with `flag_handler`...",
+    "performed_via_github_app": null
+}

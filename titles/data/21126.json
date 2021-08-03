@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/21126",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/21126/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/21126/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/21126/events",
+    "html_url": "https://github.com/spack/spack/pull/21126",
+    "id": 787965222,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTU2NTUyMjk1",
+    "number": 21126,
+    "title": "sortmerna: Fix for aarch64",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2021-01-18T06:30:13Z",
+    "updated_at": "2021-01-19T15:01:17Z",
+    "closed_at": "2021-01-19T15:01:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/21126",
+        "html_url": "https://github.com/spack/spack/pull/21126",
+        "diff_url": "https://github.com/spack/spack/pull/21126.diff",
+        "patch_url": "https://github.com/spack/spack/pull/21126.patch"
+    },
+    "body": "I made a fix to be able to install on aarch64.\r\nI also fixed the following installation error that was also occurring on x86_64.\r\n```\r\n         20    def install(self, spec, prefix):\r\n         21        mkdirp(prefix.bin)\r\n\u3000\u3000  22        with working_dir(join_path('spack-build', 'src', 'indexdb')):\r\n         23            install('indexdb', prefix.bin)\r\n```",
+    "performed_via_github_app": null
+}

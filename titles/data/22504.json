@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/22504",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/22504/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/22504/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/22504/events",
+    "html_url": "https://github.com/spack/spack/pull/22504",
+    "id": 839352414,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk5MzgxNzA0",
+    "number": 22504,
+    "title": "extending example for buildcaches",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2021-03-24T04:56:21Z",
+    "updated_at": "2021-06-15T04:46:28Z",
+    "closed_at": "2021-06-15T04:46:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/22504",
+        "html_url": "https://github.com/spack/spack/pull/22504",
+        "diff_url": "https://github.com/spack/spack/pull/22504.diff",
+        "patch_url": "https://github.com/spack/spack/pull/22504.patch"
+    },
+    "body": "I was attempting to create a local build cache from a directory, and I found the docs for both buildcaches and mirrors, but did not connect the docs that the url variable could be the local filesystem variable. I am extending the docs for buildcaches with an example of creating and interacting with one on the filesystem because I suspect other users will run into this need and possibly not find what they are looking for.\r\n\r\nSigned-off-by: vsoch <vsoch@users.noreply.github.com>",
+    "performed_via_github_app": null
+}

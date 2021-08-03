@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19988",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19988/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19988/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19988/events",
+    "html_url": "https://github.com/spack/spack/pull/19988",
+    "id": 746070206,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTIzNTI5Mzc5",
+    "number": 19988,
+    "title": "concretizer: treat target ranges in directives correctly",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-11-18T22:26:27Z",
+    "updated_at": "2020-11-27T19:54:01Z",
+    "closed_at": "2020-11-27T19:53:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19988",
+        "html_url": "https://github.com/spack/spack/pull/19988",
+        "diff_url": "https://github.com/spack/spack/pull/19988.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19988.patch"
+    },
+    "body": "fixes #19981\r\n\r\nThis commit adds support for target ranges in directives, for instance:\r\n```python\r\nconflicts('+foo', when='target=x86_64:,aarch64:')\r\n```\r\nIf any target in a spec body is not a known target the following clause will be emitted:\r\n```\r\nnode_target_satisfies(Package, TargetConstraint)\r\n```\r\nwhen traversing the spec and a definition of the clause will then be printed at the end similarly to what is done for package and compiler versions.",
+    "performed_via_github_app": null
+}

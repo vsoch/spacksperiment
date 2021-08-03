@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/20391",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/20391/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/20391/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/20391/events",
+    "html_url": "https://github.com/spack/spack/pull/20391",
+    "id": 767041135,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTM5ODg3MzY2",
+    "number": 20391,
+    "title": "Bugfix/kokkos-nvcc-wrapper: Correct the git URL",
+    "user": {
+        "login": "tldahlgren",
+        "id": 35777542,
+        "node_id": "MDQ6VXNlcjM1Nzc3NTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35777542?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tldahlgren",
+        "html_url": "https://github.com/tldahlgren",
+        "followers_url": "https://api.github.com/users/tldahlgren/followers",
+        "following_url": "https://api.github.com/users/tldahlgren/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tldahlgren/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tldahlgren/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tldahlgren/subscriptions",
+        "organizations_url": "https://api.github.com/users/tldahlgren/orgs",
+        "repos_url": "https://api.github.com/users/tldahlgren/repos",
+        "events_url": "https://api.github.com/users/tldahlgren/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tldahlgren/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1412132374,
+            "node_id": "MDU6TGFiZWwxNDEyMTMyMzc0",
+            "url": "https://api.github.com/repos/spack/spack/labels/download-error",
+            "name": "download-error",
+            "color": "c046f4",
+            "default": false,
+            "description": "The package source cannot be downloaded"
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-12-15T00:14:38Z",
+    "updated_at": "2020-12-15T03:11:07Z",
+    "closed_at": "2020-12-15T03:11:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/20391",
+        "html_url": "https://github.com/spack/spack/pull/20391",
+        "diff_url": "https://github.com/spack/spack/pull/20391.diff",
+        "patch_url": "https://github.com/spack/spack/pull/20391.patch"
+    },
+    "body": "This one-line fix corrects the git URL so cloning (e.g. `@develop`) succeeds.\r\n\r\nI was able to reproduce the reported problem on the system having the issue using `spack -d stage kokkos-nvcc-wrapper@develop` and confirm `Error: FetchError: All fetchers failed`.\r\n\r\nThe stage command succeeded on that system with this fix.",
+    "performed_via_github_app": null
+}
