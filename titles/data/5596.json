@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5596",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5596/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5596/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5596/events",
+    "html_url": "https://github.com/spack/spack/pull/5596",
+    "id": 262696755,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ0NjAyNjQz",
+    "number": 5596,
+    "title": "Patches: the underlying MV variant now uses the property setter",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2017-10-04T07:53:29Z",
+    "updated_at": "2017-10-04T20:12:05Z",
+    "closed_at": "2017-10-04T18:39:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5596",
+        "html_url": "https://github.com/spack/spack/pull/5596",
+        "diff_url": "https://github.com/spack/spack/pull/5596.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5596.patch"
+    },
+    "body": "refers #5587\r\ncloses #5593\r\n\r\nThe implementation introduced in #5476 used `dedupe` to set a private member of a `MultiValuedVariant` object. `dedupe` is meant to give a stable deduplication of the items in a sequence, and *returns an object whose value depends on the order of the items in its argument*. \r\n\r\nNow the private member is set implicitly using the associated property setter. The logic changes from stable deduplication to a totally ordered deduplication (i.e. instead of `dedupe(t)` it uses `sorted(set(t))`). \r\n\r\nThis should also grant that packages that shuffle the same set of patch directives maintain the same hash. I didn't try that out, but looking at the implementation I expect:\r\n```python\r\nclass A(Package):\r\n    \r\n    patch('foo.patch')\r\n    patch('bar.patch')\r\n    patch('baz.patch')\r\n```\r\nto have a different hash in `develop` with respect to:\r\n```python\r\nclass A(Package):\r\n    \r\n    # The order of directives changes here\r\n    patch('bar.patch')\r\n    patch('baz.patch')\r\n    patch('foo.patch')\r\n```\r\nwhile it should give the same hash now. \r\n\r\n~@tgamblin Was the previous implementation done on purpose out of concerns of the order of application of patches?~\r\n\r\nEDIT: after reading the code in #5476 I can say for sure that the answer to the question above is yes. This PR is currently a work in progress because I need to figure out the best way to ensure the right order of application for patches.\r\n\r\nProbably there are also workarounds that could maintain the same logic as in `develop`, even though I argue that setting private attributes to by-pass a setter is not a best-practice (and fires back sometimes :smile:).",
+    "performed_via_github_app": null
+}

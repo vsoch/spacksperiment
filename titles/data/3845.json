@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3845",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3845/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3845/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3845/events",
+    "html_url": "https://github.com/spack/spack/pull/3845",
+    "id": 221865913,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE1OTcxNDE4",
+    "number": 3845,
+    "title": "gpg: add a gpg subcommand",
+    "user": {
+        "login": "mathstuf",
+        "id": 97253,
+        "node_id": "MDQ6VXNlcjk3MjUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/97253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mathstuf",
+        "html_url": "https://github.com/mathstuf",
+        "followers_url": "https://api.github.com/users/mathstuf/followers",
+        "following_url": "https://api.github.com/users/mathstuf/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mathstuf/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mathstuf/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mathstuf/subscriptions",
+        "organizations_url": "https://api.github.com/users/mathstuf/orgs",
+        "repos_url": "https://api.github.com/users/mathstuf/repos",
+        "events_url": "https://api.github.com/users/mathstuf/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mathstuf/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 22,
+    "created_at": "2017-04-14T18:40:09Z",
+    "updated_at": "2017-11-20T13:40:27Z",
+    "closed_at": "2017-05-26T17:31:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3845",
+        "html_url": "https://github.com/spack/spack/pull/3845",
+        "diff_url": "https://github.com/spack/spack/pull/3845.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3845.patch"
+    },
+    "body": "No logic is here, but this should be something like the interface\r\nexpected for the subcommand.\r\n\r\n  - [x] add tests (skip if gpg is not available)\r\n  - [x] add docs",
+    "performed_via_github_app": null
+}

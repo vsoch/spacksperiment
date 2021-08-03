@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4307",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4307/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4307/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4307/events",
+    "html_url": "https://github.com/spack/spack/pull/4307",
+    "id": 230228878,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxNjY1MzYx",
+    "number": 4307,
+    "title": "Refactored RepoPath to be a proper MutableSequence",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 501899682,
+            "node_id": "MDU6TGFiZWw1MDE4OTk2ODI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/RFC",
+            "name": "RFC",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2017-05-21T15:38:35Z",
+    "updated_at": "2017-08-12T15:39:00Z",
+    "closed_at": "2017-08-12T15:39:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4307",
+        "html_url": "https://github.com/spack/spack/pull/4307",
+        "diff_url": "https://github.com/spack/spack/pull/4307.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4307.patch"
+    },
+    "body": "I spent the last couple of days studying the code that implements repositories (and I have to say it has been quite instructive to see how it blends into the python \"import\" protocol). While I was at it I thought it could have been a good exercise to refactor some parts to be more \"pythonic\"  hence this PR.\r\n\r\nThe modifications here involve just `RepoPath`, as I would like to keep the PR as focused as possible. If there's agreement on the type of changes I will start having a look at `Repo` and `NamespaceTrie` in other PRs (in case they need any change).\r\n\r\nLet me know if you agree with these kind of PRs or if you can figure out further tests besides the ones implemented.\r\n\r\nFixes #4236 \r\nFixes #5002",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1573",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1573/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1573/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1573/events",
+    "html_url": "https://github.com/spack/spack/pull/1573",
+    "id": 172341716,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODIxMTczMTM=",
+    "number": 1573,
+    "title": "Feature/add package for fastqc",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2016-08-21T21:11:23Z",
+    "updated_at": "2017-03-30T00:56:35Z",
+    "closed_at": "2016-12-19T00:38:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1573",
+        "html_url": "https://github.com/spack/spack/pull/1573",
+        "diff_url": "https://github.com/spack/spack/pull/1573.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1573.patch"
+    },
+    "body": "This adds a package for fastqc.\n\n~~FEEDBACK REQUEST: I need some way to make the fastqc file executable.  `set_executable` only sets the user executable bit, which isnt' what I need in my environment.  This package uses _chmod_ (stolen from the cuda package).  What's the right way.  See also #1483~~\n\nI think that this is ready to go.  I've changed it to install things into neater bin and lib subdirs and am going with the chmod() for now.\n",
+    "performed_via_github_app": null
+}

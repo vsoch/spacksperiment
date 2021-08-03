@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4962",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4962/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4962/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4962/events",
+    "html_url": "https://github.com/spack/spack/pull/4962",
+    "id": 247579575,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzODUwMzY3",
+    "number": 4962,
+    "title": "Qt: disable OpenGL support by default",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-08-03T03:06:36Z",
+    "updated_at": "2017-08-18T18:06:09Z",
+    "closed_at": "2017-08-04T14:36:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4962",
+        "html_url": "https://github.com/spack/spack/pull/4962",
+        "diff_url": "https://github.com/spack/spack/pull/4962.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4962.patch"
+    },
+    "body": "See #4961 \r\n\r\n`+opengl` is the only variant enabled by default for the `qt` package. Ironically, it is the only variant that doesn't work. Spack does not have a package that provides the OpenGL libraries. I thought `mesa` was supposed to, but it clearly isn't working. This PR disables the variant by default. If you happen to have OpenGL installed on your system and want to build `qt+opengl`, be my guest. But if you don't, the default variant should not fail for you.\r\n\r\nP.S. We are missing the vast majority of Qt's dependencies. Run `./configure -list-libraries` if you are curious.\r\n\r\nP.P.S. I hate Qt",
+    "performed_via_github_app": null
+}

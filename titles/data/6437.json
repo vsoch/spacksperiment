@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6437",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6437/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6437/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6437/events",
+    "html_url": "https://github.com/spack/spack/pull/6437",
+    "id": 276532967,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU0NDg2NDI0",
+    "number": 6437,
+    "title": "Octave GUI depends on qt+opengl.",
+    "user": {
+        "login": "weijianwen",
+        "id": 908249,
+        "node_id": "MDQ6VXNlcjkwODI0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/908249?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/weijianwen",
+        "html_url": "https://github.com/weijianwen",
+        "followers_url": "https://api.github.com/users/weijianwen/followers",
+        "following_url": "https://api.github.com/users/weijianwen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/weijianwen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/weijianwen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/weijianwen/subscriptions",
+        "organizations_url": "https://api.github.com/users/weijianwen/orgs",
+        "repos_url": "https://api.github.com/users/weijianwen/repos",
+        "events_url": "https://api.github.com/users/weijianwen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/weijianwen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654901455,
+            "node_id": "MDU6TGFiZWw2NTQ5MDE0NTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gui",
+            "name": "gui",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654871697,
+            "node_id": "MDU6TGFiZWw2NTQ4NzE2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-config",
+            "name": "pkg-config",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-11-24T07:17:42Z",
+    "updated_at": "2017-12-15T03:07:13Z",
+    "closed_at": "2017-11-24T08:40:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6437",
+        "html_url": "https://github.com/spack/spack/pull/6437",
+        "diff_url": "https://github.com/spack/spack/pull/6437.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6437.patch"
+    },
+    "body": "Fix #6368 . Octave GUI requries qt+opengl to build.",
+    "performed_via_github_app": null
+}

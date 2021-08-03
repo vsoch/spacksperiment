@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2275",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2275/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2275/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2275/events",
+    "html_url": "https://github.com/spack/spack/pull/2275",
+    "id": 187912113,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTI3MjE5NzU=",
+    "number": 2275,
+    "title": "Allow compiler wrapper to modify environment",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2016-11-08T06:27:29Z",
+    "updated_at": "2016-11-09T16:00:34Z",
+    "closed_at": "2016-11-09T16:00:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2275",
+        "html_url": "https://github.com/spack/spack/pull/2275",
+        "diff_url": "https://github.com/spack/spack/pull/2275.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2275.patch"
+    },
+    "body": "This is entirely copied from #943, just modified to be up to date with the current spack. There's probably some better way to handle this since all credit goes to @hegner but for now I'll place this here and mark it WIP.\r\n\r\nThis adds the ability to set environment variables in the compiler\r\nwrappers. These are specified as part of the compilers.yaml config.",
+    "performed_via_github_app": null
+}

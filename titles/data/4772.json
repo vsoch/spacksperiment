@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4772",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4772/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4772/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4772/events",
+    "html_url": "https://github.com/spack/spack/pull/4772",
+    "id": 243082600,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwNjUyMzQ2",
+    "number": 4772,
+    "title": "Add package for r-ada, update r-rpart version",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-07-14T18:57:57Z",
+    "updated_at": "2017-07-15T16:08:37Z",
+    "closed_at": "2017-07-15T16:08:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4772",
+        "html_url": "https://github.com/spack/spack/pull/4772",
+        "diff_url": "https://github.com/spack/spack/pull/4772.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4772.patch"
+    },
+    "body": "Adds a package for r-ada.\r\n\r\nUpdate the version for r-rpart because the previous version is\r\nno longer at that URL.  The previous version *is* in the Archive,\r\nbut list_url does not seem to be able to find it.  This might be related to #2309.\r\n\r\n@glennpj -- any ideas about the list_url?  If not, it seems like the old version of r-rpart is now unavailable.  Is that \"ok\"?",
+    "performed_via_github_app": null
+}

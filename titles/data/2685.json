@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2685",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2685/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2685/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2685/events",
+    "html_url": "https://github.com/spack/spack/pull/2685",
+    "id": 198050453,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTk2ODU4OTc=",
+    "number": 2685,
+    "title": "Fix issues related to the switchover to pytest.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-12-29T18:40:48Z",
+    "updated_at": "2016-12-30T01:40:59Z",
+    "closed_at": "2016-12-29T19:59:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2685",
+        "html_url": "https://github.com/spack/spack/pull/2685",
+        "diff_url": "https://github.com/spack/spack/pull/2685.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2685.patch"
+    },
+    "body": "Fixes issues introduced in #2502.\r\n\r\n- [x] Remove stale reference to `import nose` from `bin/spack` script.\r\n- [x] Add `py` to externals (missing dependency for `pytest`)\r\n\r\n@pramodk @jgalarowicz @schulzm Does this fix your issues?",
+    "performed_via_github_app": null
+}

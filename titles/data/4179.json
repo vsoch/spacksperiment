@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4179",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4179/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4179/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4179/events",
+    "html_url": "https://github.com/spack/spack/pull/4179",
+    "id": 227418478,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE5Njk2MDY0",
+    "number": 4179,
+    "title": "Add a new package for ExtUtils::MakeMaker",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-09T16:08:59Z",
+    "updated_at": "2019-10-20T01:42:37Z",
+    "closed_at": "2017-05-09T23:52:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4179",
+        "html_url": "https://github.com/spack/spack/pull/4179",
+        "diff_url": "https://github.com/spack/spack/pull/4179.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4179.patch"
+    },
+    "body": "I don't actually need this package anymore, but I figured I might as well add it since it works.\r\n\r\nFor a while now I've been using an external installation for Perl. Mostly because I can't install Perl with Intel, not because it takes a while to build. But when I tried building Git, it failed because it was missing ExtUtils::MakeMaker. I did some more debugging and found that I couldn't install any of the other Perl packages with my system Perl either. It turns out that I had `perl` installed but not `perl-devel`, which provides things like ExtUtils. Long story short, just let Spack build everything, external packages aren't reliable.",
+    "performed_via_github_app": null
+}

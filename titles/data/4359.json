@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4359",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4359/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4359/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4359/events",
+    "html_url": "https://github.com/spack/spack/pull/4359",
+    "id": 231450377,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyNTE5MTI3",
+    "number": 4359,
+    "title": "added libdrm 2.4.75 per #4316",
+    "user": {
+        "login": "ifelsefi",
+        "id": 14250760,
+        "node_id": "MDQ6VXNlcjE0MjUwNzYw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14250760?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ifelsefi",
+        "html_url": "https://github.com/ifelsefi",
+        "followers_url": "https://api.github.com/users/ifelsefi/followers",
+        "following_url": "https://api.github.com/users/ifelsefi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ifelsefi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ifelsefi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ifelsefi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ifelsefi/orgs",
+        "repos_url": "https://api.github.com/users/ifelsefi/repos",
+        "events_url": "https://api.github.com/users/ifelsefi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ifelsefi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-25T20:29:35Z",
+    "updated_at": "2017-05-26T03:20:00Z",
+    "closed_at": "2017-05-26T03:20:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4359",
+        "html_url": "https://github.com/spack/spack/pull/4359",
+        "diff_url": "https://github.com/spack/spack/pull/4359.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4359.patch"
+    },
+    "body": "```\r\n==> Building libdrm [Package]\r\n==> Executing phase : 'install'\r\n==> Successfully installed libdrm\r\n  Fetch: 1.69s.  Build: 1m 53.95s.  Total: 1m 55.64s.\r\n[+] /pbtech_mounts/homes027/user/repos/spack/opt/spack/linux-rhel6-x86_64/gcc-4.4.6/libdrm-2.4.75-3e7arsa4oyqohhrxeiw3vceetc7vufmz\r\n\r\n```",
+    "performed_via_github_app": null
+}

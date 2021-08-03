@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6779",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6779/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6779/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6779/events",
+    "html_url": "https://github.com/spack/spack/pull/6779",
+    "id": 284951551,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYwNDE1MjM4",
+    "number": 6779,
+    "title": "Add unit tests for spack help command",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-12-28T16:51:43Z",
+    "updated_at": "2017-12-31T23:37:58Z",
+    "closed_at": "2017-12-31T06:55:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6779",
+        "html_url": "https://github.com/spack/spack/pull/6779",
+        "diff_url": "https://github.com/spack/spack/pull/6779.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6779.patch"
+    },
+    "body": "This one is raising a lot of exceptions and I don't know why (see Travis output). @tgamblin is this a consequence of the way `spack help` was implemented? Is there an easy way around it?",
+    "performed_via_github_app": null
+}

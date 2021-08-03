@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4671",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4671/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4671/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4671/events",
+    "html_url": "https://github.com/spack/spack/pull/4671",
+    "id": 240286830,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI4NzA5Mjk4",
+    "number": 4671,
+    "title": "Parallelize lock test for parallel filesystems",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-07-04T00:44:36Z",
+    "updated_at": "2017-07-31T20:41:49Z",
+    "closed_at": "2017-07-04T18:41:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4671",
+        "html_url": "https://github.com/spack/spack/pull/4671",
+        "diff_url": "https://github.com/spack/spack/pull/4671.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4671.patch"
+    },
+    "body": "This parallelizes the lock test so that it can be run with MPI, to test cross-node locking on parallel filesystems.  This is needed for parallel builds in Spack, and to ensure that different spack processes can coordinate with each other reasonably well through locks on a parallel filesystem.\r\n\r\nThis actually looks like a lot more changes than it is, since it first makes the lock test a proper `pytest` test.  Look at commits after the first for the real details.\r\n\r\n- [x] Port lock test to pytest\r\n- [x] Fix `touch` and `mkdirp` to work properly with concurrent spack processes (multi-node)\r\n- [x] Make the `lock` test MPI-runnable\r\n- [x] Parametrize the `lock` test to run on potentially multiple filesystems.\r\n\r\nAs before, you can run the lock test as a node-local test, with a typical invocation like this:\r\n\r\n```console\r\n    $ spack test lock\r\n```\r\n\r\nYou can *also* run it as an MPI program, which allows you to test locks across nodes.  So, e.g., you can run the test like this:\r\n\r\n```console\r\n    $ mpirun -n 7 spack test lock\r\n```\r\n\r\nAnd it will test locking correctness among MPI processes.  Note that you'll need `mpi4py` for this to work properly.  To ensure that the MPI processes span multiple nodes, pass the right args to your MPI launcher.  e.g., for SLURM:\r\n\r\n```console\r\n    $ srun -N 7 -n 7 -m cyclic spack test lock\r\n```\r\n\r\nYou can use this to test whether your shared filesystem properly supports POSIX reader-writer locking with byte ranges through `fcntl`.\r\n\r\nThe test is parametrized, and it'll run on multiple filesystems in both node-local and MPI mode.\r\nYou can control this by modifying the `locations` list in `lib/spack/spack/test/lock.py`.  By default it looks like this:\r\n\r\n```python\r\n    locations = [\r\n        tempfile.gettempdir(),\r\n        os.path.join('/nfs/tmp2/', getpass.getuser()),\r\n        os.path.join('/p/lscratch*/', getpass.getuser()),\r\n    ]\r\n```\r\n\r\nThese are LLNL locations; you can add paths to the filesystems you want to test.  Nonexistant paths will be skipped.  `tempfile.gettempdir()` will also be skipped for MPI testing, as it is often a node-local filesystem, and multi-node tests will fail if the locks aren't actually on a shared filesystem.  I am not sure of a good way to auto-detect whether a system has a Lustre, NFS, or GPFS mount, otherwise I'd make the list a bit more automatic.\r\n\r\n@adamjstewart: this works for me node-local and in parallel on LLNL NFS and Lustre filesystems.  I'm curious to know whether it works in parallel on GPFS.\r\n\r\nI am curious to know what others get when mpi-running this across nodes on their favorite filesystems.  I'm hoping the lock implementation is pretty robust.",
+    "performed_via_github_app": null
+}

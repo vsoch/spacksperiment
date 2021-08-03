@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3174",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3174/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3174/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3174/events",
+    "html_url": "https://github.com/spack/spack/pull/3174",
+    "id": 208528363,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2NzkyNjA2",
+    "number": 3174,
+    "title": "More consistent yes/no prompts",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-02-17T19:05:30Z",
+    "updated_at": "2017-03-24T22:10:37Z",
+    "closed_at": "2017-02-17T21:45:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3174",
+        "html_url": "https://github.com/spack/spack/pull/3174",
+        "diff_url": "https://github.com/spack/spack/pull/3174.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3174.patch"
+    },
+    "body": "Previously, there were two functions, `tty.get_yes_or_no` and `spack.cmd.ask_for_confirmation` that basically did the same thing. They were formatted slightly differently (one added a newline character and one didn't). I prefer the former, so I refactored things and removed `spack.cmd.ask_for_confirmation`.\r\n\r\n@alalazo ",
+    "performed_via_github_app": null
+}

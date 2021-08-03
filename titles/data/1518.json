@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1518",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1518/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1518/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1518/events",
+    "html_url": "https://github.com/spack/spack/pull/1518",
+    "id": 171115140,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODEyNzQ1ODA=",
+    "number": 1518,
+    "title": "gcc: fix darwin dispatch/object.h header issue",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2016-08-15T06:24:47Z",
+    "updated_at": "2016-10-03T01:54:44Z",
+    "closed_at": "2016-10-03T01:54:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1518",
+        "html_url": "https://github.com/spack/spack/pull/1518",
+        "diff_url": "https://github.com/spack/spack/pull/1518.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1518.patch"
+    },
+    "body": "Fixes #1203. Apple ships headers in Yosemite (and possibly earlier) that\nare gcc-incompatible, but compile fine with clang. The fix is to copy\nthe offending system header from /usr/include/${REST_OF_HEADER_PATH} to\n${GCC_PREFIX}/include/${REST_OF_HEADER_PATH} and replace the non-gcc-\ncompatible features with gcc-compatible equivalents.\n\nSee https://github.com/hashdist/hashstack/pull/771/files for\ninspiration, and\nhttp://hamelot.io/programming/osx-gcc-dispatch_block_t-has-not-been-declared-invalid-typedef/\nfor a description of the header issue.\n",
+    "performed_via_github_app": null
+}

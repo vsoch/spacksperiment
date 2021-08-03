@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3103",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3103/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3103/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3103/events",
+    "html_url": "https://github.com/spack/spack/pull/3103",
+    "id": 206479934,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA1NDEwNDg3",
+    "number": 3103,
+    "title": "Add build options for emacs depends on #2386",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-02-09T11:41:50Z",
+    "updated_at": "2017-03-28T16:12:45Z",
+    "closed_at": "2017-03-28T16:12:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3103",
+        "html_url": "https://github.com/spack/spack/pull/3103",
+        "diff_url": "https://github.com/spack/spack/pull/3103.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3103.patch"
+    },
+    "body": "Update of #3102 \r\nI somehow screwed up my pushes, and this was the simplest solution.\r\n\r\nEdit:\r\nWe currently maintain two repositories for our local spack installation, one with things that at least someone at our group thought could be useful upstream. I will ask why this change was necessary, but don't know that yet.\r\n\r\ndepends on #2386",
+    "performed_via_github_app": null
+}

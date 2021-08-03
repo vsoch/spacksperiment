@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3073",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3073/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3073/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3073/events",
+    "html_url": "https://github.com/spack/spack/pull/3073",
+    "id": 206250314,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA1MjUyNjg3",
+    "number": 3073,
+    "title": "Explicitly tell MPC where to find its deps",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-02-08T16:29:40Z",
+    "updated_at": "2017-02-18T22:44:52Z",
+    "closed_at": "2017-02-10T23:59:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3073",
+        "html_url": "https://github.com/spack/spack/pull/3073",
+        "diff_url": "https://github.com/spack/spack/pull/3073.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3073.patch"
+    },
+    "body": "Fixes #3072.\r\n\r\nFor some reason, on Comet, @eschnett wasn't able to build `mpc` because it was picking up the system `mpfr` installation. This PR explicitly tells `mpc` which directory to find its dependencies in.\r\n\r\nUnrelated change: I added version constraints to the dependencies. These come from [here](http://www.multiprecision.org/index.php?prog=mpc&page=download).",
+    "performed_via_github_app": null
+}

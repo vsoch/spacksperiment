@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5125",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5125/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5125/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5125/events",
+    "html_url": "https://github.com/spack/spack/pull/5125",
+    "id": 250712869,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM2MDg3NjUx",
+    "number": 5125,
+    "title": "Clean up docs on and add tab completion for buildcache command",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-08-16T18:09:18Z",
+    "updated_at": "2017-08-16T21:23:29Z",
+    "closed_at": "2017-08-16T20:58:10Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5125",
+        "html_url": "https://github.com/spack/spack/pull/5125",
+        "diff_url": "https://github.com/spack/spack/pull/5125.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5125.patch"
+    },
+    "body": "The `spack buildcache` command was added a couple days ago in #4854, but there were a couple things missing:\r\n\r\n1. Forgot to update the tab completion script with the new command\r\n2. Docs didn't format well: http://spack.readthedocs.io/en/latest/binary_caches.html\r\n\r\nThis PR adds tab completion and updates the docs to fit better with the rest of our documentation.\r\n\r\n@gartung Can you see if these changes look good to you?",
+    "performed_via_github_app": null
+}

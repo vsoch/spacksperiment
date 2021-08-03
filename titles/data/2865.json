@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2865",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2865/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2865/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2865/events",
+    "html_url": "https://github.com/spack/spack/pull/2865",
+    "id": 201665099,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyMTI5OTg4",
+    "number": 2865,
+    "title": "Add spack edit option for build systems",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 18,
+    "created_at": "2017-01-18T19:12:15Z",
+    "updated_at": "2017-01-19T02:49:49Z",
+    "closed_at": "2017-01-19T02:49:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2865",
+        "html_url": "https://github.com/spack/spack/pull/2865",
+        "diff_url": "https://github.com/spack/spack/pull/2865.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2865.patch"
+    },
+    "body": "I've been modifying our build systems pretty heavily lately. So I added a convenience option for `spack edit` to open these files without having to navigate to the directory or specify the entire path. It works the same as the other options for editing modules, commands, and tests. Simply run:\r\n```\r\n$ spack edit -b cmake\r\n```\r\nto open the `CMakePackage` build system in your favorite `$EDITOR`.",
+    "performed_via_github_app": null
+}

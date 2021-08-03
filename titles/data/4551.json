@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4551",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4551/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4551/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4551/events",
+    "html_url": "https://github.com/spack/spack/pull/4551",
+    "id": 237057945,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2NDIzMTg5",
+    "number": 4551,
+    "title": "fontconfig should depend on gperf",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-06-20T00:12:57Z",
+    "updated_at": "2017-06-22T15:44:51Z",
+    "closed_at": "2017-06-20T17:46:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4551",
+        "html_url": "https://github.com/spack/spack/pull/4551",
+        "diff_url": "https://github.com/spack/spack/pull/4551.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4551.patch"
+    },
+    "body": "Sometime around 2.12.2 fontconfig acquired a build-time dependency on `gperf` (See comment around line 2340 of the Changelog referencing this commit, I think:59fd9960bbb58fd6257adb13ec0f918882149332).\r\n\r\nThis adds the dependency.\r\n\r\n`gperf` is called in the `src/Makefile`, see line 907 of `src/Makefile.in`.\r\n\r\nI've tested `2.12.3` and `2.12.1` on CentOS 7.",
+    "performed_via_github_app": null
+}

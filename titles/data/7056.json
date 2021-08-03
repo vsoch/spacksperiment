@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7056/events",
+    "html_url": "https://github.com/spack/spack/pull/7056",
+    "id": 291233116,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY0ODY2Nzk1",
+    "number": 7056,
+    "title": "llvm+python +lldbdepnds on py-six",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-01-24T14:42:13Z",
+    "updated_at": "2018-04-20T17:50:00Z",
+    "closed_at": "2018-03-22T20:42:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7056",
+        "html_url": "https://github.com/spack/spack/pull/7056",
+        "diff_url": "https://github.com/spack/spack/pull/7056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7056.patch"
+    },
+    "body": "LLVM + LLDB requires py-six. we also need to specify that we want to use the Spack-installed py-six, rather than have lldb use its own version. (this replaces my backwards merge in #7052).",
+    "performed_via_github_app": null
+}

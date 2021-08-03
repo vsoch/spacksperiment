@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4522",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4522/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4522/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4522/events",
+    "html_url": "https://github.com/spack/spack/pull/4522",
+    "id": 236356304,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI1OTQzMTY2",
+    "number": 4522,
+    "title": "py-pillow: ensure that RPATH includes graphics libraries",
+    "user": {
+        "login": "mjwoods",
+        "id": 16091567,
+        "node_id": "MDQ6VXNlcjE2MDkxNTY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16091567?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mjwoods",
+        "html_url": "https://github.com/mjwoods",
+        "followers_url": "https://api.github.com/users/mjwoods/followers",
+        "following_url": "https://api.github.com/users/mjwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mjwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mjwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mjwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/mjwoods/orgs",
+        "repos_url": "https://api.github.com/users/mjwoods/repos",
+        "events_url": "https://api.github.com/users/mjwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mjwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2017-06-16T01:28:58Z",
+    "updated_at": "2017-06-20T05:24:45Z",
+    "closed_at": "2017-06-16T13:43:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4522",
+        "html_url": "https://github.com/spack/spack/pull/4522",
+        "diff_url": "https://github.com/spack/spack/pull/4522.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4522.patch"
+    },
+    "body": "After installing py-pillow, the jpeg library was not detected when converting images. After setting RPATH explicitly during package installation, image conversions worked as expected.\r\n\r\nThis is the second RPATH problem I have had today with python packages. The problem could be resolved by using the spack compiler wrappers for package installation, but python is configured to use the real compilers (by the `filter_compilers` method of the `python` package). This makes it easier for users to install packages without spack, but it causes problems when installing packages with spack. Perhaps it would be better to configure python to use a generic compiler (e.g. gcc) so that the actual compiler can be specified through environment variables (set by environment modules or spack).",
+    "performed_via_github_app": null
+}

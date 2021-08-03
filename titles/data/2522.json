@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2522",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2522/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2522/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2522/events",
+    "html_url": "https://github.com/spack/spack/pull/2522",
+    "id": 194358169,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTcxMzc3Mzk=",
+    "number": 2522,
+    "title": "dealii: remove dependencies which are not needed",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-12-08T15:03:09Z",
+    "updated_at": "2017-05-28T21:00:38Z",
+    "closed_at": "2016-12-08T15:29:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2522",
+        "html_url": "https://github.com/spack/spack/pull/2522",
+        "diff_url": "https://github.com/spack/spack/pull/2522.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2522.patch"
+    },
+    "body": "to clarify, one may use `astyle` to indent the code when writing patches/contributing to deal.II, but it's not really a dependency. Similar with `numdiff`, it's not needed to build `@develop` versions, but may during development to run huge test suite.\r\n\r\n@jppelteret @Rombur ping.",
+    "performed_via_github_app": null
+}

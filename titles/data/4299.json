@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4299",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4299/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4299/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4299/events",
+    "html_url": "https://github.com/spack/spack/pull/4299",
+    "id": 230087605,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxNTgxMjE0",
+    "number": 4299,
+    "title": "fix build command for caffe with openblas",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-05-19T20:56:21Z",
+    "updated_at": "2017-05-23T21:35:45Z",
+    "closed_at": "2017-05-23T21:35:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4299",
+        "html_url": "https://github.com/spack/spack/pull/4299",
+        "diff_url": "https://github.com/spack/spack/pull/4299.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4299.patch"
+    },
+    "body": "Caffe expects BLAS='open' when using openblas, however, as is Spack is passing 'openblas'.",
+    "performed_via_github_app": null
+}

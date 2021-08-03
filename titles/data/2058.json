@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2058",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2058/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2058/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2058/events",
+    "html_url": "https://github.com/spack/spack/pull/2058",
+    "id": 184079921,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTAwOTQ5MDU=",
+    "number": 2058,
+    "title": "xsdk: Very preliminary xsdk.py definition for installing xSDK packages",
+    "user": {
+        "login": "BarrySmith",
+        "id": 512185,
+        "node_id": "MDQ6VXNlcjUxMjE4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/512185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BarrySmith",
+        "html_url": "https://github.com/BarrySmith",
+        "followers_url": "https://api.github.com/users/BarrySmith/followers",
+        "following_url": "https://api.github.com/users/BarrySmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BarrySmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BarrySmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BarrySmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/BarrySmith/orgs",
+        "repos_url": "https://api.github.com/users/BarrySmith/repos",
+        "events_url": "https://api.github.com/users/BarrySmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BarrySmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2016-10-19T21:33:18Z",
+    "updated_at": "2016-10-26T19:23:09Z",
+    "closed_at": "2016-10-26T19:23:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2058",
+        "html_url": "https://github.com/spack/spack/pull/2058",
+        "diff_url": "https://github.com/spack/spack/pull/2058.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2058.patch"
+    },
+    "body": "This is a replacement for pull request https://github.com/LLNL/spack/pull/2035\n\nAfter rebase over latest develop branch\n\nI had to make a new pull request because I did not change the branch name in my fork before adding code. \n",
+    "performed_via_github_app": null
+}

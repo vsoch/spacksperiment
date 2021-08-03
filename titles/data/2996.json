@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2996",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2996/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2996/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2996/events",
+    "html_url": "https://github.com/spack/spack/pull/2996",
+    "id": 204733028,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA0MjQyMjUw",
+    "number": 2996,
+    "title": "Fix offset for URLs containing suffixes",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 497155826,
+            "node_id": "MDU6TGFiZWw0OTcxNTU4MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/url-parsing",
+            "name": "url-parsing",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-02-01T23:04:17Z",
+    "updated_at": "2017-02-18T22:45:49Z",
+    "closed_at": "2017-02-02T17:28:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2996",
+        "html_url": "https://github.com/spack/spack/pull/2996",
+        "diff_url": "https://github.com/spack/spack/pull/2996.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2996.patch"
+    },
+    "body": "Before:\r\n```\r\n$ spack url parse http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n==> Parsing URL: http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n\r\n==> Matched version regex  8: r'\\\\?ref=(?:.*-|v)*((\\\\d+\\\\.)+\\\\d+).*$'\r\n==> Matched  name   regex  5: r'[^/]+/([^/]+)/repository/archive'\r\n\r\n==> Detected:\r\n    http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n          ~~~~~                         --------\r\n    name:    swiftsim\r\n    version: 0.3.0\r\n\r\n==> Substituting version 9.9.9b:\r\n    http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v9.9.9b\r\n          ~~~~~                         --------\r\n```\r\nAfter:\r\n```\r\n$ spack url parse http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n==> Parsing URL: http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n\r\n==> Matched version regex  8: r'\\\\?ref=(?:.*-|v)*((\\\\d+\\\\.)+\\\\d+).*$'\r\n==> Matched  name   regex  5: r'[^/]+/([^/]+)/repository/archive'\r\n\r\n==> Detected:\r\n    http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v0.3.0\r\n                                        --------                                ~~~~~\r\n    name:    swiftsim\r\n    version: 0.3.0\r\n\r\n==> Substituting version 9.9.9b:\r\n    http://gitlab.cosma.dur.ac.uk/swift/swiftsim/repository/archive.tar.gz?ref=v9.9.9b\r\n                                        --------                                ~~~~~\r\n```\r\nI'll add unit tests for this tomorrow.",
+    "performed_via_github_app": null
+}

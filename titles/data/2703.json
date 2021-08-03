@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2703",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2703/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2703/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2703/events",
+    "html_url": "https://github.com/spack/spack/pull/2703",
+    "id": 198241517,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTk4MDk2MTM=",
+    "number": 2703,
+    "title": "CentOS7 Package Versions",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2016-12-31T18:03:12Z",
+    "updated_at": "2018-03-21T21:44:37Z",
+    "closed_at": "2018-03-21T21:44:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2703",
+        "html_url": "https://github.com/spack/spack/pull/2703",
+        "diff_url": "https://github.com/spack/spack/pull/2703.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2703.patch"
+    },
+    "body": "This PR adds the versions of packages that are provided with CentOS7.  Benefits:\r\n\r\n 1. Packages specified as `buildable=False` work better if Spack knows about the version number.  Previously, I had to lie about which version of Python was provided by my system (`2.7.8` instead of the actual `2.7.5`, which Spack didn't know about).\r\n\r\n 2. Users not on CentOS7 can replicate the CentOS7 experience.  Ooh fun...\r\n\r\nThis PR also converts to `AutotoolsPackage` and `CMakePackage` as appropriate.",
+    "performed_via_github_app": null
+}

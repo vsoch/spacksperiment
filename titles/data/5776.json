@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5776",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5776/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5776/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5776/events",
+    "html_url": "https://github.com/spack/spack/pull/5776",
+    "id": 265671573,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2NzEzOTI2",
+    "number": 5776,
+    "title": "Clean up use of stages and os.chdir()",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-10-16T07:31:12Z",
+    "updated_at": "2017-10-25T12:54:10Z",
+    "closed_at": "2017-10-17T08:26:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5776",
+        "html_url": "https://github.com/spack/spack/pull/5776",
+        "diff_url": "https://github.com/spack/spack/pull/5776.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5776.patch"
+    },
+    "body": "This PR does a few things:\r\n\r\n- [x] Add an `autouse` fixture that verifies that tests don't change the working directory.\r\n\r\n- [x] Tests no longer drop extra stuff in Spack's staging area (`var/spack/stage`).  They're executed with a mock stage.\r\n\r\n- [x] Another `autouse` fixture ensures that no test clutters the stage directory.\r\n\r\n- [x] Spack doesn't use `os.chdir()` directly anymore -- it only uses context managers like `working_dir` and `py.path.as_cwd()` so that no function ends up actually changing the working directory for its caller.\r\n    - This cleans up some of the nastiness where reordering would cause tests to fail.\r\n    - This also makes Spack functions (e.g., `do_stage()`) nicer to work with.\r\n\r\n- [x] Getting the `stage` property from a package no longer creates the stage directory automatically.  You have to call `pkg.stage.create()` for that, and Spack now calls it right before fetching.\r\n\r\n@hartzell: The last bullet above caused empty stages to be erroneously created for already-installed dependencies.  I wonder if that has to do with the problem you saw in #4977.  The stages for dependencies would be re-created by recursive calls to `do_install()`, even when `do_install()` decided nothing to bail b/c the dependency was already installed.  I am curious whether this, and to a lesser extent  #5714, help with #4977.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3079",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3079/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3079/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3079/events",
+    "html_url": "https://github.com/spack/spack/pull/3079",
+    "id": 206339603,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA1MzE1Nzg1",
+    "number": 3079,
+    "title": "python devmode",
+    "user": {
+        "login": "krafczyk",
+        "id": 6449564,
+        "node_id": "MDQ6VXNlcjY0NDk1NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6449564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/krafczyk",
+        "html_url": "https://github.com/krafczyk",
+        "followers_url": "https://api.github.com/users/krafczyk/followers",
+        "following_url": "https://api.github.com/users/krafczyk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/krafczyk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/krafczyk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/krafczyk/subscriptions",
+        "organizations_url": "https://api.github.com/users/krafczyk/orgs",
+        "repos_url": "https://api.github.com/users/krafczyk/repos",
+        "events_url": "https://api.github.com/users/krafczyk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/krafczyk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2017-02-08T22:05:56Z",
+    "updated_at": "2019-11-11T16:37:18Z",
+    "closed_at": "2019-11-11T16:37:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3079",
+        "html_url": "https://github.com/spack/spack/pull/3079",
+        "diff_url": "https://github.com/spack/spack/pull/3079.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3079.patch"
+    },
+    "body": "This PR attempts to add the develop functionality to PythonPackage which can be enabled by package maintainers for packages which support it.",
+    "performed_via_github_app": null
+}

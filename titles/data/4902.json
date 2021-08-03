@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4902",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4902/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4902/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4902/events",
+    "html_url": "https://github.com/spack/spack/pull/4902",
+    "id": 245522488,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMyMzcwMDk4",
+    "number": 4902,
+    "title": "Improve version detection for URLs with dynamic after version",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 497155826,
+            "node_id": "MDU6TGFiZWw0OTcxNTU4MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/url-parsing",
+            "name": "url-parsing",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-25T20:17:19Z",
+    "updated_at": "2017-07-26T22:43:57Z",
+    "closed_at": "2017-07-26T22:43:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4902",
+        "html_url": "https://github.com/spack/spack/pull/4902",
+        "diff_url": "https://github.com/spack/spack/pull/4902.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4902.patch"
+    },
+    "body": "Needed for #4900.\r\n\r\n### Before\r\n```\r\n$ spack url parse http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n==> Parsing URL: http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n\r\n==> Error: Couldn't detect version in: http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n```\r\n```\r\n$ spack url summary\r\n==> Generating a summary of URL parsing in Spack...\r\n\r\n    Total URLs found:          1759\r\n    Names correctly parsed:    1563/1759 (88.86%)\r\n    Versions correctly parsed: 1618/1759 (91.98%)\r\n```\r\n### After\r\n```\r\n$ spack url parse http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n==> Parsing URL: http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n\r\n==> Matched version regex  0: r'^[a-zA-Z+._-]+[._-]v?(\\\\d[\\\\d._-]*)$'\r\n==> Matched  name   regex  7: r'^([A-Za-z\\\\d+\\\\._-]+)$'\r\n\r\n==> Detected:\r\n    http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz\r\n                                            -------  ~~~~~\r\n    name:    snptest\r\n    version: 2.5.2\r\n\r\n==> Substituting version 9.9.9b:\r\n    http://www.well.ox.ac.uk/~gav/resources/snptest_v9.9.9b_linux_x86_64_dynamic.tgz\r\n                                            -------  ~~~~~~\r\n```\r\n```\r\n$ spack url summary\r\n==> Generating a summary of URL parsing in Spack...\r\n\r\n    Total URLs found:          1759\r\n    Names correctly parsed:    1563/1759 (88.86%)\r\n    Versions correctly parsed: 1618/1759 (91.98%)\r\n```",
+    "performed_via_github_app": null
+}

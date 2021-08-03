@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2626",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2626/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2626/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2626/events",
+    "html_url": "https://github.com/spack/spack/pull/2626",
+    "id": 196347660,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTg1MTgyMDY=",
+    "number": 2626,
+    "title": "Fixes for various hash issues",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446626162,
+            "node_id": "MDU6TGFiZWw0NDY2MjYxNjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hashes",
+            "name": "hashes",
+            "color": "9a69b7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2016-12-19T07:27:47Z",
+    "updated_at": "2016-12-19T17:09:54Z",
+    "closed_at": "2016-12-19T17:09:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2626",
+        "html_url": "https://github.com/spack/spack/pull/2626",
+        "diff_url": "https://github.com/spack/spack/pull/2626.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2626.patch"
+    },
+    "body": "Fixes #1992. Fixes #1178. Fixes #1377. Fixes #2123.\r\n\r\n**Fixes:**\r\n- [x] Behavior of `satisfies()` fixed for concrete specs with DAG hashes\r\n  - spec.satisfies('/abc123') will only match another spec with same hash.\r\n  - Prior behavior was just doing a match, which can be ambiguous.\r\n- [x] Uninstall/activate/deactivate/whatever by hash is precise now.\r\n- [x] `installed_dependents()` moved to DB from `Package` because we might not know a `Spec`'s `Package` anymore.  New version handles specs with unknown packages.\r\n- [x] Minor: Fix default args in `Spec.tree()`\r\n- [x] Minor: Fix exception name in `spec.py`\r\n\r\n**Improvements:**\r\n- [x] `spack find` and `spack.store.db.query()` are now faster for simple hash lookups\r\n  - skips linear calls to `satisfies()` if `query()` only needs to look up by hash\r\n  - `spack find` uses `query()` better.\r\n- [x] More concise, readable output for disambiguating specs from the command line\r\n\r\n**Test:**\r\n- [x] Added a test to ensure `satisfies()` respects `dag_hash()` for concrete specs.\r\n\r\n@davydden @eschnett @alalazo @adamjstewart @becker33 ",
+    "performed_via_github_app": null
+}

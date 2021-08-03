@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4328",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4328/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4328/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4328/events",
+    "html_url": "https://github.com/spack/spack/pull/4328",
+    "id": 230803533,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyMDY2MDk2",
+    "number": 4328,
+    "title": "Add support for addl versions of bcl2fastq2",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-05-23T18:34:06Z",
+    "updated_at": "2017-05-23T21:57:13Z",
+    "closed_at": "2017-05-23T20:37:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4328",
+        "html_url": "https://github.com/spack/spack/pull/4328",
+        "diff_url": "https://github.com/spack/spack/pull/4328.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4328.patch"
+    },
+    "body": "HEADS UP: This commit changes the name of the cached source tarball (dashes to dots).  If you have a copy in a local mirror, you'll need to rename it.\r\n\r\nTwo changes:\r\n\r\n- It seems that Illumina version numbers are dotted and that the\r\n  dashed version in the 2.18... filename is an anomaly (based on the\r\n  names for 2.17.1.14 and 2.19.0).  `url_for_version` does the right\r\n  thing for 2.18.  It will need to be fixed when support for 2.19 is\r\n  added.  2.17 is no longer generally available so it gets a pass.\r\n\r\n- Add version and hash for 2.17.1.14.\r\n\r\n  2.17.1.14 is no longer distributed.  If you have a copy of the\r\n  source tarball, you can drop it into a local mirror w/ the name\r\n  mirror/bcl2fastq2/bcl2fastq2-2.17.1.14.zip and go from there.\r\n\r\n",
+    "performed_via_github_app": null
+}

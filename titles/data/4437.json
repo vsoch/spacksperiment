@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4437",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4437/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4437/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4437/events",
+    "html_url": "https://github.com/spack/spack/pull/4437",
+    "id": 233866331,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI0MTcxOTYw",
+    "number": 4437,
+    "title": "New package libaec: a BSD-licensed replacement for the szip library.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-06-06T11:51:03Z",
+    "updated_at": "2017-08-21T07:57:53Z",
+    "closed_at": "2017-08-04T15:38:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4437",
+        "html_url": "https://github.com/spack/spack/pull/4437",
+        "diff_url": "https://github.com/spack/spack/pull/4437.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4437.patch"
+    },
+    "body": "Those who have problems with the license restrictions of the szip library might be interested in replacing it with libaec (https://gitlab.dkrz.de/k202009/libaec).",
+    "performed_via_github_app": null
+}

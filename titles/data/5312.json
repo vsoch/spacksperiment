@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5312",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5312/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5312/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5312/events",
+    "html_url": "https://github.com/spack/spack/pull/5312",
+    "id": 256370137,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQwMTI0NjMw",
+    "number": 5312,
+    "title": "Fix two bugs from the bootstrap update",
+    "user": {
+        "login": "krafczyk",
+        "id": 6449564,
+        "node_id": "MDQ6VXNlcjY0NDk1NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6449564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/krafczyk",
+        "html_url": "https://github.com/krafczyk",
+        "followers_url": "https://api.github.com/users/krafczyk/followers",
+        "following_url": "https://api.github.com/users/krafczyk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/krafczyk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/krafczyk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/krafczyk/subscriptions",
+        "organizations_url": "https://api.github.com/users/krafczyk/orgs",
+        "repos_url": "https://api.github.com/users/krafczyk/repos",
+        "events_url": "https://api.github.com/users/krafczyk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/krafczyk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-09-08T21:00:01Z",
+    "updated_at": "2017-09-11T02:54:24Z",
+    "closed_at": "2017-09-11T02:54:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5312",
+        "html_url": "https://github.com/spack/spack/pull/5312",
+        "diff_url": "https://github.com/spack/spack/pull/5312.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5312.patch"
+    },
+    "body": "These were discovered with bash 4.1.2.\r\n\r\nAdd quotations around a variable to prevent the destruction of a\r\nnewline. Without this fix a conditional doesn't work properly.\r\n\r\nRemove square brackets around a conditional meant to be evaluated based\r\non the return code of a command. This wasn't working properly with an\r\nold bash.\r\n\r\nFix a typo.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2616",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2616/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2616/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2616/events",
+    "html_url": "https://github.com/spack/spack/pull/2616",
+    "id": 196213498,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTg0MzkzOTc=",
+    "number": 2616,
+    "title": "dealii: fix config for Netcdf with lib64",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2016-12-17T09:49:51Z",
+    "updated_at": "2016-12-17T17:02:11Z",
+    "closed_at": "2016-12-17T16:57:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2616",
+        "html_url": "https://github.com/spack/spack/pull/2616",
+        "diff_url": "https://github.com/spack/spack/pull/2616.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2616.patch"
+    },
+    "body": "fixes https://github.com/LLNL/spack/issues/2615\r\n\r\ntested on macOS Sierra.\r\n\r\n@cpraveen please check on your system where the problem occurred. ",
+    "performed_via_github_app": null
+}

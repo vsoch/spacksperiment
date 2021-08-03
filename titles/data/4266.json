@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4266",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4266/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4266/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4266/events",
+    "html_url": "https://github.com/spack/spack/pull/4266",
+    "id": 229124394,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIwODkyOTkw",
+    "number": 4266,
+    "title": "Sphinx no longer supports Python 2.6",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 468766000,
+            "node_id": "MDU6TGFiZWw0Njg3NjYwMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/broken-develop",
+            "name": "broken-develop",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2017-05-16T18:19:05Z",
+    "updated_at": "2017-05-17T16:43:52Z",
+    "closed_at": "2017-05-17T16:36:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4266",
+        "html_url": "https://github.com/spack/spack/pull/4266",
+        "diff_url": "https://github.com/spack/spack/pull/4266.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4266.patch"
+    },
+    "body": "The last half-dozen PRs are failing their documentation tests because pip fails to install sphinx for Python 2.6. We may also need #4243 to get them working again.",
+    "performed_via_github_app": null
+}

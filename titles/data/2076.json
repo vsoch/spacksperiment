@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2076",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2076/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2076/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2076/events",
+    "html_url": "https://github.com/spack/spack/pull/2076",
+    "id": 184597087,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTA0NjM2MTQ=",
+    "number": 2076,
+    "title": "mumps: Add support for Intel compiler and insure both lapack and blas\u2026",
+    "user": {
+        "login": "BarrySmith",
+        "id": 512185,
+        "node_id": "MDQ6VXNlcjUxMjE4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/512185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BarrySmith",
+        "html_url": "https://github.com/BarrySmith",
+        "followers_url": "https://api.github.com/users/BarrySmith/followers",
+        "following_url": "https://api.github.com/users/BarrySmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BarrySmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BarrySmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BarrySmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/BarrySmith/orgs",
+        "repos_url": "https://api.github.com/users/BarrySmith/repos",
+        "events_url": "https://api.github.com/users/BarrySmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BarrySmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2016-10-22T00:40:56Z",
+    "updated_at": "2016-10-27T17:14:31Z",
+    "closed_at": "2016-10-22T22:57:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2076",
+        "html_url": "https://github.com/spack/spack/pull/2076",
+        "diff_url": "https://github.com/spack/spack/pull/2076.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2076.patch"
+    },
+    "body": "\u2026 libraries are passed to the examples\n\nLikely it was not discoverged before that the examples require both lapack and blas libraries because it\nwas tested with Openblas which is one large library containing everything.\nFunded-by: IDEAS\nProject: IDEAS/xSDK\nTime: .3 hours\n",
+    "performed_via_github_app": null
+}

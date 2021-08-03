@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2686",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2686/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2686/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2686/events",
+    "html_url": "https://github.com/spack/spack/pull/2686",
+    "id": 198097288,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTk3MTc4NTY=",
+    "number": 2686,
+    "title": "Command Line Scopes",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2016-12-30T02:40:45Z",
+    "updated_at": "2018-04-26T19:24:30Z",
+    "closed_at": "2018-04-26T19:24:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2686",
+        "html_url": "https://github.com/spack/spack/pull/2686",
+        "diff_url": "https://github.com/spack/spack/pull/2686.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2686.patch"
+    },
+    "body": "Allows the user to add additional configuration scopes (beyond defaults/site/user) on the command line for all Spack commands.  Docs are included in the PR, should be self-explanatory.  I did this because I need it.\r\n\r\nThis addresses #2171, and gets a lot of functionality for a small number of lines of changed code.",
+    "performed_via_github_app": null
+}

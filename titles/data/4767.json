@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4767",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4767/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4767/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4767/events",
+    "html_url": "https://github.com/spack/spack/pull/4767",
+    "id": 243042915,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwNjIzMTI3",
+    "number": 4767,
+    "title": "New Package: miniSMAC2D",
+    "user": {
+        "login": "homerdin",
+        "id": 26806895,
+        "node_id": "MDQ6VXNlcjI2ODA2ODk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26806895?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/homerdin",
+        "html_url": "https://github.com/homerdin",
+        "followers_url": "https://api.github.com/users/homerdin/followers",
+        "following_url": "https://api.github.com/users/homerdin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/homerdin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/homerdin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/homerdin/subscriptions",
+        "organizations_url": "https://api.github.com/users/homerdin/orgs",
+        "repos_url": "https://api.github.com/users/homerdin/repos",
+        "events_url": "https://api.github.com/users/homerdin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/homerdin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-14T16:14:56Z",
+    "updated_at": "2017-07-17T14:18:57Z",
+    "closed_at": "2017-07-17T14:15:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4767",
+        "html_url": "https://github.com/spack/spack/pull/4767",
+        "diff_url": "https://github.com/spack/spack/pull/4767.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4767.patch"
+    },
+    "body": "Adding miniSMAC2d package.  This is a fortran package that uses the C preprocessor to handle macros.  Does spack have any support for using cpp directly?",
+    "performed_via_github_app": null
+}

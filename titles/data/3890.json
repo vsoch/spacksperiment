@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3890",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3890/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3890/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3890/events",
+    "html_url": "https://github.com/spack/spack/pull/3890",
+    "id": 222558486,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE2NDMwMTcz",
+    "number": 3890,
+    "title": "Add package for aspell and ass't dictionaries",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2017-04-18T22:00:25Z",
+    "updated_at": "2017-10-20T23:04:00Z",
+    "closed_at": "2017-10-09T21:14:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3890",
+        "html_url": "https://github.com/spack/spack/pull/3890",
+        "diff_url": "https://github.com/spack/spack/pull/3890.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3890.patch"
+    },
+    "body": "[edit: added question about python 3 and urlparse and then touched it up]\r\n\r\nAdd a package definition for aspell.\r\n\r\nAdd a handful of dictionaries to convince myself that the support for a bunch of dictionaries works.\r\n\r\nI'd appreciate a bit of feedback on the dictionary handling.  In particular:\r\n\r\n1. I feel dirty after modifying the dict array in place.  My functional training voice wants me to map across it and make a richer data structure that gets used in the other bits.  What's the pythonic thing?\r\n\r\n2. What to do about dictionaries?  Homebrew seems to have just [grabbed them all].  Do we want to do that?  If not, I've taken care of mine.  Should I leave \"yours\" up to \"you\" (for various definitions of \"not me\")?\r\n  \r\n    If we grab them all, it'd be nice to automate the generation of the md5's.  Someone stop me before I start writing go (or perl)...\r\n\r\n3. These dictionaries seem to be for a particular set of versions.  Is my package future-proof enough for when they release a new set?\r\n\r\n4. Looks like the url parsing bit is python version dependent.\r\n\r\n    ~Do I need to do something like line 28 of `lib/spack/spack/cmd/md5.py`:~\r\n\r\n    I stole this from `.../cmd/md5.py` and it made Travis happy.  Should I do something different?\r\n\r\n    ```python\r\n    from six.moves.urllib.parse import urlparse\r\n    ```",
+    "performed_via_github_app": null
+}

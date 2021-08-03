@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3834",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3834/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3834/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3834/events",
+    "html_url": "https://github.com/spack/spack/pull/3834",
+    "id": 221695926,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE1ODUzMjg5",
+    "number": 3834,
+    "title": "Rework Spack's Mercurial support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430651,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2NTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mercurial",
+            "name": "mercurial",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-04-13T22:11:06Z",
+    "updated_at": "2017-04-20T15:31:54Z",
+    "closed_at": "2017-04-20T01:59:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3834",
+        "html_url": "https://github.com/spack/spack/pull/3834",
+        "diff_url": "https://github.com/spack/spack/pull/3834.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3834.patch"
+    },
+    "body": "This PR is an attempt to address some of the many Mercurial-related bugs that keep popping up.\r\n\r\n### Features\r\n\r\n1. Adds `--insecure` fetching support for Mercurial downloads\r\n   * Fixes #3590 \r\n2. Adds dependency on `py-certifi` for CA certificate\r\n   * Replaces the logic from #1873 which only worked on Linux\r\n   * Fixes #3847\r\n3. Unsets `PYTHONPATH` when running `hg`\r\n   * Fixes #1645 \r\n   * Fixes #2811\r\n   * Fixes #3591 \r\n   * Fixes #3793 \r\n   * Fixes #3831 \r\n4. Adds the latest version of mercurial and all of its dependencies\r\n5. Adds post-installation tests to mercurial and all of its dependencies\r\n6. Installs man pages\r\n7. Installs tab-completion scripts\r\n\r\nThe only Mercurial-related problem I haven't been able to solve is #2816, but no one seems to be able to reproduce it.",
+    "performed_via_github_app": null
+}

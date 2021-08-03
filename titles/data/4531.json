@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4531",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4531/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4531/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4531/events",
+    "html_url": "https://github.com/spack/spack/pull/4531",
+    "id": 236529991,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2MDY3ODM5",
+    "number": 4531,
+    "title": "Adding variants for MFEM",
+    "user": {
+        "login": "markcmiller86",
+        "id": 5720676,
+        "node_id": "MDQ6VXNlcjU3MjA2NzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5720676?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/markcmiller86",
+        "html_url": "https://github.com/markcmiller86",
+        "followers_url": "https://api.github.com/users/markcmiller86/followers",
+        "following_url": "https://api.github.com/users/markcmiller86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/markcmiller86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/markcmiller86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/markcmiller86/subscriptions",
+        "organizations_url": "https://api.github.com/users/markcmiller86/orgs",
+        "repos_url": "https://api.github.com/users/markcmiller86/repos",
+        "events_url": "https://api.github.com/users/markcmiller86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/markcmiller86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-06-16T16:19:12Z",
+    "updated_at": "2017-06-16T16:47:37Z",
+    "closed_at": "2017-06-16T16:47:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4531",
+        "html_url": "https://github.com/spack/spack/pull/4531",
+        "diff_url": "https://github.com/spack/spack/pull/4531.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4531.patch"
+    },
+    "body": "1. I've added Sundials and PETSc variants needed for ATPESC installs. While I was at it, I also added Mesquite, OpenMP, threadsafe and mpfr.\r\n1. I also adjusted logic of the package to NOT make assumptions about the default build variables that control various options.",
+    "performed_via_github_app": null
+}

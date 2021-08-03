@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6147",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6147/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6147/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6147/events",
+    "html_url": "https://github.com/spack/spack/pull/6147",
+    "id": 271245203,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUwNzA1ODEy",
+    "number": 6147,
+    "title": "libyogrt: add v1.21 with lsf support",
+    "user": {
+        "login": "adammoody",
+        "id": 1105742,
+        "node_id": "MDQ6VXNlcjExMDU3NDI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1105742?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adammoody",
+        "html_url": "https://github.com/adammoody",
+        "followers_url": "https://api.github.com/users/adammoody/followers",
+        "following_url": "https://api.github.com/users/adammoody/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adammoody/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adammoody/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adammoody/subscriptions",
+        "organizations_url": "https://api.github.com/users/adammoody/orgs",
+        "repos_url": "https://api.github.com/users/adammoody/repos",
+        "events_url": "https://api.github.com/users/adammoody/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adammoody/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-11-05T03:24:21Z",
+    "updated_at": "2021-07-07T19:46:29Z",
+    "closed_at": "2019-11-11T18:24:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6147",
+        "html_url": "https://github.com/spack/spack/pull/6147",
+        "diff_url": "https://github.com/spack/spack/pull/6147.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6147.patch"
+    },
+    "body": "Needs some work:\r\nHow to enable +lsf variant only for v1.21 and later?\r\nProbably want user to provide path to LSF directory if this varies across systems.  It's currently hardcoded.",
+    "performed_via_github_app": null
+}

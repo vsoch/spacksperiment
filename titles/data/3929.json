@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3929",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3929/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3929/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3929/events",
+    "html_url": "https://github.com/spack/spack/pull/3929",
+    "id": 223278681,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE2OTEzMzAx",
+    "number": 3929,
+    "title": "Override partial installs by default - part two",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2017-04-21T05:15:27Z",
+    "updated_at": "2017-08-23T19:03:20Z",
+    "closed_at": "2017-05-19T21:05:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3929",
+        "html_url": "https://github.com/spack/spack/pull/3929",
+        "diff_url": "https://github.com/spack/spack/pull/3929.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3929.patch"
+    },
+    "body": "Fixes #2794. \r\nFixes #2634.\r\n\r\nSee #3530.  This does everything there, and for packages that were installed prior to this PR, it makes sure not to overwrite them if the DB says they were installed.\r\n\r\nThe first two commits are a rebase of the original PR commits. The ~~last two~~ remainder add in the functionality described here.\r\n\r\nI want to check a couple things before removing the WIP tag.",
+    "performed_via_github_app": null
+}

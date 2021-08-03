@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4209",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4209/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4209/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4209/events",
+    "html_url": "https://github.com/spack/spack/pull/4209",
+    "id": 227885851,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIwMDMxMzE4",
+    "number": 4209,
+    "title": "python: RPATH on Cray",
+    "user": {
+        "login": "mjwoods",
+        "id": 16091567,
+        "node_id": "MDQ6VXNlcjE2MDkxNTY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16091567?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mjwoods",
+        "html_url": "https://github.com/mjwoods",
+        "followers_url": "https://api.github.com/users/mjwoods/followers",
+        "following_url": "https://api.github.com/users/mjwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mjwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mjwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mjwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/mjwoods/orgs",
+        "repos_url": "https://api.github.com/users/mjwoods/repos",
+        "events_url": "https://api.github.com/users/mjwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mjwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2017-05-11T05:57:23Z",
+    "updated_at": "2017-05-28T16:17:16Z",
+    "closed_at": "2017-05-28T16:17:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4209",
+        "html_url": "https://github.com/spack/spack/pull/4209",
+        "diff_url": "https://github.com/spack/spack/pull/4209.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4209.patch"
+    },
+    "body": "On a Cray system, I had a number of python packages fail to build (e.g. py-numpy, py-netcdf4). In each case, gcc was being passed a `-R` option to set the RPATH, but gcc on linux requires the decorated form `-Wl,-R` to pass the `-R` option to the linker.\r\n\r\nIt turns out that python distutils uses a (self-described) \"Hackish\" method to guess the correct compiler options for setting RPATH (see Lib/distutils/unixccompiler.py). The identity of the compiler is guessed from the basename of the compiler executable, which is `cc` for all compilers when using the Cray compiler driver.\r\n\r\nMy solution involves patching the unixccompiler.py script on Cray systems when using gcc (or intel compilers, which use the same options for RPATH). With this patch, py-numpy and py-netcdf4 both installed without errors.\r\n\r\nThis patch may have some relevance to numpy/numpy#8653. Intel compilers would not be identified as gcc, and would therefore use an undecorated `-R` option to set the RPATH. (Update - my tests show that the rpath option is not being used at all in numpy builds with intel. I wonder why?)",
+    "performed_via_github_app": null
+}

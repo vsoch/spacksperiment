@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3217",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3217/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3217/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3217/events",
+    "html_url": "https://github.com/spack/spack/pull/3217",
+    "id": 209494721,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA3NDM2Mzk0",
+    "number": 3217,
+    "title": "fix py-setuptools",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-02-22T15:51:36Z",
+    "updated_at": "2017-05-28T20:35:24Z",
+    "closed_at": "2017-02-22T23:15:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3217",
+        "html_url": "https://github.com/spack/spack/pull/3217",
+        "diff_url": "https://github.com/spack/spack/pull/3217.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3217.patch"
+    },
+    "body": "@adamjstewart @alalazo @jppelteret ping.\r\n\r\nThat's a very recent thing, not sure why this happens as my understanding is that such behaviour is common for `depends_on(python@2.7)` and not for the range.",
+    "performed_via_github_app": null
+}

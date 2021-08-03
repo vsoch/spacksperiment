@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3985",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3985/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3985/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3985/events",
+    "html_url": "https://github.com/spack/spack/pull/3985",
+    "id": 224242619,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3NTU5MTQx",
+    "number": 3985,
+    "title": "Add list_url for fftw",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-04-25T19:11:41Z",
+    "updated_at": "2017-04-25T20:45:29Z",
+    "closed_at": "2017-04-25T20:45:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3985",
+        "html_url": "https://github.com/spack/spack/pull/3985",
+        "diff_url": "https://github.com/spack/spack/pull/3985.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3985.patch"
+    },
+    "body": "With this change, `spack versions` will tell us if there is a new version of `fftw` available, and `spack checksum` will let us add it to the package.",
+    "performed_via_github_app": null
+}

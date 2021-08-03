@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1979",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1979/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1979/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1979/events",
+    "html_url": "https://github.com/spack/spack/pull/1979",
+    "id": 181896451,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODg1ODYxNzU=",
+    "number": 1979,
+    "title": "extend Version class so that 1.develop > 1.1",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2016-10-09T16:31:25Z",
+    "updated_at": "2018-06-07T14:33:43Z",
+    "closed_at": "2016-10-11T08:12:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1979",
+        "html_url": "https://github.com/spack/spack/pull/1979",
+        "diff_url": "https://github.com/spack/spack/pull/1979.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1979.patch"
+    },
+    "body": "proposed solution to some issues discussed in https://github.com/LLNL/spack/issues/1975\n\n```\n$ spack test versions\nspack.test.versions\n==> Running test: versions\n..................................\n----------------------------------------------------------------------\nRan 34 tests in 0.034s\n\nOK\n==> Tests Complete.\n     34 tests run\n      0 failures\n      0 errors\n==> OK\n```\n",
+    "performed_via_github_app": null
+}

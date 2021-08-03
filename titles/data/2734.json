@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2734",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2734/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2734/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2734/events",
+    "html_url": "https://github.com/spack/spack/pull/2734",
+    "id": 198735755,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAwMTM0OTMw",
+    "number": 2734,
+    "title": "opencoarrays: new version",
+    "user": {
+        "login": "js947",
+        "id": 2544051,
+        "node_id": "MDQ6VXNlcjI1NDQwNTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2544051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/js947",
+        "html_url": "https://github.com/js947",
+        "followers_url": "https://api.github.com/users/js947/followers",
+        "following_url": "https://api.github.com/users/js947/following{/other_user}",
+        "gists_url": "https://api.github.com/users/js947/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/js947/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/js947/subscriptions",
+        "organizations_url": "https://api.github.com/users/js947/orgs",
+        "repos_url": "https://api.github.com/users/js947/repos",
+        "events_url": "https://api.github.com/users/js947/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/js947/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-01-04T15:35:08Z",
+    "updated_at": "2017-01-04T16:40:56Z",
+    "closed_at": "2017-01-04T16:40:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2734",
+        "html_url": "https://github.com/spack/spack/pull/2734",
+        "diff_url": "https://github.com/spack/spack/pull/2734.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2734.patch"
+    },
+    "body": "also removed `depends_on('cmake', type='build')` as it is no longer necessary with `CMakePackage`",
+    "performed_via_github_app": null
+}

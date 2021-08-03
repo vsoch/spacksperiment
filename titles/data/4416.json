@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4416",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4416/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4416/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4416/events",
+    "html_url": "https://github.com/spack/spack/pull/4416",
+    "id": 232924620,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIzNTMyNDA1",
+    "number": 4416,
+    "title": "Add variant to build shared Perl lib",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 571584920,
+            "node_id": "MDU6TGFiZWw1NzE1ODQ5MjA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/perl",
+            "name": "perl",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 17,
+    "created_at": "2017-06-01T15:47:41Z",
+    "updated_at": "2017-06-02T17:02:49Z",
+    "closed_at": "2017-06-02T15:44:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4416",
+        "html_url": "https://github.com/spack/spack/pull/4416",
+        "diff_url": "https://github.com/spack/spack/pull/4416.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4416.patch"
+    },
+    "body": "Add a variant that enables Perl's \"useshrplib\" feature, which builds a shared perl library.\r\n\r\nThis addresses problems like so:\r\n\r\n```\r\n/usr/bin/ld: /blah/blah/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/perl-5.24.1-y43dp3p5w66v7qh5xkwgufxohyuodyew/lib/5.24.1/x86_64-linux/CORE/libperl.a(op.o): relocation R_X86_64_32S against `PL_opargs' can not be used when making a shared object; recompile with -fPIC\r\n/blah/blah/spack/opt/spack/linux-centos7-x86_64/gcc-4.8.5/perl-5.24.1-y43dp3p5w66v7qh5xkwgufxohyuodyew/lib/5.24.1/x86_64-linux/CORE/libperl.a: could not read symbols: Bad value\r\n```\r\n\r\nIt should also address the Intel compiler issue discussed in #3081 while respecting Perl's configuration machinery.\r\n\r\nI need this feature for another package (cctools) that's finished but blocked on this.",
+    "performed_via_github_app": null
+}

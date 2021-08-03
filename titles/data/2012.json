@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2012",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2012/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2012/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2012/events",
+    "html_url": "https://github.com/spack/spack/pull/2012",
+    "id": 182894155,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODkyNzc2MTI=",
+    "number": 2012,
+    "title": "mpich/package.py is missing 'import os'",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-10-13T20:36:32Z",
+    "updated_at": "2017-04-18T15:05:33Z",
+    "closed_at": "2016-10-14T19:00:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2012",
+        "html_url": "https://github.com/spack/spack/pull/2012",
+        "diff_url": "https://github.com/spack/spack/pull/2012.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2012.patch"
+    },
+    "body": "- Add missing 'import os'. Thanks to @pramodk for catching this.\n- Patches #1989.\n",
+    "performed_via_github_app": null
+}

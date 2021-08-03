@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6656",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6656/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6656/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6656/events",
+    "html_url": "https://github.com/spack/spack/pull/6656",
+    "id": 281167091,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU3NjcxNjIx",
+    "number": 6656,
+    "title": "casper: new package",
+    "user": {
+        "login": "fanne-stat",
+        "id": 25308942,
+        "node_id": "MDQ6VXNlcjI1MzA4OTQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25308942?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fanne-stat",
+        "html_url": "https://github.com/fanne-stat",
+        "followers_url": "https://api.github.com/users/fanne-stat/followers",
+        "following_url": "https://api.github.com/users/fanne-stat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fanne-stat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fanne-stat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fanne-stat/subscriptions",
+        "organizations_url": "https://api.github.com/users/fanne-stat/orgs",
+        "repos_url": "https://api.github.com/users/fanne-stat/repos",
+        "events_url": "https://api.github.com/users/fanne-stat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fanne-stat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-12-11T21:06:24Z",
+    "updated_at": "2018-01-09T18:46:35Z",
+    "closed_at": "2018-01-09T18:41:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6656",
+        "html_url": "https://github.com/spack/spack/pull/6656",
+        "diff_url": "https://github.com/spack/spack/pull/6656.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6656.patch"
+    },
+    "body": "- Added new package casper. Install with gcc@4.8.5. Installing with gcc@7.1.0 causes error.\r\n\r\n- Added version 2.2.7 to package jellyfish. Casper depends on jellyfish 2.2.3 or higher.",
+    "performed_via_github_app": null
+}

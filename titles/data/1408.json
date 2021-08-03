@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1408",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1408/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1408/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1408/events",
+    "html_url": "https://github.com/spack/spack/pull/1408",
+    "id": 168544155,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Nzk0OTkzODg=",
+    "number": 1408,
+    "title": "Request for feedback: First draft of package for ghc",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 52,
+    "created_at": "2016-07-31T23:26:16Z",
+    "updated_at": "2020-08-13T01:26:21Z",
+    "closed_at": "2020-08-13T01:26:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1408",
+        "html_url": "https://github.com/spack/spack/pull/1408",
+        "diff_url": "https://github.com/spack/spack/pull/1408.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1408.patch"
+    },
+    "body": "First draft of package for the Glorious Glasgow Haskell Compiler.\n\nBased on [these instructions](https://ghc.haskell.org/trac/ghc/wiki/Building).\n\nGather [the prerequisites](https://ghc.haskell.org/trac/ghc/wiki/Building/Preparation/Tools).\n\nBuilding ghc requires a ghc with which to bootstrap.  Rather than drag in RPM's, I grab the official ghc distribution for CentOS6 and a copy of libgmp.3.so (which it needs) and install them into a bootstrap dir.  It seems to work, so....\n\nI'm sure that there is all kinds of room for improvement.  Please pile on!\n\n~~This build takes ~3hours on an 8-core Digital Ocean droplet.~~\nOnce you're past all of the prereqs, the build takes about an hour on an 8-core Digital Ocean droplet.\n\nTODO:\n- need to figure out a better way (currently hardcoded...) to find the libgmp tarball that's in the package dir.\n- need to come up with a way to make this only work on CentOS7, that  be flexible enough to use with other OS's.\n- check through configure output to see what else might be useful, e.g.\n  - depend_on('texlive') to get xetex\n",
+    "performed_via_github_app": null
+}

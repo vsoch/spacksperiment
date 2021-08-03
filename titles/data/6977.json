@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6977",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6977/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6977/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6977/events",
+    "html_url": "https://github.com/spack/spack/pull/6977",
+    "id": 289438779,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYzNTcxMzgx",
+    "number": 6977,
+    "title": "Cleaned up JUnit report generation on install",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-01-17T22:36:01Z",
+    "updated_at": "2018-01-28T20:15:09Z",
+    "closed_at": "2018-01-28T20:08:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6977",
+        "html_url": "https://github.com/spack/spack/pull/6977",
+        "diff_url": "https://github.com/spack/spack/pull/6977.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6977.patch"
+    },
+    "body": "The generation of a JUnit report was previously part of the install command. This commit factors the logic into its own module, and uses a template for the generation of the report.\r\n\r\nIt also improves report generation, that now can deal with multiple specs installed at once. Finally,  extending the list of supported formats is much easier than before, as it entails just writing a new template.\r\n\r\nrefers #2917\r\n\r\n#### Example\r\nRunning this command:\r\n```console\r\nspack install --log-format=junit --log-file=hdf5.xml szip  hdf5+szip~mpi tar\r\n```\r\nproduces the following file:\r\n```xml\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!--\r\n    This file has been modeled after the basic\r\n    specifications at this url:\r\n\r\n    http://help.catchsoftware.com/display/ET/JUnit+Format\r\n-->\r\n<testsuites>\r\n    <testsuite name=\"libszip_qabk3nm\"\r\n               errors=\"0\"\r\n               tests=\"1\"\r\n               failures=\"0\"\r\n               time=\"5.741205215454102\"\r\n               timestamp=\"Thu, 18 Jan 2018 07:41:18\" >\r\n        <properties>\r\n            <property name=\"architecture\" value=\"linux-ubuntu14.04-x86_64\" />\r\n            <property name=\"compiler\" value=\"gcc@4.8\" />\r\n        </properties>\r\n        <testcase classname=\"libszip\"\r\n                  name=\"qabk3nme2645mmbpaqv7zbraddgv2w57\"\r\n                  time=\"5.741205215454102\">\r\n        </testcase>\r\n    </testsuite>\r\n    <testsuite name=\"hdf5_hrhfiap\"\r\n               errors=\"0\"\r\n               tests=\"3\"\r\n               failures=\"0\"\r\n               time=\"350.3296411037445\"\r\n               timestamp=\"Thu, 18 Jan 2018 07:41:18\" >\r\n        <properties>\r\n            <property name=\"architecture\" value=\"linux-ubuntu14.04-x86_64\" />\r\n            <property name=\"compiler\" value=\"gcc@4.8\" />\r\n        </properties>\r\n        <testcase classname=\"libszip\"\r\n                  name=\"qabk3nme2645mmbpaqv7zbraddgv2w57\"\r\n                  time=\"5.741205215454102\">\r\n        </testcase>\r\n        <testcase classname=\"zlib\"\r\n                  name=\"eksallf6cymqkp6pkz6ymzjakqt6bqkx\"\r\n                  time=\"4.028627872467041\">\r\n        </testcase>\r\n        <testcase classname=\"hdf5\"\r\n                  name=\"hrhfiapki6pmmhuxclzifoppum5od3x3\"\r\n                  time=\"340.55980801582336\">\r\n        </testcase>\r\n    </testsuite>\r\n    <testsuite name=\"tar_iajxpjo\"\r\n               errors=\"0\"\r\n               tests=\"1\"\r\n               failures=\"0\"\r\n               time=\"54.028172969818115\"\r\n               timestamp=\"Thu, 18 Jan 2018 07:41:18\" >\r\n        <properties>\r\n            <property name=\"architecture\" value=\"linux-ubuntu14.04-x86_64\" />\r\n            <property name=\"compiler\" value=\"gcc@4.8\" />\r\n        </properties>\r\n        <testcase classname=\"tar\"\r\n                  name=\"iajxpjomleps4atnydsr5r2dqgvlj5gs\"\r\n                  time=\"54.028172969818115\">\r\n        </testcase>\r\n    </testsuite>\r\n</testsuites>\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1883",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1883/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1883/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1883/events",
+    "html_url": "https://github.com/spack/spack/pull/1883",
+    "id": 180387342,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODc1NTQ5ODA=",
+    "number": 1883,
+    "title": "Add missing dependencies for Flake8",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2016-09-30T19:46:59Z",
+    "updated_at": "2016-10-05T17:00:32Z",
+    "closed_at": "2016-10-05T17:00:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1883",
+        "html_url": "https://github.com/spack/spack/pull/1883",
+        "diff_url": "https://github.com/spack/spack/pull/1883.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1883.patch"
+    },
+    "body": "This PR includes the following changes:\n1. Add packages for all of flake8's dependencies\n   - was previously downloading from PyPi\n2. Rename `py-pep8` to `py-pycodestyle`\n   - pep8 module was renamed to pycodestyle [at Guido's request](https://github.com/PyCQA/pycodestyle/issues/466)\n3. Add latest version of `py-flake8`\n4. Switch flake8 download to GitHub \n   - PyPi URL no longer extrapolates\n5. Switch deptype for setuptools to nolink, add checks\n\nThe last change is the most important here. `py-flake8` (as well as `py-pyflakes` and `py-pycodestyle`) actually depend on `py-setuptools` at runtime. Otherwise, you get error messages like:\n\n```\nTraceback (most recent call last):\n  File: \"/usr/bin/flake8\", line 5, in <module>\n    from pkg_resources import load_entry_point\nImportError: No module named pkg_resources\n```\n\nNow that the deptype is correct, you can't activate `py-flake8` without also activating `py-setuptools`. Unfortunately, this doesn't help people who don't activate their Python packages. I added checks to `check_dependencies` to make sure setuptools is available before running `run-flake8-tests`. Let me know if you can think of a better way to do this.\n",
+    "performed_via_github_app": null
+}

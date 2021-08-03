@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5153/events",
+    "html_url": "https://github.com/spack/spack/pull/5153",
+    "id": 251110387,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM2MzgyMDQz",
+    "number": 5153,
+    "title": "Enable creation of mirrors for systems with different compilers",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-08-18T00:43:57Z",
+    "updated_at": "2018-03-21T21:55:28Z",
+    "closed_at": "2018-03-21T21:55:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5153",
+        "html_url": "https://github.com/spack/spack/pull/5153",
+        "diff_url": "https://github.com/spack/spack/pull/5153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5153.patch"
+    },
+    "body": "Fixes #5147\r\n\r\nWhen creating a mirror with ```spack mirror create <spec>``` the spec should be able to specify compilers and operating systems that don't exist on the current system. This disables compiler existence checks for ```spack mirror create```.",
+    "performed_via_github_app": null
+}

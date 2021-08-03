@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5691",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5691/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5691/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5691/events",
+    "html_url": "https://github.com/spack/spack/pull/5691",
+    "id": 264637380,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ1OTg3ODUz",
+    "number": 5691,
+    "title": "Boost: fix constraint on patch, avoid 'reversed patch...'",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-10-11T15:41:30Z",
+    "updated_at": "2017-10-11T17:42:13Z",
+    "closed_at": "2017-10-11T17:42:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5691",
+        "html_url": "https://github.com/spack/spack/pull/5691",
+        "diff_url": "https://github.com/spack/spack/pull/5691.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5691.patch"
+    },
+    "body": "When I build boost@1.56.0 with gcc@5.4.0 I get a complaint about this patch already having been applied and etc....\r\n\r\nOnly applying the patch to @:1.55.0 fixes the complaint but I do not know if it is the correct thing to do.\r\n\r\nSomeone more familiar with Boost should vette this change.",
+    "performed_via_github_app": null
+}

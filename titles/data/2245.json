@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2245",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2245/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2245/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2245/events",
+    "html_url": "https://github.com/spack/spack/pull/2245",
+    "id": 187394047,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTIzODM1NDY=",
+    "number": 2245,
+    "title": "Spec.format updates to full-string property specification",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2016-11-04T17:32:55Z",
+    "updated_at": "2016-11-04T18:56:30Z",
+    "closed_at": "2016-11-04T18:41:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2245",
+        "html_url": "https://github.com/spack/spack/pull/2245",
+        "diff_url": "https://github.com/spack/spack/pull/2245.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2245.patch"
+    },
+    "body": "Address request in #2240 to support \"COMPILERVERSION\" in Spec.format\r\n\r\n(as mentioned in #2240, the issue was already resolved by an existing PR, this just addresses a side request)\r\n\r\nOriginally only \"COMPILERVER\" was supported; this was the only truncated reference.\r\n\r\nThis supports both \"COMPILERVER\" and \"COMPILERVERSION\"",
+    "performed_via_github_app": null
+}

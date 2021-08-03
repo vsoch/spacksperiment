@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2061",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2061/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2061/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2061/events",
+    "html_url": "https://github.com/spack/spack/pull/2061",
+    "id": 184284126,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTAyMzk5NzM=",
+    "number": 2061,
+    "title": "Add latest version of Armadillo",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2016-10-20T16:54:35Z",
+    "updated_at": "2017-09-01T23:12:30Z",
+    "closed_at": "2016-10-21T14:39:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2061",
+        "html_url": "https://github.com/spack/spack/pull/2061",
+        "diff_url": "https://github.com/spack/spack/pull/2061.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2061.patch"
+    },
+    "body": "I'm having a bit of trouble linking to the Armadillo libraries. When I try compiling something with Armadillo, I'm seeing the following error message:\n\n```\n$ g++  -I/soft/spack-0.9.1/opt/spack/linux-centos6-x86_64/gcc-6.1.0/armadillo-7.500.0-inxgdirrm2cqscwwgqagoztainepayo7/include transport_linear_chain.cpp   -o transport_linear_chain\nIn file included from /soft/spack-0.9.1/opt/spack/linux-centos6-x86_64/gcc-6.1.0/armadillo-7.500.0-inxgdirrm2cqscwwgqagoztainepayo7/include/armadillo:83,\n                 from transport_linear_chain.cpp:11:\n/soft/spack-0.9.1/opt/spack/linux-centos6-x86_64/gcc-6.1.0/armadillo-7.500.0-inxgdirrm2cqscwwgqagoztainepayo7/include/armadillo_bits/include_superlu.hpp:91:53: error: /blues/gpfs/home/software/spack-0.9.1/opt/spack/1-centos6-x86_64/gcc-6.1.0/superlu-5.2.1-7y4mnsbozswcsktwfvvdreocwobyroy4/include/supermatrix.h: No such file or directory\n```\n\nThe main thing to note here is that Armadillo thinks `supermatrix.h` is in `opt/spack/1-centos6-x86_64` when it is really in `opt/spack/linux-centos6-x86_64`. Has anyone ever seen something like this before? I contacted a developer, so hopefully they'll have an answer for me. But I assume it's not an RPATH problem on our end.\n",
+    "performed_via_github_app": null
+}

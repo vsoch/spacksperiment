@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3723",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3723/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3723/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3723/events",
+    "html_url": "https://github.com/spack/spack/pull/3723",
+    "id": 219836136,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE0NTU2Mjk4",
+    "number": 3723,
+    "title": "Bugfix: flag propagation into concrete specs",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-04-06T09:23:03Z",
+    "updated_at": "2019-07-25T00:42:31Z",
+    "closed_at": "2019-06-30T00:05:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3723",
+        "html_url": "https://github.com/spack/spack/pull/3723",
+        "diff_url": "https://github.com/spack/spack/pull/3723.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3723.patch"
+    },
+    "body": "Fixes #3717.\r\n\r\nThe `concretize_compiler_flags` would descend into concrete specs when adding flags to specs looked up by hash.  Concretizer will now ignore these.\r\n\r\nNote: this wasn't a real SHA-1 collision; the hash just wasn't being recomputed because it had been memoized.\r\n\r\n@wscullin: can you verify that this works for you?",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4044",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4044/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4044/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4044/events",
+    "html_url": "https://github.com/spack/spack/pull/4044",
+    "id": 225145349,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4MTk5Mzc2",
+    "number": 4044,
+    "title": "Edits to get setup-env.csh working better",
+    "user": {
+        "login": "mathomp4",
+        "id": 2982494,
+        "node_id": "MDQ6VXNlcjI5ODI0OTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2982494?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mathomp4",
+        "html_url": "https://github.com/mathomp4",
+        "followers_url": "https://api.github.com/users/mathomp4/followers",
+        "following_url": "https://api.github.com/users/mathomp4/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mathomp4/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mathomp4/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mathomp4/subscriptions",
+        "organizations_url": "https://api.github.com/users/mathomp4/orgs",
+        "repos_url": "https://api.github.com/users/mathomp4/repos",
+        "events_url": "https://api.github.com/users/mathomp4/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mathomp4/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2017-04-28T17:32:58Z",
+    "updated_at": "2017-05-10T16:32:58Z",
+    "closed_at": "2017-05-10T15:18:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4044",
+        "html_url": "https://github.com/spack/spack/pull/4044",
+        "diff_url": "https://github.com/spack/spack/pull/4044.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4044.patch"
+    },
+    "body": "I've shamelessly stolen some code from `setup-env.sh` to get `setup-env.csh` working a bit better. It's not perfect and as exciting as `setup-env.sh` but it's a good first step.\r\n\r\nNow one doesn't need to set `$SYS_TYPE` but will use spack python to retrieve it.\r\n\r\nNOTE: I'm using lmod on my laptop, so I might be trying to use that _sp_lmod_root at some point, but for now I'm just doing:\r\n```\r\n  module use -a $SPACK_ROOT/share/spack/lmod/darwin-elcapitan-x86_64\r\n  module unuse $SPACK_ROOT/share/spack/modules/darwin-elcapitan-x86_64\r\n```\r\nin my `.tcshrc` until I learn Spack a bit better. (Would I do:\r\n```\r\nmodules:\r\n   enable::\r\n      - lmod\r\n```\r\nif I only want lua modules?)\r\n\r\nFixes #3924. The script now prints an error message if `SPACK_ROOT` is not set.",
+    "performed_via_github_app": null
+}

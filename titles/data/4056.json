@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4056/events",
+    "html_url": "https://github.com/spack/spack/pull/4056",
+    "id": 225360728,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4MzMwNDc3",
+    "number": 4056,
+    "title": "Allow user to specify profile sort column on the command line.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-04-30T22:57:23Z",
+    "updated_at": "2017-05-01T21:32:52Z",
+    "closed_at": "2017-05-01T21:32:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4056",
+        "html_url": "https://github.com/spack/spack/pull/4056",
+        "diff_url": "https://github.com/spack/spack/pull/4056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4056.patch"
+    },
+    "body": "Trying to make `spack -p` more useful for analyzing performance. I often want to try several sort orders, so this allows that without breaking different Python versions.\r\n\r\nInstead of supplying a default profile argument for `runctx`, which has not worked in the past because `runctx` takes different arguments across Python versions, use the `cProfile` and `pstats.Stats` API directly.  Allow the Spack user to specify what to sort by, since the *fields* you can sort by differ across Python versions, too.  By default, sort by `time`, which is available across versions and is more sensible than the default sort order.\r\n\r\n- [x] Add -P <STAT> argument so that caller can specify a sort column for cProfile. Can specify multiple columns with commas. e.g.:\r\n    ```\r\n    spack -P cumtime,module\r\n    ```\r\n- [x] Sort by time by default (because it works in all Python versions)\r\n- [x] Show sort column options in command help.  Looks like:\r\n    ```\r\n     -P STAT, --sorted-profile STAT\r\n                            profile and sort by one or more of:\r\n                            [cumulative, module, ncalls, pcalls, file, line, name,\r\n                             calls, stdname, nfl, filename, cumtime, time, tottime]\r\n    ```\r\n- [x] Do a short profile run in the unit tests.",
+    "performed_via_github_app": null
+}

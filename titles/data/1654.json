@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1654",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1654/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1654/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1654/events",
+    "html_url": "https://github.com/spack/spack/pull/1654",
+    "id": 173804597,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODMxMjAwNzg=",
+    "number": 1654,
+    "title": "[Workaround] Set namespace='builtin' for Packges in packages.yaml",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2016-08-29T15:41:41Z",
+    "updated_at": "2017-02-18T19:37:31Z",
+    "closed_at": "2017-02-18T19:37:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1654",
+        "html_url": "https://github.com/spack/spack/pull/1654",
+        "diff_url": "https://github.com/spack/spack/pull/1654.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1654.patch"
+    },
+    "body": "Previously, namespace was set to None.  This prevented proper comparison between Specs, causing the user's directives in `packages.yaml` to be ignored at times.\n\nThis PR needs a bit more thinking.  We should probably allow the user to specify a namespace in `packages.yaml`, rather than always hardcoding to 'builtin'.  However, in existing practice, 'builtin' is the only Spack repo that people seem to use.\n\nThis addresses #1622 \n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6242",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6242/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6242/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6242/events",
+    "html_url": "https://github.com/spack/spack/pull/6242",
+    "id": 272616793,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUxNjkwOTQy",
+    "number": 6242,
+    "title": "Adding updated URL for package abinit",
+    "user": {
+        "login": "TheQueasle",
+        "id": 13701545,
+        "node_id": "MDQ6VXNlcjEzNzAxNTQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13701545?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TheQueasle",
+        "html_url": "https://github.com/TheQueasle",
+        "followers_url": "https://api.github.com/users/TheQueasle/followers",
+        "following_url": "https://api.github.com/users/TheQueasle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TheQueasle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TheQueasle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TheQueasle/subscriptions",
+        "organizations_url": "https://api.github.com/users/TheQueasle/orgs",
+        "repos_url": "https://api.github.com/users/TheQueasle/repos",
+        "events_url": "https://api.github.com/users/TheQueasle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TheQueasle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-11-09T16:00:41Z",
+    "updated_at": "2017-11-10T13:49:44Z",
+    "closed_at": "2017-11-10T13:49:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6242",
+        "html_url": "https://github.com/spack/spack/pull/6242",
+        "diff_url": "https://github.com/spack/spack/pull/6242.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6242.patch"
+    },
+    "body": "Abinit's old URL pointing at http://ftp.abinit.org/abinit-8.2.2.tar.gz appears to be timing out now.  Attempting to hit ftp.abinit.org on port 80 results in a timeout, and hitting it on port 443 results in \"The provided host name is not valid for this server.\"\r\n\r\nAfter some quick digging, it seems they (www.abinit.org) are only listening on port 443 and that the location of Abinit has changed to https://www.abinit.org/sites/default/files/packages/\r\n\r\nAlso - Abinit 8.2.2 has been 'replaced' with 8.2.3.\r\n\r\nThis PR updates the abinit package with the new URL and version/md5sum.\r\n\r\nPlease feel free to test my claims about access to the FTP site, but it has failed from more than one network location so I'm assuming it's not just me.\r\n\r\n",
+    "performed_via_github_app": null
+}

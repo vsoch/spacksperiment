@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7017",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7017/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7017/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7017/events",
+    "html_url": "https://github.com/spack/spack/pull/7017",
+    "id": 290321089,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY0MjAzOTE1",
+    "number": 7017,
+    "title": "Fix gfortran 7 detection",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-01-22T00:23:37Z",
+    "updated_at": "2018-01-29T06:48:43Z",
+    "closed_at": "2018-01-29T00:29:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7017",
+        "html_url": "https://github.com/spack/spack/pull/7017",
+        "diff_url": "https://github.com/spack/spack/pull/7017.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7017.patch"
+    },
+    "body": "Fixes #7016.\r\n\r\nIn GCC 7, `-dumpversion` was changed to return the major version, not the full version. Use `-dumpfullversion` to get around this. This change was already made for `gcc` and `g++` in #6111, but not for `gfortran`, resulting in the issue reported in #7016. This PR fixes that.\r\n\r\nTested on:\r\n\r\n- [x] macOS 10.13.2 with GCC 7.2.0\r\n- [x] CentOS 6.9 with GCC 4.4.7\r\n- [x] CentOS 7.4 with GCC 4.8.5\r\n- [x] Ubuntu 17.10 with GCC 4.8, 5.4.1, 6.4.0, and 7.2.0\r\n\r\n@hfp ",
+    "performed_via_github_app": null
+}

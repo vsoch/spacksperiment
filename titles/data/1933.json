@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1933",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1933/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1933/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1933/events",
+    "html_url": "https://github.com/spack/spack/pull/1933",
+    "id": 181424507,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODgyNjg1OTc=",
+    "number": 1933,
+    "title": "[Bug Fix (and docs too)] : Do not select @develop version by default",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2016-10-06T14:05:53Z",
+    "updated_at": "2016-10-06T16:08:16Z",
+    "closed_at": "2016-10-06T16:08:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1933",
+        "html_url": "https://github.com/spack/spack/pull/1933",
+        "diff_url": "https://github.com/spack/spack/pull/1933.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1933.patch"
+    },
+    "body": "@tgamblin @davydden \n\nThis PR fixes a bug in #1561.  #1561 was supposed to fix bugs, not change behavior in any significant way.\n\nBefore #1561, the `@develop` version would not be selected in concretization, see comment from old code:\n\n```\n# Disregard @develop and take the next valid version\n```\n\nAfter #1561, the `@develop` version would be selected by default if it was available, breaking the pre-#1561 behavior.  This could result in naive users (i.e. anyone not familiar with a particular package) \"accidentally\" obtaining the `@develop` version of a package without specifically requesting it.\n\nThis PR fixes that bug introduced by #1561, with two changes:\n1. Change `v.isdevelop()` to `not v.isdevelop()`, ensuring that the `@develop` version will have lower default priority compared to numeric versions\n2. Remove unnecessary `v.isnumeric()` from the key.  This is already tested when  comparing version numbers (the last part of the key), and could possibly mess things up if done separately.\n\nThis PR also comes with related documentation improvements:\n1. Improved comments explaining the concretization preference algorithm; avoid future bugs.\n2. Section added to the manual explaining the same thing in English.\n",
+    "performed_via_github_app": null
+}

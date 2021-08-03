@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6877",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6877/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6877/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6877/events",
+    "html_url": "https://github.com/spack/spack/pull/6877",
+    "id": 287224823,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYxOTcxMzEw",
+    "number": 6877,
+    "title": "Travis: upload the coverage data as part of the script",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-01-09T20:45:51Z",
+    "updated_at": "2018-01-11T06:01:18Z",
+    "closed_at": "2018-01-11T02:41:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6877",
+        "html_url": "https://github.com/spack/spack/pull/6877",
+        "diff_url": "https://github.com/spack/spack/pull/6877.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6877.patch"
+    },
+    "body": "According to Travis docs the exit code of `after_success` doesn't affect the build result. Instead, uploading the coverage data as the last step of the script will cause the job to fail if the command exits with non-zero.\r\n\r\nhttps://docs.travis-ci.com/user/customizing-the-build/#Breaking-the-Build\r\n\r\nrelates to #6872 ",
+    "performed_via_github_app": null
+}

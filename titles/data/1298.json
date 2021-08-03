@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1298",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1298/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1298/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1298/events",
+    "html_url": "https://github.com/spack/spack/pull/1298",
+    "id": 166343923,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Nzc5ODQ4NDI=",
+    "number": 1298,
+    "title": "Remove mechanism that auto-accepts Oracle license agreements without \u2026",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 44,
+    "created_at": "2016-07-19T14:22:12Z",
+    "updated_at": "2017-01-06T20:34:19Z",
+    "closed_at": "2017-01-05T19:46:15Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1298",
+        "html_url": "https://github.com/spack/spack/pull/1298",
+        "diff_url": "https://github.com/spack/spack/pull/1298.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1298.patch"
+    },
+    "body": "\u2026user's consent or approval.  Removed because it could cause legal liability for users and LLNL.\n\nAdded virtual dependency `java`.\n\nTODO later:\n- Add better documentation on how to deal with licensed-binary installs like this one, using Spack mirrors.\n- Add a real IcedTea build.\n",
+    "performed_via_github_app": null
+}

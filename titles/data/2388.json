@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2388",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2388/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2388/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2388/events",
+    "html_url": "https://github.com/spack/spack/issues/2388",
+    "id": 191137692,
+    "node_id": "MDU6SXNzdWUxOTExMzc2OTI=",
+    "number": 2388,
+    "title": "Cori /Theta hangs with setup-env.sh sourced in bashrc",
+    "user": {
+        "login": "mamelara",
+        "id": 7441417,
+        "node_id": "MDQ6VXNlcjc0NDE0MTc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7441417?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mamelara",
+        "html_url": "https://github.com/mamelara",
+        "followers_url": "https://api.github.com/users/mamelara/followers",
+        "following_url": "https://api.github.com/users/mamelara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mamelara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mamelara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mamelara/subscriptions",
+        "organizations_url": "https://api.github.com/users/mamelara/orgs",
+        "repos_url": "https://api.github.com/users/mamelara/repos",
+        "events_url": "https://api.github.com/users/mamelara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mamelara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2016-11-22T22:08:17Z",
+    "updated_at": "2020-08-25T10:04:11Z",
+    "closed_at": "2020-08-25T10:04:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": " Cori hangs whenver setup-env.sh is sourced inside of my bashrc. \r\nThe command `. $SPACK_ROOT/share/spack/setup-env.sh` happens to work fine whenever I manually input them. \r\n\r\nHere's the output when I source bashrc.ext with set -x placed in the setup-env.sh file.\r\n\r\n```\r\n_sp_share_dir=$(cd \"$(dirname $_sp_source_file)\" && pwd)\r\ncd \"$(dirname $_sp_source_file)\" && pwd)\r\ncd \"$(dirname $_sp_source_file)\" && pwd\r\ndirname $_sp_source_file)\"\r\ndirname $_sp_source_file)\r\ndirname $_sp_source_file\r\n_sp_prefix=$(cd \"$(dirname $(dirname $_sp_share_dir))\" && pwd)\r\ncd \"$(dirname $(dirname $_sp_share_dir))\" && pwd)\r\ncd \"$(dirname $(dirname $_sp_share_dir))\" && pwd\r\ndirname $(dirname $_sp_share_dir))\"\r\ndirname $(dirname $_sp_share_dir))\r\ndirname $(dirname $_sp_share_dir)\r\ndirname $_sp_share_dir)\r\ndirname $_sp_share_dir\r\n_spack_pathadd PATH       \"${_sp_prefix%/}/bin\"\r\n_pa_oldvalue=${PATH:-}\r\n_sp_sys_type=$(spack-python -c 'print(spack.architecture.sys_type())')\r\nspack-python -c 'print(spack.architecture.sys_type())')\r\nspack-python -c 'print(spack.architecture.sys_type())'\r\n```\r\nAfter that it hangs.\r\n\r\nWhenever I try to run any spack command, it hangs and I Ctrl-C out of it. Here's the stack trace:\r\n```\r\nTraceback (most recent call last):\r\n  File \"/global/homes/m/mamelara/myspack/bin/spack\", line 99, in <module>\r\n    import spack\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/__init__.py\", line 74, in <module>\r\n    import spack.repository\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/repository.py\", line 45, in <module>\r\n    import spack.spec\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/spec.py\", line 114, in <module>\r\n    import spack.store\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/store.py\", line 47, in <module>\r\n    import spack.config\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/config.py\", line 208, in <module>\r\n    _platform = spack.architecture.platform().name\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/llnl/util/lang.py\", line 187, in __call__\r\n    self.cache[args] = self.func(*args)\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/architecture.py\", line 530, in platform\r\n    return platform_cls()\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/platforms/cray.py\", line 54, in __init__\r\n    _target = self._default_target_from_env()\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/platforms/cray.py\", line 109, in _default_target_from_env\r\n    output=str, error=str)\r\n  File \"/global/u2/m/mamelara/myspack/lib/spack/spack/util/executable.py\", line 171, in __call__\r\n    out, err = proc.communicate()\r\n  File \"/global/common/cori/software/python/2.7-anaconda/lib/python2.7/subprocess.py\", line 800, in communicate\r\n    return self._communicate(input)\r\n  File \"/global/common/cori/software/python/2.7-anaconda/lib/python2.7/subprocess.py\", line 1417, in _communicate\r\n    stdout, stderr = self._communicate_with_poll(input)\r\n  File \"/global/common/cori/software/python/2.7-anaconda/lib/python2.7/subprocess.py\", line 1471, in _communicate_with_poll\r\n    ready = poller.poll()\r\nKeyboardInterrupt\r\n```\r\nOut of ideas on what it could be. It looks like _default_target_from_env is not responding but it works when I don't have spack's shell support activated! Thanks for the help!\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3993",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3993/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3993/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3993/events",
+    "html_url": "https://github.com/spack/spack/pull/3993",
+    "id": 224284130,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3NTkwMDMy",
+    "number": 3993,
+    "title": "Fix bug with '# noqa' filtering",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430621,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2MjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/flake8",
+            "name": "flake8",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-25T21:56:10Z",
+    "updated_at": "2017-04-26T12:36:12Z",
+    "closed_at": "2017-04-26T05:23:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3993",
+        "html_url": "https://github.com/spack/spack/pull/3993",
+        "diff_url": "https://github.com/spack/spack/pull/3993.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3993.patch"
+    },
+    "body": "Fixes a bug I introduced in #3932. I forgot that we aren't just filtering each line of the file, we are writing a completely new file and running flake8 on that instead. Instead of skipping the line (or the file) we need to skip modifications to the line and continue to print it. Also updated the unit tests with an example to prevent this from happening again.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4925",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4925/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4925/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4925/events",
+    "html_url": "https://github.com/spack/spack/pull/4925",
+    "id": 246406579,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzMDEyNzQ0",
+    "number": 4925,
+    "title": "Add a QMakePackage base class",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 657167326,
+            "node_id": "MDU6TGFiZWw2NTcxNjczMjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/qmake",
+            "name": "qmake",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 21,
+    "created_at": "2017-07-28T17:08:55Z",
+    "updated_at": "2017-08-04T15:53:52Z",
+    "closed_at": "2017-08-04T15:46:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4925",
+        "html_url": "https://github.com/spack/spack/pull/4925",
+        "diff_url": "https://github.com/spack/spack/pull/4925.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4925.patch"
+    },
+    "body": "This PR adds Spack support for the qmake build system.\r\n\r\nUnfortunately, I'm not able to test this. I am unable to install `qt` on macOS (see #2363 and #2496) or on CentOS 6. I even tried using `qt` built with Anaconda but that didn't work either. There are a few things that I would like to see tested before this is merged:\r\n\r\n1. ~Do these packages need `qt` as a build/link dependency or just build? Run `ldd -r` on any dynamic executables or shared libraries to confirm.~ Pretty sure it is a link dependency too.\r\n2. ~Are these packages actually using Spack's compiler wrappers? Add `echo \"USING SPACK'S COMPILER WRAPPERS\"` to `lib/spack/env/cc` to confirm. There are a few [qmake variables](http://doc.qt.io/qt-5/qmake-variable-reference.html) that can be set including `QMAKE_CC` and `QMAKE_CXX`, as well as some RPATH-related variables that could be set.~ The compiler wrappers are being used.\r\n3. ~Do packages built with `qmake` come with any build-time or install-time tests? Check the generated Makefile for targets like `check` or `test`.~ Found one with a `check:` target.\r\n\r\n@jrood-nrel added the `qwt` package in #4911, while @lee218llnl added the `qt-creator` package in #1659. Would either of you be willing to test this, or tell me your secret for getting `qt` installed?",
+    "performed_via_github_app": null
+}

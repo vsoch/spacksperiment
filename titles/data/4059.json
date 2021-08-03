@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4059",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4059/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4059/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4059/events",
+    "html_url": "https://github.com/spack/spack/pull/4059",
+    "id": 225384468,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4MzQ1MDI1",
+    "number": 4059,
+    "title": "Skip fetch tests for tools that are not installed.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-01T04:45:23Z",
+    "updated_at": "2017-05-01T18:58:07Z",
+    "closed_at": "2017-05-01T18:53:17Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4059",
+        "html_url": "https://github.com/spack/spack/pull/4059",
+        "diff_url": "https://github.com/spack/spack/pull/4059.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4059.patch"
+    },
+    "body": "Mark tests that require git, subversion, or mercurial to be skipped if they're not installed.  This allows people on systems that don't have all the fetchers to still run Spack tests. ",
+    "performed_via_github_app": null
+}

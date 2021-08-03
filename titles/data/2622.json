@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2622",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2622/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2622/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2622/events",
+    "html_url": "https://github.com/spack/spack/pull/2622",
+    "id": 196300732,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTg0ODgyNTc=",
+    "number": 2622,
+    "title": "open-jdk: a sketch of the package",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2016-12-18T21:34:12Z",
+    "updated_at": "2019-01-31T18:54:29Z",
+    "closed_at": "2019-01-31T18:54:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2622",
+        "html_url": "https://github.com/spack/spack/pull/2622",
+        "diff_url": "https://github.com/spack/spack/pull/2622.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2622.patch"
+    },
+    "body": "currently fails with \r\n```\r\nchecking for version string... 9-internal+0-adhoc.davydden.jdk9\r\nUnable to find any JVMs matching version \"(null)\".\r\nNo Java runtime present, try --request to install.\r\nconfigure: Found potential Boot JDK using /usr/libexec/java_home \r\nconfigure: Potential Boot JDK found at  did not contain bin/java; ignoring\r\nUnable to find any JVMs matching version \"1.9\".\r\nNo Java runtime present, try --request to install.\r\nconfigure: Found potential Boot JDK using /usr/libexec/java_home -v 1.9\r\nconfigure: Potential Boot JDK found at  did not contain bin/java; ignoring\r\nUnable to find any JVMs matching version \"1.8\".\r\nNo Java runtime present, try --request to install.\r\nconfigure: Found potential Boot JDK using /usr/libexec/java_home -v 1.8\r\nconfigure: Potential Boot JDK found at  did not contain bin/java; ignoring\r\nUnable to find any JVMs matching version \"1.7\".\r\nNo Java runtime present, try --request to install.\r\nconfigure: Found potential Boot JDK using /usr/libexec/java_home -v 1.7\r\nconfigure: Potential Boot JDK found at  did not contain bin/java; ignoring\r\nchecking for javac... /usr/bin/javac\r\nchecking for java... /usr/bin/java\r\nconfigure: Could not find a valid Boot JDK. \r\nconfigure: This might be fixed by explicitly setting --with-boot-jdk\r\nconfigure: error: Cannot continue\r\nconfigure exiting with result code 1\r\n```\r\n\r\nI would probably not pursue this further, but still could be a starting point for others, thus `up-for-grabs`",
+    "performed_via_github_app": null
+}

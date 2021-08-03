@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4856",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4856/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4856/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4856/events",
+    "html_url": "https://github.com/spack/spack/pull/4856",
+    "id": 244731415,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxODE5ODM5",
+    "number": 4856,
+    "title": "Savanna",
+    "user": {
+        "login": "kshitij-v-mehta",
+        "id": 2341478,
+        "node_id": "MDQ6VXNlcjIzNDE0Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2341478?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kshitij-v-mehta",
+        "html_url": "https://github.com/kshitij-v-mehta",
+        "followers_url": "https://api.github.com/users/kshitij-v-mehta/followers",
+        "following_url": "https://api.github.com/users/kshitij-v-mehta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kshitij-v-mehta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kshitij-v-mehta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kshitij-v-mehta/subscriptions",
+        "organizations_url": "https://api.github.com/users/kshitij-v-mehta/orgs",
+        "repos_url": "https://api.github.com/users/kshitij-v-mehta/repos",
+        "events_url": "https://api.github.com/users/kshitij-v-mehta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kshitij-v-mehta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-21T17:16:25Z",
+    "updated_at": "2017-08-02T17:38:42Z",
+    "closed_at": "2017-07-22T06:47:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4856",
+        "html_url": "https://github.com/spack/spack/pull/4856",
+        "diff_url": "https://github.com/spack/spack/pull/4856.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4856.patch"
+    },
+    "body": "Replaced installation of stable version 0.5 through tar.gz with git checkout. \r\nThis way, the git submodule in the package is downloaded fully.",
+    "performed_via_github_app": null
+}

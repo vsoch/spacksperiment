@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4288",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4288/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4288/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4288/events",
+    "html_url": "https://github.com/spack/spack/pull/4288",
+    "id": 229747731,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxMzM2Mzg1",
+    "number": 4288,
+    "title": "Add old version of ROOT 5",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-18T17:24:45Z",
+    "updated_at": "2017-05-18T18:22:11Z",
+    "closed_at": "2017-05-18T18:22:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4288",
+        "html_url": "https://github.com/spack/spack/pull/4288",
+        "diff_url": "https://github.com/spack/spack/pull/4288.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4288.patch"
+    },
+    "body": "Apparently ROOT 5 and 6 are pretty different and a lot of users are still using the ROOT 5 API.\r\n\r\nBuilt fine for me on CentOS 6 with GCC 4.8.5. GCC 6 didn't work (although it does work for ROOT 6). Didn't even bother trying Intel as it didn't work for ROOT 6 either.",
+    "performed_via_github_app": null
+}

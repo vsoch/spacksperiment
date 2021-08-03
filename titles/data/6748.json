@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6748",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6748/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6748/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6748/events",
+    "html_url": "https://github.com/spack/spack/pull/6748",
+    "id": 283952489,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU5NzExMjYx",
+    "number": 6748,
+    "title": "Fix python3 compatibility bug in spack edit command",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-12-21T17:29:59Z",
+    "updated_at": "2017-12-22T16:47:23Z",
+    "closed_at": "2017-12-22T01:45:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6748",
+        "html_url": "https://github.com/spack/spack/pull/6748",
+        "diff_url": "https://github.com/spack/spack/pull/6748.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6748.patch"
+    },
+    "body": "Fixes a Python 3 compatibility bug introduced by #6416.\r\n\r\nWhen run with Python 3, I get the following error message:\r\n```\r\n$ spack edit -b python\r\n==> Error: object of type 'filter' has no len()\r\n```\r\nIn Python 2, `filter()` returns a list, but in Python 3, `filter()` returns an iterator, and iterators have no length.\r\n\r\n@becker33 \r\n\r\nP.S. Thoughts on how to write unit tests for `spack edit`? We're currently getting 37% coverage...",
+    "performed_via_github_app": null
+}

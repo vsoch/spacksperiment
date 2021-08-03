@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3180",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3180/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3180/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3180/events",
+    "html_url": "https://github.com/spack/spack/pull/3180",
+    "id": 208583066,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2ODMwMzk4",
+    "number": 3180,
+    "title": "make git fetching quiet",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-02-17T23:16:14Z",
+    "updated_at": "2017-05-28T20:35:39Z",
+    "closed_at": "2017-03-25T00:37:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3180",
+        "html_url": "https://github.com/spack/spack/pull/3180",
+        "diff_url": "https://github.com/spack/spack/pull/3180.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3180.patch"
+    },
+    "body": "fixes https://github.com/LLNL/spack/issues/3179\r\n\r\n\r\nwith this PR\r\n```\r\n$ spack install dealii@develop\r\n==> Installing dealii\r\n==> zlib is already installed in /Users/davydden/spack/opt/spack/darwin-sierra-x86_64/clang-8.0.0-apple/zlib-1.2.10-oh65pcwikiqep74vtfaitp6ojgzivaag\r\n...\r\n==> gsl is already installed in /Users/davydden/spack/opt/spack/darwin-sierra-x86_64/clang-8.0.0-apple/gsl-2.3-zpffzwkqlu2zkpp6f4gv6xppiqsxz63m\r\n==> Trying to clone git repository:\r\n  https://github.com/dealii/dealii.git\r\n==> No checksum needed when fetching with git\r\n==> Already staged dealii-develop-yfqypqhbak6tfj2t5zlz7t55otkc32pm in /Users/davydden/spack/var/spack/stage/dealii-develop-yfqypqhbak6tfj2t5zlz7t55otkc32pm\r\n==> No patches needed for dealii\r\n==> Building dealii [CMakePackage]\r\n==> Executing phase : 'cmake'\r\n...\r\n```",
+    "performed_via_github_app": null
+}

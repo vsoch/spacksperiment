@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3489",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3489/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3489/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3489/events",
+    "html_url": "https://github.com/spack/spack/pull/3489",
+    "id": 215233721,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTExNDMyNjcy",
+    "number": 3489,
+    "title": "Use byte-encoded UTF-8 for sourced environment in Python 2",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-03-19T01:18:54Z",
+    "updated_at": "2017-03-21T23:31:36Z",
+    "closed_at": "2017-03-19T05:48:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3489",
+        "html_url": "https://github.com/spack/spack/pull/3489",
+        "diff_url": "https://github.com/spack/spack/pull/3489.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3489.patch"
+    },
+    "body": "Fixes recurring errors on develop with unicode characters in commits.\r\n\r\nThis was more of a PITA than I thought it would be.\r\n\r\nErrors like these keep happening when we merge @eschnett's PRs to `develop`:\r\n* https://travis-ci.org/LLNL/spack/jobs/212132163\r\n* https://travis-ci.org/LLNL/spack/builds/212131522\r\n\r\nThis is because he uses unicode in the commit message, and `spack.environment.from_sourcing_files` was not handling that properly.  It only showed up *after* a merge to `develop` because in a Travis PR build, `TRAVIS_COMMIT_MESSAGE` is set to \"Merged blahblah...\", and the real commit message from the PR only ends up in that environment variable when we squash the PR into `develop`.\r\n\r\nIt turns out this is all because `json` only reads in `unicode` (compare that with YAML, which reads in `str` in both Python 2 and Python 3).  We can't put `unicode` objects in `os.environ`, or use operations like `in` to compare them properly with `str` objects in Python 2.\r\n\r\n[`json.loads(..., encoding='ascii')](https://docs.python.org/2/library/json.html#json.loads) didn't seem to help -- that seems to be a way to tell Python about the input encoding, but you'll still get `unicode` output (it's not particularly well documented).  So, the solution was to convert the `unicode` objects to byte-encoded `str` objects in Python 2, but to leave the `json` output untouched for Python 3.\r\n\r\nThis is Python3-proof, as Python3 just has unicode `str` objects, and `os.environ` in Python 3 seems like it's smart enough to byte encode most things you'd put in it automatically.\r\n\r\n- [x] Fix issues with `json` and unicode in Python 2.\r\n- [x] Also added a test where we source a file that has some unicode in it, to make sure `from_sourcing_files` keeps working.\r\n\r\n@alalazo @adamjstewart",
+    "performed_via_github_app": null
+}

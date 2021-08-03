@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6645",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6645/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6645/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6645/events",
+    "html_url": "https://github.com/spack/spack/pull/6645",
+    "id": 280712113,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU3Mzg0Mzgz",
+    "number": 6645,
+    "title": "Add new package signify",
+    "user": {
+        "login": "nshtg",
+        "id": 5219415,
+        "node_id": "MDQ6VXNlcjUyMTk0MTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5219415?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nshtg",
+        "html_url": "https://github.com/nshtg",
+        "followers_url": "https://api.github.com/users/nshtg/followers",
+        "following_url": "https://api.github.com/users/nshtg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nshtg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nshtg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nshtg/subscriptions",
+        "organizations_url": "https://api.github.com/users/nshtg/orgs",
+        "repos_url": "https://api.github.com/users/nshtg/repos",
+        "events_url": "https://api.github.com/users/nshtg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nshtg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-12-09T11:33:53Z",
+    "updated_at": "2017-12-17T02:48:00Z",
+    "closed_at": "2017-12-17T02:48:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6645",
+        "html_url": "https://github.com/spack/spack/pull/6645",
+        "diff_url": "https://github.com/spack/spack/pull/6645.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6645.patch"
+    },
+    "body": "OpenBSD tool to sign and verify signatures on files.\r\n\r\nSee https://github.com/aperezdc/signify\r\n\r\nBuild is confirmed to be working on Debian 9 and spack@95a384f05107cc80e0da7d5e7a5b75380ebf76f3.",
+    "performed_via_github_app": null
+}

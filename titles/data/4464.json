@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4464",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4464/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4464/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4464/events",
+    "html_url": "https://github.com/spack/spack/pull/4464",
+    "id": 234751641,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI0ODExODk0",
+    "number": 4464,
+    "title": "Fix building shared libraries for gmp",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-09T08:05:40Z",
+    "updated_at": "2017-06-13T13:06:45Z",
+    "closed_at": "2017-06-13T13:06:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4464",
+        "html_url": "https://github.com/spack/spack/pull/4464",
+        "diff_url": "https://github.com/spack/spack/pull/4464.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4464.patch"
+    },
+    "body": "If specific compiler flags are set, gmp will not build a shared library, causing failures further down the line.\r\n\r\nSpecifically, we have set `cflags`, `cppflags`, `ldflags` etc. to `-mtune=native -march=native`. This causes gmp's `configure` script to misdetect shared library support, which causes the mpfr build to fail.",
+    "performed_via_github_app": null
+}

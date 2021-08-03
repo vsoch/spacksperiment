@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5038",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5038/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5038/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5038/events",
+    "html_url": "https://github.com/spack/spack/pull/5038",
+    "id": 249077970,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0OTI4MTQ3",
+    "number": 5038,
+    "title": "bugfix for module_cmd",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-08-09T15:52:51Z",
+    "updated_at": "2017-08-09T19:25:58Z",
+    "closed_at": "2017-08-09T19:14:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5038",
+        "html_url": "https://github.com/spack/spack/pull/5038",
+        "diff_url": "https://github.com/spack/spack/pull/5038.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5038.patch"
+    },
+    "body": "Bash is often linked to sh. This fixes a bug in the code for when bash is linked to sh and the module function calls sh.\r\n\r\nAlso changed one of the tests to this model to make sure we don't reintroduce a bug in it.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3352",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3352/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3352/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3352/events",
+    "html_url": "https://github.com/spack/spack/pull/3352",
+    "id": 211812864,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA5MDYzNTQ5",
+    "number": 3352,
+    "title": "Add abipy package and dependencies",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-03-03T21:57:31Z",
+    "updated_at": "2017-04-06T20:59:17Z",
+    "closed_at": "2017-03-29T16:13:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3352",
+        "html_url": "https://github.com/spack/spack/pull/3352",
+        "diff_url": "https://github.com/spack/spack/pull/3352.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3352.patch"
+    },
+    "body": "@gmatteo I noticed that you wrote our `abinit` package. Thank you! A lot of our users at ANL use abinit, and have requested abipy as well. Can you take a look at this package and see if everything looks good, since you're the developer?",
+    "performed_via_github_app": null
+}

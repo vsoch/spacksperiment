@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2356",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2356/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2356/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2356/events",
+    "html_url": "https://github.com/spack/spack/pull/2356",
+    "id": 189943485,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTQxMDUzOTE=",
+    "number": 2356,
+    "title": "Feature/zsh completion",
+    "user": {
+        "login": "Falkor",
+        "id": 185262,
+        "node_id": "MDQ6VXNlcjE4NTI2Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/185262?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Falkor",
+        "html_url": "https://github.com/Falkor",
+        "followers_url": "https://api.github.com/users/Falkor/followers",
+        "following_url": "https://api.github.com/users/Falkor/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Falkor/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Falkor/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Falkor/subscriptions",
+        "organizations_url": "https://api.github.com/users/Falkor/orgs",
+        "repos_url": "https://api.github.com/users/Falkor/repos",
+        "events_url": "https://api.github.com/users/Falkor/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Falkor/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2016-11-17T05:37:58Z",
+    "updated_at": "2020-01-31T14:17:56Z",
+    "closed_at": "2020-01-30T18:07:09Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2356",
+        "html_url": "https://github.com/spack/spack/pull/2356",
+        "diff_url": "https://github.com/spack/spack/pull/2356.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2356.patch"
+    },
+    "body": "I was tired during the SC'16 tutorial to type all spack commands manually. So I decided to make a zsh completion file. As this is something new to me, it took me more time than planned and there are many rooms for improvement (in particular to handle automagically the specs) but I hope it would still be useful for the community. ",
+    "performed_via_github_app": null
+}

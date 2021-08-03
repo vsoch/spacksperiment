@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4614",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4614/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4614/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4614/events",
+    "html_url": "https://github.com/spack/spack/pull/4614",
+    "id": 238864990,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI3NzA0NTUz",
+    "number": 4614,
+    "title": "Requested changes related to mumps compilation",
+    "user": {
+        "login": "darachg",
+        "id": 2099564,
+        "node_id": "MDQ6VXNlcjIwOTk1NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2099564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darachg",
+        "html_url": "https://github.com/darachg",
+        "followers_url": "https://api.github.com/users/darachg/followers",
+        "following_url": "https://api.github.com/users/darachg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darachg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darachg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darachg/subscriptions",
+        "organizations_url": "https://api.github.com/users/darachg/orgs",
+        "repos_url": "https://api.github.com/users/darachg/repos",
+        "events_url": "https://api.github.com/users/darachg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darachg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-27T14:11:46Z",
+    "updated_at": "2017-08-08T13:28:00Z",
+    "closed_at": "2017-06-28T18:22:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4614",
+        "html_url": "https://github.com/spack/spack/pull/4614",
+        "diff_url": "https://github.com/spack/spack/pull/4614.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4614.patch"
+    },
+    "body": "(I have not submitted previous pull request to spack, so apologies in advance for mistakes):\r\n\r\nThese changes arise from attempts to compile mumps on fedora 25 and ubuntu 16.04.\r\nThe approximate mumps installation command in question is:\r\nwith gcc:\r\n```\r\nspack install   mumps+metis+parmetis+scotch+ptscotch ^intel-mpi@5.0.3 ^intel-mkl@11.2.4+shared~openmp\r\n```\r\nwith intel:\r\n```\r\nspack install   mumps+metis+parmetis+scotch+ptscotch%intel@17.0.4 ^intel-mpi@5.0.3 ^intel-mkl@11.2.4+shared~openmp ^cmake%gcc@6.3.1 ^bison%gcc@6.3.1 ^flex%gcc@6.3.1\r\n```\r\nintel mpi and intel mkl are required. Both are specified in packages.yaml as external packages\r\n\r\nThe changes below arise mostly from attempted fixes to errors \r\n\r\n - mumps compilation was failing due to scotch metis.h errors. The spack scotch package removes metis.h when installed with '~metis' hence the change\r\n\r\n- mumps was installing but tests were failing due to missing mkl symbols, so added 'intel64' to  SPACK_COMPILER_EXTRA_RPATHS  for intel mkl\r\n\r\n- on ubuntu 16.04 mumps compilation was failing due  to missing libz symbols used by scotch library; changed scotch package to address this\r\n\r\n- intel mpi changed to use mpiicc, mpiifort etc with intel compiler\r\n\r\n\r\nComments from original commit:\r\n* add mpii* wrappers for use with intel compilers\r\n * in mumps package, scotch is compiled without metis option when\r\n   ptscotch variant is selected. This removes confusion over which\r\n   metis.h to use\r\n\r\n * for intel mkl, add SPACK_COMPILER_EXTRA_RPATHS ending in 'intel64'\r\n\r\n * scotch lib requires libz when compression is turned on.  This\r\n   caused a link issue on some Ubuntu distributions (not\r\n   redhat). Change Scotch package to add -lz when needed",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4797",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4797/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4797/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4797/events",
+    "html_url": "https://github.com/spack/spack/pull/4797",
+    "id": 243531714,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwOTU0Nzk3",
+    "number": 4797,
+    "title": "Add universal build_type variant to CMakePackage",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 412006552,
+            "node_id": "MDU6TGFiZWw0MTIwMDY1NTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hash-change",
+            "name": "hash-change",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 39,
+    "created_at": "2017-07-17T21:22:29Z",
+    "updated_at": "2017-07-26T00:19:49Z",
+    "closed_at": "2017-07-25T23:34:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4797",
+        "html_url": "https://github.com/spack/spack/pull/4797",
+        "diff_url": "https://github.com/spack/spack/pull/4797.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4797.patch"
+    },
+    "body": "This PR adds a variant to every package that extends `CMakePackage` to control [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html). \r\n\r\nInstead of having every package override `build_type` on their own, I figure the best way to do this is to create a universal variant for all `CMakePackage` packages.\r\n\r\nStill stumbling over a few hurdles. Apparently not all CMake packages have the same possible build types? @davydden Can you confirm that `dealii` only has the following possible values?\r\n```python\r\n# CMAKE_BUILD_TYPE should be DebugRelease | Debug | Release \r\n```\r\n`symengine` may or may not be in the same boat. Does anyone know how to check what the possible values are for any given project? I want to make sure I didn't break any of the other packages.\r\n\r\nSo I need a way of being able to override the possible values of a variant in a subclass. A simple variable didn't do the trick as the variant was registered before the value was changed. @alalazo Any ideas?\r\n\r\nAnother question: do we want the values to be lowercase or CamelCase?\r\n\r\nJust a heads up, this will change the variants (and therefore the specs/hashes) of every CMakePackage in Spack.\r\n\r\n@mathstuf may also be interested in this discussion.",
+    "performed_via_github_app": null
+}

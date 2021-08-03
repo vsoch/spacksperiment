@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5190",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5190/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5190/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5190/events",
+    "html_url": "https://github.com/spack/spack/pull/5190",
+    "id": 252327776,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM3MjUxNzU2",
+    "number": 5190,
+    "title": "Make jpeg a virtual dependency.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2017-08-23T15:39:41Z",
+    "updated_at": "2017-11-07T14:14:13Z",
+    "closed_at": "2017-08-24T08:30:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5190",
+        "html_url": "https://github.com/spack/spack/pull/5190",
+        "diff_url": "https://github.com/spack/spack/pull/5190.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5190.patch"
+    },
+    "body": "This implements #1286\r\n\r\n@ax3l, I had to fix 'isaac-server'. Could you, please, check if it is installed correctly with both libjpeg and libjpeg-turbo. And a question regarding 'isaac': are you sure that a header-only library needs all those dependencies?\r\n@bvanessen, @mwilliammyers, @mathstuf, @alalazo could you check if I didn't break 'opencv'? ",
+    "performed_via_github_app": null
+}

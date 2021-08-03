@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6156",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6156/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6156/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6156/events",
+    "html_url": "https://github.com/spack/spack/pull/6156",
+    "id": 271429817,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUwODE5MzA3",
+    "number": 6156,
+    "title": "Docker Docs: MPI as Root",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-11-06T10:42:10Z",
+    "updated_at": "2017-11-07T11:02:23Z",
+    "closed_at": "2017-11-06T21:03:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6156",
+        "html_url": "https://github.com/spack/spack/pull/6156",
+        "diff_url": "https://github.com/spack/spack/pull/6156.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6156.patch"
+    },
+    "body": "New versions of OpenMPI need `--allow-run-as-root` for running as root:\r\n  http://www.open-mpi.de/doc/v2.0/man1/mpirun.1.php#toc22\r\n\r\nThis is important in Docker containers, which usually run as root.",
+    "performed_via_github_app": null
+}

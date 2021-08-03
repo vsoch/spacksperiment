@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3853",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3853/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3853/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3853/events",
+    "html_url": "https://github.com/spack/spack/pull/3853",
+    "id": 221915050,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE2MDA2Nzkx",
+    "number": 3853,
+    "title": "Package.is_extension now uses Spec.concrete",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-04-15T00:31:09Z",
+    "updated_at": "2020-08-20T15:08:50Z",
+    "closed_at": "2020-08-20T15:08:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3853",
+        "html_url": "https://github.com/spack/spack/pull/3853",
+        "diff_url": "https://github.com/spack/spack/pull/3853.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3853.patch"
+    },
+    "body": "This addresses an issue observed in https://github.com/LLNL/spack/pull/3227 where extendee_spec on a package was present because the package was not considered concrete (according to the ```._concrete``` property).\r\n\r\n- [ ] I'd like to add a test where a package conditionally extends another package and make sure this fixes the issue\r\n\r\nOriginally Package.is_extension was using Spec._concrete. This replaces the direct access to the cached variable with a call to the property function (since in some cases, e.g. after a copy, _concrete is not set properly).",
+    "performed_via_github_app": null
+}

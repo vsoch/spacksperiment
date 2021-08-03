@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3747",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3747/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3747/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3747/events",
+    "html_url": "https://github.com/spack/spack/pull/3747",
+    "id": 220036277,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE0Njk3MzUz",
+    "number": 3747,
+    "title": "cuda_memtest: Package of CRP",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-06T21:18:05Z",
+    "updated_at": "2017-06-20T23:43:45Z",
+    "closed_at": "2017-04-07T03:05:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3747",
+        "html_url": "https://github.com/spack/spack/pull/3747",
+        "diff_url": "https://github.com/spack/spack/pull/3747.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3747.patch"
+    },
+    "body": "This adds a maintained version of the (since 2012) stalled original project. Creates a binary to run on a GPU node just like other (CPU) memtests.\r\n\r\nhttps://github.com/ComputationalRadiationPhysics/cuda_memtest\r\n\r\n~~Nvidia's [NVML](https://developer.nvidia.com/nvidia-management-library-nvml) (via the [GPU deployment kit](https://developer.nvidia.com/gpu-deployment-kit)) could also be added, providing serial number output of failing GPUs for multi-GPU nodes.~~ Part of the CUDA toolkit since CUDA 8.",
+    "performed_via_github_app": null
+}

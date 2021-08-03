@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4118",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4118/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4118/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4118/events",
+    "html_url": "https://github.com/spack/spack/pull/4118",
+    "id": 226116564,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4ODU2MzQ2",
+    "number": 4118,
+    "title": "SV variants are evaluated correctly in \"when=\" ",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-05-03T21:13:54Z",
+    "updated_at": "2017-05-04T18:25:28Z",
+    "closed_at": "2017-05-04T18:01:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4118",
+        "html_url": "https://github.com/spack/spack/pull/4118",
+        "diff_url": "https://github.com/spack/spack/pull/4118.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4118.patch"
+    },
+    "body": "The problem here was tricky:\r\n```python\r\nspec.satisfies(other)\r\n```\r\nchanges already the MV variants in others into SV variants (where necessary) if spec is concrete. If it is not concrete it does nothing because we may be acting at a purely syntactical level.\r\n\r\nWhen evaluating a `when=` keyword, spec is for sure not concrete as it is in the middle of the concretization process. In this case we have to trigger manually the substitution in other to not end up comparing a MV variant \"foo=bar\" to a SV variant \"foo=bar\" and having False in return. Which is wrong.\r\n\r\n##### Modifications\r\n- [x] added a regression test based on `wget` bug in #4113 \r\n- [x] factored common code in `variants.py`\r\n- [x] fixes #4113, fixes #4124",
+    "performed_via_github_app": null
+}

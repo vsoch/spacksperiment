@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4796",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4796/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4796/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4796/events",
+    "html_url": "https://github.com/spack/spack/pull/4796",
+    "id": 243525043,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwOTQ5Nzc2",
+    "number": 4796,
+    "title": "somatic-sniper depends_on('curses')",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-17T20:56:22Z",
+    "updated_at": "2017-07-18T14:40:43Z",
+    "closed_at": "2017-07-18T14:40:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4796",
+        "html_url": "https://github.com/spack/spack/pull/4796",
+        "diff_url": "https://github.com/spack/spack/pull/4796.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4796.patch"
+    },
+    "body": "somatic-sniper installs its own copy of samtools, which needs curses.\r\nI'm not sure why I didn't stumble on this in my dev environment, but I\r\njust stumbled over it in a standalone build.",
+    "performed_via_github_app": null
+}

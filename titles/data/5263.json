@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5263",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5263/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5263/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5263/events",
+    "html_url": "https://github.com/spack/spack/pull/5263",
+    "id": 254620337,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM4ODc1ODE0",
+    "number": 5263,
+    "title": "elemental: fix hardcoded libgfortran, use develop and explicitly speci\u2026",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-09-01T12:02:29Z",
+    "updated_at": "2017-12-19T12:04:55Z",
+    "closed_at": "2017-09-06T10:04:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5263",
+        "html_url": "https://github.com/spack/spack/pull/5263",
+        "diff_url": "https://github.com/spack/spack/pull/5263.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5263.patch"
+    },
+    "body": "\u2026fy MPI compilers\r\n\r\n`spack install elemental ^metis+real64` works on macOS+clang+gfortran.\r\n\r\n@bvanessen ping.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3139",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3139/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3139/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3139/events",
+    "html_url": "https://github.com/spack/spack/pull/3139",
+    "id": 207094027,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA1ODEyOTA3",
+    "number": 3139,
+    "title": "Don't eat STDOUT on successful tests.",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-02-12T23:57:42Z",
+    "updated_at": "2017-02-15T20:46:24Z",
+    "closed_at": "2017-02-15T20:46:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3139",
+        "html_url": "https://github.com/spack/spack/pull/3139",
+        "diff_url": "https://github.com/spack/spack/pull/3139.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3139.patch"
+    },
+    "body": "While debugging, it can be really useful to see STDOUT on unit tests.  I couldn't find any way to do so, other than hacking `test.py` (see this PR).  Is such a way provided?  If not, could one be added?",
+    "performed_via_github_app": null
+}

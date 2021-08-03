@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5109",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5109/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5109/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5109/events",
+    "html_url": "https://github.com/spack/spack/pull/5109",
+    "id": 250411208,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM1ODcxNjQ3",
+    "number": 5109,
+    "title": "Removed default value for the function argument 'dirty'",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-15T19:20:51Z",
+    "updated_at": "2017-08-30T21:22:42Z",
+    "closed_at": "2017-08-26T03:40:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5109",
+        "html_url": "https://github.com/spack/spack/pull/5109",
+        "diff_url": "https://github.com/spack/spack/pull/5109.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5109.patch"
+    },
+    "body": "This change is done to avoid inconsistencies during refactoring. The rationale is that functions at different levels in the call stack all define a default for the 'dirty' argument. This PR removes the default value for all the functions except the top-level one (`PackageBase.do_install`).\r\n\r\nIn this way not defining 'dirty' will result in an error, instead of the default value being used. This will reduce the risk of having an inconsistent behavior after a refactoring.",
+    "performed_via_github_app": null
+}

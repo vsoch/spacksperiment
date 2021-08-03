@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6871",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6871/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6871/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6871/events",
+    "html_url": "https://github.com/spack/spack/pull/6871",
+    "id": 287156478,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYxOTIxOTU0",
+    "number": 6871,
+    "title": "Trilinos: Patch zoltan to suppress PHG warning",
+    "user": {
+        "login": "bodduv",
+        "id": 9461605,
+        "node_id": "MDQ6VXNlcjk0NjE2MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9461605?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bodduv",
+        "html_url": "https://github.com/bodduv",
+        "followers_url": "https://api.github.com/users/bodduv/followers",
+        "following_url": "https://api.github.com/users/bodduv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bodduv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bodduv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bodduv/subscriptions",
+        "organizations_url": "https://api.github.com/users/bodduv/orgs",
+        "repos_url": "https://api.github.com/users/bodduv/repos",
+        "events_url": "https://api.github.com/users/bodduv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bodduv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-01-09T16:48:44Z",
+    "updated_at": "2018-01-10T09:31:21Z",
+    "closed_at": "2018-01-10T09:31:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6871",
+        "html_url": "https://github.com/spack/spack/pull/6871",
+        "diff_url": "https://github.com/spack/spack/pull/6871.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6871.patch"
+    },
+    "body": "Patch Zoltan to suppress PHG warning. Currently there is no way to suppress PHG warning.",
+    "performed_via_github_app": null
+}

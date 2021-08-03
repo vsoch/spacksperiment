@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4870",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4870/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4870/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4870/events",
+    "html_url": "https://github.com/spack/spack/pull/4870",
+    "id": 244885023,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxOTIwMDI1",
+    "number": 4870,
+    "title": "fix sphinx dependencies, add v1.6.3",
+    "user": {
+        "login": "svenevs",
+        "id": 5871461,
+        "node_id": "MDQ6VXNlcjU4NzE0NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5871461?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/svenevs",
+        "html_url": "https://github.com/svenevs",
+        "followers_url": "https://api.github.com/users/svenevs/followers",
+        "following_url": "https://api.github.com/users/svenevs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/svenevs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/svenevs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/svenevs/subscriptions",
+        "organizations_url": "https://api.github.com/users/svenevs/orgs",
+        "repos_url": "https://api.github.com/users/svenevs/repos",
+        "events_url": "https://api.github.com/users/svenevs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/svenevs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-23T02:57:12Z",
+    "updated_at": "2017-07-24T02:53:50Z",
+    "closed_at": "2017-07-23T14:44:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4870",
+        "html_url": "https://github.com/spack/spack/pull/4870",
+        "diff_url": "https://github.com/spack/spack/pull/4870.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4870.patch"
+    },
+    "body": "Closes #4845 with future `TODO` when concretizer is fixed.\r\n\r\n- Too late to skip 1.6.1 (which has a weird `typing` dependency issue for `python@3.5.2+`)\r\n- Skipping 1.6.2 for newest 1.6.3",
+    "performed_via_github_app": null
+}

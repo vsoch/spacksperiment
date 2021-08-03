@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1758",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1758/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1758/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1758/events",
+    "html_url": "https://github.com/spack/spack/pull/1758",
+    "id": 176524336,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODQ5NzExMDA=",
+    "number": 1758,
+    "title": "Add extension='tar.gz' option to version()",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2016-09-13T01:16:18Z",
+    "updated_at": "2016-10-06T06:35:09Z",
+    "closed_at": "2016-10-06T05:45:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1758",
+        "html_url": "https://github.com/spack/spack/pull/1758",
+        "diff_url": "https://github.com/spack/spack/pull/1758.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1758.patch"
+    },
+    "body": "Example:\n\n`version('2.0.5', '84029e969b5b37e1ba791d0572895133', extension='tar.gz')`\n\nNote: this removes Package.validate_package_url, which would have to be updated in this PR but is not used so I decided to remove it instead.\n\nThis allows the user to set the extension type on a per-version basis. I was reluctant to set a Package-level extension field.\n\nCommit message:\n\nThis closes #1757 which provides an example of a url scheme where the\nversion appears after the extension. Instead of extending the parsing\nlogic to handle this case, this commit allows the user to specify\ntheir extension type. This helps Spack choose the appropriate\ndecompressor and mirror archive filename.\n",
+    "performed_via_github_app": null
+}

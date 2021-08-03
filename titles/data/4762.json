@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4762",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4762/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4762/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4762/events",
+    "html_url": "https://github.com/spack/spack/pull/4762",
+    "id": 242879098,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwNTAzMzQ5",
+    "number": 4762,
+    "title": "Adding a bit more Mellanox MXM capability to OpenMPI.",
+    "user": {
+        "login": "jrood-nrel",
+        "id": 23264326,
+        "node_id": "MDQ6VXNlcjIzMjY0MzI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23264326?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrood-nrel",
+        "html_url": "https://github.com/jrood-nrel",
+        "followers_url": "https://api.github.com/users/jrood-nrel/followers",
+        "following_url": "https://api.github.com/users/jrood-nrel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrood-nrel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrood-nrel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrood-nrel/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrood-nrel/orgs",
+        "repos_url": "https://api.github.com/users/jrood-nrel/repos",
+        "events_url": "https://api.github.com/users/jrood-nrel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrood-nrel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-14T02:19:09Z",
+    "updated_at": "2017-07-18T18:45:49Z",
+    "closed_at": "2017-07-18T18:45:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4762",
+        "html_url": "https://github.com/spack/spack/pull/4762",
+        "diff_url": "https://github.com/spack/spack/pull/4762.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4762.patch"
+    },
+    "body": "So OpenMPI is a high profile package and I don't want to mess this up, but this should add in the capability to at least use the default location of MXM if it exists and if MXM is explicitly turned on in the fabrics variant.",
+    "performed_via_github_app": null
+}

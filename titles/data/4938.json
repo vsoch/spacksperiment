@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4938",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4938/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4938/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4938/events",
+    "html_url": "https://github.com/spack/spack/pull/4938",
+    "id": 246911254,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzMzU3NDgw",
+    "number": 4938,
+    "title": "Compile OpenFOAM on Cray platform",
+    "user": {
+        "login": "YtterbiJum",
+        "id": 61433,
+        "node_id": "MDQ6VXNlcjYxNDMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61433?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/YtterbiJum",
+        "html_url": "https://github.com/YtterbiJum",
+        "followers_url": "https://api.github.com/users/YtterbiJum/followers",
+        "following_url": "https://api.github.com/users/YtterbiJum/following{/other_user}",
+        "gists_url": "https://api.github.com/users/YtterbiJum/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/YtterbiJum/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/YtterbiJum/subscriptions",
+        "organizations_url": "https://api.github.com/users/YtterbiJum/orgs",
+        "repos_url": "https://api.github.com/users/YtterbiJum/repos",
+        "events_url": "https://api.github.com/users/YtterbiJum/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/YtterbiJum/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-07-31T23:14:38Z",
+    "updated_at": "2019-02-12T12:11:46Z",
+    "closed_at": "2019-02-12T12:11:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4938",
+        "html_url": "https://github.com/spack/spack/pull/4938",
+        "diff_url": "https://github.com/spack/spack/pull/4938.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4938.patch"
+    },
+    "body": "I needed to make a few changes to the `openfoam-com` and `openfoam-org` packages to get them to build on the Cray platform with the system `cray-mpich` library.\r\n\r\nThe platform is detected as \"cray\", but it can be treated as \"linux64\".  Also fix a few typos with the ppc strings.\r\n\r\nThe MPI library needs to be linked with `-lmpich` instead of `-lmpi`.\r\n\r\nOpenFOAM has a weird `#include` of ptscotch inside an `extern \"C\"` block, which messes with the MPI C++ bindings.  `MPICH_IGNORE_CXX_SEEK` was already defined, but that's not good enough.  `MPICH_SKIP_MPICXX` works fine, though.",
+    "performed_via_github_app": null
+}

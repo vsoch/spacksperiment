@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1532",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1532/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1532/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1532/events",
+    "html_url": "https://github.com/spack/spack/pull/1532",
+    "id": 171483399,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODE1MTk0OTA=",
+    "number": 1532,
+    "title": "Bug Fix : Apply Compiler Flags Specified by Manual Compiler Configuration",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 21,
+    "created_at": "2016-08-16T18:20:11Z",
+    "updated_at": "2016-10-24T21:37:09Z",
+    "closed_at": "2016-10-24T21:37:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1532",
+        "html_url": "https://github.com/spack/spack/pull/1532",
+        "diff_url": "https://github.com/spack/spack/pull/1532.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1532.patch"
+    },
+    "body": "The changes in this pull request fix a bug that was preventing compiler flags that were specified for a compiler in the `compilers.yaml` configuration file from being applied when that compiler was used to build packages.  Additionally, this pull request changes the structure of the `compilers.yaml` file to make a compiler's flag specifiers separate from its path specifiers (see [the new compiler schema](https://github.com/xjrc/spack/blob/bugfix/cflags-config/lib/spack/spack/schema/compilers.py) for details), which makes detecting and applying flag specifiers much simpler.  This pull request also includes updated documentation for the new `compilers.yaml` structure and tests to verify that this new structure has been properly integrated.\n\nIf there are any issues with these changes, please let me know and I'll revise them as soon as I can!\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6417",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6417/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6417/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6417/events",
+    "html_url": "https://github.com/spack/spack/pull/6417",
+    "id": 276221285,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU0MjY3Nzg1",
+    "number": 6417,
+    "title": "spack spec: simplified output",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-11-22T22:27:36Z",
+    "updated_at": "2017-11-28T17:03:56Z",
+    "closed_at": "2017-11-28T17:03:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6417",
+        "html_url": "https://github.com/spack/spack/pull/6417",
+        "diff_url": "https://github.com/spack/spack/pull/6417.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6417.patch"
+    },
+    "body": "Showing \"Normalized\" in the output doesn't give users additional information, as this step is essentially an implementation detail of concretization. This PR skips it and shows just the input spec and the concretized one. Printing partial hashes for input spec has been disabled.\r\n\r\n##### Current behavior\r\n```console\r\n$ spack spec -Il hdf5@1.10.1+mpi ^mpich\r\nInput spec\r\n--------------------------------\r\n     hcaag73  hdf5@1.10.1+mpi\r\n     ty5c2nn      ^mpich\r\n\r\nNormalized\r\n--------------------------------\r\n     4kdzf64  hdf5@1.10.1+mpi\r\n     ty5c2nn      ^mpich\r\n     j52z7qb      ^zlib@1.1.2:\r\n\r\nConcretized\r\n--------------------------------\r\n     7x2qtxi  hdf5@1.10.1%gcc@4.8~cxx~debug~fortran~hl+mpi+pic+shared~szip~threadsafe arch=linux-ubuntu14.04-x86_64 \r\n     i5jrs3r      ^mpich@3.2%gcc@4.8 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-ubuntu14.04-x86_64 \r\n[+]  eksallf      ^zlib@1.2.11%gcc@4.8+optimize+pic+shared arch=linux-ubuntu14.04-x86_64 \r\n\r\n```\r\n\r\n##### After this PR\r\n```console\r\n$ spack spec -Il hdf5@1.10.1+mpi ^mpich\r\nInput spec\r\n--------------------------------\r\n     hdf5@1.10.1+mpi\r\n         ^mpich\r\n\r\nConcretized\r\n--------------------------------\r\n     7x2qtxi  hdf5@1.10.1%gcc@4.8~cxx~debug~fortran~hl+mpi+pic+shared~szip~threadsafe arch=linux-ubuntu14.04-x86_64 \r\n     i5jrs3r      ^mpich@3.2%gcc@4.8 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-ubuntu14.04-x86_64 \r\n[+]  eksallf      ^zlib@1.2.11%gcc@4.8+optimize+pic+shared arch=linux-ubuntu14.04-x86_64 \r\n```",
+    "performed_via_github_app": null
+}

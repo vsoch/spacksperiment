@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3439",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3439/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3439/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3439/events",
+    "html_url": "https://github.com/spack/spack/pull/3439",
+    "id": 214190354,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTEwNzA1OTI5",
+    "number": 3439,
+    "title": "Dont auto-init compiler conf for 'compiler find'",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-03-14T20:04:26Z",
+    "updated_at": "2017-03-16T18:24:36Z",
+    "closed_at": "2017-03-16T18:24:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3439",
+        "html_url": "https://github.com/spack/spack/pull/3439",
+        "diff_url": "https://github.com/spack/spack/pull/3439.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3439.patch"
+    },
+    "body": "Fixes #3428\r\n\r\nUsers can run 'spack compiler find' to automatically initialize their\r\ncompilers.yaml configuration file. It also turns out that Spack will\r\nimplicitly initialize the compilers configuration file as part of\r\ndetecting compilers if none are found (so if a user were to attempt to\r\nconcretize a spec without running 'spack compiler find' it would not\r\nfail). However, in this case Spack was overlooking its own implicit\r\ninitialization of the config files and would report that no new\r\ncompilers were found. This commit removes implicit initialization when\r\nthe user calls 'spack compiler find'.\r\n\r\nThis did not surface until #2999 because the 'spack compiler' command\r\ndefaulted to using a scope 'user/platform' that was not accounted for\r\nin get_compiler_config (where the implicit initialization logic\r\npredates the addition of this new scope); #2999 removed the scope\r\nspecification when checking through config files, leading to the\r\nimplicit initialization.",
+    "performed_via_github_app": null
+}

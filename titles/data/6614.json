@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6614",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6614/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6614/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6614/events",
+    "html_url": "https://github.com/spack/spack/pull/6614",
+    "id": 280230320,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU3MDY3NDEy",
+    "number": 6614,
+    "title": "qrupdate: fix blas/lapack and compilation of macOS",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-12-07T18:22:41Z",
+    "updated_at": "2017-12-19T12:03:26Z",
+    "closed_at": "2017-12-08T09:24:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6614",
+        "html_url": "https://github.com/spack/spack/pull/6614",
+        "diff_url": "https://github.com/spack/spack/pull/6614.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6614.patch"
+    },
+    "body": "```\r\n$ otool -L /Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/qrupdate-1.1.2-t55vinef7373d5raoagedhrasf2kfnst/lib/libqrupdate.dylib\r\n/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/qrupdate-1.1.2-t55vinef7373d5raoagedhrasf2kfnst/lib/libqrupdate.dylib:\r\n\t/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/qrupdate-1.1.2-t55vinef7373d5raoagedhrasf2kfnst/lib/libqrupdate.1.1.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/openblas-0.2.20-a2w7heujstxj3l65sbcbonk4yh6ta55z/lib/libopenblas_sandybridge-r0.2.20.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/gcc-7.2.0-e53qfxjc74d75oxruzukyozsscuzvzt7/lib/libgfortran.4.dylib (compatibility version 5.0.0, current version 5.0.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.0.0)\r\n\t/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/gcc-7.2.0-e53qfxjc74d75oxruzukyozsscuzvzt7/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)\r\n\t/Users/davydden/spack/opt/spack/darwin-highsierra-x86_64/clang-9.0.0-apple/gcc-7.2.0-e53qfxjc74d75oxruzukyozsscuzvzt7/lib/libquadmath.0.dylib (compatibility version 1.0.0, current version 1.0.0)\r\n```\r\n\r\nfixes are from https://github.com/Homebrew/homebrew-core/blob/master/Formula/qrupdate.rb",
+    "performed_via_github_app": null
+}

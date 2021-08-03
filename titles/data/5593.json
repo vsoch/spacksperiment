@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5593",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5593/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5593/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5593/events",
+    "html_url": "https://github.com/spack/spack/pull/5593",
+    "id": 262620428,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ0NTUxMTE1",
+    "number": 5593,
+    "title": "multi-valued variants comparison fix",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-10-03T23:16:56Z",
+    "updated_at": "2017-10-04T18:39:26Z",
+    "closed_at": "2017-10-04T18:39:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5593",
+        "html_url": "https://github.com/spack/spack/pull/5593",
+        "diff_url": "https://github.com/spack/spack/pull/5593.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5593.patch"
+    },
+    "body": "Fixes https://github.com/LLNL/spack/issues/5587\r\n\r\n@alalazo, @tgamblin \r\n\r\nWhile debugging #5587 I noticed the following:\r\n\r\n```\r\n(Pdb) x = spec.copy(deps=('link', 'run'))\r\n(Pdb) x\r\n    mpfr@3.1.5%gcc@4.6.1 patches=88dfefa6d39c9fd5a26a40d9bbc73df8da93f946c65c06038026261d78d919f5,dfd62a42a239c427bb44087b4a520edbcd65bae6ad1fbe07303c96ee8696afbd arch=linux-rhel6-x86_64 ^gmp@6.1.2%gcc@4.6.1 arch=linux-rhel6-x86_64\r\n(Pdb) installed_spec\r\n    mpfr@3.1.5%gcc@4.6.1 patches=dfd62a42a239c427bb44087b4a520edbcd65bae6ad1fbe07303c96ee8696afbd,88dfefa6d39c9fd5a26a40d9bbc73df8da93f946c65c06038026261d78d919f5 arch=linux-rhel6-x86_64 ^gmp@6.1.2%gcc@4.6.1 arch=linux-rhel6-x86_64\r\n```\r\n\r\nAnd noticed the patches are differently-ordered in the two specs, which led me to look at `_cmp_key` for variants. It looks like multi-valued variants arbitrarily order their values which was resulting in a failed comparison.\r\n\r\nThis is hackish and WIP but demonstrates the issue.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4251",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4251/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4251/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4251/events",
+    "html_url": "https://github.com/spack/spack/pull/4251",
+    "id": 228768878,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIwNjQwNzM2",
+    "number": 4251,
+    "title": "Fix PGI version detection: 17.4-0 -> 17.4",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-05-15T16:20:09Z",
+    "updated_at": "2017-05-24T11:57:39Z",
+    "closed_at": "2017-05-24T11:57:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4251",
+        "html_url": "https://github.com/spack/spack/pull/4251",
+        "diff_url": "https://github.com/spack/spack/pull/4251.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4251.patch"
+    },
+    "body": "I've been playing around with Spack's Lmod support and so far most things are great. One problem I discovered is a discrepancy between Spack's version detection for PGI and the versions we use for the PGI package. In the `pgi` package, we have versions like `17.4`. But when I install the compiler with Spack and add it to `compilers.yaml` with `spack compiler find`, it detects the version as `17.4-0`. This is fine, unless you use Lmod. When I run `module load pgi`, it appends the following directory to my `MODULEPATH`:\r\n```\r\n$SPACK_ROOT/share/spack/lmod/linux-centos7-x86_64/pgi/17.4\r\n```\r\nunfortunately, Spack writes module files for things built with PGI to:\r\n```\r\n$SPACK_ROOT/share/spack/lmod/linux-centos7-x86_64/pgi/17.4-0\r\n```\r\nso none of these modules appear in `module avail`.\r\n\r\nWe have 2 options to fix this:\r\n\r\n1. Change our PGI version detection to pick up `17.4` instead of `17.4-0`\r\n2. Change the PGI package to contain versions for `17.4-0` instead of `17.4`\r\n\r\nI chose the former option, but if people prefer the latter I can go down that route too.",
+    "performed_via_github_app": null
+}

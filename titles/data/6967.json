@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6967",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6967/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6967/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6967/events",
+    "html_url": "https://github.com/spack/spack/pull/6967",
+    "id": 289255683,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYzNDMzNTAw",
+    "number": 6967,
+    "title": "fetch_strategy: add support for wget",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2018-01-17T12:53:41Z",
+    "updated_at": "2021-05-25T16:41:39Z",
+    "closed_at": "2021-05-25T16:41:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6967",
+        "html_url": "https://github.com/spack/spack/pull/6967",
+        "diff_url": "https://github.com/spack/spack/pull/6967.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6967.patch"
+    },
+    "body": "Some minimal operating system images only have wget installed (for example, Ubuntu). This adds support for wget to URLFetchStrategy and falls back to it if curl is not found.\r\n\r\nThis also removes support for the `curl_options` parameter and replaces it with a more generic `headers` parameter.\r\n\r\n(I have also replaced the curl arguments with their long versions to make the code easier to understand.)",
+    "performed_via_github_app": null
+}

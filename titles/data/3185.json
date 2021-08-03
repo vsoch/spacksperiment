@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3185",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3185/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3185/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3185/events",
+    "html_url": "https://github.com/spack/spack/pull/3185",
+    "id": 208735952,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2OTEwOTM0",
+    "number": 3185,
+    "title": "gnuplot: fixed broken package and add variants",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2017-02-19T18:29:44Z",
+    "updated_at": "2017-09-04T21:16:51Z",
+    "closed_at": "2017-03-12T14:37:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3185",
+        "html_url": "https://github.com/spack/spack/pull/3185",
+        "diff_url": "https://github.com/spack/spack/pull/3185.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3185.patch"
+    },
+    "body": "there is an issue with `ncurses` (or `gnuplot`?) that neeeds to be fixed:\r\n```\r\nIn file included from $SPACK_ROOT/darwin-sierra-x86_64/clang-8.0.0-apple/ncurses-6.0-f5ft4ie4brbq44gkyjhr7r42xnfjkhgt/include/term.h:86:\r\nIn file included from /usr/include/termios.h:27:\r\n/usr/include/sys/termios.h:263:1: error: expected expression\r\ntypedef unsigned long   tcflag_t;\r\n^\r\n```\r\n~~but at least `spack install gnuplot~x11~gd~cairo` works now on macOS.~~\r\nSame happens on Ubuntu16.04.2 with gcc5.4.0.\r\n\r\np.s. looking at how [homebrew builds ncurses](https://github.com/Homebrew/homebrew-dupes/blob/master/ncurses.rb) or [macports](https://github.com/macports/macports-ports/blob/master/devel/ncurses/Portfile), i don't see anything special. Moreover, current args in `ncurses` in Spack are almost identical to those in macports.",
+    "performed_via_github_app": null
+}

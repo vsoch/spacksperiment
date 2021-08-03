@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2735",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2735/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2735/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2735/events",
+    "html_url": "https://github.com/spack/spack/pull/2735",
+    "id": 198748576,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAwMTQzOTc2",
+    "number": 2735,
+    "title": "Use zlib's \"fossil\" site for old tarballs",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 17,
+    "created_at": "2017-01-04T16:24:50Z",
+    "updated_at": "2017-01-05T04:46:48Z",
+    "closed_at": "2017-01-04T19:43:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2735",
+        "html_url": "https://github.com/spack/spack/pull/2735",
+        "diff_url": "https://github.com/spack/spack/pull/2735.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2735.patch"
+    },
+    "body": "Following citibeth's suggestion in #2732, use zlib's \"fossil\"\r\nsite (not to be confused with the sqlite team's VCS...) for retrieving\r\nold tarballs.\r\n\r\nDigests for 1.2.{8,10} match and both install for me on CentOS 7.\r\n\r\nThis is an alternative to #2733, which relies on sourceforge (something I try to avoid...).\r\n\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2771",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2771/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2771/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2771/events",
+    "html_url": "https://github.com/spack/spack/pull/2771",
+    "id": 199338887,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAwNTU3MDc1",
+    "number": 2771,
+    "title": "Add two options diy",
+    "user": {
+        "login": "krafczyk",
+        "id": 6449564,
+        "node_id": "MDQ6VXNlcjY0NDk1NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6449564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/krafczyk",
+        "html_url": "https://github.com/krafczyk",
+        "followers_url": "https://api.github.com/users/krafczyk/followers",
+        "following_url": "https://api.github.com/users/krafczyk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/krafczyk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/krafczyk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/krafczyk/subscriptions",
+        "organizations_url": "https://api.github.com/users/krafczyk/orgs",
+        "repos_url": "https://api.github.com/users/krafczyk/repos",
+        "events_url": "https://api.github.com/users/krafczyk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/krafczyk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2017-01-07T03:49:48Z",
+    "updated_at": "2017-11-21T06:25:19Z",
+    "closed_at": "2017-11-21T06:25:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2771",
+        "html_url": "https://github.com/spack/spack/pull/2771",
+        "diff_url": "https://github.com/spack/spack/pull/2771.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2771.patch"
+    },
+    "body": "Fixes #2573.\r\n\r\nAdd -j to diy which accepts the number of jobs to use for building\r\n\r\nAdd -d which accepts the source path to use for diy building",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1685",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1685/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1685/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1685/events",
+    "html_url": "https://github.com/spack/spack/pull/1685",
+    "id": 174377804,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODM1Mjg3Mzk=",
+    "number": 1685,
+    "title": "Documentation for modules configuration options",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2016-08-31T21:01:36Z",
+    "updated_at": "2016-10-12T06:14:45Z",
+    "closed_at": "2016-10-12T06:14:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1685",
+        "html_url": "https://github.com/spack/spack/pull/1685",
+        "diff_url": "https://github.com/spack/spack/pull/1685.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1685.patch"
+    },
+    "body": "This PR add documentation for the `suffixes` and `hash_length` options\nfor modules.yaml.\n\nThis resolves #1416.\n",
+    "performed_via_github_app": null
+}

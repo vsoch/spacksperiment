@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1989",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1989/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1989/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1989/events",
+    "html_url": "https://github.com/spack/spack/pull/1989",
+    "id": 182150707,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODg3NTYzMzY=",
+    "number": 1989,
+    "title": "On Cray machines, use the Cray compile wrappers instead of MPI wrappers.",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2016-10-11T01:11:39Z",
+    "updated_at": "2016-10-11T13:47:46Z",
+    "closed_at": "2016-10-11T13:46:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1989",
+        "html_url": "https://github.com/spack/spack/pull/1989",
+        "diff_url": "https://github.com/spack/spack/pull/1989.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1989.patch"
+    },
+    "body": "- Cray compile wrappers are MPI wrappers.\n- Packages that need to be compiled with MPI compile wrappers normally use `mpicc`, `mpic++` and `mpif90` provided by the MPI vendor. However, when using _cray-mpich_ as the MPI vendor, the compile wrappers `CC`, `cc` and `ftn` must be used.\n- In this scenario, the _mpich_ package is hijacked by specifying _cray-mpich_ as an external package under the `mpich:` section of `packages.yaml`. For example:\n\n```\n  packages:\n    mpich:\n      modules:\n        mpich@7.4.2%intel@16.0.3 arch=cray-CNL-haswell: cray-mpich/7.4.2\n      buildable: False\n    all:\n      providers:\n        mpi: [mpich]\n```\n- This change allows packages like _parmetis_ to be built using the Cray compile wrappers. For example: `spack install parmetis%intel@16.0.3 ^mpich@7.4.2 os=CNL`\n- This commit relies on the existence of the environment variable `CRAYPE_VERSION` to determine if the current machine is running a Cray environment. This check is insufficient, but I'm not sure how to improve this logic.\n- Fixes #1827\n",
+    "performed_via_github_app": null
+}

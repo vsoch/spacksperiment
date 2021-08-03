@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5011",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5011/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5011/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5011/events",
+    "html_url": "https://github.com/spack/spack/pull/5011",
+    "id": 248523483,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0NTIwODUw",
+    "number": 5011,
+    "title": "Fix typo : spec to self.spec",
+    "user": {
+        "login": "pramodskumbhar",
+        "id": 27898197,
+        "node_id": "MDQ6VXNlcjI3ODk4MTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/27898197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodskumbhar",
+        "html_url": "https://github.com/pramodskumbhar",
+        "followers_url": "https://api.github.com/users/pramodskumbhar/followers",
+        "following_url": "https://api.github.com/users/pramodskumbhar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodskumbhar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodskumbhar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodskumbhar/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodskumbhar/orgs",
+        "repos_url": "https://api.github.com/users/pramodskumbhar/repos",
+        "events_url": "https://api.github.com/users/pramodskumbhar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodskumbhar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-07T20:33:53Z",
+    "updated_at": "2017-08-08T06:26:04Z",
+    "closed_at": "2017-08-07T22:35:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5011",
+        "html_url": "https://github.com/spack/spack/pull/5011",
+        "diff_url": "https://github.com/spack/spack/pull/5011.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5011.patch"
+    },
+    "body": "(introduced during Package -> CMakePackage conversion)",
+    "performed_via_github_app": null
+}

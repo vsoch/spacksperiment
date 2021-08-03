@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3075",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3075/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3075/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3075/events",
+    "html_url": "https://github.com/spack/spack/pull/3075",
+    "id": 206255285,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA1MjU2Mjcz",
+    "number": 3075,
+    "title": "Bugfixes for compiler detection on the Cray platform.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-02-08T16:46:06Z",
+    "updated_at": "2017-08-21T07:58:04Z",
+    "closed_at": "2017-08-09T16:00:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3075",
+        "html_url": "https://github.com/spack/spack/pull/3075",
+        "diff_url": "https://github.com/spack/spack/pull/3075.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3075.patch"
+    },
+    "body": "This PR offers the following:\r\n\r\n1. Fixed regexp for cray compiler version matching (the current greedy regexp does not match the first digit of the version).\r\n2. Dedicated class for Cray platform's frontend OS. It runs the default LinuxDistro's compiler detection algorithm but prevents it from detecting compilers that should be worked with through the module system (and are detected by the Cnl class). This also prevents false detections of cray compiler wrappers as cray compilers when the PrgEnv-intel module is loaded (the wrapper returns the Intel compiler's version string, which also satisfies the cray compiler's regexp, so we detect cray compiler with Intel's compiler version).\r\n3. A small modification that allows OS classes to know if a set of paths they are provided with were given by a user or not (they are capable of reading the PATH environment variable by themselves anyway).\r\n4. Typo and formatting fixes here and there.",
+    "performed_via_github_app": null
+}

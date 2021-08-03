@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4440",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4440/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4440/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4440/events",
+    "html_url": "https://github.com/spack/spack/pull/4440",
+    "id": 233941631,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI0MjI3Mzk4",
+    "number": 4440,
+    "title": "Bug/cctools syscall",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-06T15:59:22Z",
+    "updated_at": "2017-06-07T16:56:18Z",
+    "closed_at": "2017-06-07T16:51:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4440",
+        "html_url": "https://github.com/spack/spack/pull/4440",
+        "diff_url": "https://github.com/spack/spack/pull/4440.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4440.patch"
+    },
+    "body": "Generally SYS_foo is defined to __NR_foo (in sys/syscall.h) which is then defined to a syscall number (in asm/unistd_64.h).  \r\n\r\nCertain CentOS systems (combinations of rpms?  a particular release?  sysadmin error?) have SYS_memfd_create defined to __NR_memfd_create but are missing the second definition.\r\n\r\nThis is a belt and suspenders solution to the problem.\r\n\r\nSee [this post][syscall] for a nice general description of how these parts fit together.\r\n\r\n[syscall]: https://www.uninformativ.de/blog/postings/2017-02-11/0/POSTING-en.html",
+    "performed_via_github_app": null
+}

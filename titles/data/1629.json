@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1629",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1629/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1629/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1629/events",
+    "html_url": "https://github.com/spack/spack/pull/1629",
+    "id": 173177250,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODI3MDE2NzM=",
+    "number": 1629,
+    "title": "Use code from the `distro` package to improve linux distro detection.",
+    "user": {
+        "login": "js947",
+        "id": 2544051,
+        "node_id": "MDQ6VXNlcjI1NDQwNTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2544051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/js947",
+        "html_url": "https://github.com/js947",
+        "followers_url": "https://api.github.com/users/js947/followers",
+        "following_url": "https://api.github.com/users/js947/following{/other_user}",
+        "gists_url": "https://api.github.com/users/js947/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/js947/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/js947/subscriptions",
+        "organizations_url": "https://api.github.com/users/js947/orgs",
+        "repos_url": "https://api.github.com/users/js947/repos",
+        "events_url": "https://api.github.com/users/js947/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/js947/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 412006552,
+            "node_id": "MDU6TGFiZWw0MTIwMDY1NTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hash-change",
+            "name": "hash-change",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614889,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linux",
+            "name": "linux",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2016-08-25T11:20:38Z",
+    "updated_at": "2016-11-06T21:47:21Z",
+    "closed_at": "2016-11-04T23:38:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1629",
+        "html_url": "https://github.com/spack/spack/pull/1629",
+        "diff_url": "https://github.com/spack/spack/pull/1629.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1629.patch"
+    },
+    "body": "Various issues [1](http://bugs.python.org/issue1322) with the platform.linux_distribution function led\nto the function being deprecated in python 3.4. The pipi package distro\n[3](https://pypi.python.org/pypi/distro) contains compatible improved code that better tracks current methods\nfor identifying linux distributions (see, for example, [4](https://refspecs.linuxbase.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html),[5](https://www.freedesktop.org/software/systemd/man/os-release.html)).\n\nIn particular, this PR improves detection in archlinux:\nbefore: `$ spack arch => linux--x86_64`\nafter: `$ spack arch => linux-archrolling-x86_64`\nin Scientific Linux 6\nbefore: `$ spack arch => linux-redhat6-x86_64`\nafter: `$ spack arch => linux-scientific6-x86_64`\nin Scientific Linux 7 (not sure this is actually an improvement)\nbefore: `$ spack arch => linux-redhat7-x86_64`\nafter: `$ spack arch => linux-rhel7-x86_64`\n\nThis PR overlaps with, but is othogonal to, #1329. I don't have access to relavent systems to test, but this could help ameliorate #1611 and #1560. \n",
+    "performed_via_github_app": null
+}

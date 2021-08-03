@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4819",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4819/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4819/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4819/events",
+    "html_url": "https://github.com/spack/spack/pull/4819",
+    "id": 243882347,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxMjA5NDMw",
+    "number": 4819,
+    "title": "Improve handling of paths when looking for external modules",
+    "user": {
+        "login": "tkonolige",
+        "id": 1501680,
+        "node_id": "MDQ6VXNlcjE1MDE2ODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1501680?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkonolige",
+        "html_url": "https://github.com/tkonolige",
+        "followers_url": "https://api.github.com/users/tkonolige/followers",
+        "following_url": "https://api.github.com/users/tkonolige/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkonolige/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkonolige/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkonolige/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkonolige/orgs",
+        "repos_url": "https://api.github.com/users/tkonolige/repos",
+        "events_url": "https://api.github.com/users/tkonolige/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkonolige/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-07-18T23:37:42Z",
+    "updated_at": "2019-11-11T17:46:06Z",
+    "closed_at": "2019-11-11T17:46:05Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4819",
+        "html_url": "https://github.com/spack/spack/pull/4819",
+        "diff_url": "https://github.com/spack/spack/pull/4819.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4819.patch"
+    },
+    "body": "This fixes two issues when discovering paths for external modules:\r\n\r\n1. Search for any `PATH` variables. This allows spack to find external modules that only contain executables (i.e. cmake)\r\n2. Improve parsing of path arguments. Previously spack would fail if an external module had \"lib\" in its name (for example libsci)",
+    "performed_via_github_app": null
+}

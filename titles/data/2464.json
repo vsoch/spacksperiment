@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2464",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2464/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2464/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2464/events",
+    "html_url": "https://github.com/spack/spack/pull/2464",
+    "id": 193193935,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTYzMzUyNjU=",
+    "number": 2464,
+    "title": "Added customization for make targets in 'build' and 'install' phases for AutotoolsPackage",
+    "user": {
+        "login": "alfredo-gimenez",
+        "id": 3927136,
+        "node_id": "MDQ6VXNlcjM5MjcxMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3927136?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alfredo-gimenez",
+        "html_url": "https://github.com/alfredo-gimenez",
+        "followers_url": "https://api.github.com/users/alfredo-gimenez/followers",
+        "following_url": "https://api.github.com/users/alfredo-gimenez/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alfredo-gimenez/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alfredo-gimenez/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alfredo-gimenez/subscriptions",
+        "organizations_url": "https://api.github.com/users/alfredo-gimenez/orgs",
+        "repos_url": "https://api.github.com/users/alfredo-gimenez/repos",
+        "events_url": "https://api.github.com/users/alfredo-gimenez/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alfredo-gimenez/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2016-12-02T19:11:33Z",
+    "updated_at": "2016-12-19T00:27:48Z",
+    "closed_at": "2016-12-19T00:27:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2464",
+        "html_url": "https://github.com/spack/spack/pull/2464",
+        "diff_url": "https://github.com/spack/spack/pull/2464.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2464.patch"
+    },
+    "body": "Note: for some reason `make('target1', 'target2')` fails, so I had to run a separate `make` for each target.",
+    "performed_via_github_app": null
+}

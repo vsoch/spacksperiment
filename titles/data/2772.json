@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2772",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2772/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2772/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2772/events",
+    "html_url": "https://github.com/spack/spack/pull/2772",
+    "id": 199349764,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAwNTYyNzQ4",
+    "number": 2772,
+    "title": "Fix issues linking HDF5 1.8.14 and below on Ubuntu.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-01-07T08:28:53Z",
+    "updated_at": "2017-01-07T17:03:51Z",
+    "closed_at": "2017-01-07T17:03:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2772",
+        "html_url": "https://github.com/spack/spack/pull/2772",
+        "diff_url": "https://github.com/spack/spack/pull/2772.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2772.patch"
+    },
+    "body": "Fixes #2586.\r\n\r\nHDF5 `1.8.14` and below have a weird `libtool` issue on Ubuntu where the postdeps in the generated `libtool` script end up with arg-less `-l`s.  This results in this error from #2586:\r\n\r\n> FCLD libhdf5_fortran.la\r\n> /usr/bin/ld: cannot find -l-L/nfs/software/linux-ubuntu_trusty_amd64/apps/packages/gcc/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0\r\n> collect2: error: ld returned 1 exit status\r\n\r\nThis happens whether you build HDF5 inside or outside of Spack, and running `libtoolize` and `autoreconf -if` don't seem to fix it.  It's fixed in HDF5 `1.10` and later versions of `1.8`.\r\n\r\nThis adds a post-configure step to remove the spurious `-l`s from the `libtool` script, which makes `1.8.12`-`1.8.14` build correctly.",
+    "performed_via_github_app": null
+}

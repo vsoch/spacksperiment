@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6100",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6100/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6100/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6100/events",
+    "html_url": "https://github.com/spack/spack/pull/6100",
+    "id": 270685444,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUwMzE0ODkw",
+    "number": 6100,
+    "title": "[WIP] Extended set of environment modification commands",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-11-02T14:59:03Z",
+    "updated_at": "2018-09-05T18:29:26Z",
+    "closed_at": "2018-09-05T18:29:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6100",
+        "html_url": "https://github.com/spack/spack/pull/6100",
+        "diff_url": "https://github.com/spack/spack/pull/6100.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6100.patch"
+    },
+    "body": "This is an implementation of #5019.\r\n\r\nTwo things before it can get merged:\r\n\r\n1. The implementation relies on the correct compiler schema, thus #6076 should be merged first.\r\n2. It would be nice to get an answer to https://github.com/LLNL/spack/issues/5019#issuecomment-341356757",
+    "performed_via_github_app": null
+}

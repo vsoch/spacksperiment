@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5771",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5771/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5771/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5771/events",
+    "html_url": "https://github.com/spack/spack/pull/5771",
+    "id": 265572795,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2NjUwMTEy",
+    "number": 5771,
+    "title": "Add krims and lazyten",
+    "user": {
+        "login": "mfherbst",
+        "id": 11157893,
+        "node_id": "MDQ6VXNlcjExMTU3ODkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11157893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mfherbst",
+        "html_url": "https://github.com/mfherbst",
+        "followers_url": "https://api.github.com/users/mfherbst/followers",
+        "following_url": "https://api.github.com/users/mfherbst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mfherbst/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mfherbst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mfherbst/subscriptions",
+        "organizations_url": "https://api.github.com/users/mfherbst/orgs",
+        "repos_url": "https://api.github.com/users/mfherbst/repos",
+        "events_url": "https://api.github.com/users/mfherbst/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mfherbst/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-10-15T13:39:34Z",
+    "updated_at": "2017-10-15T17:45:12Z",
+    "closed_at": "2017-10-15T17:45:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5771",
+        "html_url": "https://github.com/spack/spack/pull/5771",
+        "diff_url": "https://github.com/spack/spack/pull/5771.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5771.patch"
+    },
+    "body": "This PR adds the [krims](https://lazyten.org/krims) and [lazyten](https://lazyten.org) projects to spack.\r\n\r\nLet me know if you see possible improvements.",
+    "performed_via_github_app": null
+}

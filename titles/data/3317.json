@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3317",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3317/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3317/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3317/events",
+    "html_url": "https://github.com/spack/spack/pull/3317",
+    "id": 211484511,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4ODI2OTg0",
+    "number": 3317,
+    "title": "created elf virtual package and updated dependent packages",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-03-02T18:58:13Z",
+    "updated_at": "2017-03-09T18:45:37Z",
+    "closed_at": "2017-03-09T18:36:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3317",
+        "html_url": "https://github.com/spack/spack/pull/3317",
+        "diff_url": "https://github.com/spack/spack/pull/3317.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3317.patch"
+    },
+    "body": "This was created per #3222. The main driver was that Dyninst 9.3.0 required libelf.so.1, which is provided by the elfutils package. Dyninst previously depended on libelf, which only implements libelf.so.0. I also updated packages that depend on Dyninst and libelf and was able to get them to build in my environment. @tgamblin @mplegendre @pramodk @kserradell may want to verify that I didn't break anything they care about.\r\n\r\n@jgalarowicz and @schulzm, Open|Speedshop currently fixes its Dyninst dependency at 9.2.0, but when you upgrade to 9.3.0, you will need to modify your package. I put a comment in there accordingly.",
+    "performed_via_github_app": null
+}

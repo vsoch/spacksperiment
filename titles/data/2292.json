@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2292",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2292/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2292/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2292/events",
+    "html_url": "https://github.com/spack/spack/pull/2292",
+    "id": 188467529,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTMxMjA4MDI=",
+    "number": 2292,
+    "title": "Features/frontend default build",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614542,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ1NDI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/bgq",
+            "name": "bgq",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 28,
+    "created_at": "2016-11-10T10:09:21Z",
+    "updated_at": "2016-12-09T15:03:23Z",
+    "closed_at": "2016-12-08T08:51:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2292",
+        "html_url": "https://github.com/spack/spack/pull/2292",
+        "diff_url": "https://github.com/spack/spack/pull/2292.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2292.patch"
+    },
+    "body": "A few notes:\r\n\r\n-whether a dependency is a build dep is determined by checking whether one can reach the root by traversing link deps\r\n-link dependencies of build deps should be built with the frontend compiler\r\n-if a parent links to a dependency of a build dep however, that may not always be the case (I think this is mostly handled)\r\n\r\nAlso this appears to significantly boost concretization time as-is.",
+    "performed_via_github_app": null
+}

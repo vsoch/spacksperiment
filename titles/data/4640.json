@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4640",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4640/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4640/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4640/events",
+    "html_url": "https://github.com/spack/spack/pull/4640",
+    "id": 239536419,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI4MTk0MzAx",
+    "number": 4640,
+    "title": "Helper script now supports JAVA_{ARGS,OPTS}",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-29T16:26:34Z",
+    "updated_at": "2017-06-30T20:10:19Z",
+    "closed_at": "2017-06-29T20:38:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4640",
+        "html_url": "https://github.com/spack/spack/pull/4640",
+        "diff_url": "https://github.com/spack/spack/pull/4640.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4640.patch"
+    },
+    "body": "Make it possible to pass addition arguments to the\r\nJVM.\r\n\r\nApparently there are two vars and they are [commonly *both* used][1].\r\n\r\nGo figure.\r\n\r\n[1]: https://stackoverflow.com/questions/23507639/is-it-same-mean-java-args-and-java-opts",
+    "performed_via_github_app": null
+}

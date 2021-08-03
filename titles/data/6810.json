@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6810",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6810/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6810/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6810/events",
+    "html_url": "https://github.com/spack/spack/pull/6810",
+    "id": 285460108,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYwNzQ3OTMw",
+    "number": 6810,
+    "title": "Updated 'nginx' from v1.12.0 to v1.13.8.",
+    "user": {
+        "login": "stefanosoffia",
+        "id": 7336402,
+        "node_id": "MDQ6VXNlcjczMzY0MDI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7336402?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stefanosoffia",
+        "html_url": "https://github.com/stefanosoffia",
+        "followers_url": "https://api.github.com/users/stefanosoffia/followers",
+        "following_url": "https://api.github.com/users/stefanosoffia/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stefanosoffia/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stefanosoffia/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stefanosoffia/subscriptions",
+        "organizations_url": "https://api.github.com/users/stefanosoffia/orgs",
+        "repos_url": "https://api.github.com/users/stefanosoffia/repos",
+        "events_url": "https://api.github.com/users/stefanosoffia/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stefanosoffia/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-01-02T15:37:16Z",
+    "updated_at": "2018-01-03T08:48:50Z",
+    "closed_at": "2018-01-03T01:29:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6810",
+        "html_url": "https://github.com/spack/spack/pull/6810",
+        "diff_url": "https://github.com/spack/spack/pull/6810.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6810.patch"
+    },
+    "body": "This fixes build issues with most recent gcc versions.\r\nSee issue #6252.",
+    "performed_via_github_app": null
+}

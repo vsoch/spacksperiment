@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4834",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4834/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4834/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4834/events",
+    "html_url": "https://github.com/spack/spack/pull/4834",
+    "id": 244462169,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxNjI1MTA2",
+    "number": 4834,
+    "title": "Change Version formatting properties and functions to return Version objects",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2017-07-20T18:52:01Z",
+    "updated_at": "2017-07-24T20:29:03Z",
+    "closed_at": "2017-07-24T20:02:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4834",
+        "html_url": "https://github.com/spack/spack/pull/4834",
+        "diff_url": "https://github.com/spack/spack/pull/4834.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4834.patch"
+    },
+    "body": "Also added better API docs.\r\n\r\nIn #4823, @akthoma discovered an interesting URL:\r\nhttps://www.tbi.univie.ac.at/RNA/download/sourcecode/2_3_x/ViennaRNA-2.3.5.tar.gz\r\n\r\nIn order to properly compute this URL based on the version number, we need to be able to do the following:\r\n```python\r\ndef url_for_version(self, version):\r\n    url = \"https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_3_x/ViennaRNA-2.3.5.tar.gz\"\r\n    return url.format(version.up_to(2).underscored, version.dotted)\r\n```\r\nPreviously, this wasn't possible because `version.up_to()` returned a string. Now that it returns a `Version` object, it is possible to string together `up_to()` with `dotted`, `dashed`, `underscored`, and `joined`.",
+    "performed_via_github_app": null
+}

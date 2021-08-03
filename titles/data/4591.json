@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4591",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4591/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4591/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4591/events",
+    "html_url": "https://github.com/spack/spack/pull/4591",
+    "id": 238187100,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI3MjM5OTA5",
+    "number": 4591,
+    "title": "Allow arbitrary Prefix attributes",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-23T16:07:09Z",
+    "updated_at": "2017-06-25T12:12:51Z",
+    "closed_at": "2017-06-25T05:39:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4591",
+        "html_url": "https://github.com/spack/spack/pull/4591",
+        "diff_url": "https://github.com/spack/spack/pull/4591.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4591.patch"
+    },
+    "body": "Previously, the following prefix attributes worked great:\r\n\r\n* `prefix.bin`\r\n* `prefix.lib`\r\n\r\nbut as soon as you needed something new, you were S.O.L.:\r\n\r\n* `prefix.examples`\r\n* `prefix.bin.perl`\r\n\r\nThis led to several PRs adding new attributes to the `Prefix` class:\r\n\r\n* #4321 added `prefix.include64`\r\n* #3905 added `prefix.bin64`\r\n* 295ffd8c506821ed079d2151fb21cd27979d7387 added `prefix.share_man[1-8]`\r\n\r\nThis is cumbersome, and more often than not leads to people using `join_path(prefix, 'examples')`. I've never been a big fan of `join_path`. It's just plain ugly...\r\n\r\nWith this PR, these limitations have been removed. Now, any prefix attribute you can think of works:\r\n\r\n* `prefix.foo.bar.baz == $prefix/foo/bar/baz`\r\n\r\nAll prefix attributes are defined on the fly, so they don't need to be declared beforehand. This means that most of the uses of `join_path` are now obsolete. I won't remove all uses of `join_path` in this PR, but we should encourage users to do this from now on.",
+    "performed_via_github_app": null
+}

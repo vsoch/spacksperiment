@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1740",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1740/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1740/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1740/events",
+    "html_url": "https://github.com/spack/spack/pull/1740",
+    "id": 176054837,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODQ2ODE4NzU=",
+    "number": 1740,
+    "title": "Package all of Xorg/X11/XCB",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2016-09-09T16:43:48Z",
+    "updated_at": "2016-10-13T12:49:32Z",
+    "closed_at": "2016-10-11T16:42:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1740",
+        "html_url": "https://github.com/spack/spack/pull/1740",
+        "diff_url": "https://github.com/spack/spack/pull/1740.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1740.patch"
+    },
+    "body": "I'm trying to install a newer version of Mesa, but there's a lot of missing Xorg dependencies needed for DRI and hardware acceleration.\n\nI decided to take a swing at packaging all of Xorg/X11/XCB, or at least the important parts. Everything can be found at https://www.x.org/archive/individual/. Here is my progress so far:\n- [x] app - packaged, some are missing dependencies\n- [x] data - Miscellaneous data, mostly for xcursor and xkeyboard\n- [x] doc - documentation utilities\n- [ ] driver - hardware-specific drivers\n- [x] font - fonts and font-related utilities\n- [x] lib - the actually important stuff\n- [x] proto - protocol extensions/headers heavily used by Xorg libraries\n- [x] test - packaged but not yet tested\n- [x] util - m4 macros used by most Xorg packages\n- [x] xcb - same as in https://xcb.freedesktop.org/dist/\n- [x] xserver - packaged, missing dependencies\n",
+    "performed_via_github_app": null
+}

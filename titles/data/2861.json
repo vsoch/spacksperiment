@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2861/events",
+    "html_url": "https://github.com/spack/spack/pull/2861",
+    "id": 201600061,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyMDgzNzIz",
+    "number": 2861,
+    "title": "IBM xl_r  compiler build for Trilinos, ",
+    "user": {
+        "login": "eklee15",
+        "id": 24843172,
+        "node_id": "MDQ6VXNlcjI0ODQzMTcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24843172?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eklee15",
+        "html_url": "https://github.com/eklee15",
+        "followers_url": "https://api.github.com/users/eklee15/followers",
+        "following_url": "https://api.github.com/users/eklee15/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eklee15/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eklee15/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eklee15/subscriptions",
+        "organizations_url": "https://api.github.com/users/eklee15/orgs",
+        "repos_url": "https://api.github.com/users/eklee15/repos",
+        "events_url": "https://api.github.com/users/eklee15/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eklee15/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-01-18T15:09:29Z",
+    "updated_at": "2017-01-20T22:06:32Z",
+    "closed_at": "2017-01-20T22:06:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2861",
+        "html_url": "https://github.com/spack/spack/pull/2861",
+        "diff_url": "https://github.com/spack/spack/pull/2861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2861.patch"
+    },
+    "body": "We have successfully compiled the following packages with xl_r\r\n\r\nnetlib-lapack\r\nnetlib-scalapack\r\nfftw\r\nmatio\r\nboost\r\nhdf5\r\nmetis\r\nparmetis\r\nnetcdf\r\ncuite-sparse\r\nsuperlu-dist\r\nmumps\r\nhypre\r\ntrilinos\r\npetsc\r\nmagma\r\n",
+    "performed_via_github_app": null
+}

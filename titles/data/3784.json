@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3784",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3784/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3784/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3784/events",
+    "html_url": "https://github.com/spack/spack/pull/3784",
+    "id": 220784130,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE1MjAxOTY0",
+    "number": 3784,
+    "title": "Install the shell completion scripts",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-10T22:03:48Z",
+    "updated_at": "2017-04-11T16:12:04Z",
+    "closed_at": "2017-04-11T12:39:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3784",
+        "html_url": "https://github.com/spack/spack/pull/3784",
+        "diff_url": "https://github.com/spack/spack/pull/3784.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3784.patch"
+    },
+    "body": "Install the `git-completion.{bash,tcsh,zsh}` and `git-prompt.sh`into `$(spack location -i git)/share` (aka `prefix.share`).\r\n\r\nCloses #3778 ",
+    "performed_via_github_app": null
+}

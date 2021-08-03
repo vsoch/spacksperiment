@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6901",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6901/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6901/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6901/events",
+    "html_url": "https://github.com/spack/spack/pull/6901",
+    "id": 287830283,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYyNDE2Mjg2",
+    "number": 6901,
+    "title": "Reduce verbosity of build tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-01-11T15:55:48Z",
+    "updated_at": "2018-01-11T22:14:31Z",
+    "closed_at": "2018-01-11T22:14:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6901",
+        "html_url": "https://github.com/spack/spack/pull/6901",
+        "diff_url": "https://github.com/spack/spack/pull/6901.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6901.patch"
+    },
+    "body": "Currently, when a build test fails, there isn't an easy way to see what caused it. Instead, Travis gives us the error message:\r\n\r\n> This log is too long to be displayed. Please reduce the verbosity of your build or download the raw log.\r\n\r\nThis PR reduces the verbosity of our build. I think our error parsing of the build log is good enough that we no longer need the full output.",
+    "performed_via_github_app": null
+}

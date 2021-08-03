@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2548",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2548/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2548/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2548/events",
+    "html_url": "https://github.com/spack/spack/pull/2548",
+    "id": 194744389,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTc0MTMxNzQ=",
+    "number": 2548,
+    "title": "Perform concretization of build-only deps separately",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 50,
+    "created_at": "2016-12-10T04:37:05Z",
+    "updated_at": "2019-04-24T02:18:22Z",
+    "closed_at": "2019-04-24T02:18:21Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2548",
+        "html_url": "https://github.com/spack/spack/pull/2548",
+        "diff_url": "https://github.com/spack/spack/pull/2548.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2548.patch"
+    },
+    "body": "This takes each dependency which has only the 'build' deptype and performs a distinct concretization on it. These build-only deps are no longer explicitly part of the dependency DAG. The dependency DAG may now include multiple instances of a given package, namely when it appears as a link dependency of the root and as a dependency of some package that is a build dependency. \r\n\r\nA common example is the cmake package: many packages may depend on cmake as a build dependency; cmake depends on zlib transitively. zlib is also a common dependency (transitively). With this PR, packages which depend on zlib via cmake and by linking via another package will build two instances of zlib.\r\n\r\nIt is not always possible to consider the concretization of a build-only dependency separately from other dependencies. At the moment this PR ignores this possibility and always performs a separate concretization.\r\n\r\nTODOs:\r\n\r\n- [x] add unit test for concretization as noted by @davydden \r\n- [x] ~~get rid of deptype 'nolink'~~ this was since handled by https://github.com/LLNL/spack/pull/2765\r\n- [x] by default use same compiler for build deps when possible\r\n\r\nSee: \r\n* https://github.com/LLNL/spack/issues/839\r\n* https://github.com/LLNL/spack/issues/2537\r\n",
+    "performed_via_github_app": null
+}

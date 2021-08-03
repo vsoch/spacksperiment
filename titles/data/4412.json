@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4412",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4412/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4412/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4412/events",
+    "html_url": "https://github.com/spack/spack/pull/4412",
+    "id": 232730598,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIzMzk0NTMz",
+    "number": 4412,
+    "title": "Add packages for clustalw and clustalo (and argtable)",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-01T00:01:24Z",
+    "updated_at": "2017-06-01T17:39:08Z",
+    "closed_at": "2017-06-01T17:36:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4412",
+        "html_url": "https://github.com/spack/spack/pull/4412",
+        "diff_url": "https://github.com/spack/spack/pull/4412.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4412.patch"
+    },
+    "body": "Add packages for the classic multiple alignment package, `clustalw` and its younger sibling, `clustalo`.\r\n\r\n`clustalo` needed the `argtable` package (command line arg parsing).\r\n\r\nLightly tested on CentOS 7.",
+    "performed_via_github_app": null
+}

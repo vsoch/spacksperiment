@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5175",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5175/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5175/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5175/events",
+    "html_url": "https://github.com/spack/spack/pull/5175",
+    "id": 251523030,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM2NjYzMjk3",
+    "number": 5175,
+    "title": "dealii: add nanoflann, sundials and adol-c  plus fixes on macOS",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-08-20T23:48:25Z",
+    "updated_at": "2017-12-19T12:05:01Z",
+    "closed_at": "2017-08-25T01:18:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5175",
+        "html_url": "https://github.com/spack/spack/pull/5175",
+        "diff_url": "https://github.com/spack/spack/pull/5175.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5175.patch"
+    },
+    "body": "fixes https://github.com/LLNL/spack/issues/5173\r\n\r\np.s. @markcmiller86 in 39cb589510e95fa44ca634b2cdac9a56a34b1809 you extended `sundials` a bit and it looks like it worked for you on macOS. Could you please check if this PR does not break it for you?",
+    "performed_via_github_app": null
+}

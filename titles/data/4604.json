@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4604",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4604/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4604/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4604/events",
+    "html_url": "https://github.com/spack/spack/pull/4604",
+    "id": 238616006,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI3NTIzNTIx",
+    "number": 4604,
+    "title": "patch config.guess after autoreconf step",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-26T17:37:14Z",
+    "updated_at": "2017-07-07T04:07:58Z",
+    "closed_at": "2017-07-07T04:07:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4604",
+        "html_url": "https://github.com/spack/spack/pull/4604",
+        "diff_url": "https://github.com/spack/spack/pull/4604.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4604.patch"
+    },
+    "body": "Moving the patch of config.guess to after the autoreconf stage instead of during the patch phase. This is to address #4571 where libmng contained a run_before(\"configure\") that runs `make distclean`.",
+    "performed_via_github_app": null
+}

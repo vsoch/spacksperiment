@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2966",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2966/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2966/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2966/events",
+    "html_url": "https://github.com/spack/spack/pull/2966",
+    "id": 204156014,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAzODM5MzAx",
+    "number": 2966,
+    "title": "Xl default flags",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-01-30T22:59:40Z",
+    "updated_at": "2017-02-01T13:27:48Z",
+    "closed_at": "2017-01-31T19:51:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2966",
+        "html_url": "https://github.com/spack/spack/pull/2966",
+        "diff_url": "https://github.com/spack/spack/pull/2966.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2966.patch"
+    },
+    "body": "Change the default Fortran flags for the XL compiler to only \"-qzerosize\" from \"-qzerosize -qfixed\".",
+    "performed_via_github_app": null
+}

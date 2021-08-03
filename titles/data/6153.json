@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6153/events",
+    "html_url": "https://github.com/spack/spack/pull/6153",
+    "id": 271302475,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUwNzM1NTM1",
+    "number": 6153,
+    "title": "Adding Nek5000 to Spack",
+    "user": {
+        "login": "thilinarmtb",
+        "id": 1346780,
+        "node_id": "MDQ6VXNlcjEzNDY3ODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1346780?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/thilinarmtb",
+        "html_url": "https://github.com/thilinarmtb",
+        "followers_url": "https://api.github.com/users/thilinarmtb/followers",
+        "following_url": "https://api.github.com/users/thilinarmtb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/thilinarmtb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/thilinarmtb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/thilinarmtb/subscriptions",
+        "organizations_url": "https://api.github.com/users/thilinarmtb/orgs",
+        "repos_url": "https://api.github.com/users/thilinarmtb/repos",
+        "events_url": "https://api.github.com/users/thilinarmtb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/thilinarmtb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2017-11-05T18:31:01Z",
+    "updated_at": "2018-01-04T15:41:54Z",
+    "closed_at": "2018-01-04T15:41:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6153",
+        "html_url": "https://github.com/spack/spack/pull/6153",
+        "diff_url": "https://github.com/spack/spack/pull/6153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6153.patch"
+    },
+    "body": "This PR will  add Nek5000 - a fast high order spectral element CFD solver\r\nto Spack package manager as part of CEED software suite.\r\n\r\nThis is still a work in progress, so please don't merge.\r\n\r\n## Current status\r\n\r\nThis PR can successfully install Nek5000 tools and load tools + makenek file\r\nwith `module load`.\r\n\r\n## TODO\r\n\r\n- [x] Add the remaining tools as well.\r\n- [x] Set MPI, PROFILING and VISIT parameters in `makenek` appropriately\r\n- [x]  See what other CEED related constraints should be satisfied by this PR.\r\n- [x] Test with all the versions",
+    "performed_via_github_app": null
+}

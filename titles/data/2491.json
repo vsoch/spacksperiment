@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2491",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2491/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2491/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2491/events",
+    "html_url": "https://github.com/spack/spack/pull/2491",
+    "id": 193659229,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTY2NDQ0NzE=",
+    "number": 2491,
+    "title": "fontconfig : fixed undefined variable error",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-12-06T01:31:59Z",
+    "updated_at": "2016-12-06T18:39:59Z",
+    "closed_at": "2016-12-06T18:39:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2491",
+        "html_url": "https://github.com/spack/spack/pull/2491",
+        "diff_url": "https://github.com/spack/spack/pull/2491.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2491.patch"
+    },
+    "body": "The changes in this pull request fix an undefined variable bug in the `fontconfig` package (which was previously causing the install script to crash on some platforms) and modernize the string substitution methods used in this package.  I've verified that the `fontconfig %gcc@4.7.2 arch=linux-rhel6-x86_64` variant of this package installs properly.\r\n\r\n@hartzell: Could you verify that this updated version of `fontconfig` still works for you when you get a chance?  Thanks in advance for your help.",
+    "performed_via_github_app": null
+}

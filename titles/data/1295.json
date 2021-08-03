@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1295",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1295/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1295/events",
+    "html_url": "https://github.com/spack/spack/pull/1295",
+    "id": 166244652,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Nzc5MTU3MTI=",
+    "number": 1295,
+    "title": "modules: Do not force suffixes to be separated by '-'",
+    "user": {
+        "login": "mwilliammyers",
+        "id": 2526129,
+        "node_id": "MDQ6VXNlcjI1MjYxMjk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2526129?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwilliammyers",
+        "html_url": "https://github.com/mwilliammyers",
+        "followers_url": "https://api.github.com/users/mwilliammyers/followers",
+        "following_url": "https://api.github.com/users/mwilliammyers/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwilliammyers/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwilliammyers/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwilliammyers/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwilliammyers/orgs",
+        "repos_url": "https://api.github.com/users/mwilliammyers/repos",
+        "events_url": "https://api.github.com/users/mwilliammyers/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwilliammyers/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2016-07-19T04:18:35Z",
+    "updated_at": "2017-09-20T07:24:58Z",
+    "closed_at": "2017-09-20T07:24:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1295",
+        "html_url": "https://github.com/spack/spack/pull/1295",
+        "diff_url": "https://github.com/spack/spack/pull/1295.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1295.patch"
+    },
+    "body": "This small change allows the user to choose their own style for suffix separator .\n\nIt enables configs like:\n\n``` yaml\n...\nall:\n  suffixes:\n    +mpi: +mpi\n```\n\nor like the original behavior:\n\n``` yaml\n...\nall:\n  suffixes:\n    +mpi: -mpi\n```\n\netc.\n\nI know this small change is potentially \"breaking\" in that some people might have to add `-` to their configs but I think it is worth it in the long run.\n",
+    "performed_via_github_app": null
+}

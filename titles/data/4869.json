@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4869",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4869/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4869/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4869/events",
+    "html_url": "https://github.com/spack/spack/pull/4869",
+    "id": 244820123,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxODg0ODMw",
+    "number": 4869,
+    "title": "PerlPackage: remove perllocal.pod files",
+    "user": {
+        "login": "mjwoods",
+        "id": 16091567,
+        "node_id": "MDQ6VXNlcjE2MDkxNTY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16091567?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mjwoods",
+        "html_url": "https://github.com/mjwoods",
+        "followers_url": "https://api.github.com/users/mjwoods/followers",
+        "following_url": "https://api.github.com/users/mjwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mjwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mjwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mjwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/mjwoods/orgs",
+        "repos_url": "https://api.github.com/users/mjwoods/repos",
+        "events_url": "https://api.github.com/users/mjwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mjwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 571584920,
+            "node_id": "MDU6TGFiZWw1NzE1ODQ5MjA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/perl",
+            "name": "perl",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-07-22T03:14:49Z",
+    "updated_at": "2017-09-02T09:56:45Z",
+    "closed_at": "2017-09-02T09:56:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4869",
+        "html_url": "https://github.com/spack/spack/pull/4869",
+        "diff_url": "https://github.com/spack/spack/pull/4869.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4869.patch"
+    },
+    "body": "\u2026 to avoid conflicts during package activation.\r\n\r\nThe perllocal.pod files list and describe non-core packages installed by users; they are not used by perl itself. In a normal perl installation, the perllocal.pod files are appended when new packages are installed. Under spack, perl packages each create their own perllocal.pod file. During package activation, the multiple perllocal.pod files conflict with each other, so that only one perl package can be activated at any time.\r\n\r\nThe proposed solution involves removing the perllocal.pod files from each package during installation. An alternative method is suggested in #4541, which would avoid linking certain files during package activation. A more general alternative would be to warn about conflicting files while allowing activation to complete, similar to the way that `spack view` behaves.",
+    "performed_via_github_app": null
+}

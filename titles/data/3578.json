@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3578",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3578/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3578/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3578/events",
+    "html_url": "https://github.com/spack/spack/pull/3578",
+    "id": 217485111,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTEyOTE1NDcx",
+    "number": 3578,
+    "title": "A new package: CNTK.",
+    "user": {
+        "login": "weijianwen",
+        "id": 908249,
+        "node_id": "MDQ6VXNlcjkwODI0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/908249?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/weijianwen",
+        "html_url": "https://github.com/weijianwen",
+        "followers_url": "https://api.github.com/users/weijianwen/followers",
+        "following_url": "https://api.github.com/users/weijianwen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/weijianwen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/weijianwen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/weijianwen/subscriptions",
+        "organizations_url": "https://api.github.com/users/weijianwen/orgs",
+        "repos_url": "https://api.github.com/users/weijianwen/repos",
+        "events_url": "https://api.github.com/users/weijianwen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/weijianwen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-03-28T08:33:06Z",
+    "updated_at": "2017-08-18T13:38:54Z",
+    "closed_at": "2017-04-25T11:40:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3578",
+        "html_url": "https://github.com/spack/spack/pull/3578",
+        "diff_url": "https://github.com/spack/spack/pull/3578.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3578.patch"
+    },
+    "body": "[The Microsoft Cognitive Toolkit](https://github.com/Microsoft/CNTK) (https://www.microsoft.com/en-us/research/product/cognitive-toolkit/), is a unified deep-learning toolkit that describes neural networks as a series of computational steps via a directed graph. \r\n\r\n- [x] Add package cntk1bitsgd.\r\n- [x] Add Multiverso (~~PRs https://github.com/Microsoft/Multiverso/pull/144  https://github.com/Microsoft/Multiverso/pull/145 are pending.~~ Patch it in Spack).\r\n- [x] Patch CNTK's build process so it use the externaly-installed libraries. (~~PR https://github.com/Microsoft/CNTK/pull/1714 is pending.~~ Patch it in Spack) .\r\n- [x] Patch kaldi and openfst (waiting #3806 to be merged).\r\n- [x] Add cpu-version cntk.\r\n- [x] Add gpu-version.",
+    "performed_via_github_app": null
+}

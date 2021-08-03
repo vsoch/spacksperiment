@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4341",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4341/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4341/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4341/events",
+    "html_url": "https://github.com/spack/spack/pull/4341",
+    "id": 231169886,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyMzIyNjM1",
+    "number": 4341,
+    "title": "petsc: fix scalapack error:",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-05-24T21:00:24Z",
+    "updated_at": "2017-05-28T20:25:58Z",
+    "closed_at": "2017-05-25T21:23:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4341",
+        "html_url": "https://github.com/spack/spack/pull/4341",
+        "diff_url": "https://github.com/spack/spack/pull/4341.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4341.patch"
+    },
+    "body": "> Specify either \"--with-scalapack-dir\" or \"--with-scalapack-lib --with-scalapack-include\". But not both!\r\n\r\nwe do specify `scalapack-lib` in:\r\n```\r\n        # Help PETSc pick up Scalapack from MKL:\r\n         if 'scalapack' in spec:\r\n             scalapack = spec['scalapack'].libs\r\n             options.extend([\r\n                 '--with-scalapack-lib=%s' % scalapack.joined(),\r\n                 '--with-scalapack=1'\r\n             ])\r\n         else:\r\n             options.extend([\r\n                 '--with-scalapack=0'\r\n             ])\r\n```\r\n\r\np.s. the bug was introduced in https://github.com/LLNL/spack/pull/3928 \r\n",
+    "performed_via_github_app": null
+}

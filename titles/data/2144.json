@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2144",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2144/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2144/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2144/events",
+    "html_url": "https://github.com/spack/spack/pull/2144",
+    "id": 185516111,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTEwOTI4ODg=",
+    "number": 2144,
+    "title": "[WIP] Various updates to GCC package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2016-10-26T21:32:44Z",
+    "updated_at": "2016-11-11T22:21:48Z",
+    "closed_at": "2016-10-28T15:27:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2144",
+        "html_url": "https://github.com/spack/spack/pull/2144",
+        "diff_url": "https://github.com/spack/spack/pull/2144.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2144.patch"
+    },
+    "body": "The main goal of this PR is to remove the `binutils` dependency from the GCC package. Every time I've ever built `gcc+binutils` (the default on Linux) it has crashed. Other users have reported the same thing.\n\nFrom what I understand, binutils was added as a dependency because someone tried building GCC on a system with an ancient version of binutils. This problem is already documented in Spack's [Getting Started](http://spack.readthedocs.io/en/latest/getting_started.html#binutils) section. According to the documentation, `binutils` shouldn't be added as a dependency, mainly because every package containing C/C++/Fortran code _technically_ depends on `binutils`, but we don't want to add it to every package. Instead, users who run into this problem should build a newer version of binutils and add it to their environment manually. It's more of a Spack dependency than a GCC dependency.\n\nAside from binutils, this PR also updates GCC to use the new `AutotoolsPackage` base class and removes old hacks that are no longer needed. I marked this WIP because it should probably be tested on a few different OSes (mainly macOS) before it is merged.\n",
+    "performed_via_github_app": null
+}

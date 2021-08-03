@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5118",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5118/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5118/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5118/events",
+    "html_url": "https://github.com/spack/spack/pull/5118",
+    "id": 250625089,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM2MDIyODkx",
+    "number": 5118,
+    "title": "Fix name detection in HeaderList and LibraryList",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-08-16T13:22:47Z",
+    "updated_at": "2017-09-09T23:44:18Z",
+    "closed_at": "2017-09-09T20:22:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5118",
+        "html_url": "https://github.com/spack/spack/pull/5118",
+        "diff_url": "https://github.com/spack/spack/pull/5118.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5118.patch"
+    },
+    "body": "@alalazo @davydden \r\n\r\nOur previous name detection in HeaderList and LibraryList was very primitive. We were searching for the first period in the filename and assuming everything after it was an extension. In https://github.com/LLNL/spack/pull/5097#discussion_r133383164, @pramodskumbhar pointed out that some libraries, like `libpython3.6.dylib`, include a period in the library name. We also can't search for the last period, as some libraries are versioned, like `libmpi.so.20.10.1`. This PR searches for common library and header extensions and uses that to strip extensions.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4973",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4973/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4973/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4973/events",
+    "html_url": "https://github.com/spack/spack/pull/4973",
+    "id": 248023855,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0MTgwNzIy",
+    "number": 4973,
+    "title": "Make GCC binutils variant default to False",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-08-04T14:31:38Z",
+    "updated_at": "2019-11-05T22:38:41Z",
+    "closed_at": "2017-08-07T17:13:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4973",
+        "html_url": "https://github.com/spack/spack/pull/4973",
+        "diff_url": "https://github.com/spack/spack/pull/4973.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4973.patch"
+    },
+    "body": "Fixes #4972 (@samfux84)\r\nFixes #3943 (@JusticeForMikeBrown)\r\nFixes #2722 (@weijianwen)\r\nFixes #2301 (@aprokop)\r\nFixes #2044 (@adamjstewart @svenevs)\r\nFixes #1866 (@willfurnass @sknigh @jcftang @baberlevi)\r\nFixes #1487 (@Astran @eschnett)\r\n\r\nI have also received separate reports from @ssergien and @befritz that `gcc+binutils` does not build but `gcc~binutils` does.\r\n\r\nI have personally never been able to get `gcc+binutils` to build. I've tried on CentOS 6, CentOS 7, Fedora, and macOS. I've tried multiple versions of GCC and binutils.\r\n\r\nI'm fine with keeping this variant around, but until it works reliably it certainly shouldn't be the default. GCC is one of the first packages that new Spack users try to build. It needs to _Just Work_.",
+    "performed_via_github_app": null
+}

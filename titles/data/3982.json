@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3982",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3982/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3982/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3982/events",
+    "html_url": "https://github.com/spack/spack/pull/3982",
+    "id": 224202617,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3NTMwOTQ3",
+    "number": 3982,
+    "title": "Add API Docs for lib/spack/llnl",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-25T16:46:44Z",
+    "updated_at": "2017-04-26T12:37:08Z",
+    "closed_at": "2017-04-26T05:24:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3982",
+        "html_url": "https://github.com/spack/spack/pull/3982",
+        "diff_url": "https://github.com/spack/spack/pull/3982.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3982.patch"
+    },
+    "body": "People are always asking why we don't have any documentation on things like `filter_file`, `install_tree`, `LibraryList`, etc. This PR adds API Documentation for everything in `lib/spack/llnl`. We may still want to add more information to the Packaging Guide, but this PR is a good start.\r\n\r\nAlso fixes #2874.",
+    "performed_via_github_app": null
+}

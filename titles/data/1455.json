@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1455",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1455/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1455/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1455/events",
+    "html_url": "https://github.com/spack/spack/pull/1455",
+    "id": 169477515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODAxNTI2NDc=",
+    "number": 1455,
+    "title": "Update Package : Qt (Add 'WebKit' Support)",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2016-08-04T21:26:30Z",
+    "updated_at": "2016-10-21T21:13:56Z",
+    "closed_at": "2016-10-21T21:13:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1455",
+        "html_url": "https://github.com/spack/spack/pull/1455",
+        "diff_url": "https://github.com/spack/spack/pull/1455.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1455.patch"
+    },
+    "body": "The changes in this pull request add the `+webkit` variant to the `qt` package, which is a boolean variant that determines whether or not `qt` builds with the optional [webkit module](http://doc.qt.io/qt-4.8/demos.html#webkit).  The majority of these changes were made in order to satisfy the new style guidelines; the only crucial changes are the added package dependencies (specifically, `flex`, `bison`, `icu4c`, `gperf`, and `fontconfig`).  I was able to build and link against installed variants `qt@4.8.6+webkit` and `qt@5.5.1+webkit` on RedHat6 when compiling with GCC 4.7.2, and I also verified that `qt@4.8.6~webkit` still builds properly.\n\nSince I performed my tests on a machine that was previously configured to install `qt`, I suspect that I've missed a number of dependencies with these changes.  I tried using `ldd` on all of the output libraries/binaries to see what I missed and I've attached [a text list containing the relevant results](https://github.com/LLNL/spack/files/402729/qt-deps.txt).  If any of these dependencies seem like they shouldn't be handled by system libraries, please let me know and I'll add them as extra dependencies.\n",
+    "performed_via_github_app": null
+}

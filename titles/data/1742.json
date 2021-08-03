@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1742",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1742/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1742/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1742/events",
+    "html_url": "https://github.com/spack/spack/pull/1742",
+    "id": 176270781,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODQ4MDA5MTI=",
+    "number": 1742,
+    "title": "Run make clean to prevent warning messages",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-09-11T23:01:39Z",
+    "updated_at": "2016-10-03T01:51:09Z",
+    "closed_at": "2016-10-03T01:51:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1742",
+        "html_url": "https://github.com/spack/spack/pull/1742",
+        "diff_url": "https://github.com/spack/spack/pull/1742.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1742.patch"
+    },
+    "body": "Take a look at #1741.\n\nThis PR doesn't solve the issue, but it does prevent users from running into problems when running `run-doc-tests` if their build directory isn't already clean.\n\nBy the way, I set up `run-doc-tests` to run `make clean` after it finishes. @citibeth pointed out that this makes it difficult to view the resulting HTML files. Should I remove this? The only problems this would cause would be wasted storage space (who cares) and it would cause problems if you try to go to the directory and run `make` without running `make clean` first. I don't think it would matter as far as Travis CI is concerned.\n",
+    "performed_via_github_app": null
+}

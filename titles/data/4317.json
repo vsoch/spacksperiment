@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4317",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4317/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4317/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4317/events",
+    "html_url": "https://github.com/spack/spack/pull/4317",
+    "id": 230499889,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxODUxODU2",
+    "number": 4317,
+    "title": "Add latest version of JDK",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2017-05-22T19:49:33Z",
+    "updated_at": "2017-06-15T11:37:17Z",
+    "closed_at": "2017-06-15T10:40:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4317",
+        "html_url": "https://github.com/spack/spack/pull/4317",
+        "diff_url": "https://github.com/spack/spack/pull/4317.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4317.patch"
+    },
+    "body": "Closes #2284, although I'm still thinking about the best way to name versions of this package.\r\n\r\nUnfortunately, this package cannot be downloaded as @hartzell noticed in #4313. The URL is correct, and can be fetched using `wget`, but it doesn't work with `curl` anymore. @tgamblin any ideas?",
+    "performed_via_github_app": null
+}

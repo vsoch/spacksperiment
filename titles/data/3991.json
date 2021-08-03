@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3991",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3991/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3991/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3991/events",
+    "html_url": "https://github.com/spack/spack/pull/3991",
+    "id": 224257853,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3NTcwMzI1",
+    "number": 3991,
+    "title": "Add ncurses as zsh dependency",
+    "user": {
+        "login": "jadoro",
+        "id": 26595296,
+        "node_id": "MDQ6VXNlcjI2NTk1Mjk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26595296?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jadoro",
+        "html_url": "https://github.com/jadoro",
+        "followers_url": "https://api.github.com/users/jadoro/followers",
+        "following_url": "https://api.github.com/users/jadoro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jadoro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jadoro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jadoro/subscriptions",
+        "organizations_url": "https://api.github.com/users/jadoro/orgs",
+        "repos_url": "https://api.github.com/users/jadoro/repos",
+        "events_url": "https://api.github.com/users/jadoro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jadoro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-25T20:11:08Z",
+    "updated_at": "2017-04-27T07:09:08Z",
+    "closed_at": "2017-04-26T12:53:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3991",
+        "html_url": "https://github.com/spack/spack/pull/3991",
+        "diff_url": "https://github.com/spack/spack/pull/3991.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3991.patch"
+    },
+    "body": "zsh build will fail with \r\n`configure: error: \"No terminal handling library was found on your system.\"`\r\nif ncurses is not found.",
+    "performed_via_github_app": null
+}

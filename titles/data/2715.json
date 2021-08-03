@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2715",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2715/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2715/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2715/events",
+    "html_url": "https://github.com/spack/spack/issues/2715",
+    "id": 198288525,
+    "node_id": "MDU6SXNzdWUxOTgyODg1MjU=",
+    "number": 2715,
+    "title": "Picks wrong MPI for mfem but not other packages",
+    "user": {
+        "login": "BarrySmith",
+        "id": 512185,
+        "node_id": "MDQ6VXNlcjUxMjE4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/512185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BarrySmith",
+        "html_url": "https://github.com/BarrySmith",
+        "followers_url": "https://api.github.com/users/BarrySmith/followers",
+        "following_url": "https://api.github.com/users/BarrySmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BarrySmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BarrySmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BarrySmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/BarrySmith/orgs",
+        "repos_url": "https://api.github.com/users/BarrySmith/repos",
+        "events_url": "https://api.github.com/users/BarrySmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BarrySmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 17,
+    "created_at": "2017-01-02T00:52:11Z",
+    "updated_at": "2018-04-13T14:41:30Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "In my packages.py I have \r\n\r\n```\r\n    openmpi:\r\n        paths:\r\n            openmpi@2.0.1: /usr/local\r\n        version: [system]\r\n        buildable: False        \r\n```\r\n\r\nand \r\n\r\n```\r\n    all:\r\n        providers:\r\n            # prefer OpenMPI over MPICH by default\r\n            mpi: [openmpi, mpich]\r\n```\r\n\r\nNow in a clean spack directory (after git clean -x -f -d) I get \r\n\r\n```\r\n$ ./bin/spack install mpi\r\n==> openmpi is externally installed in /usr/local\r\n~/Src/spack (develop=) \r\n$ ./bin/spack install hypre\r\n==> Installing hypre\r\n==> netlib-lapack is externally installed in /usr\r\n==> openmpi is externally installed in /usr/local\r\n==> Fetching http://computation.llnl.gov/project/linear_solvers/download/hypre-2.11.1.tar.gz\r\n.... Builds hypre fine\r\n\r\n~/Src/spack (develop=) \r\n$ ./bin/spack install mfem\r\n==> Installing mfem\r\n==> Installing mvapich2\r\n==> Installing libpciaccess\r\n==> Installing util-macros\r\nStarts the massive project of installing mvapich2 and its dependencies.\r\n```\r\n\r\nSpack is fantasizing  that it should use some wacked out MPI mvapich2 instead of the default. This happens with mfem but not with hypre, petsc, superlu_dist, mumps ... \r\n\r\nThis is the develop branch on my Mac.\r\n\r\nNot if you use ./bin/spack install mfem+mpi then it does use the OpenMPI. mfem/package.py does have a default dependence on mpi \r\n\r\n`    variant('mpi', default=True, description='Activate support for MPI')`\r\n\r\nso there is something wrong with how Spack selects the MPI when it is not provided on the command line for the install.",
+    "performed_via_github_app": null
+}

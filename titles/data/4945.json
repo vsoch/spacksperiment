@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4945",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4945/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4945/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4945/events",
+    "html_url": "https://github.com/spack/spack/pull/4945",
+    "id": 247115097,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzNTA3NTA0",
+    "number": 4945,
+    "title": "Add package for libbsd, add variant to expat for libbsd",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 25,
+    "created_at": "2017-08-01T15:47:31Z",
+    "updated_at": "2017-08-04T23:40:45Z",
+    "closed_at": "2017-08-03T19:57:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4945",
+        "html_url": "https://github.com/spack/spack/pull/4945",
+        "diff_url": "https://github.com/spack/spack/pull/4945.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4945.patch"
+    },
+    "body": "The recent expat release requires a high quality source of randomness.\r\n\r\nCentOS 7 does not seem to have one, but one is available in libbsd.\r\n\r\nThis commit adds a package for libbsd and adds a variant to expat to\r\nuse it (defaults to False).\r\n\r\nI'd appreciate feedback on the use of a variant for this (as opposed to just making it the default, perhaps) and whether the variant should default to True or False.\r\n\r\nFixes #4943 ",
+    "performed_via_github_app": null
+}

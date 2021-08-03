@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5788",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5788/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5788/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5788/events",
+    "html_url": "https://github.com/spack/spack/pull/5788",
+    "id": 265950864,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2OTE0NjQ5",
+    "number": 5788,
+    "title": "Add quiet option to buildcache list",
+    "user": {
+        "login": "daveh86",
+        "id": 909151,
+        "node_id": "MDQ6VXNlcjkwOTE1MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/909151?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daveh86",
+        "html_url": "https://github.com/daveh86",
+        "followers_url": "https://api.github.com/users/daveh86/followers",
+        "following_url": "https://api.github.com/users/daveh86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daveh86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daveh86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daveh86/subscriptions",
+        "organizations_url": "https://api.github.com/users/daveh86/orgs",
+        "repos_url": "https://api.github.com/users/daveh86/repos",
+        "events_url": "https://api.github.com/users/daveh86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daveh86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-10-16T23:53:28Z",
+    "updated_at": "2019-01-11T20:47:44Z",
+    "closed_at": "2019-01-11T20:47:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5788",
+        "html_url": "https://github.com/spack/spack/pull/5788",
+        "diff_url": "https://github.com/spack/spack/pull/5788.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5788.patch"
+    },
+    "body": "Add a quiet option to buildcache list. Currently, the output strings contain extra words, lines of text and quotation marks, which can make string parsing inconvenient. The quiet option will silence these extras and print hash and package name pairs.",
+    "performed_via_github_app": null
+}

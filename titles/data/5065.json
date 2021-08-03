@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5065",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5065/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5065/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5065/events",
+    "html_url": "https://github.com/spack/spack/pull/5065",
+    "id": 249475059,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM1MjIxMzg4",
+    "number": 5065,
+    "title": "Openblas clang fix",
+    "user": {
+        "login": "bvanessen",
+        "id": 6210171,
+        "node_id": "MDQ6VXNlcjYyMTAxNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6210171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bvanessen",
+        "html_url": "https://github.com/bvanessen",
+        "followers_url": "https://api.github.com/users/bvanessen/followers",
+        "following_url": "https://api.github.com/users/bvanessen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bvanessen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bvanessen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bvanessen/subscriptions",
+        "organizations_url": "https://api.github.com/users/bvanessen/orgs",
+        "repos_url": "https://api.github.com/users/bvanessen/repos",
+        "events_url": "https://api.github.com/users/bvanessen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bvanessen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-08-10T20:59:53Z",
+    "updated_at": "2017-08-15T22:09:16Z",
+    "closed_at": "2017-08-15T21:57:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5065",
+        "html_url": "https://github.com/spack/spack/pull/5065",
+        "diff_url": "https://github.com/spack/spack/pull/5065.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5065.patch"
+    },
+    "body": "As of version 0.2.20 OpenBLAS will now compile with clang.",
+    "performed_via_github_app": null
+}

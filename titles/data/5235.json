@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5235",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5235/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5235/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5235/events",
+    "html_url": "https://github.com/spack/spack/pull/5235",
+    "id": 253762853,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM4MjU0MzQ4",
+    "number": 5235,
+    "title": "mpich: fix MPI_Barrier segfault",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-29T18:38:37Z",
+    "updated_at": "2017-12-19T12:04:59Z",
+    "closed_at": "2017-08-30T23:58:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5235",
+        "html_url": "https://github.com/spack/spack/pull/5235",
+        "diff_url": "https://github.com/spack/spack/pull/5235.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5235.patch"
+    },
+    "body": "see https://lists.mpich.org/pipermail/discuss/2016-May/004764.html, https://lists.mpich.org/pipermail/discuss/2016-June/004768.html\r\nand https://github.com/Homebrew/homebrew-core/blob/master/Formula/mpich.rb#L35-L39",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2094",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2094/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2094/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2094/events",
+    "html_url": "https://github.com/spack/spack/issues/2094",
+    "id": 184692261,
+    "node_id": "MDU6SXNzdWUxODQ2OTIyNjE=",
+    "number": 2094,
+    "title": "Problems with Success: 1000 Packages!",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2016-10-23T14:09:57Z",
+    "updated_at": "2018-04-13T11:38:11Z",
+    "closed_at": "2018-04-13T11:38:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "We recently passed the 1000-package mark.  Yoohoo!  Of course, growth always comes with problems.  In this case, the problem is GitHub doesn't like directories with >1000 files.  See, for example:\n\nhttps://github.com/LLNL/spack/tree/develop/var/spack/repos/builtin/packages\n\nMy suggestion is we allow for packages to exist in sub-directories of `packages` as well as at the top level; Spack should basically merge all the directories together when looking for packages.  This gives us the most flexibility in how we choose to arrange packages in directories.  For example, we could:\n1. Arrange by first letter (aka EasyBuild).  We'd have packages/a, packages/b, ..., packages/z and then put each package in the appropriate directory.\n2. Leave everything in the main directory, except for certain subsystems.  We'd have subdirectories for `py/`, `r/`, `x/`, `lua/`, etc.\n3. Arrange by \"topic\": utilities, astronomy, etc.\n\nI like (2) first and (1) and (3) next, in that order.  I dislike (3) because it's no longer obvious where to find a particular package (requires too many brain cells).  (1) is at least systematic.  But I think (2) will be not so hard, and will give us significant room to grow before any resulting directories reach 1000 files.\n",
+    "performed_via_github_app": null
+}

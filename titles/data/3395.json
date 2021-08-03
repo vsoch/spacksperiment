@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3395",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3395/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3395/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3395/events",
+    "html_url": "https://github.com/spack/spack/pull/3395",
+    "id": 213134552,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA5OTgzNzg3",
+    "number": 3395,
+    "title": "Python3 support",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-03-09T19:08:18Z",
+    "updated_at": "2017-11-28T08:34:26Z",
+    "closed_at": "2017-03-31T20:40:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3395",
+        "html_url": "https://github.com/spack/spack/pull/3395",
+        "diff_url": "https://github.com/spack/spack/pull/3395.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3395.patch"
+    },
+    "body": "Fixes #2807.\r\n\r\nI am cleaning up the concretizer, and part of that is cleaning up `package_prefs` and the use of `cmp`/`__cmp__` on `Specs`.  It turns out this is also something we need for Python 3.\r\n\r\nSo I went ahead and did all the easy stuff to get spack to work in Python 3.  I'm still working on the refactoring parts.  \r\n\r\nCurrently, Spack will run if invoked with `python3`, but it'll fail when it hits the first `sorted(..., cmp=...)` call.  I think there should be relatively few major issues getting Python3 to work after that is resolved, and we'll have easier code to port for the new concretizer.\r\n\r\n- [x] remove version guard in `bin/spack`\r\n- [x] update YAML version in externals\r\n- [x] port `ordereddict_backport`\r\n- [x] vendor [`six`](https://pypi.python.org/pypi/six) to aid with porting\r\n- [x] Fix StringIO, print, except as, octals, izip calls, xrange, etc.\r\n- [x] use `six.string_types` instead of `basestring`\r\n- [x] use `six.iteritems`\r\n- [x] Remove assumptions about `ascii` in the code base\r\n- [x] Fix packages that have moved (`urllib`, etc.)\r\n- [x] Fix UTF-8 issues with `proc.communicate` in `Executable`\r\n- [x] Remove use of `cmp` in the code\r\n- [x] Try to use `str` nearly everywhere in the spack code; avoid `unicode` objects in 2.x, but handle utf-8 gracefully in Python 3.\r\n- [x] Refactor and simplify handling of deptypes in the concretizer\r\n- [x] Fix #2807: ordering issues with merging providers & vdeps in concretization.\r\n- [x] Fix minimum version checking (add `pyqver3`)\r\n- [x] Clean up a number of spec tests to NOT depend on DB ordering\r\n- [x] Add Python3 to Travis testing\r\n\r\n",
+    "performed_via_github_app": null
+}

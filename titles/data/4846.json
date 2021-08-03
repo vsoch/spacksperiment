@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4846",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4846/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4846/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4846/events",
+    "html_url": "https://github.com/spack/spack/pull/4846",
+    "id": 244679849,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxNzgyMjc3",
+    "number": 4846,
+    "title": "Protobuf: CMake",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-07-21T14:08:32Z",
+    "updated_at": "2017-08-02T15:38:34Z",
+    "closed_at": "2017-08-02T13:03:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4846",
+        "html_url": "https://github.com/spack/spack/pull/4846",
+        "diff_url": "https://github.com/spack/spack/pull/4846.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4846.patch"
+    },
+    "body": "This rebuilds protobuf to be build with CMake, so cmake config packages are created and installed, too.\r\n\r\nUnfortunately, this drops support for protobuf < 3.0.\r\n\r\nUpdate: Also, it seems this build of protobuf [does not install a `pkg-config` file...](https://github.com/google/protobuf/issues/1384)\r\n- [x] We might need to add a `.pc` file ourselves... (not too hard) https://github.com/google/protobuf/pull/3403 (before [protobuf 3.4](https://github.com/google/protobuf/pull/3406))\r\n\r\nNeeded for [gRPC](https://github.com/grpc/grpc) with external protobuf build (and anyone else that needs the protobuf CMake targets).\r\n\r\n### Spack packages depending on Protobuf\r\n\r\nthose might need a quick build test:\r\n\r\n- [ ] lbann (protobuf 3.0.2:) -> some opencv nonfree header issue?\r\n- [ ] cntk (protobuf 3.10:) -> Error: There are no valid versions for spectrum-mpi that match ':'\r\n- [x] caffe -> fails since `libprotobuf.a` is not build with `-fPIC` -> fixed\r\n- [x] mosh -> fails on missing protobuf (pkg-config based autotools search) -> fixed",
+    "performed_via_github_app": null
+}

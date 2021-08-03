@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3214",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3214/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3214/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3214/events",
+    "html_url": "https://github.com/spack/spack/issues/3214",
+    "id": 209444006,
+    "node_id": "MDU6SXNzdWUyMDk0NDQwMDY=",
+    "number": 3214,
+    "title": "AutotoolsPackage -- improve error message?",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-02-22T12:45:59Z",
+    "updated_at": "2017-09-23T08:36:41Z",
+    "closed_at": "2017-09-23T08:36:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "Is it possible to improve Spack's error message during the build of AutotoolsPackage? Currently it is:\r\n```\r\n==> Error: ProcessError: Command exited with status 2:\r\n    'make' '-j8'\r\n/home/davydden/spack/lib/spack/spack/build_systems/autotools.py:275, in build:\r\n     270      def build(self, spec, prefix):\r\n     271          \"\"\"Makes the build targets specified by\r\n     272          :py:attr:``~.AutotoolsPackage.build_targets``\r\n     273          \"\"\"\r\n     274          with working_dir(self.build_directory):\r\n  >> 275              inspect.getmodule(self).make(*self.build_targets)\r\n\r\nSee build log for details:\r\n  /home/davydden/spack/var/spack/stage/gnuplot-5.0.5-bjpzudnr6jw6iogpyctzqwe6ye6djuhw/gnuplot-5.0.5/spack-build.out\r\n```\r\nBut it does not really say that the build fails, so the first impression I have is that something is wrong within Spack.\r\nCan we do something like (`C/C++`):\r\n```\r\ntry\r\n{\r\n}\r\ncatch()\r\n{\r\n   // human readable message with the specific make target that failed?\r\n}\r\n```\r\n",
+    "performed_via_github_app": null
+}

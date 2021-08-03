@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1522",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1522/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1522/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1522/events",
+    "html_url": "https://github.com/spack/spack/pull/1522",
+    "id": 171233564,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODEzNTUxNDU=",
+    "number": 1522,
+    "title": "WIP: adding cling to llvm package, horribly hacky workaround for git \u2026",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2016-08-15T18:42:41Z",
+    "updated_at": "2020-03-17T21:50:37Z",
+    "closed_at": "2020-03-17T21:50:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1522",
+        "html_url": "https://github.com/spack/spack/pull/1522",
+        "diff_url": "https://github.com/spack/spack/pull/1522.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1522.patch"
+    },
+    "body": "\u2026archive issue\n\nThis is not ready, but it will let you build a merged cling/clang/llvm/lldb/everything version that should have working OpenMP.\n",
+    "performed_via_github_app": null
+}

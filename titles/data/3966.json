@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3966",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3966/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3966/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3966/events",
+    "html_url": "https://github.com/spack/spack/pull/3966",
+    "id": 223679336,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3MTcyNjQ5",
+    "number": 3966,
+    "title": "Flann package",
+    "user": {
+        "login": "svenevs",
+        "id": 5871461,
+        "node_id": "MDQ6VXNlcjU4NzE0NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5871461?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/svenevs",
+        "html_url": "https://github.com/svenevs",
+        "followers_url": "https://api.github.com/users/svenevs/followers",
+        "following_url": "https://api.github.com/users/svenevs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/svenevs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/svenevs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/svenevs/subscriptions",
+        "organizations_url": "https://api.github.com/users/svenevs/orgs",
+        "repos_url": "https://api.github.com/users/svenevs/repos",
+        "events_url": "https://api.github.com/users/svenevs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/svenevs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-04-24T00:27:59Z",
+    "updated_at": "2017-05-12T00:29:18Z",
+    "closed_at": "2017-05-12T00:03:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3966",
+        "html_url": "https://github.com/spack/spack/pull/3966",
+        "diff_url": "https://github.com/spack/spack/pull/3966.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3966.patch"
+    },
+    "body": "In general it seems to be working very well.  Notes:\r\n\r\n1. `python3` is definitively broken.  They have a weird [`cmake` + `setup.py`](https://github.com/mariusmuja/flann/blob/e02f66f9663a2bdf49162a9543a459a29a9cd869/src/python/CMakeLists.txt#L7-L12) thing going on.\r\n    - Not sure if `extends('python')` is correct.  The `site-packages` directory is always empty.\r\n    - `python2` works. Something [about this does that](https://github.com/mariusmuja/flann/blob/77d3fbead67f2dc031ef9206cc952a9c55d9566d/src/python/pyflann/flann_ctypes.py#L149-L193)\r\n2. Defaults are `+mpi` and `+hdf5` under the assumption that if anybody actually wants this library directly, they likely will want it for these purposes.  The tests are all using these features.\r\n    - `+openmp` for same reasons.\r\n3. Untested variants: `matlab`, didn't try and combine every possible variant either.\r\n4. Not sure about the `type` for the `py-numpy` dependency.  That's only needed for when somebody uses the `python` bindings, not the library itself.\r\n5. What is the `spack` default `cmake` build type?\r\n\r\n    ```diff\r\n    +        # Default is RelWithDebugInfo\r\n    +        args.append(\"-DCMAKE_BUILD_TYPE:STRING=Release\")\r\n    ```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4363",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4363/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4363/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4363/events",
+    "html_url": "https://github.com/spack/spack/pull/4363",
+    "id": 231495668,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyNTUyNjQ2",
+    "number": 4363,
+    "title": "Add info for jdk@7u80 (not downloadable)",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-26T00:31:25Z",
+    "updated_at": "2017-05-26T17:11:25Z",
+    "closed_at": "2017-05-26T15:46:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4363",
+        "html_url": "https://github.com/spack/spack/pull/4363",
+        "diff_url": "https://github.com/spack/spack/pull/4363.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4363.patch"
+    },
+    "body": "Add version info for jdk@7u80.  Oracle does't seem to be\r\ndistributing it any longer so there's no reasonable URL to\r\nprovide, but for those of us who already have the tarball\r\nthis is useful.",
+    "performed_via_github_app": null
+}

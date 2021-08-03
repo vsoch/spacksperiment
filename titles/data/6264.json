@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6264",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6264/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6264/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6264/events",
+    "html_url": "https://github.com/spack/spack/pull/6264",
+    "id": 273226350,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUyMTAyNTg5",
+    "number": 6264,
+    "title": "version list missing?!",
+    "user": {
+        "login": "MarkusLohmayer",
+        "id": 10695734,
+        "node_id": "MDQ6VXNlcjEwNjk1NzM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10695734?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MarkusLohmayer",
+        "html_url": "https://github.com/MarkusLohmayer",
+        "followers_url": "https://api.github.com/users/MarkusLohmayer/followers",
+        "following_url": "https://api.github.com/users/MarkusLohmayer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MarkusLohmayer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MarkusLohmayer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MarkusLohmayer/subscriptions",
+        "organizations_url": "https://api.github.com/users/MarkusLohmayer/orgs",
+        "repos_url": "https://api.github.com/users/MarkusLohmayer/repos",
+        "events_url": "https://api.github.com/users/MarkusLohmayer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MarkusLohmayer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-11-12T12:45:51Z",
+    "updated_at": "2018-03-23T01:23:08Z",
+    "closed_at": "2018-03-23T01:23:08Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6264",
+        "html_url": "https://github.com/spack/spack/pull/6264",
+        "diff_url": "https://github.com/spack/spack/pull/6264.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6264.patch"
+    },
+    "body": "I am just a beginner but I guess spack was not able to pick up my openssl and cmake (from brew) because I initially did not have the version list ready. I am not sure if I did the right thing with adding the two versions in the open-mpi example.\r\nMy packages.yaml now looks like this:\r\n```\r\npackages:\r\n  openssl:\r\n    version: [2.2.7]\r\n    paths:\r\n      openssl@2.2.7: /usr/bin/openssl\r\n    buildable: False\r\n  cmake:\r\n    version: [2.9.5]\r\n    paths:\r\n      cmake@3.9.5: /usr/local/bin/cmake\r\n```\r\n\r\nand spack is now finding these!",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4368",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4368/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4368/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4368/events",
+    "html_url": "https://github.com/spack/spack/pull/4368",
+    "id": 231711298,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyNzAzMDcy",
+    "number": 4368,
+    "title": "added STAR aligner package",
+    "user": {
+        "login": "ifelsefi",
+        "id": 14250760,
+        "node_id": "MDQ6VXNlcjE0MjUwNzYw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14250760?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ifelsefi",
+        "html_url": "https://github.com/ifelsefi",
+        "followers_url": "https://api.github.com/users/ifelsefi/followers",
+        "following_url": "https://api.github.com/users/ifelsefi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ifelsefi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ifelsefi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ifelsefi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ifelsefi/orgs",
+        "repos_url": "https://api.github.com/users/ifelsefi/repos",
+        "events_url": "https://api.github.com/users/ifelsefi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ifelsefi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-05-26T19:08:32Z",
+    "updated_at": "2017-05-27T20:02:39Z",
+    "closed_at": "2017-05-27T20:02:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4368",
+        "html_url": "https://github.com/spack/spack/pull/4368",
+        "diff_url": "https://github.com/spack/spack/pull/4368.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4368.patch"
+    },
+    "body": "OK this compiles but does not install properly.\r\n\r\nThe `make install` phase simply moves the compiled binaries to `../bin `directory under the staging directory.  I cannot discern from the developer's [docs](https://github.com/alexdobin/STAR/blob/master/README.md) how I can pass Spack prefix to `make install`.\r\n\r\nTo get around that I added:\r\n\r\n```\r\nshutil.move(\"../bin/STAR\", prefix)\r\nshutil.move(\"../bin/STARlong\",  prefix)\r\n\r\n```\r\n\r\nWhich puts the binaries into the prefix\r\n\r\n```\r\nuser@node103[~/repos/spack]$ spack find -p star\r\n==> 1 installed packages.\r\n-- linux-rhel6-x86_64 / gcc@6.3.0 -------------------------------\r\n    star@2.5.3a  /pbtech_mounts/homes027/user/repos/spack/opt/spack/linux-rhel6-x86_64/gcc-6.3.0/star-2.5.3a-pptd3lygyhgy3p5qgmzkmkgw4taq7mkq\r\nuser@node103[~/repos/spack]$ ls -ltr /pbtech_mounts/homes027/user/repos/spack/opt/spack/linux-rhel6-x86_64/gcc-6.3.0/star-2.5.3a-pptd3lygyhgy3p5qgmzkmkgw4taq7mkq\r\ntotal 3.7M\r\n-rwxr-xr-x 1 user physbio 1.9M May 26 15:00 STARlong\r\n-rwxr-xr-x 1 user physbio 1.9M May 26 15:00 STAR\r\n```\r\nThough `spack load` does not add that to `$PATH`.  I read the docs on `Package()` class though I must have missed a step.  Can you point me in the right direction as I am hoping it's some trivial thing.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2681",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2681/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2681/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2681/events",
+    "html_url": "https://github.com/spack/spack/pull/2681",
+    "id": 197516978,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTkzMzA0MDk=",
+    "number": 2681,
+    "title": "Concretization preserves deptypes",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446626162,
+            "node_id": "MDU6TGFiZWw0NDY2MjYxNjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hashes",
+            "name": "hashes",
+            "color": "9a69b7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2016-12-25T22:15:24Z",
+    "updated_at": "2016-12-29T22:44:00Z",
+    "closed_at": "2016-12-29T22:44:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2681",
+        "html_url": "https://github.com/spack/spack/pull/2681",
+        "diff_url": "https://github.com/spack/spack/pull/2681.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2681.patch"
+    },
+    "body": "Fixes #1754. Fixes #1457.\r\n\r\n- [x] Fixes issues with hashing where deptypes from one dependency would be\r\n  overwritten by those of another dependency on the same package.\r\n\r\n  - Copying specs (`Spec.copy()`, `Spec._dup()`) did not handle deptypes\r\n     correctly:\r\n\r\n  - Copying \"flattened\" dependencies, but in doing so it collapsed\r\n    multiple dependency relationships into one, losing some edge\r\n    information in the DAG.\r\n\r\n- [x] This gets rid of the `flat_dependencies_with_deptypes()` method,\r\n    which doesn't really make sense, as it collapses edges. It's now\r\n    reverted the original `flat_dependnecies()`.\r\n\r\n- [x] `traverse_with_deptypes()` is now called `traverse_edges()`, which is\r\n    when edge information must be preserved.\r\n\r\n- [x] This gets rid of the notion of \"default deptypes\" introduced in #2307.\r\n\r\n  - Initially created Specs now have empty deptypes instead of \"defaults\".\r\n\r\n  - Proper deptypes are added during normalization/concretization like\r\n    everything else in the Spec class.  Empty deptypes mean deptypes are\r\n    not yet specified, and the spec is abstract.\r\n\r\n- [x] Updated tests.",
+    "performed_via_github_app": null
+}

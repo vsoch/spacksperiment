@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4952",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4952/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4952/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4952/events",
+    "html_url": "https://github.com/spack/spack/pull/4952",
+    "id": 247434884,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzNzQyOTk0",
+    "number": 4952,
+    "title": "Moab depends on BLAS.",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-02T15:44:54Z",
+    "updated_at": "2017-08-29T23:17:45Z",
+    "closed_at": "2017-08-05T17:04:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4952",
+        "html_url": "https://github.com/spack/spack/pull/4952",
+        "diff_url": "https://github.com/spack/spack/pull/4952.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4952.patch"
+    },
+    "body": "I can't build MOAB without adding `depends_on('blas')` to the `package.py`.  Without this addition, the configure step fails with \"BLAS not found\".  ",
+    "performed_via_github_app": null
+}

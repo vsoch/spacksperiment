@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5580",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5580/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5580/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5580/events",
+    "html_url": "https://github.com/spack/spack/pull/5580",
+    "id": 262287259,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ0MzI1Njk5",
+    "number": 5580,
+    "title": "Don't change properties on already-installed packages",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446626162,
+            "node_id": "MDU6TGFiZWw0NDY2MjYxNjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hashes",
+            "name": "hashes",
+            "color": "9a69b7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2017-10-03T02:42:37Z",
+    "updated_at": "2017-10-05T17:33:05Z",
+    "closed_at": "2017-10-05T17:33:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5580",
+        "html_url": "https://github.com/spack/spack/pull/5580",
+        "diff_url": "https://github.com/spack/spack/pull/5580.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5580.patch"
+    },
+    "body": "@tgamblin @becker33\r\n\r\nFixes: https://github.com/LLNL/spack/issues/5565\r\n\r\nThis includes a number of edits to address issues where spack concretization attempts to set properties on already-installed specs. This is a WIP at the moment since I haven't thought all the changes through, but I can replicate #5565 and this appears to resolve it.\r\n\r\n* Don't set patches on packages if they have been concretized\r\n* Don't invoke `_concretize_helper` on already-concretized packages (which can add variants for example) - this may not strictly be an issue in #5565 but came up in my debugging. EDIT: this likely shares some logic with https://github.com/LLNL/spack/pull/4939\r\n* Don't add new dependencies to already-concretized specs: this was the trickiest part since the concretization deconstructs the DAG on each pass, I want to think over my approach here",
+    "performed_via_github_app": null
+}

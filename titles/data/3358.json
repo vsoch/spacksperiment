@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3358",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3358/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3358/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3358/events",
+    "html_url": "https://github.com/spack/spack/issues/3358",
+    "id": 211837521,
+    "node_id": "MDU6SXNzdWUyMTE4Mzc1MjE=",
+    "number": 3358,
+    "title": "Cannot specify independent dependencies any more",
+    "user": {
+        "login": "eschnett",
+        "id": 213514,
+        "node_id": "MDQ6VXNlcjIxMzUxNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/213514?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eschnett",
+        "html_url": "https://github.com/eschnett",
+        "followers_url": "https://api.github.com/users/eschnett/followers",
+        "following_url": "https://api.github.com/users/eschnett/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eschnett/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eschnett/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eschnett/subscriptions",
+        "organizations_url": "https://api.github.com/users/eschnett/orgs",
+        "repos_url": "https://api.github.com/users/eschnett/repos",
+        "events_url": "https://api.github.com/users/eschnett/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eschnett/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-03-04T00:28:31Z",
+    "updated_at": "2017-03-04T01:31:10Z",
+    "closed_at": "2017-03-04T01:10:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "I want to build a package `a`, which depends on `b`, which depends on `c`, etc. I want to specify the compiler with which `c` is built. This fails:\r\n\r\n```\r\n$ spack install cosmomc +planck %gcc@6.3.0 ^planck-likelihood +lensing-ext +plik-DS +plik-HM-ext +plik-unbinned ^openmpi ^hwloc ^libpciacess ^pkg-config %clang\r\n==> Error: cosmomc does not depend on hwloc, openmpi, libpciacess, or pkg-config\r\n```\r\nHere `cosmomc` depends on `planck-likelihood`, which depends on `mpi`, so this should work. I'm quite certain it used to work.\r\n\r\nI need to specify the compiler for `pkg-config` because it doesn't build with `gcc` on macOS. On the other hand, `cosmomc` does not build with `clang`.",
+    "performed_via_github_app": null
+}

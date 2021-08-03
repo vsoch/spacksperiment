@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4471",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4471/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4471/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4471/events",
+    "html_url": "https://github.com/spack/spack/pull/4471",
+    "id": 234938267,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI0OTQ5OTgx",
+    "number": 4471,
+    "title": "Add list_url for packages from http://ab-initio.mit.edu/",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-06-09T21:02:48Z",
+    "updated_at": "2017-06-12T20:43:06Z",
+    "closed_at": "2017-06-12T14:48:21Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4471",
+        "html_url": "https://github.com/spack/spack/pull/4471",
+        "diff_url": "https://github.com/spack/spack/pull/4471.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4471.patch"
+    },
+    "body": "I discovered a \"secret\" `list_url` shared by all software from [this research group](http://ab-initio.mit.edu/) and I couldn't help but share it.\r\n\r\nAlso converts these packages to `AutotoolsPackage`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5545",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5545/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5545/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5545/events",
+    "html_url": "https://github.com/spack/spack/pull/5545",
+    "id": 261694591,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQzOTI3NjY3",
+    "number": 5545,
+    "title": "Implementation to jail Spack inside a user chroot using Linux namespaces",
+    "user": {
+        "login": "TheTimmy",
+        "id": 9502809,
+        "node_id": "MDQ6VXNlcjk1MDI4MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9502809?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TheTimmy",
+        "html_url": "https://github.com/TheTimmy",
+        "followers_url": "https://api.github.com/users/TheTimmy/followers",
+        "following_url": "https://api.github.com/users/TheTimmy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TheTimmy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TheTimmy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TheTimmy/subscriptions",
+        "organizations_url": "https://api.github.com/users/TheTimmy/orgs",
+        "repos_url": "https://api.github.com/users/TheTimmy/repos",
+        "events_url": "https://api.github.com/users/TheTimmy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TheTimmy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 742534409,
+            "node_id": "MDU6TGFiZWw3NDI1MzQ0MDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-command",
+            "name": "new-command",
+            "color": "275e99",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-09-29T16:21:37Z",
+    "updated_at": "2020-03-26T14:40:54Z",
+    "closed_at": "2020-03-26T14:40:54Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5545",
+        "html_url": "https://github.com/spack/spack/pull/5545",
+        "diff_url": "https://github.com/spack/spack/pull/5545.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5545.patch"
+    },
+    "body": "This feature support to jail Spack inside a chroot (see #5193 approach 3 for details),\r\nbut without the requirements of the pull request #5489.\r\nThis allows to find potentially missing depends_on calls.\r\n\r\nIt introduces the commands:\r\n\r\n./spack isolate --build-environment path/to/jail/dir --tarball path/to/tarball\r\nTo create a jail for Spack and mount bind /dev, /sys and /proc to be available inside the jail.\r\n\r\n./spack isolate --remove-environment\r\nTo unmount the mounted /dev, /sys and /proc directories.\r\n\r\n./spack isolate --cli\r\nTo start a shell inside the jail.\r\n\r\nTo create a bootstrap environment it is possible to use an already generated tarball from OpenStack or by using mkosi. A restriction is, that the root directory of the tarball must be a directory which contains the distribution.\r\n\r\nTo generate the mount bind and chroot calls in uses namespaces.\r\nUnfortunately it does not support the separation of the PID namespace, due to the fact, that Python cannot read C defines and structs.\r\n",
+    "performed_via_github_app": null
+}

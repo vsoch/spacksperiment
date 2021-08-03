@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5014",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5014/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5014/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5014/events",
+    "html_url": "https://github.com/spack/spack/pull/5014",
+    "id": 248547251,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0NTM4NTY1",
+    "number": 5014,
+    "title": "IceT: Ill-Placed CMake Modules",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-07T22:18:08Z",
+    "updated_at": "2017-08-08T22:09:34Z",
+    "closed_at": "2017-08-08T14:14:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5014",
+        "html_url": "https://github.com/spack/spack/pull/5014",
+        "diff_url": "https://github.com/spack/spack/pull/5014.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5014.patch"
+    },
+    "body": "IceT places its CMake module in the wrong directory (prefix.lib), which is not included in the default CMake search paths (e.g. prefix.lib.cmake would be).\r\n\r\nThis fixes it for *directly* depending packages without the need to add\r\n```yaml\r\n    icet:\r\n      environment:\r\n        prepend_path:\r\n          CMAKE_PREFIX_PATH: '${PREFIX}/lib'\r\n```\r\n\r\nto the `modules.yaml` as a workaround.",
+    "performed_via_github_app": null
+}

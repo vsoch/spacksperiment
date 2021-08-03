@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1894",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1894/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1894/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1894/events",
+    "html_url": "https://github.com/spack/spack/pull/1894",
+    "id": 180834566,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODc4NTIzNzk=",
+    "number": 1894,
+    "title": "Rework build environment and cc to use smaller RPATHs.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2016-10-04T08:36:38Z",
+    "updated_at": "2016-10-07T09:58:20Z",
+    "closed_at": "2016-10-04T16:40:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1894",
+        "html_url": "https://github.com/spack/spack/pull/1894",
+        "diff_url": "https://github.com/spack/spack/pull/1894.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1894.patch"
+    },
+    "body": "Fixes #1874 -- something I've been meaning to do for a long time.\n\n@davydden - can you test this?\nAlso probably of interest to @jgalarowicz.\n- Fixed up dependency management so that:\n  - build deps go in PATH and -I\n  - link deps go in -L args\n  - only _immediate_ link deps are RPATH'd\n\nThe latter reduces the number of libraries that need to be added to\nDT_NEEDED / LC_RPATH.  This removes redundant RPATHs to transitive\ndependencies.\n",
+    "performed_via_github_app": null
+}

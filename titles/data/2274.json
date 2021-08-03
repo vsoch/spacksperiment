@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2274",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2274/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2274/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2274/events",
+    "html_url": "https://github.com/spack/spack/pull/2274",
+    "id": 187850434,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTI2Nzk2MjE=",
+    "number": 2274,
+    "title": "workarounds to building latest LaunchMON and STAT on ppc64le",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2016-11-07T22:39:45Z",
+    "updated_at": "2019-02-12T14:45:52Z",
+    "closed_at": "2019-02-12T14:34:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2274",
+        "html_url": "https://github.com/spack/spack/pull/2274",
+        "diff_url": "https://github.com/spack/spack/pull/2274.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2274.patch"
+    },
+    "body": "@becker33, this PR allows LaunchMON to build on ppcle64. It still doesn't run correctly, but it allows STAT to build on top of it and then we can test STAT using serial process attaching, rather than parallel job attaching via LaunchMON.",
+    "performed_via_github_app": null
+}

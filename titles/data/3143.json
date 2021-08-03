@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3143",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3143/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3143/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3143/events",
+    "html_url": "https://github.com/spack/spack/pull/3143",
+    "id": 207601516,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2MTY2OTQ0",
+    "number": 3143,
+    "title": "parallel-netcdf: use spack_cc for sequential code instead of system gcc",
+    "user": {
+        "login": "zzzoom",
+        "id": 4043375,
+        "node_id": "MDQ6VXNlcjQwNDMzNzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4043375?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zzzoom",
+        "html_url": "https://github.com/zzzoom",
+        "followers_url": "https://api.github.com/users/zzzoom/followers",
+        "following_url": "https://api.github.com/users/zzzoom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zzzoom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zzzoom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zzzoom/subscriptions",
+        "organizations_url": "https://api.github.com/users/zzzoom/orgs",
+        "repos_url": "https://api.github.com/users/zzzoom/repos",
+        "events_url": "https://api.github.com/users/zzzoom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zzzoom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-02-14T18:44:48Z",
+    "updated_at": "2017-02-21T02:49:11Z",
+    "closed_at": "2017-02-21T02:19:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3143",
+        "html_url": "https://github.com/spack/spack/pull/3143",
+        "diff_url": "https://github.com/spack/spack/pull/3143.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3143.patch"
+    },
+    "body": "Parallel-NetCDF uses /usr/bin/gcc to compile some sequential code. This breaks the build when the system gcc is old (RHEL6) or not present.\r\nThis PR sets Parallel-NetCDF's compiler for sequential code to spack_cc. Works on intel@16.0.4.",
+    "performed_via_github_app": null
+}

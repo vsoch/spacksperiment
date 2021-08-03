@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1567",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1567/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1567/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1567/events",
+    "html_url": "https://github.com/spack/spack/pull/1567",
+    "id": 172250823,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODIwNjc0NDM=",
+    "number": 1567,
+    "title": "icebin: Added New Package",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-08-20T03:25:54Z",
+    "updated_at": "2017-11-21T06:05:39Z",
+    "closed_at": "2017-11-21T06:05:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1567",
+        "html_url": "https://github.com/spack/spack/pull/1567",
+        "diff_url": "https://github.com/spack/spack/pull/1567.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1567.patch"
+    },
+    "body": "```\nicebin: Added new package\n```\n- icebin = Regridding and coupling library for dynamic ice sheets and GCMs with elevation classes.\n- glint2 = Old version of icebin\n- ibmisc = Utility library used by icebin\n- pism = Dynamic ice mode that icebin currently works with.\n\nThis PR continues #1545 ; see there for code review.\n",
+    "performed_via_github_app": null
+}

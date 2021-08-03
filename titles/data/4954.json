@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4954",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4954/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4954/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4954/events",
+    "html_url": "https://github.com/spack/spack/pull/4954",
+    "id": 247475005,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzNzcyOTE3",
+    "number": 4954,
+    "title": "savanna depends on adios+sz",
+    "user": {
+        "login": "kshitij-v-mehta",
+        "id": 2341478,
+        "node_id": "MDQ6VXNlcjIzNDE0Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2341478?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kshitij-v-mehta",
+        "html_url": "https://github.com/kshitij-v-mehta",
+        "followers_url": "https://api.github.com/users/kshitij-v-mehta/followers",
+        "following_url": "https://api.github.com/users/kshitij-v-mehta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kshitij-v-mehta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kshitij-v-mehta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kshitij-v-mehta/subscriptions",
+        "organizations_url": "https://api.github.com/users/kshitij-v-mehta/orgs",
+        "repos_url": "https://api.github.com/users/kshitij-v-mehta/repos",
+        "events_url": "https://api.github.com/users/kshitij-v-mehta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kshitij-v-mehta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2017-08-02T18:07:42Z",
+    "updated_at": "2017-08-07T19:37:26Z",
+    "closed_at": "2017-08-07T19:37:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4954",
+        "html_url": "https://github.com/spack/spack/pull/4954",
+        "diff_url": "https://github.com/spack/spack/pull/4954.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4954.patch"
+    },
+    "body": "Explicitly adding variant sz to adios since it is no longer enabled by default in adios",
+    "performed_via_github_app": null
+}

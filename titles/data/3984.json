@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3984",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3984/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3984/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3984/events",
+    "html_url": "https://github.com/spack/spack/pull/3984",
+    "id": 224236050,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3NTU0MzM1",
+    "number": 3984,
+    "title": "Mark 1.64.0 unstable until +mpi+python fixed.",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-25T18:46:36Z",
+    "updated_at": "2017-04-25T20:45:55Z",
+    "closed_at": "2017-04-25T20:45:53Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3984",
+        "html_url": "https://github.com/spack/spack/pull/3984",
+        "diff_url": "https://github.com/spack/spack/pull/3984.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3984.patch"
+    },
+    "body": "This is a continuation of #3964. @svenevs @alalazo @davydden \r\n\r\n>  If anything, maybe one of you just issue the PR so it gets in there\r\n\r\nDone. We'll see if this PR fairs any better. Interestingly, I'm already seeing weird differences. Normally, when I push a PR to my repo, if I go to https://github.com/LLNL/spack or https://github.com/ajstewart/spack, GitHub will ask if I want to open a new PR. This time, it didn't. I had to go to my branches and manually create a PR. Maybe it's the commit message or branch name?",
+    "performed_via_github_app": null
+}

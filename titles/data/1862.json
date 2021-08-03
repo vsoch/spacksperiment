@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1862",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1862/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1862/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1862/events",
+    "html_url": "https://github.com/spack/spack/pull/1862",
+    "id": 179511024,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODY5NDI0NDA=",
+    "number": 1862,
+    "title": "spack graph improvements",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092211,
+            "node_id": "MDU6TGFiZWw0NTEwOTIyMTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/graph",
+            "name": "graph",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-09-27T14:34:31Z",
+    "updated_at": "2016-09-28T04:15:26Z",
+    "closed_at": "2016-09-28T04:10:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1862",
+        "html_url": "https://github.com/spack/spack/pull/1862",
+        "diff_url": "https://github.com/spack/spack/pull/1862.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1862.patch"
+    },
+    "body": "Fixes #1098.\n1. Distinguish between static (package) and dynamic (spec) graphs.\n   - `spack graph`: dynamic graphs include information from particular specs (instances of\n     packages) and can have multiple instances with hashes.\n   - `spack graph --static`: static graphs ignore conditions and multiple instances (hashes) and\n     plot raw dependencies among packages.\n2. Allow graphing all packages in the install DB with `spack graph --installed`\n   - useful for debugging.\n3. Can now specify dependency type to traverse with `spack graph`, e.g.:\n   - `spack graph --deptype build,link,run` (default)\n   - `spack graph --deptype build,run` or `spack graph --deptype nolink`\n   - etc.\n4. `spack graph` now concretizes specs by default (this was confusing to people).\n   - `spack graph --normalize` skips concretization for those who know what that means.\n5. Fix bug in left-collapsing graph nodes.\n6. update `graph_ascii` to handle deptypes, too.\n",
+    "performed_via_github_app": null
+}

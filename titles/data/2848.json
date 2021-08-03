@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2848",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2848/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2848/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2848/events",
+    "html_url": "https://github.com/spack/spack/pull/2848",
+    "id": 201420755,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAxOTU3OTg2",
+    "number": 2848,
+    "title": "Allow spack create to detect packages that need to run autoreconf",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-01-17T22:12:16Z",
+    "updated_at": "2017-01-18T01:42:46Z",
+    "closed_at": "2017-01-18T01:42:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2848",
+        "html_url": "https://github.com/spack/spack/pull/2848",
+        "diff_url": "https://github.com/spack/spack/pull/2848.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2848.patch"
+    },
+    "body": "Currently, when you run `spack create` with a URL for a tarball that uses the Autotools build system, it only detects `AutotoolsPackage` if a `configure` script is present. If the tarball does not contain a `configure` script, it cannot decide what build system it uses.\r\n\r\nThis PR adds detection for files like `configure.ac`, `configure.in`, and `Makefile.am`. If one of these files is present but `configure` is not, `spack create` now automatically adds the automake/autoconf/libtool/m4 dependencies and adds a default `autoreconf` method.",
+    "performed_via_github_app": null
+}

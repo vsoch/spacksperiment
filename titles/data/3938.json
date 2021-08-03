@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3938",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3938/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3938/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3938/events",
+    "html_url": "https://github.com/spack/spack/pull/3938",
+    "id": 223430104,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE3MDE5NDI2",
+    "number": 3938,
+    "title": "Hack to fix python dependency ranges",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-04-21T16:13:29Z",
+    "updated_at": "2017-04-22T22:31:53Z",
+    "closed_at": "2017-04-22T22:31:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3938",
+        "html_url": "https://github.com/spack/spack/pull/3938",
+        "diff_url": "https://github.com/spack/spack/pull/3938.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3938.patch"
+    },
+    "body": "@svenevs Can you see if this fixes the bug you uncovered in https://github.com/LLNL/spack/pull/2548#issuecomment-296227466?\r\n\r\n@tgamblin I know I've seen this bug before but I haven't quite put my finger on it yet. It seems like if one package says:\r\n```python\r\ndepends_on('python@:2.7.999')\r\n```\r\nand another says:\r\n```python\r\ndepends_on('python@2.7:')\r\n```\r\nfor some reason, concretization dies. Hopefully this will be fixed in the new concretizer.",
+    "performed_via_github_app": null
+}

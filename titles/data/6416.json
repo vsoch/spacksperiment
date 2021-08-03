@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6416",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6416/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6416/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6416/events",
+    "html_url": "https://github.com/spack/spack/pull/6416",
+    "id": 276203079,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU0MjU0NDg4",
+    "number": 6416,
+    "title": "add -d option for edit command",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-11-22T21:02:21Z",
+    "updated_at": "2017-12-12T00:57:00Z",
+    "closed_at": "2017-12-12T00:17:53Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6416",
+        "html_url": "https://github.com/spack/spack/pull/6416",
+        "diff_url": "https://github.com/spack/spack/pull/6416.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6416.patch"
+    },
+    "body": "-d, --docs option will edit doc files.\r\n\r\nAlso improves edit command suffix extrapolation for core files. Previously assumed all files are '*.py', which doesn't work or docs. Now checks filesystem for all files of that name, and will die gracefully if != 1.\r\n\r\nYou can also now specify a full name including suffix for internal files. \r\n\r\nNo change in behavior for package files.",
+    "performed_via_github_app": null
+}

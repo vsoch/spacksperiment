@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2624",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2624/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2624/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2624/events",
+    "html_url": "https://github.com/spack/spack/pull/2624",
+    "id": 196309572,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTg0OTM0NTM=",
+    "number": 2624,
+    "title": "Preliminary IcedTea Package.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 18,
+    "created_at": "2016-12-19T00:18:39Z",
+    "updated_at": "2017-08-05T17:46:51Z",
+    "closed_at": "2017-07-18T15:10:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2624",
+        "html_url": "https://github.com/spack/spack/pull/2624",
+        "diff_url": "https://github.com/spack/spack/pull/2624.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2624.patch"
+    },
+    "body": "@adamjstewart @davydden @citibeth: this is RedHat's IcedTea bootstrap system for OpenJDK.\r\n\r\nI am trying to focus on the core stuff so that we can get `0.10` out.  If @adamjstewart wants to look at this and #2622 then I would be most appreciative.",
+    "performed_via_github_app": null
+}

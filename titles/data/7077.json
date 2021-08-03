@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7077",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7077/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7077/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7077/events",
+    "html_url": "https://github.com/spack/spack/pull/7077",
+    "id": 291893834,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY1MzU4MDQ4",
+    "number": 7077,
+    "title": "find: add iterator mode",
+    "user": {
+        "login": "besnardjb",
+        "id": 632805,
+        "node_id": "MDQ6VXNlcjYzMjgwNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/632805?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/besnardjb",
+        "html_url": "https://github.com/besnardjb",
+        "followers_url": "https://api.github.com/users/besnardjb/followers",
+        "following_url": "https://api.github.com/users/besnardjb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/besnardjb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/besnardjb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/besnardjb/subscriptions",
+        "organizations_url": "https://api.github.com/users/besnardjb/orgs",
+        "repos_url": "https://api.github.com/users/besnardjb/repos",
+        "events_url": "https://api.github.com/users/besnardjb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/besnardjb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-01-26T12:57:28Z",
+    "updated_at": "2020-08-18T16:00:10Z",
+    "closed_at": "2020-08-18T16:00:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7077",
+        "html_url": "https://github.com/spack/spack/pull/7077",
+        "diff_url": "https://github.com/spack/spack/pull/7077.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7077.patch"
+    },
+    "body": "What\r\n-----\r\n\r\nI often iterate over packages version to quickly validate or try different versions of a given package. I've therefore extended the find options to provide me an iterator friendly output.\r\n\r\nTo do so, this pull requests proposes to add the \"-i\" option for \"--iterator\":\r\n\r\n```\r\n$ spack find -h\r\nusage: spack find [-h] [-s | -i | -p | -d] [-l] [-L] [-t TAGS] [-f]\r\n                  [--show-full-compiler] [-e | -E] [-u] [-m] [-v] [-M] [-N]\r\n                  ...\r\n\r\nlist and search installed packages\r\n\r\npositional arguments:\r\n  constraint            constraint to select a subset of installed packages\r\n\r\noptional arguments:\r\n  -h, --help            show this help message and exit\r\n  -s, --short           show only specs (default)\r\n  -i, --iterator        show only hashes for matching packages\r\n(...)\r\n```\r\n\r\n* I'm unsure of the option name (-i ?) \r\n* Is there is a place where to add corresponding tests.\r\n* Also the \"if\" to silent out the header and package count are a bit edgy, maybe it would be better combined with a \"quiet\" mode \"-q\" (and therefore another option) dedicated to removing them. This extra flag would be enabled for \"-i\". What do you think? There is also the fact that if you remove the \"header\" you need to display at least a hash to distinguish between the same version of a given package built with different compilers.\r\n\r\nThanks!\r\n\r\nBackground\r\n------------\r\n\r\nCurrently, spack has extra output with regular \"find\" due to the header:\r\n\r\n```\r\n$ for v in `spack find openmpi`; do echo \"$v\"; done\r\n--\r\nlinux-centos7-x86_64\r\n/\r\ngcc@4.8.5\r\n-----------------------------\r\nopenmpi@1.5.5\r\nopenmpi@1.6\r\nopenmpi@1.6.1\r\n(...)\r\nopenmpi@2.1.1\r\nopenmpi@2.1.2\r\nopenmpi@3.0.0\r\n```\r\nWith this small addition I can get :\r\n\r\n```\r\n$ for v in `spack find -i openmpi`; do echo \"$v\"; done\r\n/a6tugaf\r\n/z3act6v\r\n/g4bqb3i\r\n(...)\r\n/tnzuyeg\r\n/yb5rzih\r\n/4hctfjb\r\n```\r\n\r\nThis is how I leverage Spack's power to filter and test over versions:\r\n\r\n```\r\nfor v in `spack find -i openmpi@2 mpich@3`\r\ndo\r\n   spack unload openmpi\r\n   spack unload mpich\r\n   spack find -s $v\r\n   spack load $v\r\n   mpicc t.c\r\n   mpirun -np 2 ./a.out\r\ndone\r\n```\r\n\r\nSample output:\r\n\r\n```\r\n==> 1 installed packages.\r\n-- linux-centos7-x86_64 / gcc@4.8.5 -----------------------------\r\nmpich@3.0.4\r\nRank: 0/2\r\nRank: 1/2\r\n==> 1 installed packages.\r\n-- linux-centos7-x86_64 / gcc@4.8.5 -----------------------------\r\nmpich@3.1\r\nRank: 0/2\r\nRank: 1/2\r\n==> 1 installed packages.\r\n-- linux-centos7-x86_64 / gcc@4.8.5 -----------------------------\r\nmpich@3.1.1\r\nRank: 0/2\r\nRank: 1/2\r\n(...)\r\n==> 1 installed packages.\r\n-- linux-centos7-x86_64 / gcc@4.8.5 -----------------------------\r\nopenmpi@2.1.2\r\nRank: 0/2\r\nRank: 1/2\r\n```",
+    "performed_via_github_app": null
+}

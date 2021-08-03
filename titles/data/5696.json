@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5696",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5696/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5696/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5696/events",
+    "html_url": "https://github.com/spack/spack/pull/5696",
+    "id": 264709644,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2MDQyMTE2",
+    "number": 5696,
+    "title": "Update Sundials package",
+    "user": {
+        "login": "gardner48",
+        "id": 15018133,
+        "node_id": "MDQ6VXNlcjE1MDE4MTMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15018133?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gardner48",
+        "html_url": "https://github.com/gardner48",
+        "followers_url": "https://api.github.com/users/gardner48/followers",
+        "following_url": "https://api.github.com/users/gardner48/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gardner48/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gardner48/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gardner48/subscriptions",
+        "organizations_url": "https://api.github.com/users/gardner48/orgs",
+        "repos_url": "https://api.github.com/users/gardner48/repos",
+        "events_url": "https://api.github.com/users/gardner48/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gardner48/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-10-11T19:36:28Z",
+    "updated_at": "2017-10-14T03:13:11Z",
+    "closed_at": "2017-10-14T03:13:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5696",
+        "html_url": "https://github.com/spack/spack/pull/5696",
+        "diff_url": "https://github.com/spack/spack/pull/5696.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5696.patch"
+    },
+    "body": "Change to CMake subclass\r\nUpdate web addresses\r\nAdd 3.0.0-beta-2 version\r\nAdd new and missing Sundials configuration options\r\nAdd conflicts for some variants\r\nAdd xSDK configuration\r\nUpdate lists of example program Makefiles",
+    "performed_via_github_app": null
+}

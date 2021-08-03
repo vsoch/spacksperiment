@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4612",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4612/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4612/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4612/events",
+    "html_url": "https://github.com/spack/spack/pull/4612",
+    "id": 238726940,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI3NjA0ODY0",
+    "number": 4612,
+    "title": "Fix linux/cmake",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-06-27T03:19:43Z",
+    "updated_at": "2017-07-02T13:31:44Z",
+    "closed_at": "2017-07-02T13:31:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4612",
+        "html_url": "https://github.com/spack/spack/pull/4612",
+        "diff_url": "https://github.com/spack/spack/pull/4612.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4612.patch"
+    },
+    "body": "Module/FindDoxygen.cmake uses Windows based directory for file globbing that create issues on Linux.  I removed that code on Linux.",
+    "performed_via_github_app": null
+}

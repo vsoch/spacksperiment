@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6586",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6586/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6586/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6586/events",
+    "html_url": "https://github.com/spack/spack/pull/6586",
+    "id": 279707589,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU2Njk3MDM1",
+    "number": 6586,
+    "title": "dealii: update and fix boost dependency",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-12-06T10:50:04Z",
+    "updated_at": "2017-12-19T12:03:22Z",
+    "closed_at": "2017-12-08T09:37:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6586",
+        "html_url": "https://github.com/spack/spack/pull/6586",
+        "diff_url": "https://github.com/spack/spack/pull/6586.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6586.patch"
+    },
+    "body": "(i) blacklst 1.65.0 due to issues on Ubuntu with gcc 5.4.0\r\n(ii) add a patch for 1.65.1 to fix serialization\r\n(iii) simplify boost's depends_on()\r\n\r\np.s. i was wrong about 1.65.0 https://github.com/dealii/dealii/pull/5572#issuecomment-349295859",
+    "performed_via_github_app": null
+}

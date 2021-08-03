@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6075",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6075/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6075/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6075/events",
+    "html_url": "https://github.com/spack/spack/pull/6075",
+    "id": 270307513,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUwMDM4MTI0",
+    "number": 6075,
+    "title": "sundials+hypre depends on hypre",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-11-01T13:26:10Z",
+    "updated_at": "2017-11-02T14:13:50Z",
+    "closed_at": "2017-11-02T07:16:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6075",
+        "html_url": "https://github.com/spack/spack/pull/6075",
+        "diff_url": "https://github.com/spack/spack/pull/6075.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6075.patch"
+    },
+    "body": "### Before\r\n```\r\n$ spack spec sundials +hypre ^hypre@2.12.1\r\nInput spec\r\n--------------------------------\r\nsundials+hypre\r\n    ^hypre@2.12.1\r\n\r\nNormalized\r\n--------------------------------\r\n==> Error: sundials does not depend on hypre\r\n```\r\n\r\n### After\r\n\r\nWorks as expected.\r\n\r\nThis bug was reported by Julian Andrej over Slack. The problem is that previously, `sundials+hypre` didn't depend on `hypre`, `sundials+hypre+int64` and `sundials+hypre~int64` depended on `hypre`. Spack's concretizer isn't currently smart enough to realize that this represents the entire space of possibilities, and tries to decide whether or not the package actually depends on `hypre` before it makes a final decision as to the value of `+int64`. By specifying that `sundials+hypre` _always_ depends on `hypre`, we can get around this problem.",
+    "performed_via_github_app": null
+}

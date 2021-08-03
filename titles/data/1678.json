@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1678",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1678/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1678/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1678/events",
+    "html_url": "https://github.com/spack/spack/pull/1678",
+    "id": 174327162,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODM0OTE4OTA=",
+    "number": 1678,
+    "title": "Fix various documentation bugs",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 17,
+    "created_at": "2016-08-31T17:05:57Z",
+    "updated_at": "2016-10-06T17:53:05Z",
+    "closed_at": "2016-10-06T09:49:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1678",
+        "html_url": "https://github.com/spack/spack/pull/1678",
+        "diff_url": "https://github.com/spack/spack/pull/1678.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1678.patch"
+    },
+    "body": "Took a look through the docs after #1576 was merged to make sure I didn't break anything. Found a few more bugs to fix:\n- Grammar mistakes in Basic Usage\n- Broken link in Packaging Guide\n- Replaced `--force` and `--profile` with `-f` and `-p`\n  - I actually wanted all of them to be the long name, but Sphinx messes them up in the [Command Index](http://spack.readthedocs.io/en/latest/command_index.html). It's formatting the double dash as an en-dash because it doesn't keep the double backticks formatting.\n\n@citibeth @tgamblin \n",
+    "performed_via_github_app": null
+}

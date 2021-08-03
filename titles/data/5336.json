@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5336",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5336/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5336/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5336/events",
+    "html_url": "https://github.com/spack/spack/pull/5336",
+    "id": 256855966,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQwNDQ1NzA5",
+    "number": 5336,
+    "title": "Fix libsodium download url and add new version",
+    "user": {
+        "login": "pramodskumbhar",
+        "id": 27898197,
+        "node_id": "MDQ6VXNlcjI3ODk4MTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/27898197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodskumbhar",
+        "html_url": "https://github.com/pramodskumbhar",
+        "followers_url": "https://api.github.com/users/pramodskumbhar/followers",
+        "following_url": "https://api.github.com/users/pramodskumbhar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodskumbhar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodskumbhar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodskumbhar/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodskumbhar/orgs",
+        "repos_url": "https://api.github.com/users/pramodskumbhar/repos",
+        "events_url": "https://api.github.com/users/pramodskumbhar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodskumbhar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-09-11T22:02:32Z",
+    "updated_at": "2017-10-14T20:20:25Z",
+    "closed_at": "2017-09-14T07:52:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5336",
+        "html_url": "https://github.com/spack/spack/pull/5336",
+        "diff_url": "https://github.com/spack/spack/pull/5336.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5336.patch"
+    },
+    "body": "Previous versions get moved to `old` directory. Fix below issue: \r\n\r\n```\r\nvpn-254-048:zeroeq kumbhar$ spack install -v zeroeq\r\n==> cmake@3.8.2 : externally installed in /usr/local\r\n==> cmake@3.8.2 : already registered in DB\r\n==> Installing libsodium\r\n==> Fetching https://download.libsodium.org/libsodium/releases/libsodium-1.0.11.tar.gz\r\n\r\ncurl: (22) The requested URL returned error: 404 Not Found\r\n==> Fetching from https://download.libsodium.org/libsodium/releases/libsodium-1.0.11.tar.gz failed.\r\n==> Warning: Spack was unable to fetch url list due to a certificate verification problem. You can try running spack -k, which will not check SSL certificates. Use this at your own risk.\r\n==> Warning: Spack was unable to fetch url list due to a certificate verification problem. You can try running spack -k, which will not check SSL certificates. Use this at your own risk.\r\n==> Could not determine url from list_url.\r\n==> Error: FetchError: All fetchers failed for libsodium-1.0.11-shunkpm6nmcryfwsatnxyhbqdmhpx2lr\r\nFetchError: FetchError: All fetchers failed for libsodium-1.0.11-shunkpm6nmcryfwsatnxyhbqdmhpx2lr\r\n\r\n/Users/kumbhar/workarena/software/sources/spack/lib/spack/spack/package.py:957, in do_fetch:\r\n```",
+    "performed_via_github_app": null
+}

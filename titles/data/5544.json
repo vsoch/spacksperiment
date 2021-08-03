@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5544",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5544/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5544/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5544/events",
+    "html_url": "https://github.com/spack/spack/pull/5544",
+    "id": 261651799,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQzODk1NzQ1",
+    "number": 5544,
+    "title": "Use plain environment when expanding archives",
+    "user": {
+        "login": "dalg24",
+        "id": 296978,
+        "node_id": "MDQ6VXNlcjI5Njk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/296978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dalg24",
+        "html_url": "https://github.com/dalg24",
+        "followers_url": "https://api.github.com/users/dalg24/followers",
+        "following_url": "https://api.github.com/users/dalg24/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dalg24/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dalg24/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dalg24/subscriptions",
+        "organizations_url": "https://api.github.com/users/dalg24/orgs",
+        "repos_url": "https://api.github.com/users/dalg24/repos",
+        "events_url": "https://api.github.com/users/dalg24/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dalg24/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-09-29T14:00:37Z",
+    "updated_at": "2018-09-04T22:19:59Z",
+    "closed_at": "2018-09-04T22:19:59Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5544",
+        "html_url": "https://github.com/spack/spack/pull/5544",
+        "diff_url": "https://github.com/spack/spack/pull/5544.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5544.patch"
+    },
+    "body": "#3018 had been bugging me for a while.  In short, installing Boost with the Intel compiler would crash when attempting to expand the .tar.bz2 archive file.  But calling the tar command by hand would work fine.",
+    "performed_via_github_app": null
+}

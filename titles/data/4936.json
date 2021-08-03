@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4936",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4936/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4936/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4936/events",
+    "html_url": "https://github.com/spack/spack/pull/4936",
+    "id": 246787015,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzMjY2NzQ0",
+    "number": 4936,
+    "title": "Add a SConsPackage base class",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 657852675,
+            "node_id": "MDU6TGFiZWw2NTc4NTI2NzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/scons",
+            "name": "scons",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-07-31T15:01:20Z",
+    "updated_at": "2017-08-04T21:52:14Z",
+    "closed_at": "2017-08-04T21:52:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4936",
+        "html_url": "https://github.com/spack/spack/pull/4936",
+        "diff_url": "https://github.com/spack/spack/pull/4936.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4936.patch"
+    },
+    "body": "SCons as a build system is terribly non-uniform. It provides a common library for package developers to write installation scripts, but the installation scripts themselves can vary drastically. Some developers add subcommands like:\r\n```\r\n$ scons clean\r\n$ scons build\r\n$ scons test\r\n$ scons install\r\n```\r\nOthers have no subcommands. Some have configuration options that can be specified through variables on the command line. Others don't. By default, SCons builds all packages in a separate execution environment, and doesn't pass any environment variables from the user environment. Even changes to `PATH` are not propagated unless the package developer does so. This means that Spack's compiler wrappers aren't compatible with SCons in most cases. See #4927.",
+    "performed_via_github_app": null
+}

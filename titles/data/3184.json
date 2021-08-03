@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3184",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3184/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3184/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3184/events",
+    "html_url": "https://github.com/spack/spack/pull/3184",
+    "id": 208723939,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2OTA0NzE5",
+    "number": 3184,
+    "title": "Fix tab completion of directories and filenames",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-02-19T15:23:52Z",
+    "updated_at": "2017-03-24T22:10:33Z",
+    "closed_at": "2017-02-20T23:44:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3184",
+        "html_url": "https://github.com/spack/spack/pull/3184",
+        "diff_url": "https://github.com/spack/spack/pull/3184.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3184.patch"
+    },
+    "body": "`compgen` does not work the way I expected. `compgen -o filenames` doesn't list any results. If I use `compgen -o filenames -A file` or `compgen -o default`, it will list results, but directories will not have a `/` appended. The only way to get this working is to use `complete -o default`. This has the unfortunate side-effect of adding directories/filenames as possible values any time there are no other possible results, but I don't see a better way around this.\r\n\r\nP.S. I just noticed that `spack install []` will list all packages, but `spack install gcc []` will list no results (will now list filenames/directories). I wonder if I can fix this (in another PR).",
+    "performed_via_github_app": null
+}

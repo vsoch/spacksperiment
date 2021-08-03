@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2266",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2266/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2266/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2266/events",
+    "html_url": "https://github.com/spack/spack/pull/2266",
+    "id": 187702391,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTI1NzY1NDg=",
+    "number": 2266,
+    "title": "Fix compilation of Suitesparse with GCC when CUDA compilers are also installed",
+    "user": {
+        "login": "christianbaensch",
+        "id": 23312419,
+        "node_id": "MDQ6VXNlcjIzMzEyNDE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23312419?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/christianbaensch",
+        "html_url": "https://github.com/christianbaensch",
+        "followers_url": "https://api.github.com/users/christianbaensch/followers",
+        "following_url": "https://api.github.com/users/christianbaensch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/christianbaensch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/christianbaensch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/christianbaensch/subscriptions",
+        "organizations_url": "https://api.github.com/users/christianbaensch/orgs",
+        "repos_url": "https://api.github.com/users/christianbaensch/repos",
+        "events_url": "https://api.github.com/users/christianbaensch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/christianbaensch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-11-07T12:43:09Z",
+    "updated_at": "2016-11-09T15:37:40Z",
+    "closed_at": "2016-11-09T15:37:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2266",
+        "html_url": "https://github.com/spack/spack/pull/2266",
+        "diff_url": "https://github.com/spack/spack/pull/2266.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2266.patch"
+    },
+    "body": "Adding some lines to prevent from using any CUDA stuff, if NVIDIA CUDA Developement Kit was installed before.",
+    "performed_via_github_app": null
+}

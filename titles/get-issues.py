@@ -5,8 +5,11 @@ import time
 import requests
 import json
 
-token = os.environ.get('GITHUB_TOKEN')
-headers = {"Authentication": "token %s" % token, "Accept": "application/vnd.github.v3+json"}
+token = os.environ.get("GITHUB_TOKEN")
+headers = {
+    "Authentication": "token %s" % token,
+    "Accept": "application/vnd.github.v3+json",
+}
 
 # Get open and closed issues
 url = "https://api.github.com/repos/spack/spack/issues?filter=all&state=all&per_page=100&page="
@@ -30,14 +33,13 @@ while next_page:
     if response.status_code == 200:
         results = response.json()
         for issue in results:
-            outfile = os.path.join("data", str(issue['number']) + ".json")
+            outfile = os.path.join("data", str(issue["number"]) + ".json")
             if os.path.exists(outfile):
                 continue
-            with open(outfile, 'w') as fd:
+            with open(outfile, "w") as fd:
                 fd.writelines(json.dumps(issue, indent=4))
 
     if not results:
         next_page = None
         break
-    next_page +=1
-    
+    next_page += 1

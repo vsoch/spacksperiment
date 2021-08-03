@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2837",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2837/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2837/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2837/events",
+    "html_url": "https://github.com/spack/spack/pull/2837",
+    "id": 201124859,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAxNzYyNjE2",
+    "number": 2837,
+    "title": "Don't duplicate spack test in spack help",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-01-16T21:43:46Z",
+    "updated_at": "2017-01-16T22:56:38Z",
+    "closed_at": "2017-01-16T22:56:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2837",
+        "html_url": "https://github.com/spack/spack/pull/2837",
+        "diff_url": "https://github.com/spack/spack/pull/2837.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2837.patch"
+    },
+    "body": "If you run `spack help`, you'll notice that the `test` subcommand is duplicated:\r\n```\r\n$ spack help\r\n...\r\n    stage           Expand downloaded archive in preparation for install\r\n    test            A thin wrapper around the pytest command.\r\n    test            A thin wrapper around the pytest command.\r\n    uninstall       Remove an installed package\r\n...\r\n```\r\nThis PR fixes that. I believe this line was leftover from when `spack test` actually _was_ a thin wrapper around `pytest`, but since then we've added a dedicated `cmd/test.py` module. @alalazo Can you confirm?",
+    "performed_via_github_app": null
+}

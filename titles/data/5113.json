@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5113",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5113/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5113/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5113/events",
+    "html_url": "https://github.com/spack/spack/pull/5113",
+    "id": 250429608,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM1ODg1MzE3",
+    "number": 5113,
+    "title": "Improved error message for unsatisfiable specs",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-08-15T20:33:08Z",
+    "updated_at": "2017-08-17T06:26:19Z",
+    "closed_at": "2017-08-17T06:26:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5113",
+        "html_url": "https://github.com/spack/spack/pull/5113",
+        "diff_url": "https://github.com/spack/spack/pull/5113.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5113.patch"
+    },
+    "body": "Fixes #5066\r\n\r\nThis PR improves the error message for unsatisfiable specs by showing in tree format both the spec that cannot satisfy the constraint and the spec that asked for that constraint. After that follows a readable (?) error message.\r\n\r\n---\r\n\r\nThe new error message for the example in #5066 is:\r\n```hconsole\r\n$ spack spec  mfem@3.2~debug+examples+hypre+lapack~mpfr+mpi+netcdf~openmp+petsc+suite-sparse+sundials+superlu-dist~threadsafe %gcc\r\nInput spec\r\n--------------------------------\r\nmfem@3.2%gcc~debug+examples+hypre+lapack~mpfr+mpi+netcdf~openmp+petsc+suite-sparse+sundials+superlu-dist~threadsafe\r\n\r\nNormalized\r\n--------------------------------\r\nmfem@3.2%gcc~debug+examples+hypre+lapack~mpfr+mpi+netcdf~openmp+petsc+suite-sparse+sundials+superlu-dist~threadsafe\r\n    ^blas\r\n    ^cmake@2.8:\r\n    ^hdf5\r\n        ^zlib@1.2.5:\r\n    ^hypre@develop~internal-superlu\r\n        ^lapack\r\n        ^mpi\r\n    ^metis@5:\r\n    ^netcdf\r\n        ^m4\r\n    ^parmetis\r\n    ^petsc@develop\r\n        ^python@2.6:2.8\r\n            ^bzip2\r\n            ^ncurses\r\n                ^pkg-config\r\n            ^openssl\r\n            ^readline\r\n            ^sqlite\r\n        ^sowing\r\n    ^suite-sparse\r\n    ^sundials@2.7:+hypre\r\n    ^superlu-dist\r\n\r\nConcretized\r\n--------------------------------\r\n==> Error: An unsatisfiable version constraint has been detected for spec:\r\n\r\n    superlu-dist@5.1.3%gcc@4.8~int64 arch=linux-ubuntu14-x86_64 \r\n        ^metis@5.1.0%gcc@4.8~debug~gdb~int64~real64+shared arch=linux-ubuntu14-x86_64 \r\n            ^cmake@3.9.0%gcc@4.8~doc+ncurses+openssl+ownlibs~qt arch=linux-ubuntu14-x86_64 \r\n                ^ncurses@6.0%gcc@4.8~symlinks arch=linux-ubuntu14-x86_64 \r\n                    ^pkg-config@0.29.2%gcc@4.8+internal_glib arch=linux-ubuntu14-x86_64 \r\n                ^openssl@1.0.2k%gcc@4.8 arch=linux-ubuntu14-x86_64 \r\n                    ^zlib@1.2.11%gcc@4.8+pic+shared arch=linux-ubuntu14-x86_64 \r\n        ^openblas@0.2.20%gcc@4.8~openmp+pic+shared arch=linux-ubuntu14-x86_64 \r\n        ^openmpi@2.1.1%gcc@4.8~cuda fabrics= ~java schedulers= ~sqlite3~thread_multiple+vt arch=linux-ubuntu14-x86_64 \r\n            ^hwloc\r\n        ^parmetis@4.0.3%gcc@4.8~debug~gdb+shared arch=linux-ubuntu14-x86_64 \r\n\r\n\r\nwhile trying to concretize the partial spec:\r\n\r\n    petsc@develop%gcc@4.8+boost~complex~debug+double+hdf5+hypre~int64+metis+mpi~mumps+shared+superlu-dist~trilinos arch=linux-ubuntu14-x86_64 \r\n        ^hypre@develop%gcc@4.8~int64~internal-superlu+shared arch=linux-ubuntu14-x86_64 \r\n            ^openblas@0.2.20%gcc@4.8~openmp+pic+shared arch=linux-ubuntu14-x86_64 \r\n            ^openmpi@2.1.1%gcc@4.8~cuda fabrics= ~java schedulers= ~sqlite3~thread_multiple+vt arch=linux-ubuntu14-x86_64 \r\n                ^hwloc\r\n                    ^pkg-config@0.29.2%gcc@4.8+internal_glib arch=linux-ubuntu14-x86_64 \r\n        ^sowing@1.1.23-p1%gcc@4.8 arch=linux-ubuntu14-x86_64 \r\n\r\n\r\npetsc requires superlu-dist version develop, but spec asked for 5.1.3\r\n```",
+    "performed_via_github_app": null
+}

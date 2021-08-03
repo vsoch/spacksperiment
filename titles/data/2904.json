@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2904",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2904/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2904/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2904/events",
+    "html_url": "https://github.com/spack/spack/pull/2904",
+    "id": 202572128,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyNzQ0ODg4",
+    "number": 2904,
+    "title": "Simplify unit tests listed in Contribution Guide",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-01-23T15:52:53Z",
+    "updated_at": "2017-01-23T17:48:49Z",
+    "closed_at": "2017-01-23T17:48:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2904",
+        "html_url": "https://github.com/spack/spack/pull/2904",
+        "diff_url": "https://github.com/spack/spack/pull/2904.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2904.patch"
+    },
+    "body": "If you check out the [Contribution Guide](http://spack.readthedocs.io/en/latest/contribution_guide.html#unit-tests), you'll notice that more than a third of the guide is the output of a single command, `spack test --collect-only`. This PR switches to `spack test --list`, which only lists the highest level of unit tests and saves space. @alalazo Does this seem okay to you?",
+    "performed_via_github_app": null
+}

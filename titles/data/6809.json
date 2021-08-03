@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6809",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6809/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6809/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6809/events",
+    "html_url": "https://github.com/spack/spack/pull/6809",
+    "id": 285451758,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYwNzQyMDE3",
+    "number": 6809,
+    "title": "Generate coverage reports for all unit and build tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2018-01-02T15:05:38Z",
+    "updated_at": "2018-08-05T15:13:28Z",
+    "closed_at": "2018-08-05T04:18:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6809",
+        "html_url": "https://github.com/spack/spack/pull/6809",
+        "diff_url": "https://github.com/spack/spack/pull/6809.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6809.patch"
+    },
+    "body": "In #6774, I noticed something interesting. My unit tests were hitting a few lines of code, yet Codecov was complaining that they weren't being hit. I realized this was because the lines were only hit for Python 2.6, and we were only generating coverage reports for Python 2.7/3.6.\r\n\r\nI'm curious to see how many additional lines of coverage we would get by generating coverage reports for all unit and build tests, not just those for Python 2.7/3.6.",
+    "performed_via_github_app": null
+}

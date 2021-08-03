@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4347",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4347/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4347/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4347/events",
+    "html_url": "https://github.com/spack/spack/pull/4347",
+    "id": 231390065,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyNDc1NzY2",
+    "number": 4347,
+    "title": "Make sure py-entrypoints runs its unit tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-25T16:29:19Z",
+    "updated_at": "2017-05-30T19:57:57Z",
+    "closed_at": "2017-05-30T19:57:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4347",
+        "html_url": "https://github.com/spack/spack/pull/4347",
+        "diff_url": "https://github.com/spack/spack/pull/4347.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4347.patch"
+    },
+    "body": "See https://github.com/LLNL/spack/pull/4330#issuecomment-304054274. Thanks to @lee218llnl for discovering this bug.\r\n\r\nUnfortunately, the unit tests fail with the following error message:\r\n```\r\nImportError: No module named backports\r\n```\r\nis there another module we are missing? Is this related to #3757?",
+    "performed_via_github_app": null
+}

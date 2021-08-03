@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4970",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4970/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4970/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4970/events",
+    "html_url": "https://github.com/spack/spack/pull/4970",
+    "id": 247945718,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0MTIxNTM0",
+    "number": 4970,
+    "title": "Merged 'purge' command with 'clean' and deleted 'purge' ",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-08-04T09:03:49Z",
+    "updated_at": "2017-08-09T17:15:01Z",
+    "closed_at": "2017-08-09T17:02:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4970",
+        "html_url": "https://github.com/spack/spack/pull/4970",
+        "diff_url": "https://github.com/spack/spack/pull/4970.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4970.patch"
+    },
+    "body": "fixes #2942\r\n\r\n`spack purge` has been merged with `spack clean`. Documentation has been updated accordingly. The `clean` and `purge` behavior are not mutually exclusive, and they log brief information to `tty` while they go.",
+    "performed_via_github_app": null
+}

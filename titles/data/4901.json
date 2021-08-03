@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4901",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4901/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4901/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4901/events",
+    "html_url": "https://github.com/spack/spack/pull/4901",
+    "id": 245512178,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMyMzYyNTcz",
+    "number": 4901,
+    "title": "tmux should not set PKG_CONFIG_PATH",
+    "user": {
+        "login": "YtterbiJum",
+        "id": 61433,
+        "node_id": "MDQ6VXNlcjYxNDMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61433?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/YtterbiJum",
+        "html_url": "https://github.com/YtterbiJum",
+        "followers_url": "https://api.github.com/users/YtterbiJum/followers",
+        "following_url": "https://api.github.com/users/YtterbiJum/following{/other_user}",
+        "gists_url": "https://api.github.com/users/YtterbiJum/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/YtterbiJum/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/YtterbiJum/subscriptions",
+        "organizations_url": "https://api.github.com/users/YtterbiJum/orgs",
+        "repos_url": "https://api.github.com/users/YtterbiJum/repos",
+        "events_url": "https://api.github.com/users/YtterbiJum/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/YtterbiJum/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654871697,
+            "node_id": "MDU6TGFiZWw2NTQ4NzE2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-config",
+            "name": "pkg-config",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-07-25T19:38:04Z",
+    "updated_at": "2017-07-25T22:54:37Z",
+    "closed_at": "2017-07-25T22:08:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4901",
+        "html_url": "https://github.com/spack/spack/pull/4901",
+        "diff_url": "https://github.com/spack/spack/pull/4901.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4901.patch"
+    },
+    "body": "tmux should not set \"PKG_CONFIG_PATH=...\" in the call to configure() in package.py.\r\n\r\nThis overwrites the environment's PKG_CONFIG_PATH, which causes problems with the Cray compiler wrappers (cc, CC, and ftn).  The Cray compiler wrappers use pkg-config to find packages according to the modules loaded in the environment.  But it can't find these packages if the PKG_CONFIG_PATH is improperly set.\r\n\r\nFor example, after running `spack install -v tmux`, I was seeing errors like this:\r\n\r\n```\r\nconfigure:3021: checking for gcc\r\nconfigure:3048: result: /p/home/sbateman/spack/lib/spack/env/gcc/gcc\r\nconfigure:3277: checking for C compiler version\r\nconfigure:3286: /p/home/sbateman/spack/lib/spack/env/gcc/gcc --version >&5\r\npkg-config error:\r\nPackage AtpSigHandler was not found in the pkg-config search path.\r\nPerhaps you should add the directory containing `AtpSigHandler.pc'\r\nto the PKG_CONFIG_PATH environment variable\r\nNo package 'AtpSigHandler' found\r\nconfigure:3297: $? = 1\r\n```\r\n\r\nThis pull request fixes the problem by removing the \"PKG_CONFIG_PATH=...\" argument from the call to configure().  `spack install -v tmux` seems to correctly find the libevent and ncurses libraries anyway.",
+    "performed_via_github_app": null
+}

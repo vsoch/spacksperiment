@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6719",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6719/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6719/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6719/events",
+    "html_url": "https://github.com/spack/spack/pull/6719",
+    "id": 283061626,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU5MDQ4MTYw",
+    "number": 6719,
+    "title": "METIS : Add empty compiler flags for METIS build to use spack flags",
+    "user": {
+        "login": "junkudo",
+        "id": 1308006,
+        "node_id": "MDQ6VXNlcjEzMDgwMDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1308006?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/junkudo",
+        "html_url": "https://github.com/junkudo",
+        "followers_url": "https://api.github.com/users/junkudo/followers",
+        "following_url": "https://api.github.com/users/junkudo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/junkudo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/junkudo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/junkudo/subscriptions",
+        "organizations_url": "https://api.github.com/users/junkudo/orgs",
+        "repos_url": "https://api.github.com/users/junkudo/repos",
+        "events_url": "https://api.github.com/users/junkudo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/junkudo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-12-19T00:01:35Z",
+    "updated_at": "2020-03-27T10:00:40Z",
+    "closed_at": "2020-03-27T10:00:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6719",
+        "html_url": "https://github.com/spack/spack/pull/6719",
+        "diff_url": "https://github.com/spack/spack/pull/6719.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6719.patch"
+    },
+    "body": "This commit changes the METIS package file to pass in default empty\r\ncompiler flags to prevent METIS from using default compiler flags\r\nthat can override spack provided flags.",
+    "performed_via_github_app": null
+}

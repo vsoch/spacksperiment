@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6327",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6327/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6327/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6327/events",
+    "html_url": "https://github.com/spack/spack/pull/6327",
+    "id": 274261606,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUyODUzMjg4",
+    "number": 6327,
+    "title": "Ordered compiler names",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-11-15T18:39:50Z",
+    "updated_at": "2020-08-19T22:50:35Z",
+    "closed_at": "2020-07-09T17:14:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6327",
+        "html_url": "https://github.com/spack/spack/pull/6327",
+        "diff_url": "https://github.com/spack/spack/pull/6327.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6327.patch"
+    },
+    "body": "Fixes #518 \r\n\r\nSummary:\r\nPreviously, when there were multiple names for a compiler, Spack chose the name that occurs first lexicographically as it searches the directory. This caused problems for the PGI compiler, for which we should choose `pgfortran` when available over `pgf77` and `pgf90`.\r\n\r\n@adamjstewart proposed in #518 that a reasonable solution would be to choose compilers in the order they appear in the compiler_names list in Spack. This allows us to set priorities for compiler names using the compiler subclasses in Spack.\r\n\r\nThis PR implements that solution, and adds a test for it. Also adds a test to ensure Spack chooses the first compiler of a given version in the paths provided to `spack compiler add`.",
+    "performed_via_github_app": null
+}

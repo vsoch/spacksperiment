@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6254/events",
+    "html_url": "https://github.com/spack/spack/pull/6254",
+    "id": 273024923,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTUxOTc3Mjg3",
+    "number": 6254,
+    "title": "Fixed mfem mpi build issue.",
+    "user": {
+        "login": "acfisher",
+        "id": 14239414,
+        "node_id": "MDQ6VXNlcjE0MjM5NDE0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14239414?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/acfisher",
+        "html_url": "https://github.com/acfisher",
+        "followers_url": "https://api.github.com/users/acfisher/followers",
+        "following_url": "https://api.github.com/users/acfisher/following{/other_user}",
+        "gists_url": "https://api.github.com/users/acfisher/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/acfisher/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/acfisher/subscriptions",
+        "organizations_url": "https://api.github.com/users/acfisher/orgs",
+        "repos_url": "https://api.github.com/users/acfisher/repos",
+        "events_url": "https://api.github.com/users/acfisher/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/acfisher/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-11-10T18:48:30Z",
+    "updated_at": "2017-11-13T07:18:58Z",
+    "closed_at": "2017-11-11T02:49:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6254",
+        "html_url": "https://github.com/spack/spack/pull/6254",
+        "diff_url": "https://github.com/spack/spack/pull/6254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6254.patch"
+    },
+    "body": "A fix for some MFEM builds with MPI.",
+    "performed_via_github_app": null
+}

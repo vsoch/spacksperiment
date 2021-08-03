@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6561",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6561/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6561/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6561/events",
+    "html_url": "https://github.com/spack/spack/pull/6561",
+    "id": 278988590,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU2MTkxNTE1",
+    "number": 6561,
+    "title": "ADIOS 1.13.0: Newer SZ Versions",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-12-04T13:03:55Z",
+    "updated_at": "2017-12-05T13:24:50Z",
+    "closed_at": "2017-12-05T11:50:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6561",
+        "html_url": "https://github.com/spack/spack/pull/6561",
+        "diff_url": "https://github.com/spack/spack/pull/6561.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6561.patch"
+    },
+    "body": "The latest release of ADIOS needs a [newer version of SZ](https://github.com/ornladios/ADIOS/issues/159#issuecomment-348942954) due to an upstream library naming change. Follow-up to #6539",
+    "performed_via_github_app": null
+}

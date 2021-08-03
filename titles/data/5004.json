@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5004",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5004/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5004/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5004/events",
+    "html_url": "https://github.com/spack/spack/pull/5004",
+    "id": 248475430,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0NDg1NDc0",
+    "number": 5004,
+    "title": "Fix Scalasca build error",
+    "user": {
+        "login": "pramodskumbhar",
+        "id": 27898197,
+        "node_id": "MDQ6VXNlcjI3ODk4MTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/27898197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodskumbhar",
+        "html_url": "https://github.com/pramodskumbhar",
+        "followers_url": "https://api.github.com/users/pramodskumbhar/followers",
+        "following_url": "https://api.github.com/users/pramodskumbhar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodskumbhar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodskumbhar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodskumbhar/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodskumbhar/orgs",
+        "repos_url": "https://api.github.com/users/pramodskumbhar/repos",
+        "events_url": "https://api.github.com/users/pramodskumbhar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodskumbhar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-08-07T17:15:15Z",
+    "updated_at": "2017-08-08T06:26:30Z",
+    "closed_at": "2017-08-07T19:56:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5004",
+        "html_url": "https://github.com/spack/spack/pull/5004",
+        "diff_url": "https://github.com/spack/spack/pull/5004.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5004.patch"
+    },
+    "body": "    Build system \"usually\" autodetects mpi library but this is\r\n    not the case on many platforms. Provide mpi library name/version\r\n    as part for configure args.\r\n\r\nWhile building on local ubuntu system (where mpich is installed) I got:\r\n\r\n```\r\nchecking for mpiicc... no\r\nchecking for mpcc... no\r\nchecking for SGI MPT... no\r\nchecking for mpicc... no\r\nconfigure: error: mpicc found but cannot determine MPI library. Select MPI using --with-mpi=bullxmpi|hp|lam|mpibull2|mpich|mpich2|mpich3|openmpi|platform|scali\r\n==> Error: ProcessError: Command exited with status 1:\r\n    '/home/guest/workarena/softwares/sources/spack/var/spack/stage/scalasca-2.3.1-plaa7ebtpniat7izgeekrrs72623ww4u/scalasca-2.3.1/configure' '--prefix=/home/guest/workarena/softwares/sources/spack/opt/spack/linux-ubuntu16-x86_64/gcc-5.4.1/scalasca-2.3.1-plaa7ebtpniat7izgeekrrs72623ww4u' '--enable-shared' '--with-cube=/home/guest/workarena/softwares/sources/spack/opt/spack/linux-ubuntu16-x86_64/gcc-5.4.1/cube-4.3.5-7722qcaoslo2uouxxzuu7lefmsqgs\r\n```\r\n\r\nthere are other mpi options but `mpich3` and `openmpi` is most common (for basic users at least).\r\n",
+    "performed_via_github_app": null
+}

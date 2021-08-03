@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1770",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1770/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1770/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1770/events",
+    "html_url": "https://github.com/spack/spack/pull/1770",
+    "id": 176803861,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODUxNjAzMDE=",
+    "number": 1770,
+    "title": "[Prototype] Allow incompatible specs if they are 'build' dependencies",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 412006552,
+            "node_id": "MDU6TGFiZWw0MTIwMDY1NTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hash-change",
+            "name": "hash-change",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2016-09-14T03:12:24Z",
+    "updated_at": "2016-12-31T15:35:31Z",
+    "closed_at": "2016-12-31T15:35:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1770",
+        "html_url": "https://github.com/spack/spack/pull/1770",
+        "diff_url": "https://github.com/spack/spack/pull/1770.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1770.patch"
+    },
+    "body": "Fixes #1768 \n\n@tgamblin \nThis PR is EXPERIMENTAL.  Review from a core Spack developer would be appreaciated.  Until then, I will run with it and see if it does anything bad.  My guess is at the very least, it changes all the hash codes.\n",
+    "performed_via_github_app": null
+}

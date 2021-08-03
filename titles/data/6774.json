@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6774",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6774/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6774/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6774/events",
+    "html_url": "https://github.com/spack/spack/pull/6774",
+    "id": 284823975,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYwMzIyMDMw",
+    "number": 6774,
+    "title": "Add unit tests for spack versions command",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-12-28T01:35:29Z",
+    "updated_at": "2018-01-10T16:04:51Z",
+    "closed_at": "2018-01-10T16:04:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6774",
+        "html_url": "https://github.com/spack/spack/pull/6774",
+        "diff_url": "https://github.com/spack/spack/pull/6774.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6774.patch"
+    },
+    "body": "Fixes #6690.\r\n\r\nThis is an attempt to get better coverage of the `spack versions` command.\r\n\r\nNot sure how people feel about tests that require internet access. Even with internet access, these tests sometimes get results and sometimes don't, so I was hesitant to require a certain output for any of these packages. This is more of a \"I can run this command and it doesn't crash\" test than a \"spack versions is actually working correctly\" test.",
+    "performed_via_github_app": null
+}

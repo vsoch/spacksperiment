@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1528",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1528/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1528/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1528/events",
+    "html_url": "https://github.com/spack/spack/pull/1528",
+    "id": 171296601,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODEzOTk4Nzc=",
+    "number": 1528,
+    "title": "Adding latest version of fenics",
+    "user": {
+        "login": "nrichart",
+        "id": 5098572,
+        "node_id": "MDQ6VXNlcjUwOTg1NzI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5098572?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nrichart",
+        "html_url": "https://github.com/nrichart",
+        "followers_url": "https://api.github.com/users/nrichart/followers",
+        "following_url": "https://api.github.com/users/nrichart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nrichart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nrichart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nrichart/subscriptions",
+        "organizations_url": "https://api.github.com/users/nrichart/orgs",
+        "repos_url": "https://api.github.com/users/nrichart/repos",
+        "events_url": "https://api.github.com/users/nrichart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nrichart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-08-16T00:55:12Z",
+    "updated_at": "2016-10-03T01:51:35Z",
+    "closed_at": "2016-10-03T01:51:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1528",
+        "html_url": "https://github.com/spack/spack/pull/1528",
+        "diff_url": "https://github.com/spack/spack/pull/1528.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1528.patch"
+    },
+    "body": "This pr adds the version 2016.1.0 of fenics, add specifies the deptypes\n\nI had a build that did not configure for trilinos so I also added explicitly the path to hdf5\nAnd in fenics, cmake tries to find by default hdf5_cxx which is not used and might not be installed\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5543",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5543/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5543/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5543/events",
+    "html_url": "https://github.com/spack/spack/pull/5543",
+    "id": 261556415,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQzODI0OTU1",
+    "number": 5543,
+    "title": "modules: specialized configure_options for external packages",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-09-29T07:38:50Z",
+    "updated_at": "2017-09-29T16:23:52Z",
+    "closed_at": "2017-09-29T16:23:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5543",
+        "html_url": "https://github.com/spack/spack/pull/5543",
+        "diff_url": "https://github.com/spack/spack/pull/5543.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5543.patch"
+    },
+    "body": "closes #5473\r\n\r\nPrior to this PR we were not exiting early for external packages, which caused the `configure_options` property of the contexts to fail with e.g. a key error because the DAG gets truncated for them. More importantly Spack configure options don't make any sense for externals.\r\n\r\nNow we exit early, and leave a message in the module file clarifying that this package has been installed outside of Spack.",
+    "performed_via_github_app": null
+}

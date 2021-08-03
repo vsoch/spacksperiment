@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2993",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2993/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2993/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2993/events",
+    "html_url": "https://github.com/spack/spack/pull/2993",
+    "id": 204721061,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA0MjMzNDYx",
+    "number": 2993,
+    "title": "Different versions of cmake need diff vers of openssl",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-02-01T22:11:32Z",
+    "updated_at": "2017-02-03T22:35:16Z",
+    "closed_at": "2017-02-03T22:35:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2993",
+        "html_url": "https://github.com/spack/spack/pull/2993",
+        "diff_url": "https://github.com/spack/spack/pull/2993.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2993.patch"
+    },
+    "body": "See Issue [2990](https://github.com/LLNL/spack/issues/2990) for background.\r\n\r\nVersions of cmake through 3.6.9 seem to need OpenSSL up to 1.0.99.  Later\r\nversions can use the current release (thanks to @citibeth for\r\n[digging up details](https://cmake.org/pipermail/cmake/2016-November/064631.html)).\r\n\r\n@davydden suggested this change.\r\n\r\nWithout it I *am not* able to build `cmake@3.6.1` on CentOS 7 and I *am*\r\nable to build `cmake@3.7.2`.\r\n\r\nWith this change I am able to build both `cmake@3.6.1` and `cmake@3.7.2`\r\non CentOS 7.\r\n\r\nCloses #2990.",
+    "performed_via_github_app": null
+}

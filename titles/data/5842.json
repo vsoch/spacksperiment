@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5842",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5842/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5842/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5842/events",
+    "html_url": "https://github.com/spack/spack/pull/5842",
+    "id": 267107621,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ3NzQ5OTEz",
+    "number": 5842,
+    "title": "travis: skip unit and build tests for package-only PRs",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2017-10-20T08:57:33Z",
+    "updated_at": "2019-12-25T08:58:00Z",
+    "closed_at": "2019-12-25T08:06:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5842",
+        "html_url": "https://github.com/spack/spack/pull/5842",
+        "diff_url": "https://github.com/spack/spack/pull/5842.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5842.patch"
+    },
+    "body": "#### TLDR\r\n\r\nWith this PR all the branches whose name starts with `packages` will skip unit tests and build tests, on the promise that there are no modifications to core files. This promise is checked by an additional test that is run after flake8 and documentation.\r\n\r\nDocumentation on the new Travis features [here](https://blog.travis-ci.com/2017-09-12-build-stages-order-and-conditions).\r\n\r\n#### Example\r\n\r\n~You can check that Travis in this PR run all the tests as it did before. In #5840 the modifications are basically the same but the branch is named `packages/ldc_and_faster_ci`. The resulting CI is [here](https://travis-ci.org/LLNL/spack/builds/290369213?utm_source=github_status&utm_medium=notification) and it fails as expected.~\r\n\r\ncloses #5180\r\ncloses #5822\r\ncloses #5840 \r\n\r\n-----\r\n\r\nFor #5822: I started with the idea of fixing that issue and skipping unit + build tests. I ended up modifying part of core, hence the current status. If the 2 lines change in `ldc` + `ldc-bootstrap` bother people I can extract them.",
+    "performed_via_github_app": null
+}

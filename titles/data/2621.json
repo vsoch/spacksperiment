@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2621",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2621/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2621/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2621/events",
+    "html_url": "https://github.com/spack/spack/pull/2621",
+    "id": 196295638,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTg0ODUyNDA=",
+    "number": 2621,
+    "title": "Remove JDK due to legal problems with Oracle.",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2016-12-18T19:54:54Z",
+    "updated_at": "2017-01-05T20:29:20Z",
+    "closed_at": "2017-01-05T20:29:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2621",
+        "html_url": "https://github.com/spack/spack/pull/2621",
+        "diff_url": "https://github.com/spack/spack/pull/2621.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2621.patch"
+    },
+    "body": "@tgamblin\r\n\r\nThe Oracle JDK is surrounded by murky legal issues, and Oracle is now suing users for licensing fees.  The current advice is that potential users should seek advice from their legal departments before downloading or installing Oracle JDK.  Ignoring this advice could be costly for a typical HPC center, with thousands of nodes in its parallel cluster.  Spack (LLNL) could be sued as well.\r\n\r\nhttp://www.theregister.co.uk/2016/12/16/oracle_targets_java_users_non_compliance/\r\n\r\nThe safest action for Spack would be to remove JDK from its repository (this PR).  I would recommend we do that immediately, pending an opinion from LLNL legal department.  We should then consider merging #1298.  Removing legal liability should take precedence over getting the perfect PR here (which can be done later).\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6563",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6563/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6563/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6563/events",
+    "html_url": "https://github.com/spack/spack/pull/6563",
+    "id": 279033672,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU2MjI0NzI4",
+    "number": 6563,
+    "title": "libpng: CPPFLAGS for -I",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-12-04T15:21:59Z",
+    "updated_at": "2017-12-05T09:07:17Z",
+    "closed_at": "2017-12-04T22:29:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6563",
+        "html_url": "https://github.com/spack/spack/pull/6563",
+        "diff_url": "https://github.com/spack/spack/pull/6563.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6563.patch"
+    },
+    "body": "Recent versions of `libpng` (e.g. 1.6.34) warn/abort that includes for `zlib` need to be passed properly via `CPPFLAGS`. This fixes it.\r\n\r\nThis was already pointed out in the [original post](https://sourceforge.net/p/libpng/bugs/210/#33f1) also linked in the package.\r\n\r\nFollow-up to #5656 and #5581",
+    "performed_via_github_app": null
+}

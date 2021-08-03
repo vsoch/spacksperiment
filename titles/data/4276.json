@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4276",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4276/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4276/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4276/events",
+    "html_url": "https://github.com/spack/spack/pull/4276",
+    "id": 229414179,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxMTAwMTc5",
+    "number": 4276,
+    "title": "Better error message for missing modulecmd",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-05-17T16:28:03Z",
+    "updated_at": "2017-06-09T23:01:36Z",
+    "closed_at": "2017-05-18T01:53:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4276",
+        "html_url": "https://github.com/spack/spack/pull/4276",
+        "diff_url": "https://github.com/spack/spack/pull/4276.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4276.patch"
+    },
+    "body": "Closes #4249. I don't know of a way to allow Spack to load modules without `modulecmd`, but this PR can at least make the error message more clear.\r\n\r\n### Before\r\n```\r\n==> Error: AttributeError: 'NoneType' object has no attribute 'add_default_arg'\r\n```\r\n\r\n### After\r\n```\r\n==> Error: spack requires modulecmd.  Make sure it is in your path.\r\n```",
+    "performed_via_github_app": null
+}

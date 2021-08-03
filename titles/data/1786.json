@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1786",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1786/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1786/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1786/events",
+    "html_url": "https://github.com/spack/spack/pull/1786",
+    "id": 177334808,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODU1MTIwMjQ=",
+    "number": 1786,
+    "title": "[WIP] Make `insecure` option work with curl AND git.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2016-09-16T02:46:42Z",
+    "updated_at": "2016-10-12T06:13:40Z",
+    "closed_at": "2016-10-12T06:13:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1786",
+        "html_url": "https://github.com/spack/spack/pull/1786",
+        "diff_url": "https://github.com/spack/spack/pull/1786.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1786.patch"
+    },
+    "body": "Fixes #1779. \n\n@eschnett: I haven't tested this extensively yet but feel free to try it out.  This makes `-k` work with `git`.\n",
+    "performed_via_github_app": null
+}

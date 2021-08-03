@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4804",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4804/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4804/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4804/events",
+    "html_url": "https://github.com/spack/spack/pull/4804",
+    "id": 243738439,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMxMTA0MDQx",
+    "number": 4804,
+    "title": "Add a new package for IcedTea",
+    "user": {
+        "login": "snehring",
+        "id": 7978778,
+        "node_id": "MDQ6VXNlcjc5Nzg3Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7978778?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/snehring",
+        "html_url": "https://github.com/snehring",
+        "followers_url": "https://api.github.com/users/snehring/followers",
+        "following_url": "https://api.github.com/users/snehring/following{/other_user}",
+        "gists_url": "https://api.github.com/users/snehring/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/snehring/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/snehring/subscriptions",
+        "organizations_url": "https://api.github.com/users/snehring/orgs",
+        "repos_url": "https://api.github.com/users/snehring/repos",
+        "events_url": "https://api.github.com/users/snehring/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/snehring/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-07-18T14:35:28Z",
+    "updated_at": "2017-08-10T18:17:49Z",
+    "closed_at": "2017-08-05T19:53:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4804",
+        "html_url": "https://github.com/spack/spack/pull/4804",
+        "diff_url": "https://github.com/spack/spack/pull/4804.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4804.patch"
+    },
+    "body": "This is based heavily on #2624 and adds the alsa-lib and cups dependencies, if you'd like those separated into their own pull requests let me know.\r\n\r\nThis requires an existing icedtea or openjdk environment to compile. There's supposedly a way to accomplish this using ecj, but given that that's not included with gcc anymore it didn't seem like the best road to go down. ",
+    "performed_via_github_app": null
+}

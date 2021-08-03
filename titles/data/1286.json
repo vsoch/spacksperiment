@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1286",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1286/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1286/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1286/events",
+    "html_url": "https://github.com/spack/spack/issues/1286",
+    "id": 166199052,
+    "node_id": "MDU6SXNzdWUxNjYxOTkwNTI=",
+    "number": 1286,
+    "title": "[proposal] Make jpeg a virtual dependency",
+    "user": {
+        "login": "mwilliammyers",
+        "id": 2526129,
+        "node_id": "MDQ6VXNlcjI1MjYxMjk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2526129?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwilliammyers",
+        "html_url": "https://github.com/mwilliammyers",
+        "followers_url": "https://api.github.com/users/mwilliammyers/followers",
+        "following_url": "https://api.github.com/users/mwilliammyers/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwilliammyers/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwilliammyers/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwilliammyers/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwilliammyers/orgs",
+        "repos_url": "https://api.github.com/users/mwilliammyers/repos",
+        "events_url": "https://api.github.com/users/mwilliammyers/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwilliammyers/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2016-07-18T21:34:31Z",
+    "updated_at": "2017-04-12T21:48:25Z",
+    "closed_at": "2017-04-12T21:48:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "How does everyone feel about me making jpeg a virtual dependency that is provided by:\n- libjpeg\n- ipp\n- libjpeg-turbo\n\nAm I missing any?\n\nI came across this while I was revamping the opencv package in #1234 and felt like it would be handy there...\n",
+    "performed_via_github_app": null
+}

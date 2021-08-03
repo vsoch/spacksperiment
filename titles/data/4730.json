@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4730",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4730/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4730/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4730/events",
+    "html_url": "https://github.com/spack/spack/pull/4730",
+    "id": 242188298,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMwMDA5MTc3",
+    "number": 4730,
+    "title": "Update ROSE package to v0.9.9.0",
+    "user": {
+        "login": "justintoo",
+        "id": 753192,
+        "node_id": "MDQ6VXNlcjc1MzE5Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/753192?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/justintoo",
+        "html_url": "https://github.com/justintoo",
+        "followers_url": "https://api.github.com/users/justintoo/followers",
+        "following_url": "https://api.github.com/users/justintoo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/justintoo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/justintoo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/justintoo/subscriptions",
+        "organizations_url": "https://api.github.com/users/justintoo/orgs",
+        "repos_url": "https://api.github.com/users/justintoo/repos",
+        "events_url": "https://api.github.com/users/justintoo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/justintoo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-07-11T21:24:43Z",
+    "updated_at": "2017-09-06T23:55:11Z",
+    "closed_at": "2017-09-06T23:55:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4730",
+        "html_url": "https://github.com/spack/spack/pull/4730",
+        "diff_url": "https://github.com/spack/spack/pull/4730.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4730.patch"
+    },
+    "body": "@tgamblin I've tested this PR. However, I would like to add a `make install -C tools/`. How can I accomplish this while also running `make install-core` from the top-level? (In other words, two targets in different directories.)",
+    "performed_via_github_app": null
+}

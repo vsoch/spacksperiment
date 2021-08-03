@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2075",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2075/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2075/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2075/events",
+    "html_url": "https://github.com/spack/spack/pull/2075",
+    "id": 184593891,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTA0NjEyOTY=",
+    "number": 2075,
+    "title": "Add Package : OpenSceneGraph",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-10-21T23:58:46Z",
+    "updated_at": "2016-10-22T22:14:29Z",
+    "closed_at": "2016-10-22T22:14:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2075",
+        "html_url": "https://github.com/spack/spack/pull/2075",
+        "diff_url": "https://github.com/spack/spack/pull/2075.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2075.patch"
+    },
+    "body": "The changes in this pull request add the `openscenegraph` package to Spack, which is a high performance 3D graphics toolkit that's used in a number of scientific visualization tools. Please let me know if there are any problems with this new package and I'll try to fix them as soon as I can!\n",
+    "performed_via_github_app": null
+}

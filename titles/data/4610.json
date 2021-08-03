@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4610",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4610/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4610/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4610/events",
+    "html_url": "https://github.com/spack/spack/issues/4610",
+    "id": 238701956,
+    "node_id": "MDU6SXNzdWUyMzg3MDE5NTY=",
+    "number": 4610,
+    "title": "Changing flags causes dependencies to be re-installed",
+    "user": {
+        "login": "EmreAtes",
+        "id": 15252235,
+        "node_id": "MDQ6VXNlcjE1MjUyMjM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15252235?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/EmreAtes",
+        "html_url": "https://github.com/EmreAtes",
+        "followers_url": "https://api.github.com/users/EmreAtes/followers",
+        "following_url": "https://api.github.com/users/EmreAtes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/EmreAtes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/EmreAtes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/EmreAtes/subscriptions",
+        "organizations_url": "https://api.github.com/users/EmreAtes/orgs",
+        "repos_url": "https://api.github.com/users/EmreAtes/repos",
+        "events_url": "https://api.github.com/users/EmreAtes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/EmreAtes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-26T23:59:18Z",
+    "updated_at": "2017-06-27T18:02:36Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "When I install a package e.g. `spack install gromacs@5.1.4%cce@8.5.6`, and then I try to install the same package with a modified flag, e.g. `spack install gromacs@5.1.4%cce@8.5.6 cppflags=-O1`, spack tries to compile and install all of the dependencies for gromacs again.\r\n\r\nIs this the desired behavior? I feel like the dependencies can be kept as they are, and only the gromacs installation can be modified to use the extra flag.",
+    "performed_via_github_app": null
+}

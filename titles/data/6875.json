@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6875",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6875/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6875/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6875/events",
+    "html_url": "https://github.com/spack/spack/pull/6875",
+    "id": 287203266,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYxOTU2MzQ4",
+    "number": 6875,
+    "title": "tbl2asn: Create new package",
+    "user": {
+        "login": "erimar77",
+        "id": 6336162,
+        "node_id": "MDQ6VXNlcjYzMzYxNjI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6336162?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/erimar77",
+        "html_url": "https://github.com/erimar77",
+        "followers_url": "https://api.github.com/users/erimar77/followers",
+        "following_url": "https://api.github.com/users/erimar77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/erimar77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/erimar77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/erimar77/subscriptions",
+        "organizations_url": "https://api.github.com/users/erimar77/orgs",
+        "repos_url": "https://api.github.com/users/erimar77/repos",
+        "events_url": "https://api.github.com/users/erimar77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/erimar77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1230290682,
+            "node_id": "MDU6TGFiZWwxMjMwMjkwNjgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/blocked",
+            "name": "blocked",
+            "color": "b611f7",
+            "default": false,
+            "description": "Things currently blocked by other PRs or issues"
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-01-09T19:30:29Z",
+    "updated_at": "2021-02-19T08:48:14Z",
+    "closed_at": "2021-02-19T08:48:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6875",
+        "html_url": "https://github.com/spack/spack/pull/6875",
+        "diff_url": "https://github.com/spack/spack/pull/6875.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6875.patch"
+    },
+    "body": "Requesting feedback/improvements/help\r\n\r\nGenerates incorrect cache file `cache/tbl2asn/tbl2asn-25.6.None`, expecting `cache/tbl2asn/linux64.tbl2asn.gz`, so reinstallation using the cached version results in failure.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4045",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4045/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4045/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4045/events",
+    "html_url": "https://github.com/spack/spack/pull/4045",
+    "id": 225168188,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4MjE2Mzg1",
+    "number": 4045,
+    "title": "Bug/make dia build",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-04-28T19:11:53Z",
+    "updated_at": "2017-04-28T21:19:27Z",
+    "closed_at": "2017-04-28T20:30:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4045",
+        "html_url": "https://github.com/spack/spack/pull/4045",
+        "diff_url": "https://github.com/spack/spack/pull/4045.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4045.patch"
+    },
+    "body": "I'm not absolutely confident about freetype being a 'build' dependency.  However, it seems to work when set up this way, so....\r\n\r\nps.  Built on CentOS7",
+    "performed_via_github_app": null
+}

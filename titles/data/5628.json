@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5628",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5628/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5628/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5628/events",
+    "html_url": "https://github.com/spack/spack/pull/5628",
+    "id": 263255452,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ1MDEyODI5",
+    "number": 5628,
+    "title": "curl: new version and added HTTP/2 support",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-10-05T20:28:02Z",
+    "updated_at": "2017-10-07T15:58:57Z",
+    "closed_at": "2017-10-07T15:58:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5628",
+        "html_url": "https://github.com/spack/spack/pull/5628",
+        "diff_url": "https://github.com/spack/spack/pull/5628.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5628.patch"
+    },
+    "body": "This add info for a new version of curl and builds it with nghttp2 support.\r\n\r\nIt requires the nghttp2 libraries from #5627, I've marked it don't merge and will update the label if/when that one lands.\r\n\r\n@peetsv gets any credit and most of the blame for this work, I'm just passing it over the wall.\r\n",
+    "performed_via_github_app": null
+}

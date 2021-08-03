@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1980",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1980/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1980/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1980/events",
+    "html_url": "https://github.com/spack/spack/pull/1980",
+    "id": 181896624,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODg1ODYyNzQ=",
+    "number": 1980,
+    "title": "fix for  bluegene-q platform",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614542,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ1NDI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/bgq",
+            "name": "bgq",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 412006552,
+            "node_id": "MDU6TGFiZWw0MTIwMDY1NTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hash-change",
+            "name": "hash-change",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2016-10-09T16:34:39Z",
+    "updated_at": "2016-12-08T21:39:43Z",
+    "closed_at": "2016-12-08T09:01:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1980",
+        "html_url": "https://github.com/spack/spack/pull/1980",
+        "diff_url": "https://github.com/spack/spack/pull/1980.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1980.patch"
+    },
+    "body": "this will fix #1784  and #1689!\n\nToday I looked into how Cray CNL is implemented and made corresponding changes for bg-q. This is based on my \"minimal\" understanding of spack internals, so feel free to suggest changes / update the patch.\n\nI built 7-8 packages for bg-q (front-end and back-end) without any issue. I followed below steps:\n- After this patch you can find compilers. GNU compilers for back-end added manually. My compilers.yaml file looks like:\n\n``` bash\ncompilers:\n- compiler:\n    modules: []\n    operating_system: redhat6\n    paths:\n      cc: /usr/lib64/ccache/gcc\n      cxx: /usr/lib64/ccache/g++\n      f77: /usr/bin/gfortran\n      fc: /usr/bin/gfortran\n    spec: gcc@4.4.7\n- compiler:\n    modules: []\n    operating_system: redhat6\n    paths:\n      cc: /opt/ibmcmp/vacpp/bg/12.1/bin/xlc_r\n      cxx: /opt/ibmcmp/vacpp/bg/12.1/bin/xlc++\n      f77: /opt/ibmcmp/xlf/bg/14.1/bin/xlf_r\n      fc: /opt/ibmcmp/xlf/bg/14.1/bin/xlf2008\n    spec: xl@12.1\n- compiler:\n    modules: []\n    operating_system: CNK\n    paths:\n      cc: /usr/bin/bgxlc_r\n      cxx: /usr/bin/bgxlc++\n      f77: /usr/bin/bgxlf_r\n      fc: /usr/bin/bgxlf2008\n    spec: xl@12.1\n- compiler:\n    modules: []\n    operating_system: CNK\n    paths:\n      cc: /bgsys/drivers/ppcfloor/gnu-linux/bin/powerpc64-bgq-linux-gcc\n      cxx: /bgsys/drivers/ppcfloor/gnu-linux/bin/powerpc64-bgq-linux-g++\n      f77: /bgsys/drivers/ppcfloor/gnu-linux/bin/powerpc64-bgq-linux-gfortran\n      fc: /bgsys/drivers/ppcfloor/gnu-linux/bin/powerpc64-bgq-linux-gfortran\n    spec: gcc@4.4.7\n```\n\nOn BG-Q, MPI is located under:\n\n``` bash\n/bgsys/drivers/ppcfloor/comm/\n```\n\nI added entry into packages.yaml as:\n\n``` bash\npackages:\n    mpich:\n        paths:\n            mpich@3.2%xl@12.1 arch=bgq-CNK-powerpc: /bgsys/drivers/ppcfloor/comm/xl\n            mpich@3.2%gcc@4.4.7 arch=bgq-CNK-powerpc: /bgsys/drivers/ppcfloor/comm/gcc\n        buildable: False\n```\n\n(initially I added dummy package for mpi env var setup, but it's not necessary)\n\nTo build a package for front-end:\n\n``` bash\nspack install package-xx os=redhat6\n```\n\nTo build package for back-end:\n\n``` bash\nspack install package-xx  #OR spack install package-xx os=CNK\n```\n### Example\n\nparmetis for CNK (by-default), cmake for front-end (i.e. redhat6) :\n\n``` bash\n$ spack spec parmetis ^mpich ^cmake os=redhat6\nInput spec\n------------------------------\n  parmetis\n      ^cmake arch=bgq-redhat6-None\n      ^mpich\n\nNormalized\n------------------------------\n  parmetis\n      ^cmake@2.8: arch=bgq-redhat6-None\n      ^metis@5:\n      ^mpich\n\nConcretized\n------------------------------\n  parmetis@4.0.3%xl@12.1~debug~gdb+shared arch=bgq-CNK-powerpc\n      ^cmake@3.6.1%xl@12.1~doc+ncurses+openssl~ownlibs~qt arch=bgq-redhat6-powerpc\n          ^bzip2@1.0.6%xl@12.1 arch=bgq-CNK-powerpc\n          ^curl@7.50.3%xl@12.1 arch=bgq-CNK-powerpc\n              ^openssl@1.0.2j%xl@12.1 arch=bgq-CNK-powerpc\n                  ^zlib@1.2.8%xl@12.1 arch=bgq-CNK-powerpc\n          ^expat@2.2.0%xl@12.1 arch=bgq-CNK-powerpc\n          ^libarchive@3.2.1%xl@12.1 arch=bgq-CNK-powerpc\n              ^libxml2@2.9.4%xl@12.1~python arch=bgq-CNK-powerpc\n                  ^xz@5.2.2%xl@12.1 arch=bgq-CNK-powerpc\n              ^lz4@131%xl@12.1 arch=bgq-CNK-powerpc\n              ^lzma@4.32.7%xl@12.1 arch=bgq-CNK-powerpc\n              ^lzo@2.09%xl@12.1 arch=bgq-CNK-powerpc\n              ^nettle@3.2%xl@12.1 arch=bgq-CNK-powerpc\n                  ^gmp@6.1.1%xl@12.1 arch=bgq-CNK-powerpc\n                      ^m4@1.4.17%xl@12.1+sigsegv arch=bgq-CNK-powerpc\n                          ^libsigsegv@2.10%xl@12.1 arch=bgq-CNK-powerpc\n          ^ncurses@6.0%xl@12.1 arch=bgq-CNK-powerpc\n      ^metis@5.1.0%xl@12.1~debug~gdb~idx64~real64+shared arch=bgq-CNK-powerpc\n      ^mpich@3.2%xl@12.1+hydra+pmi~verbs arch=bgq-CNK-powerpc\n```\n\n@tgamblin :\n- I didn't find CNK version in BG-Q RedBook, so added \"version = '1'\"\n- In the parmetis example above, in concretized spec, metis and parmetis are configured for _CNK_ and CMake for _redhat6_. But why CMake dependencies for _CNK_?  how to force them for redhead6 as well? I have CMake as an external package in packages.yaml but wondering if there is way to force all dependencies of CMake to the same redhat6 (instead of specifying them all on command-line).\n- If I just build CMake for front-end, I see correct spec:\n\n``` bash\nspack spec cmake os=redhat6\nInput spec\n------------------------------\n  cmake arch=bgq-redhat6-None\n\nNormalized\n------------------------------\n  cmake arch=bgq-redhat6-None\n\nConcretized\n------------------------------\n  cmake@3.6.1%xl@12.1~doc+ncurses+openssl~ownlibs~qt arch=bgq-redhat6-powerpc\n      ^bzip2@1.0.6%xl@12.1 arch=bgq-redhat6-powerpc\n      ^curl@7.50.3%xl@12.1 arch=bgq-redhat6-powerpc\n          ^openssl@1.0.2j%xl@12.1 arch=bgq-redhat6-powerpc\n              ^zlib@1.2.8%xl@12.1 arch=bgq-redhat6-powerpc\n      ^expat@2.2.0%xl@12.1 arch=bgq-redhat6-powerpc\n      ^libarchive@3.2.1%xl@12.1 arch=bgq-redhat6-powerpc\n          ^libxml2@2.9.4%xl@12.1~python arch=bgq-redhat6-powerpc\n              ^xz@5.2.2%xl@12.1 arch=bgq-redhat6-powerpc\n          ^lz4@131%xl@12.1 arch=bgq-redhat6-powerpc\n          ^lzma@4.32.7%xl@12.1 arch=bgq-redhat6-powerpc\n          ^lzo@2.09%xl@12.1 arch=bgq-redhat6-powerpc\n          ^nettle@3.2%xl@12.1 arch=bgq-redhat6-powerpc\n              ^gmp@6.1.1%xl@12.1 arch=bgq-redhat6-powerpc\n                  ^m4@1.4.17%xl@12.1+sigsegv arch=bgq-redhat6-powerpc\n                      ^libsigsegv@2.10%xl@12.1 arch=bgq-redhat6-powerpc\n      ^ncurses@6.0%xl@12.1 arch=bgq-redhat6-powerpc\n```\n",
+    "performed_via_github_app": null
+}

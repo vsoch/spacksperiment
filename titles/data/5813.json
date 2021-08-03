@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5813",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5813/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5813/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5813/events",
+    "html_url": "https://github.com/spack/spack/pull/5813",
+    "id": 266644872,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ3NDEyNTY4",
+    "number": 5813,
+    "title": "Disentangle the fetchers!",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2017-10-18T21:17:05Z",
+    "updated_at": "2019-11-11T17:56:12Z",
+    "closed_at": "2019-11-11T17:55:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5813",
+        "html_url": "https://github.com/spack/spack/pull/5813",
+        "diff_url": "https://github.com/spack/spack/pull/5813.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5813.patch"
+    },
+    "body": "It's a while that I want to break the tight coupling between fetchers and stages, and here it is.\r\n\r\nThe main gain from this PR is that now fetch strategies are completely decoupled from stages. Their API changed a bit, and can be driven by setting a couple of paths prior to any relevant method call. The most important path to be set is:\r\n```python\r\nfetcher.source_dir = path\r\n```\r\nwhich in most cases is set to `stage.path` within Spack. Another relevant path attribute is `expected_archive_files`. In any case all the computations a fetcher does now should depend only on its current state (while before they were also depending on other fetchers states via stage).\r\n\r\nThe three methods of `FetchStrategy`:\r\n```python\r\ndef fetch(self):\r\n    pass\r\n\r\ndef check(self):\r\n    pass\r\n\r\ndef expand(self):\r\n    pass\r\n```\r\nhave been merged in the single method:\r\n```python\r\ndef fetch(self, validate=True, expanded_source_tree=any):\r\n    pass\r\n```\r\nto simplify the logic in the code. Upstream classes followed (so e.g. `Stage.fetch` now has an `expand` argument and so does `PackageBase.do_stage`).\r\n\r\nThe convoluted logic in `PackageBase` to construct 2 composites (one for stages, one for fetchers) has been removed. As fetchers don't need a stage reference anymore, a `StageComposite` instance is now built in the simplest way possible (first the root stage, then the resources). This object can return on demand a `FetchStrategyComposite`.\r\n\r\nFor other minor details the commit messages should be of help.\r\n\r\n##### Mandatory todo list\r\n\r\n- [x] Decouple classes in `fetch_stretegy.py` from stages\r\n- [x] Simplify the construction of composite objects in `PackageBase`\r\n- [ ] Improve coverage for fetchers (refactor their unit tests?)\r\n- [ ] Improve docstrings for fetchers and stages\r\n\r\n##### Other changes on the wishlist\r\n\r\nI refrained from doing a couple of changes that I thought should be discussed beforehand. The first one is a change in the `FetchStrategy.fetch` method which is not strictly needed to maintain the current behavior and pass tests. I would like the final signature to look like:\r\n```python\r\n    def fetch(self, validate=True, expanded_source_tree=any, archive=any):\r\n        \"\"\"Fetches the source code archive or repository.\r\n\r\n        Args:\r\n            validate (bool): if True, try to validate downloaded files whenever\r\n                possible\r\n            expanded_source_tree (bool or any): if True, the source tree is\r\n                expanded, if False the source tree is granted not to be there.\r\n                If 'any' it depends on the defaults of the derived class\r\n            archive (bool or any): if True, the archive is present in the source\r\n                directory. If false it's not. If 'any' it depends on the defaults of \r\n                the derived class\r\n\r\n        Returns:\r\n            absolute path of the archive file if any, else None\r\n\r\n        Raises:\r\n            FetchError: if anything goes wrong\r\n\r\n        \"\"\"\r\n```\r\nbasically I would like to add an extra argument to drive the presence (or absence) or the archive. If implemented this will permit to ask for a specific state in the working directory, regardless of the fetcher we are using. I would do this more to have an interface that is not biased towards archive fetchers, rather then for an immediate need to implement some features.\r\n\r\nThe other change is just structural. I think `fetch_strategy.py` has enough code to be split into:\r\n```console\r\nfetch_strategy\r\n\u251c\u2500\u2500 vcs.py\r\n\u251c\u2500\u2500 url.py\r\n\u251c\u2500\u2500 __init__.py\r\n\u2514\u2500\u2500 exceptions.py\r\n```\r\nwhile maintaining the same interface to the outside.\r\n\r\nWell, I'll be waiting for comments on the code!",
+    "performed_via_github_app": null
+}

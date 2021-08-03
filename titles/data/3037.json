@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3037",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3037/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3037/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3037/events",
+    "html_url": "https://github.com/spack/spack/pull/3037",
+    "id": 205563080,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA0Nzg1MzIw",
+    "number": 3037,
+    "title": "Add Perl+extension to intltool deps ",
+    "user": {
+        "login": "luigi-calori",
+        "id": 5165864,
+        "node_id": "MDQ6VXNlcjUxNjU4NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5165864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luigi-calori",
+        "html_url": "https://github.com/luigi-calori",
+        "followers_url": "https://api.github.com/users/luigi-calori/followers",
+        "following_url": "https://api.github.com/users/luigi-calori/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luigi-calori/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luigi-calori/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luigi-calori/subscriptions",
+        "organizations_url": "https://api.github.com/users/luigi-calori/orgs",
+        "repos_url": "https://api.github.com/users/luigi-calori/repos",
+        "events_url": "https://api.github.com/users/luigi-calori/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luigi-calori/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-02-06T12:04:47Z",
+    "updated_at": "2017-04-03T15:54:00Z",
+    "closed_at": "2017-04-03T15:54:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3037",
+        "html_url": "https://github.com/spack/spack/pull/3037",
+        "diff_url": "https://github.com/spack/spack/pull/3037.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3037.patch"
+    },
+    "body": "On one of our cluster, the system perl is not able to compile intltool, so added a dependency to perl and one perl extension perl-xml-parser.\r\nThis per extension does not follow spack policy as use perl extension default install path into perl prefix itself.. \r\nA proper perl extension would be needed, as this solution does not allow to uninstall the extension.\r\nAs I use Perl just for build, it does not seem too bad as a stop-gap",
+    "performed_via_github_app": null
+}

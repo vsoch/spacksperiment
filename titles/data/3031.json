@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3031",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3031/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3031/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3031/events",
+    "html_url": "https://github.com/spack/spack/pull/3031",
+    "id": 205313871,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA0NjQzNDg2",
+    "number": 3031,
+    "title": "[WIP] Fix R activation",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 20,
+    "created_at": "2017-02-04T01:55:24Z",
+    "updated_at": "2017-06-19T15:14:04Z",
+    "closed_at": "2017-06-19T15:14:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3031",
+        "html_url": "https://github.com/spack/spack/pull/3031",
+        "diff_url": "https://github.com/spack/spack/pull/3031.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3031.patch"
+    },
+    "body": "As mentioned in https://github.com/LLNL/spack/issues/2951#issuecomment-277090597, R comes with a few pre-installed packages. These packages are also available on CRAN, and we have Spack packages for them. Unfortunately, these packages (and any that depend on them) can't be activated because they would conflict.\r\n\r\nThis PR removes any dependencies on these builtin packages. One last thing to do: should we remove the offending packages, or keep them there and turn them into \"fake\" packages that raise an error with a helpful error message? I vote for the latter, as it would prevent this problem from creeping back in.",
+    "performed_via_github_app": null
+}

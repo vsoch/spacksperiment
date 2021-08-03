@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2876",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2876/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2876/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2876/events",
+    "html_url": "https://github.com/spack/spack/pull/2876",
+    "id": 201955922,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyMzM0NjI2",
+    "number": 2876,
+    "title": "add static options for some libraries",
+    "user": {
+        "login": "sarich",
+        "id": 4931514,
+        "node_id": "MDQ6VXNlcjQ5MzE1MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4931514?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sarich",
+        "html_url": "https://github.com/sarich",
+        "followers_url": "https://api.github.com/users/sarich/followers",
+        "following_url": "https://api.github.com/users/sarich/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sarich/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sarich/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sarich/subscriptions",
+        "organizations_url": "https://api.github.com/users/sarich/orgs",
+        "repos_url": "https://api.github.com/users/sarich/repos",
+        "events_url": "https://api.github.com/users/sarich/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sarich/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-01-19T19:42:16Z",
+    "updated_at": "2017-01-24T19:48:02Z",
+    "closed_at": "2017-01-24T19:48:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2876",
+        "html_url": "https://github.com/spack/spack/pull/2876",
+        "diff_url": "https://github.com/spack/spack/pull/2876.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2876.patch"
+    },
+    "body": "add shared variant for following packages to allow static-only builds:\r\nmetis\r\nparmetis\r\nmatio\r\nzlib\r\nbzip2",
+    "performed_via_github_app": null
+}

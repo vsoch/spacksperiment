@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2916",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2916/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2916/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2916/events",
+    "html_url": "https://github.com/spack/spack/pull/2916",
+    "id": 202674807,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyODE4MjI0",
+    "number": 2916,
+    "title": "Add latest version of xz",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-01-23T22:52:14Z",
+    "updated_at": "2017-01-24T21:01:11Z",
+    "closed_at": "2017-01-24T21:01:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2916",
+        "html_url": "https://github.com/spack/spack/pull/2916",
+        "diff_url": "https://github.com/spack/spack/pull/2916.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2916.patch"
+    },
+    "body": "Also adds a `list_url`.\r\n\r\n#### Before\r\n```\r\n$ spack versions xz\r\n==> Safe versions (already checksummed):\r\n  5.2.2  5.2.0\r\n==> Remote versions (not yet checksummed):\r\n  5.2.3\r\n```\r\n#### After\r\n```\r\n$ spack versions xz\r\n==> Safe versions (already checksummed):\r\n  5.2.3  5.2.2  5.2.0\r\n==> Remote versions (not yet checksummed):\r\n  5.2.1  5.0.8  5.0.7  5.0.6  5.0.5  5.0.4  5.0.3  5.0.2  5.0.1  5.0.0  4.999.9beta\r\n```",
+    "performed_via_github_app": null
+}

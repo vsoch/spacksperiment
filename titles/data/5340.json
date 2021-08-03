@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5340",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5340/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5340/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5340/events",
+    "html_url": "https://github.com/spack/spack/pull/5340",
+    "id": 257007429,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQwNTUyNjI4",
+    "number": 5340,
+    "title": "blas_lapack: add multithreading variant consistent in all implementations.",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-09-12T11:20:19Z",
+    "updated_at": "2017-12-19T12:04:42Z",
+    "closed_at": "2017-09-23T20:27:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5340",
+        "html_url": "https://github.com/spack/spack/pull/5340",
+        "diff_url": "https://github.com/spack/spack/pull/5340.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5340.patch"
+    },
+    "body": "build on Ubuntu 16 + gcc 5.4.0:\r\n\r\n- [x] `spack install openblas multithreading=none`\r\n- [x] `spack install openblas multithreading=pthreads`\r\n- [x] `spack install openblas multithreading=openmp`\r\n- [x] `spack install atlas multithreading=none`\r\n- [x] `spack install atlas multithreading=pthreads`\r\n- [x] `spack install intel-mkl multithreading=none`\r\n- [x] `spack install intel-mkl multithreading=openmp`\r\n- [x] `spack install elemental`\r\n\r\nmacOS Sierra + clang + gfortran:\r\n- [x] `spack install openblas multithreading=none`\r\n- [x] `spack install openblas multithreading=pthreads `\r\n- [x] `spack install mumps+mpi ^intel-mkl ^mpich`\r\n\r\nin the later case for externally provided `intel-mkl@2018.0.128` in `opt/intel` we have:\r\n```\r\nLIBBLAS = -L/opt/intel/mkl/lib -L/usr/lib -lmkl_intel_lp64 -lmkl_core -lmkl_sequential -lpthread -lm -ldl\r\nSCALAP = -L/opt/intel/mkl/lib -lmkl_scalapack_lp64 -lmkl_blacs_mpich_lp64\r\n```\r\n\r\n- [x] `spack install dealii+mpi~sundials ^intel-mkl ^mpich`\r\n\r\n```\r\n$ otool -L /Users/davydden/spack/opt/spack/darwin-sierra-x86_64/clang-8.1.0-apple/dealii-develop-n6julmgj2gj6twxodwe275zys4ily3fw/lib/libdeal_II.dylib  | grep \"mkl\"\r\n\t@rpath/libmkl_scalapack_lp64.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t@rpath/libmkl_blacs_mpich_lp64.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t@rpath/libmkl_intel_lp64.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t@rpath/libmkl_core.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t@rpath/libmkl_sequential.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n```\r\n\r\np.s. `none` value is there as we need at least two values.\r\n\r\nfixes https://github.com/LLNL/spack/issues/1697",
+    "performed_via_github_app": null
+}

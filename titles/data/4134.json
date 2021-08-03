@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4134",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4134/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4134/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4134/events",
+    "html_url": "https://github.com/spack/spack/pull/4134",
+    "id": 226529339,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE5MTQ1Mjc0",
+    "number": 4134,
+    "title": "mesa gallium",
+    "user": {
+        "login": "luigi-calori",
+        "id": 5165864,
+        "node_id": "MDQ6VXNlcjUxNjU4NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5165864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luigi-calori",
+        "html_url": "https://github.com/luigi-calori",
+        "followers_url": "https://api.github.com/users/luigi-calori/followers",
+        "following_url": "https://api.github.com/users/luigi-calori/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luigi-calori/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luigi-calori/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luigi-calori/subscriptions",
+        "organizations_url": "https://api.github.com/users/luigi-calori/orgs",
+        "repos_url": "https://api.github.com/users/luigi-calori/repos",
+        "events_url": "https://api.github.com/users/luigi-calori/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luigi-calori/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 470680435,
+            "node_id": "MDU6TGFiZWw0NzA2ODA0MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/X11",
+            "name": "X11",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-05-05T10:11:51Z",
+    "updated_at": "2017-10-24T09:49:12Z",
+    "closed_at": "2017-10-24T09:49:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4134",
+        "html_url": "https://github.com/spack/spack/pull/4134",
+        "diff_url": "https://github.com/spack/spack/pull/4134.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4134.patch"
+    },
+    "body": "Try to compile mesa with gallium drivers to support multithreading opengl emulation on nodes without GPU",
+    "performed_via_github_app": null
+}

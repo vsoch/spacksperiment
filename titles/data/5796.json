@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5796",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5796/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5796/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5796/events",
+    "html_url": "https://github.com/spack/spack/pull/5796",
+    "id": 266262701,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ3MTQxMzM4",
+    "number": 5796,
+    "title": "Specify base branch for flake8 comparison",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430621,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2MjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/flake8",
+            "name": "flake8",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-10-17T20:14:14Z",
+    "updated_at": "2017-10-25T12:30:23Z",
+    "closed_at": "2017-10-25T12:30:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5796",
+        "html_url": "https://github.com/spack/spack/pull/5796",
+        "diff_url": "https://github.com/spack/spack/pull/5796.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5796.patch"
+    },
+    "body": "I've found this handy.  It might be useful in the outside world also...\r\n\r\n---\r\n\r\nInternally we work against a branch named 'llnl/develop', which mirrors the public repository's `develop` branch.\r\n\r\nIt's useful to be able to run flake8 on our changes, using `llnl/develop` as the base branch instead of `develop`.\r\n\r\nInternally the flake8 subcommand generates the list of changes files using a hardcoded range of `develop...`.\r\n\r\nThis makes the base of that range a command line option, with a default of `develop`.\r\n\r\nThat lets us do this:\r\n\r\n```\r\nspack flake8 --base llnl/develop\r\n```\r\n\r\nwhich uses a range of `llnl/develop...`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2010",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2010/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2010/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2010/events",
+    "html_url": "https://github.com/spack/spack/pull/2010",
+    "id": 182656902,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODkxMTA5NDE=",
+    "number": 2010,
+    "title": "Use cYAML if it is available",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2016-10-12T23:12:08Z",
+    "updated_at": "2016-10-15T13:14:03Z",
+    "closed_at": "2016-10-13T01:25:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2010",
+        "html_url": "https://github.com/spack/spack/pull/2010",
+        "diff_url": "https://github.com/spack/spack/pull/2010.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2010.patch"
+    },
+    "body": "I threw this together working on #1562, and thought I'd just get it merged.\n\nSpack ships with its own `PyYAML` module in `lib/spack/external/yaml`, but it doesn't use the C `libyaml` because we don't want to require compiling anything -- Spack _must_ run out of the box.  \n\ncYAML is pretty fast, though, and with things like #1015 and #1535 the main bottleneck to operations like `spack find` is YAML parsing.  \n\nThis patch makes Spack use an already-installed PyYAML and the `CParser` and `CLoader` from `libyaml` if they're available.  It makes a `spack find` on @adamjstewart's 400+ installed packages from #1562 run **3x faster** (1s vs 3s) on my laptop.\n\n@alalazo @davydden @adamjstewart @citibeth \n",
+    "performed_via_github_app": null
+}

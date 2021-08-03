@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4230",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4230/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4230/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4230/events",
+    "html_url": "https://github.com/spack/spack/pull/4230",
+    "id": 228297453,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIwMzI3MDA5",
+    "number": 4230,
+    "title": "vim > vi",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-05-12T13:48:11Z",
+    "updated_at": "2017-06-15T11:41:52Z",
+    "closed_at": "2017-06-15T09:27:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4230",
+        "html_url": "https://github.com/spack/spack/pull/4230",
+        "diff_url": "https://github.com/spack/spack/pull/4230.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4230.patch"
+    },
+    "body": "Been meaning to fix this for a while now. On many systems, envoking `vi` runs vim in compatibility-mode. Many of the vim commands you've come to know and love don't work and `~/.vimrc` doesn't get sourced. The new order of precedence is:\r\n\r\n1. `EDITOR`\r\n2. `vim`\r\n3. `vi`\r\n\r\n@JusticeForMikeBrown",
+    "performed_via_github_app": null
+}

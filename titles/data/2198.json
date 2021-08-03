@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2198",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2198/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2198/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2198/events",
+    "html_url": "https://github.com/spack/spack/pull/2198",
+    "id": 186574045,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTE4MTE5NzY=",
+    "number": 2198,
+    "title": "Build Perl/Python bindings for subversion",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2016-11-01T16:07:27Z",
+    "updated_at": "2017-04-18T15:05:32Z",
+    "closed_at": "2017-04-01T00:55:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2198",
+        "html_url": "https://github.com/spack/spack/pull/2198",
+        "diff_url": "https://github.com/spack/spack/pull/2198.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2198.patch"
+    },
+    "body": "This PR activate subversion's make targets `swig-py` and `swig-pl` to provide python and Perl bindings.\r\n    \r\nTo build and install the Perl and python bindings for subversion, I needed to register new dependencies on swig, python and perl. The subversion build system requires that Makefile targets `swig-py`, `install-swig-py`, `swig-pl` and `install-swig-pl` to be called. Reference: [INSTALL](http://svn.apache.org/repos/asf/subversion/trunk/INSTALL)\r\n    \r\nFor the systems I was working on, I also needed to register/use spack provided autoconf, automake, libtool, expat and pkg-config as build-only dependencies and I needed to call `./autogen.sh` from the source tree before running `configure`.\r\n\r\nI'm no expert in building subversion, so I'm asking for help with testing and reviewing this PR.  For example, the way the python bindings work looks a bit like a python extension in spack.  Maybe my implementation should be modified to use that infrastructure. Should these bindings be presented as variants instead of defaults?\r\n\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4031",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4031/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4031/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4031/events",
+    "html_url": "https://github.com/spack/spack/pull/4031",
+    "id": 224972560,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4MDc1MTc5",
+    "number": 4031,
+    "title": "Updating bamtools to include a dependency for zlib.",
+    "user": {
+        "login": "raznikk",
+        "id": 330322,
+        "node_id": "MDQ6VXNlcjMzMDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/330322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/raznikk",
+        "html_url": "https://github.com/raznikk",
+        "followers_url": "https://api.github.com/users/raznikk/followers",
+        "following_url": "https://api.github.com/users/raznikk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/raznikk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/raznikk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/raznikk/subscriptions",
+        "organizations_url": "https://api.github.com/users/raznikk/orgs",
+        "repos_url": "https://api.github.com/users/raznikk/repos",
+        "events_url": "https://api.github.com/users/raznikk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/raznikk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-04-28T03:47:05Z",
+    "updated_at": "2017-05-06T17:05:13Z",
+    "closed_at": "2017-05-06T17:05:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4031",
+        "html_url": "https://github.com/spack/spack/pull/4031",
+        "diff_url": "https://github.com/spack/spack/pull/4031.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4031.patch"
+    },
+    "body": "In a standard compile, bamtools will fail if zlib headers are not installed on the target machine. In order to maintain compatibility with all systems -- and since zlib is included already as a dependency for cmake -- this patch adds zlib as a link dependency for the bamtools package.",
+    "performed_via_github_app": null
+}

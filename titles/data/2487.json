@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2487",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2487/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2487/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2487/events",
+    "html_url": "https://github.com/spack/spack/pull/2487",
+    "id": 193572678,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTY1ODE5OTY=",
+    "number": 2487,
+    "title": "Remove cYAML tests from Spack now that the DB is JSON.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-12-05T18:21:21Z",
+    "updated_at": "2016-12-05T18:31:50Z",
+    "closed_at": "2016-12-05T18:31:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2487",
+        "html_url": "https://github.com/spack/spack/pull/2487",
+        "diff_url": "https://github.com/spack/spack/pull/2487.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2487.patch"
+    },
+    "body": "We no longer need to test cYAML, as Spack uses its internal YAML everywhere.  See #2189.\r\n\r\n@alalazo",
+    "performed_via_github_app": null
+}

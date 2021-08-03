@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2922",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2922/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2922/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2922/events",
+    "html_url": "https://github.com/spack/spack/pull/2922",
+    "id": 202849592,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAyOTM5Njkx",
+    "number": 2922,
+    "title": "Updating udunits version.",
+    "user": {
+        "login": "t-brown",
+        "id": 3876306,
+        "node_id": "MDQ6VXNlcjM4NzYzMDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3876306?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-brown",
+        "html_url": "https://github.com/t-brown",
+        "followers_url": "https://api.github.com/users/t-brown/followers",
+        "following_url": "https://api.github.com/users/t-brown/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-brown/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-brown/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-brown/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-brown/orgs",
+        "repos_url": "https://api.github.com/users/t-brown/repos",
+        "events_url": "https://api.github.com/users/t-brown/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-brown/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-01-24T15:24:28Z",
+    "updated_at": "2017-01-26T04:38:45Z",
+    "closed_at": "2017-01-26T04:38:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2922",
+        "html_url": "https://github.com/spack/spack/pull/2922",
+        "diff_url": "https://github.com/spack/spack/pull/2922.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2922.patch"
+    },
+    "body": "Udunits 2.2.21 is no longer on the unidata ftp site.\r\nThe latest is 2.2.23, adding that and it's md5sum.",
+    "performed_via_github_app": null
+}

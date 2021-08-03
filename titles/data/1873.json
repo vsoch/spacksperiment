@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1873",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1873/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1873/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1873/events",
+    "html_url": "https://github.com/spack/spack/pull/1873",
+    "id": 179828293,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODcxNTkyMDY=",
+    "number": 1873,
+    "title": "Tell Mercurial where to find CA certs",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430651,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2NTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mercurial",
+            "name": "mercurial",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2016-09-28T16:56:01Z",
+    "updated_at": "2017-04-16T16:24:26Z",
+    "closed_at": "2016-09-28T18:58:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1873",
+        "html_url": "https://github.com/spack/spack/pull/1873",
+        "diff_url": "https://github.com/spack/spack/pull/1873.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1873.patch"
+    },
+    "body": "I had a user complaint that my Mercurial installation wasn't working for his HTTPS repository. It turns out that we didn't have a global hgrc set up to tell Mercurial where to find our CA certificates. Prior to Mercurial 3.9, this would produce a harmless warning message:\n\n```\nwarning: bitbucket.org certificate with fingerprint 3f:d3:c5:17:23:3c:cd:f5:2d:17:76:06:93:7e:ee:97:42:21:14:aa not verified (check hostfingerprints or web.cacerts config setting) \n```\n\nBut as of Mercurial 3.9, this now produces an error message:\n\n```\n(an attempt was made to load CA certificates but none were loaded; see https://mercurial-scm.org/wiki/SecureConnections for how to configure Mercurial to avoid this error)\nabort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590) \n```\n\nThis PR creates an `hgrc` file in the installation directory that points to the location of the CA certs.\n\nAside from this main goal, the PR also:\n- Adds the latest version, 3.9.1\n- Makes mercurial a Python extension\n  - I don't expect anyone to activate it, but Mercurial technically builds a `site-packages` directory, so why not\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5789",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5789/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5789/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5789/events",
+    "html_url": "https://github.com/spack/spack/pull/5789",
+    "id": 266025963,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2OTY2NDI0",
+    "number": 5789,
+    "title": "Minor typos and corrections in `workflows.rst`",
+    "user": {
+        "login": "mfherbst",
+        "id": 11157893,
+        "node_id": "MDQ6VXNlcjExMTU3ODkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11157893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mfherbst",
+        "html_url": "https://github.com/mfherbst",
+        "followers_url": "https://api.github.com/users/mfherbst/followers",
+        "following_url": "https://api.github.com/users/mfherbst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mfherbst/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mfherbst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mfherbst/subscriptions",
+        "organizations_url": "https://api.github.com/users/mfherbst/orgs",
+        "repos_url": "https://api.github.com/users/mfherbst/repos",
+        "events_url": "https://api.github.com/users/mfherbst/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mfherbst/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-10-17T07:53:08Z",
+    "updated_at": "2017-11-16T17:43:30Z",
+    "closed_at": "2017-10-17T08:36:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5789",
+        "html_url": "https://github.com/spack/spack/pull/5789",
+        "diff_url": "https://github.com/spack/spack/pull/5789.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5789.patch"
+    },
+    "body": "- The shell script uses arrays and hence only works on sophisticated shells and not the default `sh`. For clarity the shebang `#!/bin/bash` has been used instead.\r\n- Duplicated word `in` removed.",
+    "performed_via_github_app": null
+}

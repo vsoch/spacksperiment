@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1671",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1671/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1671/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1671/events",
+    "html_url": "https://github.com/spack/spack/pull/1671",
+    "id": 174079386,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODMzMTQwOTI=",
+    "number": 1671,
+    "title": "Make libgcc_s relocatable on Macos by adding @rpath to installname",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2016-08-30T17:35:32Z",
+    "updated_at": "2017-07-13T18:14:21Z",
+    "closed_at": "2017-03-02T22:39:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1671",
+        "html_url": "https://github.com/spack/spack/pull/1671",
+        "diff_url": "https://github.com/spack/spack/pull/1671.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1671.patch"
+    },
+    "body": "This changes the installname of libgcc_s.1.dylib on OSX from an absolute path set by --prefix to @rpath/libgcc_s.1.dylib. This is important for relocating libgcc_s.1.dylib because install_name_tool will not change the ID but with add/change rpath. Has no impact on linux.\n",
+    "performed_via_github_app": null
+}

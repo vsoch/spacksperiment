@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5714",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5714/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5714/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5714/events",
+    "html_url": "https://github.com/spack/spack/pull/5714",
+    "id": 264830660,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ2MTI5MTk1",
+    "number": 5714,
+    "title": "Better install output",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-10-12T06:45:46Z",
+    "updated_at": "2017-10-12T18:34:29Z",
+    "closed_at": "2017-10-12T07:50:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5714",
+        "html_url": "https://github.com/spack/spack/pull/5714",
+        "diff_url": "https://github.com/spack/spack/pull/5714.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5714.patch"
+    },
+    "body": "This is actually 3 fixes.  The main fix in this PR beautifies `spack install` output:\r\n\r\n- `do_install()` was originally depth-first recursive, and printed `<pkg> already installed in ...` multiple times for packages as recursive calls encountered them.\r\n- For much cleaner output, use `spec.traverse(order='post')` to install dependencies instead.\r\n- Now info about each install is printed only once.\r\n\r\nWe can probably make things cleaner still, but this gets rid of the largest current source of noise in `install()` output.\r\n\r\nAll tasks:\r\n- [x] `spack install` prints out much less output, especially for large DAGs.\r\n- [x] Get rid of vestigial `deptype_query` argument to `spec.traverse()`\r\n- [x] Fix a bug with `--fake` installs\r\n\r\nThe install fix turns 197 lines of `spack install xsdk` output into 152 lines, by getting rid of stuff like this:\r\n\r\n```\r\n$ spack install --fake xsdk\r\n...\r\n\r\n==> Successfully installed trilinos\r\n  Fetch: .  Build: 4.30s.  Total: 4.30s.\r\n[+] /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/trilinos-xsdk-0.2.0-d5wjl6o4fceno7w7dlv4cvi7wwmgoozb\r\n==> hypre is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/hypre-xsdk-0.2.0-nlrcck7w2bckbnfeivvie7ecoheoryed\r\n==> metis is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/metis-5.1.0-msxayllqzgji6se66iucactn6zd2g3kq\r\n==> superlu-dist is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/superlu-dist-xsdk-0.2.0-pl63z4w5rlusg36yfptkv6coaz7lhixr\r\n==> bzip2 is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/bzip2-1.0.6-hp626dwtuiakdmsgazw7xd6ymyijxjyn\r\n==> ncurses is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/ncurses-6.0-ny2iyrd374kkzwc2bam5xqvbbkxgmxgv\r\n==> zlib is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/zlib-1.2.11-fn323gjmbkegonjedtppmyua7xfkxy7t\r\n==> openssl is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/openssl-1.0.2k-nxao5denc343bgfsvio6q22jwmxl62m2\r\n==> ncurses is already installed in /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/ncurses-6.0-ny2iyrd374kkzwc2bam5xqvbbkxgmxgv\r\n==> Installing readline\r\n\r\n...\r\n```\r\n\r\nThe new output is much more organized:\r\n\r\n```\r\n$ spack install --fake xsdk\r\n==> Installing pkg-config\r\n==> Building pkg-config [AutotoolsPackage]\r\n==> Successfully installed pkg-config\r\n  Fetch: .  Build: 0.26s.  Total: 0.26s.\r\n[+] /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/pkg-config-0.29.2-x67y3tjvezfvj6odssyblthsbzk7f6ca\r\n==> Installing ncurses\r\n==> Building ncurses [AutotoolsPackage]\r\n==> Successfully installed ncurses\r\n  Fetch: .  Build: 0.26s.  Total: 0.26s.\r\n[+] /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/ncurses-6.0-ny2iyrd374kkzwc2bam5xqvbbkxgmxgv\r\n==> Installing zlib\r\n...\r\n==> Installing xsdk\r\n==> Building xsdk [Package]\r\n==> Successfully installed xsdk\r\n  Fetch: .  Build: 5.20s.  Total: 5.20s.\r\n[+] /Users/gamblin2/src/spack/db/test-tree/darwin-sierra-x86_64/clang-7.0.2-apple/xsdk-xsdk-0.2.0-z6kbxwa7zhza6qhd4jai6q7ggb3jbm43\r\n```",
+    "performed_via_github_app": null
+}

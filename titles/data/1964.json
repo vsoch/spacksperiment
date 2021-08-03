@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1964",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1964/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1964/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1964/events",
+    "html_url": "https://github.com/spack/spack/pull/1964",
+    "id": 181743169,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODg0ODk5ODU=",
+    "number": 1964,
+    "title": "Workaround for illegal package merging in py-matplotlib/py-basemap",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2016-10-07T18:57:19Z",
+    "updated_at": "2016-10-14T23:09:54Z",
+    "closed_at": "2016-10-14T23:09:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1964",
+        "html_url": "https://github.com/spack/spack/pull/1964",
+        "diff_url": "https://github.com/spack/spack/pull/1964.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1964.patch"
+    },
+    "body": "This PR addresses #1948 \n\nMatplotlib defines a Python package called `mpl_tools`.  They put some Python code in that package, so it does not qualify as a Python _Implicit Namespace Package_ ( https://www.python.org/dev/peps/pep-0420/ ).\n\nBasemap also defines `mpl_tools`, implicitly as an _extension_ of Matplotlib's `mpl_tools`.  The Python package `mpl_tools` can now be found _twice_ on `$PYTHONPATH`: once in the `py-mathplotlib` Spack package, and once in the `py-basemap` Spack package.  This is not legal Python, except for the special case of an implicit namespace package (which does not apply here).\n\nMaybe some Python interpreter in the past implicitly \"merged\" the two `mpl_tools` directories together, and it is clear that the authors of Matplotlib/Basemap added Jujitsu in those directories to try to make it happen that way (see the `__init__.py` files).  HOWEVER... it does not currently work with MY versions of Matplotlib (1.5.1), Basemap (1.0.7) and Python (3.5.2) on Spack.  On MY system, Python sees only the `basemap` version of `mpl_tools`.  It then throws an exception when Basemap tries to import things that are in the `matplotlib` version of `mpl_tools`.\n\nThe right way to solve this problem is to re-work Basemap and Matplotlib so they don't step on each others' toes that way.  It's not clear how this would be done, since this bad design decision is now baked into the library APIs.  This problem has been an issue for years without getting fixed; see for example (From 2014):   https://github.com/Homebrew/homebrew-python/issues/112\n\nThis PR solves the problem by symlinking all of the `mpl_tools` directory from `matplotlib` into `basemap`.  It's an un-holy mess, and wouldn't scale if there were additional packages that also implicitly \"merge\" into `mpl_tools` (there are none that I know of).  But it solves the problem at hand, it doesn't break the Spack paridigm, and is better than any other solution I could think of; for example, to create a Spack package that installs Matplotlib and Basemap simultaneously into one Spack prefix.\n",
+    "performed_via_github_app": null
+}

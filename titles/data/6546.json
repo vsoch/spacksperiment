@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6546",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6546/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6546/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6546/events",
+    "html_url": "https://github.com/spack/spack/pull/6546",
+    "id": 278591802,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU1OTU0MDEx",
+    "number": 6546,
+    "title": "Buildcache install should fail if the tarball was created with a different directory layout",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-12-01T20:48:06Z",
+    "updated_at": "2018-03-27T14:51:54Z",
+    "closed_at": "2018-02-22T01:59:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6546",
+        "html_url": "https://github.com/spack/spack/pull/6546",
+        "diff_url": "https://github.com/spack/spack/pull/6546.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6546.patch"
+    },
+    "body": "I found that tarballs created with a non-default directory layout cannot be relocated to a default directory layout. In this case replacing the old layout root with the new layout root does not work. The rpaths with still refer to the non-default relative prefixes.\r\n\r\nAny replacement or rpaths happens in a workdir before moving the files to the install prefix. This prevents having a broken install prefix left over since I did not clean up on exceptions.\r\n\r\nUsed tempfile.mkdtemp where possible to avoid creating random directories in cwd if -d options is not used with buildcache create and install.\r\n\r\nMoved the exception handling as done in #6344 with the messages changed to be generic enough to use with spack install --use-cache  and spack buildcache. \r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4688",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4688/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4688/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4688/events",
+    "html_url": "https://github.com/spack/spack/pull/4688",
+    "id": 241078185,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTI5Mjc1NTIx",
+    "number": 4688,
+    "title": "resources: added lookup by name",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-07-06T20:35:59Z",
+    "updated_at": "2020-05-26T10:34:16Z",
+    "closed_at": "2020-05-26T10:34:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4688",
+        "html_url": "https://github.com/spack/spack/pull/4688",
+        "diff_url": "https://github.com/spack/spack/pull/4688.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4688.patch"
+    },
+    "body": "If considered useful this is a cut'n paste of the `composite` decorator + tests from a small personal project that I use from time to time as a python gym. Modifications include:\r\n\r\n- [x] resources now can be looked up by name (see atlas)\r\n- [x] container customization in the `composite` decorator has been removed\r\n- [x] we can now apply reduction operations over a composite\r\n\r\nThe modification that is immediately useful is the first one, as it adresses [this comment](https://github.com/LLNL/spack/pull/2371#discussion_r90250916). Let me know if you want me to remove reduction operations or if it is fine to leave them.",
+    "performed_via_github_app": null
+}

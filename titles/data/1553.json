@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1553",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1553/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1553/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1553/events",
+    "html_url": "https://github.com/spack/spack/pull/1553",
+    "id": 171725155,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODE2OTA2ODQ=",
+    "number": 1553,
+    "title": "Fix NetCDF/HDF5 dependency resolution problems",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 26,
+    "created_at": "2016-08-17T18:16:43Z",
+    "updated_at": "2017-07-07T21:51:54Z",
+    "closed_at": "2016-09-08T18:58:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1553",
+        "html_url": "https://github.com/spack/spack/pull/1553",
+        "diff_url": "https://github.com/spack/spack/pull/1553.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1553.patch"
+    },
+    "body": "Fixes #1552. This was causing errors like:\n\n```\n$ spack spec netcdf ^hdf5@1.8.16\nInput spec\n------------------------------\n  netcdf\n      ^hdf5\n\nNormalized\n------------------------------\n==> Error: netcdf does not depend on hdf5\n```\n\nand\n\n```\n$ spack spec netcdf+mpi ^mvapich2\nInput spec\n------------------------------\n  netcdf+mpi\n      ^mvapich2\n\nNormalized\n------------------------------\n==> Error: netcdf does not depend on mvapich2\n```\n\nHere's my understanding of the problem. @tgamblin can correct me if I'm wrong. During normalization, variants are ignored unless explicitly stated. So `netcdf+mpi ^hdf5` and `netcdf~mpi ^hdf5` work but `netcdf ^hdf5` doesn't. Also, versions are ignored during normalization unless explicitly stated. So `netcdf@4.4.1+mpi ^mvapich2` and `netcdf@4.4.0+mpi ^mvapich2` work but `netcdf+mpi ^mvapich2` doesn't. This solution spreads all of the constraints out so that they do not interfere. Obviously dependency resolution is a little bit broken if mpi defaults to true but netcdf doesn't depend on mpi, but that's another issue that's been well documented.\n",
+    "performed_via_github_app": null
+}

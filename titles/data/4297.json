@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4297",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4297/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4297/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4297/events",
+    "html_url": "https://github.com/spack/spack/pull/4297",
+    "id": 230051515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIxNTU1OTg1",
+    "number": 4297,
+    "title": "new package virtualgl",
+    "user": {
+        "login": "luigi-calori",
+        "id": 5165864,
+        "node_id": "MDQ6VXNlcjUxNjU4NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5165864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luigi-calori",
+        "html_url": "https://github.com/luigi-calori",
+        "followers_url": "https://api.github.com/users/luigi-calori/followers",
+        "following_url": "https://api.github.com/users/luigi-calori/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luigi-calori/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luigi-calori/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luigi-calori/subscriptions",
+        "organizations_url": "https://api.github.com/users/luigi-calori/orgs",
+        "repos_url": "https://api.github.com/users/luigi-calori/repos",
+        "events_url": "https://api.github.com/users/luigi-calori/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luigi-calori/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-05-19T18:22:31Z",
+    "updated_at": "2017-05-25T11:12:11Z",
+    "closed_at": "2017-05-23T21:36:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4297",
+        "html_url": "https://github.com/spack/spack/pull/4297",
+        "diff_url": "https://github.com/spack/spack/pull/4297.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4297.patch"
+    },
+    "body": "virtualgl depends on mesa-glu but NOT on mesa, so added a variant to mesa-glu called mesa that defaults to true as it was before",
+    "performed_via_github_app": null
+}

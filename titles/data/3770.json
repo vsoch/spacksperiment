@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3770",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3770/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3770/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3770/events",
+    "html_url": "https://github.com/spack/spack/pull/3770",
+    "id": 220474635,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE0OTg4MDU0",
+    "number": 3770,
+    "title": "A new package: cudnn.",
+    "user": {
+        "login": "weijianwen",
+        "id": 908249,
+        "node_id": "MDQ6VXNlcjkwODI0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/908249?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/weijianwen",
+        "html_url": "https://github.com/weijianwen",
+        "followers_url": "https://api.github.com/users/weijianwen/followers",
+        "following_url": "https://api.github.com/users/weijianwen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/weijianwen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/weijianwen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/weijianwen/subscriptions",
+        "organizations_url": "https://api.github.com/users/weijianwen/orgs",
+        "repos_url": "https://api.github.com/users/weijianwen/repos",
+        "events_url": "https://api.github.com/users/weijianwen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/weijianwen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-04-09T14:28:41Z",
+    "updated_at": "2017-04-11T02:12:00Z",
+    "closed_at": "2017-04-10T12:27:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3770",
+        "html_url": "https://github.com/spack/spack/pull/3770",
+        "diff_url": "https://github.com/spack/spack/pull/3770.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3770.patch"
+    },
+    "body": "In #3235, @muffgaga hasn't replied on the refinement proposals for about 3 days. It is quite urgent for me to use cudnn thus I resubmit a PR with slight modification. \r\n\r\n**LIMITATION**: As the file name `cudnn-8.0-linux-x64-v5.1.tgz` indicates, this package works for `cudnn@5.1` against `cuda@8.0` on x86_64 Linux platform only. Future work can be done to adapt it to more platforms.",
+    "performed_via_github_app": null
+}

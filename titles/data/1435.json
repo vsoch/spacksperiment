@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1435",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1435/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1435/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1435/events",
+    "html_url": "https://github.com/spack/spack/pull/1435",
+    "id": 169253628,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Nzk5OTMyMDA=",
+    "number": 1435,
+    "title": "Feature Proposal : Make All Python Extensions User Configuration Independent",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2016-08-03T22:55:29Z",
+    "updated_at": "2016-10-06T21:43:58Z",
+    "closed_at": "2016-10-06T21:43:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1435",
+        "html_url": "https://github.com/spack/spack/pull/1435",
+        "diff_url": "https://github.com/spack/spack/pull/1435.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1435.patch"
+    },
+    "body": "This pull request is a continuation of #950 that makes all `python` extension packages independent of user configuration on installation.  For more information about these changes what they entail, please see #950 and #1424.\n",
+    "performed_via_github_app": null
+}

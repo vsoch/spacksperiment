@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2381",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2381/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2381/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2381/events",
+    "html_url": "https://github.com/spack/spack/pull/2381",
+    "id": 191053584,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0OTQ4NDc0NDA=",
+    "number": 2381,
+    "title": "Update external distro package to 1.0.1",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614889,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linux",
+            "name": "linux",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-11-22T16:23:25Z",
+    "updated_at": "2016-11-22T22:01:02Z",
+    "closed_at": "2016-11-22T22:01:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2381",
+        "html_url": "https://github.com/spack/spack/pull/2381",
+        "diff_url": "https://github.com/spack/spack/pull/2381.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2381.patch"
+    },
+    "body": "Fixes #2362, see https://github.com/nir0s/distro/issues/151 for further discussion.\r\n\r\nIt looks like we were previously using distro 0.6.0, the latest release on GitHub. Unfortunately, this release had a bug in it, where it tried to decode the output of `lsb_release -a` into ASCII. This caused problems with Fedora 19 (a.k.a Schr\u00f6dinger\u2019s Cat) which has non-ASCII characters.\r\n\r\nThe latest release on PyPi (1.0.1) fixes this issue by using UTF-8 instead of ASCII for decoding. I also applied the patch from https://github.com/nir0s/distro/pull/148, so it should be good to go.\r\n\r\n@jgalarowicz This should fix your problem.",
+    "performed_via_github_app": null
+}

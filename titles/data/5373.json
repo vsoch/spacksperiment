@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5373",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5373/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5373/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5373/events",
+    "html_url": "https://github.com/spack/spack/pull/5373",
+    "id": 258081824,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQxMzQxMDA1",
+    "number": 5373,
+    "title": "Fix Protobuf URLs",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 497155826,
+            "node_id": "MDU6TGFiZWw0OTcxNTU4MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/url-parsing",
+            "name": "url-parsing",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-09-15T15:37:36Z",
+    "updated_at": "2017-09-25T21:51:36Z",
+    "closed_at": "2017-09-25T17:47:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5373",
+        "html_url": "https://github.com/spack/spack/pull/5373",
+        "diff_url": "https://github.com/spack/spack/pull/5373.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5373.patch"
+    },
+    "body": "GitHub releases with additional `.tar.gz` source archive uploads to their actual tag tend to return random selections of which archive shall be taken. Related to  #5356\r\n\r\nThis fixes it for protobuf with a hack to prioritize *GitHub Source Archives* over *additional release artifacts*. The interesting observation is also, that the pick from the `list_url` is also *not deterministic*.\r\n\r\nI would propose to rewrite `lib/spack/spack/util/web` to use for pages, links and versions an ordered dict to get at least determinism into the version url fetching.\r\n\r\nBefore (note the wrong pick in the `3.3.0` & `3.4.0` release!):\r\n```\r\n$ spack checksum protobuf\r\n==> Found 10 versions of protobuf:\r\n\r\n  3.4.1     https://github.com/google/protobuf/archive/v3.4.1.tar.gz\r\n  3.4.0rc3  https://github.com/google/protobuf/archive/v3.4.0rc3.tar.gz\r\n  3.4.0rc2  https://github.com/google/protobuf/archive/v3.4.0rc2.tar.gz\r\n  3.4.0rc1  https://github.com/google/protobuf/archive/v3.4.0rc1.tar.gz\r\n  3.4.0     https://github.com/google/protobuf/releases/download/v3.4.0/protobuf-ruby-3.4.0.tar.gz\r\n  3.3.2     https://github.com/google/protobuf/archive/v3.3.2.tar.gz\r\n  3.3.1     https://github.com/google/protobuf/archive/v3.3.1.tar.gz\r\n  3.3.0rc1  https://github.com/google/protobuf/archive/v3.3.0rc1.tar.gz\r\n  3.3.0     https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-ruby-3.3.0.tar.gz\r\n  3.2.1     https://github.com/google/protobuf/archive/v3.2.1.tar.gz\r\n```\r\n\r\nNow:\r\n```\r\n$ spack checksum protobuf\r\n==> Found 10 versions of protobuf:\r\n  \r\n  3.4.1     https://github.com/google/protobuf/archive/v3.4.1.tar.gz\r\n  3.4.0rc3  https://github.com/google/protobuf/archive/v3.4.0rc3.tar.gz\r\n  3.4.0rc2  https://github.com/google/protobuf/archive/v3.4.0rc2.tar.gz\r\n  3.4.0rc1  https://github.com/google/protobuf/archive/v3.4.0rc1.tar.gz\r\n  3.4.0     https://github.com/google/protobuf/archive/v3.4.0.tar.gz\r\n  3.3.2     https://github.com/google/protobuf/archive/v3.3.2.tar.gz\r\n  3.3.1     https://github.com/google/protobuf/archive/v3.3.1.tar.gz\r\n  3.3.0rc1  https://github.com/google/protobuf/archive/v3.3.0rc1.tar.gz\r\n  3.3.0     https://github.com/google/protobuf/archive/v3.3.0.tar.gz\r\n  3.2.1     https://github.com/google/protobuf/archive/v3.2.1.tar.gz\r\n```",
+    "performed_via_github_app": null
+}

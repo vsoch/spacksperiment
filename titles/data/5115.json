@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5115",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5115/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5115/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5115/events",
+    "html_url": "https://github.com/spack/spack/pull/5115",
+    "id": 250525833,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM1OTUxMTkz",
+    "number": 5115,
+    "title": "Relaxed constraints on config.yaml structure",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-08-16T06:40:15Z",
+    "updated_at": "2017-08-17T04:37:15Z",
+    "closed_at": "2017-08-17T04:37:10Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5115",
+        "html_url": "https://github.com/spack/spack/pull/5115",
+        "diff_url": "https://github.com/spack/spack/pull/5115.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5115.patch"
+    },
+    "body": "This PR allows additional unused properties at the top-level of the config.yaml file. Having these properties permits to use two different versions of Spack, one of which adds a new property, without receiving error messages due to the presence of this new property in a configuration cache stored in the user's home.\r\n\r\n---\r\n\r\nCurrently adding an entry to `config.yaml` and switching back to a version of Spack where this entry is not allowed gives an error similar to:\r\n```console\r\n$ spack help\r\nTraceback (most recent call last):\r\n  File \"/home/mculpo/PycharmProjects/spack/bin/spack\", line 80, in <module>\r\n    import spack.main  # noqa\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/__init__.py\", line 84, in <module>\r\n    import spack.repository\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/repository.py\", line 44, in <module>\r\n    import spack.spec\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/spec.py\", line 120, in <module>\r\n    import spack.store\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/store.py\", line 58, in <module>\r\n    config = spack.config.get_config(\"config\")\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/config.py\", line 409, in get_config\r\n    data = scope.get_section(section)\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/config.py\", line 180, in get_section\r\n    data   = _read_config_file(path, schema)\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/config.py\", line 282, in _read_config_file\r\n    validate_section(data, schema)\r\n  File \"/home/mculpo/PycharmProjects/spack/lib/spack/spack/config.py\", line 152, in validate_section\r\n    raise ConfigFormatError(e, data)\r\nspack.config.ConfigFormatError: /home/mculpo/.spack/config.yaml:1: Additional properties are not allowed ('template_dirs' was unexpected)\r\n```",
+    "performed_via_github_app": null
+}

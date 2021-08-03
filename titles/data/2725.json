@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2725",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2725/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2725/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2725/events",
+    "html_url": "https://github.com/spack/spack/pull/2725",
+    "id": 198583630,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAwMDMwNzU4",
+    "number": 2725,
+    "title": "Fix the general case URL for the zlib tarball",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2017-01-03T22:17:30Z",
+    "updated_at": "2017-01-04T16:27:17Z",
+    "closed_at": "2017-01-04T16:17:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2725",
+        "html_url": "https://github.com/spack/spack/pull/2725",
+        "diff_url": "https://github.com/spack/spack/pull/2725.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2725.patch"
+    },
+    "body": "A recent pull request jiggled this around, but now it tries to download 1.2.10 from Canonical, which doesn't work.\r\n\r\n@tgamblin -- I'm testing this now.  Will follow up if/when it's ready to go.",
+    "performed_via_github_app": null
+}

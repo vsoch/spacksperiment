@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3836",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3836/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3836/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3836/events",
+    "html_url": "https://github.com/spack/spack/pull/3836",
+    "id": 221767585,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE1OTAxMzY5",
+    "number": 3836,
+    "title": "Add package gccxml",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-04-14T08:34:56Z",
+    "updated_at": "2017-04-15T06:26:13Z",
+    "closed_at": "2017-04-14T22:54:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3836",
+        "html_url": "https://github.com/spack/spack/pull/3836",
+        "diff_url": "https://github.com/spack/spack/pull/3836.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3836.patch"
+    },
+    "body": "There is unfortunately no buildable release (the 0.6.x fails with a CMake error). I tagged the last change to code (i.e. ignoring the README changes from a couple of months ago)",
+    "performed_via_github_app": null
+}

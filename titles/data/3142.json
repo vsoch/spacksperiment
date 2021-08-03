@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3142",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3142/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3142/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3142/events",
+    "html_url": "https://github.com/spack/spack/pull/3142",
+    "id": 207499556,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA2MDkyNzYw",
+    "number": 3142,
+    "title": "Specify additional configuration directories using command arguments",
+    "user": {
+        "login": "paulhopkins",
+        "id": 3026691,
+        "node_id": "MDQ6VXNlcjMwMjY2OTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3026691?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulhopkins",
+        "html_url": "https://github.com/paulhopkins",
+        "followers_url": "https://api.github.com/users/paulhopkins/followers",
+        "following_url": "https://api.github.com/users/paulhopkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulhopkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulhopkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulhopkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulhopkins/orgs",
+        "repos_url": "https://api.github.com/users/paulhopkins/repos",
+        "events_url": "https://api.github.com/users/paulhopkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulhopkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908755,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NQ==",
+            "url": "https://api.github.com/repos/spack/spack/labels/duplicate",
+            "name": "duplicate",
+            "color": "cccccc",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2017-02-14T12:16:49Z",
+    "updated_at": "2019-02-12T09:56:01Z",
+    "closed_at": "2019-02-12T09:56:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3142",
+        "html_url": "https://github.com/spack/spack/pull/3142",
+        "diff_url": "https://github.com/spack/spack/pull/3142.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3142.patch"
+    },
+    "body": "This adds a global command line option to specify additional configuration directories. The argument either takes a directory path, or a combination of package and sub-directory. This form fits in with suggestions from @citibeth for package level `package.yaml` files. Examples:\r\n\r\n```\r\n$ spack --config path/to/config/dir install myapp\r\n==> Adding configuration scope 'config/dir'\r\n...\r\n$ spack --config myapplication:dir install myapp\r\n==> Adding configuration scope 'application:dir'\r\n...\r\n```\r\n\r\nSome juggling of when to add sub-command arguments was required so that they were aware of the new scopes. Note, that the short form of this argument, `-c`, conflicts with the `--color` command added by me in #3013. On reflection this command should claim the `-c` form, and the other command only use `--color`, `--no-color`, though I am open to suggestions.\r\n\r\nThere are no tests associated with this PR, but I could write a test suite that repeatedly calls spack using `subprocess` and checks the output, if that is acceptable.",
+    "performed_via_github_app": null
+}

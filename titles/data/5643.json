@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/5643",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/5643/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/5643/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/5643/events",
+    "html_url": "https://github.com/spack/spack/pull/5643",
+    "id": 263585073,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ1MjU2MTg3",
+    "number": 5643,
+    "title": "Updating hypre package so that new v2.12.1 is supported and preferred.",
+    "user": {
+        "login": "jbschroder",
+        "id": 4768739,
+        "node_id": "MDQ6VXNlcjQ3Njg3Mzk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4768739?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jbschroder",
+        "html_url": "https://github.com/jbschroder",
+        "followers_url": "https://api.github.com/users/jbschroder/followers",
+        "following_url": "https://api.github.com/users/jbschroder/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jbschroder/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jbschroder/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jbschroder/subscriptions",
+        "organizations_url": "https://api.github.com/users/jbschroder/orgs",
+        "repos_url": "https://api.github.com/users/jbschroder/repos",
+        "events_url": "https://api.github.com/users/jbschroder/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jbschroder/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-10-06T22:11:57Z",
+    "updated_at": "2017-10-08T13:29:30Z",
+    "closed_at": "2017-10-08T04:52:33Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/5643",
+        "html_url": "https://github.com/spack/spack/pull/5643",
+        "diff_url": "https://github.com/spack/spack/pull/5643.diff",
+        "patch_url": "https://github.com/spack/spack/pull/5643.patch"
+    },
+    "body": "A new version of hypre is out, v2.12.1.  This pull request adds this version to the hypre spack package and makes it preferred.\r\n",
+    "performed_via_github_app": null
+}

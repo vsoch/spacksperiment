@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6939",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6939/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6939/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6939/events",
+    "html_url": "https://github.com/spack/spack/pull/6939",
+    "id": 288421691,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYyODMyODY5",
+    "number": 6939,
+    "title": "Add url_for_version to pango package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-01-14T16:42:25Z",
+    "updated_at": "2018-01-15T20:05:31Z",
+    "closed_at": "2018-01-15T20:05:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6939",
+        "html_url": "https://github.com/spack/spack/pull/6939",
+        "diff_url": "https://github.com/spack/spack/pull/6939.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6939.patch"
+    },
+    "body": "### Before\r\n\r\n```\r\nSafe versions:  \r\n    1.41.0    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.41.0.tar.xz\r\n    1.40.3    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.3.tar.xz\r\n    1.40.1    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.1.tar.xz\r\n    1.36.8    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.36.8.tar.xz\r\n```\r\n\r\n### After\r\n\r\n```\r\nSafe versions:  \r\n    1.41.0    http://ftp.gnome.org/pub/GNOME/sources/pango/1.41/pango-1.41.0.tar.xz\r\n    1.40.3    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.3.tar.xz\r\n    1.40.1    http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.1.tar.xz\r\n    1.36.8    http://ftp.gnome.org/pub/GNOME/sources/pango/1.36/pango-1.36.8.tar.xz\r\n```\r\n\r\n@adamryczkowski can you see if this fixes #6938?",
+    "performed_via_github_app": null
+}

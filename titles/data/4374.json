@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4374",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4374/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4374/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4374/events",
+    "html_url": "https://github.com/spack/spack/pull/4374",
+    "id": 231812945,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTIyNzY2NzY1",
+    "number": 4374,
+    "title": "ISAAC: Fix CMakeLists.txt Path",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2017-05-27T16:38:00Z",
+    "updated_at": "2017-05-31T09:14:14Z",
+    "closed_at": "2017-05-30T19:55:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4374",
+        "html_url": "https://github.com/spack/spack/pull/4374",
+        "diff_url": "https://github.com/spack/spack/pull/4374.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4374.patch"
+    },
+    "body": "Somehow the path to `CMakeLists.txt` via the class property `root_cmakelists_dir` was relative but is now actually relative to `spack-build/`.\r\n\r\nClose #4324 by providing a path relative to the source repo of the stage via a method instead of a member variable",
+    "performed_via_github_app": null
+}

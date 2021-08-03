@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6872",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6872/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6872/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6872/events",
+    "html_url": "https://github.com/spack/spack/pull/6872",
+    "id": 287179019,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYxOTM4ODg0",
+    "number": 6872,
+    "title": "Track multiple processes on Travis only for build tests",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-01-09T18:04:04Z",
+    "updated_at": "2018-01-10T16:16:05Z",
+    "closed_at": "2018-01-10T16:14:17Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6872",
+        "html_url": "https://github.com/spack/spack/pull/6872",
+        "diff_url": "https://github.com/spack/spack/pull/6872.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6872.patch"
+    },
+    "body": "On a local workstation, it seems that tracking multiple processes during coverage may result in malformed coverage reports for unit tests and not for build tests.\r\n\r\nGiven that multiple processes make a difference in coverage mainly for build tests, try to disable the tracking for unit tests to see if we get more stable coverage results.",
+    "performed_via_github_app": null
+}

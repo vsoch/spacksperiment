@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/3875",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/3875/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/3875/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/3875/events",
+    "html_url": "https://github.com/spack/spack/pull/3875",
+    "id": 222359053,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE2Mjg4OTkw",
+    "number": 3875,
+    "title": "ocotpus and arpack-ng: fix arpack bug and add libs to arpack-ng",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2017-04-18T09:44:17Z",
+    "updated_at": "2017-05-28T20:31:39Z",
+    "closed_at": "2017-04-18T16:50:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/3875",
+        "html_url": "https://github.com/spack/spack/pull/3875",
+        "diff_url": "https://github.com/spack/spack/pull/3875.diff",
+        "patch_url": "https://github.com/spack/spack/pull/3875.patch"
+    },
+    "body": "also rename the variant to be consistent with other packages\r\n\r\nThe bug was introduced in https://github.com/LLNL/spack/pull/2819\r\n\r\n@danielsjensen1 ping.",
+    "performed_via_github_app": null
+}

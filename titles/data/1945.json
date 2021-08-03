@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1945",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1945/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1945/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1945/events",
+    "html_url": "https://github.com/spack/spack/pull/1945",
+    "id": 181482646,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0ODgzMDk4MTI=",
+    "number": 1945,
+    "title": "Fix bugs preventing readthedocs from rebuilding the documentation",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2016-10-06T17:52:46Z",
+    "updated_at": "2016-10-06T20:00:56Z",
+    "closed_at": "2016-10-06T19:50:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1945",
+        "html_url": "https://github.com/spack/spack/pull/1945",
+        "diff_url": "https://github.com/spack/spack/pull/1945.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1945.patch"
+    },
+    "body": "This PR is designed to fix 2 bugs in our readthedocs documentation:\n\nThe [Package List](http://spack.readthedocs.io/en/latest/package_list.html) isn't being rebuilt anymore. Specifically, if you look at the package for [PGI](http://spack.readthedocs.io/en/latest/package_list.html#pgi), you'll notice that it doesn't reflect the changes that were made in #1901.\n\nThe [Command Index](http://spack.readthedocs.io/en/latest/command_index.html) isn't being rebuilt anymore. #1678 was supposed to fix the Command Index by removing things like `spack edit -force` and `spack mirror add` by making their tags more specific. The tags were changed in the rest of the documentation, but since `command_index.rst` isn't being refreshed, it didn't get the memo. Now all of the links are broken.\n\nSo what caused this problem? I noticed a bug where if you ran `make` twice in a row, it would cause warning messages with Sphinx (see #1741). @tgamblin attempted to resolve these warnings in #1902 by not rebuilding some of the cached files. Unfortunately, the if-statements he added to not rebuild `package_list.rst` and `command_index.rst` had some unintended consequences. According to the [readthedocs documentation](http://read-the-docs.readthedocs.io/en/latest/builds.html#understanding-what-s-going-on):\n\n> The first step of the process is that we check out your code from the repository you have given us. If the code is already checked out, we update the copy to the branch that you have specified in your projects configuration.\n\nSo the problem is that readthedocs isn't starting from a fresh clone every time. Since it was reusing the old .rst files, `conf.py` told it not to rebuild them.\n\nThe solution was to remove the conditional if-statements added in #1902. Surprisingly, this doesn't seem to reintroduce the problem documented in #1741. Perhaps the other changes in #1902 were enough to prevent the problem on their own.\n",
+    "performed_via_github_app": null
+}

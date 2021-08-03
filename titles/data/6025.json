@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6025",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6025/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6025/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6025/events",
+    "html_url": "https://github.com/spack/spack/pull/6025",
+    "id": 269700162,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTQ5NTk3MTU3",
+    "number": 6025,
+    "title": "trilinos: update hdf5 dependency to use 'hdf5+hl'",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2017-10-30T18:08:46Z",
+    "updated_at": "2017-11-06T21:26:43Z",
+    "closed_at": "2017-11-06T21:03:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6025",
+        "html_url": "https://github.com/spack/spack/pull/6025",
+        "diff_url": "https://github.com/spack/spack/pull/6025.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6025.patch"
+    },
+    "body": "Without this change - I get the following error [triggered by 161dca6d5 c9810f808 changes]\r\n\r\n\r\n$ ./bin/spack install trilinos+hdf5\r\n==> Error: An unsatisfiable variant constraint has been detected for spec:\r\n\r\n    hdf5@1.10.1%gcc@7~cxx~debug~fortran~hl+mpi+pic+shared~szip~threadsafe arch=linux-fedora27-x86_64\r\n\r\n\r\nwhile trying to concretize the partial spec:\r\n\r\n    netcdf+mpi\r\n        ^m4\r\n        ^mpich@3.3a2%gcc@7 device=ch3 +hydra netmod=tcp +pmi+romio~verbs arch=linux-fedora27-x86_64\r\n        ^zlib@1.2.11%gcc@7+optimize+pic+shared arch=linux-fedora27-x86_64\r\n\r\n\r\nnetcdf requires hdf5 variant +hl, but spec asked for ~hl",
+    "performed_via_github_app": null
+}

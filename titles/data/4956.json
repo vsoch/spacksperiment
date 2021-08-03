@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4956",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4956/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4956/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4956/events",
+    "html_url": "https://github.com/spack/spack/pull/4956",
+    "id": 247477240,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTMzNzc0NTY5",
+    "number": 4956,
+    "title": "[WIP] Prevent ignoring compiler concretization preferences",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-08-02T18:15:49Z",
+    "updated_at": "2019-11-18T09:26:49Z",
+    "closed_at": "2019-11-18T09:26:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4956",
+        "html_url": "https://github.com/spack/spack/pull/4956",
+        "diff_url": "https://github.com/spack/spack/pull/4956.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4956.patch"
+    },
+    "body": "Say our file packages.yaml looks like this:\r\n```yaml\r\npackages:\r\n  all:\r\n    compiler: [gcc, intel, pgi, clang, xl, nag]\r\n    providers:\r\n      mpi: [openmpi, mpich]\r\n  openmpi:\r\n    paths:\r\n      openmpi@1.8.4%gcc@4.8: /some/path/openmpi-1.8.4-gcc48\r\n      openmpi@1.8.4%gcc@4.9:  /some/path/openmpi-1.8.4-gcc49\r\n      openmpi@1.8.4%gcc@5.1:  /some/path/openmpi-1.8.4-gcc51\r\n      openmpi@1.8.4%gcc@6.2:  /some/path/openmpi-1.8.4-gcc62\r\n      openmpi@1.8.4%gcc@7.1:  /some/path/openmpi-1.8.4-gcc71\r\n      openmpi@1.8.4%intel@14:  /some/path/openmpi-1.8.4-intel14\r\n      openmpi@1.8.4%nag@6.0:  /some/path/openmpi-1.8.4-static-nag60\r\n      openmpi@1.10.1%intel@16:  /some/path/openmpi-1.10.1_mlx-intel16\r\n      openmpi@1.10.2%intel@14:  /some/path/openmpi-1.10.2_mlx-intel14\r\n      openmpi@1.10.2%intel@16:  /some/path/openmpi-1.10.2_mlx-intel16\r\n      openmpi@1.10.2%nag@6.0:  /some/path/openmpi-1.10.2_mlx-static-nag60\r\n    buildable: False\r\n```\r\nNow, if we want to install a package 'A' (which depends on mpi, of course) relying on the compiler concretization preferencies:\r\n```\r\nspack install A\r\n```\r\nwe get the following error:\r\n```\r\n==> Error: No compilers with spec intel@14 found\r\n```\r\n\r\nThis happens because Intel compiler is the most ABI compatible to nothing. =)\r\n\r\nMy solution to the problem is the following: if the input spec does not have any information about the compiler yet, we should just wait untill the situation becomes more clear. I hope that I understood the logic of this part of the code correctly.",
+    "performed_via_github_app": null
+}

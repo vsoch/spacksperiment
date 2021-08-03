@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2843",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2843/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2843/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2843/events",
+    "html_url": "https://github.com/spack/spack/pull/2843",
+    "id": 201334708,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTAxODk2NzE0",
+    "number": 2843,
+    "title": "Change spack create UI to default to name instead of URL",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-01-17T16:22:52Z",
+    "updated_at": "2017-01-26T10:34:04Z",
+    "closed_at": "2017-01-26T10:34:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2843",
+        "html_url": "https://github.com/spack/spack/pull/2843",
+        "diff_url": "https://github.com/spack/spack/pull/2843.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2843.patch"
+    },
+    "body": "This PR implements @citibeth's idea from #1108 to change the UI for `spack create` from:\r\n```\r\n$ spack create --name <name> <url>\r\n```\r\nto:\r\n```\r\n$ spack create --url <url> <name>\r\n```\r\nI decided to separate this change from #2707 because it was a fairly controversial change. Yes, the UI now becomes more consistent with other commands in Spack (`spack subcommand packagename`), but for 99% of packages that I've created, I've only needed to specify the URL. Honestly, I'm not even sure if I like this change, but, well, here it is. I'll let @citibeth state her case as to whether or not this change should be merged.",
+    "performed_via_github_app": null
+}

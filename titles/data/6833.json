@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6833",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6833/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6833/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6833/events",
+    "html_url": "https://github.com/spack/spack/pull/6833",
+    "id": 286226888,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTYxMjk0OTYy",
+    "number": 6833,
+    "title": "Extract installation of dependencies from PackageBase.do_install",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2018-01-05T08:50:02Z",
+    "updated_at": "2019-02-12T12:35:38Z",
+    "closed_at": "2019-02-12T12:35:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6833",
+        "html_url": "https://github.com/spack/spack/pull/6833",
+        "diff_url": "https://github.com/spack/spack/pull/6833.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6833.patch"
+    },
+    "body": "Up to this commit `PackageBase.do_install` was installing the root package of a DAG unconditionally and its dependencies conditionally (depending on the value of the boolean argument `install_deps`).\r\n\r\nHowever, a sensible operation in many contexts is to install *only* the dependencies. This was not possible via API, and the code to do that was replicated in the implementation of `PackageBase.do_install` and of the `spack install` command. Further, the code in those two places was not doing *exactly* the same thing.\r\n\r\nThis commit extracts a new function that is used in both places, and is external to `PackageBase`. This choice has been preferred over extending `PackageBase.do_install` API because:\r\n- the method was already complex enough (10-15 arguments) and needed to be simplified \r\n- having a method on an instance that installs anything but that instance spec didn't seem a sensible choice",
+    "performed_via_github_app": null
+}

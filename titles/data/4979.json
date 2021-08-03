@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4979",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4979/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4979/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4979/events",
+    "html_url": "https://github.com/spack/spack/pull/4979",
+    "id": 248142272,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTM0MjY5OTU1",
+    "number": 4979,
+    "title": "Fix libbsd's cdefs.h to be compatible with gcc 4.8.x",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2017-08-04T23:56:51Z",
+    "updated_at": "2017-08-08T22:08:32Z",
+    "closed_at": "2017-08-05T18:33:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4979",
+        "html_url": "https://github.com/spack/spack/pull/4979",
+        "diff_url": "https://github.com/spack/spack/pull/4979.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4979.patch"
+    },
+    "body": "See the discussion in #4945 (after the merge) for additional background.\r\n\r\nlibbsd builds with gcc@5.4.0 on CentOS 7, but not with the system's gcc@4.8.5.  Others have reported problems with gcc@4.8.3 on Fedora 19.\r\n\r\nThe problem boils down to the lack of support for the clang extension `__has_include_next`.  The immediate symptom seems to be the pre-processor using defining macro like this\r\n\r\n```c\r\n#define __has_include 1\r\n```\r\n\r\nthen then tripping over an expansion of it like this:\r\n\r\n```\r\nblah.h:13:23: error: missing binary operator before token \"(\"\r\n```\r\n\r\nThis patch changes the macro definition to:\r\n\r\n```c\r\n#define __has_include(X) 1\r\n```\r\n\r\nwhich swallows the arguments with which the macro is invoked.\r\n\r\nThe end result is that libbsd builds for me on CentOS 7 using the system compiler.\r\n\r\nI'm unsure about how to constrain the compiler version, this is the only system I have at hand to test.",
+    "performed_via_github_app": null
+}

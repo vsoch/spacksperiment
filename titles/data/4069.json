@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/4069",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/4069/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/4069/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/4069/events",
+    "html_url": "https://github.com/spack/spack/pull/4069",
+    "id": 225525607,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTE4NDQwMTk2",
+    "number": 4069,
+    "title": "only add direct build-only dependencies to PATH",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2017-05-01T20:59:21Z",
+    "updated_at": "2017-05-28T20:30:20Z",
+    "closed_at": "2017-05-04T01:41:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/4069",
+        "html_url": "https://github.com/spack/spack/pull/4069",
+        "diff_url": "https://github.com/spack/spack/pull/4069.diff",
+        "patch_url": "https://github.com/spack/spack/pull/4069.patch"
+    },
+    "body": "fixes https://github.com/LLNL/spack/issues/4064\r\n\r\n- [x] @hartzell please see if this fixes the  problem\r\n- [ ] add tests",
+    "performed_via_github_app": null
+}

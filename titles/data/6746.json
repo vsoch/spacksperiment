@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/6746",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/6746/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/6746/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/6746/events",
+    "html_url": "https://github.com/spack/spack/pull/6746",
+    "id": 283900557,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTU5NjcxNTY3",
+    "number": 6746,
+    "title": "add OctavePackage",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-12-21T14:35:11Z",
+    "updated_at": "2018-01-03T06:59:34Z",
+    "closed_at": "2018-01-03T02:03:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/6746",
+        "html_url": "https://github.com/spack/spack/pull/6746",
+        "diff_url": "https://github.com/spack/spack/pull/6746.diff",
+        "patch_url": "https://github.com/spack/spack/pull/6746.patch"
+    },
+    "body": "EDIT: I think I figure out the installation. \r\n\r\nOverriding `uninstall` is still tricky as I can't get to `octave` executable the same way I did with `install`:\r\n```\r\n    def do_uninstall(self, force=False):\r\n        \"\"\"Uninstall this package by spec.\"\"\"\r\n        name = 'spline'\r\n        inspect.getmodule(self).octave('pkg uninstall %s' % name)\r\n        # delegate to instance-less method.\r\n        Package.uninstall_by_spec(self.spec, force)\r\n```\r\nproduces\r\n```\r\n==> Error: 'module' object has no attribute 'octave'\r\n```\r\n\r\nI guess I leave this for another time unless someone knows an easy fix.\r\n\r\n----\r\n\r\n~~it's WIP as I am bit confused why `setup_dependent_package()` is not called, defined in `octave` package~~ https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/octave/package.py#L234-L241\r\n\r\nMaybe I just need to follow `PythonPackage` which has\r\n```\r\nimport inspect\r\ndef python(self, *args, **kwargs):\r\n        inspect.getmodule(self).python(*args, **kwargs)\r\n```\r\nand if I understand correctly is being used as `self.python`.\r\n\r\n",
+    "performed_via_github_app": null
+}

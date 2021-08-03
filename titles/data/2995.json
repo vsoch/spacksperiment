@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/2995",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/2995/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/2995/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/2995/events",
+    "html_url": "https://github.com/spack/spack/pull/2995",
+    "id": 204732844,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTA0MjQyMTI0",
+    "number": 2995,
+    "title": "Ocaml fails as an AutotoolsPackage",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-02-01T23:03:23Z",
+    "updated_at": "2017-02-03T22:22:51Z",
+    "closed_at": "2017-02-03T22:22:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/2995",
+        "html_url": "https://github.com/spack/spack/pull/2995",
+        "diff_url": "https://github.com/spack/spack/pull/2995.diff",
+        "patch_url": "https://github.com/spack/spack/pull/2995.patch"
+    },
+    "body": "Closes #2994. See that issue for the backstory.\r\n\r\nSwitch the ocaml install bit back to being a Package\r\nwith it's own little install method.\r\n\r\nThis fix allows me to build Unison on CentOS 7.\r\n\r\n",
+    "performed_via_github_app": null
+}
