@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13747",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13747/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13747/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13747/events",
+    "html_url": "https://github.com/spack/spack/pull/13747",
+    "id": 523227005,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxMjczNDkx",
+    "number": 13747,
+    "title": "Buildcache: reconstruct rpaths on install",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-15T03:12:04Z",
+    "updated_at": "2019-11-15T17:40:10Z",
+    "closed_at": "2019-11-15T16:22:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13747",
+        "html_url": "https://github.com/spack/spack/pull/13747",
+        "diff_url": "https://github.com/spack/spack/pull/13747.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13747.patch"
+    },
+    "body": "* This is done by loaded the stored spec with the current configuration to get rpaths from environment and compiler library paths contructed from current compiler path.\r\n* Cleaned up the use of allow_root.\r\n* Made new path longer than old path a fatal exception because binary text replacement is needed for some packages which compile in paths.\r\n",
+    "performed_via_github_app": null
+}

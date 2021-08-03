@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17293",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17293/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17293/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17293/events",
+    "html_url": "https://github.com/spack/spack/pull/17293",
+    "id": 647329672,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQxMzc1Mjc5",
+    "number": 17293,
+    "title": "Add testing option to dev-build command",
+    "user": {
+        "login": "elsagermann",
+        "id": 57254519,
+        "node_id": "MDQ6VXNlcjU3MjU0NTE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57254519?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/elsagermann",
+        "html_url": "https://github.com/elsagermann",
+        "followers_url": "https://api.github.com/users/elsagermann/followers",
+        "following_url": "https://api.github.com/users/elsagermann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/elsagermann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/elsagermann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/elsagermann/subscriptions",
+        "organizations_url": "https://api.github.com/users/elsagermann/orgs",
+        "repos_url": "https://api.github.com/users/elsagermann/repos",
+        "events_url": "https://api.github.com/users/elsagermann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/elsagermann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-06-29T12:24:50Z",
+    "updated_at": "2020-10-19T04:17:08Z",
+    "closed_at": "2020-10-19T04:17:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17293",
+        "html_url": "https://github.com/spack/spack/pull/17293",
+        "diff_url": "https://github.com/spack/spack/pull/17293.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17293.patch"
+    },
+    "body": "Hi there! This small PR aims to add the --test=all or --test=root option to the dev-build command of Spack. We would love to be able to merge this small fix if possible since it would greatly help us with the local development routine of our software.\r\n\r\nThanks in advance for any feedback and your great work,\r\n\r\nElsa Germann\r\nAPNC team @ MeteoSwiss",
+    "performed_via_github_app": null
+}

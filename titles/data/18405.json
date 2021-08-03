@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18405",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18405/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18405/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18405/events",
+    "html_url": "https://github.com/spack/spack/pull/18405",
+    "id": 688902920,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc2MDQ4NzE1",
+    "number": 18405,
+    "title": "new package: orbit2",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-31T05:11:30Z",
+    "updated_at": "2020-09-01T11:11:57Z",
+    "closed_at": "2020-09-01T11:11:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18405",
+        "html_url": "https://github.com/spack/spack/pull/18405",
+        "diff_url": "https://github.com/spack/spack/pull/18405.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18405.patch"
+    },
+    "body": "New package to support gconf.\r\nThis depends on libidl (#18403).",
+    "performed_via_github_app": null
+}

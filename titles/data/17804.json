@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17804",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17804/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17804/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17804/events",
+    "html_url": "https://github.com/spack/spack/pull/17804",
+    "id": 669722812,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYwMDYxMTE4",
+    "number": 17804,
+    "title": "New format for packages.yaml, simplify detection protocol",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2020-07-31T11:34:59Z",
+    "updated_at": "2020-08-11T19:46:12Z",
+    "closed_at": "2020-08-10T18:59:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17804",
+        "html_url": "https://github.com/spack/spack/pull/17804",
+        "diff_url": "https://github.com/spack/spack/pull/17804.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17804.patch"
+    },
+    "body": "closes #16526\r\n\r\nThis is a rebased version of #16526 where commits have been factored to reflect functional changes:\r\n\r\n- 9ce78be Has all the changes related to the new `packages.yaml` format and the configuration updates needed to support the conversion from the old format to the new one\r\n- e5c689c Contains the simplifications / extensions to the detection protocol for external packages\r\n\r\nThis is in preparation for a \"rebase and merge\" rather than a single squashed commit. Thanks to @scheibelp for the extensive review in #16526 and help writing the detailed commit messages in this PR.",
+    "performed_via_github_app": null
+}

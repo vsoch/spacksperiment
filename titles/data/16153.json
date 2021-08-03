@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16153/events",
+    "html_url": "https://github.com/spack/spack/pull/16153",
+    "id": 602722750,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA1NjY5ODA0",
+    "number": 16153,
+    "title": "jsoncpp add 1.9.2, patch %clang@10 for implicit conversion",
+    "user": {
+        "login": "svenevs",
+        "id": 5871461,
+        "node_id": "MDQ6VXNlcjU4NzE0NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5871461?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/svenevs",
+        "html_url": "https://github.com/svenevs",
+        "followers_url": "https://api.github.com/users/svenevs/followers",
+        "following_url": "https://api.github.com/users/svenevs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/svenevs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/svenevs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/svenevs/subscriptions",
+        "organizations_url": "https://api.github.com/users/svenevs/orgs",
+        "repos_url": "https://api.github.com/users/svenevs/repos",
+        "events_url": "https://api.github.com/users/svenevs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/svenevs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-04-19T14:04:17Z",
+    "updated_at": "2020-04-28T16:14:37Z",
+    "closed_at": "2020-04-28T16:14:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16153",
+        "html_url": "https://github.com/spack/spack/pull/16153",
+        "diff_url": "https://github.com/spack/spack/pull/16153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16153.patch"
+    },
+    "body": "`jsoncpp %clang@10.0.0:` will fail building on implicit int-float conversion errors.  Fixed upstream in https://github.com/open-source-parsers/jsoncpp/pull/1023, released in 1.9.2 (also added here).\r\n\r\nI suspect one day other compilers may potentially error on that too, but was conservative with the `@when` clause since this is all I've tested.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14388",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14388/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14388/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14388/events",
+    "html_url": "https://github.com/spack/spack/pull/14388",
+    "id": 545356726,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MjY0MTMx",
+    "number": 14388,
+    "title": "Adjust constraints of gcc-5",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-05T02:04:51Z",
+    "updated_at": "2020-01-12T05:27:15Z",
+    "closed_at": "2020-01-05T04:47:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14388",
+        "html_url": "https://github.com/spack/spack/pull/14388",
+        "diff_url": "https://github.com/spack/spack/pull/14388.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14388.patch"
+    },
+    "body": "This PR adjusts the constraints on isl with GCC-5. GCC-5.1 and GCC-5.2\r\nneed isl-0.14, not isl-0.15.",
+    "performed_via_github_app": null
+}

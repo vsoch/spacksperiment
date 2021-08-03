@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13913",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13913/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13913/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13913/events",
+    "html_url": "https://github.com/spack/spack/pull/13913",
+    "id": 529372619,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ2MjYxNzY5",
+    "number": 13913,
+    "title": "Fixed x86-64 optimization flags for clang",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-11-27T14:14:04Z",
+    "updated_at": "2019-12-04T19:11:24Z",
+    "closed_at": "2019-12-04T17:11:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13913",
+        "html_url": "https://github.com/spack/spack/pull/13913",
+        "diff_url": "https://github.com/spack/spack/pull/13913.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13913.patch"
+    },
+    "body": "Before the flags used where the one for llc, the underlying compiler from LLVM IR to machine assembly. It turns out that the semantic of `-march`, `-mtune` and `-mcpu` changes from clang front-end to llc.\r\n\r\nI found no definitive reference for the flags submitted in this PR, but I checked the assembly on a vectorizable function using [Godbolt's web-site](https://godbolt.org/z/S9yFwU).\r\n\r\nRefers to the discussion in https://github.com/spack/spack/pull/13825#discussion_r351107265 (thanks @t-karatsu !)",
+    "performed_via_github_app": null
+}

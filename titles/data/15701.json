@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15701",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15701/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15701/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15701/events",
+    "html_url": "https://github.com/spack/spack/pull/15701",
+    "id": 588764515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk0NDUzMjM4",
+    "number": 15701,
+    "title": "Fix non-root installations; update homepage",
+    "user": {
+        "login": "brisk022",
+        "id": 12082694,
+        "node_id": "MDQ6VXNlcjEyMDgyNjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12082694?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brisk022",
+        "html_url": "https://github.com/brisk022",
+        "followers_url": "https://api.github.com/users/brisk022/followers",
+        "following_url": "https://api.github.com/users/brisk022/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brisk022/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brisk022/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brisk022/subscriptions",
+        "organizations_url": "https://api.github.com/users/brisk022/orgs",
+        "repos_url": "https://api.github.com/users/brisk022/repos",
+        "events_url": "https://api.github.com/users/brisk022/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brisk022/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-26T22:22:28Z",
+    "updated_at": "2020-03-27T03:32:20Z",
+    "closed_at": "2020-03-27T03:32:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15701",
+        "html_url": "https://github.com/spack/spack/pull/15701",
+        "diff_url": "https://github.com/spack/spack/pull/15701.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15701.patch"
+    },
+    "body": "This pull request adds `--disable-makeinstall-chown` flag to the configuration arguments. Without this flag, installation procedure involves changing the ownership on some files to root:root. So, the installation fails if the package is installed as a non-root user.\r\n\r\n```\r\n5 errors found in build log:\r\n     1290    for I in uname26 linux32 linux64   i386 x86_64     ; do \\\r\n     1291       cd /home/ubuntu/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.5.0/util-linux-2.35.1-fvfws3jh\r\n             pjdhsw3a53taa5yrscxacyy2/bin && ln -sf setarch $I ; \\\r\n     1292    done\r\n     1293    chown root:root /home/ubuntu/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.5.0/util-linux-2.3\r\n             5.1-fvfws3jhpjdhsw3a53taa5yrscxacyy2/bin/mount\r\n     1294    chown: changing ownership of '/home/ubuntu/spack/opt/spack/linux-ubuntu18.04-haswell/gcc-7.5.0/\r\n             util-linux-2.35.1-fvfws3jhpjdhsw3a53taa5yrscxacyy2/bin/mount': Operation not permitted\r\n     1295    Makefile:14981: recipe for target 'install-exec-hook-mount' failed\r\n  >> 1296    make[4]: *** [install-exec-hook-mount] Error 1\r\n     1297    make[4]: Leaving directory '/tmp/ubuntu/spack-stage/spack-stage-util-linux-2.35.1-fvfws3jhpjdhs\r\n             w3a53taa5yrscxacyy2/spack-src'\r\n     1298    Makefile:14271: recipe for target 'install-exec-am' failed\r\n  >> 1299    make[3]: *** [install-exec-am] Error 2\r\n     1300    make[3]: Leaving directory '/tmp/ubuntu/spack-stage/spack-stage-util-linux-2.35.1-fvfws3jhpjdhs\r\n             w3a53taa5yrscxacyy2/spack-src'\r\n     1301    Makefile:13668: recipe for target 'install-am' failed\r\n  >> 1302    make[2]: *** [install-am] Error 2\r\n     1303    make[2]: Leaving directory '/tmp/ubuntu/spack-stage/spack-stage-util-linux-2.35.1-fvfws3jhpjdhs\r\n             w3a53taa5yrscxacyy2/spack-src'\r\n     1304    Makefile:13356: recipe for target 'install-recursive' failed\r\n  >> 1305    make[1]: *** [install-recursive] Error 1\r\n     1306    make[1]: Leaving directory '/tmp/ubuntu/spack-stage/spack-stage-util-linux-2.35.1-fvfws3jhpjdhs\r\n             w3a53taa5yrscxacyy2/spack-src'\r\n     1307    Makefile:13662: recipe for target 'install' failed\r\n  >> 1308    make: *** [install] Error 2\r\n```\r\n\r\nIn addition, the specified home page has not been updated since 2014. Project's new home appears to be on github now.",
+    "performed_via_github_app": null
+}

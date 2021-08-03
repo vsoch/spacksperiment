@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15724",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15724/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15724/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15724/events",
+    "html_url": "https://github.com/spack/spack/pull/15724",
+    "id": 589513969,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk1MDUwNzcw",
+    "number": 15724,
+    "title": "Add CUDA aware support for UCX and OpenMPI",
+    "user": {
+        "login": "Harry-Chen",
+        "id": 2819727,
+        "node_id": "MDQ6VXNlcjI4MTk3Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2819727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Harry-Chen",
+        "html_url": "https://github.com/Harry-Chen",
+        "followers_url": "https://api.github.com/users/Harry-Chen/followers",
+        "following_url": "https://api.github.com/users/Harry-Chen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Harry-Chen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Harry-Chen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Harry-Chen/subscriptions",
+        "organizations_url": "https://api.github.com/users/Harry-Chen/orgs",
+        "repos_url": "https://api.github.com/users/Harry-Chen/repos",
+        "events_url": "https://api.github.com/users/Harry-Chen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Harry-Chen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2020-03-28T05:37:48Z",
+    "updated_at": "2020-03-31T18:31:08Z",
+    "closed_at": "2020-03-31T15:04:32Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15724",
+        "html_url": "https://github.com/spack/spack/pull/15724",
+        "diff_url": "https://github.com/spack/spack/pull/15724.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15724.patch"
+    },
+    "body": "According to https://www.open-mpi.org/faq/?category=buildcuda, OpenMPI could be made CUDA-aware by using UCX built with `gdrcopy` and `CUDA`.\r\n\r\nAlthough ucx is able to detect the existence of CUDA and gdrcopy when configuring, I believe an explicit flag would be more informative.\r\n\r\nBTW it there a way to express that when `cuda_aware` is enabled, `fabrics` must be `ucx`? The current implementation is ugly for I have to include all other fabrics in `conflicts` section explicitly.",
+    "performed_via_github_app": null
+}

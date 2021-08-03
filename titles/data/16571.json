@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16571",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16571/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16571/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16571/events",
+    "html_url": "https://github.com/spack/spack/pull/16571",
+    "id": 615801547,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2MDM2MTA4",
+    "number": 16571,
+    "title": "fio: Add 3.19",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-11T11:12:21Z",
+    "updated_at": "2020-05-11T21:54:29Z",
+    "closed_at": "2020-05-11T21:54:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16571",
+        "html_url": "https://github.com/spack/spack/pull/16571",
+        "diff_url": "https://github.com/spack/spack/pull/16571.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16571.patch"
+    },
+    "body": "Earlier versions are not compatible with gcc@10:.",
+    "performed_via_github_app": null
+}

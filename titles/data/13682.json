@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13682",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13682/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13682/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13682/events",
+    "html_url": "https://github.com/spack/spack/pull/13682",
+    "id": 521076315,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NTI3MzQ2",
+    "number": 13682,
+    "title": "xsdk 0.5.0",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-11-11T16:58:15Z",
+    "updated_at": "2019-11-14T22:37:08Z",
+    "closed_at": "2019-11-14T22:36:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13682",
+        "html_url": "https://github.com/spack/spack/pull/13682",
+        "diff_url": "https://github.com/spack/spack/pull/13682.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13682.patch"
+    },
+    "body": "~~This PR is for early review/comments, and is not yet ready for merge~~\r\n\r\n~~Its has commits from other PRs [and workarounds] that won't be in the final set of changes.~~\r\n\r\n~~https://github.com/spack/spack/pull/13661~~\r\n~~[trilinos changes]~~\r\n~~[metis changes]~~\r\n\r\n~~i.e the PR is likely to only have changes for the following - and I would appreciate feedback/suggestions on these changes.~~\r\n \r\n~~var/spack/repos/builtin/packages/alquimia/package.py~~\r\n~~var/spack/repos/builtin/packages/pflotran/package.py~~\r\n~~var/spack/repos/builtin/packages/xsdk/package.py~~\r\n\r\nwe are hoping to get this done by nov 15th\r\n\r\ncc: @ulrikeyang\r\ncc: @jwillenbring",
+    "performed_via_github_app": null
+}

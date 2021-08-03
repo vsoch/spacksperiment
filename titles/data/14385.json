@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14385",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14385/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14385/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14385/events",
+    "html_url": "https://github.com/spack/spack/pull/14385",
+    "id": 545344230,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MjU1NTQ0",
+    "number": 14385,
+    "title": "Overhaul py-pillow package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-04T23:17:55Z",
+    "updated_at": "2020-01-05T04:49:44Z",
+    "closed_at": "2020-01-05T04:49:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14385",
+        "html_url": "https://github.com/spack/spack/pull/14385",
+        "diff_url": "https://github.com/spack/spack/pull/14385.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14385.patch"
+    },
+    "body": "Makes the following changes:\r\n\r\n- [x] Add myself as a maintainer\r\n- [x] Add Pillow 7.0.0 (drops Python 2 support)\r\n- [x] Add support for webp and webpmux\r\n- [x] Add tests\r\n- [x] Add test dependencies\r\n- [x] Remove binutils dependency (see [Getting Started docs](https://spack.readthedocs.io/en/latest/getting_started.html#binutils))\r\n- [x] Simplify patching logic (previous logic didn't work for webp)\r\n- [x] Fix bug where zlib and jpeg were always disabled\r\n\r\nSuccessfully installs and passes all unit tests on macOS 10.15.2 with Python 3.7.4 and Clang 11.0.0 with all variants enabled and all variants disabled. \r\n\r\n```\r\n--------------------------------------------------------------------\r\nPIL SETUP SUMMARY\r\n--------------------------------------------------------------------\r\nversion      Pillow 7.0.0\r\nplatform     darwin 3.7.4 (default, Nov  6 2019, 16:24:25)\r\n             [Clang 11.0.0 (clang-1100.0.33.12)]\r\n--------------------------------------------------------------------\r\n--- JPEG support available\r\n--- OPENJPEG (JPEG2000) support available (2.3)\r\n--- ZLIB (PNG/ZIP) support available\r\n*** LIBIMAGEQUANT support not available\r\n--- LIBTIFF support available\r\n--- FREETYPE2 support available\r\n--- LITTLECMS2 support available\r\n--- WEBP support available\r\n--- WEBPMUX support available\r\n--------------------------------------------------------------------\r\n```\r\nLibraries are correctly linked:\r\n```console\r\n$ otool -L $(find . -name '*.so') | sort | uniq\r\n...\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/freetype-2.10.1-52goouhw7dni3yozivnw2py5d2x36yck/lib/libfreetype.6.dylib (compatibility version 24.0.0, current version 24.1.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/lcms-2.9-5duz5uysiwmclvgga3euiyinxa3lyfpg/lib/liblcms2.2.dylib (compatibility version 3.0.0, current version 3.8.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/libtiff-4.0.10-nlewmdvi5wqohlp3dp5waxe4djy3cl46/lib/libtiff.5.dylib (compatibility version 10.0.0, current version 10.0.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/libwebp-1.0.3-uj3feqesh44l7lpkkocstg4xe4zmi2pb/lib/libwebp.7.dylib (compatibility version 8.0.0, current version 8.5.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/libwebp-1.0.3-uj3feqesh44l7lpkkocstg4xe4zmi2pb/lib/libwebpdemux.2.dylib (compatibility version 3.0.0, current version 3.6.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/libwebp-1.0.3-uj3feqesh44l7lpkkocstg4xe4zmi2pb/lib/libwebpmux.3.dylib (compatibility version 4.0.0, current version 4.4.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/openjpeg-2.3.1-zp442otrfpxcdknldup7lq4p5nnc3oau/lib/libopenjp2.7.dylib (compatibility version 7.0.0, current version 2.3.1)\r\n\t/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/zlib-1.2.11-cvrek7vtvob6v2dfnvdowu2rkqtqtmmi/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1281.0.0)\r\n\t@rpath/libjpeg.62.dylib (compatibility version 62.0.0, current version 62.3.0)\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19028",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19028/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19028/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19028/events",
+    "html_url": "https://github.com/spack/spack/issues/19028",
+    "id": 710406930,
+    "node_id": "MDU6SXNzdWU3MTA0MDY5MzA=",
+    "number": 19028,
+    "title": "mpich non-functional when relocated from build cache with relative paths",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-09-28T16:22:02Z",
+    "updated_at": "2020-10-11T17:34:15Z",
+    "closed_at": "2020-10-11T17:34:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "I've got a situation where `mpich` is non-functional if\r\n1. `mpich` binary cache was created using `-r` flag to `spack buildcache create`\r\n2. `mpich` is installed from the binary cache into an `install_tree` which differs from where it was originally built\r\n\r\n**The problem seems to be tied to having cached `mpich` with `spack buildcache create -r`**\r\n\r\nI'm using:\r\n* `spack@develop` (ac7c69e62e61b0a45344690a8ede29f064f8fed5 from `2020-09-25`)\r\n* `Ubuntu 18.04` for `x86_64`\r\n* `mpich@3.2.1~wrapperrpath%gcc@7.5.0`\r\n\r\n<b>1. Build `mpich` from source, into a longer install_tree:</b>\r\n```\r\n$> spack config edit config\r\nset `config: install_tree: /super/absurdly/ridiculously/obnoxiously/long/path/for/relocation`\r\n```\r\n```\r\n$> spack install --no-cache mpich@3.2.1~wrapperrpath target=x86_64 %gcc@7.5.0\r\nOK\r\n```\r\n\r\n<b>2. Create a binary cache of `mpich` on local filesystem; use `-r` flag</b>\r\n```\r\n$> spack buildcache create -afr --key <key-id> -d <mirror-path> mpich\r\nOK\r\n```\r\n\r\n<b>3. Change the install_tree</b>\r\n```\r\n$> spack config edit config\r\ndelete the `config: install_tree:` setting\r\n```\r\n\r\n<b>4. Install `mpich` from build cache</b>\r\n```\r\n$> spack mirror add local /\r\nOK\r\n\r\n$> spack install --cache-only mpich@3.2.1~wrapperrpath target=x86_64\r\nOK\r\n```\r\n\r\n<b>5. Observe non-functional `mpich`</b>\r\n```\r\n$> spack load mpich\r\n\r\n$> mpiexec --version\r\nmpiexec: relocation error: mpiexec: symbol pthread_seta\ufffd\ufffdQ\ufffdlU version GLIBC_2.3.4 not defined in file libpthread.so.0 with link time reference\r\n\r\n$> ldd `which mpiexec.hydra`\r\nldd: exited with unknown exit code (139)\r\n```\r\n\r\nI do not see this problem if the `mpich` cache was originally created *without `-r` flag*\r\n\r\n@gartung @scottwittenburg @shahzebsiddiqui @tgamblin @becker33 @alalazo ",
+    "performed_via_github_app": null
+}

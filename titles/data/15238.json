@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15238",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15238/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15238/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15238/events",
+    "html_url": "https://github.com/spack/spack/pull/15238",
+    "id": 571613296,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgwNDY4MjA3",
+    "number": 15238,
+    "title": "Adding an option to build the C api for Umpire.",
+    "user": {
+        "login": "rblake-llnl",
+        "id": 24722037,
+        "node_id": "MDQ6VXNlcjI0NzIyMDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24722037?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rblake-llnl",
+        "html_url": "https://github.com/rblake-llnl",
+        "followers_url": "https://api.github.com/users/rblake-llnl/followers",
+        "following_url": "https://api.github.com/users/rblake-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rblake-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rblake-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rblake-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/rblake-llnl/orgs",
+        "repos_url": "https://api.github.com/users/rblake-llnl/repos",
+        "events_url": "https://api.github.com/users/rblake-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rblake-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-02-26T19:42:52Z",
+    "updated_at": "2020-03-02T17:16:40Z",
+    "closed_at": "2020-02-28T02:17:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15238",
+        "html_url": "https://github.com/spack/spack/pull/15238",
+        "diff_url": "https://github.com/spack/spack/pull/15238.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15238.patch"
+    },
+    "body": "This is useful if you need to link to a C code and you're using a compiler suite that doesn't support fortran.",
+    "performed_via_github_app": null
+}

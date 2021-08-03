@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16513",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16513/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16513/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16513/events",
+    "html_url": "https://github.com/spack/spack/pull/16513",
+    "id": 614285404,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE0ODcyMTk2",
+    "number": 16513,
+    "title": "Uninstall: tolerate failures when force=true",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-07T19:18:20Z",
+    "updated_at": "2020-07-07T18:37:37Z",
+    "closed_at": "2020-07-07T18:37:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16513",
+        "html_url": "https://github.com/spack/spack/pull/16513",
+        "diff_url": "https://github.com/spack/spack/pull/16513.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16513.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/16478\r\n\r\n@adamjstewart does this work for you (you need to uninstall with `-f` for your uninstall to proceed)?\r\n\r\nThis allows an uninstall to proceed even when encountering pre-uninstall hook failures if the user chooses the `--force` option for the uninstall.\r\n\r\nThis also prevents post-uninstall hook failures from raising an exception, which would terminate a sequence of uninstalls. This isn't likely essential for #16478, but I think overall it will improve the user experience: if the post-uninstall hook fails, there isn't much point in terminating a sequence of spec uninstalls because at the point where the post-uninstall hook is run, the spec has already been removed from the database (so it will never have another chance to run).\r\n\r\nNotes:\r\n\r\n* When doing `spack uninstall -a`, certain pre/post-uninstall hooks aren't important to run, but this isn't easy to track with the current model\r\n* This doesn't handle the uninstallation of specs that are not in the DB, so it may leave \"dangling\" specs in the installation prefix",
+    "performed_via_github_app": null
+}

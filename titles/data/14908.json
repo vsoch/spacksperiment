@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14908",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14908/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14908/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14908/events",
+    "html_url": "https://github.com/spack/spack/pull/14908",
+    "id": 563960702,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0Mjc1NTE4",
+    "number": 14908,
+    "title": "Fix run environment",
+    "user": {
+        "login": "asmaahassan90",
+        "id": 31959389,
+        "node_id": "MDQ6VXNlcjMxOTU5Mzg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31959389?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/asmaahassan90",
+        "html_url": "https://github.com/asmaahassan90",
+        "followers_url": "https://api.github.com/users/asmaahassan90/followers",
+        "following_url": "https://api.github.com/users/asmaahassan90/following{/other_user}",
+        "gists_url": "https://api.github.com/users/asmaahassan90/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/asmaahassan90/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/asmaahassan90/subscriptions",
+        "organizations_url": "https://api.github.com/users/asmaahassan90/orgs",
+        "repos_url": "https://api.github.com/users/asmaahassan90/repos",
+        "events_url": "https://api.github.com/users/asmaahassan90/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/asmaahassan90/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T12:15:43Z",
+    "updated_at": "2020-04-15T11:59:07Z",
+    "closed_at": "2020-02-14T01:37:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14908",
+        "html_url": "https://github.com/spack/spack/pull/14908",
+        "diff_url": "https://github.com/spack/spack/pull/14908.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14908.patch"
+    },
+    "body": "Trying to install Avizo, i get \"Error: NameError: name 'run_env' is not defined\". Correcting it to be just \"env\"",
+    "performed_via_github_app": null
+}

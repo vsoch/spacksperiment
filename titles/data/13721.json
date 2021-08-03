@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13721",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13721/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13721/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13721/events",
+    "html_url": "https://github.com/spack/spack/pull/13721",
+    "id": 522368326,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQwNTgyMTIz",
+    "number": 13721,
+    "title": "package/geopm: Added versions 1.0.0 and 1.1.0",
+    "user": {
+        "login": "maiterth",
+        "id": 1112113,
+        "node_id": "MDQ6VXNlcjExMTIxMTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1112113?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maiterth",
+        "html_url": "https://github.com/maiterth",
+        "followers_url": "https://api.github.com/users/maiterth/followers",
+        "following_url": "https://api.github.com/users/maiterth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maiterth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maiterth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maiterth/subscriptions",
+        "organizations_url": "https://api.github.com/users/maiterth/orgs",
+        "repos_url": "https://api.github.com/users/maiterth/repos",
+        "events_url": "https://api.github.com/users/maiterth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maiterth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-13T17:31:22Z",
+    "updated_at": "2019-11-14T18:01:04Z",
+    "closed_at": "2019-11-14T18:01:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13721",
+        "html_url": "https://github.com/spack/spack/pull/13721",
+        "diff_url": "https://github.com/spack/spack/pull/13721.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13721.patch"
+    },
+    "body": "Added changes for 1.1.0 and 1.0.0 in this patch.\r\nPatch for 1.0.0 was previously not merged.\r\nVariant for hwloc removed since that is not a dependency since 0.5.1 and\r\nvariant('hwloc', when=\"@:0.5.1\"... is not supported afaik.\r\nMade depends_on versions more explicit.\r\n\r\nNew pull request as recommended in #11230 ",
+    "performed_via_github_app": null
+}

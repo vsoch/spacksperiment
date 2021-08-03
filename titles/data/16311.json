@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16311",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16311/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16311/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16311/events",
+    "html_url": "https://github.com/spack/spack/pull/16311",
+    "id": 607038693,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA5MTAyNDg0",
+    "number": 16311,
+    "title": "Better singularity info re post-install step",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-26T15:26:15Z",
+    "updated_at": "2020-04-27T11:41:14Z",
+    "closed_at": "2020-04-27T11:41:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16311",
+        "html_url": "https://github.com/spack/spack/pull/16311",
+        "diff_url": "https://github.com/spack/spack/pull/16311.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16311.patch"
+    },
+    "body": "The singularity info should actually suggest where you might find the info about the post-install steps.",
+    "performed_via_github_app": null
+}

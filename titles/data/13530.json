@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13530",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13530/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13530/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13530/events",
+    "html_url": "https://github.com/spack/spack/pull/13530",
+    "id": 515820170,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM1MjEzNjE2",
+    "number": 13530,
+    "title": "elpa: prefer 2016.05.004 until sse/avx/avx2 configure phase issues ar\u2026",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-10-31T23:43:55Z",
+    "updated_at": "2019-11-05T08:16:15Z",
+    "closed_at": "2019-11-01T06:56:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13530",
+        "html_url": "https://github.com/spack/spack/pull/13530",
+        "diff_url": "https://github.com/spack/spack/pull/13530.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13530.patch"
+    },
+    "body": "Recent versions of Elpa fail to install in the configure phase, complaining that sse3, avx, and avx2 are not available even on machines where those instructions are available. This PR sets Elpa to prefer 2016.05.004 until these issues are resolved in future updates to Elpa. @becker33 ",
+    "performed_via_github_app": null
+}

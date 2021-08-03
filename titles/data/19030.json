@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19030",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19030/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19030/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19030/events",
+    "html_url": "https://github.com/spack/spack/pull/19030",
+    "id": 710481701,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk0MzIyNDE4",
+    "number": 19030,
+    "title": "New Package:  py-hepunits and py-particle",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-09-28T18:22:40Z",
+    "updated_at": "2020-10-02T18:19:28Z",
+    "closed_at": "2020-10-02T15:59:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19030",
+        "html_url": "https://github.com/spack/spack/pull/19030",
+        "diff_url": "https://github.com/spack/spack/pull/19030.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19030.patch"
+    },
+    "body": "I'm using the github tags instead of the source tarballs because I hit a \"version could not be detected\" error due to scm (see below) -- other python package recipes using scm in spack seem to be doing fine. @adamjstewart do you maybe know how best to solve this?\r\n\r\n```\r\n==> py-hepunits: Executing phase: 'build'\r\n==> [2020-09-28-20:19:06.837306] '/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/python-3.7.8-i2m3ookul64ub5to5vhrdvxl3tbl5ttx/bin/python3.7' '-s' 'setup.py' '--no-user-cfg' 'build'\r\nTraceback (most recent call last):\r\n  File \"setup.py\", line 15, in <module>\r\n    setup()\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-50.1.0-brlja4gbe7o3phk7yijrr52kyngewzcw/lib/python3.7/site-packages/setuptools/__init__.py\", line 153, in setup\r\n    return distutils.core.setup(**attrs)\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/python-3.7.8-i2m3ookul64ub5to5vhrdvxl3tbl5ttx/lib/python3.7/distutils/core.py\", line 108, in setup\r\n    _setup_distribution = dist = klass(attrs)\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-50.1.0-brlja4gbe7o3phk7yijrr52kyngewzcw/lib/python3.7/site-packages/setuptools/dist.py\", line 424, in __init__\r\n    k: v for k, v in attrs.items()\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/python-3.7.8-i2m3ookul64ub5to5vhrdvxl3tbl5ttx/lib/python3.7/distutils/dist.py\", line 292, in __init__\r\n    self.finalize_options()\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-50.1.0-brlja4gbe7o3phk7yijrr52kyngewzcw/lib/python3.7/site-packages/setuptools/dist.py\", line 695, in finalize_options\r\n    ep(self)\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-scm-4.1.2-t2c2yolgdl3nlsi6uxt5jwsdhgkfmcsu/lib/python3.7/site-packages/setuptools_scm/integration.py\", line 48, in infer_version\r\n    dist.metadata.version = _get_version(config)\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-scm-4.1.2-t2c2yolgdl3nlsi6uxt5jwsdhgkfmcsu/lib/python3.7/site-packages/setuptools_scm/__init__.py\", line 148, in _get_version\r\n    parsed_version = _do_parse(config)\r\n  File \"/cvmfs/sw.hsf.org/spackages/linux-ubuntu20.04-broadwell/gcc-9.3.0/py-setuptools-scm-4.1.2-t2c2yolgdl3nlsi6uxt5jwsdhgkfmcsu/lib/python3.7/site-packages/setuptools_scm/__init__.py\", line 118, in _do_parse\r\n    \"use git+https://github.com/user/proj.git#egg=proj\" % config.absolute_root\r\nLookupError: setuptools-scm was unable to detect version for '/tmp/vavolkl/spack-stage/spack-stage-py-hepunits-1.2.1-qdqkgrokyhrtqn275jx7q3l5glsm6hmm/spack-src'.\r\n\r\nMake sure you're either building from a fully intact git repository or PyPI tarballs. Most other sources (such as GitHub's tarballs, a git checkout without the .git folder) don't contain the necessary metadata and will not work.\r\n\r\nFor example, if you're using pip, instead of https://github.com/user/proj/archive/master.zip use git+https://github.com/user/proj.git#egg=proj\r\n```  ",
+    "performed_via_github_app": null
+}

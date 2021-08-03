@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14684",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14684/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14684/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14684/events",
+    "html_url": "https://github.com/spack/spack/pull/14684",
+    "id": 557446055,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY5MDMzOTYw",
+    "number": 14684,
+    "title": "Fix CMake and update libarchive",
+    "user": {
+        "login": "albestro",
+        "id": 9337627,
+        "node_id": "MDQ6VXNlcjkzMzc2Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337627?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/albestro",
+        "html_url": "https://github.com/albestro",
+        "followers_url": "https://api.github.com/users/albestro/followers",
+        "following_url": "https://api.github.com/users/albestro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/albestro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/albestro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/albestro/subscriptions",
+        "organizations_url": "https://api.github.com/users/albestro/orgs",
+        "repos_url": "https://api.github.com/users/albestro/repos",
+        "events_url": "https://api.github.com/users/albestro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/albestro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-01-30T11:56:38Z",
+    "updated_at": "2020-02-03T17:12:41Z",
+    "closed_at": "2020-02-03T16:26:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14684",
+        "html_url": "https://github.com/spack/spack/pull/14684",
+        "diff_url": "https://github.com/spack/spack/pull/14684.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14684.patch"
+    },
+    "body": "CMake since 3.15.3 requires libarchive 3.3.3 (previously it was 3.1.0).\r\n\r\nThis PR add the latest libarchive version and fixes the dependency in CMake.\r\n\r\nReference:\r\n- https://github.com/Kitware/CMake/commit/752fa8be9d410907e1ecb80a6a21daacd1a666f9\r\n- https://github.com/Kitware/CMake/blob/v3.15.2/CMakeLists.txt#L514\r\n- https://github.com/Kitware/CMake/blob/v3.15.3/CMakeLists.txt#L514",
+    "performed_via_github_app": null
+}

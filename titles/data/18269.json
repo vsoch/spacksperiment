@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18269",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18269/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18269/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18269/events",
+    "html_url": "https://github.com/spack/spack/pull/18269",
+    "id": 685722532,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDczNDAxODg0",
+    "number": 18269,
+    "title": "package preferences: allow specs to be configured buildable when their virtuals are not",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-25T19:11:11Z",
+    "updated_at": "2020-09-03T15:08:43Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18269",
+        "html_url": "https://github.com/spack/spack/pull/18269",
+        "diff_url": "https://github.com/spack/spack/pull/18269.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18269.patch"
+    },
+    "body": "This will allow users to specify a hard constraint on a single provider of a virtual packages:\r\n```\r\npackages:\r\n  mpi:\r\n    buildable: false\r\n  mpich:\r\n    buildable: true\r\n```\r\nor\r\n```\r\n$ spack config add packages:mpi:buildable:false\r\n$ spack config add packages:mpich:buildable:true\r\n```",
+    "performed_via_github_app": null
+}

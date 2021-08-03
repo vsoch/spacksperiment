@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18504",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18504/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18504/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18504/events",
+    "html_url": "https://github.com/spack/spack/pull/18504",
+    "id": 692833414,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc5Mzg5NzU5",
+    "number": 18504,
+    "title": "darshan-util: remove return(-1) from void function",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-04T07:35:41Z",
+    "updated_at": "2020-09-10T02:04:00Z",
+    "closed_at": "2020-09-10T02:04:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18504",
+        "html_url": "https://github.com/spack/spack/pull/18504",
+        "diff_url": "https://github.com/spack/spack/pull/18504.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18504.patch"
+    },
+    "body": "> void darshan_log_get_name_records(darshan_fd fd,\r\n                              struct darshan_name_record_info **name_records,\r\n                              int* count)\r\n{\r\n...\r\n    if(ret < 0)\r\n    {\r\n        darshan_log_close(fd);\r\n        return(-1);\r\n    }\r\n\r\n`return(-1);` in void function causes error in Fujitsu C compiler.\r\nSo I fixed to `return;` .",
+    "performed_via_github_app": null
+}

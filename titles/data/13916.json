@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13916",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13916/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13916/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13916/events",
+    "html_url": "https://github.com/spack/spack/pull/13916",
+    "id": 529494830,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ2MzYyMDM2",
+    "number": 13916,
+    "title": "[WIP]: allowing user config path to be set by cli",
+    "user": {
+        "login": "tjfulle",
+        "id": 1564391,
+        "node_id": "MDQ6VXNlcjE1NjQzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1564391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tjfulle",
+        "html_url": "https://github.com/tjfulle",
+        "followers_url": "https://api.github.com/users/tjfulle/followers",
+        "following_url": "https://api.github.com/users/tjfulle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tjfulle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tjfulle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tjfulle/subscriptions",
+        "organizations_url": "https://api.github.com/users/tjfulle/orgs",
+        "repos_url": "https://api.github.com/users/tjfulle/repos",
+        "events_url": "https://api.github.com/users/tjfulle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tjfulle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-27T17:49:50Z",
+    "updated_at": "2019-11-27T18:17:36Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13916",
+        "html_url": "https://github.com/spack/spack/pull/13916",
+        "diff_url": "https://github.com/spack/spack/pull/13916.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13916.patch"
+    },
+    "body": "This is an alternative to PRs like #13139, #11951 - and other attempts to make the user configuration path not hard coded to `~.spack`\r\n\r\nThis is only meant to propose another alternative and continue discussion.  It uses a method described by  Guido van Rossum at https://mail.python.org/pipermail/python-ideas/2012-May/014969.html.",
+    "performed_via_github_app": null
+}

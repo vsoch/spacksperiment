@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14616",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14616/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14616/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14616/events",
+    "html_url": "https://github.com/spack/spack/pull/14616",
+    "id": 554505616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY2NjQ3OTg2",
+    "number": 14616,
+    "title": "Force non-interactive git fetch",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-24T01:53:22Z",
+    "updated_at": "2020-08-22T20:43:58Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14616",
+        "html_url": "https://github.com/spack/spack/pull/14616",
+        "diff_url": "https://github.com/spack/spack/pull/14616.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14616.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/13604\r\n\r\nThis closes stdin for all Git fetches; this allows Spack to automatically fail in the case that a git URL was misconfigured such that Spack attempts to pull from somewhere that requires user credentials. Without this, commands like `spack mirror --all` would stall for such misconfigured packages.\r\n\r\nAt the moment this assumes that all Spack packages intend to pull from Git repositories without credentials.\r\n\r\nTODOs\r\n\r\n- [ ] add testing\r\n- [ ] add an option for users who create a private Spack package that does in fact need to prompt the user for credentials during a Git pull\r\n\r\nSee also: https://github.com/spack/spack/pull/13925: that PR adds timeouts to fetchers, which is not a good approach for misconfigured git repositories but may be useful for stalling URL fetches. That being said it may be better to configure more sensitive timeouts via curl as https://github.com/spack/spack/pull/13881 does.",
+    "performed_via_github_app": null
+}

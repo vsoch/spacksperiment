@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16583",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16583/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16583/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16583/events",
+    "html_url": "https://github.com/spack/spack/pull/16583",
+    "id": 616020201,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2MjE0OTAx",
+    "number": 16583,
+    "title": "Map the spack skylake arch to Kokkos BDW, rather than SKX",
+    "user": {
+        "login": "AndrewGaspar",
+        "id": 2292643,
+        "node_id": "MDQ6VXNlcjIyOTI2NDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2292643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AndrewGaspar",
+        "html_url": "https://github.com/AndrewGaspar",
+        "followers_url": "https://api.github.com/users/AndrewGaspar/followers",
+        "following_url": "https://api.github.com/users/AndrewGaspar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AndrewGaspar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AndrewGaspar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AndrewGaspar/subscriptions",
+        "organizations_url": "https://api.github.com/users/AndrewGaspar/orgs",
+        "repos_url": "https://api.github.com/users/AndrewGaspar/repos",
+        "events_url": "https://api.github.com/users/AndrewGaspar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AndrewGaspar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-11T16:35:41Z",
+    "updated_at": "2020-05-11T18:40:05Z",
+    "closed_at": "2020-05-11T17:33:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16583",
+        "html_url": "https://github.com/spack/spack/pull/16583",
+        "diff_url": "https://github.com/spack/spack/pull/16583.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16583.patch"
+    },
+    "body": "SKX includes AVX-512 extensions that consumer Skylake processors do\r\nnot have. Therefore, map Skylake to the prior arch to work on\r\nthese systems. Skylake-X processors will still map as the\r\nskylake_avx512 spack arch and get the correct optimzations.\r\n\r\ncc @crtrott @jjwilke ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16772",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16772/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16772/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16772/events",
+    "html_url": "https://github.com/spack/spack/pull/16772",
+    "id": 623700815,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIyMzAwNDcz",
+    "number": 16772,
+    "title": "Updated unison to v2.51.2",
+    "user": {
+        "login": "hseara",
+        "id": 2016887,
+        "node_id": "MDQ6VXNlcjIwMTY4ODc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2016887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hseara",
+        "html_url": "https://github.com/hseara",
+        "followers_url": "https://api.github.com/users/hseara/followers",
+        "following_url": "https://api.github.com/users/hseara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hseara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hseara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hseara/subscriptions",
+        "organizations_url": "https://api.github.com/users/hseara/orgs",
+        "repos_url": "https://api.github.com/users/hseara/repos",
+        "events_url": "https://api.github.com/users/hseara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hseara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-05-23T17:04:51Z",
+    "updated_at": "2020-05-31T20:22:24Z",
+    "closed_at": "2020-05-31T18:58:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16772",
+        "html_url": "https://github.com/spack/spack/pull/16772",
+        "diff_url": "https://github.com/spack/spack/pull/16772.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16772.patch"
+    },
+    "body": "The current package does not work. Updated to the latest unison version.\r\n\r\nAlso several ocaml versions which it depends on do not compile, e.g. 4.09.0.\r\nAdded compilation option that is required for many ocaml projects and bumped \r\n4.10.0 as a prerequisite.\r\n\r\nThe patches are taken from archlinux.or and are required to [build the package](https://github.com/bcpierce00/unison/issues/277)\r\n\r\nThe patches can be found [here](https://git.archlinux.org/svntogit/packages.git/tree/trunk?h=packages/unison).\r\n",
+    "performed_via_github_app": null
+}

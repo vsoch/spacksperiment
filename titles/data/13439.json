@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13439",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13439/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13439/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13439/events",
+    "html_url": "https://github.com/spack/spack/pull/13439",
+    "id": 512691296,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMyNjU2NDA2",
+    "number": 13439,
+    "title": "fix openmpi wrappers with libfabric",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-10-25T19:52:11Z",
+    "updated_at": "2019-10-31T19:22:39Z",
+    "closed_at": "2019-10-30T04:09:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13439",
+        "html_url": "https://github.com/spack/spack/pull/13439",
+        "diff_url": "https://github.com/spack/spack/pull/13439.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13439.patch"
+    },
+    "body": "The wrappers fail to automatically link libfabric. This will cause undefined references unless we add the appropriate flags. This is the error prior to this fix:\r\n```console\r\n$ /usr/WS2/lee218/delete/spack-ulna-openmpi/opt/spack/linux-rhel7-aarch64/gcc-8.3.1/openmpi-3.1.4-6tvlgmme5jbfubi3bkoet3cbnujx6ckw/bin/mpicc hello.c \r\n/usr/WS2/lee218/delete/spack-ulna-openmpi/opt/spack/linux-rhel7-aarch64/gcc-8.3.1/openmpi-3.1.4-6tvlgmme5jbfubi3bkoet3cbnujx6ckw/lib/libmpi.so: undefined reference to `fi_dupinfo@FABRIC_1.2'\r\n/usr/WS2/lee218/delete/spack-ulna-openmpi/opt/spack/linux-rhel7-aarch64/gcc-8.3.1/openmpi-3.1.4-6tvlgmme5jbfubi3bkoet3cbnujx6ckw/lib/libmpi.so: undefined reference to `fi_getinfo@FABRIC_1.2'\r\n/usr/WS2/lee218/delete/spack-ulna-openmpi/opt/spack/linux-rhel7-aarch64/gcc-8.3.1/openmpi-3.1.4-6tvlgmme5jbfubi3bkoet3cbnujx6ckw/lib/libmpi.so: undefined reference to `fi_freeinfo@FABRIC_1.2'\r\ncollect2: error: ld returned 1 exit status\r\n```",
+    "performed_via_github_app": null
+}

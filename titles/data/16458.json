@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16458",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16458/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16458/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16458/events",
+    "html_url": "https://github.com/spack/spack/pull/16458",
+    "id": 612112308,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEzMTM5ODAz",
+    "number": 16458,
+    "title": "Argobots: mark 1.0 as preferred",
+    "user": {
+        "login": "shintaro-iwasaki",
+        "id": 15073003,
+        "node_id": "MDQ6VXNlcjE1MDczMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15073003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shintaro-iwasaki",
+        "html_url": "https://github.com/shintaro-iwasaki",
+        "followers_url": "https://api.github.com/users/shintaro-iwasaki/followers",
+        "following_url": "https://api.github.com/users/shintaro-iwasaki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shintaro-iwasaki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shintaro-iwasaki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shintaro-iwasaki/subscriptions",
+        "organizations_url": "https://api.github.com/users/shintaro-iwasaki/orgs",
+        "repos_url": "https://api.github.com/users/shintaro-iwasaki/repos",
+        "events_url": "https://api.github.com/users/shintaro-iwasaki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shintaro-iwasaki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-04T19:27:45Z",
+    "updated_at": "2020-10-30T15:48:19Z",
+    "closed_at": "2020-05-04T21:44:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16458",
+        "html_url": "https://github.com/spack/spack/pull/16458",
+        "diff_url": "https://github.com/spack/spack/pull/16458.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16458.patch"
+    },
+    "body": "Spack by default chooses `1.0rc2` instead of `1.0` though `1.0` is a stable and newer release.  We manually mark the version `1.0` as preferred.\r\n\r\nNote that we want to avoid removing unstable versions (e.g., `rc2` ...) as suggested in https://github.com/spack/spack/pull/15786#discussion_r401788921 since `margo` package points to an old unstable version. I have contacted one of maintainers but it would require more time. We believe these unstable versions can be removed in the next update. ",
+    "performed_via_github_app": null
+}

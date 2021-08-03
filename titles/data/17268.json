@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17268",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17268/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17268/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17268/events",
+    "html_url": "https://github.com/spack/spack/pull/17268",
+    "id": 646144803,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQwNDg4NzEy",
+    "number": 17268,
+    "title": "[gaudi] new version, cleanup",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-26T09:46:49Z",
+    "updated_at": "2020-06-28T14:02:18Z",
+    "closed_at": "2020-06-27T19:42:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17268",
+        "html_url": "https://github.com/spack/spack/pull/17268",
+        "diff_url": "https://github.com/spack/spack/pull/17268.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17268.patch"
+    },
+    "body": "Adds a new version (which unfortunately still needs some of the patches) and promotes some dependencies from optional to required. The reason here is that some core parts are only build if `CLHEP_FOUND` and `AIDA_FOUND`. The cmake flags are (unfortunately) not actually used (would be better than to silently enable and disable parts of gaudi).",
+    "performed_via_github_app": null
+}

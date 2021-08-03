@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14738",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14738/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14738/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14738/events",
+    "html_url": "https://github.com/spack/spack/pull/14738",
+    "id": 559649976,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzcwNzc5MzYw",
+    "number": 14738,
+    "title": "Bump Open Babel to 3",
+    "user": {
+        "login": "e-kwsm",
+        "id": 11627708,
+        "node_id": "MDQ6VXNlcjExNjI3NzA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11627708?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/e-kwsm",
+        "html_url": "https://github.com/e-kwsm",
+        "followers_url": "https://api.github.com/users/e-kwsm/followers",
+        "following_url": "https://api.github.com/users/e-kwsm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/e-kwsm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/e-kwsm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/e-kwsm/subscriptions",
+        "organizations_url": "https://api.github.com/users/e-kwsm/orgs",
+        "repos_url": "https://api.github.com/users/e-kwsm/repos",
+        "events_url": "https://api.github.com/users/e-kwsm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/e-kwsm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-04T11:14:21Z",
+    "updated_at": "2020-02-05T05:50:58Z",
+    "closed_at": "2020-02-05T03:05:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14738",
+        "html_url": "https://github.com/spack/spack/pull/14738",
+        "diff_url": "https://github.com/spack/spack/pull/14738.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14738.patch"
+    },
+    "body": "Actually installation fails as following (similar to #13637):\r\n```shelsession\r\n$ spack install openbabel\r\n==> Error: An unsatisfiable variant constraint has been detected for spec:\r\n\r\n    gettext@0.20.1%gcc@8.3.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-debian10-skylake\r\n\r\n\r\nwhile trying to concretize the partial spec:\r\n\r\n    python@3.7.6%gcc@8.3.0+bz2+ctypes+dbm~debug~libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-debian10-skylake\r\n        ^pkgconf@1.6.3%gcc@8.3.0 arch=linux-debian10-skylake\r\n\r\n\r\npython requires gettext variant ~libxml2, but spec asked for +libxml2\r\n\r\n```\r\n\r\nBut I hope this works.",
+    "performed_via_github_app": null
+}

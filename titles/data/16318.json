@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16318",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16318/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16318/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16318/events",
+    "html_url": "https://github.com/spack/spack/pull/16318",
+    "id": 607397421,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA5Mzc4NTU4",
+    "number": 16318,
+    "title": "override Spglib libs attribute",
+    "user": {
+        "login": "asmaahassan90",
+        "id": 31959389,
+        "node_id": "MDQ6VXNlcjMxOTU5Mzg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31959389?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/asmaahassan90",
+        "html_url": "https://github.com/asmaahassan90",
+        "followers_url": "https://api.github.com/users/asmaahassan90/followers",
+        "following_url": "https://api.github.com/users/asmaahassan90/following{/other_user}",
+        "gists_url": "https://api.github.com/users/asmaahassan90/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/asmaahassan90/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/asmaahassan90/subscriptions",
+        "organizations_url": "https://api.github.com/users/asmaahassan90/orgs",
+        "repos_url": "https://api.github.com/users/asmaahassan90/repos",
+        "events_url": "https://api.github.com/users/asmaahassan90/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/asmaahassan90/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-27T09:41:43Z",
+    "updated_at": "2020-04-27T11:26:52Z",
+    "closed_at": "2020-04-27T11:26:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16318",
+        "html_url": "https://github.com/spack/spack/pull/16318",
+        "diff_url": "https://github.com/spack/spack/pull/16318.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16318.patch"
+    },
+    "body": "override the libs attribute in the spglib package since the library name is different from the package name.",
+    "performed_via_github_app": null
+}

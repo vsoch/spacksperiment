@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17079",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17079/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17079/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17079/events",
+    "html_url": "https://github.com/spack/spack/pull/17079",
+    "id": 638068043,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMzOTM3NTc3",
+    "number": 17079,
+    "title": "package/pocl: add dependency for icd variant, or else build fails",
+    "user": {
+        "login": "Sinan81",
+        "id": 2924561,
+        "node_id": "MDQ6VXNlcjI5MjQ1NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2924561?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sinan81",
+        "html_url": "https://github.com/Sinan81",
+        "followers_url": "https://api.github.com/users/Sinan81/followers",
+        "following_url": "https://api.github.com/users/Sinan81/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sinan81/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sinan81/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sinan81/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sinan81/orgs",
+        "repos_url": "https://api.github.com/users/Sinan81/repos",
+        "events_url": "https://api.github.com/users/Sinan81/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sinan81/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-06-13T01:03:48Z",
+    "updated_at": "2020-06-13T14:00:47Z",
+    "closed_at": "2020-06-13T14:00:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17079",
+        "html_url": "https://github.com/spack/spack/pull/17079",
+        "diff_url": "https://github.com/spack/spack/pull/17079.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17079.patch"
+    },
+    "body": "Requires #17078 \r\nRelated to #17049 ",
+    "performed_via_github_app": null
+}

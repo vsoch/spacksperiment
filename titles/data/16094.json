@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16094",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16094/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16094/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16094/events",
+    "html_url": "https://github.com/spack/spack/pull/16094",
+    "id": 601285931,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0NTY3NDE0",
+    "number": 16094,
+    "title": "macos: use DYLD_FALLBACK_LIBRARY_PATH",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-04-16T17:54:25Z",
+    "updated_at": "2020-04-17T00:26:49Z",
+    "closed_at": "2020-04-17T00:23:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16094",
+        "html_url": "https://github.com/spack/spack/pull/16094",
+        "diff_url": "https://github.com/spack/spack/pull/16094.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16094.patch"
+    },
+    "body": "Closes #9221. (or should we just merge that first?) \r\nFixes #16084. @DiegoMagdaleno \r\n\r\n`DYLD_LIBRARY_PATH` can frequently break builtin macOS software when pointed at Spack libraries.  This is because it takes *higher* precedence than the default library search paths, which are used by system software.\r\n\r\n`DYLD_FALLBACK_LIBRARY_PATH`, on the other hand, takes lower precedence. At first glance, this might seem bad, because the software installed by Spack in an environment needs to find *its* libraries, and it should not use the defaults.  However, Spack's isntallations are always `RPATH`'d, so they do not have this problem.\r\n\r\n`DYLD_FALLBACK_LIBRARY_PATH` is thus useful for things built in an environment that need to use Spack's libraries, that don't set *their* RPATHs correctly for whatever reason. We now prefer it to `DYLD_LIBRARY_PATH` in modules and in environments because it helps a little bit, and it is much less intrusive.\r\n\r\nI think we should probably also do this for `LD_LIBRARY_PATH` on Linux, as it can interfere in siilar ways.  People *do* want to build against their environments, though, and it's much more common to use `LD_LIBRARY_PATH` there, so I'm torn.  Thoughts?\r\n\r\n@goxberry @adamjstewart @sethrj @gartung",
+    "performed_via_github_app": null
+}

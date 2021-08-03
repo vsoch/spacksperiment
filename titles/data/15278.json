@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15278",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15278/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15278/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15278/events",
+    "html_url": "https://github.com/spack/spack/pull/15278",
+    "id": 573465011,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgxOTgyODYx",
+    "number": 15278,
+    "title": "Update kallisto (with hackery on std_cmake_args)",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-01T02:31:34Z",
+    "updated_at": "2020-03-04T17:46:16Z",
+    "closed_at": "2020-03-01T04:58:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15278",
+        "html_url": "https://github.com/spack/spack/pull/15278",
+        "diff_url": "https://github.com/spack/spack/pull/15278.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15278.patch"
+    },
+    "body": "Add version info for kallisto@0.46.2.\r\n\r\nVersions of kallisto since 0.44.0 vendor a copy of htslib and kallisto's cmake bits generate a configure script for it using the auto* tools.  The std cmake args include `-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON`, which causes bits of the cmake verbose output to be embedded in the configure script.  This, in turn, wreaks havoc.\r\n\r\nSee  https://github.com/spack/spack/issues/15274 and https://github.com/pachterlab/kallisto/issues/253 for additional details.\r\n\r\nCloses #15274 ",
+    "performed_via_github_app": null
+}

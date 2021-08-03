@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18532",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18532/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18532/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18532/events",
+    "html_url": "https://github.com/spack/spack/pull/18532",
+    "id": 694757593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgxMDkyMTEx",
+    "number": 18532,
+    "title": "external find: add arch to spec.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-07T06:35:48Z",
+    "updated_at": "2021-02-05T01:58:25Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18532",
+        "html_url": "https://github.com/spack/spack/pull/18532",
+        "diff_url": "https://github.com/spack/spack/pull/18532.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18532.patch"
+    },
+    "body": "`spack external find` search packages and add them to `packages.yaml`.\r\nBut this command search only one architecture to run te spack.\r\nOther architectures may have different versions of the package in the same path.\r\n\r\nThis PR add architecture to spec when generate `spack external find`.",
+    "performed_via_github_app": null
+}

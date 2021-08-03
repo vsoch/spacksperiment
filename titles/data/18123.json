@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18123",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18123/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18123/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18123/events",
+    "html_url": "https://github.com/spack/spack/pull/18123",
+    "id": 680534542,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5MDc0OTYz",
+    "number": 18123,
+    "title": "Remove -g flag by default in binutils",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-08-17T21:23:50Z",
+    "updated_at": "2021-03-17T14:35:29Z",
+    "closed_at": "2021-03-17T14:35:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18123",
+        "html_url": "https://github.com/spack/spack/pull/18123",
+        "diff_url": "https://github.com/spack/spack/pull/18123.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18123.patch"
+    },
+    "body": "Makes binutils 75% smaller. Before:\r\n\r\n```\r\n543M    /home/harmen/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.3.0/binutils-2.34-s5r3knl7xrfiklphlgqobkwn242lytin\r\n```\r\nafter:\r\n```\r\n142M    /home/harmen/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.3.0/binutils-2.34-t67x54dbrf7yk5t3qaqjifycex3zeiwx\r\n```\r\n\r\nEdit: strategy has changed from adding a patch, to setting default optimization flags in `package.py` and making them overridable through `cflags=...`\r\n\r\nCloses #18120 ",
+    "performed_via_github_app": null
+}

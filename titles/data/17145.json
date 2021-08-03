@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17145",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17145/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17145/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17145/events",
+    "html_url": "https://github.com/spack/spack/issues/17145",
+    "id": 640804811,
+    "node_id": "MDU6SXNzdWU2NDA4MDQ4MTE=",
+    "number": 17145,
+    "title": "Concretizer: 'xsdk' version in package is wrongly accepted",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-06-17T23:33:38Z",
+    "updated_at": "2020-10-19T17:16:05Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Related to https://github.com/spack/spack/pull/9445: concretizing an older nonexistent version is causing an `xsdk` version to be accepted even though the xsdk tags are not related to the actual version number.\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n$ spack spec superlu-dist@:4.3\r\nInput spec\r\n--------------------------------\r\nsuperlu-dist@:4.3\r\n\r\nConcretized\r\n--------------------------------\r\nsuperlu-dist@xsdk-0.2.0 <snip...>\r\n```\r\n\r\n### Information on your system\r\n\r\n```\r\n$ spack debug report\r\n* **Spack:** 0.14.2-1466-32e5480ae\r\n* **Python:** 3.7.6\r\n* **Platform:** linux-rhel7-skylake_avx512\r\n```\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output",
+    "performed_via_github_app": null
+}

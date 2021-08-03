@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15570",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15570/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15570/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15570/events",
+    "html_url": "https://github.com/spack/spack/pull/15570",
+    "id": 584451162,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkxMDM0OTM3",
+    "number": 15570,
+    "title": "provider index: removed import from + refactored a few parts",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-03-19T14:25:56Z",
+    "updated_at": "2020-03-25T16:52:21Z",
+    "closed_at": "2020-03-25T16:48:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15570",
+        "html_url": "https://github.com/spack/spack/pull/15570",
+        "diff_url": "https://github.com/spack/spack/pull/15570.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15570.patch"
+    },
+    "body": "The refactoring is instrumental to a further subclassing of `_IndexBase` to implement user defined bindings of provider spec for #15443 ",
+    "performed_via_github_app": null
+}

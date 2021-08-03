@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18468",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18468/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18468/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18468/events",
+    "html_url": "https://github.com/spack/spack/issues/18468",
+    "id": 691390063,
+    "node_id": "MDU6SXNzdWU2OTEzOTAwNjM=",
+    "number": 18468,
+    "title": "Installation issue: unifyfs: can't detect MPI via cray-mpich",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2426365638,
+            "node_id": "MDU6TGFiZWwyNDI2MzY1NjM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/nersc",
+            "name": "nersc",
+            "color": "bfd4f2",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-02T20:16:25Z",
+    "updated_at": "2020-10-14T19:14:40Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "On `NERSC Cori` (Cray 7) using `%intel@19.1.2.254` with `spack@develop` (30-Aug-2020, 665e5ce0fd75ed638b7f645bd2563aef33525e33)\r\n\r\n`unifyfs@0.9.0` configure phase fails to find MPI when using `cray-mpich/7.7.10` loaded via module file.\r\n\r\nconfig.log: [unifyfs-config.log.txt](https://github.com/spack/spack/files/5164596/unifyfs-config.log.txt)\r\nspack-configure-args.txt: [spack-configure-args.txt](https://github.com/spack/spack/files/5164603/spack-configure-args.txt)\r\nspack-build-out.txt: [spack-build-out.txt](https://github.com/spack/spack/files/5164601/spack-build-out.txt)\r\n\r\n```\r\n==> Installing unifyfs\r\n==> Using cached archive: /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/var/spack/cache/_source-cache/archive/e6/e6c73e22ef1c23f3141646aa17058b69c1c4e526886771f8fe982da924265b0f.tar.gz\r\n==> unifyfs: Executing phase: 'autoreconf'\r\n==> unifyfs: Executing phase: 'configure'\r\n==> Error: ProcessError: Command exited with status 1:\r\n    '/tmp/eugeneswalker/spack-stage/spack-stage-unifyfs-0.9.0-vwu5tl3qfgp3gv3lv5pcbqc4cpdserfq/spack-src/configure' '--prefix=/global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/spack_path_placeholder/spack_path_placeholder/spack_path_placeho/cray-cnl7-haswell/intel-19.1.2.254/unifyfs-0.9.0-vwu5tl3qfgp3gv3lv5pcbqc4cpdserfq' '--without-hdf5' '--enable-mpi-mount' '--enable-silent-rules'\r\n\r\n1 error found in build log:\r\n     191    checking for /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc... /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/lpe\r\n            yrala/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc\r\n     192    Checking whether /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc responds to '-showme:compile'... no\r\n     193    Checking whether /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc responds to '-showme'... no\r\n     194    Checking whether /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc responds to '-compile-info'... no\r\n     195    Checking whether /global/cscratch1/ecp-gitlab/ecp/e4s/builds/users/eugeneswalker/rF54Q1bH/0/ecp/e4s/_spack/lib/spack/env/intel/icc responds to '-show'... no\r\n     196    Unable to find suitable MPI Compiler. Try setting MPICC.\r\n  >> 197    configure: error: \"Couldn't find MPI\"\r\n```\r\n\r\n@CamStan @shahzebsiddiqui ",
+    "performed_via_github_app": null
+}

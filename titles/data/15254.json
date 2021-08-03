@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15254/events",
+    "html_url": "https://github.com/spack/spack/pull/15254",
+    "id": 572295791,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgxMDIzMDcz",
+    "number": 15254,
+    "title": "Add new version of libfabric that builds on macOS",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-27T19:12:56Z",
+    "updated_at": "2020-03-17T14:00:48Z",
+    "closed_at": "2020-02-28T17:26:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15254",
+        "html_url": "https://github.com/spack/spack/pull/15254",
+        "diff_url": "https://github.com/spack/spack/pull/15254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15254.patch"
+    },
+    "body": "See https://github.com/ofiwg/libfabric/issues/5339\r\n\r\nFixes https://github.com/spack/spack/issues/15244\r\n\r\nAlso reduced copy-paste of URLs with `url_for_version`.",
+    "performed_via_github_app": null
+}

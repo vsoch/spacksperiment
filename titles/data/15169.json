@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15169",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15169/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15169/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15169/events",
+    "html_url": "https://github.com/spack/spack/pull/15169",
+    "id": 569354673,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc4NjA0MzM2",
+    "number": 15169,
+    "title": "Automatically run LLDB codesign script on mac",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-22T16:05:21Z",
+    "updated_at": "2020-02-23T12:25:12Z",
+    "closed_at": "2020-02-22T19:09:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15169",
+        "html_url": "https://github.com/spack/spack/pull/15169",
+        "diff_url": "https://github.com/spack/spack/pull/15169.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15169.patch"
+    },
+    "body": "Newer versions of LLVM provide a one-line command to set up LLDB code\r\nsigning. Now the build will abort only if this command fails.\r\n\r\nhttps://lldb.llvm.org/resources/build.html#code-signing-on-macos\r\n\r\nSee https://github.com/spack/spack/pull/7012 , closes https://github.com/spack/spack/issues/3215",
+    "performed_via_github_app": null
+}

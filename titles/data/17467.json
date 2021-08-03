@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17467",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17467/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17467/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17467/events",
+    "html_url": "https://github.com/spack/spack/pull/17467",
+    "id": 655020677,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3NjMxNzU0",
+    "number": 17467,
+    "title": "Cray support: detect shasta os properly",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-10T20:32:22Z",
+    "updated_at": "2020-08-19T22:46:01Z",
+    "closed_at": "2020-07-23T20:20:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17467",
+        "html_url": "https://github.com/spack/spack/pull/17467",
+        "diff_url": "https://github.com/spack/spack/pull/17467.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17467.patch"
+    },
+    "body": "Fixes #17299 \r\n\r\nCray Shasta systems appear to use an unmodified Sles or other Linux operating system on the backend (like Cray \"Cluster\" systems and unlike Cray \"XC40\" systems that use CNL).\r\n\r\nThis updates the CNL version detection to properly note that this is the underlying OS instead of CNL and delegate to LinuxDistro.\r\n\r\n@riscy768 can you confirm this fixes your bug?",
+    "performed_via_github_app": null
+}

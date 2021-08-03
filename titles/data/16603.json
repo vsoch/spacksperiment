@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16603",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16603/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16603/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16603/events",
+    "html_url": "https://github.com/spack/spack/pull/16603",
+    "id": 616815853,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2ODU0NDM0",
+    "number": 16603,
+    "title": "revbayes: update for 1.1.0",
+    "user": {
+        "login": "njbooher",
+        "id": 533823,
+        "node_id": "MDQ6VXNlcjUzMzgyMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/533823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/njbooher",
+        "html_url": "https://github.com/njbooher",
+        "followers_url": "https://api.github.com/users/njbooher/followers",
+        "following_url": "https://api.github.com/users/njbooher/following{/other_user}",
+        "gists_url": "https://api.github.com/users/njbooher/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/njbooher/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/njbooher/subscriptions",
+        "organizations_url": "https://api.github.com/users/njbooher/orgs",
+        "repos_url": "https://api.github.com/users/njbooher/repos",
+        "events_url": "https://api.github.com/users/njbooher/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/njbooher/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-12T17:03:57Z",
+    "updated_at": "2020-05-12T19:26:45Z",
+    "closed_at": "2020-05-12T19:26:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16603",
+        "html_url": "https://github.com/spack/spack/pull/16603",
+        "diff_url": "https://github.com/spack/spack/pull/16603.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16603.patch"
+    },
+    "body": "https://github.com/revbayes/revbayes/releases/tag/1.1.0\r\n\r\nThe build process got revamped shortly after [the last pull request](https://github.com/spack/spack/pull/15485) to make more use of CMake for build options.\r\n",
+    "performed_via_github_app": null
+}

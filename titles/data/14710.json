@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14710",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14710/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14710/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14710/events",
+    "html_url": "https://github.com/spack/spack/pull/14710",
+    "id": 558306665,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY5NzIxMDgy",
+    "number": 14710,
+    "title": "fix wrong guess of path when package is from modulefile",
+    "user": {
+        "login": "sleak-lbl",
+        "id": 17708445,
+        "node_id": "MDQ6VXNlcjE3NzA4NDQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17708445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sleak-lbl",
+        "html_url": "https://github.com/sleak-lbl",
+        "followers_url": "https://api.github.com/users/sleak-lbl/followers",
+        "following_url": "https://api.github.com/users/sleak-lbl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sleak-lbl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sleak-lbl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sleak-lbl/subscriptions",
+        "organizations_url": "https://api.github.com/users/sleak-lbl/orgs",
+        "repos_url": "https://api.github.com/users/sleak-lbl/repos",
+        "events_url": "https://api.github.com/users/sleak-lbl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sleak-lbl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-01-31T18:44:57Z",
+    "updated_at": "2021-02-19T09:24:29Z",
+    "closed_at": "2021-02-19T09:24:29Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14710",
+        "html_url": "https://github.com/spack/spack/pull/14710",
+        "diff_url": "https://github.com/spack/spack/pull/14710.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14710.patch"
+    },
+    "body": "Horrible hack for Cray modulefiles: sometimes when the module is called\r\neg \"cray-hdf5\" it defines \"CRAY_HDF5_DIR\" and also \"HDF5_DIR\". In those\r\ncases \"HDF5_DIR\" is (usually?) the one we want, despite not matching the \r\nmodulefile name. But HDF5_DIR might not be defined, in which case we want\r\nCRAY_HDF5_DIR. \r\n\r\nThis is a (rather nasty, sorry) hack to nudge module_cmd.py:get_path_from_module_contents()\r\nto choose $HDF5_DIR as the pkg_var_prefix in preference to $CRAY_HDF5_DIR.\r\nSince get_path_from_module_contents() chooses the most-frequently-used path,\r\nthis fix rigs the election by checking for HDF5_DIR twice\r\n\r\nThe motivating example was an attempt to build petsc when hdf5 was coming \r\nfrom the cray-hdf5-parallel module. With the patch, the correct hdf5 location \r\nis used.",
+    "performed_via_github_app": null
+}

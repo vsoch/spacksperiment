@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14876",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14876/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14876/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14876/events",
+    "html_url": "https://github.com/spack/spack/pull/14876",
+    "id": 562318129,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzcyOTMzOTIz",
+    "number": 14876,
+    "title": "openblas: add variant +consistentFPCSR",
+    "user": {
+        "login": "siko1056",
+        "id": 8133832,
+        "node_id": "MDQ6VXNlcjgxMzM4MzI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8133832?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/siko1056",
+        "html_url": "https://github.com/siko1056",
+        "followers_url": "https://api.github.com/users/siko1056/followers",
+        "following_url": "https://api.github.com/users/siko1056/following{/other_user}",
+        "gists_url": "https://api.github.com/users/siko1056/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/siko1056/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/siko1056/subscriptions",
+        "organizations_url": "https://api.github.com/users/siko1056/orgs",
+        "repos_url": "https://api.github.com/users/siko1056/repos",
+        "events_url": "https://api.github.com/users/siko1056/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/siko1056/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-10T04:32:12Z",
+    "updated_at": "2020-02-14T03:57:54Z",
+    "closed_at": "2020-02-14T01:59:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14876",
+        "html_url": "https://github.com/spack/spack/pull/14876",
+        "diff_url": "https://github.com/spack/spack/pull/14876.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14876.patch"
+    },
+    "body": "Add the OpenBLAS variant `+consistentFPCSR`, by default `False`, which adds the compile definition `CONSISTENT_FPCSR=1` as documented in  OpenBLAS `Makefile.rule`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18454",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18454/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18454/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18454/events",
+    "html_url": "https://github.com/spack/spack/pull/18454",
+    "id": 690429760,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc3MzE5Njg4",
+    "number": 18454,
+    "title": "spack test: no gpg sign",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-01T20:35:41Z",
+    "updated_at": "2020-09-02T22:06:23Z",
+    "closed_at": "2020-09-02T21:48:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18454",
+        "html_url": "https://github.com/spack/spack/pull/18454",
+        "diff_url": "https://github.com/spack/spack/pull/18454.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18454.patch"
+    },
+    "body": "In my `~/.gitconfig`, I have the following logic:\r\n```\r\n[commit]\r\n    # Automatically sign using GPG keys\r\n    gpgsign = true\r\n```\r\nThis allows me to automatically sign all git commits. However, when I run `spack test`, tests that involve git commits stall with the following message:\r\n```console\r\n$ spack test lib/spack/spack/test/mirror.py\r\n...\r\nPlease enter the passphrase to unlock the OpenPGP secret key:\r\n\"Adam J. Stewart <ajstewart426@gmail.com>\"\r\n4096-bit RSA key, ID C66C0675661156FC,\r\ncreated 2020-03-07.\r\n\r\nPassphrase: \r\n```\r\nThis PR removes that message. Another possible solution would be to pass some flag to git to ignore all local configurations.",
+    "performed_via_github_app": null
+}

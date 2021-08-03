@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16899",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16899/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16899/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16899/events",
+    "html_url": "https://github.com/spack/spack/pull/16899",
+    "id": 628728980,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI2MjE2Njg2",
+    "number": 16899,
+    "title": "Set ROOT environment correctly when ~rpath",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-01T21:11:42Z",
+    "updated_at": "2020-06-16T07:03:59Z",
+    "closed_at": "2020-06-16T06:31:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16899",
+        "html_url": "https://github.com/spack/spack/pull/16899",
+        "diff_url": "https://github.com/spack/spack/pull/16899.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16899.patch"
+    },
+    "body": "Hi ROOT recipe maintainers,\r\n@chissg  @HadrienG2 @drbenmorgan \r\nAs far as I can tell, turning off the `rpath` variant actually has no effect (due to spack setting the relevant compiler options?). Here is the log of me looking at the `readelf` output of a root binary from spack `+rpath`, from spack `~rpath` and from the lcg releases: https://gist.github.com/vvolkl/e95b58bbfb0d0dc9b54ef31dc4013df5 -- the RPATH entry is the same for both spack installations, but missing in the external installation.\r\n\r\n This is not a problem in itself, but it makes it tricky to use an external installation of root in `packages.yaml` - dependent packages that try to generate dictionaries will typically fail with linker errors. I tried to work around it in the PODIO recipe: https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/podio/package.py#L47 (at the time not really knowing what was the exact issue) but I think it would be better if the ROOT recipe handled this correctly.\r\n\r\nMy proposal in this PR is to use the `~rpath` variant to set up the environment for possible external installations that really do not have a working rpath set up -- so I can add \r\n\r\n```\r\n  root:\r\n    buildable: false\r\n    paths:\r\n      root ~rpath: /cvmfs/sft.cern.ch/lcg/releases/LCG_97_FCC_2/ROOT/v6.20.04/x86_64-centos7-gcc8-opt\r\n```\r\nin a `packages.yaml`.\r\n",
+    "performed_via_github_app": null
+}

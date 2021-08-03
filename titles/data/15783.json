@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15783",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15783/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15783/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15783/events",
+    "html_url": "https://github.com/spack/spack/pull/15783",
+    "id": 591310249,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk2NTAyNzM0",
+    "number": 15783,
+    "title": "MPFR: fix patch checksum, add dependencies",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1230290682,
+            "node_id": "MDU6TGFiZWwxMjMwMjkwNjgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/blocked",
+            "name": "blocked",
+            "color": "b611f7",
+            "default": false,
+            "description": "Things currently blocked by other PRs or issues"
+        },
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2020-03-31T18:05:36Z",
+    "updated_at": "2020-06-03T15:58:05Z",
+    "closed_at": "2020-04-17T21:30:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15783",
+        "html_url": "https://github.com/spack/spack/pull/15783",
+        "diff_url": "https://github.com/spack/spack/pull/15783.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15783.patch"
+    },
+    "body": "For the `mpfr` package, we use the aggregated `allpatches` patch for each version. Unfortunately, this patch is added to from time-to-time, so the checksum changed. This PR updates the checksum, and switches older patched to sha256. The older patches did not change, only the latest patch.\r\n\r\nThis PR also adds a dependency on `autoconf-archive`. Without this, `mpfr` fails during the build stage with the following error message:\r\n```\r\nconfigure:14208: error: possibly undefined macro: AX_PTHREAD\r\n      If this token and others are legitimate, please use m4_pattern_allow.\r\n      See the Autoconf documentation.\r\nmake: *** [configure] Error 1\r\nmake: *** Waiting for unfinished jobs....\r\n```\r\nDepends on #15784",
+    "performed_via_github_app": null
+}

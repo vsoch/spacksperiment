@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15454",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15454/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15454/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15454/events",
+    "html_url": "https://github.com/spack/spack/pull/15454",
+    "id": 579603201,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg2OTY4NDY2",
+    "number": 15454,
+    "title": "slate build: fix Py3 byte+str concat errors in testsweeper subrepo",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-03-11T23:33:27Z",
+    "updated_at": "2020-03-13T22:57:00Z",
+    "closed_at": "2020-03-13T22:57:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15454",
+        "html_url": "https://github.com/spack/spack/pull/15454",
+        "diff_url": "https://github.com/spack/spack/pull/15454.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15454.patch"
+    },
+    "body": "Package `slate` relies on sub-repo `testsweeper`, which uses a Python configure script that has byte+str concatenation errors when run with Python 3. This PR uses `filter_file` on the `testsweeper` configure script to mend the offending lines (4 lines in total). Obviously it would be preferable to have an upstream fix in the `testsweeper` repo but for now this allows `slate` to build.\r\n\r\nTemporarily addresses https://github.com/spack/spack/issues/15216\r\n\r\n@G-Ragghianti ",
+    "performed_via_github_app": null
+}

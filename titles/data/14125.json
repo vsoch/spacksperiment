@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14125",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14125/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14125/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14125/events",
+    "html_url": "https://github.com/spack/spack/pull/14125",
+    "id": 536828355,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUyMjkwNTk4",
+    "number": 14125,
+    "title": "cmake: Fix checksum of 4075.patch",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-12-12T08:31:35Z",
+    "updated_at": "2019-12-13T00:03:04Z",
+    "closed_at": "2019-12-12T18:57:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14125",
+        "html_url": "https://github.com/spack/spack/pull/14125",
+        "diff_url": "https://github.com/spack/spack/pull/14125.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14125.patch"
+    },
+    "body": "https://github.com/spack/spack/pull/13796\r\nI got ChecksumError when installing `cmake@3.15.5`. Checksum of new patch merged on this pull request seems to be different. I got correct checksum from following URL.\r\nhttps://gitlab.kitware.com/cmake/cmake/merge_requests/4075",
+    "performed_via_github_app": null
+}

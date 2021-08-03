@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14882",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14882/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14882/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14882/events",
+    "html_url": "https://github.com/spack/spack/pull/14882",
+    "id": 562759936,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzczMjk2ODcx",
+    "number": 14882,
+    "title": "Qmcpack: new variant +afqmc",
+    "user": {
+        "login": "camelto2",
+        "id": 23708499,
+        "node_id": "MDQ6VXNlcjIzNzA4NDk5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23708499?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/camelto2",
+        "html_url": "https://github.com/camelto2",
+        "followers_url": "https://api.github.com/users/camelto2/followers",
+        "following_url": "https://api.github.com/users/camelto2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/camelto2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/camelto2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/camelto2/subscriptions",
+        "organizations_url": "https://api.github.com/users/camelto2/orgs",
+        "repos_url": "https://api.github.com/users/camelto2/repos",
+        "events_url": "https://api.github.com/users/camelto2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/camelto2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-02-10T18:55:09Z",
+    "updated_at": "2020-03-02T17:58:34Z",
+    "closed_at": "2020-03-02T17:58:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14882",
+        "html_url": "https://github.com/spack/spack/pull/14882",
+        "diff_url": "https://github.com/spack/spack/pull/14882.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14882.patch"
+    },
+    "body": "This PR allows qmcpack to be built with AFQMC support. \r\n\r\nI added all of the conflicts listed in the CMake files, namely with BUILD_AFQMC and BUILD_AFQMC_WITH_NCCL. If NCCL is requested, it will add nccl as as a dependency. \r\nAFQMC requires MPI, so it fails if you don't have +mpi when asking for +afqmc. \r\n\r\nThe compiler conflicts were told to me from the AFQMC developers, and even though AFQMC has been in QMCPACK for a few versions, they only recommended use from v3.7 and up. \r\n\r\nIf there are other conflicts/dependencies, they can be added later. For now, this should be sufficient to allow users to start building with AFQMC support\r\n\r\n@naromero77 \r\n\r\n",
+    "performed_via_github_app": null
+}

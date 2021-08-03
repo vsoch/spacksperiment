@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13620",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13620/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13620/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13620/events",
+    "html_url": "https://github.com/spack/spack/pull/13620",
+    "id": 518794126,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM3NjM1NDQw",
+    "number": 13620,
+    "title": "[WIP] Bugfix: add package AST check to ensure full hash works",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-06T21:23:52Z",
+    "updated_at": "2019-12-14T22:31:40Z",
+    "closed_at": "2019-12-14T22:31:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13620",
+        "html_url": "https://github.com/spack/spack/pull/13620",
+        "diff_url": "https://github.com/spack/spack/pull/13620.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13620.patch"
+    },
+    "body": "(UPDATE 12/12: I'm working on an alternative to this: see https://github.com/spack/spack/pull/13620#issuecomment-565266487)\r\n\r\nCloses #13265\r\nFixes #13237\r\n\r\nSome valid python syntax in package.py files does not work with full hashes (these hashes include the DAG details as well as a hash of the package contents, and are used for creating buildcache tarballs). This adjusts the one package which was using logic that did not work, and also adds a `spack package-ast-check` command that is called as part of the CI to make sure that future edits to packages work with `Spec.full_hash`",
+    "performed_via_github_app": null
+}

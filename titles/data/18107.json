@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18107",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18107/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18107/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18107/events",
+    "html_url": "https://github.com/spack/spack/pull/18107",
+    "id": 680262110,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY4ODUzOTk2",
+    "number": 18107,
+    "title": "Find external package for git-lfs.",
+    "user": {
+        "login": "paulbry",
+        "id": 39570394,
+        "node_id": "MDQ6VXNlcjM5NTcwMzk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39570394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulbry",
+        "html_url": "https://github.com/paulbry",
+        "followers_url": "https://api.github.com/users/paulbry/followers",
+        "following_url": "https://api.github.com/users/paulbry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulbry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulbry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulbry/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulbry/orgs",
+        "repos_url": "https://api.github.com/users/paulbry/repos",
+        "events_url": "https://api.github.com/users/paulbry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulbry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-17T14:04:41Z",
+    "updated_at": "2020-08-18T02:02:42Z",
+    "closed_at": "2020-08-18T02:02:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18107",
+        "html_url": "https://github.com/spack/spack/pull/18107",
+        "diff_url": "https://github.com/spack/spack/pull/18107.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18107.patch"
+    },
+    "body": "Adding support for `external find git-lfs`.\r\n\r\n```console\r\n$ cat ~/.spack/packages.yaml \r\npackages:\r\n  ...\r\n  git-lfs:\r\n    externals:\r\n    - spec: git-lfs@2.9.0\r\n      prefix: /Users/pbryant\r\n```",
+    "performed_via_github_app": null
+}

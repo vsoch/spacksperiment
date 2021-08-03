@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17596",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17596/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17596/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17596/events",
+    "html_url": "https://github.com/spack/spack/pull/17596",
+    "id": 661707203,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDUzMzQ3NzU2",
+    "number": 17596,
+    "title": "package cuda: fix for chmod error",
+    "user": {
+        "login": "g-mathias",
+        "id": 40861554,
+        "node_id": "MDQ6VXNlcjQwODYxNTU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40861554?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/g-mathias",
+        "html_url": "https://github.com/g-mathias",
+        "followers_url": "https://api.github.com/users/g-mathias/followers",
+        "following_url": "https://api.github.com/users/g-mathias/following{/other_user}",
+        "gists_url": "https://api.github.com/users/g-mathias/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/g-mathias/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/g-mathias/subscriptions",
+        "organizations_url": "https://api.github.com/users/g-mathias/orgs",
+        "repos_url": "https://api.github.com/users/g-mathias/repos",
+        "events_url": "https://api.github.com/users/g-mathias/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/g-mathias/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-07-20T11:25:17Z",
+    "updated_at": "2020-10-07T21:38:02Z",
+    "closed_at": "2020-10-06T12:45:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17596",
+        "html_url": "https://github.com/spack/spack/pull/17596",
+        "diff_url": "https://github.com/spack/spack/pull/17596.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17596.patch"
+    },
+    "body": "chmod throws an error if cached cuda installer has only rx permissions but not w",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16217",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16217/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16217/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16217/events",
+    "html_url": "https://github.com/spack/spack/pull/16217",
+    "id": 604255891,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2ODg0MTI5",
+    "number": 16217,
+    "title": "python : fix SSL for older Python versions",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1483030398,
+            "node_id": "MDU6TGFiZWwxNDgzMDMwMzk4",
+            "url": "https://api.github.com/repos/spack/spack/labels/python2",
+            "name": "python2",
+            "color": "fcf99c",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-04-21T20:13:40Z",
+    "updated_at": "2020-04-28T00:36:34Z",
+    "closed_at": "2020-04-28T00:36:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16217",
+        "html_url": "https://github.com/spack/spack/pull/16217",
+        "diff_url": "https://github.com/spack/spack/pull/16217.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16217.patch"
+    },
+    "body": "The changes in this pull request fix SSL for older Python versions by adding a new `patch` function and by adding dependency constraints.\r\n\r\n**NOTE**: I've only verified that these fixes work for the variant `python@2.7.12+ssl` with a build environment of `gcc%4.9.3 arch=linux-rhel7-broadwell`, so this should remain a WIP until I've more thoroughly tested the correctness of these changes. I'm planning to at least test  `python@2.7.18+ssl`, `python@3.4.X+ssl`, and `python@3.6.X+ssl` to ensure that the patch and constraints work for the advertised versions.\r\n\r\n**EDIT**: I've now tested `python@2.7.18{+|~}ssl` and `python@3.6.8{+|~}ssl`. I skipped `python@3.4.3+ssl` because it seems like it would be redundant given that the patches in this PR work for a more recent version (i.e.  `python@3.6.8`).",
+    "performed_via_github_app": null
+}

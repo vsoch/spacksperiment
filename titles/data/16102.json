@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16102",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16102/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16102/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16102/events",
+    "html_url": "https://github.com/spack/spack/pull/16102",
+    "id": 601435369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0Njk3OTM2",
+    "number": 16102,
+    "title": "Fix for source-highlight package to detect installed boost lib",
+    "user": {
+        "login": "servesh",
+        "id": 1692420,
+        "node_id": "MDQ6VXNlcjE2OTI0MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1692420?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/servesh",
+        "html_url": "https://github.com/servesh",
+        "followers_url": "https://api.github.com/users/servesh/followers",
+        "following_url": "https://api.github.com/users/servesh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/servesh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/servesh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/servesh/subscriptions",
+        "organizations_url": "https://api.github.com/users/servesh/orgs",
+        "repos_url": "https://api.github.com/users/servesh/repos",
+        "events_url": "https://api.github.com/users/servesh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/servesh/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-16T20:25:37Z",
+    "updated_at": "2020-04-22T09:43:03Z",
+    "closed_at": "2020-04-22T09:43:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16102",
+        "html_url": "https://github.com/spack/spack/pull/16102",
+        "diff_url": "https://github.com/spack/spack/pull/16102.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16102.patch"
+    },
+    "body": "Source highlight configure script doesn't detect the boost regex library installed through Spack. So as suggested https://www.gnu.org/software/src-highlite/source-highlight.html#Tips-on-installing-Boost-Regex-library I added a fix for configure script that resolves the issue.",
+    "performed_via_github_app": null
+}

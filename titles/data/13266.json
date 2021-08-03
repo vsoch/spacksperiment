@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13266",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13266/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13266/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13266/events",
+    "html_url": "https://github.com/spack/spack/pull/13266",
+    "id": 509504018,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMwMDUzODE0",
+    "number": 13266,
+    "title": "shebangs: don't warn when patching long shebangs",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1548903500,
+            "node_id": "MDU6TGFiZWwxNTQ4OTAzNTAw",
+            "url": "https://api.github.com/repos/spack/spack/labels/hooks",
+            "name": "hooks",
+            "color": "92e84c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-19T20:11:44Z",
+    "updated_at": "2019-10-20T00:50:46Z",
+    "closed_at": "2019-10-19T21:09:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13266",
+        "html_url": "https://github.com/spack/spack/pull/13266",
+        "diff_url": "https://github.com/spack/spack/pull/13266.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13266.patch"
+    },
+    "body": "We've been doing this for quite a while now, and it does not seem to cause issues.\r\n\r\n- [x] Switch the noisy warning to a debug to make Spack a bit quieter while building.",
+    "performed_via_github_app": null
+}

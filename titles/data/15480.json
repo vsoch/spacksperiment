@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15480/events",
+    "html_url": "https://github.com/spack/spack/pull/15480",
+    "id": 580497038,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg3NjkzMTQ5",
+    "number": 15480,
+    "title": "pgi: add missing paths in setup_run_environment",
+    "user": {
+        "login": "melven",
+        "id": 3668878,
+        "node_id": "MDQ6VXNlcjM2Njg4Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3668878?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/melven",
+        "html_url": "https://github.com/melven",
+        "followers_url": "https://api.github.com/users/melven/followers",
+        "following_url": "https://api.github.com/users/melven/following{/other_user}",
+        "gists_url": "https://api.github.com/users/melven/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/melven/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/melven/subscriptions",
+        "organizations_url": "https://api.github.com/users/melven/orgs",
+        "repos_url": "https://api.github.com/users/melven/repos",
+        "events_url": "https://api.github.com/users/melven/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/melven/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616910686,
+            "node_id": "MDU6TGFiZWw2MTY5MTA2ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pgi",
+            "name": "pgi",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2020-03-13T10:08:15Z",
+    "updated_at": "2020-03-13T18:07:36Z",
+    "closed_at": "2020-03-13T18:07:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15480",
+        "html_url": "https://github.com/spack/spack/pull/15480",
+        "diff_url": "https://github.com/spack/spack/pull/15480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15480.patch"
+    },
+    "body": "Adjust PATH, MANPATH and LD_LIBRARY_PATH in the run environment.\r\n\r\nThese are also set in the module-files in the PGI compiler itself:\r\n```\r\ne.g. <pgi-install-path>/modulefiles/pgi/19.10:\r\n...\r\n    setenv PGI $pgihome\r\n    setenv CC $pgidir/bin/pgcc\r\n    setenv FC $pgidir/bin/pgfortran\r\n    setenv F90 $pgidir/bin/pgfortran\r\n    setenv F77 $pgidir/bin/pgfortran\r\n    setenv CPP /bin/cpp\r\n    setenv CXX $pgidir/bin/pgc++\r\n    prepend-path PATH $pgidir/bin\r\n    prepend-path MANPATH $pgidir/man\r\n    if { $kern == \"Darwin\" } {\r\n      prepend-path DYLD_LIBRARY_PATH $pgidir/lib\r\n    } elseif { $kern == \"Linux\" } {\r\n      prepend-path LD_LIBRARY_PATH $pgidir/lib\r\n    }\r\n...\r\n```",
+    "performed_via_github_app": null
+}

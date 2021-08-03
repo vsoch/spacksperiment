@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13595",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13595/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13595/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13595/events",
+    "html_url": "https://github.com/spack/spack/pull/13595",
+    "id": 517617165,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM2NjUwOTEz",
+    "number": 13595,
+    "title": "add depends_on(python) to PythonPackage stub",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-05T08:26:08Z",
+    "updated_at": "2019-11-05T19:30:10Z",
+    "closed_at": "2019-11-05T19:18:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13595",
+        "html_url": "https://github.com/spack/spack/pull/13595",
+        "diff_url": "https://github.com/spack/spack/pull/13595.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13595.patch"
+    },
+    "body": "During the last round of package adding, @adamjstewart repeatedly reminded me to also track the python version compatibilities, so I ended up making spack show me that in the stub rather than adding it manually each time",
+    "performed_via_github_app": null
+}

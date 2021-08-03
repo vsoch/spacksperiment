@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15362",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15362/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15362/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15362/events",
+    "html_url": "https://github.com/spack/spack/issues/15362",
+    "id": 576452886,
+    "node_id": "MDU6SXNzdWU1NzY0NTI4ODY=",
+    "number": 15362,
+    "title": "spack prints spec that is not reusable ( CMakePackage + ~variant )",
+    "user": {
+        "login": "adrienbernede",
+        "id": 51493078,
+        "node_id": "MDQ6VXNlcjUxNDkzMDc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/51493078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adrienbernede",
+        "html_url": "https://github.com/adrienbernede",
+        "followers_url": "https://api.github.com/users/adrienbernede/followers",
+        "following_url": "https://api.github.com/users/adrienbernede/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adrienbernede/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adrienbernede/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adrienbernede/subscriptions",
+        "organizations_url": "https://api.github.com/users/adrienbernede/orgs",
+        "repos_url": "https://api.github.com/users/adrienbernede/repos",
+        "events_url": "https://api.github.com/users/adrienbernede/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adrienbernede/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-03-05T18:35:51Z",
+    "updated_at": "2020-05-12T17:23:43Z",
+    "closed_at": "2020-05-12T17:23:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "<!--\r\n*Explain, in a clear and concise way, the command you ran and the result you were trying to achieve.\r\nExample: \"I ran Spack find to list all the installed packages and...\"*\r\n-->\r\n\r\nRunning `spack spec` for a **CMake package** where a **variant is deactivated**, Spack prints a spec that is not reusable:\r\n\r\n### Spack version\r\nTested on develop and 13.2\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n$ spack spec h5cpp~mpi\r\nh5cpp@1.10.4-5%clang@10.0.0-apple build_type=RelWithDebInfo ~mpi arch=darwin-mojave-x86_64\r\n...\r\n$ spack spec h5cpp@1.10.4-5%clang@10.0.0-apple build_type=RelWithDebInfo ~mpi arch=darwin-mojave-x86_64\r\nzsh: no such user or named directory: mpi\r\n...\r\n```\r\n\r\n### Error Message\r\n\r\nThis doesn\u2019t generate an error in Spack itself. \r\n\r\n### Information on your system\r\n\r\nDefault Spack configuration on MacOS, with zsh.\r\n\r\n### Comments\r\n\r\nThe problem is mainly that Spack generates a spec using `~variant` after a whitespace. This seems to happen only with CMake packages, mainly because those have a `build_type` variant that comes first.\r\n\r\nSolutions could be to reorder the variants attache `~variant` to the spec, or use `-` instead of `~`.",
+    "performed_via_github_app": null
+}

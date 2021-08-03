@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15792",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15792/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15792/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15792/events",
+    "html_url": "https://github.com/spack/spack/pull/15792",
+    "id": 591533426,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk2NjkzNTYy",
+    "number": 15792,
+    "title": "Don't show warnings for quotes during environment inspection",
+    "user": {
+        "login": "anderbubble",
+        "id": 350294,
+        "node_id": "MDQ6VXNlcjM1MDI5NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/350294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anderbubble",
+        "html_url": "https://github.com/anderbubble",
+        "followers_url": "https://api.github.com/users/anderbubble/followers",
+        "following_url": "https://api.github.com/users/anderbubble/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anderbubble/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anderbubble/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anderbubble/subscriptions",
+        "organizations_url": "https://api.github.com/users/anderbubble/orgs",
+        "repos_url": "https://api.github.com/users/anderbubble/repos",
+        "events_url": "https://api.github.com/users/anderbubble/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anderbubble/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-04-01T00:31:55Z",
+    "updated_at": "2021-07-27T08:28:30Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15792",
+        "html_url": "https://github.com/spack/spack/pull/15792",
+        "diff_url": "https://github.com/spack/spack/pull/15792.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15792.patch"
+    },
+    "body": "`Executable` looks for arguments that contain quotes and issues a warning if found; but for some internal cases (e.g., running an embedded script with `-c`) quotes are necessary, but still generate warning messages to the end-user.\r\n\r\nThis adds a `_warn_quotes` kwarg to `Executable.__call__` so that the caller can intentionally opt-out of warnings.",
+    "performed_via_github_app": null
+}

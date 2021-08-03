@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18068",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18068/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18068/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18068/events",
+    "html_url": "https://github.com/spack/spack/pull/18068",
+    "id": 679079006,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY3OTE4Nzg2",
+    "number": 18068,
+    "title": "Make spfft build with rocm",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-14T10:58:20Z",
+    "updated_at": "2020-08-16T22:46:13Z",
+    "closed_at": "2020-08-16T22:23:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18068",
+        "html_url": "https://github.com/spack/spack/pull/18068",
+        "diff_url": "https://github.com/spack/spack/pull/18068.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18068.patch"
+    },
+    "body": "Also removes redundant depends_on('cuda') since it is a cuda package already",
+    "performed_via_github_app": null
+}

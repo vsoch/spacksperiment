@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19025",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19025/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19025/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19025/events",
+    "html_url": "https://github.com/spack/spack/pull/19025",
+    "id": 710178877,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk0MDcyNTE1",
+    "number": 19025,
+    "title": "comgr is linked to by libamdhip64, so it should be a link dep",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-28T11:21:56Z",
+    "updated_at": "2020-10-12T14:28:49Z",
+    "closed_at": "2020-10-12T14:28:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19025",
+        "html_url": "https://github.com/spack/spack/pull/19025",
+        "diff_url": "https://github.com/spack/spack/pull/19025.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19025.patch"
+    },
+    "body": "Ping @arjun-raj-kuppala, in my case `rocfft-kernel-generator` errored during the build of rocfft@3.8.0. In case you wanna debug these kinds of things too, try using `spack install libtree`, can be useful:\r\n\r\n![Screenshot from 2020-09-28 13-20-11](https://user-images.githubusercontent.com/194764/94426097-5ac7eb80-018d-11eb-985b-8ecfabc1f793.png)\r\n",
+    "performed_via_github_app": null
+}

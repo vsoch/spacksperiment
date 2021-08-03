@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14053",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14053/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14053/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14053/events",
+    "html_url": "https://github.com/spack/spack/pull/14053",
+    "id": 534692623,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUwNTIxNDE1",
+    "number": 14053,
+    "title": "intel-tbb: fix and cleanup patch version ranges",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-09T05:04:04Z",
+    "updated_at": "2019-12-09T23:11:48Z",
+    "closed_at": "2019-12-09T23:11:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14053",
+        "html_url": "https://github.com/spack/spack/pull/14053",
+        "diff_url": "https://github.com/spack/spack/pull/14053.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14053.patch"
+    },
+    "body": "Recent commit e9ee9eaf (#13989) fixed testing version ranges inside\r\npatch when clauses.  Previously, it was necessary to write all revs\r\nindividually for packages with multiple length version numbers (2019\r\nand 2019.1).\r\n\r\nThis fixes the build for the old 2017.* versions.\r\n\r\n----------\r\n\r\nThanks to @adamjstewart for issue #8957.\r\nThanks to @scheibelp for patch #13989.\r\n\r\nAt this point, it's possible to write the version ranges sensibly,\r\nand all of the old revs should build cleanly.\r\n",
+    "performed_via_github_app": null
+}

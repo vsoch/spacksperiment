@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13107",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13107/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13107/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13107/events",
+    "html_url": "https://github.com/spack/spack/pull/13107",
+    "id": 504636696,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI2MjQxMzg4",
+    "number": 13107,
+    "title": "adios2 package configuration cleanup",
+    "user": {
+        "login": "williamfgc",
+        "id": 19393110,
+        "node_id": "MDQ6VXNlcjE5MzkzMTEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19393110?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/williamfgc",
+        "html_url": "https://github.com/williamfgc",
+        "followers_url": "https://api.github.com/users/williamfgc/followers",
+        "following_url": "https://api.github.com/users/williamfgc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/williamfgc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/williamfgc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/williamfgc/subscriptions",
+        "organizations_url": "https://api.github.com/users/williamfgc/orgs",
+        "repos_url": "https://api.github.com/users/williamfgc/repos",
+        "events_url": "https://api.github.com/users/williamfgc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/williamfgc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-10-09T12:59:56Z",
+    "updated_at": "2021-01-12T11:51:13Z",
+    "closed_at": "2019-10-14T19:47:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13107",
+        "html_url": "https://github.com/spack/spack/pull/13107",
+        "diff_url": "https://github.com/spack/spack/pull/13107.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13107.patch"
+    },
+    "body": "Provide up to date specs for build options\r\nRemove non-production versions\r\nRemove Python 2 support\r\nFormat using autopep8\r\n\r\n@ax3l @chuckatkins @olesenm please review",
+    "performed_via_github_app": null
+}

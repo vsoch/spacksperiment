@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15992",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15992/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15992/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15992/events",
+    "html_url": "https://github.com/spack/spack/pull/15992",
+    "id": 597958819,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAxOTYzNTI1",
+    "number": 15992,
+    "title": "sourceware.org: mirror mixin",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-04-10T15:51:43Z",
+    "updated_at": "2020-04-17T04:10:10Z",
+    "closed_at": "2020-04-14T16:09:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15992",
+        "html_url": "https://github.com/spack/spack/pull/15992",
+        "diff_url": "https://github.com/spack/spack/pull/15992.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15992.patch"
+    },
+    "body": "sourceware.org is often quite overrun and times out or returns in certificate errors.\r\n\r\nSince libffi, bzip2, elfutils, etc. are quite fundamental in build chains, let's add some official mirrors.\r\n\r\nThis should fix the bi-daily errors I see on nightly integration tests.",
+    "performed_via_github_app": null
+}

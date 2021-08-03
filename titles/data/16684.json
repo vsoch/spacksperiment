@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16684",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16684/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16684/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16684/events",
+    "html_url": "https://github.com/spack/spack/pull/16684",
+    "id": 619524625,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE5MDAxMDkz",
+    "number": 16684,
+    "title": "Python: add spack external find support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-16T17:52:00Z",
+    "updated_at": "2020-08-14T15:03:12Z",
+    "closed_at": "2020-08-14T14:08:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16684",
+        "html_url": "https://github.com/spack/spack/pull/16684",
+        "diff_url": "https://github.com/spack/spack/pull/16684.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16684.patch"
+    },
+    "body": "Produces the following entries in `packages.yaml`:\r\n```yaml\r\n  python:\r\n    externals:\r\n    - spec: python@2.7.16+bz2+ctypes+dbm~lzma+nis+pyexpat+readline+sqlite3+ssl+tix+tkinter+uuid+zlib\r\n      prefix: /usr\r\n    - spec: python@3.7.3+bz2+ctypes+dbm+lzma+nis+pyexpat+readline+sqlite3+ssl~tix~tkinter+uuid+zlib\r\n      prefix: /usr\r\n    - spec: python@3.7.7+bz2+ctypes+dbm+lzma+nis+pyexpat+readline+sqlite3+ssl~tix~tkinter+uuid+zlib\r\n      prefix: /Users/Adam/.spack/darwin/.spack-env/view\r\n```",
+    "performed_via_github_app": null
+}

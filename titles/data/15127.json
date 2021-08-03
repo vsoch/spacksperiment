@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15127",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15127/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15127/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15127/events",
+    "html_url": "https://github.com/spack/spack/issues/15127",
+    "id": 568462839,
+    "node_id": "MDU6SXNzdWU1Njg0NjI4Mzk=",
+    "number": 15127,
+    "title": "`spack module` command name clash with different dependencies",
+    "user": {
+        "login": "nicholas-sly",
+        "id": 17838741,
+        "node_id": "MDQ6VXNlcjE3ODM4NzQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17838741?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nicholas-sly",
+        "html_url": "https://github.com/nicholas-sly",
+        "followers_url": "https://api.github.com/users/nicholas-sly/followers",
+        "following_url": "https://api.github.com/users/nicholas-sly/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nicholas-sly/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nicholas-sly/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nicholas-sly/subscriptions",
+        "organizations_url": "https://api.github.com/users/nicholas-sly/orgs",
+        "repos_url": "https://api.github.com/users/nicholas-sly/repos",
+        "events_url": "https://api.github.com/users/nicholas-sly/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nicholas-sly/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-20T17:37:09Z",
+    "updated_at": "2020-02-20T17:44:32Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Running `spack module lmod refresh -y` results in an error `==> Error: Name clashes detected in module files:`.  The comparison that is provided after this is simply a spec with version, compiler, and variants.  In that comparison, both specs are identical.  Closer inspection using `spack find -d` reveals that the issue is that each one depends on a different version of python.  I understand that this will result in a module file name clash as I've set the hash length to zero, but the comparison that was provided did not give me the necessary information as to how I can be more specific in my module whitelist.  \r\n\r\nI'd suggest making the comparison provided as part of this error either always output the equivalent of `spack find -d` or `spack find -d -L` in order to provide adequate information to determine the appropriate course of action.  If you would like to make this more dynamic, I could see using the current method if a difference is found in the diff of the two spec lines and adding information (starting with `-d` and going on to `-L` as needed) until a difference is found.\r\n\r\n\r\n\r\n### Steps to reproduce the issue\r\nIn the appropriate place in your lmod module format definition, set the hash_length to 0.\r\n```console\r\n$ spack install llvm@7.0.1^python@3.7.4\r\n$ spack install llvm@7.0.1^python@2.7.16\r\n$ spack module lmod refresh -y\r\n...\r\n```\r\n\r\n\r\n### Information on your system\r\n\r\nThis was run on a TOSS3 machine at LANL in the open.",
+    "performed_via_github_app": null
+}

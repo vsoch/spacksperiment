@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18045",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18045/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18045/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18045/events",
+    "html_url": "https://github.com/spack/spack/pull/18045",
+    "id": 678216882,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY3MjAxNTYx",
+    "number": 18045,
+    "title": "\"spack config update\" can handle comments in YAML files",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-13T07:26:32Z",
+    "updated_at": "2020-08-13T18:25:04Z",
+    "closed_at": "2020-08-13T16:54:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18045",
+        "html_url": "https://github.com/spack/spack/pull/18045",
+        "diff_url": "https://github.com/spack/spack/pull/18045.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18045.patch"
+    },
+    "body": "fixes #18031\r\n\r\nWith this fix \"spack config update\" can update YAML files that contain comments, while previously it couldn't.\r\n\r\n**Before this PR:**\r\n```console\r\n$ cat ~/.spack/packages.yaml\r\npackages:\r\n  # system cmake in /usr\r\n  cmake:\r\n    paths:\r\n      cmake@3.11.0:  /usr\r\n    buildable: False\r\n\r\n$ spack -d config update packages -y\r\n==> [2020-08-13-08:29:36.695023] Imported config from built-in commands\r\n==> [2020-08-13-08:29:36.700339] Imported config from built-in commands\r\n==> [2020-08-13-08:29:36.701393] Reading config file /home/culpo/PycharmProjects/spack/etc/spack/defaults/packages.yaml\r\n==> [2020-08-13-08:29:36.724921] Reading config file /home/culpo/.spack/packages.yaml\r\n==> [2020-08-13-08:29:36.728661] Warning: the attribute \"paths\" in the \"packages\" section of the configuration has been deprecated [entry=CommentedMap([('cmake@3.11.0', '/usr')])]\r\n==> [2020-08-13-08:29:36.728953] OUTDATED CONFIGURATION FILE [section=packages, scope=user, dir=/home/culpo/.spack]\r\n==> [2020-08-13-08:29:36.730702] Reading config file /home/culpo/PycharmProjects/spack/etc/spack/defaults/config.yaml\r\nTraceback (most recent call last):\r\n  File \"/home/culpo/PycharmProjects/spack/bin/spack\", line 64, in <module>\r\n    sys.exit(spack.main.main())\r\n  File \"/home/culpo/PycharmProjects/spack/lib/spack/spack/main.py\", line 762, in main\r\n    return _invoke_command(command, parser, args, unknown)\r\n  File \"/home/culpo/PycharmProjects/spack/lib/spack/spack/main.py\", line 490, in _invoke_command\r\n    return_val = command(parser, args)\r\n  File \"/home/culpo/PycharmProjects/spack/lib/spack/spack/cmd/config.py\", line 455, in config\r\n    action[args.config_command](args)\r\n  File \"/home/culpo/PycharmProjects/spack/lib/spack/spack/cmd/config.py\", line 374, in config_update\r\n    args.section, data, scope=scope.name, force=True\r\n  File \"/home/culpo/PycharmProjects/spack/lib/spack/spack/config.py\", line 490, in update_config\r\n    comments)\r\nAttributeError: 'dict' object has no attribute '_yaml_comment'\r\n```\r\n\r\n**After this PR:**\r\n```console\r\n$ cat ~/.spack/packages.yaml\r\npackages:\r\n  # system cmake in /usr\r\n  cmake:\r\n    paths:\r\n      cmake@3.11.0:  /usr\r\n    # Comment after updated section\r\n    buildable: False\r\n\r\n$ spack config update -y packages \r\n==> Warning: the attribute \"paths\" in the \"packages\" section of the configuration has been deprecated [entry=CommentedMap([('cmake@3.11.0', '/usr')])]\r\n==> File \"/home/culpo/.spack/packages.yaml\" updated [backup=/home/culpo/.spack/packages.yaml.bkp]\r\n\r\n$ cat ~/.spack/packages.yaml\r\npackages:\r\n  # system cmake in /usr\r\n  cmake:\r\n    # Comment after updated section\r\n    buildable: false\r\n    externals:\r\n    - spec: cmake@3.11.0\r\n      prefix: /usr\r\n\r\n```",
+    "performed_via_github_app": null
+}

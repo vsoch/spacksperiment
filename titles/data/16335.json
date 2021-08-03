@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16335",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16335/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16335/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16335/events",
+    "html_url": "https://github.com/spack/spack/pull/16335",
+    "id": 607911251,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA5NzkzNzEy",
+    "number": 16335,
+    "title": "prefix gets removed when adding additional configure options",
+    "user": {
+        "login": "yee29",
+        "id": 35582439,
+        "node_id": "MDQ6VXNlcjM1NTgyNDM5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35582439?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/yee29",
+        "html_url": "https://github.com/yee29",
+        "followers_url": "https://api.github.com/users/yee29/followers",
+        "following_url": "https://api.github.com/users/yee29/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yee29/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/yee29/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yee29/subscriptions",
+        "organizations_url": "https://api.github.com/users/yee29/orgs",
+        "repos_url": "https://api.github.com/users/yee29/repos",
+        "events_url": "https://api.github.com/users/yee29/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/yee29/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 663892928,
+            "node_id": "MDU6TGFiZWw2NjM4OTI5Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/waf",
+            "name": "waf",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-04-27T23:09:03Z",
+    "updated_at": "2020-04-29T15:52:24Z",
+    "closed_at": "2020-04-29T15:52:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16335",
+        "html_url": "https://github.com/spack/spack/pull/16335",
+        "diff_url": "https://github.com/spack/spack/pull/16335.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16335.patch"
+    },
+    "body": "WafPackage configure step does not include prefix if you add additional arguments to the configure line. Changing so that we just append that additional arguments.",
+    "performed_via_github_app": null
+}

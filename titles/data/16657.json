@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16657",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16657/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16657/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16657/events",
+    "html_url": "https://github.com/spack/spack/pull/16657",
+    "id": 618713694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE4Mzg4NjM3",
+    "number": 16657,
+    "title": "Packages/revocap refiner",
+    "user": {
+        "login": "h-denpo",
+        "id": 57649496,
+        "node_id": "MDQ6VXNlcjU3NjQ5NDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57649496?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/h-denpo",
+        "html_url": "https://github.com/h-denpo",
+        "followers_url": "https://api.github.com/users/h-denpo/followers",
+        "following_url": "https://api.github.com/users/h-denpo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/h-denpo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/h-denpo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/h-denpo/subscriptions",
+        "organizations_url": "https://api.github.com/users/h-denpo/orgs",
+        "repos_url": "https://api.github.com/users/h-denpo/repos",
+        "events_url": "https://api.github.com/users/h-denpo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/h-denpo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1905841948,
+            "node_id": "MDU6TGFiZWwxOTA1ODQxOTQ4",
+            "url": "https://api.github.com/repos/spack/spack/labels/pic",
+            "name": "pic",
+            "color": "e82e0d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-05-15T05:44:07Z",
+    "updated_at": "2021-03-09T07:42:11Z",
+    "closed_at": "2020-05-16T23:48:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16657",
+        "html_url": "https://github.com/spack/spack/pull/16657",
+        "diff_url": "https://github.com/spack/spack/pull/16657.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16657.patch"
+    },
+    "body": "    Modify cxxflags\r\n\r\n    self.compiler.cxx_pic_flag -> self.compiler.cxx_pic_flag\r\n",
+    "performed_via_github_app": null
+}

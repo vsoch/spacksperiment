@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14377",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14377/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14377/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14377/events",
+    "html_url": "https://github.com/spack/spack/pull/14377",
+    "id": 545238137,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MTgwODIy",
+    "number": 14377,
+    "title": "Add version constraint to graphviz patches",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-01-04T04:09:24Z",
+    "updated_at": "2020-01-15T22:05:47Z",
+    "closed_at": "2020-01-15T20:14:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14377",
+        "html_url": "https://github.com/spack/spack/pull/14377",
+        "diff_url": "https://github.com/spack/spack/pull/14377.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14377.patch"
+    },
+    "body": "This PR restricts the graphviz version that the patches for building\r\nwith the Intel compiler apply to. The two patches that were needed for\r\nbuilding graphviz-2.40.1 with the Intel compiler are not needed for\r\ngraphviz-2.42.2.",
+    "performed_via_github_app": null
+}

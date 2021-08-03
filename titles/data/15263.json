@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15263",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15263/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15263/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15263/events",
+    "html_url": "https://github.com/spack/spack/pull/15263",
+    "id": 572562496,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgxMjMyMDMx",
+    "number": 15263,
+    "title": "lastz: cast from char to signed char",
+    "user": {
+        "login": "noguchi-k",
+        "id": 55966120,
+        "node_id": "MDQ6VXNlcjU1OTY2MTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55966120?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noguchi-k",
+        "html_url": "https://github.com/noguchi-k",
+        "followers_url": "https://api.github.com/users/noguchi-k/followers",
+        "following_url": "https://api.github.com/users/noguchi-k/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noguchi-k/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noguchi-k/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noguchi-k/subscriptions",
+        "organizations_url": "https://api.github.com/users/noguchi-k/orgs",
+        "repos_url": "https://api.github.com/users/noguchi-k/repos",
+        "events_url": "https://api.github.com/users/noguchi-k/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noguchi-k/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-02-28T06:48:35Z",
+    "updated_at": "2020-03-02T08:29:24Z",
+    "closed_at": "2020-03-02T01:58:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15263",
+        "html_url": "https://github.com/spack/spack/pull/15263",
+        "diff_url": "https://github.com/spack/spack/pull/15263.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15263.patch"
+    },
+    "body": "- error\r\n\r\n```\r\n  >> 41    sequences.c:5089:3: error: comparison is always false due to limited\r\n            range of data type [-Werror=type-limits]\r\n     42       if (ch == EOF) goto failure;\r\n     43       ^\r\n```\r\nI did typecast for `ch` to 'signed char'.\r\n\r\n",
+    "performed_via_github_app": null
+}

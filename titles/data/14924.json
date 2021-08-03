@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14924",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14924/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14924/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14924/events",
+    "html_url": "https://github.com/spack/spack/pull/14924",
+    "id": 564335276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0NTg1ODc1",
+    "number": 14924,
+    "title": "intel-tbb: update to new tar file names for 2020 versions",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-12T23:09:54Z",
+    "updated_at": "2020-02-14T01:30:11Z",
+    "closed_at": "2020-02-14T01:30:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14924",
+        "html_url": "https://github.com/spack/spack/pull/14924",
+        "diff_url": "https://github.com/spack/spack/pull/14924.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14924.patch"
+    },
+    "body": "Starting with 2020, the tar files are named v2020.0.tar.gz,\r\nv2020.1.tar.gz, etc, not 2020_U1.tar.gz.\r\n\r\nhttps://github.com/intel/tbb/releases\r\n\r\nThe previous commit (7a10478708) fixed the checksum mismatch, but\r\ndidn't update url_for_version (my bad).\r\n\r\n----------\r\n\r\nSorry I didn't notice the name change and fix url_for_version() in the\r\nprevious commit.  Intel provides the old names for compatibility, so\r\nit looked like the old names were correct.  :-(\r\n\r\nThe contents of the two tar files (2020_U1.tar.gz and v2020.1.tar.gz)\r\nare identical except for the top-level directory name.  But that's\r\nenough to change the sha sum.\r\n\r\nBetter to adapt sooner rather than later I guess.\r\n\r\nping @tgamblin who reviewed the previous commit",
+    "performed_via_github_app": null
+}

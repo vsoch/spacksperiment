@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17191",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17191/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17191/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17191/events",
+    "html_url": "https://github.com/spack/spack/pull/17191",
+    "id": 642813601,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM3NzI5NjI5",
+    "number": 17191,
+    "title": "dos2unix: add build depends",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-22T07:02:43Z",
+    "updated_at": "2020-06-30T06:40:35Z",
+    "closed_at": "2020-06-22T11:37:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17191",
+        "html_url": "https://github.com/spack/spack/pull/17191",
+        "diff_url": "https://github.com/spack/spack/pull/17191.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17191.patch"
+    },
+    "body": "When I install dos2unix on my `Debian` distribution, it reports error as:\r\n```\r\n==> 113238: dos2unix: Executing phase: 'edit'\r\n==> [2020-06-22-14:24:23.523452, 113243] Using default implementation: skipping edit phase.\r\n==> 113238: dos2unix: Executing phase: 'build'\r\n==> [2020-06-22-14:24:23.524223, 113243] 'make' '-j16'\r\n/home/spack-develop/lib/spack/env/gcc/gcc   -DVER_REVISION=\\\"7.3.4\\\" -DVER_DATE=\\\"2016-05-24\\\" -DVER_AUTHOR=\\\"'Erwin Waterlander'\\\" -DDEBUG=0   -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\\\"/usr/share/locale\\\" -DPACKAGE=\\\"dos2unix\\\" -O2 -Wall -Wextra -Wconversion    -c dos2unix.c -o dos2unix.o\r\n/home/spack-develop/lib/spack/env/gcc/gcc   -DVER_REVISION=\\\"7.3.4\\\" -DVER_DATE=\\\"2016-05-24\\\" -DVER_AUTHOR=\\\"'Erwin Waterlander'\\\" -DDEBUG=0   -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\\\"/usr/share/locale\\\" -DPACKAGE=\\\"dos2unix\\\" -O2 -Wall -Wextra -Wconversion    -c querycp.c -o querycp.o\r\n/home/spack-develop/lib/spack/env/gcc/gcc   -DVER_REVISION=\\\"7.3.4\\\" -DVER_DATE=\\\"2016-05-24\\\" -DVER_AUTHOR=\\\"'Erwin Waterlander'\\\" -DDEBUG=0   -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\\\"/usr/share/locale\\\" -DPACKAGE=\\\"dos2unix\\\" -O2 -Wall -Wextra -Wconversion    -c common.c -o common.o\r\n/home/spack-develop/lib/spack/env/gcc/gcc   -DVER_REVISION=\\\"7.3.4\\\" -DVER_DATE=\\\"2016-05-24\\\" -DVER_AUTHOR=\\\"'Erwin Waterlander'\\\" -DDEBUG=0   -DD2U_UNICODE -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DENABLE_NLS -DLOCALEDIR=\\\"/usr/share/locale\\\" -DPACKAGE=\\\"dos2unix\\\" -O2 -Wall -Wextra -Wconversion    -c unix2dos.c -o unix2dos.o\r\nmsgfmt -c po/hu.po -o po/hu.mo\r\nmake: msgfmt: Command not found\r\nmake: *** [Makefile:450: po/hu.mo] Error 127\r\nmake: *** Waiting for unfinished jobs....\r\n```\r\n\r\nSo we need `gettext` to provide `msgfmt` command.",
+    "performed_via_github_app": null
+}

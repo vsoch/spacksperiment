@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17458",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17458/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17458/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17458/events",
+    "html_url": "https://github.com/spack/spack/pull/17458",
+    "id": 654762744,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3NDI0NDEy",
+    "number": 17458,
+    "title": "Update gdk-pixbuf package.",
+    "user": {
+        "login": "RemiLacroix-IDRIS",
+        "id": 11938940,
+        "node_id": "MDQ6VXNlcjExOTM4OTQw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11938940?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RemiLacroix-IDRIS",
+        "html_url": "https://github.com/RemiLacroix-IDRIS",
+        "followers_url": "https://api.github.com/users/RemiLacroix-IDRIS/followers",
+        "following_url": "https://api.github.com/users/RemiLacroix-IDRIS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RemiLacroix-IDRIS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RemiLacroix-IDRIS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RemiLacroix-IDRIS/subscriptions",
+        "organizations_url": "https://api.github.com/users/RemiLacroix-IDRIS/orgs",
+        "repos_url": "https://api.github.com/users/RemiLacroix-IDRIS/repos",
+        "events_url": "https://api.github.com/users/RemiLacroix-IDRIS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RemiLacroix-IDRIS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-10T12:55:59Z",
+    "updated_at": "2020-07-13T15:53:55Z",
+    "closed_at": "2020-07-13T15:49:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17458",
+        "html_url": "https://github.com/spack/spack/pull/17458",
+        "diff_url": "https://github.com/spack/spack/pull/17458.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17458.patch"
+    },
+    "body": "Add new versions and a missing dependency with libx11. Make the x11 part optional as it is deprecated and will be removed in an upcoming version (cf. https://github.com/GNOME/gdk-pixbuf/commit/3362e94c2595440f322798dc4d15f1ed24a4c52c).",
+    "performed_via_github_app": null
+}

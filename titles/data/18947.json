@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18947",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18947/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18947/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18947/events",
+    "html_url": "https://github.com/spack/spack/pull/18947",
+    "id": 708531946,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkyNzQ3NTAy",
+    "number": 18947,
+    "title": "Provide draco-7_8_0.",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-24T23:21:20Z",
+    "updated_at": "2020-10-11T02:02:02Z",
+    "closed_at": "2020-10-11T02:02:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18947",
+        "html_url": "https://github.com/spack/spack/pull/18947",
+        "diff_url": "https://github.com/spack/spack/pull/18947.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18947.patch"
+    },
+    "body": "+ Also provide a patchfile for draco-7_6_0 to support CrayPE builds.\r\n+ Version 7.8.0 has a new variant `+caliper`.\r\n+ Sort dependencies alphabetically after grouping by required and optional.",
+    "performed_via_github_app": null
+}

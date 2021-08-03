@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13459",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13459/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13459/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13459/events",
+    "html_url": "https://github.com/spack/spack/pull/13459",
+    "id": 512946723,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMyODQyMTc0",
+    "number": 13459,
+    "title": "New package py-wradlib with new dependencies",
+    "user": {
+        "login": "JSquar",
+        "id": 28802727,
+        "node_id": "MDQ6VXNlcjI4ODAyNzI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28802727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JSquar",
+        "html_url": "https://github.com/JSquar",
+        "followers_url": "https://api.github.com/users/JSquar/followers",
+        "following_url": "https://api.github.com/users/JSquar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JSquar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JSquar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JSquar/subscriptions",
+        "organizations_url": "https://api.github.com/users/JSquar/orgs",
+        "repos_url": "https://api.github.com/users/JSquar/repos",
+        "events_url": "https://api.github.com/users/JSquar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JSquar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-10-27T10:16:54Z",
+    "updated_at": "2019-11-03T23:57:14Z",
+    "closed_at": "2019-11-03T23:38:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13459",
+        "html_url": "https://github.com/spack/spack/pull/13459",
+        "diff_url": "https://github.com/spack/spack/pull/13459.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13459.patch"
+    },
+    "body": "wradlib is an open source library for weather radar data processing (e.g. RADOLAN). Changes include new versions for xarray as well as new packages, on which py-wradlib depends:\r\n- py-deprecation (provides a deprecated decorator and a fail_if_not_removed decorator)\r\n- py-semver (semantic versioning, simplifies comparing versions)\r\n- py-xmltodict (working with XML feel like you are working with JSON)",
+    "performed_via_github_app": null
+}

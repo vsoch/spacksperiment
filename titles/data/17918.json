@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17918",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17918/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17918/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17918/events",
+    "html_url": "https://github.com/spack/spack/pull/17918",
+    "id": 674700898,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY0MzQ1NzYy",
+    "number": 17918,
+    "title": "ocaml: fix assembler to use spack_cc",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-08-07T01:55:38Z",
+    "updated_at": "2020-08-18T09:49:10Z",
+    "closed_at": "2020-08-18T09:49:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17918",
+        "html_url": "https://github.com/spack/spack/pull/17918",
+        "diff_url": "https://github.com/spack/spack/pull/17918.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17918.patch"
+    },
+    "body": "Patch assembler setting to use `speck_cc`.\r\n\r\nThis patch is for aarch64-fj only.\r\nHowever, similar patch is probably needed for other architectue/compiler.\r\nFrom `configure`\r\n>   amd64,*|arm,*|arm64,*|i386,*) :\r\n    default_as=\"${toolpref}as\"\r\n    case $ocaml_cv_cc_vendor in #(\r\n  clang-*) :\r\n    default_aspp=\"${toolpref}clang -c -Wno-trigraphs\" ;; #( // I patched this line\r\n  *) :\r\n    default_aspp=\"${toolpref}gcc -c\" ;;",
+    "performed_via_github_app": null
+}

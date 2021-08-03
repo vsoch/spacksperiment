@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16101",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16101/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16101/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16101/events",
+    "html_url": "https://github.com/spack/spack/pull/16101",
+    "id": 601422005,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0Njg2MDk1",
+    "number": 16101,
+    "title": "ncurses: forward termlib libs",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-16T20:12:54Z",
+    "updated_at": "2020-04-17T03:28:11Z",
+    "closed_at": "2020-04-16T22:27:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16101",
+        "html_url": "https://github.com/spack/spack/pull/16101",
+        "diff_url": "https://github.com/spack/spack/pull/16101.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16101.patch"
+    },
+    "body": "These libs need to be forwarded, as in ncurses `pkg-config` file.\r\n\r\nThis patch does **not** address #16098, but still looks wrong in the `nurses` package and several packages, e.g. `samtools`, seam to work-around this downstream. `libncurses` has an rpath to `ltinfo` set in Spack, but maybe some downstream libs need other `ncurses` lib artifacts directly as well...\r\n\r\n```\r\nldd [...]/opt/spack/linux-ubuntu18.04-skylake/gcc-8.3.0/ncurses-6.2-xgtgxgzhrvlpslxomko63jqbqgmshyah/lib/libncursesw.so\r\n\tlinux-vdso.so.1 (0x00007ffcb23f3000)\r\n\tlibtinfow.so.6 => [...]/opt/spack/linux-ubuntu18.04-skylake/gcc-8.3.0/ncurses-6.2-xgtgxgzhrvlpslxomko63jqbqgmshyah/lib/libtinfow.so.6 (0x00007f68557c1000)\r\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f68553d0000)\r\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f6855c37000)\r\n```\r\n\r\nThere are even more libs build by `ncurses` but that `ncurses` does not link to directly. For example, I see on Ubuntu in Spacks install prefix`/lib`:\r\n```\r\nlibcurses.a   libform.so.6.2   libmenu.a       libmenuw_g.a     libncurses_g.a     libncurses.so.6.2    libncurses++w.so      libpanel.a       libpanelw_g.a     libtinfo.so      libtinfow.so.6\r\nlibcurses.so  libformw.a       libmenu_g.a     libmenuw.so      libncurses++_g.a   libncurses++.so.6.2  libncursesw.so        libpanel_g.a     libpanelw.so      libtinfo.so.6    libtinfow.so.6.2\r\nlibform.a     libformw_g.a     libmenu.so      libmenuw.so.6    libncurses.so      libncurses++w.a      libncurses++w.so.6    libpanel.so      libpanelw.so.6    libtinfo.so.6.2  pkgconfig\r\nlibform_g.a   libformw.so      libmenu.so.6    libmenuw.so.6.2  libncurses++.so    libncursesw.a        libncursesw.so.6      libpanel.so.6    libpanelw.so.6.2  libtinfow.a      terminfo\r\nlibform.so    libformw.so.6    libmenu.so.6.2  libncurses.a     libncurses.so.6    libncurses++w_g.a    libncurses++w.so.6.2  libpanel.so.6.2  libtinfo.a        libtinfow_g.a\r\nlibform.so.6  libformw.so.6.2  libmenuw.a      libncurses++.a   libncurses++.so.6  libncursesw_g.a      libncursesw.so.6.2    libpanelw.a      libtinfo_g.a      libtinfow.so\r\n```\r\n\r\nMaybe relying more on the `pkg-config/` scripts inside `lib/` could help as well.\r\n\r\nRefs.:\r\n- https://github.com/conda-forge/ncurses-feedstock/issues/36\r\n- https://github.com/conda-forge/emacs-feedstock/pull/16",
+    "performed_via_github_app": null
+}

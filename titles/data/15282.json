@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15282",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15282/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15282/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15282/events",
+    "html_url": "https://github.com/spack/spack/pull/15282",
+    "id": 573625412,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgyMTAyMDc5",
+    "number": 15282,
+    "title": "Tmux should look for tinfo in -ltinfo",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-03-01T22:14:08Z",
+    "updated_at": "2020-03-04T17:46:41Z",
+    "closed_at": "2020-03-03T08:12:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15282",
+        "html_url": "https://github.com/spack/spack/pull/15282",
+        "diff_url": "https://github.com/spack/spack/pull/15282.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15282.patch"
+    },
+    "body": "Tmux tests for `setupterm` functionality in its configure script.\r\n\r\nOur ncurses package provides terminfo functionality when built with\r\n+termlib, which is the default.  That functionality is in a separate\r\nlibrary, called `libtinfo`. \r\n\r\nThis ensures that ncurses is built to include termlib support and \r\nremoves the override for the library location, trusting our pkg-config\r\nto sniff it out.\r\n\r\nAll versions of tmux in its package definition built successfully on a CentOS box and ldd shows the binary was linked against spack libtinfo.\r\n\r\nAdditional details in: https://github.com/spack/spack/issues/15281\r\n\r\nCloses #15281",
+    "performed_via_github_app": null
+}

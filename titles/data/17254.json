@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17254/events",
+    "html_url": "https://github.com/spack/spack/pull/17254",
+    "id": 645480568,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM5OTU0MjAx",
+    "number": 17254,
+    "title": "autotools: set 'ldlibs' as 'LIBS'",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-06-25T11:19:20Z",
+    "updated_at": "2021-02-16T13:02:56Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17254",
+        "html_url": "https://github.com/spack/spack/pull/17254",
+        "diff_url": "https://github.com/spack/spack/pull/17254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17254.patch"
+    },
+    "body": "Autotool configure scripts should receive `LIBS` instead of `LDLIBS`.",
+    "performed_via_github_app": null
+}

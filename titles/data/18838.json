@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18838",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18838/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18838/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18838/events",
+    "html_url": "https://github.com/spack/spack/pull/18838",
+    "id": 705482146,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkwMjAxNzg4",
+    "number": 18838,
+    "title": "Revert \"do out of source builds in hashed directories\"",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1371552534,
+            "node_id": "MDU6TGFiZWwxMzcxNTUyNTM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/stage",
+            "name": "stage",
+            "color": "b50fc1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-09-21T10:41:26Z",
+    "updated_at": "2021-02-19T13:15:36Z",
+    "closed_at": "2021-02-19T13:15:36Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18838",
+        "html_url": "https://github.com/spack/spack/pull/18838",
+        "diff_url": "https://github.com/spack/spack/pull/18838.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18838.patch"
+    },
+    "body": "Reverts spack/spack#18574\r\n\r\nI've been using `spack dev-build` in CI to do multistage docker builds. #18574 breaks this setup without providing a convenient alternative.\r\n\r\nMy setup (simplified a bit) looks like this:\r\n\r\n```Dockerfile\r\nFROM some_base_image AS builder\r\n\r\nWORKDIR /sources\r\n\r\nRUN spack dev-build [spec]\r\n\r\nFROM ubuntu:18.04\r\n\r\nCOPY --from=builder /sources/spack-build /sources/spack-build # <-- this fails now.\r\n```\r\n\r\nwhere the image is deployed to some cluster, and some MPI tests are run using `ctest`.\r\n\r\nI can't easily rename the `spack-build=[hash]` folder to `spack-build`, since that breaks ctest (it uses absolute paths which won't resolve afterwards). Also I can't do globbing in `COPY --from=builder /sources/spack-build* <dest>`, since I have to specify the destination folder explicitly, and I don't know the hash here.",
+    "performed_via_github_app": null
+}

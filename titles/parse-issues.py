@@ -7,20 +7,19 @@ import json
 import glob
 import re
 
-issue_files = os.listdir('data')
+def read_json(issue_file):
+    with open(issue_file, 'r') as fd:
+        content = json.loads(fd.read())
+    return content
+
+package_list = requests.get("https://spack.github.io/packages/data/packages.json").json()
+package_regex = "( %s )" % " | ".join(package_list)
 
 # Keep track of issues we flag with packages, and those not
 found = {}
 missing = []
 
-package_list = requests.get("https://spack.github.io/packages/data/packages.json").json()
-package_regex = "( %s )" % " | ".join(package_list)
-
-def read_json(issue_file):
-    import json
-    with open(issue_file, 'r') as fd:
-        content = json.loads(fd.read())
-    return content
+issue_files = os.listdir('data')
 
 for issue_file in issue_files:
 
@@ -29,7 +28,11 @@ for issue_file in issue_files:
     except:
         print("Issue reading %s, skipping." % issue_file)
         continue
-    title = issue['title'].lower() + " "    
+    title = " " + issue['title'].lower() + " "    
+
+    # Replace special characters
+    title = re.sub("[!#%^*(){}:_&$+@\/\[\]]+", " ", title)
+
     # Any packages?
     packages = re.findall(package_regex, title)
     if not packages:

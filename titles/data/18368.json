@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18368",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18368/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18368/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18368/events",
+    "html_url": "https://github.com/spack/spack/pull/18368",
+    "id": 688349791,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1NjM2NzM4",
+    "number": 18368,
+    "title": "Investigate environment activation error 18338",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-08-28T20:54:46Z",
+    "updated_at": "2020-09-03T17:49:38Z",
+    "closed_at": "2020-09-03T17:49:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18368",
+        "html_url": "https://github.com/spack/spack/pull/18368",
+        "diff_url": "https://github.com/spack/spack/pull/18368.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18368.patch"
+    },
+    "body": "See: https://github.com/spack/spack/issues/18338\r\n\r\n@bvanessen using this PR, can you try activating you environment with `-d` like `spack -d env activate <env-name>` and show me the output?\r\n\r\nThis will likely require some iteration to understand the source of the problem. While I have trouble replicating it myself, I think this is the only way forward.",
+    "performed_via_github_app": null
+}

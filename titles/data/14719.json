@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14719",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14719/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14719/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14719/events",
+    "html_url": "https://github.com/spack/spack/issues/14719",
+    "id": 558691981,
+    "node_id": "MDU6SXNzdWU1NTg2OTE5ODE=",
+    "number": 14719,
+    "title": "Spack should either show the location of the newly created build cache, or throw error when no -d option",
+    "user": {
+        "login": "adamryczkowski",
+        "id": 4469707,
+        "node_id": "MDQ6VXNlcjQ0Njk3MDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4469707?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamryczkowski",
+        "html_url": "https://github.com/adamryczkowski",
+        "followers_url": "https://api.github.com/users/adamryczkowski/followers",
+        "following_url": "https://api.github.com/users/adamryczkowski/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamryczkowski/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamryczkowski/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamryczkowski/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamryczkowski/orgs",
+        "repos_url": "https://api.github.com/users/adamryczkowski/repos",
+        "events_url": "https://api.github.com/users/adamryczkowski/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamryczkowski/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2020-02-02T12:48:40Z",
+    "updated_at": "2020-02-25T23:49:26Z",
+    "closed_at": "2020-02-25T23:49:26Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "It took me over 15 minutes of wasted time to try to find what on Earth happened when I wanted to add a build cache on an existing mirror server using the other, most powerful box.\r\n\r\n```\r\ngit clone --depth 1 https://github.com/spack/spack\r\n. spack/share/spack/setup-env.sh \r\nspack bootstrap\r\nspack gpg init\r\nspack gpg create adam adam@mail.com\r\nspack mirror add custom-mirror file://mnt/spack-mirror\r\nspack buildcache create  zlib  #Intention is to write to the /mnt/spack-mirror - the share is mounted rw.\r\n```\r\n\r\nIt turnes out, that the `zlib` got created in the **local** directory hidden in the arbitrary `build_cache` subfolder. \r\n\r\nPlease, consider my experience and modify the `spack buildcache create` option validation :-)\r\n\r\n   *   *   *\r\n  \r\nI use spack `0.13.3-935-0c0aba57` on Ubuntu 18.04.4 64 bit",
+    "performed_via_github_app": null
+}

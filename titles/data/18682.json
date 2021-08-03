@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18682",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18682/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18682/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18682/events",
+    "html_url": "https://github.com/spack/spack/pull/18682",
+    "id": 702194156,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg3NTA5Nzg3",
+    "number": 18682,
+    "title": "NetCDF: Fix non-mpi hdf5 dependency",
+    "user": {
+        "login": "gsjaardema",
+        "id": 897294,
+        "node_id": "MDQ6VXNlcjg5NzI5NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/897294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gsjaardema",
+        "html_url": "https://github.com/gsjaardema",
+        "followers_url": "https://api.github.com/users/gsjaardema/followers",
+        "following_url": "https://api.github.com/users/gsjaardema/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gsjaardema/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gsjaardema/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gsjaardema/subscriptions",
+        "organizations_url": "https://api.github.com/users/gsjaardema/orgs",
+        "repos_url": "https://api.github.com/users/gsjaardema/repos",
+        "events_url": "https://api.github.com/users/gsjaardema/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gsjaardema/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2020-09-15T19:21:55Z",
+    "updated_at": "2020-09-17T13:59:03Z",
+    "closed_at": "2020-09-17T13:58:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18682",
+        "html_url": "https://github.com/spack/spack/pull/18682",
+        "diff_url": "https://github.com/spack/spack/pull/18682.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18682.patch"
+    },
+    "body": "If building `netcdf-c~mpi`, the downstream HDF5 dependency was taking the default value for `mpi` and building a parallel HDF5 which is not correct.  Need to explicitly override the default `mpi` variant in HDF5 for an `netcdf-c~mpi` build.   This was broken in #9fdb94",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,110 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15640",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15640/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15640/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15640/events",
+    "html_url": "https://github.com/spack/spack/issues/15640",
+    "id": 586265564,
+    "node_id": "MDU6SXNzdWU1ODYyNjU1NjQ=",
+    "number": 15640,
+    "title": "buildcache keys: fetching key from cache takes absurd amount of time",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 512483390,
+            "node_id": "MDU6TGFiZWw1MTI0ODMzOTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-medium",
+            "name": "impact-medium",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 480333036,
+            "node_id": "MDU6TGFiZWw0ODAzMzMwMzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/workaround",
+            "name": "workaround",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-03-23T14:46:21Z",
+    "updated_at": "2020-03-28T21:49:35Z",
+    "closed_at": "2020-03-28T21:49:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Trying to fetch a key from a build cache takes an absurd amount of time, if the cache has a significant number of packages:\r\n\r\n```\r\n$> spack mirror add e4s https://instinct.nic.uoregon.edu:8083/e4s\r\n$> spack buildcache keys -it\r\n.....\r\nmany many minutes of waiting before key is retrieved\r\n```\r\n\r\nSince the keys are listed under `index.html` with extension `.key` -- it makes no sense why this operation would depend, in any significant way, on the number of packages in the cache.\r\n\r\nUsing Spack @ develop (commit 5df9dd2b48)",
+    "performed_via_github_app": null
+}

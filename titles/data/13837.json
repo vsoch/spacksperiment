@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13837",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13837/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13837/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13837/events",
+    "html_url": "https://github.com/spack/spack/pull/13837",
+    "id": 527160881,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ0NDg4MTE5",
+    "number": 13837,
+    "title": "Update py-qtpy recipe",
+    "user": {
+        "login": "iarspider",
+        "id": 636602,
+        "node_id": "MDQ6VXNlcjYzNjYwMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/636602?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iarspider",
+        "html_url": "https://github.com/iarspider",
+        "followers_url": "https://api.github.com/users/iarspider/followers",
+        "following_url": "https://api.github.com/users/iarspider/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iarspider/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iarspider/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iarspider/subscriptions",
+        "organizations_url": "https://api.github.com/users/iarspider/orgs",
+        "repos_url": "https://api.github.com/users/iarspider/repos",
+        "events_url": "https://api.github.com/users/iarspider/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iarspider/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-22T12:10:55Z",
+    "updated_at": "2019-11-25T19:38:57Z",
+    "closed_at": "2019-11-25T15:14:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13837",
+        "html_url": "https://github.com/spack/spack/pull/13837",
+        "diff_url": "https://github.com/spack/spack/pull/13837.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13837.patch"
+    },
+    "body": "This change allows one to use qtpy with pyqt5, pyside and pyside2 by enabling the appropriate variant.",
+    "performed_via_github_app": null
+}

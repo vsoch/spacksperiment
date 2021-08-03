@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16500",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16500/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16500/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16500/events",
+    "html_url": "https://github.com/spack/spack/pull/16500",
+    "id": 613706361,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE0NDA4Njcw",
+    "number": 16500,
+    "title": "py-shapely: fix unit tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-07T01:13:48Z",
+    "updated_at": "2020-05-07T01:44:57Z",
+    "closed_at": "2020-05-07T01:44:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16500",
+        "html_url": "https://github.com/spack/spack/pull/16500",
+        "diff_url": "https://github.com/spack/spack/pull/16500.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16500.patch"
+    },
+    "body": "Successfully installs and passes all unit tests on macOS 10.15.4 with Python 3.7.7 and Clang 11.0.3.\r\n\r\nNote that these environment variables are also needed to run the package. I haven't yet found a way to hardcode the library location, although I could hack the source code...",
+    "performed_via_github_app": null
+}

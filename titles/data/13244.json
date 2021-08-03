@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13244",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13244/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13244/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13244/events",
+    "html_url": "https://github.com/spack/spack/pull/13244",
+    "id": 508235374,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI5MDY2NzU1",
+    "number": 13244,
+    "title": "elsi:add CMAKE Fortran MODDIR FLAG for Fujitsu compiler",
+    "user": {
+        "login": "noguchi-k",
+        "id": 55966120,
+        "node_id": "MDQ6VXNlcjU1OTY2MTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55966120?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noguchi-k",
+        "html_url": "https://github.com/noguchi-k",
+        "followers_url": "https://api.github.com/users/noguchi-k/followers",
+        "following_url": "https://api.github.com/users/noguchi-k/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noguchi-k/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noguchi-k/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noguchi-k/subscriptions",
+        "organizations_url": "https://api.github.com/users/noguchi-k/orgs",
+        "repos_url": "https://api.github.com/users/noguchi-k/repos",
+        "events_url": "https://api.github.com/users/noguchi-k/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noguchi-k/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-17T05:00:50Z",
+    "updated_at": "2019-10-23T00:41:00Z",
+    "closed_at": "2019-10-21T23:28:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13244",
+        "html_url": "https://github.com/spack/spack/pull/13244",
+        "diff_url": "https://github.com/spack/spack/pull/13244.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13244.patch"
+    },
+    "body": "An error occurs indicating that the specified module cannot be used when building with Fujitsu compiler.Therefore, a process to specify a module is added.",
+    "performed_via_github_app": null
+}

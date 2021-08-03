@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14387",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14387/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14387/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14387/events",
+    "html_url": "https://github.com/spack/spack/pull/14387",
+    "id": 545356432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MjYzOTQ0",
+    "number": 14387,
+    "title": "fix build for qt5 and the Intel compiler",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-01-05T02:01:10Z",
+    "updated_at": "2020-02-11T14:05:23Z",
+    "closed_at": "2020-01-08T19:02:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14387",
+        "html_url": "https://github.com/spack/spack/pull/14387",
+        "diff_url": "https://github.com/spack/spack/pull/14387.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14387.patch"
+    },
+    "body": "Fixes #14400",
+    "performed_via_github_app": null
+}

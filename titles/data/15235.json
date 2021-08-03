@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15235",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15235/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15235/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15235/events",
+    "html_url": "https://github.com/spack/spack/pull/15235",
+    "id": 571456696,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgwMzM5OTcz",
+    "number": 15235,
+    "title": "MPICH: optionally build without libxml2.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-02-26T15:14:04Z",
+    "updated_at": "2020-03-17T18:41:56Z",
+    "closed_at": "2020-03-17T18:41:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15235",
+        "html_url": "https://github.com/spack/spack/pull/15235",
+        "diff_url": "https://github.com/spack/spack/pull/15235.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15235.patch"
+    },
+    "body": "The dependencies on `libpciaccess` and `libxml2` come from the embedded `hwloc`, which, before MPICH 3.3, was used only for Hydra. Additionally, it is possible to use `hwloc`'s custom implementation of XML parsing instead of `libxml2`, which might be useful. For example, `libxml2.la` contains `-pthread` flag, which might not be recognized by Fortran compiler, e.g. NAG.",
+    "performed_via_github_app": null
+}

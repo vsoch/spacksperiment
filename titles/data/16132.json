@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16132",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16132/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16132/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16132/events",
+    "html_url": "https://github.com/spack/spack/pull/16132",
+    "id": 602149599,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA1MjcyNjYx",
+    "number": 16132,
+    "title": "autotools: Set FORCE_UNSAFE_CONFIGURE to 1 in autotools.py",
+    "user": {
+        "login": "DiegoMagdaleno",
+        "id": 38844659,
+        "node_id": "MDQ6VXNlcjM4ODQ0NjU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38844659?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DiegoMagdaleno",
+        "html_url": "https://github.com/DiegoMagdaleno",
+        "followers_url": "https://api.github.com/users/DiegoMagdaleno/followers",
+        "following_url": "https://api.github.com/users/DiegoMagdaleno/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DiegoMagdaleno/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DiegoMagdaleno/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DiegoMagdaleno/subscriptions",
+        "organizations_url": "https://api.github.com/users/DiegoMagdaleno/orgs",
+        "repos_url": "https://api.github.com/users/DiegoMagdaleno/repos",
+        "events_url": "https://api.github.com/users/DiegoMagdaleno/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DiegoMagdaleno/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-17T18:13:34Z",
+    "updated_at": "2020-04-18T21:25:24Z",
+    "closed_at": "2020-04-18T21:25:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16132",
+        "html_url": "https://github.com/spack/spack/pull/16132",
+        "diff_url": "https://github.com/spack/spack/pull/16132.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16132.patch"
+    },
+    "body": "Allow us running unsafe configure automatically,\r\nwhen we are running as root.\r\n\r\nThis is done by appending the proper\r\nenviroment variable in spack env if our\r\nUID is equal to 0 (root on most systems)",
+    "performed_via_github_app": null
+}

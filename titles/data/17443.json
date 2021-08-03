@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17443",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17443/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17443/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17443/events",
+    "html_url": "https://github.com/spack/spack/pull/17443",
+    "id": 654032431,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ2ODM3MjY4",
+    "number": 17443,
+    "title": "New packages: thepeg, herwig++ (2.x)",
+    "user": {
+        "login": "iarspider",
+        "id": 636602,
+        "node_id": "MDQ6VXNlcjYzNjYwMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/636602?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iarspider",
+        "html_url": "https://github.com/iarspider",
+        "followers_url": "https://api.github.com/users/iarspider/followers",
+        "following_url": "https://api.github.com/users/iarspider/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iarspider/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iarspider/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iarspider/subscriptions",
+        "organizations_url": "https://api.github.com/users/iarspider/orgs",
+        "repos_url": "https://api.github.com/users/iarspider/repos",
+        "events_url": "https://api.github.com/users/iarspider/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iarspider/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-09T12:45:43Z",
+    "updated_at": "2021-05-05T09:16:00Z",
+    "closed_at": "2020-07-10T13:25:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17443",
+        "html_url": "https://github.com/spack/spack/pull/17443",
+        "diff_url": "https://github.com/spack/spack/pull/17443.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17443.patch"
+    },
+    "body": "Tested: CentOS7 + gcc 8.3, Ubuntu 18 + gcc 8.4\r\nI would prefer to do put herwig 7 (herwig++ 3) into a separate package, although it can't be installed together with herwig++ (due to different versions of thepeg).",
+    "performed_via_github_app": null
+}

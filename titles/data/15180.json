@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15180",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15180/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15180/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15180/events",
+    "html_url": "https://github.com/spack/spack/pull/15180",
+    "id": 569872668,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc5MDAzNDky",
+    "number": 15180,
+    "title": "cmd/load: Fix usage output",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-24T13:56:13Z",
+    "updated_at": "2020-02-24T15:46:42Z",
+    "closed_at": "2020-02-24T15:46:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15180",
+        "html_url": "https://github.com/spack/spack/pull/15180",
+        "diff_url": "https://github.com/spack/spack/pull/15180.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15180.patch"
+    },
+    "body": "args.specs is a list, which results in output like this:\r\n```\r\neval `spack load --sh ['libxml2', 'xz']`\r\n```\r\n\r\nWe want this instead:\r\n```\r\neval `spack load --sh libxml2 xz`\r\n```",
+    "performed_via_github_app": null
+}

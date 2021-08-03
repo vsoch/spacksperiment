@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16359",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16359/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16359/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16359/events",
+    "html_url": "https://github.com/spack/spack/pull/16359",
+    "id": 608501528,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEwMjY4MzM0",
+    "number": 16359,
+    "title": "ffmpeg: add @1.0.10, @2.8.15; add '+avresample'; improve variant handling",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-28T17:49:57Z",
+    "updated_at": "2020-04-29T07:33:23Z",
+    "closed_at": "2020-04-29T07:33:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16359",
+        "html_url": "https://github.com/spack/spack/pull/16359",
+        "diff_url": "https://github.com/spack/spack/pull/16359.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16359.patch"
+    },
+    "body": "This pull request makes the following changes to the `ffmpeg` package:\r\n\r\n- Adds older versions (i.e. the latest versions of `@1` and `@2`, `@1.0.10` and `@2.8.15`) to enable building older dependents (see `openscenegraph@3.4.0` for details).\r\n- Adds the `+avresample` variant, which allows for conditional building of the `libavresample` component (see `openscenegraph+ffmpeg` for details).\r\n- Overhauls variant handling in order to more accurately constrain variants to their supported versions (e.g. if `+variant` is only available in `@X.Y.Z:`, then a `@conflicts('@:X.Y-1.999', '+variant')` statement is added, etc.).\r\n- Changes package-based variant defaults to `False` for variants that aren't supported by all `ffmpeg` versions (e.g. `+sdl2`, `+lzma`).\r\n\r\nI've verified that the following variants of this package build with `gcc@4.9.3` on architecture `linux-rhel7-broadwell`:\r\n\r\n- `ffmpeg@1.0.10{+|~}avresample`\r\n- `ffmpeg@2.8.15{+|~}avresample`\r\n- `ffmpeg@4.2.2{+|~}avresample`\r\n\r\nLooking at the logs for these builds, I'm fairly confident the per-package variants that were changed will work in enabled states as well as their default disabled states (e.g. `+sdl2`, `+lzma`), but I've not tested these variants as there are quite a few. If there are any important ones I should double check, please let me know and I'll run builds on that subset.\r\n\r\nAlso, tagging @glennpj as he seems to be the most recent contributor to this package; please let me know if anything looks amiss relative to your changes!",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15035",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15035/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15035/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15035/events",
+    "html_url": "https://github.com/spack/spack/pull/15035",
+    "id": 566751263,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc2NTAwNzA0",
+    "number": 15035,
+    "title": "octave: enable 64-bit BLAS builds.",
+    "user": {
+        "login": "siko1056",
+        "id": 8133832,
+        "node_id": "MDQ6VXNlcjgxMzM4MzI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8133832?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/siko1056",
+        "html_url": "https://github.com/siko1056",
+        "followers_url": "https://api.github.com/users/siko1056/followers",
+        "following_url": "https://api.github.com/users/siko1056/following{/other_user}",
+        "gists_url": "https://api.github.com/users/siko1056/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/siko1056/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/siko1056/subscriptions",
+        "organizations_url": "https://api.github.com/users/siko1056/orgs",
+        "repos_url": "https://api.github.com/users/siko1056/repos",
+        "events_url": "https://api.github.com/users/siko1056/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/siko1056/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-02-18T09:16:57Z",
+    "updated_at": "2020-02-19T06:18:43Z",
+    "closed_at": "2020-02-19T05:49:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15035",
+        "html_url": "https://github.com/spack/spack/pull/15035",
+        "diff_url": "https://github.com/spack/spack/pull/15035.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15035.patch"
+    },
+    "body": "Perform necessary actions [as described in the manual](https://octave.org/doc/v5.2.0/Compiling-Octave-with-64_002dbit-Indexing.html) to build Octave against BLAS implementations supporting 64-bit indices.",
+    "performed_via_github_app": null
+}

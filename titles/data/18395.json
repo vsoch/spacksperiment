@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18395",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18395/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18395/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18395/events",
+    "html_url": "https://github.com/spack/spack/pull/18395",
+    "id": 688622894,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1ODQxNDkx",
+    "number": 18395,
+    "title": "BLAS and LAPACK package properties for CMake FindBLAS/FindLAPACK (#18372)",
+    "user": {
+        "login": "omor1",
+        "id": 4326436,
+        "node_id": "MDQ6VXNlcjQzMjY0MzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4326436?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omor1",
+        "html_url": "https://github.com/omor1",
+        "followers_url": "https://api.github.com/users/omor1/followers",
+        "following_url": "https://api.github.com/users/omor1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omor1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omor1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omor1/subscriptions",
+        "organizations_url": "https://api.github.com/users/omor1/orgs",
+        "repos_url": "https://api.github.com/users/omor1/repos",
+        "events_url": "https://api.github.com/users/omor1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omor1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-29T23:52:21Z",
+    "updated_at": "2021-04-14T23:49:22Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18395",
+        "html_url": "https://github.com/spack/spack/pull/18395",
+        "diff_url": "https://github.com/spack/spack/pull/18395.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18395.patch"
+    },
+    "body": "FindBLAS and FindLAPACK expect `BLA_STATIC` and `BLA_VENDOR` to be set to find the correct BLAS and LAPACK libraries. New `blas_cmake_args` and `lapack_cmake_args` allow CMake consumers to add these arguments to their CMake configuration arguments in a similar manner to the existing use of `blas_libs` and `lapack_libs`.\r\n\r\nCurrently has support for:\r\n* BLAS:\r\n  * amdblis\r\n  * atlas\r\n  * blis\r\n  * essl\r\n  * intel-mkl\r\n  * intel-parallel-studio\r\n  * openblas\r\n* LAPACK:\r\n  * atlas\r\n  * intel-mkl\r\n  * intel-parallel-studio\r\n  * libflame\r\n  * netlib-lapack\r\n  * openblas\r\n\r\ncray-libsci isn't currently supported by FindBLAS/FindLAPACK and while Apple Accelerate/vecLib _is_ supported, I couldn't figure out a way to add the veclibfort library to it. The other currently unsupported providers are flexiblas and netlib-xblas.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16218",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16218/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16218/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16218/events",
+    "html_url": "https://github.com/spack/spack/pull/16218",
+    "id": 604263744,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2ODkwNjM3",
+    "number": 16218,
+    "title": "py-numpy : update 'python' dependency to require '+ssl'",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-21T20:26:53Z",
+    "updated_at": "2020-04-21T22:49:32Z",
+    "closed_at": "2020-04-21T22:49:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16218",
+        "html_url": "https://github.com/spack/spack/pull/16218",
+        "diff_url": "https://github.com/spack/spack/pull/16218.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16218.patch"
+    },
+    "body": "The changes in this pull request update the `py-numpy` package's `python` dependencies to include the `+ssl` variant. I found this to be necessary to compile when messing around with variants related to #16217. \r\n\r\nThe only variant of this install that was tested was `py-numpy@1.11.3+blas+lapack` in the build environment `gcc%4.9.3 arch=linux-rhel7-broadwell`.",
+    "performed_via_github_app": null
+}

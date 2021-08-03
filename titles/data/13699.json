@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13699",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13699/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13699/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13699/events",
+    "html_url": "https://github.com/spack/spack/pull/13699",
+    "id": 521583813,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5OTM2MTI4",
+    "number": 13699,
+    "title": "Fixing Fortran MPI compiler reference in mpt package",
+    "user": {
+        "login": "adrianjhpc",
+        "id": 17902643,
+        "node_id": "MDQ6VXNlcjE3OTAyNjQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17902643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adrianjhpc",
+        "html_url": "https://github.com/adrianjhpc",
+        "followers_url": "https://api.github.com/users/adrianjhpc/followers",
+        "following_url": "https://api.github.com/users/adrianjhpc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adrianjhpc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adrianjhpc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adrianjhpc/subscriptions",
+        "organizations_url": "https://api.github.com/users/adrianjhpc/orgs",
+        "repos_url": "https://api.github.com/users/adrianjhpc/repos",
+        "events_url": "https://api.github.com/users/adrianjhpc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adrianjhpc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-12T14:26:18Z",
+    "updated_at": "2019-11-12T17:57:08Z",
+    "closed_at": "2019-11-12T17:57:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13699",
+        "html_url": "https://github.com/spack/spack/pull/13699",
+        "diff_url": "https://github.com/spack/spack/pull/13699.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13699.patch"
+    },
+    "body": "The fortran MPI compiler reference was not working properly using mpifc so switching to mpif90.",
+    "performed_via_github_app": null
+}

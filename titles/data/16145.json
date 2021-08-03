@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16145",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16145/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16145/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16145/events",
+    "html_url": "https://github.com/spack/spack/pull/16145",
+    "id": 602556478,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA1NTYzMTcy",
+    "number": 16145,
+    "title": "autotools: remove FORCE_UNSAFE_CONFIGURE from docs, commands, code",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-04-18T21:32:19Z",
+    "updated_at": "2020-04-20T16:03:35Z",
+    "closed_at": "2020-04-20T15:32:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16145",
+        "html_url": "https://github.com/spack/spack/pull/16145",
+        "diff_url": "https://github.com/spack/spack/pull/16145.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16145.patch"
+    },
+    "body": "Since #16132, we've consolidated the setting of FORCE_UNSAFE_CONFIGURE to `autotools.py`, so we don't need to use it in packages like `coreutils`, in our commands, or in our container recipes.\r\n\r\n- [x] Remove FORCE_UNSAFE_CONFIGURE from packages\r\n- [x] Remove FORCE_UNSAFE_CONFIGURE from container recipes\r\n- [x] Remove FORCE_UNSAFE_CONFIGURE from `spack ci` command\r\n\r\n@DiegoMagdaleno FYI.",
+    "performed_via_github_app": null
+}

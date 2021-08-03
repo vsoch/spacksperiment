@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15286",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15286/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15286/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15286/events",
+    "html_url": "https://github.com/spack/spack/issues/15286",
+    "id": 573925020,
+    "node_id": "MDU6SXNzdWU1NzM5MjUwMjA=",
+    "number": 15286,
+    "title": "Wrong output from 'spack config blame'",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-02T11:56:54Z",
+    "updated_at": "2020-10-07T14:19:31Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "While investigating #12797 I noticed that `spack config blame` was reporting wrong information on what was set by what.\r\n\r\n### Spack version\r\n```console\r\n$ spack --version\r\n0.14.0-90-c0032a3\r\n```\r\n\r\n### Steps to reproduce the issue\r\nEdit `${spack_root}/etc/spack/config.yaml` to contain:\r\n```yaml\r\nconfig:\r\n  install_hash_length: 8\r\n```\r\nthe try to ask Spack about `config.yaml`:\r\n```console\r\n$ spack config blame config\r\n---                                                                                 config:\r\n_builtin                                                                              debug: False\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:81     connect_timeout: 10\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:86     verify_ssl: True\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:105    checksum: True\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:110    dirty: False\r\n_builtin                                                                              build_jobs: 16\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:62     build_stage:\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:63     - $tempdir/$user/spack-stage\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:64     - ~/.spack/stage\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:64     # - $spack/var/spack/stage\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:64   \r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:64   \r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:19     # Cache directory for already downloaded source tarballs and archived\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:23     # repositories. This can be purged with `spack clean --downloads`.\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:23     install_tree: $spack/opt/spack\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:24     template_dirs:\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:28     - $spack/share/spack/templates\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:32   \r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:33   \r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:34     # Default directory layout\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:70     install_path_scheme: ${ARCHITECTURE}/${COMPILERNAME}-${COMPILERVER}/${PACKAGE}-${VERSION}-${HASH}\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:75     module_roots:\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:94       tcl: $spack/share/spack/modules\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:100      lmod: $spack/share/spack/lmod\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:118    source_cache: $spack/var/spack/cache\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:127    misc_cache: ~/.spack/cache\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:139    suppress_gpg_warnings: False\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:146    install_missing_compilers: False\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:154    build_language: C\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/defaults/config.yaml:159    locks: True\r\n/davide/home/userexternal/mculpo02/github/spack/etc/spack/config.yaml:2               ccache: False\r\n```\r\nThe last line is clearly wrong.\r\n\r\n### Error Message\r\nNo error message, just wrong output. Internally the data structures and query seems to be working correctly:\r\n```python\r\n$ spack-python\r\nSpack version 0.14.0\r\nPython 3.6.8, Linux ppc64le\r\n>>> import spack.config\r\n>>> spack.config.get('config:install_hash_length')\r\n8\r\n```\r\n\r\n### Information on your system\r\nThis happened on both an `x86_64` and a `ppc64le` platform, making me think it's not platform specific.\r\n\r\n### General information\r\n\r\n- [x] I have run `spack --version` and reported the version of Spack\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output\r\n",
+    "performed_via_github_app": null
+}

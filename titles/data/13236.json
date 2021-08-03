@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13236",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13236/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13236/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13236/events",
+    "html_url": "https://github.com/spack/spack/pull/13236",
+    "id": 508007933,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI4ODg1MzQx",
+    "number": 13236,
+    "title": "Update MVAPICH2 package for 2.3.2 release",
+    "user": {
+        "login": "harisubramoni",
+        "id": 16824878,
+        "node_id": "MDQ6VXNlcjE2ODI0ODc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16824878?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/harisubramoni",
+        "html_url": "https://github.com/harisubramoni",
+        "followers_url": "https://api.github.com/users/harisubramoni/followers",
+        "following_url": "https://api.github.com/users/harisubramoni/following{/other_user}",
+        "gists_url": "https://api.github.com/users/harisubramoni/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/harisubramoni/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/harisubramoni/subscriptions",
+        "organizations_url": "https://api.github.com/users/harisubramoni/orgs",
+        "repos_url": "https://api.github.com/users/harisubramoni/repos",
+        "events_url": "https://api.github.com/users/harisubramoni/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/harisubramoni/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2019-10-16T17:59:03Z",
+    "updated_at": "2019-11-13T21:18:36Z",
+    "closed_at": "2019-11-13T21:18:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13236",
+        "html_url": "https://github.com/spack/spack/pull/13236",
+        "diff_url": "https://github.com/spack/spack/pull/13236.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13236.patch"
+    },
+    "body": "closes #13691\r\n\r\nUpdate MVAPICH2 package for 2.3.2 release\r\nUpdate default build from psm to mrail",
+    "performed_via_github_app": null
+}

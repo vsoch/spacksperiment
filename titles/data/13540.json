@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13540",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13540/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13540/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13540/events",
+    "html_url": "https://github.com/spack/spack/pull/13540",
+    "id": 516275140,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM1NTU1MTU2",
+    "number": 13540,
+    "title": "Bugfix: allow missing modules if they are blacklisted",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-11-01T18:22:03Z",
+    "updated_at": "2019-12-05T03:17:41Z",
+    "closed_at": "2019-12-05T03:17:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13540",
+        "html_url": "https://github.com/spack/spack/pull/13540",
+        "diff_url": "https://github.com/spack/spack/pull/13540.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13540.patch"
+    },
+    "body": "Fixes #13346.\r\n\r\nFor `spack module loads` and `spack module find`, allow missing upstream modules (print a debug message vs. raising an error); also skip local modules if they are blacklisted.\r\n\r\nOld behavior:\r\n\r\n* `spack module find` will report an error if the root spec's module or any dependency module does not exist (regardless of whether it is blacklisted)\r\n* `spack module loads` works the same\r\n\r\nNew behavior: the short version is that the module finding is now more lenient (especially for blacklisted modules):\r\n\r\n* `spack module find` will report an error if the root spec's module does not exist, unless\r\n  * the module for the spec is blacklisted\r\n    * For the root package, a debug message is output so that the user could check this with `spack -d...`\r\n    * For any dependency package (when requesting dependency modules with `spack module find`) a message will not be reported (it's an error if the module is not blacklisted, but if it is blacklisted, the module is silently skipped)\r\n  * the spec is associated with an upstream\r\n    * instead of throwing exceptions when the module isn't find, the logic now prints out a debug-level message so the user has a hint of what is missing if they were expecting to see a module file for an upstream package\r\n* `spack module loads` works exactly the same way as the new `spack module find`, but informational messages are not generated for blacklisted packages ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14236",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14236/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14236/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14236/events",
+    "html_url": "https://github.com/spack/spack/pull/14236",
+    "id": 540580375,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1MzcwMzMy",
+    "number": 14236,
+    "title": "Gnupg2 Homebrew install on macOS provides gpg command not gpg2.",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-19T21:32:36Z",
+    "updated_at": "2020-01-31T20:33:14Z",
+    "closed_at": "2020-01-31T20:17:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14236",
+        "html_url": "https://github.com/spack/spack/pull/14236",
+        "diff_url": "https://github.com/spack/spack/pull/14236.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14236.patch"
+    },
+    "body": "Using Homebrew to install gnupg2 on macOS provides symbolic link /usr/local/bin/gpg but not /usr/local/bin/gpg2. On macOS check for gpg in addition to gpg2.\r\n\r\nThis might break test where keys are created because gnupg has a limit on the length of the path to the keystore. It may require running\r\n```\r\nspack test --basetemp /tmp/spack\r\n```\r\n on macOS",
+    "performed_via_github_app": null
+}

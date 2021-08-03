@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18205",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18205/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18205/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18205/events",
+    "html_url": "https://github.com/spack/spack/pull/18205",
+    "id": 683125202,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcxMjY1NzA5",
+    "number": 18205,
+    "title": "Fix \"spack install\" when using Python 3.8 on macos",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2020-08-20T22:07:18Z",
+    "updated_at": "2020-11-12T20:26:25Z",
+    "closed_at": "2020-11-12T20:26:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18205",
+        "html_url": "https://github.com/spack/spack/pull/18205",
+        "diff_url": "https://github.com/spack/spack/pull/18205.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18205.patch"
+    },
+    "body": "See: https://github.com/spack/spack/pull/14187\r\n\r\nThis is the same as #14187 but created as a branch of the main Spack repository to run additional CI checks.\r\n\r\nFixes #14102",
+    "performed_via_github_app": null
+}

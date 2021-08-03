@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16594",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16594/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16594/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16594/events",
+    "html_url": "https://github.com/spack/spack/pull/16594",
+    "id": 616290302,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2NDMxNTc5",
+    "number": 16594,
+    "title": "clingo: update package",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-12T01:24:46Z",
+    "updated_at": "2020-05-12T07:41:36Z",
+    "closed_at": "2020-05-12T07:41:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16594",
+        "html_url": "https://github.com/spack/spack/pull/16594",
+        "diff_url": "https://github.com/spack/spack/pull/16594.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16594.patch"
+    },
+    "body": "`clingo` has some undocumented dependencies:\r\n- `bison`, for which the default macos version is too old\r\n- `re2c`, which isn't always available\r\n\r\nAlso, the python installation was not set up properly. Clingo by default\r\ndoes an install in `~/.local`, so we need to disable that and add a few\r\nother options to get things right.\r\n\r\n- [x] add `bison` dependency\r\n- [x] add `re2c` dependency\r\n- [x] make `doxygen` dependency optional (and patch if needed)\r\n- [x] add options to fix `python` build\r\n- [x] make python build optional but on by default",
+    "performed_via_github_app": null
+}

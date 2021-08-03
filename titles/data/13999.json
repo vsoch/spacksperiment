@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13999",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13999/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13999/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13999/events",
+    "html_url": "https://github.com/spack/spack/pull/13999",
+    "id": 533423473,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5NTAwMzgy",
+    "number": 13999,
+    "title": "paraview: Adjust python version constraints",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-05T15:29:53Z",
+    "updated_at": "2019-12-05T18:23:24Z",
+    "closed_at": "2019-12-05T18:06:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13999",
+        "html_url": "https://github.com/spack/spack/pull/13999",
+        "diff_url": "https://github.com/spack/spack/pull/13999.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13999.patch"
+    },
+    "body": "- py-matplotlib: No constraint necessary for py3 but py2 has an upper bound\r\n- py-numpy: No constraint necessary for py3 but py2 has an upper bound\r\n\r\nRelated to #13985 ",
+    "performed_via_github_app": null
+}

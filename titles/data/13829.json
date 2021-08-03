@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13829",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13829/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13829/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13829/events",
+    "html_url": "https://github.com/spack/spack/pull/13829",
+    "id": 526902423,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ0Mjg0MTA3",
+    "number": 13829,
+    "title": "BLD: enforce C++11 std for boost + xl_r",
+    "user": {
+        "login": "tylerjereddy",
+        "id": 7903078,
+        "node_id": "MDQ6VXNlcjc5MDMwNzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7903078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tylerjereddy",
+        "html_url": "https://github.com/tylerjereddy",
+        "followers_url": "https://api.github.com/users/tylerjereddy/followers",
+        "following_url": "https://api.github.com/users/tylerjereddy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tylerjereddy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tylerjereddy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tylerjereddy/subscriptions",
+        "organizations_url": "https://api.github.com/users/tylerjereddy/orgs",
+        "repos_url": "https://api.github.com/users/tylerjereddy/repos",
+        "events_url": "https://api.github.com/users/tylerjereddy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tylerjereddy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-21T23:38:28Z",
+    "updated_at": "2020-05-02T23:09:22Z",
+    "closed_at": "2019-11-28T05:08:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13829",
+        "html_url": "https://github.com/spack/spack/pull/13829",
+        "diff_url": "https://github.com/spack/spack/pull/13829.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13829.patch"
+    },
+    "body": "* the spack `cxxstd` variant is not sufficient to enforce\r\n`-std=c++11` usage in boost compile lines when `xl_r` compiler\r\nspec is in use; while it would be nice if this were fixed\r\nin a boost config file somewhere, for now this patch\r\nallows boost to build on POWER9 with\r\nan %xl_r compiler spec if the user specifies i.e.,:\r\n\r\n`spack install boost@1.70.0+mpi cxxstd=11 %xl_r@16.1.1.5`\r\n\r\nRelated:\r\n- #11849\r\n- https://lists.boost.org/boost-users/2019/09/89953.php",
+    "performed_via_github_app": null
+}

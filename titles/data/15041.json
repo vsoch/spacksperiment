@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15041",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15041/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15041/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15041/events",
+    "html_url": "https://github.com/spack/spack/pull/15041",
+    "id": 566983633,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc2NjkyNTg3",
+    "number": 15041,
+    "title": "Fix OpenBLAS 0.3.8 build on darwin",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-02-18T15:47:24Z",
+    "updated_at": "2020-03-17T14:00:48Z",
+    "closed_at": "2020-02-18T20:23:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15041",
+        "html_url": "https://github.com/spack/spack/pull/15041",
+        "diff_url": "https://github.com/spack/spack/pull/15041.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15041.patch"
+    },
+    "body": "See https://github.com/xianyi/OpenBLAS/issues/2431, patched in\r\nhttps://github.com/xianyi/OpenBLAS/issues/2424 .",
+    "performed_via_github_app": null
+}

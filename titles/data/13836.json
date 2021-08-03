@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13836",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13836/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13836/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13836/events",
+    "html_url": "https://github.com/spack/spack/pull/13836",
+    "id": 527093709,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ0NDMzMDYw",
+    "number": 13836,
+    "title": "ack: Fix install modifying download cache",
+    "user": {
+        "login": "obreitwi",
+        "id": 123140,
+        "node_id": "MDQ6VXNlcjEyMzE0MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/obreitwi",
+        "html_url": "https://github.com/obreitwi",
+        "followers_url": "https://api.github.com/users/obreitwi/followers",
+        "following_url": "https://api.github.com/users/obreitwi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/obreitwi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/obreitwi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/obreitwi/subscriptions",
+        "organizations_url": "https://api.github.com/users/obreitwi/orgs",
+        "repos_url": "https://api.github.com/users/obreitwi/repos",
+        "events_url": "https://api.github.com/users/obreitwi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/obreitwi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 571584920,
+            "node_id": "MDU6TGFiZWw1NzE1ODQ5MjA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/perl",
+            "name": "perl",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-22T09:47:46Z",
+    "updated_at": "2019-11-24T23:33:50Z",
+    "closed_at": "2019-11-24T23:33:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13836",
+        "html_url": "https://github.com/spack/spack/pull/13836",
+        "diff_url": "https://github.com/spack/spack/pull/13836.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13836.patch"
+    },
+    "body": "This makes several installs from the same download cache impossible once\r\nthe hash of the used perl-install changes.\r\n\r\nFixes: #13824",
+    "performed_via_github_app": null
+}

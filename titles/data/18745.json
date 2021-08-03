@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18745",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18745/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18745/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18745/events",
+    "html_url": "https://github.com/spack/spack/pull/18745",
+    "id": 704610574,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg5NTA0NjU3",
+    "number": 18745,
+    "title": "Closes #16303: Julia build fails with \"ERROR: Invalid CPU name skylake_avx512.\" ",
+    "user": {
+        "login": "jmaack24",
+        "id": 40000230,
+        "node_id": "MDQ6VXNlcjQwMDAwMjMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40000230?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jmaack24",
+        "html_url": "https://github.com/jmaack24",
+        "followers_url": "https://api.github.com/users/jmaack24/followers",
+        "following_url": "https://api.github.com/users/jmaack24/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jmaack24/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jmaack24/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jmaack24/subscriptions",
+        "organizations_url": "https://api.github.com/users/jmaack24/orgs",
+        "repos_url": "https://api.github.com/users/jmaack24/repos",
+        "events_url": "https://api.github.com/users/jmaack24/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jmaack24/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-18T19:38:37Z",
+    "updated_at": "2020-10-05T22:23:15Z",
+    "closed_at": "2020-10-05T22:23:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18745",
+        "html_url": "https://github.com/spack/spack/pull/18745",
+        "diff_url": "https://github.com/spack/spack/pull/18745.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18745.patch"
+    },
+    "body": "Also updates julia package with versions 1.4.2, 1.5.0 and 1.5.1.",
+    "performed_via_github_app": null
+}

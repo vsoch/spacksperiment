@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13712",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13712/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13712/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13712/events",
+    "html_url": "https://github.com/spack/spack/pull/13712",
+    "id": 521909026,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQwMTk5OTUx",
+    "number": 13712,
+    "title": "py-matplotlib only needs backports when ^python@:2",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2019-11-13T01:57:54Z",
+    "updated_at": "2019-11-14T22:26:45Z",
+    "closed_at": "2019-11-14T22:26:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13712",
+        "html_url": "https://github.com/spack/spack/pull/13712",
+        "diff_url": "https://github.com/spack/spack/pull/13712.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13712.patch"
+    },
+    "body": "This implements @scheibelp's suggestion in #13711.\r\n\r\npy-matplotlib should only depends_on py-backports-functools-lru-cache\r\nwhen it's using a python that actually *needs* it.\r\n\r\nSee #13711 for details.\r\n\r\nFixes #13711 ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15931",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15931/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15931/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15931/events",
+    "html_url": "https://github.com/spack/spack/pull/15931",
+    "id": 596227694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwNTY0Nzkw",
+    "number": 15931,
+    "title": "py-onnx: only use py-typing if python < 3.5",
+    "user": {
+        "login": "aweits",
+        "id": 6664568,
+        "node_id": "MDQ6VXNlcjY2NjQ1Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aweits",
+        "html_url": "https://github.com/aweits",
+        "followers_url": "https://api.github.com/users/aweits/followers",
+        "following_url": "https://api.github.com/users/aweits/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aweits/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aweits/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aweits/subscriptions",
+        "organizations_url": "https://api.github.com/users/aweits/orgs",
+        "repos_url": "https://api.github.com/users/aweits/repos",
+        "events_url": "https://api.github.com/users/aweits/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aweits/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-08T00:22:09Z",
+    "updated_at": "2021-02-12T17:22:53Z",
+    "closed_at": "2020-04-08T17:46:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15931",
+        "html_url": "https://github.com/spack/spack/pull/15931",
+        "diff_url": "https://github.com/spack/spack/pull/15931.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15931.patch"
+    },
+    "body": "avoids a 'Callable has no attribute __abc_registry' error. See\r\nonnx/onnx#2199 and python/typing#573",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13139",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13139/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13139/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13139/events",
+    "html_url": "https://github.com/spack/spack/pull/13139",
+    "id": 505555961,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI2OTY2MDg0",
+    "number": 13139,
+    "title": "WIP, ENH: remove ~/.spack requirement",
+    "user": {
+        "login": "tylerjereddy",
+        "id": 7903078,
+        "node_id": "MDQ6VXNlcjc5MDMwNzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7903078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tylerjereddy",
+        "html_url": "https://github.com/tylerjereddy",
+        "followers_url": "https://api.github.com/users/tylerjereddy/followers",
+        "following_url": "https://api.github.com/users/tylerjereddy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tylerjereddy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tylerjereddy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tylerjereddy/subscriptions",
+        "organizations_url": "https://api.github.com/users/tylerjereddy/orgs",
+        "repos_url": "https://api.github.com/users/tylerjereddy/repos",
+        "events_url": "https://api.github.com/users/tylerjereddy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tylerjereddy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2019-10-10T23:13:50Z",
+    "updated_at": "2020-08-23T03:27:34Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13139",
+        "html_url": "https://github.com/spack/spack/pull/13139",
+        "diff_url": "https://github.com/spack/spack/pull/13139.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13139.patch"
+    },
+    "body": "* it is no longer absolutely required that\r\n`~/.spack` be used as the user-level config\r\nscope path---it can now be customized\r\nto any arbitrary system path\r\n\r\n* `~/.spack` remains the default for backward\r\ncompatibility, but a custom value may\r\nbe provided in `etc/spack/defaults/config.yaml`\r\n\r\n* to accomplish this, it was necessary to\r\ngenerate a second `Configuration` instance containing\r\nonly the default scope, so that this scope\r\ncould be parsed for the `user_path` setting\r\nwhen populating the true `Configuration`\r\nscope\r\n\r\nFixes #12892\r\nFixes #13057\r\nCloses #7433\r\n\r\ncc @junghans @AndrewGaspar @alalazo\r\n\r\n### Notes\r\n\r\n- the diff makes it look more complicated than it really is because of the shifting around of functions in the config scope code\r\n- if the core team thinks this might work, I could use some guidance on unit tests---for now, I've been able to change the new `user_path` variable value and my repos and mirror lists get cleared, and if I add new ones then the new `user_path` starts getting populated with config files, which is a good sign, I think",
+    "performed_via_github_app": null
+}

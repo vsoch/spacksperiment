@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14456",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14456/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14456/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14456/events",
+    "html_url": "https://github.com/spack/spack/pull/14456",
+    "id": 547858742,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYxMjcwMDU0",
+    "number": 14456,
+    "title": "Reformat Bash tab completion script",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-01-10T04:29:13Z",
+    "updated_at": "2020-01-10T17:50:19Z",
+    "closed_at": "2020-01-10T17:32:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14456",
+        "html_url": "https://github.com/spack/spack/pull/14456",
+        "diff_url": "https://github.com/spack/spack/pull/14456.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14456.patch"
+    },
+    "body": "The only purpose of this PR is to minimize the diff in #14393 by factoring out formatting differences.\r\n\r\n- [x] Replace `function foo` with `foo ()` declaration\r\n- [x] Don't wrap long lines anymore\r\n\r\nThis PR should involve no functionality change.",
+    "performed_via_github_app": null
+}

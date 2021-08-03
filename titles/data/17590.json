@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17590",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17590/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17590/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17590/events",
+    "html_url": "https://github.com/spack/spack/pull/17590",
+    "id": 660671178,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDUyNDExMjc3",
+    "number": 17590,
+    "title": "bugfix: make compiler preferences slightly saner",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-07-19T07:45:15Z",
+    "updated_at": "2020-07-22T01:48:48Z",
+    "closed_at": "2020-07-22T01:48:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17590",
+        "html_url": "https://github.com/spack/spack/pull/17590",
+        "diff_url": "https://github.com/spack/spack/pull/17590.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17590.patch"
+    },
+    "body": "This fixes two issues with the way we currently select compilers.\r\n\r\nIf multiple compilers have the same \"id\" (os/arch/compiler/version), we currently prefer them by picking this one with the most supported languages.  This can have some surprising effects:\r\n\r\n* If you have no `gfortran` but you have `gfortran-8`, you can detect `clang` that has no configured C compiler -- just `f77` and `f90`. This happens frequently on macOS with homebrew. The bug is due to some kludginess about the way we detect mixed `clang`/`gfortran`.\r\n\r\n* We can prefer suffixed versions of compilers to non-suffixed versions, which means we may select `clang-gpu` over `clang` at LLNL. But, `clang-gpu` is not actually clang, and it can break builds. We should prefer `clang` if it's available.\r\n\r\n- [x] prefer compilers that have C compilers and prefer no name variation to variation.\r\n- [x] tests\r\n\r\nThis is related to #17542.  It's really a stop-gap, since when we make compilers into proper dependencies we won't need these heuristics -- we'll just satisfy virtual dependencies.\r\n\r\n@xjrc @alalazo @becker33 @gyllenhaal1",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16039",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16039/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16039/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16039/events",
+    "html_url": "https://github.com/spack/spack/pull/16039",
+    "id": 599706867,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAzMjkzNzc0",
+    "number": 16039,
+    "title": "py-tokenizers: add 0.5.2",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-14T16:38:20Z",
+    "updated_at": "2020-04-14T17:51:38Z",
+    "closed_at": "2020-04-14T17:41:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16039",
+        "html_url": "https://github.com/spack/spack/pull/16039",
+        "diff_url": "https://github.com/spack/spack/pull/16039.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16039.patch"
+    },
+    "body": "`py-transformers` explicitly requires _exactly_ `py-tokenizers` 0.5.2.\r\n\r\nHad some discussion with @AndrewGaspar about the problems with Rust nightly/dev and needing internet access to download dependencies. It seems he's got some ideas on how to fix this in the future.",
+    "performed_via_github_app": null
+}

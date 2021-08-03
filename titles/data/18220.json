@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18220",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18220/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18220/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18220/events",
+    "html_url": "https://github.com/spack/spack/pull/18220",
+    "id": 684045354,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyMDIyMzg3",
+    "number": 18220,
+    "title": "depends_on cannot handle ^ sigil",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-08-22T18:51:31Z",
+    "updated_at": "2020-09-03T22:31:02Z",
+    "closed_at": "2020-09-03T22:31:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18220",
+        "html_url": "https://github.com/spack/spack/pull/18220",
+        "diff_url": "https://github.com/spack/spack/pull/18220.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18220.patch"
+    },
+    "body": "Spack's `depends_on` directive cannot handle dependencies of dependencies at the moment. For example, the following specs hang forever:\r\n\r\n* `spack spec cardioid+mfem+cuda`\r\n* `spack spec phist+parmetis`\r\n* `spack spec warpx+ascent+mpi`\r\n\r\nAlso pinging package maintainers: @MaxThevenet @RemiLehe @ax3l @dpgrote @jthies @rblake-llnl",
+    "performed_via_github_app": null
+}

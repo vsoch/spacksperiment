@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18322",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18322/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18322/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18322/events",
+    "html_url": "https://github.com/spack/spack/pull/18322",
+    "id": 687252157,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc0NzA4NDIz",
+    "number": 18322,
+    "title": "Introduce virtual provider uuid",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-08-27T13:40:21Z",
+    "updated_at": "2020-12-29T16:12:27Z",
+    "closed_at": "2020-12-29T16:12:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18322",
+        "html_url": "https://github.com/spack/spack/pull/18322",
+        "diff_url": "https://github.com/spack/spack/pull/18322.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18322.patch"
+    },
+    "body": "libuuid is currently contained in util-linux, libuuid and uuid. This change introduces a new virtual provider `uuid` and renames the existing `uuid` package to `ossp-uuid`.\r\n\r\nutil-linux's libuuid is provided in the form of a separate package util-linux-uuid to make sure that packages depending on uuid and util-linux can use a separate uuid implementation, which the concretizer does not allow if libuuid is contained in util-linux.\r\n\r\nFixes #10812",
+    "performed_via_github_app": null
+}

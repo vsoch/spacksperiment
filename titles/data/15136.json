@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15136",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15136/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15136/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15136/events",
+    "html_url": "https://github.com/spack/spack/pull/15136",
+    "id": 568577392,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc3OTc4Mjc4",
+    "number": 15136,
+    "title": "Fixups for jupyter",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-02-20T21:16:14Z",
+    "updated_at": "2020-02-28T15:16:56Z",
+    "closed_at": "2020-02-28T04:31:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15136",
+        "html_url": "https://github.com/spack/spack/pull/15136",
+        "diff_url": "https://github.com/spack/spack/pull/15136.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15136.patch"
+    },
+    "body": "This PR fixes a few things for some jupyter related packages.\r\n\r\npy-ipython:\r\n- make the python depends_on statements reflect needs of different\r\n  versions\r\n- remove an unneeded conflicts directive\r\n\r\npy-ipywidgets:\r\n- add new version\r\n- set version constraints for py-widgetsnbextension\r\n\r\npy-jupyter-console\r\n- add new version\r\n- set python dependencies for versions as needed\r\n- set version constraint for py-ipython\r\n- set version constraints for py-prompt-toolkit\r\n\r\npy-pyqt5\r\n- build with py-sip\r\n\r\npy-qtconsole\r\n- add dependency on py-pyqt5",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17917",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17917/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17917/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17917/events",
+    "html_url": "https://github.com/spack/spack/pull/17917",
+    "id": 674640310,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY0Mjk2MzY3",
+    "number": 17917,
+    "title": "Fixed the dependency of newer OpenMPI on current hwloc.",
+    "user": {
+        "login": "bvanessen",
+        "id": 6210171,
+        "node_id": "MDQ6VXNlcjYyMTAxNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6210171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bvanessen",
+        "html_url": "https://github.com/bvanessen",
+        "followers_url": "https://api.github.com/users/bvanessen/followers",
+        "following_url": "https://api.github.com/users/bvanessen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bvanessen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bvanessen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bvanessen/subscriptions",
+        "organizations_url": "https://api.github.com/users/bvanessen/orgs",
+        "repos_url": "https://api.github.com/users/bvanessen/repos",
+        "events_url": "https://api.github.com/users/bvanessen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bvanessen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-08-06T22:37:40Z",
+    "updated_at": "2020-10-27T22:57:55Z",
+    "closed_at": "2020-10-09T20:29:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17917",
+        "html_url": "https://github.com/spack/spack/pull/17917",
+        "diff_url": "https://github.com/spack/spack/pull/17917.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17917.patch"
+    },
+    "body": "Patch contributed by Thorsten Kurth.",
+    "performed_via_github_app": null
+}

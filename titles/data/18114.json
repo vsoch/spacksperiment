@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18114",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18114/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18114/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18114/events",
+    "html_url": "https://github.com/spack/spack/pull/18114",
+    "id": 680486374,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5MDM1ODQ0",
+    "number": 18114,
+    "title": "allow libfoo.so.3 libraries for dependency check",
+    "user": {
+        "login": "marcmengel",
+        "id": 254807,
+        "node_id": "MDQ6VXNlcjI1NDgwNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/254807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marcmengel",
+        "html_url": "https://github.com/marcmengel",
+        "followers_url": "https://api.github.com/users/marcmengel/followers",
+        "following_url": "https://api.github.com/users/marcmengel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marcmengel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marcmengel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marcmengel/subscriptions",
+        "organizations_url": "https://api.github.com/users/marcmengel/orgs",
+        "repos_url": "https://api.github.com/users/marcmengel/repos",
+        "events_url": "https://api.github.com/users/marcmengel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marcmengel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-17T19:50:50Z",
+    "updated_at": "2021-06-12T09:47:53Z",
+    "closed_at": "2021-06-12T09:47:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18114",
+        "html_url": "https://github.com/spack/spack/pull/18114",
+        "diff_url": "https://github.com/spack/spack/pull/18114.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18114.patch"
+    },
+    "body": "When you're installing packages from buildcache, you really only need the runtime libraries for the\r\ndependencies.  However, Spack insists on having, for example libfred.so (from a fred-devel RPM) \r\nand not just libfred.so.3 (from fred RPM).  This patch lets the libfred.so.3 existence for the dependency\r\nallow the package install.",
+    "performed_via_github_app": null
+}

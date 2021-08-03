@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15453",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15453/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15453/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15453/events",
+    "html_url": "https://github.com/spack/spack/pull/15453",
+    "id": 579559524,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg2OTMyMDE4",
+    "number": 15453,
+    "title": "Change py-merlinwf  to py-merlin",
+    "user": {
+        "login": "koning",
+        "id": 455297,
+        "node_id": "MDQ6VXNlcjQ1NTI5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/455297?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/koning",
+        "html_url": "https://github.com/koning",
+        "followers_url": "https://api.github.com/users/koning/followers",
+        "following_url": "https://api.github.com/users/koning/following{/other_user}",
+        "gists_url": "https://api.github.com/users/koning/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/koning/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/koning/subscriptions",
+        "organizations_url": "https://api.github.com/users/koning/orgs",
+        "repos_url": "https://api.github.com/users/koning/repos",
+        "events_url": "https://api.github.com/users/koning/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/koning/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-11T21:37:09Z",
+    "updated_at": "2020-03-12T18:27:03Z",
+    "closed_at": "2020-03-12T18:27:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15453",
+        "html_url": "https://github.com/spack/spack/pull/15453",
+        "diff_url": "https://github.com/spack/spack/pull/15453.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15453.patch"
+    },
+    "body": "The PyPi name for merlinwf has been changed to merlin.\r\nThis required the renaming of the existing py-merlin package to py-merlin_info.\r\n\r\n@adamjstewart has been informed of this change.",
+    "performed_via_github_app": null
+}

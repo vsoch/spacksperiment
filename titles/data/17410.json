@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17410",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17410/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17410/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17410/events",
+    "html_url": "https://github.com/spack/spack/pull/17410",
+    "id": 652436581,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ1NTA0ODQy",
+    "number": 17410,
+    "title": "changes to py-torch recipe to enable rocm build",
+    "user": {
+        "login": "kolamsrinivas",
+        "id": 67026525,
+        "node_id": "MDQ6VXNlcjY3MDI2NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67026525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kolamsrinivas",
+        "html_url": "https://github.com/kolamsrinivas",
+        "followers_url": "https://api.github.com/users/kolamsrinivas/followers",
+        "following_url": "https://api.github.com/users/kolamsrinivas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kolamsrinivas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kolamsrinivas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kolamsrinivas/subscriptions",
+        "organizations_url": "https://api.github.com/users/kolamsrinivas/orgs",
+        "repos_url": "https://api.github.com/users/kolamsrinivas/repos",
+        "events_url": "https://api.github.com/users/kolamsrinivas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kolamsrinivas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-07-07T15:55:46Z",
+    "updated_at": "2020-07-15T23:45:23Z",
+    "closed_at": "2020-07-15T23:45:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17410",
+        "html_url": "https://github.com/spack/spack/pull/17410",
+        "diff_url": "https://github.com/spack/spack/pull/17410.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17410.patch"
+    },
+    "body": "@adamjstewart , Made changes as per your review comments -\r\nTo your questions => Will other versions of PyTorch build with ROCM, or do we need to backport this patch to older releases to get that working?\r\nWhen i did a spack install py-torch +rocm -cuda -cudnn -nccl  , the build failed. On looking further i found there was a commit that recently went to fix. Hence i took the fix and applied the patch.\r\n\r\nI also tested the build for spack install py-torch@master +cuda +cudnn +nccl cuda_arch=70 ; spack install py-torch +cuda +cudnn +nccl cuda_arch=70.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14100",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14100/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14100/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14100/events",
+    "html_url": "https://github.com/spack/spack/pull/14100",
+    "id": 535992856,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUxNjAzMDM2",
+    "number": 14100,
+    "title": "New package: qemu",
+    "user": {
+        "login": "anderbubble",
+        "id": 350294,
+        "node_id": "MDQ6VXNlcjM1MDI5NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/350294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anderbubble",
+        "html_url": "https://github.com/anderbubble",
+        "followers_url": "https://api.github.com/users/anderbubble/followers",
+        "following_url": "https://api.github.com/users/anderbubble/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anderbubble/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anderbubble/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anderbubble/subscriptions",
+        "organizations_url": "https://api.github.com/users/anderbubble/orgs",
+        "repos_url": "https://api.github.com/users/anderbubble/repos",
+        "events_url": "https://api.github.com/users/anderbubble/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anderbubble/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-12-10T21:04:03Z",
+    "updated_at": "2019-12-16T19:15:44Z",
+    "closed_at": "2019-12-16T19:02:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14100",
+        "html_url": "https://github.com/spack/spack/pull/14100",
+        "diff_url": "https://github.com/spack/spack/pull/14100.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14100.patch"
+    },
+    "body": "Introducing a qemu package. This is my first new spack package, so comments welcome.\r\n\r\nI had a little trouble declaring a dependency:\r\n\r\n```\r\ndepends_on('pixman@0.21.8:')\r\n```\r\n\r\nbut this tried to install 0.21.8 rather than the preferred version that is at or newer than 0.21.8. For now I've dropped the version specifier, but there's probably something I'm missing.\r\n\r\nI'm also using `preferred=True`; but it might be better to just mark the `-rc` versions as `@develop` or something similar. I couldn't figure out how to do that, so let me know.",
+    "performed_via_github_app": null
+}

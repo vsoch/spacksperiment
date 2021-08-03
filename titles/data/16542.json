@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16542",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16542/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16542/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16542/events",
+    "html_url": "https://github.com/spack/spack/pull/16542",
+    "id": 615094121,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE1NTE3MzQy",
+    "number": 16542,
+    "title": "QMCPACK Update May 2020",
+    "user": {
+        "login": "naromero77",
+        "id": 7633854,
+        "node_id": "MDQ6VXNlcjc2MzM4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7633854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/naromero77",
+        "html_url": "https://github.com/naromero77",
+        "followers_url": "https://api.github.com/users/naromero77/followers",
+        "following_url": "https://api.github.com/users/naromero77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/naromero77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/naromero77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/naromero77/subscriptions",
+        "organizations_url": "https://api.github.com/users/naromero77/orgs",
+        "repos_url": "https://api.github.com/users/naromero77/repos",
+        "events_url": "https://api.github.com/users/naromero77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/naromero77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-09T05:09:26Z",
+    "updated_at": "2020-05-09T18:05:12Z",
+    "closed_at": "2020-05-09T18:05:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16542",
+        "html_url": "https://github.com/spack/spack/pull/16542",
+        "diff_url": "https://github.com/spack/spack/pull/16542.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16542.patch"
+    },
+    "body": "- add naromero77 as maintainer\r\n- add v3.9.2\r\n- remove QMCPACK-QE wave function converter from QMCPACK Spack package (it was transplanted to QE Spack package by https://github.com/spack/spack/pull/16422) ",
+    "performed_via_github_app": null
+}

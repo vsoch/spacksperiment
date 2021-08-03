@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14356",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14356/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14356/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14356/events",
+    "html_url": "https://github.com/spack/spack/pull/14356",
+    "id": 544745069,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4NzkyODA1",
+    "number": 14356,
+    "title": "Convert encoding of script in interproscan",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-01-02T21:01:23Z",
+    "updated_at": "2020-01-15T17:55:55Z",
+    "closed_at": "2020-01-15T17:32:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14356",
+        "html_url": "https://github.com/spack/spack/pull/14356",
+        "diff_url": "https://github.com/spack/spack/pull/14356.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14356.patch"
+    },
+    "body": "One of the perl scripts was encoded with ISO-8859-1, which caused the\r\nsbang replacement process to fail when spack uses python3. This PR\r\nconverts the ps_scan script to UTF-8 encoding.",
+    "performed_via_github_app": null
+}

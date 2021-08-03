@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14891",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14891/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14891/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14891/events",
+    "html_url": "https://github.com/spack/spack/pull/14891",
+    "id": 563390092,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzczODA5NzE1",
+    "number": 14891,
+    "title": "Fix QT4 platform detection for linux clang",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-11T18:20:14Z",
+    "updated_at": "2020-02-12T00:25:03Z",
+    "closed_at": "2020-02-11T20:00:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14891",
+        "html_url": "https://github.com/spack/spack/pull/14891",
+        "diff_url": "https://github.com/spack/spack/pull/14891.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14891.patch"
+    },
+    "body": "The previous incantation for QT platform detection worked for QT5 linux clang (see https://github.com/spack/spack/issues/13650) but apparently not for QT4 linux clang. I can now successfully compile QT 4.8.7 with clang 9, gcc 8, or intel 18 on linux.\r\n\r\nI've also marked myself as a maintainer of QT since I have to deal with this \ud83d\udca9 package so much.",
+    "performed_via_github_app": null
+}

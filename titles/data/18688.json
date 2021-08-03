@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18688",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18688/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18688/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18688/events",
+    "html_url": "https://github.com/spack/spack/pull/18688",
+    "id": 702656128,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg3ODk3MDY4",
+    "number": 18688,
+    "title": "libvdwxc: unbreak concretization, request fftw-api",
+    "user": {
+        "login": "dev-zero",
+        "id": 11307,
+        "node_id": "MDQ6VXNlcjExMzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dev-zero",
+        "html_url": "https://github.com/dev-zero",
+        "followers_url": "https://api.github.com/users/dev-zero/followers",
+        "following_url": "https://api.github.com/users/dev-zero/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dev-zero/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dev-zero/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dev-zero/subscriptions",
+        "organizations_url": "https://api.github.com/users/dev-zero/orgs",
+        "repos_url": "https://api.github.com/users/dev-zero/repos",
+        "events_url": "https://api.github.com/users/dev-zero/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dev-zero/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-16T10:42:07Z",
+    "updated_at": "2020-10-26T16:06:05Z",
+    "closed_at": "2020-09-16T15:41:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18688",
+        "html_url": "https://github.com/spack/spack/pull/18688",
+        "diff_url": "https://github.com/spack/spack/pull/18688.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18688.patch"
+    },
+    "body": "mixing both fftw and fftw-api in a dependency tree can trigger the\r\nfollowing:\r\n\r\n```\r\n$ spack spec cp2k@master +sirius\r\n==> [2020-09-16-12:36:06.552981] sirius applying constraint gsl\r\n==> [2020-09-16-12:36:06.554270] sirius applying constraint openblas@0.3.10%gcc@7.5.0~consistent_fpcsr~ilp64+pic+shared threads=none arch=linux-opensuse_leap15-sandybridge\r\nTraceback (most recent call last):\r\n  File \"./bin/spack\", line 64, in <module>\r\n    sys.exit(spack.main.main())\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/main.py\", line 762, in main\r\n    return _invoke_command(command, parser, args, unknown)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/main.py\", line 490, in _invoke_command\r\n    return_val = command(parser, args)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/cmd/spec.py\", line 103, in spec\r\n    spec.concretize()\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2228, in concretize\r\n    user_spec_deps=user_spec_deps),\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2716, in normalize\r\n    visited, all_spec_deps, provider_index, tests)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2654, in _normalize_helper\r\n    dep, visited, spec_deps, provider_index, tests)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2613, in _merge_dependency\r\n    visited, spec_deps, provider_index, tests)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2654, in _normalize_helper\r\n    dep, visited, spec_deps, provider_index, tests)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2554, in _merge_dependency\r\n    provider = self._find_provider(dep, provider_index)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/spec.py\", line 2489, in _find_provider\r\n    providers = provider_index.providers_for(vdep)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/spack/provider_index.py\", line 80, in providers_for\r\n    return sorted(s.copy() for s in result)\r\n  File \"/data/tiziano/debug-spack/spack2/lib/spack/llnl/util/lang.py\", line 249, in <lambda>\r\n    lambda s, o: o is not None and s._cmp_key() < o._cmp_key())\r\nTypeError: '<' not supported between instances of 'str' and 'NoneType'\r\n```\r\n\r\nwhile at the same point disallowing MKL as a fftw provider.\r\nSolving this by depending on `fftw-api@3` instead and a runtime check on\r\n`^fftw+mpi` if `fftw` is used as provider for the `fftw-api`.",
+    "performed_via_github_app": null
+}

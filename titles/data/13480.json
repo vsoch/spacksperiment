@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13480/events",
+    "html_url": "https://github.com/spack/spack/pull/13480",
+    "id": 513761184,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMzNDg4Mzc3",
+    "number": 13480,
+    "title": "mumps: Add '-DMAIN_COMP' when using Fujitsu compiler.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-29T08:26:03Z",
+    "updated_at": "2019-10-30T02:52:43Z",
+    "closed_at": "2019-10-29T18:32:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13480",
+        "html_url": "https://github.com/spack/spack/pull/13480",
+        "diff_url": "https://github.com/spack/spack/pull/13480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13480.patch"
+    },
+    "body": "Fujitsu Fortran compiler requires using `MAIN__()`  instead of `main()` in C program. C programs in `MUMPS` use `MAIN__` when `MAIN_COMP` is defined, so I added Fujitsu compiler to the judgment conditions.",
+    "performed_via_github_app": null
+}

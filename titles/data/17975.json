@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17975",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17975/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17975/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17975/events",
+    "html_url": "https://github.com/spack/spack/issues/17975",
+    "id": 676313623,
+    "node_id": "MDU6SXNzdWU2NzYzMTM2MjM=",
+    "number": 17975,
+    "title": "Build fail: magma ppc64le: rhel8 and centos8: \"__ieee128\" is undefined",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 883727171,
+            "node_id": "MDU6TGFiZWw4ODM3MjcxNzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/power",
+            "name": "power",
+            "color": "8a8edb",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-10T17:57:53Z",
+    "updated_at": "2021-06-16T01:40:04Z",
+    "closed_at": "2021-06-16T01:40:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "`magma` build is failing using `spack@develop` (10-Aug, 1398038beead1a1532fc337165e2b6bf9d58c284) on:\r\n* `RHEL 8` `ppc64le` `%gcc@8.3.1`\r\n* `CentOS 8` `ppc64le` `%gcc@8.3.1`\r\n\r\nConcrete spec for `magma` for RHEL8 ppc64le: [magma-ph5dkn.yml.txt](https://github.com/spack/spack/files/5052396/magma-ph5dkn.yml.txt)\r\nBuild log: [magma-build-out.txt](https://github.com/spack/spack/files/5052466/magma-build-out.txt)\r\n\r\n```\r\n$> spack install -f ./magma-ph5dkn.yml\r\n...\r\n==> Installing magma\r\n==> magma: Executing phase: 'cmake'\r\n==> magma: Executing phase: 'build'\r\n...\r\n>> 383    /usr/include/bits/floatn.h(79): error: identifier \"__ieee128\" is undefined\r\n     384\r\n  >> 385    /usr/include/bits/floatn.h(82): error: invalid argument to attribute \"__mode__\"\r\n     386\r\n  >> 387    /usr/include/bits/floatn.h(79): error: identifier \"__ieee128\" is undefined\r\n     388\r\n  >> 389    /usr/include/bits/floatn.h(82): error: invalid argument to attribute \"__mode__\"\r\n     390\r\n...\r\n>> 451    /usr/include/bits/floatn.h(79): error: identifier \"__ieee128\" is undefined\r\n     452\r\n  >> 453    /usr/include/bits/floatn.h(82): error: invalid argument to attribute \"__mode__\"\r\n     454\r\n     455    2 errors detected in the compilation of \"/tmp/tmpxft_00000991_00000000-6_zgemv_fermi.cpp1.ii\".\r\n     456    -- Removing /tmp/root/spack-stage/spack-stage-magma-2.5.3-2djtbcccmwffdamfiphremnxnk6nb6hw/spack-build/CMakeFiles/magma.dir/magmablas/./magma_generated_zgemv_fermi.cu.o\r\n  >> 457    /usr/include/bits/floatn.h(79): error: identifier \"__ieee128\" is undefined\r\n     458\r\n  >> 459    /usr/include/bits/floatn.h(82): error: invalid argument to attribute \"__mode__\"\r\n     460\r\n     461    /spack/opt/spack/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.17.3-abbaqrgvorosacpyiawea5xeyjocb5hc/bin/cmake -E rm -f /tmp/root/spack-stage/spack-stage-magma-2.5.3-2djtbcccmwff\r\n            damfiphremnxnk6nb6hw/spack-build/CMakeFiles/magma.dir/magmablas/./magma_generated_zgemv_fermi.cu.o\r\n  >> 462    CMake Error at magma_generated_zgemv_fermi.cu.o.RelWithDebInfo.cmake:280 (message):\r\n     463      Error generating file\r\n     464      /tmp/root/spack-stage/spack-stage-magma-2.5.3-2djtbcccmwffdamfiphremnxnk6nb6hw/spack-build/CMakeFiles/magma.dir/magmablas/./magma_generated_zgemv_fermi.cu.o\r\n     465\r\n     466\r\n  >> 467    make[2]: *** [CMakeFiles/magma.dir/build.make:137: CMakeFiles/magma.dir/magmablas/magma_generated_zgemv_fermi.cu.o] Error 1\r\n...\r\n```\r\n\r\n@stomov @luszczek @G-Ragghianti @scottwittenburg @shahzebsiddiqui \r\n\r\n",
+    "performed_via_github_app": null
+}

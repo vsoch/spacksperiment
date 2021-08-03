@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15892",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15892/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15892/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15892/events",
+    "html_url": "https://github.com/spack/spack/pull/15892",
+    "id": 595174773,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk5Njk1MjI4",
+    "number": 15892,
+    "title": "py-smart-open: fix url/checksum, add deps",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-06T14:41:48Z",
+    "updated_at": "2020-04-06T16:16:22Z",
+    "closed_at": "2020-04-06T16:16:21Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15892",
+        "html_url": "https://github.com/spack/spack/pull/15892",
+        "diff_url": "https://github.com/spack/spack/pull/15892.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15892.patch"
+    },
+    "body": "The checksum for 1.8.4 was for the PyPI tarball, not the GitHub tarball. Switched to downloading from PyPI.",
+    "performed_via_github_app": null
+}

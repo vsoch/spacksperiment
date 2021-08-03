@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13684",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13684/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13684/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13684/events",
+    "html_url": "https://github.com/spack/spack/pull/13684",
+    "id": 521106268,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NTUxNDAz",
+    "number": 13684,
+    "title": "Fix QT on Linux+clang",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-11T18:03:29Z",
+    "updated_at": "2020-01-07T00:03:10Z",
+    "closed_at": "2020-01-06T21:47:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13684",
+        "html_url": "https://github.com/spack/spack/pull/13684",
+        "diff_url": "https://github.com/spack/spack/pull/13684.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13684.patch"
+    },
+    "body": "Fixes #13650. Should be extensible to future 'platform' arguments as needed.",
+    "performed_via_github_app": null
+}

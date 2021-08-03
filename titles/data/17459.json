@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17459",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17459/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17459/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17459/events",
+    "html_url": "https://github.com/spack/spack/pull/17459",
+    "id": 654793496,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3NDQ4OTUw",
+    "number": 17459,
+    "title": "[root] Add version 6.22",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-07-10T13:43:56Z",
+    "updated_at": "2020-07-27T08:58:58Z",
+    "closed_at": "2020-07-26T15:08:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17459",
+        "html_url": "https://github.com/spack/spack/pull/17459",
+        "diff_url": "https://github.com/spack/spack/pull/17459.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17459.patch"
+    },
+    "body": "From a build system point of view, this was a relatively tame release. However, the xextproto issue from <=6.08 is back in this release.\r\n\r\nHere I'm doing the minimal step of enabling the xextproto include path hack for >=6.22. Alternate options are to...\r\n\r\n- Enable it for every ROOT version. It does not really harm, even though it's not always necessary.\r\n- Cross-check if current version of spack can live without the evil unsetting of the SPACK_INCLUDE_DIRS environment variable altogether, freeing us from all those include path hacks.\r\n    * AFAIK, spack's usage of -I / -isystem has changed recently, and it was the original cause of all those include path problems. So with recent spack versions, the root package's convoluted manual include path setup may not be necessary anymore.\r\n    * To check this, I need to know in which circumstances those include paths problems would manifest before those tricks were introduced. I think @gartung was the author of the original bugfix that unset SPACK_INCLUDE_DIRS, so he might remember a failing test scenario that I can exercise.",
+    "performed_via_github_app": null
+}

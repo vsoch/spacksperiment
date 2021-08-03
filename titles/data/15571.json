@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15571",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15571/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15571/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15571/events",
+    "html_url": "https://github.com/spack/spack/pull/15571",
+    "id": 584470337,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkxMDUwNjQ1",
+    "number": 15571,
+    "title": "Add package: py-deprecated",
+    "user": {
+        "login": "ystradmann",
+        "id": 49203055,
+        "node_id": "MDQ6VXNlcjQ5MjAzMDU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49203055?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ystradmann",
+        "html_url": "https://github.com/ystradmann",
+        "followers_url": "https://api.github.com/users/ystradmann/followers",
+        "following_url": "https://api.github.com/users/ystradmann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ystradmann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ystradmann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ystradmann/subscriptions",
+        "organizations_url": "https://api.github.com/users/ystradmann/orgs",
+        "repos_url": "https://api.github.com/users/ystradmann/repos",
+        "events_url": "https://api.github.com/users/ystradmann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ystradmann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-19T14:53:00Z",
+    "updated_at": "2020-03-19T16:15:20Z",
+    "closed_at": "2020-03-19T16:15:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15571",
+        "html_url": "https://github.com/spack/spack/pull/15571",
+        "diff_url": "https://github.com/spack/spack/pull/15571.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15571.patch"
+    },
+    "body": "This PR adds the [\"Deprecated\"](https://pypi.org/project/Deprecated) python module.\r\n\r\nThe dependency information has been extracted from the project's [`setup.py`](https://github.com/tantale/deprecated/blob/master/setup.py).",
+    "performed_via_github_app": null
+}

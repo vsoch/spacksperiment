@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17173",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17173/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17173/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17173/events",
+    "html_url": "https://github.com/spack/spack/pull/17173",
+    "id": 642008958,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM3MTMxMTIw",
+    "number": 17173,
+    "title": "Update to swipl package",
+    "user": {
+        "login": "alexrobomind",
+        "id": 5833672,
+        "node_id": "MDQ6VXNlcjU4MzM2NzI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5833672?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alexrobomind",
+        "html_url": "https://github.com/alexrobomind",
+        "followers_url": "https://api.github.com/users/alexrobomind/followers",
+        "following_url": "https://api.github.com/users/alexrobomind/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alexrobomind/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alexrobomind/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alexrobomind/subscriptions",
+        "organizations_url": "https://api.github.com/users/alexrobomind/orgs",
+        "repos_url": "https://api.github.com/users/alexrobomind/repos",
+        "events_url": "https://api.github.com/users/alexrobomind/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alexrobomind/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-19T14:25:36Z",
+    "updated_at": "2020-06-19T16:03:26Z",
+    "closed_at": "2020-06-19T16:03:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17173",
+        "html_url": "https://github.com/spack/spack/pull/17173",
+        "diff_url": "https://github.com/spack/spack/pull/17173.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17173.patch"
+    },
+    "body": "This pull request contains 3 distinct updates:\r\n\r\n- Building the documentation requires libarchive, a dependency which was before not detected because the build I used relied on some cheats with the \"dirty\" flag, which is no longer present. The dependency is now correctly pulled in.\r\n- There are now 2 additional variants for building the HTML and the PDF documentation, with the defaults set to the defaults in the SWI prolog cmake file.\r\n- Version 8.2.0 was released in May, which is now also included in the package.",
+    "performed_via_github_app": null
+}

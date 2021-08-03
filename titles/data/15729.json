@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15729",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15729/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15729/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15729/events",
+    "html_url": "https://github.com/spack/spack/pull/15729",
+    "id": 589620801,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk1MTI2NTk4",
+    "number": 15729,
+    "title": "fix gcc@8.4.0 build",
+    "user": {
+        "login": "germasch",
+        "id": 11023174,
+        "node_id": "MDQ6VXNlcjExMDIzMTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11023174?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/germasch",
+        "html_url": "https://github.com/germasch",
+        "followers_url": "https://api.github.com/users/germasch/followers",
+        "following_url": "https://api.github.com/users/germasch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/germasch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/germasch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/germasch/subscriptions",
+        "organizations_url": "https://api.github.com/users/germasch/orgs",
+        "repos_url": "https://api.github.com/users/germasch/repos",
+        "events_url": "https://api.github.com/users/germasch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/germasch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-28T17:25:41Z",
+    "updated_at": "2020-03-28T18:06:19Z",
+    "closed_at": "2020-03-28T18:06:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15729",
+        "html_url": "https://github.com/spack/spack/pull/15729",
+        "diff_url": "https://github.com/spack/spack/pull/15729.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15729.patch"
+    },
+    "body": "the gcc package.py includes patches for a sanitizer related bug that look\r\nlike they've been fixed in gcc 8.4.0, which caused `spack install` to fail.\r\n\r\nThis PR excludes patching gcc >= 8.4.0 and < 9.0.0.\r\n\r\nFixes #15711 . It's mostly @adamjstewart's suggested fix, though I didn't touch the other, macos specific patch.",
+    "performed_via_github_app": null
+}

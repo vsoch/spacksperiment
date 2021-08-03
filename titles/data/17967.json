@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17967",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17967/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17967/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17967/events",
+    "html_url": "https://github.com/spack/spack/pull/17967",
+    "id": 675944234,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY1MzQxNTE1",
+    "number": 17967,
+    "title": "Make spack compiler find respect $PATH order",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-10T07:58:57Z",
+    "updated_at": "2020-08-12T11:44:25Z",
+    "closed_at": "2020-08-12T11:38:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17967",
+        "html_url": "https://github.com/spack/spack/pull/17967",
+        "diff_url": "https://github.com/spack/spack/pull/17967.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17967.patch"
+    },
+    "body": "On my system I have the gcc compiler located in both `/usr/bin/gcc` and `/bin/gcc`. \r\n\r\n`which gcc` points to `/usr/bin/gcc`, and indeed `/usr/bin` occurs before `/bin` in my `$PATH`.\r\n\r\nSpack however adds `/bin/gcc` as a gcc compiler when I run `spack compiler find`.\r\n\r\nI guess historically there was some reason to return the list of compilers in a reversed order in `arguments_to_detect_version_fn`, but the current logic in `find_compilers` keeps a flat list and filters that, passes it to `make_compiler_list` which does a stable sort, and then takes the first working compiler from the list. So that means the order should not be reversed.\r\n\r\nThis problem came up in https://github.com/spack/spack/issues/17932",
+    "performed_via_github_app": null
+}

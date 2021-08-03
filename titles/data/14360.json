@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14360",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14360/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14360/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14360/events",
+    "html_url": "https://github.com/spack/spack/pull/14360",
+    "id": 544757238,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4ODAyNDc5",
+    "number": 14360,
+    "title": "Get py-numpy > 1.16 to build with Intel compiler",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-02T21:36:49Z",
+    "updated_at": "2020-01-03T02:06:41Z",
+    "closed_at": "2020-01-03T01:30:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14360",
+        "html_url": "https://github.com/spack/spack/pull/14360",
+        "diff_url": "https://github.com/spack/spack/pull/14360.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14360.patch"
+    },
+    "body": "Beginning with numpy > 1.16 when using older versions of gcc the\r\n`std=c99` flag must be used. The Intel compiler depends on gcc for its\r\nlanguage extensions so the version of gcc is important. If the version\r\nof gcc used by the Intel compiler is one that requires the `-std=c99`\r\nflag then that flag will have to be used for a build with the Intel\r\ncompiler as well.\r\n\r\nThis PR tests the version of gcc used by the Intel compiler and will\r\nabort the build if the gcc version is < 4.8 and inject the `-std=c99`\r\nflag if >= 4.8 and < 5.1. This will cover the system gcc compiler and\r\nany gcc environment module loaded at build time.",
+    "performed_via_github_app": null
+}

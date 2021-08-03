@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18665",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18665/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18665/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18665/events",
+    "html_url": "https://github.com/spack/spack/pull/18665",
+    "id": 701246435,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg2NzM1NzYw",
+    "number": 18665,
+    "title": "Qbox minor issues 18664",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-09-14T16:22:11Z",
+    "updated_at": "2020-10-12T17:15:11Z",
+    "closed_at": "2020-09-15T14:54:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18665",
+        "html_url": "https://github.com/spack/spack/pull/18665",
+        "diff_url": "https://github.com/spack/spack/pull/18665.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18665.patch"
+    },
+    "body": "Fixes #18664\r\n\r\nI have applied as several commits, as I am not 100% sure of the proper fix\r\n\r\n1) install to proper subdirs (this should match qbox online docs, and fix issues with broken\r\nsymlinks in install prefix)\r\n2) place the qb exectutable into bin subdir. This seems to also fix issue with PATH not being set.\r\n3) Add a patch to change shebangs for python scripts to use python from user's PATH.\r\n4) Add run dependencies on python2 and gnuplot (for utilities)\r\n\r\nIn particular, I am unsure about (4) --- I am not a qbox user, but from the online docs, etc. it seems like the main user interaction is with the qb command, and I believe pyhon2 and gnuplot are _only_ required for the utility scripts.  Is that a sufficient requirement for a spack runtime dependency --- I would use \"recommends\" or \"suggests\" dependencies if available, but  spack does not have such (at least to my knowledge).  \r\n\r\nAlso, I do not know how to have spack add the utils subdir to the PATH environmental module in modulefiles, so that is currently missing\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18751",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18751/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18751/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18751/events",
+    "html_url": "https://github.com/spack/spack/pull/18751",
+    "id": 704726322,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg5NTk2Mjkx",
+    "number": 18751,
+    "title": "Dev/override cpu limit",
+    "user": {
+        "login": "joequant",
+        "id": 2908185,
+        "node_id": "MDQ6VXNlcjI5MDgxODU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2908185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joequant",
+        "html_url": "https://github.com/joequant",
+        "followers_url": "https://api.github.com/users/joequant/followers",
+        "following_url": "https://api.github.com/users/joequant/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joequant/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joequant/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joequant/subscriptions",
+        "organizations_url": "https://api.github.com/users/joequant/orgs",
+        "repos_url": "https://api.github.com/users/joequant/repos",
+        "events_url": "https://api.github.com/users/joequant/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joequant/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-09-19T00:52:37Z",
+    "updated_at": "2021-02-19T12:56:51Z",
+    "closed_at": "2021-02-19T12:56:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18751",
+        "html_url": "https://github.com/spack/spack/pull/18751",
+        "diff_url": "https://github.com/spack/spack/pull/18751.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18751.patch"
+    },
+    "body": "patch to add feature #18742\r\n\r\nThis adds a flag to allow the number of threads to exceed local cpus.  This is useful when using distcc and compiler caching.",
+    "performed_via_github_app": null
+}

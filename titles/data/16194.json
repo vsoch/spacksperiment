@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16194",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16194/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16194/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16194/events",
+    "html_url": "https://github.com/spack/spack/pull/16194",
+    "id": 603604087,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2MzU5MTA0",
+    "number": 16194,
+    "title": "Fix: Flex Reconfigure",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-04-20T23:40:06Z",
+    "updated_at": "2020-04-22T07:04:47Z",
+    "closed_at": "2020-04-22T03:36:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16194",
+        "html_url": "https://github.com/spack/spack/pull/16194",
+        "diff_url": "https://github.com/spack/spack/pull/16194.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16194.patch"
+    },
+    "body": "Learn the `flex` package how to reconfigure itself when needed.\r\n\r\nThis is currently the default and crashed builds, see `force_autoreconf` trigger for the latest version.\r\n\r\nKudos to @aweits for spotting this!\r\n\r\nFix #11551",
+    "performed_via_github_app": null
+}

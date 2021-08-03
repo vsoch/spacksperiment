@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14003",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14003/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14003/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14003/events",
+    "html_url": "https://github.com/spack/spack/pull/14003",
+    "id": 533610277,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5NjU0NTgy",
+    "number": 14003,
+    "title": "ibm-java: add version 8.0.6.0",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-12-05T21:30:40Z",
+    "updated_at": "2019-12-07T00:11:25Z",
+    "closed_at": "2019-12-07T00:11:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14003",
+        "html_url": "https://github.com/spack/spack/pull/14003",
+        "diff_url": "https://github.com/spack/spack/pull/14003.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14003.patch"
+    },
+    "body": "Add version 8.0.6.0 and remove 8.0.5.30.  IBM is fairly aggressive\r\nabout removing old versions, and 8.0.5.30 is no longer available from\r\ntheir download site.\r\n\r\n----------\r\n\r\nI looked around IBM's download site a bit, but I couldn't find an\r\narchive directory for 8.0.5.30 or other old versions.\r\n\r\nhttp://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/\r\n\r\nIf someone can find where old versions are archived, then let me know\r\nand we can set `list_url`.",
+    "performed_via_github_app": null
+}

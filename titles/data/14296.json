@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14296",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14296/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14296/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14296/events",
+    "html_url": "https://github.com/spack/spack/pull/14296",
+    "id": 542659093,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU3MDU3Nzk4",
+    "number": 14296,
+    "title": "patch cairo build files for build without fontconfig fixes #14112",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-26T20:07:26Z",
+    "updated_at": "2019-12-31T01:32:54Z",
+    "closed_at": "2019-12-26T22:20:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14296",
+        "html_url": "https://github.com/spack/spack/pull/14296",
+        "diff_url": "https://github.com/spack/spack/pull/14296.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14296.patch"
+    },
+    "body": "With #14092, cairo is building with fontconfig disabled by default. However, cairo's build system is still looking for fontconfig in one of its files. I found a bug report to cairo with a patch on https://gitlab.freedesktop.org/cairo/cairo/issues/346. This was also report in Spack issue #14112.",
+    "performed_via_github_app": null
+}

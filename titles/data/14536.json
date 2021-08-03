@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14536",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14536/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14536/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14536/events",
+    "html_url": "https://github.com/spack/spack/pull/14536",
+    "id": 550675515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzNTM3ODE4",
+    "number": 14536,
+    "title": "perl: Fix binary detection",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 571584920,
+            "node_id": "MDU6TGFiZWw1NzE1ODQ5MjA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/perl",
+            "name": "perl",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-01-16T09:19:41Z",
+    "updated_at": "2020-01-16T18:04:03Z",
+    "closed_at": "2020-01-16T16:11:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14536",
+        "html_url": "https://github.com/spack/spack/pull/14536",
+        "diff_url": "https://github.com/spack/spack/pull/14536.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14536.patch"
+    },
+    "body": "Looks like I broke something with #14509. :frowning_face: Sorry I did not catch this earlier.\r\n\r\nIt seems that stable versions of perl also install a `perlX.Y.Z` binary. However, it seems that this binary can hang if used in conjunction with Spack's sbang workaround, as observed during automake's build.\r\n\r\n@adamjstewart",
+    "performed_via_github_app": null
+}

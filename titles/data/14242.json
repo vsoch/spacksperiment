@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14242",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14242/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14242/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14242/events",
+    "html_url": "https://github.com/spack/spack/pull/14242",
+    "id": 540735077,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1NTA2NDE4",
+    "number": 14242,
+    "title": "node-js: add Python 3 support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-20T03:44:29Z",
+    "updated_at": "2019-12-20T22:17:08Z",
+    "closed_at": "2019-12-20T22:17:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14242",
+        "html_url": "https://github.com/spack/spack/pull/14242",
+        "diff_url": "https://github.com/spack/spack/pull/14242.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14242.patch"
+    },
+    "body": "The latest version of node.js seems to support Python 3 now! It looks like there has been experimental support for quite some time, so I'm not sure what version was the first to add support. I tried both 12.14.0 and 13.5.0 and the former had some \"ImportError: no module named 'site'\" style errors, while 13.5.0 works fine. Now I just have to get `npm` working...\r\n\r\nSuccessfully builds on macOS 10.15.2 with Clang 11.0.0 and Python 3.7.4.",
+    "performed_via_github_app": null
+}

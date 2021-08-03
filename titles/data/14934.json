@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14934",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14934/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14934/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14934/events",
+    "html_url": "https://github.com/spack/spack/pull/14934",
+    "id": 565020020,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc1MTQ2Mzc4",
+    "number": 14934,
+    "title": "packages.yaml: allow virtuals to specify buildable: false",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-02-13T23:56:43Z",
+    "updated_at": "2020-04-01T01:20:52Z",
+    "closed_at": "2020-03-31T23:09:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14934",
+        "html_url": "https://github.com/spack/spack/pull/14934",
+        "diff_url": "https://github.com/spack/spack/pull/14934.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14934.patch"
+    },
+    "body": "Currently, to force Spack to use an external MPI, you have to specify `buildable: False` for every MPI provider in Spack in your packages.yaml file. This is both tedious and fragile, as new MPI providers can be added and break your workflow when you do a git pull.\r\n\r\nThis PR allows you to specify an entire virtual dependency as non-buildable, and specify particular implementations to be built:\r\n```yaml\r\npackages:\r\nall:\r\n    providers:\r\n        mpi: [mpich]\r\nmpi:\r\n    buildable: false\r\n    paths:\r\n        mpich@3.2 %gcc@7.3.0: /usr/packages/mpich-3.2-gcc-7.3.0\r\n```\r\nwill force all Spack builds to use the specified mpich install.",
+    "performed_via_github_app": null
+}

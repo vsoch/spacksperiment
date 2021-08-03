@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16595",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16595/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16595/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16595/events",
+    "html_url": "https://github.com/spack/spack/pull/16595",
+    "id": 616324204,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2NDU3Mzgx",
+    "number": 16595,
+    "title": "py-petsc4py: Allow ~mpi variant",
+    "user": {
+        "login": "shuds13",
+        "id": 16457059,
+        "node_id": "MDQ6VXNlcjE2NDU3MDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16457059?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shuds13",
+        "html_url": "https://github.com/shuds13",
+        "followers_url": "https://api.github.com/users/shuds13/followers",
+        "following_url": "https://api.github.com/users/shuds13/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shuds13/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shuds13/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shuds13/subscriptions",
+        "organizations_url": "https://api.github.com/users/shuds13/orgs",
+        "repos_url": "https://api.github.com/users/shuds13/repos",
+        "events_url": "https://api.github.com/users/shuds13/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shuds13/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-12T03:10:01Z",
+    "updated_at": "2020-05-15T13:14:07Z",
+    "closed_at": "2020-05-15T13:14:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16595",
+        "html_url": "https://github.com/spack/spack/pull/16595",
+        "diff_url": "https://github.com/spack/spack/pull/16595.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16595.patch"
+    },
+    "body": "Allow petsc4py to be built without MPI.\r\n\r\n@balay ",
+    "performed_via_github_app": null
+}

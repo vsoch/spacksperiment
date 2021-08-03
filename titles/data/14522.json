@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14522",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14522/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14522/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14522/events",
+    "html_url": "https://github.com/spack/spack/pull/14522",
+    "id": 550417414,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzMzI3Njc4",
+    "number": 14522,
+    "title": "openmpi: swat btl/uct ucx 1.7 bug",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-01-15T20:39:47Z",
+    "updated_at": "2020-01-18T19:52:27Z",
+    "closed_at": "2020-01-18T19:52:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14522",
+        "html_url": "https://github.com/spack/spack/pull/14522",
+        "diff_url": "https://github.com/spack/spack/pull/14522.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14522.patch"
+    },
+    "body": "Unfortunately UCX 1.7.0 is appearing in RPMS before it's officially released.\r\nThere's a problem with Open MPI 4.0.x where x < 3 and this version of UCX,\r\nnamely that the UCT BTL fails to compile.\r\n\r\nSee https://github.com/open-mpi/ompi/issues/7128\r\n\r\nThis patch works around the problem by disabling the build of the UCT BTL\r\nfor releases 4.0.0 to 4.0.2.\r\n\r\nSigned-off-by: Howard Pritchard <howardp@lanl.gov>",
+    "performed_via_github_app": null
+}

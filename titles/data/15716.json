@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15716",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15716/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15716/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15716/events",
+    "html_url": "https://github.com/spack/spack/pull/15716",
+    "id": 589297263,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk0ODg4MDky",
+    "number": 15716,
+    "title": "Re-introduce the libs property in the mesa package",
+    "user": {
+        "login": "v-dobrev",
+        "id": 12926030,
+        "node_id": "MDQ6VXNlcjEyOTI2MDMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12926030?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/v-dobrev",
+        "html_url": "https://github.com/v-dobrev",
+        "followers_url": "https://api.github.com/users/v-dobrev/followers",
+        "following_url": "https://api.github.com/users/v-dobrev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/v-dobrev/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/v-dobrev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/v-dobrev/subscriptions",
+        "organizations_url": "https://api.github.com/users/v-dobrev/orgs",
+        "repos_url": "https://api.github.com/users/v-dobrev/repos",
+        "events_url": "https://api.github.com/users/v-dobrev/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/v-dobrev/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-03-27T17:41:38Z",
+    "updated_at": "2020-03-28T10:30:11Z",
+    "closed_at": "2020-03-28T10:30:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15716",
+        "html_url": "https://github.com/spack/spack/pull/15716",
+        "diff_url": "https://github.com/spack/spack/pull/15716.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15716.patch"
+    },
+    "body": "The `libs` property was originally introduced in the `mesa` package in #8904 but then it was removed (unintentionally, I assume) in #10482.",
+    "performed_via_github_app": null
+}

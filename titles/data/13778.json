@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13778",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13778/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13778/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13778/events",
+    "html_url": "https://github.com/spack/spack/pull/13778",
+    "id": 524742949,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQyNDYyNDY4",
+    "number": 13778,
+    "title": "Update diffutils to work around an issue with recent clang releases",
+    "user": {
+        "login": "daveh86",
+        "id": 909151,
+        "node_id": "MDQ6VXNlcjkwOTE1MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/909151?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daveh86",
+        "html_url": "https://github.com/daveh86",
+        "followers_url": "https://api.github.com/users/daveh86/followers",
+        "following_url": "https://api.github.com/users/daveh86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daveh86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daveh86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daveh86/subscriptions",
+        "organizations_url": "https://api.github.com/users/daveh86/orgs",
+        "repos_url": "https://api.github.com/users/daveh86/repos",
+        "events_url": "https://api.github.com/users/daveh86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daveh86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-11-19T03:01:13Z",
+    "updated_at": "2021-06-11T14:38:43Z",
+    "closed_at": "2021-06-11T14:38:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13778",
+        "html_url": "https://github.com/spack/spack/pull/13778",
+        "diff_url": "https://github.com/spack/spack/pull/13778.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13778.patch"
+    },
+    "body": "This is a hacky patch, but resolves #13484 \r\n\r\nThe problem was that automake attempts to use an implicit function declaration to lint the compiler. With recent clang versions, this generates a warning and not an error. So we override to make that warning back into an error.",
+    "performed_via_github_app": null
+}

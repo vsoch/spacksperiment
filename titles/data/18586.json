@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18586",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18586/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18586/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18586/events",
+    "html_url": "https://github.com/spack/spack/pull/18586",
+    "id": 696758593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgyNzk3MTcx",
+    "number": 18586,
+    "title": "(py-)fenics-dolfinx: fix dependencies",
+    "user": {
+        "login": "garth-wells",
+        "id": 3431333,
+        "node_id": "MDQ6VXNlcjM0MzEzMzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3431333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/garth-wells",
+        "html_url": "https://github.com/garth-wells",
+        "followers_url": "https://api.github.com/users/garth-wells/followers",
+        "following_url": "https://api.github.com/users/garth-wells/following{/other_user}",
+        "gists_url": "https://api.github.com/users/garth-wells/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/garth-wells/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/garth-wells/subscriptions",
+        "organizations_url": "https://api.github.com/users/garth-wells/orgs",
+        "repos_url": "https://api.github.com/users/garth-wells/repos",
+        "events_url": "https://api.github.com/users/garth-wells/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/garth-wells/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-09T12:08:41Z",
+    "updated_at": "2020-09-09T15:55:07Z",
+    "closed_at": "2020-09-09T15:55:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18586",
+        "html_url": "https://github.com/spack/spack/pull/18586",
+        "diff_url": "https://github.com/spack/spack/pull/18586.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18586.patch"
+    },
+    "body": "These fixes were picked up when installing in a clean container. Tested at https://github.com/FEniCS/dolfinx/actions?query=workflow%3A%22Spack+build%22.\r\n\r\nAlso removes some unnecessary dependency options - leave these to the user to control.",
+    "performed_via_github_app": null
+}

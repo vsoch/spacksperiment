@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14338",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14338/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14338/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14338/events",
+    "html_url": "https://github.com/spack/spack/pull/14338",
+    "id": 544294379,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4NDM5MDA0",
+    "number": 14338,
+    "title": "refactor: cleanup imports in spec.py",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-01-01T00:39:24Z",
+    "updated_at": "2020-02-14T22:11:30Z",
+    "closed_at": "2020-01-02T16:05:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14338",
+        "html_url": "https://github.com/spack/spack/pull/14338",
+        "diff_url": "https://github.com/spack/spack/pull/14338.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14338.patch"
+    },
+    "body": "The imports in `spec.py` are getting to be pretty unwieldy.  This probably means the file needs to be broken up, but for now we can at least clean up the namespace.\r\n\r\n- [x] Remove all of the `import from` style imports and replace them with `import` or `import as`\r\n- [x] Remove a number names that were exported by `spack.spec` that weren't even in `spack.spec`",
+    "performed_via_github_app": null
+}

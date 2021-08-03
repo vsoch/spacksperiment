@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13730",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13730/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13730/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13730/events",
+    "html_url": "https://github.com/spack/spack/pull/13730",
+    "id": 522902917,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxMDEwODI3",
+    "number": 13730,
+    "title": "guile package: Handling the threads option.",
+    "user": {
+        "login": "hseara",
+        "id": 2016887,
+        "node_id": "MDQ6VXNlcjIwMTY4ODc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2016887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hseara",
+        "html_url": "https://github.com/hseara",
+        "followers_url": "https://api.github.com/users/hseara/followers",
+        "following_url": "https://api.github.com/users/hseara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hseara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hseara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hseara/subscriptions",
+        "organizations_url": "https://api.github.com/users/hseara/orgs",
+        "repos_url": "https://api.github.com/users/hseara/repos",
+        "events_url": "https://api.github.com/users/hseara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hseara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-14T14:42:18Z",
+    "updated_at": "2019-11-17T07:35:31Z",
+    "closed_at": "2019-11-16T21:34:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13730",
+        "html_url": "https://github.com/spack/spack/pull/13730",
+        "diff_url": "https://github.com/spack/spack/pull/13730.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13730.patch"
+    },
+    "body": "Currently, guile by default tries to compile its thread variant.\r\nHowever, the threaded version can only be compiled if bdw-gc is\r\ncompiled with some threads support. Currently, the default\r\ncompilation of the bdw garbage collector is compiled without any\r\nthread support resulting in a compilation error.\r\n\r\nI have changed the default guile compilation to the non-threaded\r\nversion. I have also added the appropriated options for the bdw-gc\r\ncompilation in case the user prefers the threaded variant.\r\n\r\nWithout the changes this is the error message you get when installing guile:\r\n```\r\n==> Error: ProcessError: Command exited with status 2:\r\n    'make' '-j36'\r\n\r\n9 errors found in build log:\r\n     1602      SNARF  socket.doc\r\n     1603      SNARF  regex-posix.doc\r\n     1604      CCLD     libguile-2.2.la\r\n     1605    .libs/libguile_2.2_la-posix.o: In function `scm_tmpnam':\r\n     1606    /tmp/swadm/spack-stage/spack-stage-guile-2.2.6-odygubqttlo7n4oqigw\r\n             4twn6m5hjheds/spack-src/libguile/posix.c:1601: warning: the use of\r\n              `tmpnam' is dangerous, better use `mkstemp'\r\n     1607      CCLD     guile\r\n  >> 1608    ./.libs/libguile-2.2.so: undefined reference to `GC_unregister_my_\r\n             thread'                                                                                                                                                               \r\n  >> 1609    ./.libs/libguile-2.2.so: undefined reference to `GC_get_suspend_si\r\n             gnal'                                                                                                                                                                 \r\n  >> 1610    ./.libs/libguile-2.2.so: undefined reference to `GC_allow_register\r\n             _threads'                                                                                                                                                             \r\n  >> 1611    ./.libs/libguile-2.2.so: undefined reference to `GC_register_my_th\r\n             read'                                                                                                                                                                 \r\n  >> 1612    collect2: error: ld returned 1 exit status\r\n  >> 1613    make[3]: *** [guile] Error 1\r\n     1614    make[3]: Leaving directory `/tmp/swadm/spack-stage/spack-stage-gui\r\n             le-2.2.6-odygubqttlo7n4oqigw4twn6m5hjheds/spack-src/spack-build/li\r\n             bguile'\r\n  >> 1615    make[2]: *** [all] Error 2\r\n     1616    make[2]: Leaving directory `/tmp/swadm/spack-stage/spack-stage-gui\r\n             le-2.2.6-odygubqttlo7n4oqigw4twn6m5hjheds/spack-src/spack-build/li\r\n             bguile'\r\n  >> 1617    make[1]: *** [all-recursive] Error 1\r\n     1618    make[1]: Leaving directory `/tmp/swadm/spack-stage/spack-stage-gui\r\n             le-2.2.6-odygubqttlo7n4oqigw4twn6m5hjheds/spack-src/spack-build'\r\n  >> 1619    make: *** [all] Error 2\r\n\r\nSee build log for details:\r\n  /tmp/swadm/spack-stage/spack-stage-guile-2.2.6-odygubqttlo7n4oqigw4twn6m5hjheds/spack-build-out.txt\r\n```",
+    "performed_via_github_app": null
+}

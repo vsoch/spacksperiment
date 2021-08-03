@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13194",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13194/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13194/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13194/events",
+    "html_url": "https://github.com/spack/spack/pull/13194",
+    "id": 506035173,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI3MzQ4NzY4",
+    "number": 13194,
+    "title": "Bugfix/alphabetical compiler versions",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-10-11T20:05:10Z",
+    "updated_at": "2019-10-23T06:36:33Z",
+    "closed_at": "2019-10-19T18:21:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13194",
+        "html_url": "https://github.com/spack/spack/pull/13194",
+        "diff_url": "https://github.com/spack/spack/pull/13194.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13194.patch"
+    },
+    "body": "Spack architecture support currently breaks with non-numeric version numbers for compilers. For example\r\n\r\n`spack build-env foo%gcc@bar -- bash`\r\n\r\nraises an error.\r\n\r\nThis PR refactors `llnl/util/cpu` to use Spack version semantics, and refactors Spack version semantics to be in `llnl.util.version` instead of `spack.version`. This is semantically reasonable, as the version semantics module is in no way specific to Spack and could be used for any tool needing to understand version ranges, like for example a tool coordinating optimization flags with compiler versions.",
+    "performed_via_github_app": null
+}

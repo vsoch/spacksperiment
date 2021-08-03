@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13520",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13520/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13520/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13520/events",
+    "html_url": "https://github.com/spack/spack/pull/13520",
+    "id": 515223496,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM0NzE5MDc1",
+    "number": 13520,
+    "title": "Update package saga gis",
+    "user": {
+        "login": "JSquar",
+        "id": 28802727,
+        "node_id": "MDQ6VXNlcjI4ODAyNzI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28802727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JSquar",
+        "html_url": "https://github.com/JSquar",
+        "followers_url": "https://api.github.com/users/JSquar/followers",
+        "following_url": "https://api.github.com/users/JSquar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JSquar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JSquar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JSquar/subscriptions",
+        "organizations_url": "https://api.github.com/users/JSquar/orgs",
+        "repos_url": "https://api.github.com/users/JSquar/repos",
+        "events_url": "https://api.github.com/users/JSquar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JSquar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-31T07:30:46Z",
+    "updated_at": "2019-11-03T23:56:25Z",
+    "closed_at": "2019-11-03T23:26:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13520",
+        "html_url": "https://github.com/spack/spack/pull/13520",
+        "diff_url": "https://github.com/spack/spack/pull/13520.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13520.patch"
+    },
+    "body": "Several improvements of saga-gis package:\r\n1. New version\r\n2. New variants to enable more Saga-GIS tools\r\n3. Enabled python interface\r\n4. Set Saga-GIS env variables to load tools at runtime",
+    "performed_via_github_app": null
+}

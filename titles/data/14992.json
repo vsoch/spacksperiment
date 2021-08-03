@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14992",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14992/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14992/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14992/events",
+    "html_url": "https://github.com/spack/spack/pull/14992",
+    "id": 565368664,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc1NDIxODg1",
+    "number": 14992,
+    "title": "Remove unneeded dependency on gzip for libmng",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-02-14T14:42:27Z",
+    "updated_at": "2020-02-18T12:59:11Z",
+    "closed_at": "2020-02-16T14:30:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14992",
+        "html_url": "https://github.com/spack/spack/pull/14992",
+        "diff_url": "https://github.com/spack/spack/pull/14992.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14992.patch"
+    },
+    "body": "Libmng only needs gzip to compress man files for distribution, so it\r\nbuilds fine without it. The spack\r\ngzip currently fails to compile.\r\n\r\n```\r\nconfig.status: linking /var/folders/fy/x2xtwh1n7fn0_0q2kk29xkv9vvmbqb/T/spack-stage/s3j/spack-stage-gzip-1.10-iatwtuk2l5xgwmuh4pwu5bf27yezpydj/spack-src/GNUmakefile to GNUmakefile\r\nconfig.status: executing depfiles commands\r\n==> Executing phase: 'build'\r\n==> [2020-02-14-09:32:45.502913] 'make' '-j12'\r\nmake: GNUmakefile: Too many levels of symbolic links\r\nmake: stat: GNUmakefile: Too many levels of symbolic links\r\nmake: *** No rule to make target `GNUmakefile'.  Stop.\r\n```",
+    "performed_via_github_app": null
+}

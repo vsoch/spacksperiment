@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16597",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16597/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16597/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16597/events",
+    "html_url": "https://github.com/spack/spack/pull/16597",
+    "id": 616443510,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2NTUyOTE2",
+    "number": 16597,
+    "title": "z3: update python dependency",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-12T07:56:14Z",
+    "updated_at": "2020-05-12T09:15:48Z",
+    "closed_at": "2020-05-12T09:15:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16597",
+        "html_url": "https://github.com/spack/spack/pull/16597",
+        "diff_url": "https://github.com/spack/spack/pull/16597.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16597.patch"
+    },
+    "body": "- [x] `z3` needs a dependency on `py-setuptools`\r\n- [x] `z3` has a run dependency on `python`, so we might as well make building with the python bindings default",
+    "performed_via_github_app": null
+}

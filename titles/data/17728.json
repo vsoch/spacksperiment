@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17728",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17728/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17728/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17728/events",
+    "html_url": "https://github.com/spack/spack/pull/17728",
+    "id": 666830900,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU3NjA3MjQz",
+    "number": 17728,
+    "title": "amrvis: use libquadmath only x86_64 and ppcle.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-28T07:21:02Z",
+    "updated_at": "2020-07-30T02:47:19Z",
+    "closed_at": "2020-07-30T02:47:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17728",
+        "html_url": "https://github.com/spack/spack/pull/17728",
+        "diff_url": "https://github.com/spack/spack/pull/17728.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17728.patch"
+    },
+    "body": "When gcc compiler is used, armvis add libquadmath.\r\nBut libquadmath is enabled only x86_64 and ppc64le.\r\nhttps://gcc.gnu.org/bugzilla/show_bug.cgi?id=85440\r\n\r\nThis PR is removed -lquaddmath when target is not x86_64 or ppc64.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13949",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13949/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13949/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13949/events",
+    "html_url": "https://github.com/spack/spack/pull/13949",
+    "id": 530990520,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ3NTE0ODUx",
+    "number": 13949,
+    "title": "Sanity check missing dependencies",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 23,
+    "created_at": "2019-12-02T09:12:57Z",
+    "updated_at": "2019-12-24T09:08:43Z",
+    "closed_at": "2019-12-19T05:10:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13949",
+        "html_url": "https://github.com/spack/spack/pull/13949",
+        "diff_url": "https://github.com/spack/spack/pull/13949.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13949.patch"
+    },
+    "body": "fixes #1735\r\n\r\nCurrently, there are some packages in the mainline that list dependencies that don't exist.  We should get rid of those or add the missing packages.  To address this, I've added a sanity check that reports non-existing dependencies in `builtin`.\r\n\r\nI tracked this down because it was causing issues with dependency solves in the new concretizer -- we can keep this issue open and keep rebasing it until we sanitize `develop`, but it would be nice to get these resolved soon.\r\n\r\nHere's the current list:\r\n\r\n- [x] cbtf-krell: [mpich2, mvapich] (#14021)\r\n- [x] flann: [latex, gtest] (#14022)\r\n- [x] mrnet: [cti] (#14178)\r\n- [x] polymake: [perl-term-readkey] (#14034)\r\n- [x] pumi: [simmetrix-simmodsuite] (#8730)\r\n- [x] py-abipy: [py-jupyter, py-wxmplot] (#14035, #14036)\r\n- [x] py-brian2: [py-nosetests] (#14037)\r\n- [x] py-cherrypy: [py-zc-lockfile] (#13586)\r\n- [x] py-dateparser: [py-parameterized] (#14016)\r\n- [x] py-graphviz: [py-tox] (#14023, #14024)\r\n- [x] py-htmlgen: [py-asserts] (#14038, #14039)\r\n- [x] py-luigi: [py-test] (#14042)\r\n- [x] py-pbr: [py-testtools, py-hacking, py-testresources, py-fixtures, py-testscenarios, py-stestr, py-testrepository] (#14025, #14026, #14027, #14028, #14029, #14030, #14031, #14032, #14033)\r\n- [x] py-requests-oauthlib: [py-requests-mock] (#14043)\r\n- [x] py-scikit-optimize: [py-test] (#14210)\r\n- [x] py-tatsu: [py-pytest-mypy] (#14041)\r\n- [x] py-theano: [py-parameterized] (#14015, #14016)\r\n- [x] py-torch: [fbgemm, miopen, nnpack] (#14044)\r\n- [x] r-ggraph: [r-tidygraph, r-graphlayouts] (#14045, #14046)\r\n- [x] root: [libcxx, avahi, kerberos, ldap, http, veccore, odbc] (#14203)\r\n- [x] wireshark: [portaudio, adwaita-icon-theme, libsmi, gtkplus3] (#14209)\r\n\r\n- @adamjstewart: some of these are python test dependencies -- I think they're yours and we just need to add them.\r\n- @chissg, @gartung: not sure what to do with the ones on `root`.\r\n- @jgalarowicz: A few of these are yours.  For `cbtf-krell` I'm guessing the dependencies should probably be `mpich` and `mvapich2`, and for `mrnet` I don't know what `cti` is.  Maybe we should remove that?\r\n- @cwsmith: what do you want to do with `simmetrix-simmodsuite`?\r\n- @healther: what do you want to do with `wireshark`?",
+    "performed_via_github_app": null
+}

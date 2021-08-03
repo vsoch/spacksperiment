@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15210",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15210/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15210/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15210/events",
+    "html_url": "https://github.com/spack/spack/pull/15210",
+    "id": 570666326,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc5NjYzMzEw",
+    "number": 15210,
+    "title": "snap-korf: updated package",
+    "user": {
+        "login": "Antenagora",
+        "id": 6022938,
+        "node_id": "MDQ6VXNlcjYwMjI5Mzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6022938?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Antenagora",
+        "html_url": "https://github.com/Antenagora",
+        "followers_url": "https://api.github.com/users/Antenagora/followers",
+        "following_url": "https://api.github.com/users/Antenagora/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Antenagora/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Antenagora/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Antenagora/subscriptions",
+        "organizations_url": "https://api.github.com/users/Antenagora/orgs",
+        "repos_url": "https://api.github.com/users/Antenagora/repos",
+        "events_url": "https://api.github.com/users/Antenagora/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Antenagora/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-02-25T15:49:29Z",
+    "updated_at": "2021-02-19T09:28:58Z",
+    "closed_at": "2021-02-19T09:28:58Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15210",
+        "html_url": "https://github.com/spack/spack/pull/15210",
+        "diff_url": "https://github.com/spack/spack/pull/15210.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15210.patch"
+    },
+    "body": "Snap doesn't compile without this little not beautiful modification as stated here:\r\nhttps://www.biostars.org/p/302712\r\nTo my understanding this is the same patch applied by debian in the snap package.",
+    "performed_via_github_app": null
+}

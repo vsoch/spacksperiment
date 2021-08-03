@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15925",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15925/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15925/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15925/events",
+    "html_url": "https://github.com/spack/spack/pull/15925",
+    "id": 596101548,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwNDYwMDU1",
+    "number": 15925,
+    "title": "ucx: add additional variants",
+    "user": {
+        "login": "carsonwoods",
+        "id": 11012397,
+        "node_id": "MDQ6VXNlcjExMDEyMzk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11012397?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carsonwoods",
+        "html_url": "https://github.com/carsonwoods",
+        "followers_url": "https://api.github.com/users/carsonwoods/followers",
+        "following_url": "https://api.github.com/users/carsonwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carsonwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carsonwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carsonwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/carsonwoods/orgs",
+        "repos_url": "https://api.github.com/users/carsonwoods/repos",
+        "events_url": "https://api.github.com/users/carsonwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carsonwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-07T19:32:28Z",
+    "updated_at": "2020-04-07T20:18:40Z",
+    "closed_at": "2020-04-07T20:18:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15925",
+        "html_url": "https://github.com/spack/spack/pull/15925",
+        "diff_url": "https://github.com/spack/spack/pull/15925.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15925.patch"
+    },
+    "body": "This PR adds the following variants for the UCX package:\r\n\r\n- assertions\r\n- debugging\r\n- logging\r\n- optimizations\r\n- parameter checking\r\n- pic support",
+    "performed_via_github_app": null
+}

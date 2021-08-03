@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16700",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16700/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16700/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16700/events",
+    "html_url": "https://github.com/spack/spack/pull/16700",
+    "id": 620202949,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE5NDk2MTU1",
+    "number": 16700,
+    "title": "IntelPackage: Use 'version_yearlike' in check for libfabrics RPATH.",
+    "user": {
+        "login": "greschd",
+        "id": 5692808,
+        "node_id": "MDQ6VXNlcjU2OTI4MDg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5692808?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/greschd",
+        "html_url": "https://github.com/greschd",
+        "followers_url": "https://api.github.com/users/greschd/followers",
+        "following_url": "https://api.github.com/users/greschd/following{/other_user}",
+        "gists_url": "https://api.github.com/users/greschd/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/greschd/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/greschd/subscriptions",
+        "organizations_url": "https://api.github.com/users/greschd/orgs",
+        "repos_url": "https://api.github.com/users/greschd/repos",
+        "events_url": "https://api.github.com/users/greschd/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/greschd/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-05-18T13:18:50Z",
+    "updated_at": "2021-06-12T17:01:50Z",
+    "closed_at": "2021-06-12T10:02:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16700",
+        "html_url": "https://github.com/spack/spack/pull/16700",
+        "diff_url": "https://github.com/spack/spack/pull/16700.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16700.patch"
+    },
+    "body": "In #15214, the `SPACK_COMPILER_EXTRA_RPATHS` is set to include the `libfabrics` built with Intel MPI.\r\n\r\nWhen using this with `intel-parallel-studio` however, the version check\r\n\r\n```python\r\nif self.version >= ver('2019'):\r\n```\r\n\r\nis always ``False``, because ``self.version`` contains the \"edition\" prefix, e.g. ``cluster.2019.3``. The IntelPackage already has the `version_yearlike` property to deal with this. As such, this can be fixed by simply replacing ``self.version`` with ``self.version_yearlike``.",
+    "performed_via_github_app": null
+}

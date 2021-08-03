@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18241",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18241/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18241/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18241/events",
+    "html_url": "https://github.com/spack/spack/pull/18241",
+    "id": 684848562,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyNjY4Nzgy",
+    "number": 18241,
+    "title": "Update to CCTools 7.1.7",
+    "user": {
+        "login": "btovar",
+        "id": 3081826,
+        "node_id": "MDQ6VXNlcjMwODE4MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3081826?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/btovar",
+        "html_url": "https://github.com/btovar",
+        "followers_url": "https://api.github.com/users/btovar/followers",
+        "following_url": "https://api.github.com/users/btovar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/btovar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/btovar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/btovar/subscriptions",
+        "organizations_url": "https://api.github.com/users/btovar/orgs",
+        "repos_url": "https://api.github.com/users/btovar/repos",
+        "events_url": "https://api.github.com/users/btovar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/btovar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-24T17:41:33Z",
+    "updated_at": "2020-08-25T00:04:09Z",
+    "closed_at": "2020-08-25T00:04:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18241",
+        "html_url": "https://github.com/spack/spack/pull/18241",
+        "diff_url": "https://github.com/spack/spack/pull/18241.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18241.patch"
+    },
+    "body": "This is a bug release with some new features and bug fixes. Among them:\r\n\r\n[Batch] Set number of MPI processes for SLURM. (Ben Tovar)\r\n[General] Use the right signature when overriding gettimeofday.\r\n(Tim Shaffer)\r\n[Resource Monitor] Add context-switch count to final summary.\r\n(Ben Tovar)\r\n[Resource Monitor] Fix kbps to Mbps typo in final summary. (Ben Tovar)\r\n[WorkQueue] Update example apps to python3. (Douglas Thain)",
+    "performed_via_github_app": null
+}

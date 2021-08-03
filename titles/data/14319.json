@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14319",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14319/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14319/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14319/events",
+    "html_url": "https://github.com/spack/spack/pull/14319",
+    "id": 543963627,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4MTc4NTEz",
+    "number": 14319,
+    "title": "tests: improved `spack test` command line options",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-30T18:05:44Z",
+    "updated_at": "2020-01-02T07:30:55Z",
+    "closed_at": "2020-01-02T05:37:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14319",
+        "html_url": "https://github.com/spack/spack/pull/14319",
+        "diff_url": "https://github.com/spack/spack/pull/14319.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14319.patch"
+    },
+    "body": "Previously, `spack test` automatically passed all of its arguments to `pytest -k` if no options were provided, and to `pytest` if they were. `spack test -l` also provided a list of test filenames, but they didn't really let you completely narrow down which tests you wanted to run.\r\n\r\nInstead of trying to do our own weird thing, this passes `spack test` args directly to `pytest`, and omits the implicit `-k`.  This means we can now run, e.g.:\r\n\r\n```console\r\n$ spack test spec_syntax.py::TestSpecSyntax::test_ambiguous\r\n```\r\n\r\nThis wasn't possible before, because we'd pass the fully qualified name to `pytest -k` and get an error.\r\n\r\nBecause `pytest` doesn't have the greatest ability to list tests, I've tweaked the `-l`/`--list`, `-L`/`--list-long`, and `-N`/`--list-names` options to `spack test` so that they help you understand the names better.  you can combine these options with `-k` or other arguments to do pretty powerful searches.\r\n\r\nThis one makes it easy to get a list of names so you can run tests in different orders (something I find useful for debugging `pytest` issues):\r\n\r\n```console\r\n$ spack test --list-names -k \"spec and concretize\"\r\ncmd/env.py::test_concretize_user_specs_together\r\nconcretize.py::TestConcretize::test_conflicts_in_spec\r\nconcretize.py::TestConcretize::test_find_spec_children\r\nconcretize.py::TestConcretize::test_find_spec_none\r\nconcretize.py::TestConcretize::test_find_spec_parents\r\nconcretize.py::TestConcretize::test_find_spec_self\r\nconcretize.py::TestConcretize::test_find_spec_sibling\r\nconcretize.py::TestConcretize::test_no_matching_compiler_specs\r\nconcretize.py::TestConcretize::test_simultaneous_concretization_of_specs\r\nspec_dag.py::TestSpecDag::test_concretize_deptypes\r\nspec_dag.py::TestSpecDag::test_copy_concretized\r\n```\r\n\r\nYou can combine any list option with keywords:\r\n\r\n```console\r\n$ spack test --list -k microarchitecture\r\nllnl/util/cpu.py  modules/lmod.py\r\n```\r\n\r\n```console\r\n$ spack test --list-long -k microarchitecture\r\nllnl/util/cpu.py::\r\n    test_generic_microarchitecture\r\n\r\nmodules/lmod.py::TestLmod::\r\n    test_only_generic_microarchitectures_in_root\r\n```\r\n\r\nOr just list specific files:\r\n\r\n```console\r\n$ spack test --list-long cmd/test.py\r\ncmd/test.py::\r\n    test_list                       test_list_names_with_pytest_arg\r\n    test_list_long                  test_list_with_keywords\r\n    test_list_long_with_pytest_arg  test_list_with_pytest_arg\r\n    test_list_names\r\n```\r\n\r\nHopefully this stuff will help with debugging test issues.\r\n\r\n- [x] make `spack test` send args directly to `pytest` instead of trying  to do fancy things.\r\n- [x] rework `--list`, `--list-long`, and add `--list-names` to make  searching for tests easier.\r\n- [x] make it possible to mix Spack's list args with `pytest` args  (they're just fancy parsing around `pytest --collect-only`)\r\n- [x] add docs\r\n- [x] add tests",
+    "performed_via_github_app": null
+}

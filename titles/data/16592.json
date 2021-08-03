@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16592",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16592/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16592/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16592/events",
+    "html_url": "https://github.com/spack/spack/pull/16592",
+    "id": 616224770,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE2Mzc4MDgx",
+    "number": 16592,
+    "title": "python: add -fwrapv to cflags for python@3.8.0: %intel",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-11T22:18:32Z",
+    "updated_at": "2020-05-11T23:03:28Z",
+    "closed_at": "2020-05-11T23:02:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16592",
+        "html_url": "https://github.com/spack/spack/pull/16592",
+        "diff_url": "https://github.com/spack/spack/pull/16592.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16592.patch"
+    },
+    "body": "Fixes #16586\r\n\r\n`python@3.8.0: %intel` requires `-fwrapv` in the cflags.\r\n\r\nThis PR adds the flag using the `flag_handler` interface without changing any other behavior of the package.\r\n\r\nThis version check should eventually have an upper bound as python plans to incorporate this into their build system. That PR is open.\r\n\r\nsources:\r\nhttps://bugs.python.org/issue40223\r\nhttps://bugs.python.org/pull_request18905\r\nhttps://software.intel.com/en-us/forums/intel-c-compiler/topic/849064",
+    "performed_via_github_app": null
+}

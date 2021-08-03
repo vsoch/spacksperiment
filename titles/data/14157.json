@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14157",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14157/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14157/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14157/events",
+    "html_url": "https://github.com/spack/spack/pull/14157",
+    "id": 537846858,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUzMTI5MTMy",
+    "number": 14157,
+    "title": "bugfix: `pgcc -V` returns 2 on power machines",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-12-14T01:36:38Z",
+    "updated_at": "2019-12-19T18:13:13Z",
+    "closed_at": "2019-12-18T19:38:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14157",
+        "html_url": "https://github.com/spack/spack/pull/14157",
+        "diff_url": "https://github.com/spack/spack/pull/14157.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14157.patch"
+    },
+    "body": "`pgcc -V` was failing on `ppc64` machines because it returns 2 (despite correctly printing version information).  On `x86_64` machines the same command returns 0 and doesn't cause an error.\r\n\r\n- [x] Ignore return value of 2 for `pgcc` when doing a version check, so that the version check works on `power9`\r\n- [x] relax the version check for custom compilers introduced in #13222 so that we fall back on the verbatim compiler version if the version check fails.\r\n\r\n@becker33 @alalazo FYI",
+    "performed_via_github_app": null
+}

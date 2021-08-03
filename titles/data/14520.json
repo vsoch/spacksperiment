@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14520",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14520/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14520/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14520/events",
+    "html_url": "https://github.com/spack/spack/pull/14520",
+    "id": 550390123,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzMzA0ODUy",
+    "number": 14520,
+    "title": "Update and exetend VecGeom",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2020-01-15T19:41:48Z",
+    "updated_at": "2020-03-17T14:00:51Z",
+    "closed_at": "2020-03-17T10:18:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14520",
+        "html_url": "https://github.com/spack/spack/pull/14520",
+        "diff_url": "https://github.com/spack/spack/pull/14520.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14520.patch"
+    },
+    "body": "This PR has https://github.com/spack/spack/pull/14376 as a prerequisite; changes to spack core will be merged in that one and then I'll rebase this branch.\r\n\r\n---\r\n\r\n- Add a new package VecCore as a Spack-based dependency rather than having VecGeom's cmake auto-download and install\r\n- Prevent auto-downloading of unused test data during VecGeom installation\r\n- Use target microarchitecture instead of variant to determine instruction set\r\n- Add shared library and CUDA support to VecGeom\r\n- Add GDML and ROOT support to VecGeom\r\n- Update a ROOT dependency (Davix) because of a version compatibility issue declared by ROOT",
+    "performed_via_github_app": null
+}

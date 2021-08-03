@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16484",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16484/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16484/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16484/events",
+    "html_url": "https://github.com/spack/spack/pull/16484",
+    "id": 613214888,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE0MDEwODc1",
+    "number": 16484,
+    "title": "Add PGI version 19.7 and export OMPI variables",
+    "user": {
+        "login": "asmaahassan90",
+        "id": 31959389,
+        "node_id": "MDQ6VXNlcjMxOTU5Mzg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31959389?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/asmaahassan90",
+        "html_url": "https://github.com/asmaahassan90",
+        "followers_url": "https://api.github.com/users/asmaahassan90/followers",
+        "following_url": "https://api.github.com/users/asmaahassan90/following{/other_user}",
+        "gists_url": "https://api.github.com/users/asmaahassan90/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/asmaahassan90/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/asmaahassan90/subscriptions",
+        "organizations_url": "https://api.github.com/users/asmaahassan90/orgs",
+        "repos_url": "https://api.github.com/users/asmaahassan90/repos",
+        "events_url": "https://api.github.com/users/asmaahassan90/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/asmaahassan90/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-06T10:31:02Z",
+    "updated_at": "2020-05-07T13:38:06Z",
+    "closed_at": "2020-05-07T13:38:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16484",
+        "html_url": "https://github.com/spack/spack/pull/16484",
+        "diff_url": "https://github.com/spack/spack/pull/16484.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16484.patch"
+    },
+    "body": "I encountered loads of issues trying to install openmpi with PGI. This might help.\r\nI considered adding openmpi%pgi in packages.yaml and provide its path in pgi prefix. Though I'm still looking for a way to make it generic and not hardcoded, use something like `spec.pgi.prefix` but I'm not sure if it's a valid syntax.",
+    "performed_via_github_app": null
+}

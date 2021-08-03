@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15135",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15135/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15135/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15135/events",
+    "html_url": "https://github.com/spack/spack/pull/15135",
+    "id": 568563851,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc3OTY3MTU2",
+    "number": 15135,
+    "title": "QE+QMCPACK Converter Update February 2020",
+    "user": {
+        "login": "naromero77",
+        "id": 7633854,
+        "node_id": "MDQ6VXNlcjc2MzM4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7633854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/naromero77",
+        "html_url": "https://github.com/naromero77",
+        "followers_url": "https://api.github.com/users/naromero77/followers",
+        "following_url": "https://api.github.com/users/naromero77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/naromero77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/naromero77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/naromero77/subscriptions",
+        "organizations_url": "https://api.github.com/users/naromero77/orgs",
+        "repos_url": "https://api.github.com/users/naromero77/repos",
+        "events_url": "https://api.github.com/users/naromero77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/naromero77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-02-20T20:51:43Z",
+    "updated_at": "2020-02-21T23:16:31Z",
+    "closed_at": "2020-02-21T18:11:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15135",
+        "html_url": "https://github.com/spack/spack/pull/15135",
+        "diff_url": "https://github.com/spack/spack/pull/15135.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15135.patch"
+    },
+    "body": "In order to support the QMCPACK dependency patching of QE, a new QE variant is needed that suppressed the internal patching of the Spack QE package.\r\n",
+    "performed_via_github_app": null
+}

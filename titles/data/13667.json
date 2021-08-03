@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13667",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13667/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13667/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13667/events",
+    "html_url": "https://github.com/spack/spack/pull/13667",
+    "id": 520655865,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5MTg5NzMz",
+    "number": 13667,
+    "title": "Update default PyTorch variants",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-10T20:53:11Z",
+    "updated_at": "2019-11-10T22:46:08Z",
+    "closed_at": "2019-11-10T22:46:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13667",
+        "html_url": "https://github.com/spack/spack/pull/13667",
+        "diff_url": "https://github.com/spack/spack/pull/13667.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13667.patch"
+    },
+    "body": "In the past, I wasn't really sure which variants should default to True or False. It looks like all of the deep learning AMI's on AWS come \"configured with NVIDIA CUDA, cuDNN, NCCL, Intel MKL-DNN\", so I decided those are likely the most important features.\r\n\r\n* CUDA - needed to run on a GPU\r\n* cuDNN - GPU-accelerated library of primitives for deep neural networks\r\n* NCCL - needed for distributed GPU training\r\n* MKL-DNN - optimized for Intel hardware",
+    "performed_via_github_app": null
+}

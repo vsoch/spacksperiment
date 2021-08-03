@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13908",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13908/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13908/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13908/events",
+    "html_url": "https://github.com/spack/spack/pull/13908",
+    "id": 529099432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ2MDM4MDI0",
+    "number": 13908,
+    "title": "Bugfix/mirror symlinks",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-11-27T03:55:53Z",
+    "updated_at": "2019-12-13T07:38:52Z",
+    "closed_at": "2019-12-13T07:38:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13908",
+        "html_url": "https://github.com/spack/spack/pull/13908",
+        "diff_url": "https://github.com/spack/spack/pull/13908.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13908.patch"
+    },
+    "body": "(update 12/4: this PR should be rebased the commits apply fixes for thematically-related but functionally-separate problems, and I intend that the commits are properly-formatted and organized for that)\r\n\r\nFixes #13722 (or rather addresses the parts of it that were not addressed by #13789)\r\nFixes #14067\r\nCloses #14093\r\n\r\n* Don't try to fetch `BundlePackage`s\r\n* Don't fetch patches if they were already added to the mirror\r\n* #13789 started calculating a relative path, relative to another relative path. This can fail based on the working directory, so the intended reference point for the relative path is created explicitly as the absolute path\r\n* Allow repeated invocations of `spack mirror create` on the same mirror directory (in develop this currently reports errors)",
+    "performed_via_github_app": null
+}

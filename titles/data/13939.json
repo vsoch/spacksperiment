@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13939",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13939/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13939/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13939/events",
+    "html_url": "https://github.com/spack/spack/pull/13939",
+    "id": 530574103,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ3MjIxMTA5",
+    "number": 13939,
+    "title": "Apply URLFetchStrategy to ftp:// and ftps:// url schemes",
+    "user": {
+        "login": "awacha",
+        "id": 90952,
+        "node_id": "MDQ6VXNlcjkwOTUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/90952?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/awacha",
+        "html_url": "https://github.com/awacha",
+        "followers_url": "https://api.github.com/users/awacha/followers",
+        "following_url": "https://api.github.com/users/awacha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/awacha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/awacha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/awacha/subscriptions",
+        "organizations_url": "https://api.github.com/users/awacha/orgs",
+        "repos_url": "https://api.github.com/users/awacha/repos",
+        "events_url": "https://api.github.com/users/awacha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/awacha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-11-30T12:39:17Z",
+    "updated_at": "2019-12-09T17:18:09Z",
+    "closed_at": "2019-12-09T17:18:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13939",
+        "html_url": "https://github.com/spack/spack/pull/13939",
+        "diff_url": "https://github.com/spack/spack/pull/13939.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13939.patch"
+    },
+    "body": "Dear Spack developers,\r\n\r\nthis is just a small fix which enables sources with ftp:// urls to be downloaded. I hope that it helps.\r\n\r\nKind regards,\r\n\r\nAndras",
+    "performed_via_github_app": null
+}

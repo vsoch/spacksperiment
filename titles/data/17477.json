@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17477",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17477/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17477/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17477/events",
+    "html_url": "https://github.com/spack/spack/pull/17477",
+    "id": 655489285,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3OTYzNjcw",
+    "number": 17477,
+    "title": "Magics fix and update",
+    "user": {
+        "login": "JSquar",
+        "id": 28802727,
+        "node_id": "MDQ6VXNlcjI4ODAyNzI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28802727?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JSquar",
+        "html_url": "https://github.com/JSquar",
+        "followers_url": "https://api.github.com/users/JSquar/followers",
+        "following_url": "https://api.github.com/users/JSquar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JSquar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JSquar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JSquar/subscriptions",
+        "organizations_url": "https://api.github.com/users/JSquar/orgs",
+        "repos_url": "https://api.github.com/users/JSquar/repos",
+        "events_url": "https://api.github.com/users/JSquar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JSquar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-12T22:33:39Z",
+    "updated_at": "2020-07-14T15:01:57Z",
+    "closed_at": "2020-07-13T02:20:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17477",
+        "html_url": "https://github.com/spack/spack/pull/17477",
+        "diff_url": "https://github.com/spack/spack/pull/17477.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17477.patch"
+    },
+    "body": "- Adds new versions of magics\r\n- Since magics@4.3, proj@6 is required (see also [source](https://github.com/OSGeo/PROJ/wiki/proj.h-adoption-status) and https://github.com/spack/spack/pull/11763). \r\n- In addition it seems that @4.1.0:4.3.1' requires netcdf (legacy interface) even though it shouldn't - even if `-DENABLE_NETCDF=OFF` is set, building magics still requires netcdf. This also fixes https://github.com/spack/spack/issues/14182 (or rather bypasses the problem).",
+    "performed_via_github_app": null
+}

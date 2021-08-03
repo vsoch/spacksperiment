@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14604",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14604/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14604/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14604/events",
+    "html_url": "https://github.com/spack/spack/pull/14604",
+    "id": 553906538,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY2MTU1NDAx",
+    "number": 14604,
+    "title": "Package bugfix: z3+python",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-23T02:41:47Z",
+    "updated_at": "2020-06-30T23:38:53Z",
+    "closed_at": "2020-01-25T05:16:49Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14604",
+        "html_url": "https://github.com/spack/spack/pull/14604",
+        "diff_url": "https://github.com/spack/spack/pull/14604.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14604.patch"
+    },
+    "body": "Configure z3+python to build the python libraries inside its own prefix and extend python as other packages do\r\n\r\nPreviously, z3 was installing it's python API into the python install prefix, which breaks Spack's fundamental model of separating installs into separate prefixes.",
+    "performed_via_github_app": null
+}

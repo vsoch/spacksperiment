@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18230",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18230/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18230/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18230/events",
+    "html_url": "https://github.com/spack/spack/pull/18230",
+    "id": 684400582,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyMjkyNDEz",
+    "number": 18230,
+    "title": "update to latest drm which uses meson",
+    "user": {
+        "login": "joequant",
+        "id": 2908185,
+        "node_id": "MDQ6VXNlcjI5MDgxODU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2908185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joequant",
+        "html_url": "https://github.com/joequant",
+        "followers_url": "https://api.github.com/users/joequant/followers",
+        "following_url": "https://api.github.com/users/joequant/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joequant/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joequant/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joequant/subscriptions",
+        "organizations_url": "https://api.github.com/users/joequant/orgs",
+        "repos_url": "https://api.github.com/users/joequant/repos",
+        "events_url": "https://api.github.com/users/joequant/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joequant/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-08-24T06:31:58Z",
+    "updated_at": "2021-06-12T10:39:16Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18230",
+        "html_url": "https://github.com/spack/spack/pull/18230",
+        "diff_url": "https://github.com/spack/spack/pull/18230.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18230.patch"
+    },
+    "body": "This is a patch that updates freeglut to a version that works with gcc10.  The build system has changed to use meson so I'm not sure how to make things backward compatible when the build system changes",
+    "performed_via_github_app": null
+}

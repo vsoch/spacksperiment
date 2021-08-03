@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15557",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15557/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15557/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15557/events",
+    "html_url": "https://github.com/spack/spack/pull/15557",
+    "id": 584054066,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkwNzA3OTEy",
+    "number": 15557,
+    "title": "Split: Fabtest/libfabric",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-18T23:04:58Z",
+    "updated_at": "2020-03-23T10:18:02Z",
+    "closed_at": "2020-03-19T01:04:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15557",
+        "html_url": "https://github.com/spack/spack/pull/15557",
+        "diff_url": "https://github.com/spack/spack/pull/15557.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15557.patch"
+    },
+    "body": "Fabtests provides runtime analysis tools and examples of libfabric.\r\n\r\nAs with other projects that are [tightly version-bound](https://github.com/ofiwg/libfabric/blob/33ea19fd66119b8218dc50678f240d44084c2690/.travis.yml#L110-L118), e.g. `py-adios` and `adios`, the fact that releases stem from the same repo does not imply they should be the same package.\r\n\r\nRemove resources, which [complicate the libfabric build](https://github.com/spack/spack/issues/15244), and update the fabtests package accordingly.\r\n\r\nSee https://github.com/spack/spack/pull/15405#issuecomment-600362176\r\nSee https://github.com/spack/spack/pull/15405#issuecomment-600501395\r\nRe.: #15244 #15405 #15440\r\n\r\nCC: @LDAmorim @sethrj @carns @soumagne @ChristianTackeGSI please confirm this works for you. Be aware that `fabtests` are probably still failing on OSX, which is an upstream issue, but libfabric should now install fine again on OSX.\r\n\r\nCCing also @baberlevi as he previously edited these files, too.",
+    "performed_via_github_app": null
+}

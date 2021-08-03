@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15993",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15993/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15993/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15993/events",
+    "html_url": "https://github.com/spack/spack/pull/15993",
+    "id": 597994466,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAxOTkwNzYz",
+    "number": 15993,
+    "title": "hdf: Add option to link against libtirpc package",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-10T17:10:50Z",
+    "updated_at": "2020-04-14T21:21:25Z",
+    "closed_at": "2020-04-10T18:23:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15993",
+        "html_url": "https://github.com/spack/spack/pull/15993",
+        "diff_url": "https://github.com/spack/spack/pull/15993.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15993.patch"
+    },
+    "body": "This adds a boolean 'libtirpc' variant to the hdf package.\r\nDefault is false, which will reproduce previous behavior (which\r\nwas to rely either on system xdr headers/library, or have hdf use\r\nit's builtin xdr lib/headers (which are only for 32 bit))\r\n\r\nIf true, a dependency is added on 'libtirpc', and the LIBS and\r\nCPPFLAGS are updated in the configure command to find the libtirpc\r\nlibrary and xdr.h header.\r\n\r\nThis is needed as RHEL8 (and presumably other distros have or will be)\r\nremoved xdr.h from glib-headers package,which was breaking the previous\r\nbehavior of using system xdr headers.",
+    "performed_via_github_app": null
+}

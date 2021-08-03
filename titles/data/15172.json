@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15172",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15172/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15172/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15172/events",
+    "html_url": "https://github.com/spack/spack/pull/15172",
+    "id": 569501832,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc4NzEwNDYw",
+    "number": 15172,
+    "title": "Fix silex build ",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-23T14:16:15Z",
+    "updated_at": "2020-03-17T14:00:49Z",
+    "closed_at": "2020-02-23T16:45:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15172",
+        "html_url": "https://github.com/spack/spack/pull/15172",
+        "diff_url": "https://github.com/spack/spack/pull/15172.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15172.patch"
+    },
+    "body": "I don't think `silo+silex` has ever compiled correctly before now. With this fix I can successfully build on my mac (and so it's even more likely to build on windows).\r\n\r\n- Restrict to QT4\r\n- Specify QT libs so `autoconf` doesn't default to choosing the alphabetical first library (libqt3support)\r\n- Specify x11 lib and includes\r\n- Add another general missing dependency on readline\r\n\r\nFixes https://github.com/spack/spack/issues/5154",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14439",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14439/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14439/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14439/events",
+    "html_url": "https://github.com/spack/spack/pull/14439",
+    "id": 547311369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYwODIyMjc2",
+    "number": 14439,
+    "title": "r-mass: Add version '7.3-51.5' and fix checksum.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-09T07:55:51Z",
+    "updated_at": "2020-01-14T04:42:11Z",
+    "closed_at": "2020-01-14T03:06:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14439",
+        "html_url": "https://github.com/spack/spack/pull/14439",
+        "diff_url": "https://github.com/spack/spack/pull/14439.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14439.patch"
+    },
+    "body": "Added new version '7.3-51.5', and fix checksum of '7.3-51.4'.\r\nPackage of '7.3-51.4' was moved to archive directory, and was modified following points.\r\n```\r\n[usr@apollo13 r-mass]$ diff -ur MASS MASS_new\r\ndiff -ur MASS/DESCRIPTION MASS_new/DESCRIPTION\r\n--- MASS/DESCRIPTION    2019-04-26 22:18:59.000000000 +0900\r\n+++ MASS_new/DESCRIPTION        2019-03-31 16:55:05.000000000 +0900\r\n@@ -33,4 +33,4 @@\r\n   David Firth [ctb]\r\n Maintainer: Brian Ripley <ripley@stats.ox.ac.uk>\r\n Repository: CRAN\r\n-Date/Publication: 2019-04-26 13:18:59 UTC\r\n+Date/Publication: 2019-03-31 07:55:05 UTC\r\ndiff -ur MASS/MD5 MASS_new/MD5\r\n--- MASS/MD5    2019-04-26 22:18:59.000000000 +0900\r\n+++ MASS_new/MD5        2019-03-31 16:55:05.000000000 +0900\r\n@@ -1,4 +1,4 @@\r\n-a2dbb5e4e548578e5d6fce1c6683d531 *DESCRIPTION\r\n+cd846d9af9038c65eb2b8bde3fa0952f *DESCRIPTION\r\n 35aff05a505ecf7e81e0473767794ca9 *INDEX\r\n e0d1ab11f24f7e3ff569541429d65825 *LICENCE.note\r\n 0ac7b30ad35a4c19ea69d76a6a366b02 *NAMESPACE\r\n```",
+    "performed_via_github_app": null
+}

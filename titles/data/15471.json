@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15471",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15471/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15471/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15471/events",
+    "html_url": "https://github.com/spack/spack/pull/15471",
+    "id": 580150994,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg3NDE3MDA5",
+    "number": 15471,
+    "title": "Previous qt package file changes broke the openspeedshop gui build.  ",
+    "user": {
+        "login": "jgalarowicz",
+        "id": 630197,
+        "node_id": "MDQ6VXNlcjYzMDE5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/630197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jgalarowicz",
+        "html_url": "https://github.com/jgalarowicz",
+        "followers_url": "https://api.github.com/users/jgalarowicz/followers",
+        "following_url": "https://api.github.com/users/jgalarowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jgalarowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jgalarowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jgalarowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/jgalarowicz/orgs",
+        "repos_url": "https://api.github.com/users/jgalarowicz/repos",
+        "events_url": "https://api.github.com/users/jgalarowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jgalarowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-12T18:50:29Z",
+    "updated_at": "2020-03-18T13:45:18Z",
+    "closed_at": "2020-03-18T13:45:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15471",
+        "html_url": "https://github.com/spack/spack/pull/15471",
+        "diff_url": "https://github.com/spack/spack/pull/15471.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15471.patch"
+    },
+    "body": "This puts back the changes that caused the breakage.\r\nAlso add depends_on for libSM for the qt 3 build.  On some platforms the installed libSM is out of sync with libuuid causing build link errors.\r\n\r\nChange the broke build:\r\n```\r\n@@ -149,7 +134,7 @@ class Qt(Package):\r\n     depends_on(\"libpng@1.2.57\", when='@3')\r\n     depends_on(\"pcre+multibyte\", when='@5.0:5.8')\r\n     depends_on(\"inputproto\", when='@:5.8')\r\n-    depends_on(\"openssl@:1.0.999\", when='@:5.9+ssl~krellpatch')\r\n+    depends_on(\"openssl@:1.0.999\", when='@:5.9+ssl')\r\n```",
+    "performed_via_github_app": null
+}

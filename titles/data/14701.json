@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14701",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14701/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14701/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14701/events",
+    "html_url": "https://github.com/spack/spack/pull/14701",
+    "id": 557888321,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY5MzkwNTcz",
+    "number": 14701,
+    "title": "`spack -V` is more descriptive for dev branches",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-01-31T03:21:12Z",
+    "updated_at": "2020-01-31T20:00:07Z",
+    "closed_at": "2020-01-31T19:59:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14701",
+        "html_url": "https://github.com/spack/spack/pull/14701",
+        "diff_url": "https://github.com/spack/spack/pull/14701.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14701.patch"
+    },
+    "body": "Closes #8119.\r\n\r\n`spack -V` previously always returned the version of spack from `spack.spack_version`.  This gives us a general idea of what version users are on, but if they're on `develop` or on some branch, we have to ask more questions.\r\n\r\nThis PR makes `spack -V` check whether this instance of Spack is a git repository, and if it is, it appends useful information from `git describe --tags` to the version.  Specifically, it adds:\r\n\r\n  - number of commits since the last release tag\r\n  - abbreviated (but unique) commit hash\r\n\r\nSo, if you're on `develop` you might get something like this:\r\n\r\n```console\r\n$ spack -V\r\n0.13.3-912-3519a1762\r\n```\r\n\r\nThis means you're on commit 3519a1762, which is 912 commits ahead of the 0.13.3 release.\r\n\r\nIf you are on a release branch, or if you are using a tarball of Spack,\r\nyou'll get the usual `spack.spack_version`:\r\n\r\n```console\r\n$ spack -V\r\n0.13.3\r\n```\r\n\r\nThis should help when asking users what version they are on, since a lot\r\nof people use the `develop` branch.",
+    "performed_via_github_app": null
+}

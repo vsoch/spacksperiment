@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17377",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17377/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17377/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17377/events",
+    "html_url": "https://github.com/spack/spack/pull/17377",
+    "id": 650856099,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ0MjU5NzUw",
+    "number": 17377,
+    "title": "Document Spack's release workflow and remove master branch",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1483219753,
+            "node_id": "MDU6TGFiZWwxNDgzMjE5NzUz",
+            "url": "https://api.github.com/repos/spack/spack/labels/actions",
+            "name": "actions",
+            "color": "a1bce0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-07-04T08:59:59Z",
+    "updated_at": "2020-07-07T07:13:17Z",
+    "closed_at": "2020-07-06T18:39:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17377",
+        "html_url": "https://github.com/spack/spack/pull/17377",
+        "diff_url": "https://github.com/spack/spack/pull/17377.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17377.patch"
+    },
+    "body": "We have a release workflow, but it isn't documented anywhere.  This PR fixes that.\r\n\r\nWhile I was at it, I also removed references to the `master` branch from Spack.  We never use `master`, and every release series has its own `releases/vX.Y` branch that we advise users to check out.  Point releases may be non-chronological (e.g., 0.14.3 may come out after 0.15.0) so it doesn't make sense to keep a single stable branch.\r\n\r\nI also reworked the PTY support to not use `master` terminology.  It now uses `controller` / `child` to describe how the PTYs function.\r\n\r\nOnce this PR is merged, we can delete the `master` branch from Spack.\r\n\r\n- [x] Mention releases and stable release branches in `README.md`\r\n- [x] Document Spack's releases process and branch structure\r\n- [x] Step-by-step guide for making a major release\r\n- [x] Step-by-step guide for making a point release\r\n- [x] Document Spack's releases process and branch structure\r\n- [x] Change `master`/`child` to `controller`/`minion` in the PTY code\r\n- [x] Removes references to the `master` branch from Travis and GitHub Actions ",
+    "performed_via_github_app": null
+}

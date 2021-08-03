@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15788",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15788/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15788/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15788/events",
+    "html_url": "https://github.com/spack/spack/pull/15788",
+    "id": 591398967,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk2NTc4MTE0",
+    "number": 15788,
+    "title": "Minor LLVM libomptarget fixes",
+    "user": {
+        "login": "naromero77",
+        "id": 7633854,
+        "node_id": "MDQ6VXNlcjc2MzM4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7633854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/naromero77",
+        "html_url": "https://github.com/naromero77",
+        "followers_url": "https://api.github.com/users/naromero77/followers",
+        "following_url": "https://api.github.com/users/naromero77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/naromero77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/naromero77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/naromero77/subscriptions",
+        "organizations_url": "https://api.github.com/users/naromero77/orgs",
+        "repos_url": "https://api.github.com/users/naromero77/repos",
+        "events_url": "https://api.github.com/users/naromero77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/naromero77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-31T20:21:29Z",
+    "updated_at": "2020-04-18T03:30:20Z",
+    "closed_at": "2020-04-01T17:28:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15788",
+        "html_url": "https://github.com/spack/spack/pull/15788",
+        "diff_url": "https://github.com/spack/spack/pull/15788.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15788.patch"
+    },
+    "body": "Main change is that `libelf` and `libffi` libraries are not a hard dependency for CPU-only builds. Also, `flang` was previously removed and then appeared again -- a regression that occured in the previous PR? FYI: Legacy flang lives in its own Spack package and f18 has not been upstreamed into llvm yet, but we are getting really close.\r\n\r\n@trws \r\n\r\n",
+    "performed_via_github_app": null
+}

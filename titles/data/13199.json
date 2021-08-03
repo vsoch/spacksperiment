@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13199",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13199/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13199/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13199/events",
+    "html_url": "https://github.com/spack/spack/pull/13199",
+    "id": 506087617,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI3MzkxNjI4",
+    "number": 13199,
+    "title": "Flux v0.11.1 - v0.11.3",
+    "user": {
+        "login": "SteVwonder",
+        "id": 874707,
+        "node_id": "MDQ6VXNlcjg3NDcwNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/874707?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SteVwonder",
+        "html_url": "https://github.com/SteVwonder",
+        "followers_url": "https://api.github.com/users/SteVwonder/followers",
+        "following_url": "https://api.github.com/users/SteVwonder/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SteVwonder/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SteVwonder/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SteVwonder/subscriptions",
+        "organizations_url": "https://api.github.com/users/SteVwonder/orgs",
+        "repos_url": "https://api.github.com/users/SteVwonder/repos",
+        "events_url": "https://api.github.com/users/SteVwonder/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SteVwonder/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-10-11T22:49:52Z",
+    "updated_at": "2019-11-04T19:23:34Z",
+    "closed_at": "2019-11-04T15:58:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13199",
+        "html_url": "https://github.com/spack/spack/pull/13199",
+        "diff_url": "https://github.com/spack/spack/pull/13199.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13199.patch"
+    },
+    "body": "Support flux-core versions v0.11.1 to v0.11.3 (and associated flux-sched versions).  \r\n\r\nEncode the C4 repo model in the `url_for_version` function to support future patch release (and minor versions once it passes v1.0).",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18116",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18116/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18116/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18116/events",
+    "html_url": "https://github.com/spack/spack/pull/18116",
+    "id": 680489773,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5MDM4NDg2",
+    "number": 18116,
+    "title": "detatch binutils usage from static stage1 libs in gcc variants",
+    "user": {
+        "login": "marcmengel",
+        "id": 254807,
+        "node_id": "MDQ6VXNlcjI1NDgwNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/254807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marcmengel",
+        "html_url": "https://github.com/marcmengel",
+        "followers_url": "https://api.github.com/users/marcmengel/followers",
+        "following_url": "https://api.github.com/users/marcmengel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marcmengel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marcmengel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marcmengel/subscriptions",
+        "organizations_url": "https://api.github.com/users/marcmengel/orgs",
+        "repos_url": "https://api.github.com/users/marcmengel/repos",
+        "events_url": "https://api.github.com/users/marcmengel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marcmengel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-17T19:57:24Z",
+    "updated_at": "2020-08-20T15:06:23Z",
+    "closed_at": "2020-08-20T15:06:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18116",
+        "html_url": "https://github.com/spack/spack/pull/18116",
+        "diff_url": "https://github.com/spack/spack/pull/18116.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18116.patch"
+    },
+    "body": "The current gcc recipe convolves using a Spack-built binutils with  several unrelated flags about using a\r\nstatic libstdc++ and libstdc in stage1 of the bootstrap.   This patch makes a separate variant (+static_stage1) \r\nfor those static bootstrap flags, and makes +binutils just specify an alternate \"ld\" and \"as\" from the specified\r\nbinutils.\r\n\r\n",
+    "performed_via_github_app": null
+}

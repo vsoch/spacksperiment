@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16018",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16018/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16018/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16018/events",
+    "html_url": "https://github.com/spack/spack/pull/16018",
+    "id": 598649214,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAyNDU0NTU1",
+    "number": 16018,
+    "title": "py-sacremoses: add new version",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-13T03:32:52Z",
+    "updated_at": "2020-04-13T04:03:21Z",
+    "closed_at": "2020-04-13T04:03:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16018",
+        "html_url": "https://github.com/spack/spack/pull/16018",
+        "diff_url": "https://github.com/spack/spack/pull/16018.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16018.patch"
+    },
+    "body": "I just added this package yesterday and reported a strange build warning at https://github.com/alvations/sacremoses/issues/91. A new release contains a fix, so I figure there's no point in keeping the old release in the package.\r\n\r\nSuccessfully builds on macOS 10.15.4 with Clang 11.0.3 and Python 3.7.6.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15075",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15075/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15075/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15075/events",
+    "html_url": "https://github.com/spack/spack/pull/15075",
+    "id": 567642198,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc3MjI5MjI2",
+    "number": 15075,
+    "title": "Mark binutils-related conflicts",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-02-19T15:24:17Z",
+    "updated_at": "2020-03-17T14:00:47Z",
+    "closed_at": "2020-02-20T18:00:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15075",
+        "html_url": "https://github.com/spack/spack/pull/15075",
+        "diff_url": "https://github.com/spack/spack/pull/15075.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15075.patch"
+    },
+    "body": "When binutils builds on macOS, it omits `ld` and other key components. Additionally, `gcc+binutils %clang` sends invalid arguments to the linker since it assumes it's being built with GCC. This MR:\r\n- marks `binutils+gold` as conflicting with `platform=darwin` since `ld.gold` doesn't actually get built in this case;\r\n- marks `gcc+binutils` on darwin as well, for the same reasons\r\n- marks `gcc+binutils+nvptx` as conflicting since `+binutils` requires bootstrapping and `+nvptx` explicitly disables it.\r\n\r\n## Configure errors when building with %clang\r\n```\r\nconfigure: error: C compiler cannot create executables\r\nSee `config.log' for more details.\r\nchecking for C compiler default output file name... checking for suffix of object files... checking for C compiler default output file name... make[2]: *** [configure-stage1-libdecnumber] Error 77\r\n```\r\nwhere closer inspection of `spack-src/spack-build/libdecnumber/config.log` shows\r\n```\r\nconfigure:2649: /ornldev/code/spack/lib/spack/env/clang/clang -g   -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/gcc/f2gezvp/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/gcc/f2gezvp/lib64 -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/binutils/alksglg/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/gmp/icsy6fw/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/isl/uvsapsa/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/libiconv/jg6ekuh/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/mpc/eam5ugi/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/mpfr/pzmx6wv/lib -Wl,-rpath,/ornldev/code/spack/opt/spack/clang-11.0.0-apple/zlib/xj36ejk/lib -static-libstdc++ -static-libgcc -Wl,-no_pie  conftest.c  >&5\r\nclang: error: unsupported option '-static-libgcc'\r\nconfigure:2653: $? = 1\r\nconfigure:2690: result: \r\nconfigure: failed program was:\r\n| /* confdefs.h */\r\n| #define PACKAGE_NAME \"libdecnumber\"\r\n| #define PACKAGE_TARNAME \"libdecnumber\"\r\n| #define PACKAGE_VERSION \" \"\r\n| #define PACKAGE_STRING \"libdecnumber  \"\r\n| #define PACKAGE_BUGREPORT \"gcc-bugs@gcc.gnu.org\"\r\n| #define PACKAGE_URL \"\"\r\n| /* end confdefs.h.  */\r\n| \r\n| int\r\n| main ()\r\n| {\r\n| \r\n|   ;\r\n|   return 0;\r\n| }\r\nconfigure:2696: error: in `/private/var/folders/fy/x2xtwh1n7fn0_0q2kk29xkv9vvmbqb/T/s3j/spack-stage/spack-stage-gcc-8.3.0-f2gezvpdyzaxh3drmmiz6i2ou22vgbip/spack-src/spack-build/libdecnumber':\r\nconfigure:2700: error: C compiler cannot create executables\r\nSee `config.log' for more details.\r\n```\r\n\r\n## After fixing that error but still using +binutils\r\n\r\n```\r\nconfigure: error: cannot execute: /ornldev/code/spack/opt/spack/clang-11.0.0-apple/binutils/alksglg/bin/ld: check --with-ld or env. var. DEFAULT_LINKER\r\n```",
+    "performed_via_github_app": null
+}

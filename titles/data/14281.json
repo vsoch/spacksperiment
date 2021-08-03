@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14281",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14281/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14281/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14281/events",
+    "html_url": "https://github.com/spack/spack/pull/14281",
+    "id": 541893619,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU2NDQzOTU4",
+    "number": 14281,
+    "title": "Added conflict with %pgi in libpciaccess package.py...",
+    "user": {
+        "login": "nicholas-sly",
+        "id": 17838741,
+        "node_id": "MDQ6VXNlcjE3ODM4NzQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17838741?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nicholas-sly",
+        "html_url": "https://github.com/nicholas-sly",
+        "followers_url": "https://api.github.com/users/nicholas-sly/followers",
+        "following_url": "https://api.github.com/users/nicholas-sly/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nicholas-sly/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nicholas-sly/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nicholas-sly/subscriptions",
+        "organizations_url": "https://api.github.com/users/nicholas-sly/orgs",
+        "repos_url": "https://api.github.com/users/nicholas-sly/repos",
+        "events_url": "https://api.github.com/users/nicholas-sly/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nicholas-sly/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616910686,
+            "node_id": "MDU6TGFiZWw2MTY5MTA2ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pgi",
+            "name": "pgi",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-23T20:29:32Z",
+    "updated_at": "2019-12-23T21:32:00Z",
+    "closed_at": "2019-12-23T21:32:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14281",
+        "html_url": "https://github.com/spack/spack/pull/14281",
+        "diff_url": "https://github.com/spack/spack/pull/14281.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14281.patch"
+    },
+    "body": " with relevant links in comments.\r\n\r\nTemporarily addresses #3525 .  Real fix will be when a build using PGI can include dependencies (like libpciaccess) that were built with a different compiler (e.g. - GCC), which should come with the upcoming concretizer update.",
+    "performed_via_github_app": null
+}

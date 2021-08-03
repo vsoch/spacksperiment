@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17562",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17562/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17562/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17562/events",
+    "html_url": "https://github.com/spack/spack/pull/17562",
+    "id": 658533216,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDUwNDgzODIw",
+    "number": 17562,
+    "title": "icu4c: Mark new version as conflicting with old GCC",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-16T20:18:40Z",
+    "updated_at": "2020-08-01T17:16:13Z",
+    "closed_at": "2020-07-17T00:34:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17562",
+        "html_url": "https://github.com/spack/spack/pull/17562",
+        "diff_url": "https://github.com/spack/spack/pull/17562.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17562.patch"
+    },
+    "body": "`icu4c@67.1` fails to build on GCC 4.8.5. `icu4c@66.1` builds fine.\r\n\r\nGCC 4.8.5 on rhel6:\r\n```\r\nutext.cpp:572:5: error: 'max_align_t' in namespace 'std' does not name a\r\ntype\r\n     std::max_align_t    extension;\r\n     ^\r\nutext.cpp: In function 'UText* utext_setup_67(UText*, int32_t,\r\nUErrorCode*)':\r\nutext.cpp:587:73: error: 'max_align_t' is not a member of 'std'\r\n             spaceRequired = sizeof(ExtendedUText) + extraSpace -\r\nsizeof(std::max_align_t);\r\n                                                                         ^\r\nutext.cpp:587:73: note: suggested alternative:\r\nIn file included from\r\n/projects/spack/opt/spack/gcc-4.4.7/gcc/6ln2t7b/include/c++/4.8.5/cstddef:42:0,\r\n                 from utext.cpp:19:\r\n/projects/spack/opt/spack/gcc-4.4.7/gcc/6ln2t7b/lib/gcc/x86_64-unknown-linux-gnu/4.8.5/include/stddef.h:\r\n425:3: note:   'max_align_t'\r\n } max_align_t;\r\n   ^\r\nutext.cpp:598:57: error: 'struct ExtendedUText' has no member named\r\n'extension'\r\n                 ut->pExtra    = &((ExtendedUText *)ut)->extension;\r\n                                                         ^\r\n   g++   ...  loadednormalizer2impl.cpp\r\n   g++   ...  chariter.cpp\r\n```",
+    "performed_via_github_app": null
+}

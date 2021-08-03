@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16836",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16836/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16836/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16836/events",
+    "html_url": "https://github.com/spack/spack/pull/16836",
+    "id": 626078042,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0MTQ2MzM5",
+    "number": 16836,
+    "title": "Ignore __pycache__ directory",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-27T22:29:52Z",
+    "updated_at": "2020-06-04T03:09:08Z",
+    "closed_at": "2020-06-04T03:09:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16836",
+        "html_url": "https://github.com/spack/spack/pull/16836",
+        "diff_url": "https://github.com/spack/spack/pull/16836.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16836.patch"
+    },
+    "body": "I'm trying out Spack on Windows using the Ubuntu WSL, which contains Python 3.8. So far, everything works fine, but I noticed the following untracked directory:\r\n```\r\nlib/spack/external/jsonschema/__pycache__/\r\n```\r\nThere are `__pycache__` directories throughout Spack, but they are normally ignored because we ignore `*.pyc` files. In this case, the offending directory contains a `exceptions.cpython-38.pyc.140647793774000` file. I don't know if this is specific to Python 3.8, but https://github.com/github/gitignore/blob/master/Python.gitignore includes `__pycache__`, so we should too.\r\n\r\nHonestly, we should probably copy all of https://github.com/github/gitignore/blob/master/Python.gitignore into our `.gitignore`. Let me know if you want me to do that.",
+    "performed_via_github_app": null
+}

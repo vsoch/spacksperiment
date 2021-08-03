@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13612",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13612/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13612/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13612/events",
+    "html_url": "https://github.com/spack/spack/pull/13612",
+    "id": 518509476,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM3MzkxMTEx",
+    "number": 13612,
+    "title": "netcdf-fortran: Fix parallel builds",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-06T14:31:12Z",
+    "updated_at": "2019-11-06T18:59:09Z",
+    "closed_at": "2019-11-06T17:14:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13612",
+        "html_url": "https://github.com/spack/spack/pull/13612",
+        "diff_url": "https://github.com/spack/spack/pull/13612.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13612.patch"
+    },
+    "body": "netcdf-fortran@4.5: will error if netcdf-c has been built with MPI support:\r\n```\r\nconfigure: error:\r\n      -----------------------------------------------------------------------\r\n        The NetCDF C library is built with parallel I/O feature enabled, but\r\n        the Fortran compiler '.../lib/spack/env/gcc/gfortran' supplied in this configure command\r\n        does not support MPI-IO. Please use one that does. If parallel I/O\r\n        feature is not desired, please use a NetCDF C library with parallel\r\n\tI/O feature disabled. Abort.\r\n      -----------------------------------------------------------------------\r\n```\r\n\r\nCopy logic from netcdf-c to add an `mpi` variant.\r\n\r\nFixes #13498",
+    "performed_via_github_app": null
+}

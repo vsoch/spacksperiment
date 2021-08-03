@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15530",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15530/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15530/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15530/events",
+    "html_url": "https://github.com/spack/spack/pull/15530",
+    "id": 583426641,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkwMTg0NDUw",
+    "number": 15530,
+    "title": "openPMD-api: HDF5 1.12.0 Support",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-03-18T02:55:15Z",
+    "updated_at": "2020-03-18T23:14:29Z",
+    "closed_at": "2020-03-18T13:47:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15530",
+        "html_url": "https://github.com/spack/spack/pull/15530",
+        "diff_url": "https://github.com/spack/spack/pull/15530.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15530.patch"
+    },
+    "body": "Fix API breakage in HDF5 1.12.0 for released versions.\r\n\r\ncc @eugeneswalker: took me a day longer than expected due to the shelter-in-place announcement yesterday. Thank you again for reporting!\r\n\r\nRefs.:\r\n- https://github.com/openPMD/openPMD-api/pull/696\r\n- Fix #15502",
+    "performed_via_github_app": null
+}

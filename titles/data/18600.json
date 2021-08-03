@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18600",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18600/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18600/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18600/events",
+    "html_url": "https://github.com/spack/spack/pull/18600",
+    "id": 697244333,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgzMjEwNzQ0",
+    "number": 18600,
+    "title": "openmpi: external detection support",
+    "user": {
+        "login": "rblake-llnl",
+        "id": 24722037,
+        "node_id": "MDQ6VXNlcjI0NzIyMDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24722037?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rblake-llnl",
+        "html_url": "https://github.com/rblake-llnl",
+        "followers_url": "https://api.github.com/users/rblake-llnl/followers",
+        "following_url": "https://api.github.com/users/rblake-llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rblake-llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rblake-llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rblake-llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/rblake-llnl/orgs",
+        "repos_url": "https://api.github.com/users/rblake-llnl/repos",
+        "events_url": "https://api.github.com/users/rblake-llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rblake-llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-09-09T23:46:45Z",
+    "updated_at": "2020-11-12T21:03:36Z",
+    "closed_at": "2020-11-12T21:03:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18600",
+        "html_url": "https://github.com/spack/spack/pull/18600",
+        "diff_url": "https://github.com/spack/spack/pull/18600.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18600.patch"
+    },
+    "body": "@hppritcha , can you have a look at this PR please?\r\n\r\nI'm trying to add `spack external find` support to the openmpi package.  I've been trying to understand the output of `ompi_info`, but I'm having trouble parsing some of it:\r\n\r\n1.) By default, I don't see any way to get access to all the configure command line flags within `ompi_info.`  Therefore, my ability to detect the following variants is limited to the occasional leak of command line arguments:\r\n  * atomics\r\n  * static\r\n  * sqlite3\r\n  * vt\r\n  * singularity\r\n  * lustre\r\n\r\nDo you have a better way of detecting the use of these variants from the output of `ompi_info` ?\r\n\r\n2.) Have I handled parsing the following options from ompi_correctly?\r\n  * Are fabrics always found in the mtl framework?\r\n  * Are schedulers always found in the ras framework?\r\n  * Am I right to use pmi from the ess framework?\r\n  * Have I understood the +memchecker variant correctly?\r\n\r\n3.) Right now I don't have a good way of detecting the 'legacylaunchers' variant, do you have any ideas?",
+    "performed_via_github_app": null
+}

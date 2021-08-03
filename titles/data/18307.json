@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18307",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18307/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18307/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18307/events",
+    "html_url": "https://github.com/spack/spack/pull/18307",
+    "id": 687062894,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc0NTQ5NDQz",
+    "number": 18307,
+    "title": "Cp2k archopt",
+    "user": {
+        "login": "g-mathias",
+        "id": 40861554,
+        "node_id": "MDQ6VXNlcjQwODYxNTU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40861554?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/g-mathias",
+        "html_url": "https://github.com/g-mathias",
+        "followers_url": "https://api.github.com/users/g-mathias/followers",
+        "following_url": "https://api.github.com/users/g-mathias/following{/other_user}",
+        "gists_url": "https://api.github.com/users/g-mathias/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/g-mathias/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/g-mathias/subscriptions",
+        "organizations_url": "https://api.github.com/users/g-mathias/orgs",
+        "repos_url": "https://api.github.com/users/g-mathias/repos",
+        "events_url": "https://api.github.com/users/g-mathias/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/g-mathias/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-08-27T08:48:37Z",
+    "updated_at": "2020-08-27T14:02:39Z",
+    "closed_at": "2020-08-27T14:02:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18307",
+        "html_url": "https://github.com/spack/spack/pull/18307",
+        "diff_url": "https://github.com/spack/spack/pull/18307.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18307.patch"
+    },
+    "body": "- Adds architecture specific optimization flags\r\n- Fixes warnings like \r\n```\r\n GLOBAL| Compiled for CPUID                                                    0\r\n HINT in environment.F:814 The compiler target flags (generic) used to build\r\n   this binary cannot exploit all extensions of this CPU model (x86_avx2).\r\n   Consider compiler target flags as part of FCFLAGS and CFLAGS (ARCH file).\r\n```\r\n   in the cp2k output\r\n- for a simple test case (1 H2O on a Haswell core) I get a speedup of roughly 20%",
+    "performed_via_github_app": null
+}

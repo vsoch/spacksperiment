@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13766",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13766/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13766/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13766/events",
+    "html_url": "https://github.com/spack/spack/pull/13766",
+    "id": 524102694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxOTM4NjI0",
+    "number": 13766,
+    "title": "ampliconnoise: Change return type of function.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-18T02:46:34Z",
+    "updated_at": "2019-11-21T04:25:04Z",
+    "closed_at": "2019-11-20T23:03:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13766",
+        "html_url": "https://github.com/spack/spack/pull/13766",
+        "diff_url": "https://github.com/spack/spack/pull/13766.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13766.patch"
+    },
+    "body": "Error:\r\n```\r\nerror: non-void function 'outputCluster' should return a value [-Wreturn-type]\r\n```\r\nI fixed return type of function that error occured. \r\nReference: https://code.google.com/archive/p/ampliconnoise/issues/20",
+    "performed_via_github_app": null
+}

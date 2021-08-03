@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15487",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15487/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15487/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15487/events",
+    "html_url": "https://github.com/spack/spack/pull/15487",
+    "id": 580812974,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg3OTUzMzcz",
+    "number": 15487,
+    "title": "root: Add version 6.20.0",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-03-13T19:59:08Z",
+    "updated_at": "2020-04-28T18:44:32Z",
+    "closed_at": "2020-03-20T16:55:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15487",
+        "html_url": "https://github.com/spack/spack/pull/15487",
+        "diff_url": "https://github.com/spack/spack/pull/15487.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15487.patch"
+    },
+    "body": "* Add version 6.20, don't yet mark it preferred\r\n* It needs zstd\r\n* It needs numpy\r\n* Reorder python dependencies a bit\r\n\r\nmaintainer ping: @chissg @HadrienG2 @drbenmorgan",
+    "performed_via_github_app": null
+}

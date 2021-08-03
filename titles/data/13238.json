@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13238",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13238/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13238/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13238/events",
+    "html_url": "https://github.com/spack/spack/pull/13238",
+    "id": 508077972,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI4OTQxMTE1",
+    "number": 13238,
+    "title": "multimethods: avoid calling caller_locals() in Python 3",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1620878194,
+            "node_id": "MDU6TGFiZWwxNjIwODc4MTk0",
+            "url": "https://api.github.com/repos/spack/spack/labels/package%20dsl",
+            "name": "package dsl",
+            "color": "96e0f7",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-16T20:21:27Z",
+    "updated_at": "2019-10-17T15:31:21Z",
+    "closed_at": "2019-10-17T13:40:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13238",
+        "html_url": "https://github.com/spack/spack/pull/13238",
+        "diff_url": "https://github.com/spack/spack/pull/13238.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13238.patch"
+    },
+    "body": "Python 3 metaclasses have a `__prepare__` method that lets us save the class's dictionary before it is constructed.  In Python 2 we had to walk up the stack using our `caller_locals()` method to get at this.  Using `__prepare__` is much faster as it doesn't require us to use `inspect`.\r\n\r\nThis PR makes multimethods use the faster `__prepare__` method in Python3, while still using `caller_locals()` in Python 2.  We try to reduce the use of caller locals using caching to speed up Python 2 a little bit.\r\n\r\nThis makes loading all packages in Python 3 ~25% faster for me (7.4 seconds vs. 10 seconds).",
+    "performed_via_github_app": null
+}

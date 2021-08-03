@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14245",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14245/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14245/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14245/events",
+    "html_url": "https://github.com/spack/spack/pull/14245",
+    "id": 540919325,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1NjY2NTQ0",
+    "number": 14245,
+    "title": "root: Do not apply the unuran patch to ROOT 6.06/xy, it is not compatible",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-20T10:25:00Z",
+    "updated_at": "2020-01-02T13:14:40Z",
+    "closed_at": "2019-12-20T18:53:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14245",
+        "html_url": "https://github.com/spack/spack/pull/14245",
+        "diff_url": "https://github.com/spack/spack/pull/14245.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14245.patch"
+    },
+    "body": "The patch which prevents ROOT from building its own version of unuran is not compatible with the ROOT 6.06 series. The first release on which it was tested to apply cleanly is ROOT 6.08/06.",
+    "performed_via_github_app": null
+}

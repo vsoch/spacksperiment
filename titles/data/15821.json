@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15821",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15821/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15821/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15821/events",
+    "html_url": "https://github.com/spack/spack/pull/15821",
+    "id": 592327310,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk3MzMyMjY1",
+    "number": 15821,
+    "title": "Version bump: jdk 14",
+    "user": {
+        "login": "anderbubble",
+        "id": 350294,
+        "node_id": "MDQ6VXNlcjM1MDI5NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/350294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anderbubble",
+        "html_url": "https://github.com/anderbubble",
+        "followers_url": "https://api.github.com/users/anderbubble/followers",
+        "following_url": "https://api.github.com/users/anderbubble/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anderbubble/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anderbubble/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anderbubble/subscriptions",
+        "organizations_url": "https://api.github.com/users/anderbubble/orgs",
+        "repos_url": "https://api.github.com/users/anderbubble/repos",
+        "events_url": "https://api.github.com/users/anderbubble/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anderbubble/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-02T03:12:45Z",
+    "updated_at": "2020-04-25T15:35:34Z",
+    "closed_at": "2020-04-25T15:35:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15821",
+        "html_url": "https://github.com/spack/spack/pull/15821",
+        "diff_url": "https://github.com/spack/spack/pull/15821.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15821.patch"
+    },
+    "body": "The version number I used doesn't match other versions in the package; but it's what Oracle is using, even in `-version`. Since this is the only version 14, I don't know whether it should be `14.2020.03_17`, or if they'll do more traditional versioning later.\r\n\r\n```console\r\n$ java -version\r\njava version \"14\" 2020-03-17\r\nJava(TM) SE Runtime Environment (build 14+36-1461)\r\nJava HotSpot(TM) 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)\r\n```\r\n\r\nNote that the previous \"preferred\" version isn't available from oracle as a download any longer; so this update is required to get the package to work again.",
+    "performed_via_github_app": null
+}

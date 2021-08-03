@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15645",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15645/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15645/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15645/events",
+    "html_url": "https://github.com/spack/spack/pull/15645",
+    "id": 586596507,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkyNzAyNzc5",
+    "number": 15645,
+    "title": "Make debuggers find source code for spack installed packages",
+    "user": {
+        "login": "mplegendre",
+        "id": 4440062,
+        "node_id": "MDQ6VXNlcjQ0NDAwNjI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4440062?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mplegendre",
+        "html_url": "https://github.com/mplegendre",
+        "followers_url": "https://api.github.com/users/mplegendre/followers",
+        "following_url": "https://api.github.com/users/mplegendre/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mplegendre/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mplegendre/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mplegendre/subscriptions",
+        "organizations_url": "https://api.github.com/users/mplegendre/orgs",
+        "repos_url": "https://api.github.com/users/mplegendre/repos",
+        "events_url": "https://api.github.com/users/mplegendre/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mplegendre/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-24T00:05:55Z",
+    "updated_at": "2020-03-24T00:05:55Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15645",
+        "html_url": "https://github.com/spack/spack/pull/15645",
+        "diff_url": "https://github.com/spack/spack/pull/15645.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15645.patch"
+    },
+    "body": "This makes it so debug information in spack produced binaries point to source code locations in the install area, rather than in the stage area.  When mixed with the 'spack install --source' option, this lets you debug spack installed packages out of the box, without having to remap source locations in your debugger first.\r\n\r\nThis uses the gcc/clang option -fdebug-prefix-map, and it only works on those compilers.  The option tells gcc/clang that, even though they're building in the stage area, to pretend the source files are in the $PREFIX/share/$PKGNAME/src area.\r\n\r\nCurrently, this is always on.  I haven't seen any drawback to using the option.  Should there be options to turn this off anyways?\r\n\r\nFor the --source option, we decided that source installations would not be part of the spec.  This is takes things farther and is modifying the DWARF information, which does change installed bits.  But not in any way that should affect program behavior.  Do we want to track this in the spec?  \r\n\r\nI have thoughts on improving this for relocatable packages and other compilers.  But that's significantly more work, and this is a start.\r\n\r\nConsider this a WIP.  Just before sending out this PR I saw it fail to translate a python build's debug location.  That needs some debugging.  But we can start any discussion.\r\n\r\n",
+    "performed_via_github_app": null
+}

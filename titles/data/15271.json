@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15271",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15271/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15271/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15271/events",
+    "html_url": "https://github.com/spack/spack/pull/15271",
+    "id": 573031851,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgxNjE4MDA2",
+    "number": 15271,
+    "title": "Improve containerize - add input/output selection",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-02-28T22:09:16Z",
+    "updated_at": "2021-02-19T09:30:01Z",
+    "closed_at": "2021-02-19T09:30:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15271",
+        "html_url": "https://github.com/spack/spack/pull/15271",
+        "diff_url": "https://github.com/spack/spack/pull/15271.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15271.patch"
+    },
+    "body": "* add a subparser\r\n  * to manually specify the spack.yaml from which to\r\n    create the container recipe (-f)\r\n  * to provide a filename to write the recipe to. Useful\r\n    if other output appears on the terminal (e.g. warnings)\r\n\r\nThe commit message describes it. Basically I was a bit annoyed that I couldn't just trigger the recipe building, but had to either `cd` into the environment directory or `spack env activate` the environment in order to containerize. This PR adds two options to the `spack containerize` command:\r\n- `-f specfile` where specfile is a path/to/spack.yaml of the environment you want to containerize\r\n- `-r recipefile` where recipefile is a path/to/recipe where the container recipe should be printed to. This frees up the console to do reporting.\r\n\r\nI think this is a bit of a quality-of-life improvement for the containerize command and makes its behaviour a bit more obvious. The price is a bit more complicated logic in the parsing. On the plus side the error message in case of not finding a `spack.yaml` should be a bit more informative now. I'm not attached to any of the variable names, and maybe `specfile` should be something different. But I'm not up to date with the naming scheme for the whole environment related files, so suggestions are welcome.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16708",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16708/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16708/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16708/events",
+    "html_url": "https://github.com/spack/spack/pull/16708",
+    "id": 620543386,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE5NzcyOTMw",
+    "number": 16708,
+    "title": "[podio] Fix ROOT cxxstd Dependency",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-18T22:25:55Z",
+    "updated_at": "2020-05-19T06:50:25Z",
+    "closed_at": "2020-05-19T02:52:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16708",
+        "html_url": "https://github.com/spack/spack/pull/16708",
+        "diff_url": "https://github.com/spack/spack/pull/16708.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16708.patch"
+    },
+    "body": "The strict dependency rule was not ideal and would result in frequent concretizer errors. Furthermore podio actually can be built with `cxxstd=11`, so this now removes the variant alltogether and just takes ROOT's `cxxstd`. Also adds a patch because the cpack configuration would lead to build errors on some systems (arch).",
+    "performed_via_github_app": null
+}

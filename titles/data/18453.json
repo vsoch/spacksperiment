@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18453",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18453/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18453/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18453/events",
+    "html_url": "https://github.com/spack/spack/pull/18453",
+    "id": 690408932,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc3MzAxOTU1",
+    "number": 18453,
+    "title": "ADIOS: Fix no-MPI Build",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 809934104,
+            "node_id": "MDU6TGFiZWw4MDk5MzQxMDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/regression",
+            "name": "regression",
+            "color": "e2c071",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-01T20:01:30Z",
+    "updated_at": "2020-09-02T01:19:45Z",
+    "closed_at": "2020-09-02T01:17:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18453",
+        "html_url": "https://github.com/spack/spack/pull/18453",
+        "diff_url": "https://github.com/spack/spack/pull/18453.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18453.patch"
+    },
+    "body": "Do not apply this patch in no-MPI builds. I think this autotools check logic is generally borked, this will just set it manually to on/off now.\r\n\r\nFixes `spack install adios ~mpi` builds.\r\n\r\nRegression introduced in: #17465 / https://github.com/ornladios/ADIOS/pull/207#issuecomment-685096681\r\n\r\ncc @germasch ",
+    "performed_via_github_app": null
+}

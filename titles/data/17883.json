@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17883",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17883/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17883/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17883/events",
+    "html_url": "https://github.com/spack/spack/pull/17883",
+    "id": 673026248,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYyOTYxNDUx",
+    "number": 17883,
+    "title": "New packages Mvapich2x and Mvapich2-GDR",
+    "user": {
+        "login": "nithintsk",
+        "id": 52734841,
+        "node_id": "MDQ6VXNlcjUyNzM0ODQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52734841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nithintsk",
+        "html_url": "https://github.com/nithintsk",
+        "followers_url": "https://api.github.com/users/nithintsk/followers",
+        "following_url": "https://api.github.com/users/nithintsk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nithintsk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nithintsk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nithintsk/subscriptions",
+        "organizations_url": "https://api.github.com/users/nithintsk/orgs",
+        "repos_url": "https://api.github.com/users/nithintsk/repos",
+        "events_url": "https://api.github.com/users/nithintsk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nithintsk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-08-04T19:22:25Z",
+    "updated_at": "2020-08-17T16:13:05Z",
+    "closed_at": "2020-08-16T13:56:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17883",
+        "html_url": "https://github.com/spack/spack/pull/17883",
+        "diff_url": "https://github.com/spack/spack/pull/17883.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17883.patch"
+    },
+    "body": "Mvapich2x and Mvapich2-gdr are only available to install through the binary mirrors below:\r\n$ spack mirror add mvapich2x http://mvapich.cse.ohio-state.edu:8080/download/mvapich/spack-mirror/mvapich2x\r\n$ spack mirror add mvapich2-gdr http://mvapich.cse.ohio-state.edu:8080/download/mvapich/spack-mirror/mvapich2-gdr\r\n\r\n@harisubramoni",
+    "performed_via_github_app": null
+}

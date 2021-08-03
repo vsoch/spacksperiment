@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17056/events",
+    "html_url": "https://github.com/spack/spack/pull/17056",
+    "id": 637149766,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMzMTkwMTE4",
+    "number": 17056,
+    "title": "environment spec lists: improve ability to query architecture in when clauses",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-11T16:12:31Z",
+    "updated_at": "2020-06-25T17:13:33Z",
+    "closed_at": "2020-06-25T17:13:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17056",
+        "html_url": "https://github.com/spack/spack/pull/17056",
+        "diff_url": "https://github.com/spack/spack/pull/17056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17056.patch"
+    },
+    "body": "Previously, we could only match strings.\r\n\r\n```\r\nspack:\r\n  definitions:\r\n  - mpis: [mvapich2@2.3.1]\r\n    when: target=='haswell'\r\n```\r\n\r\nBut we could not match ranges of targets. Now we can, using the `arch` or `architecture` fields.\r\n\r\n```\r\nspack:\r\n  definitions:\r\n  - mpis: [mvapich2@2.3.1]\r\n    when: arch.satisfies('target=x86_64:')\r\n```\r\n\r\nUsers can still use string matching for the architecture, against the new field `arch_str`.\r\n\r\n```\r\nspack:\r\n  definitions:\r\n  - mpis: [mvapich2@2.3.1]\r\n    when: arch_str == 'linux-rhel7-broadwell'\r\n```",
+    "performed_via_github_app": null
+}

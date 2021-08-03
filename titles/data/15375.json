@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15375",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15375/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15375/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15375/events",
+    "html_url": "https://github.com/spack/spack/pull/15375",
+    "id": 577068607,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg0OTMzNTY5",
+    "number": 15375,
+    "title": "flatbuffers: Allow building shared libraries",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-06T17:16:59Z",
+    "updated_at": "2020-03-10T14:19:47Z",
+    "closed_at": "2020-03-06T18:16:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15375",
+        "html_url": "https://github.com/spack/spack/pull/15375",
+        "diff_url": "https://github.com/spack/spack/pull/15375.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15375.patch"
+    },
+    "body": "Added a shared variant, that switches between shared and static library building, like with most cmake packages.",
+    "performed_via_github_app": null
+}

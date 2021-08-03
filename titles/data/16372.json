@@ -1,0 +1,152 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16372",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16372/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16372/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16372/events",
+    "html_url": "https://github.com/spack/spack/pull/16372",
+    "id": 609166184,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEwNzk5ODU0",
+    "number": 16372,
+    "title": "Pre ci optimization",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1491154932,
+            "node_id": "MDU6TGFiZWwxNDkxMTU0OTMy",
+            "url": "https://api.github.com/repos/spack/spack/labels/gitlab",
+            "name": "gitlab",
+            "color": "f7b094",
+            "default": false,
+            "description": "Issues related to gitlab integration"
+        },
+        {
+            "id": 1491156024,
+            "node_id": "MDU6TGFiZWwxNDkxMTU2MDI0",
+            "url": "https://api.github.com/repos/spack/spack/labels/pipelines",
+            "name": "pipelines",
+            "color": "b22353",
+            "default": false,
+            "description": "Issues related to spack's pipeline features"
+        },
+        {
+            "id": 1504562794,
+            "node_id": "MDU6TGFiZWwxNTA0NTYyNzk0",
+            "url": "https://api.github.com/repos/spack/spack/labels/robustness",
+            "name": "robustness",
+            "color": "e0694c",
+            "default": false,
+            "description": "Enhancements to reduce fragility under different conditions."
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 480333036,
+            "node_id": "MDU6TGFiZWw0ODAzMzMwMzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/workaround",
+            "name": "workaround",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1502813167,
+            "node_id": "MDU6TGFiZWwxNTAyODEzMTY3",
+            "url": "https://api.github.com/repos/spack/spack/labels/yaml",
+            "name": "yaml",
+            "color": "e7f783",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-29T15:51:39Z",
+    "updated_at": "2020-06-24T20:39:27Z",
+    "closed_at": "2020-06-22T17:19:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16372",
+        "html_url": "https://github.com/spack/spack/pull/16372",
+        "diff_url": "https://github.com/spack/spack/pull/16372.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16372.patch"
+    },
+    "body": "Here's an idea I've been experimenting with:\r\n\r\nThis extra code makes several additional passes on the YAML object generated in the Pre-ci process.  These transformations are aimed at reducing the overall size of the generated `.gitlab-ci.yml` file, while still producing an equivalent encoding of the main CI workload.\r\n\r\nThis code is a workaround for the 1MB size limit imposed by Gitlab on projects' `.gitlab-ci.yml` files.  Sites that need a larger `.gitlab-ci.yml` file have to choose between patching the Gitlab source, or disabling the limit entirely, potentially exposing their Gitlab deployment to a class of denial of service attacks.  See [this link](https://en.wikipedia.org/wiki/Billion_laughs_attack) and [this link](https://gitlab.com/gitlab-org/gitlab-foss/-/issues/56018) for more details.\r\n\r\nThis workaround allows users to run much larger pipelines without having to modify their Gitlab installation.",
+    "performed_via_github_app": null
+}

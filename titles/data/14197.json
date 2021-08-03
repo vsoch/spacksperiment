@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14197",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14197/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14197/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14197/events",
+    "html_url": "https://github.com/spack/spack/pull/14197",
+    "id": 539183139,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU0MjAzMzc0",
+    "number": 14197,
+    "title": "WIP: allow using $spack when defining extensions in config/config.yaml",
+    "user": {
+        "login": "brietzke",
+        "id": 7901415,
+        "node_id": "MDQ6VXNlcjc5MDE0MTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7901415?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brietzke",
+        "html_url": "https://github.com/brietzke",
+        "followers_url": "https://api.github.com/users/brietzke/followers",
+        "following_url": "https://api.github.com/users/brietzke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brietzke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brietzke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brietzke/subscriptions",
+        "organizations_url": "https://api.github.com/users/brietzke/orgs",
+        "repos_url": "https://api.github.com/users/brietzke/repos",
+        "events_url": "https://api.github.com/users/brietzke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brietzke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-12-17T16:39:56Z",
+    "updated_at": "2019-12-18T22:33:35Z",
+    "closed_at": "2019-12-18T22:33:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14197",
+        "html_url": "https://github.com/spack/spack/pull/14197",
+        "diff_url": "https://github.com/spack/spack/pull/14197.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14197.patch"
+    },
+    "body": "I would like to define extensions-paths relative to the spack-instance and therefore would like to have $spack working for values in the extensions-list in config.yaml\r\n\r\nIt appeared to me a simple change using canonicalize_path does the trick",
+    "performed_via_github_app": null
+}

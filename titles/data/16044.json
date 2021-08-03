@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16044",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16044/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16044/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16044/events",
+    "html_url": "https://github.com/spack/spack/pull/16044",
+    "id": 599742679,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAzMzIyNDc1",
+    "number": 16044,
+    "title": "openmpi: add additional variants",
+    "user": {
+        "login": "carsonwoods",
+        "id": 11012397,
+        "node_id": "MDQ6VXNlcjExMDEyMzk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11012397?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carsonwoods",
+        "html_url": "https://github.com/carsonwoods",
+        "followers_url": "https://api.github.com/users/carsonwoods/followers",
+        "following_url": "https://api.github.com/users/carsonwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carsonwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carsonwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carsonwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/carsonwoods/orgs",
+        "repos_url": "https://api.github.com/users/carsonwoods/repos",
+        "events_url": "https://api.github.com/users/carsonwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carsonwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-04-14T17:38:37Z",
+    "updated_at": "2020-04-28T16:20:14Z",
+    "closed_at": "2020-04-28T15:51:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16044",
+        "html_url": "https://github.com/spack/spack/pull/16044",
+        "diff_url": "https://github.com/spack/spack/pull/16044.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16044.patch"
+    },
+    "body": "This PR adds variants to the openmpi package. Specifically variants for enabling:\r\n- static libraries\r\n- built-in atomics\r\n- enabling wrapper rpath\r\n\r\nEvery variant has explicit toggles for enable/disable. ",
+    "performed_via_github_app": null
+}

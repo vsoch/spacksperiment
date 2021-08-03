@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18342",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18342/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18342/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18342/events",
+    "html_url": "https://github.com/spack/spack/pull/18342",
+    "id": 687662963,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1MDQ5MzMx",
+    "number": 18342,
+    "title": "Timemory: Fix python dependencies + NCCL",
+    "user": {
+        "login": "jrmadsen",
+        "id": 6001865,
+        "node_id": "MDQ6VXNlcjYwMDE4NjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6001865?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrmadsen",
+        "html_url": "https://github.com/jrmadsen",
+        "followers_url": "https://api.github.com/users/jrmadsen/followers",
+        "following_url": "https://api.github.com/users/jrmadsen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrmadsen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrmadsen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrmadsen/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrmadsen/orgs",
+        "repos_url": "https://api.github.com/users/jrmadsen/repos",
+        "events_url": "https://api.github.com/users/jrmadsen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrmadsen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-28T02:25:58Z",
+    "updated_at": "2020-08-28T19:40:35Z",
+    "closed_at": "2020-08-28T19:40:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18342",
+        "html_url": "https://github.com/spack/spack/pull/18342",
+        "diff_url": "https://github.com/spack/spack/pull/18342.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18342.patch"
+    },
+    "body": "- Python extensions require Cython\r\n- Added options for enabling NCCL",
+    "performed_via_github_app": null
+}

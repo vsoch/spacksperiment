@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13874",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13874/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13874/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13874/events",
+    "html_url": "https://github.com/spack/spack/pull/13874",
+    "id": 527857552,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ1MDI2NjQ0",
+    "number": 13874,
+    "title": "ftpmirror.gnu.org -> ftp.gnu.org",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-11-25T05:32:17Z",
+    "updated_at": "2020-04-20T20:38:27Z",
+    "closed_at": "2019-11-25T17:02:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13874",
+        "html_url": "https://github.com/spack/spack/pull/13874",
+        "diff_url": "https://github.com/spack/spack/pull/13874.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13874.patch"
+    },
+    "body": "ftpmirror.gnu.org is currently down, causing all build tests in Travis to fail since we no longer use a downloads cache. This PR switches the downloads to the canonical ftp.gnu.org website.\r\n\r\nSee https://www.gnu.org/prep/ftp.html for more info on the mirrors GNU offers. GNU explicitly asks that everyone uses ftpmirror.gnu.org, which is why we were using it, but it's been very flakey for awhile now. I'm not sure if we can trust it. Once Spack has its own source mirror in AWS, we can switch things back.\r\n\r\n@alalazo @tgamblin ",
+    "performed_via_github_app": null
+}

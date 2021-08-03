@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18799",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18799/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18799/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18799/events",
+    "html_url": "https://github.com/spack/spack/pull/18799",
+    "id": 704916525,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg5NzUxNzA3",
+    "number": 18799,
+    "title": "ncurses: fix libs method",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-19T16:56:08Z",
+    "updated_at": "2020-09-19T21:32:07Z",
+    "closed_at": "2020-09-19T21:32:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18799",
+        "html_url": "https://github.com/spack/spack/pull/18799",
+        "diff_url": "https://github.com/spack/spack/pull/18799.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18799.patch"
+    },
+    "body": "### Before\r\n```\r\n>>> spec['ncurses'].libs.link_flags\r\n'-lncurses'\r\n```\r\n### After\r\n```\r\n>>> spec['ncurses'].libs.link_flags\r\n'-lncurses -lncursesw -ltinfo -ltinfow'\r\n```\r\nNot sure why the previous logic doesn't work, but the newer logic is simpler anyway.",
+    "performed_via_github_app": null
+}

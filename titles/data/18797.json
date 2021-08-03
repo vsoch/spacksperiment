@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18797",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18797/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18797/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18797/events",
+    "html_url": "https://github.com/spack/spack/pull/18797",
+    "id": 704915966,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg5NzUxMjk2",
+    "number": 18797,
+    "title": "graphviz: fix build with Apple Clang 12.0.0",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-19T16:52:34Z",
+    "updated_at": "2020-09-19T21:29:44Z",
+    "closed_at": "2020-09-19T21:29:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18797",
+        "html_url": "https://github.com/spack/spack/pull/18797",
+        "diff_url": "https://github.com/spack/spack/pull/18797.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18797.patch"
+    },
+    "body": "Successfully installs on macOS 10.15.6 with Apple Clang 12.0.0.\r\n\r\nPatch comes from Homebrew and is recommended by the Graphviz developers.",
+    "performed_via_github_app": null
+}

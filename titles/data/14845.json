@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14845",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14845/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14845/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14845/events",
+    "html_url": "https://github.com/spack/spack/pull/14845",
+    "id": 561779665,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzcyNTI1ODg1",
+    "number": 14845,
+    "title": "Fix concretization of ncurses+termlib",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-02-07T17:41:48Z",
+    "updated_at": "2020-02-11T00:49:37Z",
+    "closed_at": "2020-02-11T00:49:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14845",
+        "html_url": "https://github.com/spack/spack/pull/14845",
+        "diff_url": "https://github.com/spack/spack/pull/14845.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14845.patch"
+    },
+    "body": "This is a workaround until @tgamblin finishes the new concretizer, which will be smart enough to handle these issues on its own. Suggestion came from @danlipsa in #14793:\r\n\r\n> If termlib is really needed, the ncourses/package.py should be changed to make termlib variant True.\r\n\r\nFixes #14793 along with #14844 \r\n\r\n@becker33 @scheibelp @danlipsa @glennpj ",
+    "performed_via_github_app": null
+}

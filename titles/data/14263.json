@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14263",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14263/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14263/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14263/events",
+    "html_url": "https://github.com/spack/spack/pull/14263",
+    "id": 541297067,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1OTc5Nzg0",
+    "number": 14263,
+    "title": "Major performance improvements for `spack install` in environments",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 877274892,
+            "node_id": "MDU6TGFiZWw4NzcyNzQ4OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/views",
+            "name": "views",
+            "color": "70ff6d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2019-12-21T07:41:04Z",
+    "updated_at": "2019-12-24T09:08:43Z",
+    "closed_at": "2019-12-24T02:36:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14263",
+        "html_url": "https://github.com/spack/spack/pull/14263",
+        "diff_url": "https://github.com/spack/spack/pull/14263.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14263.patch"
+    },
+    "body": "Fixes #14259.\r\n\r\nThis fixes a lot of performance issues with the view generation phase of environments.  It also fixes a number of correctness issues with the transaction classes in `llnl.util.lock`.\r\n\r\nPerformance stuff:\r\n- [x] `ViewDescriptor.regenerate()` checks repeatedly whether packages are installed and also does a lot of DB queries -- put a read transaction around `regenerate()` to avoid repeatedly locking and unlocking the DB.\r\n- [x] add read transactions for similar reasons around `Environment.install()` and `Environment.install_all()`\r\n- [x] avoid regenerating the view twice in `spack install`\r\n- [x] avoid a call to realpath to save some time in `remove_dead_links()`\r\n- [x] don't recompute DAG hashes of specs when regenerating environments\r\n- [x] don't read `spec.yaml` files from the view twice\r\n\r\nLock stuff:\r\n- [x] fix issue with non-transactional writes in `WriteTransaction`\r\n- [x] ensure that nested write transactions actually write out\r\n- [x] avoid redundant reading at the start of write transactions\r\n- [x] Tests\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18087",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18087/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18087/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18087/events",
+    "html_url": "https://github.com/spack/spack/pull/18087",
+    "id": 679652788,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY4MzcxODgx",
+    "number": 18087,
+    "title": "Bugfix/cppzmq versions",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-15T22:37:21Z",
+    "updated_at": "2020-08-29T16:26:43Z",
+    "closed_at": "2020-08-17T08:32:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18087",
+        "html_url": "https://github.com/spack/spack/pull/18087",
+        "diff_url": "https://github.com/spack/spack/pull/18087.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18087.patch"
+    },
+    "body": "Added newer versions for cppzmq (4.3.0 was 2+ years old). All new versions were tested on gcc@9.3.0 (ubuntu 20.04) against current release/v0.15 (v0.15.4).\r\n\r\nFor cppzmq@4.3.0:, cppzmq runs unit tests at the end of the build. Each of these versions has been confirmed to build against each of the libzmq@4.2.5: versions in release/v0.15 (and develop, for that matter). That has allowed the relaxing of depends_on('libzmq@4.2.5', when='@4.3.0'), which were the most recent versions at the time cppzmq@4.3.0 was added (#9682).\r\n\r\nFor cppzmq@4.2.2:4.2.3 there are no unit tests, and I elected to leave the version pinning unchanged. In addition to not being able to rely on unit tests, since libzmq@4.2.2 conflicts with %gcc@8: I was also unable to easily test whether cppzmq@4.2.2:4.2.3 compiles with any newer libzmq.\r\n\r\nNote: This PR accompanies bug report #18086 in the dependency resolution for which this is a workaround.",
+    "performed_via_github_app": null
+}

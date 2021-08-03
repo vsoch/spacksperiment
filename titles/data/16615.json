@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16615",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16615/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16615/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16615/events",
+    "html_url": "https://github.com/spack/spack/pull/16615",
+    "id": 617110201,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE3MDkwNTU4",
+    "number": 16615,
+    "title": "hwloc: Add libudev variant.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-05-13T03:23:37Z",
+    "updated_at": "2020-05-18T01:00:24Z",
+    "closed_at": "2020-05-18T01:00:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16615",
+        "html_url": "https://github.com/spack/spack/pull/16615",
+        "diff_url": "https://github.com/spack/spack/pull/16615.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16615.patch"
+    },
+    "body": "This PR add libudev variant in hwloc.\r\nOn rhel8, libudev dose not link with spack build libuuid.\r\nSo I want to libudev default to False.\r\n\r\nlibudev.so depend libblkid.so:\r\n<pre>\r\n$ ldd  /lib64/libudev.so\r\n        linux-vdso.so.1 (0x0000ffffad450000)\r\n        libmount.so.1 => /lib64/libmount.so.1 (0x0000ffffad360000)\r\n        libgcc_s.so.1 => /opt/arm/reports-20.0.3/lib/libgcc_s.so.1 (0x0000ffffad320000)\r\n        libpthread.so.0 => /lib64/libpthread.so.0 (0x0000ffffad2e0000)\r\n        libc.so.6 => /lib64/libc.so.6 (0x0000ffffad160000)\r\n        /lib/ld-linux-aarch64.so.1 (0x0000ffffad460000)\r\n        libblkid.so.1 => /lib64/libblkid.so.1 (0x0000ffffad0f0000)\r\n        libuuid.so.1 => /lib64/libuuid.so.1 (0x0000ffffad0c0000)\r\n        libselinux.so.1 => /lib64/libselinux.so.1 (0x0000ffffad070000)\r\n        librt.so.1 => /lib64/librt.so.1 (0x0000ffffad040000)\r\n        libpcre2-8.so.0 => /lib64/libpcre2-8.so.0 (0x0000ffffacfa0000)\r\n        libdl.so.2 => /lib64/libdl.so.2 (0x0000ffffacf70000)\r\n</pre>\r\nlibblkid need uuid_unparse@UUID_1.0.\r\nBut uuid_unparse@UUID_1.0 is not found in spack provided libuuid.\r\nSo the package depends hwloc and libuuid is faild to build.\r\n<pre>\r\n/bin/ld: /lib64/libblkid.so.1: undefined reference to `uuid_unparse@UUID_1.0\r\n</pre>",
+    "performed_via_github_app": null
+}

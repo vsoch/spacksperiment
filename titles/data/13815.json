@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13815",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13815/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13815/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13815/events",
+    "html_url": "https://github.com/spack/spack/pull/13815",
+    "id": 526331229,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQzODE3MTg5",
+    "number": 13815,
+    "title": "texinfo: fix unescaped braces, and update locale handling",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-21T02:47:08Z",
+    "updated_at": "2019-11-21T04:24:43Z",
+    "closed_at": "2019-11-21T03:54:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13815",
+        "html_url": "https://github.com/spack/spack/pull/13815",
+        "diff_url": "https://github.com/spack/spack/pull/13815.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13815.patch"
+    },
+    "body": "* Fix unescaped braces in regexps.\r\nRef: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=898994\r\n\r\n* Apply this fix to perform thread-safe processing in code that uses the global locale.\r\nRef: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=902771",
+    "performed_via_github_app": null
+}

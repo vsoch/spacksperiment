@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14012",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14012/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14012/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14012/events",
+    "html_url": "https://github.com/spack/spack/pull/14012",
+    "id": 533964415,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5OTQ2NDE2",
+    "number": 14012,
+    "title": "mesquite: fix build of the no mpi variant.",
+    "user": {
+        "login": "nicolaslg",
+        "id": 14815625,
+        "node_id": "MDQ6VXNlcjE0ODE1NjI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14815625?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nicolaslg",
+        "html_url": "https://github.com/nicolaslg",
+        "followers_url": "https://api.github.com/users/nicolaslg/followers",
+        "following_url": "https://api.github.com/users/nicolaslg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nicolaslg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nicolaslg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nicolaslg/subscriptions",
+        "organizations_url": "https://api.github.com/users/nicolaslg/orgs",
+        "repos_url": "https://api.github.com/users/nicolaslg/repos",
+        "events_url": "https://api.github.com/users/nicolaslg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nicolaslg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-06T13:05:28Z",
+    "updated_at": "2019-12-07T00:08:14Z",
+    "closed_at": "2019-12-07T00:08:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14012",
+        "html_url": "https://github.com/spack/spack/pull/14012",
+        "diff_url": "https://github.com/spack/spack/pull/14012.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14012.patch"
+    },
+    "body": "Allows for the mesquite package to be built without mpi.\r\n\r\nThe --with-mpi option was always passed to the configure, it is now dependent on whether the mpi variant was chosen or not.",
+    "performed_via_github_app": null
+}

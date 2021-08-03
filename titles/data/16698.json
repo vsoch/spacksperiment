@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16698",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16698/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16698/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16698/events",
+    "html_url": "https://github.com/spack/spack/pull/16698",
+    "id": 620144777,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE5NDQ5NTM0",
+    "number": 16698,
+    "title": "paraview: use kits by default",
+    "user": {
+        "login": "utkarshayachit",
+        "id": 97864,
+        "node_id": "MDQ6VXNlcjk3ODY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/97864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/utkarshayachit",
+        "html_url": "https://github.com/utkarshayachit",
+        "followers_url": "https://api.github.com/users/utkarshayachit/followers",
+        "following_url": "https://api.github.com/users/utkarshayachit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/utkarshayachit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/utkarshayachit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/utkarshayachit/subscriptions",
+        "organizations_url": "https://api.github.com/users/utkarshayachit/orgs",
+        "repos_url": "https://api.github.com/users/utkarshayachit/repos",
+        "events_url": "https://api.github.com/users/utkarshayachit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/utkarshayachit/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-05-18T11:50:46Z",
+    "updated_at": "2020-05-18T17:59:41Z",
+    "closed_at": "2020-05-18T17:59:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16698",
+        "html_url": "https://github.com/spack/spack/pull/16698",
+        "diff_url": "https://github.com/spack/spack/pull/16698.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16698.patch"
+    },
+    "body": "Adding a variant to enable/disable kits and making the default use kits.\r\n\r\nref: https://gitlab.kitware.com/paraview/paraview/-/issues/19745",
+    "performed_via_github_app": null
+}

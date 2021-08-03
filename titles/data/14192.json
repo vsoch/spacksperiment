@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14192",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14192/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14192/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14192/events",
+    "html_url": "https://github.com/spack/spack/pull/14192",
+    "id": 538839820,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUzOTE3NjEz",
+    "number": 14192,
+    "title": "LAMMPS: Fix USER-REAXC package variant",
+    "user": {
+        "login": "plasmas",
+        "id": 21102457,
+        "node_id": "MDQ6VXNlcjIxMTAyNDU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/21102457?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/plasmas",
+        "html_url": "https://github.com/plasmas",
+        "followers_url": "https://api.github.com/users/plasmas/followers",
+        "following_url": "https://api.github.com/users/plasmas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/plasmas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/plasmas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/plasmas/subscriptions",
+        "organizations_url": "https://api.github.com/users/plasmas/orgs",
+        "repos_url": "https://api.github.com/users/plasmas/repos",
+        "events_url": "https://api.github.com/users/plasmas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/plasmas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-17T05:20:55Z",
+    "updated_at": "2019-12-17T18:35:07Z",
+    "closed_at": "2019-12-17T18:35:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14192",
+        "html_url": "https://github.com/spack/spack/pull/14192",
+        "diff_url": "https://github.com/spack/spack/pull/14192.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14192.patch"
+    },
+    "body": "The incorrect `reax` package keyword is replaced with the correct `user-reaxc` keyword, according to LAMMPS' [package details](https://lammps.sandia.gov/doc/Packages_details.html#pkg-user-reaxc).\r\n\r\nThe correction has been validated by running a LAMMPS task that requires the `USER-REAXC` package.\r\n\r\nThank you.",
+    "performed_via_github_app": null
+}

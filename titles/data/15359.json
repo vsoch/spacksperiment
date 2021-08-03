@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15359",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15359/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15359/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15359/events",
+    "html_url": "https://github.com/spack/spack/pull/15359",
+    "id": 576353734,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg0MzU2NDM0",
+    "number": 15359,
+    "title": "Parallel-netcdf: update package.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616910800,
+            "node_id": "MDU6TGFiZWw2MTY5MTA4MDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/nag",
+            "name": "nag",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-05T15:53:36Z",
+    "updated_at": "2020-03-10T16:29:58Z",
+    "closed_at": "2020-03-10T16:29:58Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15359",
+        "html_url": "https://github.com/spack/spack/pull/15359",
+        "diff_url": "https://github.com/spack/spack/pull/15359.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15359.patch"
+    },
+    "body": "- optionally (and by default) enable shared libraries\r\n- apply a patch for NAG\r\n- refactoring",
+    "performed_via_github_app": null
+}

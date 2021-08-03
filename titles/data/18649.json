@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18649",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18649/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18649/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18649/events",
+    "html_url": "https://github.com/spack/spack/pull/18649",
+    "id": 700099327,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg1Nzg0NjQx",
+    "number": 18649,
+    "title": "cvs: add a patch for segv issue",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-12T06:26:47Z",
+    "updated_at": "2020-09-28T11:36:22Z",
+    "closed_at": "2020-09-12T14:47:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18649",
+        "html_url": "https://github.com/spack/spack/pull/18649",
+        "diff_url": "https://github.com/spack/spack/pull/18649.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18649.patch"
+    },
+    "body": "There is a bug when using `cvs checkout` on `Ubuntu 19.10`\r\n![cvs_checkout_error](https://user-images.githubusercontent.com/29532367/92989089-f4dc3280-f503-11ea-9a2d-7961f966958e.png)\r\n",
+    "performed_via_github_app": null
+}

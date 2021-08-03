@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14450",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14450/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14450/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14450/events",
+    "html_url": "https://github.com/spack/spack/pull/14450",
+    "id": 547574781,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYxMDM4MzE3",
+    "number": 14450,
+    "title": "Update the icu4c package",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-09T16:10:48Z",
+    "updated_at": "2020-01-15T17:07:53Z",
+    "closed_at": "2020-01-15T04:05:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14450",
+        "html_url": "https://github.com/spack/spack/pull/14450",
+        "diff_url": "https://github.com/spack/spack/pull/14450.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14450.patch"
+    },
+    "body": "This PR makes several changes to the icu4c package\r\n\r\n1. add updated version to 65.1\r\n2. modify the default url as project has moved to github\r\n3. set UTF-8 locale to support building from source files in UTF-8\r\nformat\r\n\r\nNote that the older versions are not available on github so explicit urls\r\nwere used. This PR will close #14399.",
+    "performed_via_github_app": null
+}

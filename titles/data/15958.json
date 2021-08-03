@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15958",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15958/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15958/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15958/events",
+    "html_url": "https://github.com/spack/spack/pull/15958",
+    "id": 596793687,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAxMDI1MTM0",
+    "number": 15958,
+    "title": "primer3: move to github, add 2.5.0, fix 2.3.7",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-08T19:05:28Z",
+    "updated_at": "2020-04-09T16:53:35Z",
+    "closed_at": "2020-04-09T16:53:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15958",
+        "html_url": "https://github.com/spack/spack/pull/15958",
+        "diff_url": "https://github.com/spack/spack/pull/15958.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15958.patch"
+    },
+    "body": "- The Primer3 project moved to GitHub.\r\n\r\n  - update the URL\r\n  - compare the tarballs 2.3.7 from Sourceforge and github, no\r\n    significant differences (e.g. the Sourceforge tarball contained a\r\n    couple of \"tmp\" files).\r\n  - update the signature for the 2.3.7 tarball.\r\n\r\n- @2.3.7 doesn't build with gcc@8.4.0, there's a dubious pointer/int\r\n  comparison that causes an error.  It was fixed upstream in newer\r\n  versions, apply simple patch to this version so that it continues to\r\n  be build-able with newer compilers.  See:\r\n\r\n  - https://github.com/primer3-org/primer3/issues/2\r\n  - https://github.com/primer3-org/primer3/issues/3\r\n\r\n- Add info for @2.5.0, which builds cleanly.",
+    "performed_via_github_app": null
+}

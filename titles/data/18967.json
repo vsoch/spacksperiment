@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18967",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18967/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18967/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18967/events",
+    "html_url": "https://github.com/spack/spack/pull/18967",
+    "id": 708654255,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkyODQzOTgy",
+    "number": 18967,
+    "title": "pandoc: add variant for texlive",
+    "user": {
+        "login": "drkrynstrng",
+        "id": 36723171,
+        "node_id": "MDQ6VXNlcjM2NzIzMTcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36723171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/drkrynstrng",
+        "html_url": "https://github.com/drkrynstrng",
+        "followers_url": "https://api.github.com/users/drkrynstrng/followers",
+        "following_url": "https://api.github.com/users/drkrynstrng/following{/other_user}",
+        "gists_url": "https://api.github.com/users/drkrynstrng/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/drkrynstrng/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/drkrynstrng/subscriptions",
+        "organizations_url": "https://api.github.com/users/drkrynstrng/orgs",
+        "repos_url": "https://api.github.com/users/drkrynstrng/repos",
+        "events_url": "https://api.github.com/users/drkrynstrng/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/drkrynstrng/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-09-25T05:34:00Z",
+    "updated_at": "2020-10-11T01:53:52Z",
+    "closed_at": "2020-10-11T01:53:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18967",
+        "html_url": "https://github.com/spack/spack/pull/18967",
+        "diff_url": "https://github.com/spack/spack/pull/18967.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18967.patch"
+    },
+    "body": "Modifies the pandoc package by adding a variant for texlive, which is only needed for PDF output. Enables this variant by default.",
+    "performed_via_github_app": null
+}

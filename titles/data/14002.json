@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14002",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14002/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14002/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14002/events",
+    "html_url": "https://github.com/spack/spack/pull/14002",
+    "id": 533516253,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5NTc2ODAy",
+    "number": 14002,
+    "title": "Add \"same_version_as\"-directive to fix py-protobuf dependencies",
+    "user": {
+        "login": "obreitwi",
+        "id": 123140,
+        "node_id": "MDQ6VXNlcjEyMzE0MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/obreitwi",
+        "html_url": "https://github.com/obreitwi",
+        "followers_url": "https://api.github.com/users/obreitwi/followers",
+        "following_url": "https://api.github.com/users/obreitwi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/obreitwi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/obreitwi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/obreitwi/subscriptions",
+        "organizations_url": "https://api.github.com/users/obreitwi/orgs",
+        "repos_url": "https://api.github.com/users/obreitwi/repos",
+        "events_url": "https://api.github.com/users/obreitwi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/obreitwi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-12-05T18:20:37Z",
+    "updated_at": "2021-06-11T15:48:09Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14002",
+        "html_url": "https://github.com/spack/spack/pull/14002",
+        "diff_url": "https://github.com/spack/spack/pull/14002.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14002.patch"
+    },
+    "body": "### Problem:\r\nEach version of `py-protobuf` depends on the exact same version of `protobuf`. Tracking this kind of dependency is only possible with a lot of boilerplate, which we aim to avoid.\r\n\r\n### Solution:\r\n* Add `same_version_as`-directive that automatically adds a one-to-one dependency of each version of the package to the exact same version of the other package.\r\n\r\n* Use `same_version_as`-directive to keep versions of py-protobuf and protobuf in sync (i.e., `py-protobuf@2.6.1` depends on `protobuf@2.6.1`, `py-protobuf@.3.7.1` depends on `protobuf@3.7.1` and so forth).\r\n\r\n* Add mock packages used in tests to ensure `same_version_as`-directive remains functional.",
+    "performed_via_github_app": null
+}

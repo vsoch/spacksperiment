@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13623",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13623/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13623/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13623/events",
+    "html_url": "https://github.com/spack/spack/pull/13623",
+    "id": 518971318,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM3ODAwMTg2",
+    "number": 13623,
+    "title": "m4: fixed macOS version identification on patch",
+    "user": {
+        "login": "jdeaton",
+        "id": 17778287,
+        "node_id": "MDQ6VXNlcjE3Nzc4Mjg3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17778287?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdeaton",
+        "html_url": "https://github.com/jdeaton",
+        "followers_url": "https://api.github.com/users/jdeaton/followers",
+        "following_url": "https://api.github.com/users/jdeaton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdeaton/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdeaton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdeaton/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdeaton/orgs",
+        "repos_url": "https://api.github.com/users/jdeaton/repos",
+        "events_url": "https://api.github.com/users/jdeaton/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdeaton/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-07T00:39:34Z",
+    "updated_at": "2019-11-07T15:44:00Z",
+    "closed_at": "2019-11-07T15:44:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13623",
+        "html_url": "https://github.com/spack/spack/pull/13623",
+        "diff_url": "https://github.com/spack/spack/pull/13623.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13623.patch"
+    },
+    "body": "Patch was not being applied in recent versions of macOS. Homebrew is still applying patch to any version after High Sierra.",
+    "performed_via_github_app": null
+}

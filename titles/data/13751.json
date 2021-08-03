@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13751",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13751/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13751/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13751/events",
+    "html_url": "https://github.com/spack/spack/pull/13751",
+    "id": 523393999,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxNDA1NTQ3",
+    "number": 13751,
+    "title": "cmd/install: remove unused install_status option",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-11-15T10:41:42Z",
+    "updated_at": "2019-11-22T20:30:14Z",
+    "closed_at": "2019-11-22T18:17:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13751",
+        "html_url": "https://github.com/spack/spack/pull/13751",
+        "diff_url": "https://github.com/spack/spack/pull/13751.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13751.patch"
+    },
+    "body": "Pretty straightforward. The option isn't actually hooked up to any functionality, and I'm not sure how it got into the `install` command.\r\n\r\nMotivated by the error report on slack that confused it with the similarly named option for the `spack spec` command.",
+    "performed_via_github_app": null
+}

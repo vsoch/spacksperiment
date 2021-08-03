@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16749",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16749/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16749/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16749/events",
+    "html_url": "https://github.com/spack/spack/pull/16749",
+    "id": 622535268,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIxMzgxNjU1",
+    "number": 16749,
+    "title": "Use a single ThreadPool for \"spack versions\"",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 876167697,
+            "node_id": "MDU6TGFiZWw4NzYxNjc2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hotfix",
+            "name": "hotfix",
+            "color": "a54727",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-05-21T14:26:03Z",
+    "updated_at": "2020-06-05T07:11:50Z",
+    "closed_at": "2020-06-05T07:08:33Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16749",
+        "html_url": "https://github.com/spack/spack/pull/16749",
+        "diff_url": "https://github.com/spack/spack/pull/16749.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16749.patch"
+    },
+    "body": "fixes #16720 \r\n\r\nModifications:\r\n\r\n- [x] `spack versions` doesn't spawn recursive pool of processes anymore\r\n- [x]  The number of concurrent requests can be controlled via cli",
+    "performed_via_github_app": null
+}

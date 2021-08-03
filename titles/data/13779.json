@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13779",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13779/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13779/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13779/events",
+    "html_url": "https://github.com/spack/spack/pull/13779",
+    "id": 524756605,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQyNDczMzI5",
+    "number": 13779,
+    "title": "Fix for overlong shebang in valgrind",
+    "user": {
+        "login": "daveh86",
+        "id": 909151,
+        "node_id": "MDQ6VXNlcjkwOTE1MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/909151?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daveh86",
+        "html_url": "https://github.com/daveh86",
+        "followers_url": "https://api.github.com/users/daveh86/followers",
+        "following_url": "https://api.github.com/users/daveh86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daveh86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daveh86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daveh86/subscriptions",
+        "organizations_url": "https://api.github.com/users/daveh86/orgs",
+        "repos_url": "https://api.github.com/users/daveh86/repos",
+        "events_url": "https://api.github.com/users/daveh86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daveh86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 571584920,
+            "node_id": "MDU6TGFiZWw1NzE1ODQ5MjA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/perl",
+            "name": "perl",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-19T03:50:18Z",
+    "updated_at": "2019-11-20T22:50:16Z",
+    "closed_at": "2019-11-20T22:50:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13779",
+        "html_url": "https://github.com/spack/spack/pull/13779",
+        "diff_url": "https://github.com/spack/spack/pull/13779.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13779.patch"
+    },
+    "body": "Fix for some overlong shebangs in valgrind. Borrowed from verrou/package.py",
+    "performed_via_github_app": null
+}

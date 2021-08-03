@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13710",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13710/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13710/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13710/events",
+    "html_url": "https://github.com/spack/spack/pull/13710",
+    "id": 521892090,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQwMTg2MjQ3",
+    "number": 13710,
+    "title": "Binary packaging: correct relative symlinks",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-13T01:04:44Z",
+    "updated_at": "2019-11-14T01:51:58Z",
+    "closed_at": "2019-11-14T01:51:58Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13710",
+        "html_url": "https://github.com/spack/spack/pull/13710",
+        "diff_url": "https://github.com/spack/spack/pull/13710.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13710.patch"
+    },
+    "body": "@becker33 \r\n\r\nSomething I missed when reviewing https://github.com/spack/spack/pull/10073\r\n\r\n`relocate.make_link_relative` was resolving a path relative to a complete file path when in fact `os.path.relpath` expects a directory. The result was that the relative path was always \"off\" by one directory in the sense that it always added an extra initial `../` to the path.\r\n\r\nThis determines the link target relative path relative to the link directory rather than relative to the full link path (which includes the file name).",
+    "performed_via_github_app": null
+}

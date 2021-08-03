@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17870",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17870/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17870/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17870/events",
+    "html_url": "https://github.com/spack/spack/pull/17870",
+    "id": 672844318,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYyODA5Njk2",
+    "number": 17870,
+    "title": "Prefer dynamic linking for Python in vim when +python",
+    "user": {
+        "login": "robertu94",
+        "id": 7604212,
+        "node_id": "MDQ6VXNlcjc2MDQyMTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7604212?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertu94",
+        "html_url": "https://github.com/robertu94",
+        "followers_url": "https://api.github.com/users/robertu94/followers",
+        "following_url": "https://api.github.com/users/robertu94/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertu94/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertu94/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertu94/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertu94/orgs",
+        "repos_url": "https://api.github.com/users/robertu94/repos",
+        "events_url": "https://api.github.com/users/robertu94/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertu94/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-04T14:38:10Z",
+    "updated_at": "2020-09-03T11:44:09Z",
+    "closed_at": "2020-08-04T17:22:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17870",
+        "html_url": "https://github.com/spack/spack/pull/17870",
+        "diff_url": "https://github.com/spack/spack/pull/17870.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17870.patch"
+    },
+    "body": "Previously the python package for vim used static linking, and depending\r\non what system libraries were available and linked against could cause\r\nsymbol conflicts for python leading to segfaults in loading c modules in\r\nthe standard library (i.e. heapq).  This patch address this issue by\r\ndynamically linking them.",
+    "performed_via_github_app": null
+}

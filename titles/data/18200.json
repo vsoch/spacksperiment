@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18200",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18200/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18200/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18200/events",
+    "html_url": "https://github.com/spack/spack/pull/18200",
+    "id": 683054896,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcxMjA3Mjcz",
+    "number": 18200,
+    "title": "charliecloud: add 0.18",
+    "user": {
+        "login": "j-ogas",
+        "id": 9555241,
+        "node_id": "MDQ6VXNlcjk1NTUyNDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9555241?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/j-ogas",
+        "html_url": "https://github.com/j-ogas",
+        "followers_url": "https://api.github.com/users/j-ogas/followers",
+        "following_url": "https://api.github.com/users/j-ogas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/j-ogas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/j-ogas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/j-ogas/subscriptions",
+        "organizations_url": "https://api.github.com/users/j-ogas/orgs",
+        "repos_url": "https://api.github.com/users/j-ogas/repos",
+        "events_url": "https://api.github.com/users/j-ogas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/j-ogas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-20T19:51:02Z",
+    "updated_at": "2020-08-21T14:53:32Z",
+    "closed_at": "2020-08-21T01:16:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18200",
+        "html_url": "https://github.com/spack/spack/pull/18200",
+        "diff_url": "https://github.com/spack/spack/pull/18200.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18200.patch"
+    },
+    "body": "This PR adds 0.18 and removes older versions susceptible to a symlink bug in `ch-tug` and `ch-grow`. From the release notes:\r\n\r\n> This release fixes an important symlink handling bug in ch-tug and ch-grow ([#819](https://github.com/hpc/charliecloud/issues/819)). Prior to version 0.18, if a pulled image contained a symlink in one layer and then a regular file at the same path in a subsequent layer, the target of the symlink would be overwritten even if it was not within the image; i.e., unpacking inappropriately followed the symlink. This allows a crafted image to overwrite any file writeable by the invoking user.\r\n>\r\n> (The underlying cause is a known bug in Python's tarfile module, e.g. https://bugs.python.org/issue35483, https://bugs.python.org/issue19974.)\r\n",
+    "performed_via_github_app": null
+}

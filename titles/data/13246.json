@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13246",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13246/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13246/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13246/events",
+    "html_url": "https://github.com/spack/spack/pull/13246",
+    "id": 508330056,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI5MTQxMzg0",
+    "number": 13246,
+    "title": "arpack-ng: Fixed error that is not compatible with 'isnan'.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-17T08:51:57Z",
+    "updated_at": "2019-10-24T00:00:07Z",
+    "closed_at": "2019-10-21T23:27:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13246",
+        "html_url": "https://github.com/spack/spack/pull/13246",
+        "diff_url": "https://github.com/spack/spack/pull/13246.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13246.patch"
+    },
+    "body": "Fujitsu compiler does not support `isnan` function.\r\n- isnan: function that determines whether it is `NaN`.\r\n\r\nSo, I Modified to judge `NaN` without using `isnan` function.",
+    "performed_via_github_app": null
+}

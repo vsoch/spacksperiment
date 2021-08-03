@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14424",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14424/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14424/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14424/events",
+    "html_url": "https://github.com/spack/spack/pull/14424",
+    "id": 546834563,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYwNDM3MTI1",
+    "number": 14424,
+    "title": "openfoam & openfoam-org: Fixing GCC 9 compilation errors.",
+    "user": {
+        "login": "simo-tuomisto",
+        "id": 7014138,
+        "node_id": "MDQ6VXNlcjcwMTQxMzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7014138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simo-tuomisto",
+        "html_url": "https://github.com/simo-tuomisto",
+        "followers_url": "https://api.github.com/users/simo-tuomisto/followers",
+        "following_url": "https://api.github.com/users/simo-tuomisto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simo-tuomisto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simo-tuomisto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simo-tuomisto/subscriptions",
+        "organizations_url": "https://api.github.com/users/simo-tuomisto/orgs",
+        "repos_url": "https://api.github.com/users/simo-tuomisto/repos",
+        "events_url": "https://api.github.com/users/simo-tuomisto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simo-tuomisto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-01-08T12:36:59Z",
+    "updated_at": "2020-08-31T10:02:24Z",
+    "closed_at": "2020-08-24T07:18:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14424",
+        "html_url": "https://github.com/spack/spack/pull/14424",
+        "diff_url": "https://github.com/spack/spack/pull/14424.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14424.patch"
+    },
+    "body": "openfoam & openfoam-org do not build correctly with gcc@9: because\r\nit raises an error for -Wdeprecated-copy. This commit fixes that.\r\n\r\nAlso fixes an issue with building openfoam-org as flex is needed\r\nafter the build has finished.\r\n\r\nFix is done by modifying `cWARN`- and `c++WARN`-flags in `c`-and `c++`-files in `wmake/rules/*Gcc*`-folders. From version 1906 onwards openfoam uses the folder `wmake/rules/Generic/Gcc` instead. The logic in the patch looks for both places for files to adapt.\r\n\r\nUnfortunately this does not fix the issue for versions older than openfoam@1812 or openfoam-org@6. For those versions there are plenty of other compilation issues due to gcc's stricter standards.\r\n\r\nMore info on -Wdeprecated-copy can be found in [gcc's bugzilla](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=58407). This issue is was previously mentioned in #13995 .",
+    "performed_via_github_app": null
+}

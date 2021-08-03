@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18286",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18286/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18286/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18286/events",
+    "html_url": "https://github.com/spack/spack/pull/18286",
+    "id": 686351295,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDczOTMzMDUx",
+    "number": 18286,
+    "title": "sirius, q-e-sirius",
+    "user": {
+        "login": "simonpintarelli",
+        "id": 1237199,
+        "node_id": "MDQ6VXNlcjEyMzcxOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1237199?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simonpintarelli",
+        "html_url": "https://github.com/simonpintarelli",
+        "followers_url": "https://api.github.com/users/simonpintarelli/followers",
+        "following_url": "https://api.github.com/users/simonpintarelli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simonpintarelli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simonpintarelli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simonpintarelli/subscriptions",
+        "organizations_url": "https://api.github.com/users/simonpintarelli/orgs",
+        "repos_url": "https://api.github.com/users/simonpintarelli/repos",
+        "events_url": "https://api.github.com/users/simonpintarelli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simonpintarelli/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-26T14:07:41Z",
+    "updated_at": "2020-08-27T12:45:56Z",
+    "closed_at": "2020-08-27T12:45:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18286",
+        "html_url": "https://github.com/spack/spack/pull/18286",
+        "diff_url": "https://github.com/spack/spack/pull/18286.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18286.patch"
+    },
+    "body": "- sirius: fix bug `~/+shared` (`~shared` was not properly passed to cmake)\r\n- sirius: make `+shared` the default\r\n- q-e-sirius: explicitly depend on `sirius+shared`, fix gcc@10 workaround",
+    "performed_via_github_app": null
+}

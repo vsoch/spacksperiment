@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18299",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18299/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18299/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18299/events",
+    "html_url": "https://github.com/spack/spack/pull/18299",
+    "id": 686893235,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc0NDA5MDMz",
+    "number": 18299,
+    "title": "sbang: add support for php",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1747000960,
+            "node_id": "MDU6TGFiZWwxNzQ3MDAwOTYw",
+            "url": "https://api.github.com/repos/spack/spack/labels/sbang",
+            "name": "sbang",
+            "color": "095e8c",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-08-27T02:41:08Z",
+    "updated_at": "2020-10-27T05:11:59Z",
+    "closed_at": "2020-10-27T05:11:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18299",
+        "html_url": "https://github.com/spack/spack/pull/18299",
+        "diff_url": "https://github.com/spack/spack/pull/18299.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18299.patch"
+    },
+    "body": "fixed #15543\r\n\r\nphp script is processed only inside from `<?php` to `?>`.\r\nanother part is output to stdout.\r\nThe PR change `<?php #!` to sbang line.\r\n\r\nphp package installed phar script written by php.\r\nBut phar include binary, and phar embeded own sh1 checksum.\r\nThis PR insert sbang when generate phar script if it is needed.",
+    "performed_via_github_app": null
+}

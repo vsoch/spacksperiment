@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18326",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18326/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18326/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18326/events",
+    "html_url": "https://github.com/spack/spack/pull/18326",
+    "id": 687365491,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc0ODA0MTYx",
+    "number": 18326,
+    "title": "Increase db_lock_timeout",
+    "user": {
+        "login": "ChristianTackeGSI",
+        "id": 58549698,
+        "node_id": "MDQ6VXNlcjU4NTQ5Njk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58549698?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ChristianTackeGSI",
+        "html_url": "https://github.com/ChristianTackeGSI",
+        "followers_url": "https://api.github.com/users/ChristianTackeGSI/followers",
+        "following_url": "https://api.github.com/users/ChristianTackeGSI/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ChristianTackeGSI/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ChristianTackeGSI/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ChristianTackeGSI/subscriptions",
+        "organizations_url": "https://api.github.com/users/ChristianTackeGSI/orgs",
+        "repos_url": "https://api.github.com/users/ChristianTackeGSI/repos",
+        "events_url": "https://api.github.com/users/ChristianTackeGSI/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ChristianTackeGSI/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-27T16:07:58Z",
+    "updated_at": "2021-06-12T10:44:00Z",
+    "closed_at": "2021-06-12T10:44:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18326",
+        "html_url": "https://github.com/spack/spack/pull/18326",
+        "diff_url": "https://github.com/spack/spack/pull/18326.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18326.patch"
+    },
+    "body": "db_lock_timeout is currently set to 3 seconds. This is sometimes too short, even on a fast Xeon machine with an SSD.\r\n\r\nWhen running \"spack install cmake\" and \"spack install grpc\" in parallel on a fresh install, then I needed to increase db_lock_timeout to at minimum 8 seconds to not hit the TimeoutError.\r\n\r\nI propose to raise the timeout to 15 seconds (about double that value). This should be a good value to not hit the timeout too easily (at least on fast machines), and still have a reasonable time for erroring out.\r\n\r\npossible label: defaults",
+    "performed_via_github_app": null
+}

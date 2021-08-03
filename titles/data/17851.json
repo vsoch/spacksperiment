@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17851",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17851/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17851/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17851/events",
+    "html_url": "https://github.com/spack/spack/pull/17851",
+    "id": 672026543,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYyMTM2NTk1",
+    "number": 17851,
+    "title": "HPX: fix wrong method name and use define/define_from_variant methods",
+    "user": {
+        "login": "albestro",
+        "id": 9337627,
+        "node_id": "MDQ6VXNlcjkzMzc2Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337627?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/albestro",
+        "html_url": "https://github.com/albestro",
+        "followers_url": "https://api.github.com/users/albestro/followers",
+        "following_url": "https://api.github.com/users/albestro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/albestro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/albestro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/albestro/subscriptions",
+        "organizations_url": "https://api.github.com/users/albestro/orgs",
+        "repos_url": "https://api.github.com/users/albestro/repos",
+        "events_url": "https://api.github.com/users/albestro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/albestro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-03T12:02:17Z",
+    "updated_at": "2020-08-04T04:15:24Z",
+    "closed_at": "2020-08-04T04:15:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17851",
+        "html_url": "https://github.com/spack/spack/pull/17851",
+        "diff_url": "https://github.com/spack/spack/pull/17851.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17851.patch"
+    },
+    "body": "In the last PR I used `define_from_variant` with the wrong name, moreover I preferred to keep the \"refactoring\" of the script in a separate PR.\r\n\r\nHere it is. I quickly tested it, but it is not so easy to test all the variants. An additional eye check would be very useful.\r\n\r\nThanks in advance!",
+    "performed_via_github_app": null
+}

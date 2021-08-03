@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16861/events",
+    "html_url": "https://github.com/spack/spack/pull/16861",
+    "id": 626997966,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0ODg0ODAw",
+    "number": 16861,
+    "title": "revocap-refiner: add space and remove unused function.",
+    "user": {
+        "login": "noguchi-k",
+        "id": 55966120,
+        "node_id": "MDQ6VXNlcjU1OTY2MTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55966120?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noguchi-k",
+        "html_url": "https://github.com/noguchi-k",
+        "followers_url": "https://api.github.com/users/noguchi-k/followers",
+        "following_url": "https://api.github.com/users/noguchi-k/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noguchi-k/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noguchi-k/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noguchi-k/subscriptions",
+        "organizations_url": "https://api.github.com/users/noguchi-k/orgs",
+        "repos_url": "https://api.github.com/users/noguchi-k/repos",
+        "events_url": "https://api.github.com/users/noguchi-k/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noguchi-k/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-29T04:55:42Z",
+    "updated_at": "2020-06-01T00:11:14Z",
+    "closed_at": "2020-05-30T15:57:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16861",
+        "html_url": "https://github.com/spack/spack/pull/16861",
+        "diff_url": "https://github.com/spack/spack/pull/16861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16861.patch"
+    },
+    "body": "I found an error building `revocap-refiner`.\r\n- error\r\n```\r\n  >> 28    Common/kmbDebug.h:55:66: error: invalid suffix on literal; C++11 requires a space between literal and identifier [-Wreserved-user-defined-literal]\r\n```\r\nI added space between literal and identifier, and removed unused function `getIndices`.\r\n\r\nI submitted this pull request.\r\nhttps://github.com/FrontISTR/REVOCAP_Refiner/pull/1",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15209",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15209/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15209/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15209/events",
+    "html_url": "https://github.com/spack/spack/pull/15209",
+    "id": 570652575,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc5NjUxNTkx",
+    "number": 15209,
+    "title": "libhio: specify use of external json",
+    "user": {
+        "login": "plamborn",
+        "id": 8998728,
+        "node_id": "MDQ6VXNlcjg5OTg3Mjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8998728?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/plamborn",
+        "html_url": "https://github.com/plamborn",
+        "followers_url": "https://api.github.com/users/plamborn/followers",
+        "following_url": "https://api.github.com/users/plamborn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/plamborn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/plamborn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/plamborn/subscriptions",
+        "organizations_url": "https://api.github.com/users/plamborn/orgs",
+        "repos_url": "https://api.github.com/users/plamborn/repos",
+        "events_url": "https://api.github.com/users/plamborn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/plamborn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-02-25T15:30:22Z",
+    "updated_at": "2020-02-29T13:25:22Z",
+    "closed_at": "2020-02-29T13:25:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15209",
+        "html_url": "https://github.com/spack/spack/pull/15209",
+        "diff_url": "https://github.com/spack/spack/pull/15209.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15209.patch"
+    },
+    "body": "libhio has been building it's own json.  With this change, libhio will rely on the json installed by spack.",
+    "performed_via_github_app": null
+}

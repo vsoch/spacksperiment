@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16003",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16003/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16003/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16003/events",
+    "html_url": "https://github.com/spack/spack/pull/16003",
+    "id": 598143909,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAyMTA3MTI5",
+    "number": 16003,
+    "title": "Set MPI providers for test config",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-04-10T23:49:46Z",
+    "updated_at": "2020-05-01T18:23:46Z",
+    "closed_at": "2020-05-01T17:47:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16003",
+        "html_url": "https://github.com/spack/spack/pull/16003",
+        "diff_url": "https://github.com/spack/spack/pull/16003.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16003.patch"
+    },
+    "body": "For tests that use the real Spack package repository, the config needs to avoid using MPI providers that are not intended to be installed by Spack. Without this, it is possible that Spack tests which concretize the MPI virtual will end up trying to use an implementation that it shouldn't (e.g. one that is always provided externally).\r\n\r\nSee: https://github.com/spack/spack/pull/15666 (and specifically the tests for it at https://travis-ci.org/github/spack/spack/jobs/672203234)",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17687",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17687/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17687/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17687/events",
+    "html_url": "https://github.com/spack/spack/pull/17687",
+    "id": 664955763,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU2MTA5NTI2",
+    "number": 17687,
+    "title": "Updated elmer-fem recipe",
+    "user": {
+        "login": "ilbiondo",
+        "id": 61497728,
+        "node_id": "MDQ6VXNlcjYxNDk3NzI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61497728?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ilbiondo",
+        "html_url": "https://github.com/ilbiondo",
+        "followers_url": "https://api.github.com/users/ilbiondo/followers",
+        "following_url": "https://api.github.com/users/ilbiondo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ilbiondo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ilbiondo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ilbiondo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ilbiondo/orgs",
+        "repos_url": "https://api.github.com/users/ilbiondo/repos",
+        "events_url": "https://api.github.com/users/ilbiondo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ilbiondo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-24T06:49:06Z",
+    "updated_at": "2020-07-24T07:47:10Z",
+    "closed_at": "2020-07-24T07:47:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17687",
+        "html_url": "https://github.com/spack/spack/pull/17687",
+        "diff_url": "https://github.com/spack/spack/pull/17687.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17687.patch"
+    },
+    "body": "Main changes: scatt2d solver and a fix so that elmer build correctly with the Intel MKL",
+    "performed_via_github_app": null
+}

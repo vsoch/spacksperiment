@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18211",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18211/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18211/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18211/events",
+    "html_url": "https://github.com/spack/spack/pull/18211",
+    "id": 683712143,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcxNzU5MTAy",
+    "number": 18211,
+    "title": "new recipe for rocalution and fix for rocm-smi-lib",
+    "user": {
+        "login": "srekolam",
+        "id": 67086238,
+        "node_id": "MDQ6VXNlcjY3MDg2MjM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67086238?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srekolam",
+        "html_url": "https://github.com/srekolam",
+        "followers_url": "https://api.github.com/users/srekolam/followers",
+        "following_url": "https://api.github.com/users/srekolam/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srekolam/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srekolam/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srekolam/subscriptions",
+        "organizations_url": "https://api.github.com/users/srekolam/orgs",
+        "repos_url": "https://api.github.com/users/srekolam/repos",
+        "events_url": "https://api.github.com/users/srekolam/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srekolam/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-21T17:38:34Z",
+    "updated_at": "2020-08-21T18:34:07Z",
+    "closed_at": "2020-08-21T18:34:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18211",
+        "html_url": "https://github.com/spack/spack/pull/18211",
+        "diff_url": "https://github.com/spack/spack/pull/18211.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18211.patch"
+    },
+    "body": "@adamjstewart  , You can close the #18204 and accept this one for review .Sorry for the confusion. \r\n\r\nLet me know if you can suggest anything for the depends_on(cmake@3.5.2,type='build');\r\nHere is error that i am pasting for the depends_on(cmake@3:, type='build')\r\n\r\nthe build failue 'NOTFOUND' error . Building CXX object src/CMakeFiles/rocalution.dir/base/host/host_matrix_mcsr.cpp.o\r\ncd /tmp/root/spack-stage/spack-stage-rocalution-3.5.0-bv4mpho4fpqphsw3c6fbdpxfscjslzbj/spack-build/src && /spack/opt/spack/linux-centos7-skylake_avx512/gcc-7.3.1/hip-3.5.0-3gpxb5mp3xscv2hdrd3w3prli2vtg5lt/bin/hipcc -DSUPPORT_HIP -Drocalution_EXPORTS -I/tmp/root/spack-stage/spack-stage-rocalution-3.5.0-bv4mpho4fpqphsw3c6fbdpxfscjslzbj/spack-build/include -O2 -g -DNDEBUG -fPIC NOTFOUND -std=c++11 -o CMakeFiles/rocalution.dir/base/host/host_matrix_mcsr.cpp.o -c /tmp/root/spack-stage/spack-stage-rocalution-3.5.0-bv4mpho4fpqphsw3c6fbdpxfscjslzbj/spack-src/src/base/host/host_matrix_mcsr.cpp\r\nclang-11: error: no such file or directory: 'NOTFOUND'",
+    "performed_via_github_app": null
+}

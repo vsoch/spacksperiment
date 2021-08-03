@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18185",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18185/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18185/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18185/events",
+    "html_url": "https://github.com/spack/spack/pull/18185",
+    "id": 682292550,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcwNTQ5Nzg0",
+    "number": 18185,
+    "title": "Add new MavenPackage build system base class",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 2288082507,
+            "node_id": "MDU6TGFiZWwyMjg4MDgyNTA3",
+            "url": "https://api.github.com/repos/spack/spack/labels/maven",
+            "name": "maven",
+            "color": "fc468f",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-08-20T02:01:56Z",
+    "updated_at": "2020-09-07T00:52:11Z",
+    "closed_at": "2020-09-03T22:30:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18185",
+        "html_url": "https://github.com/spack/spack/pull/18185",
+        "diff_url": "https://github.com/spack/spack/pull/18185.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18185.patch"
+    },
+    "body": "We've seen a lot of new packages lately using the Maven build system. This PR adds a new `MavenPackage` base class to enforce uniformity between these packages and make it easier to write new packages.\r\n\r\nAccording to https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases, Maven packages have a series of lifecycle phases. I tried adding all of these to the base class as separate phases, but from what I can tell it re-runs all prior stages of the lifecycle.\r\n\r\nNote that all of these packages pull in dozens to hundreds of dependencies from the internet. At some point, we should find a way to enforce offline builds and add packages for all of the dependencies, but I don't care enough about Maven to be the person to do that.\r\n\r\n@darmac I believe you added many of these packages. Can you review this PR and make sure I didn't break any packages you care about?",
+    "performed_via_github_app": null
+}

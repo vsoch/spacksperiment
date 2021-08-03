@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17423",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17423/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17423/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17423/events",
+    "html_url": "https://github.com/spack/spack/pull/17423",
+    "id": 652753798,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ1Nzc3ODIz",
+    "number": 17423,
+    "title": "CUDA 11.0.2",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-07-07T23:54:54Z",
+    "updated_at": "2020-07-28T22:14:19Z",
+    "closed_at": "2020-07-13T23:32:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17423",
+        "html_url": "https://github.com/spack/spack/pull/17423",
+        "diff_url": "https://github.com/spack/spack/pull/17423.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17423.patch"
+    },
+    "body": "- [x] wait for general release: CUDA Toolkit 11.0.2-1 (NVCC 11.0.194)\r\n- [x] compute capability support\r\n- [x] compiler conflicts\r\n  - [x] ppc64le\r\n  - [x] conflict pre-C++11 compilers as recommended, since too many default math libs depend on C++11 host now\r\n- [x] minimal check: `spack install cuda-memtest`\r\n- [x] new download links\r\n- with respect to #17018 and other collisions, we should set `--tmpdir=` to a `mktemp -d`ir that we create and control (also: problem is gone with 11.0.2 as far as I tested) - can be cleaned up in a follow-up PR.\r\n```\r\n  --tmpdir=<path>\r\n    Performs any temporary actions within <path> instead of /tmp. Useful in\r\n    cases where /tmp cannot be used (doesn't exist, is full, is mounted with\r\n    'noexec', etc.).\r\n```\r\n- [x] let people test their things\r\n\r\ncc @svenevs preparing this already",
+    "performed_via_github_app": null
+}

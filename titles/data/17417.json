@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17417",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17417/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17417/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17417/events",
+    "html_url": "https://github.com/spack/spack/pull/17417",
+    "id": 652584528,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ1NjI3Mzc4",
+    "number": 17417,
+    "title": "Abinit+wannier90 fix",
+    "user": {
+        "login": "downloadico",
+        "id": 18726451,
+        "node_id": "MDQ6VXNlcjE4NzI2NDUx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18726451?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/downloadico",
+        "html_url": "https://github.com/downloadico",
+        "followers_url": "https://api.github.com/users/downloadico/followers",
+        "following_url": "https://api.github.com/users/downloadico/following{/other_user}",
+        "gists_url": "https://api.github.com/users/downloadico/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/downloadico/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/downloadico/subscriptions",
+        "organizations_url": "https://api.github.com/users/downloadico/orgs",
+        "repos_url": "https://api.github.com/users/downloadico/repos",
+        "events_url": "https://api.github.com/users/downloadico/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/downloadico/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-07-07T19:45:14Z",
+    "updated_at": "2020-07-16T20:57:43Z",
+    "closed_at": "2020-07-16T20:57:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17417",
+        "html_url": "https://github.com/spack/spack/pull/17417",
+        "diff_url": "https://github.com/spack/spack/pull/17417.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17417.patch"
+    },
+    "body": "This PR allows abinit to be built with the wannier90 library.",
+    "performed_via_github_app": null
+}

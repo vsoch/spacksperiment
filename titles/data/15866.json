@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15866",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15866/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15866/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15866/events",
+    "html_url": "https://github.com/spack/spack/pull/15866",
+    "id": 594109779,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk4NzY5NDc3",
+    "number": 15866,
+    "title": "Version bump: eztrace-1.1-10",
+    "user": {
+        "login": "trahay",
+        "id": 10116037,
+        "node_id": "MDQ6VXNlcjEwMTE2MDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10116037?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trahay",
+        "html_url": "https://github.com/trahay",
+        "followers_url": "https://api.github.com/users/trahay/followers",
+        "following_url": "https://api.github.com/users/trahay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trahay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trahay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trahay/subscriptions",
+        "organizations_url": "https://api.github.com/users/trahay/orgs",
+        "repos_url": "https://api.github.com/users/trahay/repos",
+        "events_url": "https://api.github.com/users/trahay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trahay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-04T21:30:48Z",
+    "updated_at": "2020-04-05T14:39:58Z",
+    "closed_at": "2020-04-05T14:39:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15866",
+        "html_url": "https://github.com/spack/spack/pull/15866",
+        "diff_url": "https://github.com/spack/spack/pull/15866.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15866.patch"
+    },
+    "body": "There were some configure problems in eztrace that caused error when installing with spack. I fixed the problems in eztrace and release version 1.1-10.\r\nWe also moved the git repos from inria gforge to gitlab.com\r\n\r\nThis patch uses the latest version of eztrace  from gitlab.com",
+    "performed_via_github_app": null
+}

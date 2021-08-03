@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16259",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16259/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16259/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16259/events",
+    "html_url": "https://github.com/spack/spack/pull/16259",
+    "id": 605562098,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA3OTQxOTk0",
+    "number": 16259,
+    "title": "Show status information in terminal title",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 521903170,
+            "node_id": "MDU6TGFiZWw1MjE5MDMxNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/user-experience",
+            "name": "user-experience",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 24,
+    "created_at": "2020-04-23T13:59:01Z",
+    "updated_at": "2021-07-03T10:00:49Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16259",
+        "html_url": "https://github.com/spack/spack/pull/16259",
+        "diff_url": "https://github.com/spack/spack/pull/16259.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16259.patch"
+    },
+    "body": "Installing packages with a lot of dependencies does not have an easy way of judging the current progress (apart from running `spack spec -I pkg` in another terminal). This change makes Spack update the terminal's title with status information, including the current installation phase as well as information about the current and total number of packages.\r\n\r\nCurrently only tested on Fedora with GNOME Terminal (where it works :smile:).",
+    "performed_via_github_app": null
+}

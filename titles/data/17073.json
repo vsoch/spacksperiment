@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17073",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17073/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17073/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17073/events",
+    "html_url": "https://github.com/spack/spack/pull/17073",
+    "id": 637880261,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMzNzg0ODUy",
+    "number": 17073,
+    "title": "openmpi: fixes for NAG compiler",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616910800,
+            "node_id": "MDU6TGFiZWw2MTY5MTA4MDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/nag",
+            "name": "nag",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-06-12T16:42:25Z",
+    "updated_at": "2020-06-17T15:32:09Z",
+    "closed_at": "2020-06-17T15:32:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17073",
+        "html_url": "https://github.com/spack/spack/pull/17073",
+        "diff_url": "https://github.com/spack/spack/pull/17073.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17073.patch"
+    },
+    "body": "1. Extend `--with-wrapper-ldflags` with `self.compiler.implicit_rpaths()` (currently it equals to `self.compiler.extra_rpaths` only).\r\n2. Replace `self.compiler.cc_rpath_arg` (introduced with `--with-wrapper-ldflags`) with `self.compiler.cxx_rpath_arg` and `self.compiler.fc_rpath_arg` in  `share/openmpi/*-wrapper-data*` and `lib/pkgconfig/ompi-*.pc` files after installation.\r\n3. Additionally replace `-Wl,-rpath -Wl,` with `self.compiler.fc_rpath_arg` for old versions of `openmpi`, which didn't support different `rpath` flags for `CC` and `FC` (applied only `when='%nag'`).\r\n4. Patch `openmpi` to fix `MPI_Sizeof()` in the `mpi` Fortran module for compilers that do not support \"IGNORE TKR\" functionality (e.g. NAG).\r\n5. Update the comments and rename `nag_ltmain_*.patch` files to `nag_pthread/*.patch`.",
+    "performed_via_github_app": null
+}

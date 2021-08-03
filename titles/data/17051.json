@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17051",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17051/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17051/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17051/events",
+    "html_url": "https://github.com/spack/spack/pull/17051",
+    "id": 636762073,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMyODczNzU2",
+    "number": 17051,
+    "title": "netcdf-cxx4: use mpi compile wrapper if needed.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-06-11T06:45:14Z",
+    "updated_at": "2020-08-22T20:49:41Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17051",
+        "html_url": "https://github.com/spack/spack/pull/17051",
+        "diff_url": "https://github.com/spack/spack/pull/17051.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17051.patch"
+    },
+    "body": "If netcdf-c was compiled with MPI, netcdf-cxx4 is compiled with mpicc and mpicxx.",
+    "performed_via_github_app": null
+}

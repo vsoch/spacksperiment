@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17737",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17737/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17737/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17737/events",
+    "html_url": "https://github.com/spack/spack/pull/17737",
+    "id": 667224231,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU3OTMyMzEw",
+    "number": 17737,
+    "title": "add `PYTHONPATH` to the variables to be passed down to `spconfig.py` from `spack setup`",
+    "user": {
+        "login": "js947",
+        "id": 2544051,
+        "node_id": "MDQ6VXNlcjI1NDQwNTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2544051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/js947",
+        "html_url": "https://github.com/js947",
+        "followers_url": "https://api.github.com/users/js947/followers",
+        "following_url": "https://api.github.com/users/js947/following{/other_user}",
+        "gists_url": "https://api.github.com/users/js947/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/js947/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/js947/subscriptions",
+        "organizations_url": "https://api.github.com/users/js947/orgs",
+        "repos_url": "https://api.github.com/users/js947/repos",
+        "events_url": "https://api.github.com/users/js947/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/js947/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-28T16:52:38Z",
+    "updated_at": "2020-09-02T01:07:49Z",
+    "closed_at": "2020-09-02T01:07:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17737",
+        "html_url": "https://github.com/spack/spack/pull/17737",
+        "diff_url": "https://github.com/spack/spack/pull/17737.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17737.patch"
+    },
+    "body": "Currently a CMake package that requires `PYTHONPATH` will not work with the `spack setup` workflow. This patch adds `PYTHONPATH` to the variables that are setup in `spconfig.py`. \r\n\r\nI don't see any tests currently for `spack setup` so I haven't written one here. And I wouldn't really know where to start in writing a test for this kind of use case. However I hope this patch is simple and pretty obvious... ",
+    "performed_via_github_app": null
+}

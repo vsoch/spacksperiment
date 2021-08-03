@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17328",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17328/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17328/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17328/events",
+    "html_url": "https://github.com/spack/spack/pull/17328",
+    "id": 648815949,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQyNTYwMDMy",
+    "number": 17328,
+    "title": "Moved flake8, shell and documentation tests to Github Action",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-01T09:16:08Z",
+    "updated_at": "2020-07-01T16:59:32Z",
+    "closed_at": "2020-07-01T16:58:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17328",
+        "html_url": "https://github.com/spack/spack/pull/17328",
+        "diff_url": "https://github.com/spack/spack/pull/17328.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17328.patch"
+    },
+    "body": "This PR moves:\r\n- [x] `flake8`\r\n- [x] `shell`\r\n- [x]  `documentation`\r\n\r\ntests from Travis to Github Actions. It also changes Python 2.6 unit tests to not compute coverage, since previously we were computing it and consistently failing in the upload phase. As a result Python 2.6 tests now take ~15 mins. to run instead of ~25 mins.",
+    "performed_via_github_app": null
+}

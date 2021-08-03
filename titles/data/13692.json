@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13692",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13692/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13692/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13692/events",
+    "html_url": "https://github.com/spack/spack/pull/13692",
+    "id": 521251111,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NjY1OTUw",
+    "number": 13692,
+    "title": "Add missing dependencies to flex.",
+    "user": {
+        "login": "sknigh",
+        "id": 18291531,
+        "node_id": "MDQ6VXNlcjE4MjkxNTMx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18291531?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sknigh",
+        "html_url": "https://github.com/sknigh",
+        "followers_url": "https://api.github.com/users/sknigh/followers",
+        "following_url": "https://api.github.com/users/sknigh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sknigh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sknigh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sknigh/subscriptions",
+        "organizations_url": "https://api.github.com/users/sknigh/orgs",
+        "repos_url": "https://api.github.com/users/sknigh/repos",
+        "events_url": "https://api.github.com/users/sknigh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sknigh/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-11T23:54:31Z",
+    "updated_at": "2019-11-12T18:01:16Z",
+    "closed_at": "2019-11-12T18:01:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13692",
+        "html_url": "https://github.com/spack/spack/pull/13692",
+        "diff_url": "https://github.com/spack/spack/pull/13692.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13692.patch"
+    },
+    "body": "Flex would not build in `registry.access.redhat.com/ubi8/ubi-minimal` b/c the image did not come with `diff` and `find` in system paths.",
+    "performed_via_github_app": null
+}

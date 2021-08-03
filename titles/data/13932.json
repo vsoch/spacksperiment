@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13932",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13932/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13932/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13932/events",
+    "html_url": "https://github.com/spack/spack/pull/13932",
+    "id": 530142033,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ2ODgzNTUy",
+    "number": 13932,
+    "title": "intel-tbb: fix and update patches for latest versions",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-29T03:43:53Z",
+    "updated_at": "2019-12-04T07:20:09Z",
+    "closed_at": "2019-11-29T19:18:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13932",
+        "html_url": "https://github.com/spack/spack/pull/13932",
+        "diff_url": "https://github.com/spack/spack/pull/13932.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13932.patch"
+    },
+    "body": "Commit 78724357 added versions 2019.5 to 2019.8 but failed to update\r\nthe patches for these versions.\r\n\r\n1. gcc_generic-pedantic patch -- include this up through 2019.5.  This\r\nwas fixed in the TBB source tree in 2019.6.\r\n\r\n2. tbb_cmakeConfig patch -- this needs to be modified (different file)\r\nfor 2019.5 and later.\r\n\r\n3. tbb_gcc_rtm_key patch -- replace this with filter_file.  This is\r\nsimpler and eliminates the need to update the patch whenever the\r\nsurrounding context changes.\r\n\r\n----------\r\n\r\nping @chissg and @odoublewen who wrote these patches and may want to\r\ncheck my work.",
+    "performed_via_github_app": null
+}

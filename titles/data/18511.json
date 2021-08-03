@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18511",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18511/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18511/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18511/events",
+    "html_url": "https://github.com/spack/spack/pull/18511",
+    "id": 693240747,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc5NzQ4NjQ0",
+    "number": 18511,
+    "title": "Build libtinfo.so --with-versioned-syms when it is enabled in ncurses.",
+    "user": {
+        "login": "ldalessa",
+        "id": 8915711,
+        "node_id": "MDQ6VXNlcjg5MTU3MTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8915711?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ldalessa",
+        "html_url": "https://github.com/ldalessa",
+        "followers_url": "https://api.github.com/users/ldalessa/followers",
+        "following_url": "https://api.github.com/users/ldalessa/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ldalessa/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ldalessa/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ldalessa/subscriptions",
+        "organizations_url": "https://api.github.com/users/ldalessa/orgs",
+        "repos_url": "https://api.github.com/users/ldalessa/repos",
+        "events_url": "https://api.github.com/users/ldalessa/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ldalessa/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-04T14:39:14Z",
+    "updated_at": "2020-09-04T20:54:46Z",
+    "closed_at": "2020-09-04T20:54:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18511",
+        "html_url": "https://github.com/spack/spack/pull/18511",
+        "diff_url": "https://github.com/spack/spack/pull/18511.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18511.patch"
+    },
+    "body": "Many system-installed binaries (at least in Debian) are built against a\r\nlibtinfo.so that has versioned symbols. If spack builds a version without this\r\nfunctionality, and it winds up in the user's LD_LIBRARY_PATH via spack load,\r\nsystem binaries will begin to complain.\r\n\r\n```\r\n$ less log.txt\r\nless: /opt/spack/.../libtinfo.so.6: no version information available (required by less)\r\n```",
+    "performed_via_github_app": null
+}

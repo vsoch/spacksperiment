@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14960",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14960/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14960/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14960/events",
+    "html_url": "https://github.com/spack/spack/issues/14960",
+    "id": 565247328,
+    "node_id": "MDU6SXNzdWU1NjUyNDczMjg=",
+    "number": 14960,
+    "title": "Check sha256 of new tarballs automatically",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-14T10:46:18Z",
+    "updated_at": "2020-02-14T10:46:18Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "As a maintainer I want a workflow to check PRs and validate sha256 checksums of any new version added to any package so that I don't have to do it manually.\r\n\r\n### Rationale\r\n\r\nMost of the PRs we get involve only updates to packages and many of them contribute only new versions of a package since most of the time the underlying recipe doesn't need any modification. Reviewing such PRs manually might be time consuming if the checksums are double checked, or risk introducing faulty `sha256` if they're not. Having a workflow that checks if `sha256` checksums match the corresponding tarball might help a lot in that respect.\r\n\r\n### Description\r\n\r\nI think the simplest solution is to setup a Github Action workflow, maybe backed by some narrow scoped developer command (similar to `spack flake8`). The command should:\r\n- Look for new versions of packages introduced in the PR\r\n- Keep track of any change to URLs\r\n- Try to download the new packages and check their `sha256`\r\n\r\nIdeally, the job should FAIL in case at least one package could be downloaded and `sha256` doesn't match. In all other cases it should PASS.\r\n\r\nThe workflow should also post a comment to the PR reporting:\r\n- All the packages that couldn't be checked (timeout, fetching errors, etc.)\r\n- All the changes in URLs\r\n\r\nin order to help the reviewer.\r\n\r\n### Additional information\r\n\r\nOpened this proposal for discussion, so comments are welcome.",
+    "performed_via_github_app": null
+}

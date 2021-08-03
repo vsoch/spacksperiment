@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14005",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14005/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14005/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14005/events",
+    "html_url": "https://github.com/spack/spack/pull/14005",
+    "id": 533627276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5NjY4NTU0",
+    "number": 14005,
+    "title": "Tuneup docs re setting up sphinx for building docs",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-05T22:09:21Z",
+    "updated_at": "2019-12-08T22:22:26Z",
+    "closed_at": "2019-12-08T22:22:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14005",
+        "html_url": "https://github.com/spack/spack/pull/14005",
+        "diff_url": "https://github.com/spack/spack/pull/14005.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14005.patch"
+    },
+    "body": "edit: grammar\r\n\r\nI have, more than once, tried to install the list of things that ~need~ are needed to build the docs, only to discover that the list doesn't use Spack's package names.  I'm tired of facepalming....  This commit touches up the prose so that it actually includes a command that one can use to install the things.\r\n\r\nWhile I was there I touched up the prose about activating the new Python packages; activating a python package doesn't add anything to your PYTHONPATH, it links things into a directory that's *already* on your PYTHONPATH.  Note that this all presupposes that you're using that same python....\r\n\r\nWhat's the issue label for nitpicky-changes?",
+    "performed_via_github_app": null
+}

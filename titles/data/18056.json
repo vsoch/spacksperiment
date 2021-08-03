@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18056/events",
+    "html_url": "https://github.com/spack/spack/pull/18056",
+    "id": 678679044,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY3NTg3MDU4",
+    "number": 18056,
+    "title": "adios: relax libtool restriction",
+    "user": {
+        "login": "germasch",
+        "id": 11023174,
+        "node_id": "MDQ6VXNlcjExMDIzMTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11023174?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/germasch",
+        "html_url": "https://github.com/germasch",
+        "followers_url": "https://api.github.com/users/germasch/followers",
+        "following_url": "https://api.github.com/users/germasch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/germasch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/germasch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/germasch/subscriptions",
+        "organizations_url": "https://api.github.com/users/germasch/orgs",
+        "repos_url": "https://api.github.com/users/germasch/repos",
+        "events_url": "https://api.github.com/users/germasch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/germasch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-13T19:20:59Z",
+    "updated_at": "2020-08-25T00:17:37Z",
+    "closed_at": "2020-08-19T06:49:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18056",
+        "html_url": "https://github.com/spack/spack/pull/18056",
+        "diff_url": "https://github.com/spack/spack/pull/18056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18056.patch"
+    },
+    "body": "While I believe there must have been a reason to restrict libtool to <=\r\n2.4.2, adios compiles just fine with libtool 2.4.6 for me.\r\n\r\nIn fact, without this change, I'm getting this error:\r\n\r\n```\r\nlibtool: Version mismatch error.  This is libtool 2.4.6, but the\r\nlibtool: definition of this LT_INIT comes from libtool 2.4.2.\r\nlibtool: You should recreate aclocal.m4 with macros from libtool 2.4.6\r\n```\r\n\r\nThis doesn't make much sense, since spack did build libtool@2.4.2 as a\r\ndependency, and was supposedly trying to use it. My guess is that on\r\nthis system (NERSC's cori) the system libtool in /usr/bin, which is\r\n2.4.6 somehow got picked up partially.",
+    "performed_via_github_app": null
+}

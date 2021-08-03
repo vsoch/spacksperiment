@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17828",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17828/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17828/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17828/events",
+    "html_url": "https://github.com/spack/spack/pull/17828",
+    "id": 670590599,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYwODQ3NDAx",
+    "number": 17828,
+    "title": "license: fix up MIT license so it's an exact match",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025497628,
+            "node_id": "MDU6TGFiZWwxMDI1NDk3NjI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/licenses",
+            "name": "licenses",
+            "color": "f97296",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-01T06:44:35Z",
+    "updated_at": "2020-08-01T17:07:13Z",
+    "closed_at": "2020-08-01T17:06:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17828",
+        "html_url": "https://github.com/spack/spack/pull/17828",
+        "diff_url": "https://github.com/spack/spack/pull/17828.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17828.patch"
+    },
+    "body": "Before:\r\n\r\n```console\r\n$ licensee diff --license mit LICENSE-MIT\r\nComparing to MIT License:\r\nInput Length:      1092\r\nLicense length:    1020\r\nSimilarity:      92.46%\r\ndiff --git a/LICENSE b/LICENSE\r\nindex 0ce42af..be0ff1c 100644\r\n--- a/LICENSE\r\n+++ b/LICENSE\r\n@@ -1,3 +1,4 @@\r\n{+spack project developers. see the top-level copyright file for details.+}\r\npermission is hereby granted, free of charge, to any person obtaining a copy of\r\nthis software and associated documentation files (the \"software\"), to deal in\r\nthe software without restriction, including without limitation the rights to\r\n```\r\n\r\nAfter:\r\n\r\n```console\r\n$ licensee diff --license mit LICENSE-MIT\r\nComparing to MIT License:\r\nInput Length:       1020\r\nLicense length:     1020\r\nSimilarity:      100.00%\r\nExact match!\r\n```\r\n\r\nThis gets us a 100% license match from GitHub's `licensee` tool.",
+    "performed_via_github_app": null
+}

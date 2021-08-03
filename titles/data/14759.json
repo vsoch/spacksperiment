@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14759",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14759/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14759/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14759/events",
+    "html_url": "https://github.com/spack/spack/pull/14759",
+    "id": 560620442,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzcxNTc4MjEx",
+    "number": 14759,
+    "title": "Adds fma and vsx features to entire power arch family.",
+    "user": {
+        "login": "mpbelhorn",
+        "id": 1690817,
+        "node_id": "MDQ6VXNlcjE2OTA4MTc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1690817?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mpbelhorn",
+        "html_url": "https://github.com/mpbelhorn",
+        "followers_url": "https://api.github.com/users/mpbelhorn/followers",
+        "following_url": "https://api.github.com/users/mpbelhorn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mpbelhorn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mpbelhorn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mpbelhorn/subscriptions",
+        "organizations_url": "https://api.github.com/users/mpbelhorn/orgs",
+        "repos_url": "https://api.github.com/users/mpbelhorn/repos",
+        "events_url": "https://api.github.com/users/mpbelhorn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mpbelhorn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1535715176,
+            "node_id": "MDU6TGFiZWwxNTM1NzE1MTc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/architectures",
+            "name": "architectures",
+            "color": "3571ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 883727171,
+            "node_id": "MDU6TGFiZWw4ODM3MjcxNzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/power",
+            "name": "power",
+            "color": "8a8edb",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-02-05T20:48:38Z",
+    "updated_at": "2020-02-06T15:42:06Z",
+    "closed_at": "2020-02-06T15:42:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14759",
+        "html_url": "https://github.com/spack/spack/pull/14759",
+        "diff_url": "https://github.com/spack/spack/pull/14759.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14759.patch"
+    },
+    "body": "VSX alitvec extensions are supported by PowerISA from v2.06 (Power7+), but might\r\nnot be listed in features.\r\n\r\nFMA has been supported by PowerISA since Power1, but might not be listed in\r\nfeatures.\r\n\r\nThis commit adds these features to all the power ISA family sets.",
+    "performed_via_github_app": null
+}

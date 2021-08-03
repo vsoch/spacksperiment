@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14572",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14572/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14572/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14572/events",
+    "html_url": "https://github.com/spack/spack/pull/14572",
+    "id": 552503616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY0OTk4MzE1",
+    "number": 14572,
+    "title": "Add libglvnd packages/Add EGL support",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-01-20T20:51:01Z",
+    "updated_at": "2020-07-23T20:46:12Z",
+    "closed_at": "2020-07-13T15:32:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14572",
+        "html_url": "https://github.com/spack/spack/pull/14572",
+        "diff_url": "https://github.com/spack/spack/pull/14572.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14572.patch"
+    },
+    "body": " - Adds a new package: `libglvnd-frontend` for exposing `libglvnd`-backed GL implementations in a way that plays well with Spack's packaging model.\r\n - Updates packages `opengl` and `mesa` to include `libglvnd` support.\r\n - Updates package `paraview` to include `egl` support.\r\n - Updates Spack-wide `packages` configuration to include `libglvnd` entries for `gl`, `glx`, and `egl` virtual packages.\r\n\r\nTODO:\r\n- [x] Add documentation discussing what `libglvnd` is, why it's packaged the way it is, and how to set up an external `opengl` or `mesa` that was built for `libglvnd`.",
+    "performed_via_github_app": null
+}

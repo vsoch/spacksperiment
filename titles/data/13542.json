@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13542",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13542/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13542/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13542/events",
+    "html_url": "https://github.com/spack/spack/pull/13542",
+    "id": 516308896,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM1NTgzODcy",
+    "number": 13542,
+    "title": "bugfix: include compiler.extra_rpaths when computing a package's rpaths (#12519)",
+    "user": {
+        "login": "cdfh",
+        "id": 825890,
+        "node_id": "MDQ6VXNlcjgyNTg5MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/825890?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cdfh",
+        "html_url": "https://github.com/cdfh",
+        "followers_url": "https://api.github.com/users/cdfh/followers",
+        "following_url": "https://api.github.com/users/cdfh/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cdfh/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cdfh/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cdfh/subscriptions",
+        "organizations_url": "https://api.github.com/users/cdfh/orgs",
+        "repos_url": "https://api.github.com/users/cdfh/repos",
+        "events_url": "https://api.github.com/users/cdfh/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cdfh/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-01T19:37:49Z",
+    "updated_at": "2020-07-28T01:48:55Z",
+    "closed_at": "2020-07-28T01:48:55Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13542",
+        "html_url": "https://github.com/spack/spack/pull/13542",
+        "diff_url": "https://github.com/spack/spack/pull/13542.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13542.patch"
+    },
+    "body": "Possibly naive attempt to fix #12519. \r\n\r\nBehaviour prior to 568e5fa is as in #12519; behaviour following 568e5fa is that `ldd` correctly resolves paths following a `spack setup` build workflow:\r\n\r\n```(console)\r\n\tlibc++.so.1 => /spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/llvm-8.0.0-vcde4opt4xfhe5qcrktcagi6r7uhskgf/lib/libc++.so.1 (0x00007fa2c7053000)\r\n\tlibc++abi.so.1 => /spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/llvm-8.0.0-vcde4opt4xfhe5qcrktcagi6r7uhskgf/lib/libc++abi.so.1 (0x00007fa2c6687000)\r\n```\r\n\r\nwhere the resolved libraries point to paths specified as `extra_rpaths` in `compilers.yaml`:\r\n\r\n```(yaml)\r\ncompilers:\r\n- compiler:\r\n    environment: {}\r\n    extra_rpaths:\r\n    - /spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/llvm-8.0.0-vcde4opt4xfhe5qcrktcagi6r7uhskgf/lib\r\n    flags: {}\r\n    modules:\r\n    - llvm-8.0.0-gcc-5.4.0-vcde4op\r\n    operating_system: ubuntu16.04\r\n    paths:\r\n      cc: /spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/llvm-8.0.0-vcde4opt4xfhe5qcrktcagi6r7uhskgf/bin/clang\r\n      cxx: /spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/llvm-8.0.0-vcde4opt4xfhe5qcrktcagi6r7uhskgf/bin/clang++\r\n      f77: /usr/bin/gfortran\r\n      fc: /usr/bin/gfortran\r\n    spec: clang@8.0.0\r\n    target: x86_64\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18612",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18612/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18612/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18612/events",
+    "html_url": "https://github.com/spack/spack/pull/18612",
+    "id": 698501728,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg0MzM3ODUw",
+    "number": 18612,
+    "title": "Adding Missing Versions for Flux-Sched/Flux-Core and Compiler Flags",
+    "user": {
+        "login": "rspavel",
+        "id": 4571189,
+        "node_id": "MDQ6VXNlcjQ1NzExODk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4571189?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rspavel",
+        "html_url": "https://github.com/rspavel",
+        "followers_url": "https://api.github.com/users/rspavel/followers",
+        "following_url": "https://api.github.com/users/rspavel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rspavel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rspavel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rspavel/subscriptions",
+        "organizations_url": "https://api.github.com/users/rspavel/orgs",
+        "repos_url": "https://api.github.com/users/rspavel/repos",
+        "events_url": "https://api.github.com/users/rspavel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rspavel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-10T21:16:30Z",
+    "updated_at": "2020-09-10T21:53:29Z",
+    "closed_at": "2020-09-10T21:53:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18612",
+        "html_url": "https://github.com/spack/spack/pull/18612",
+        "diff_url": "https://github.com/spack/spack/pull/18612.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18612.patch"
+    },
+    "body": "Added missing versions for ```flux-core``` and ```flux-sched``` spackages as well as ```cxxflags``` required to build recent releases of ```flux-sched```",
+    "performed_via_github_app": null
+}

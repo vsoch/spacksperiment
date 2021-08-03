@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13377",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13377/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13377/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13377/events",
+    "html_url": "https://github.com/spack/spack/pull/13377",
+    "id": 510932096,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMxMjIxMjgy",
+    "number": 13377,
+    "title": "Correctly identify Skylake CPUs on Darwin.",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-10-22T21:35:13Z",
+    "updated_at": "2019-10-25T13:53:08Z",
+    "closed_at": "2019-10-24T17:44:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13377",
+        "html_url": "https://github.com/spack/spack/pull/13377",
+        "diff_url": "https://github.com/spack/spack/pull/13377.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13377.patch"
+    },
+    "body": "Fixes #13376 \r\n\r\nUses the already-demonstrated mechanism in `detect.sysctl()` to translate `XSAVE` -> `xsavec xsaveopt` and `CLFSOPT` -> `clflushopt`.",
+    "performed_via_github_app": null
+}

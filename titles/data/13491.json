@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13491",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13491/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13491/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13491/events",
+    "html_url": "https://github.com/spack/spack/pull/13491",
+    "id": 514180991,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMzODM4MjU4",
+    "number": 13491,
+    "title": "cpu: fix clang flags for generic x86_64",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-10-29T19:51:57Z",
+    "updated_at": "2019-12-24T09:10:33Z",
+    "closed_at": "2019-10-30T22:16:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13491",
+        "html_url": "https://github.com/spack/spack/pull/13491",
+        "diff_url": "https://github.com/spack/spack/pull/13491.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13491.patch"
+    },
+    "body": "The `x86_64` target for clang currently provides architecture flags `-march=x86_64 -mcpu=generic`. The `-mcpu=generic` flag is ignored by clang (and seems to be a mistaken copy/paste from GCC.\r\n\r\nThis PR removes that flag.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18557",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18557/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18557/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18557/events",
+    "html_url": "https://github.com/spack/spack/pull/18557",
+    "id": 695472252,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgxNzEyNzYy",
+    "number": 18557,
+    "title": "refine efivar install flow",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-08T01:16:27Z",
+    "updated_at": "2021-03-06T03:09:55Z",
+    "closed_at": "2020-09-09T02:08:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18557",
+        "html_url": "https://github.com/spack/spack/pull/18557",
+        "diff_url": "https://github.com/spack/spack/pull/18557.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18557.patch"
+    },
+    "body": "refine efivar installation.\r\nThere are some error when our new package `dbxtool` depends on `efivar`.",
+    "performed_via_github_app": null
+}

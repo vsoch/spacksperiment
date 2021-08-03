@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17151",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17151/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17151/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17151/events",
+    "html_url": "https://github.com/spack/spack/pull/17151",
+    "id": 641064305,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM2MzUzOTcz",
+    "number": 17151,
+    "title": "openjdk and jdk: extend the list of provided versions of java",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-18T09:41:59Z",
+    "updated_at": "2020-06-25T03:43:31Z",
+    "closed_at": "2020-06-25T03:43:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17151",
+        "html_url": "https://github.com/spack/spack/pull/17151",
+        "diff_url": "https://github.com/spack/spack/pull/17151.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17151.patch"
+    },
+    "body": "I don't know much about backward compatibility (e.g. whether we can say that `openjdk 10.x` provides not only `java 10` but `java 9` too) but with this, I at least can have an external installation of `openjdk 9.x` that satisfies `java@8:`.",
+    "performed_via_github_app": null
+}

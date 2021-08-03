@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17709",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17709/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17709/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17709/events",
+    "html_url": "https://github.com/spack/spack/pull/17709",
+    "id": 665962399,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU2ODg2OTAw",
+    "number": 17709,
+    "title": "bugfix: don't redundantly print ChildErrors",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-27T04:17:40Z",
+    "updated_at": "2020-07-27T07:27:27Z",
+    "closed_at": "2020-07-27T05:41:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17709",
+        "html_url": "https://github.com/spack/spack/pull/17709",
+        "diff_url": "https://github.com/spack/spack/pull/17709.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17709.patch"
+    },
+    "body": "A bug was introduced in #13100 where ChildErrors would be redundantly printed when raised during a build. We should eventually revisit error handling in builds and figure out what the right separation of responsibilities is for distributed builds, but for now just skip printing.\r\n\r\n- [x] SpackErrors were designed to be printed by the forked process, not by the parent, so check if they've alreaady been printed.\r\n\r\n@tldahlgren: FYI",
+    "performed_via_github_app": null
+}

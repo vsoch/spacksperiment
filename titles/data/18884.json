@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18884",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18884/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18884/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18884/events",
+    "html_url": "https://github.com/spack/spack/pull/18884",
+    "id": 707145009,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkxNTk1Nzkz",
+    "number": 18884,
+    "title": "audacious: add link type build to glib.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-23T08:08:23Z",
+    "updated_at": "2020-10-11T02:05:19Z",
+    "closed_at": "2020-10-11T02:05:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18884",
+        "html_url": "https://github.com/spack/spack/pull/18884",
+        "diff_url": "https://github.com/spack/spack/pull/18884.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18884.patch"
+    },
+    "body": "In  #18584, I change glib linktype to link only.\r\nBut audacious is used glib command gdbus-codegen.\r\nThis PR add glib build dependency.",
+    "performed_via_github_app": null
+}

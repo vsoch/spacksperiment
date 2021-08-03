@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16185",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16185/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16185/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16185/events",
+    "html_url": "https://github.com/spack/spack/pull/16185",
+    "id": 603366503,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2MTY2MjUx",
+    "number": 16185,
+    "title": "Improvements to building \"cargo\" packages",
+    "user": {
+        "login": "AndrewGaspar",
+        "id": 2292643,
+        "node_id": "MDQ6VXNlcjIyOTI2NDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2292643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AndrewGaspar",
+        "html_url": "https://github.com/AndrewGaspar",
+        "followers_url": "https://api.github.com/users/AndrewGaspar/followers",
+        "following_url": "https://api.github.com/users/AndrewGaspar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AndrewGaspar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AndrewGaspar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AndrewGaspar/subscriptions",
+        "organizations_url": "https://api.github.com/users/AndrewGaspar/orgs",
+        "repos_url": "https://api.github.com/users/AndrewGaspar/repos",
+        "events_url": "https://api.github.com/users/AndrewGaspar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AndrewGaspar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 2000931206,
+            "node_id": "MDU6TGFiZWwyMDAwOTMxMjA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/cargo",
+            "name": "cargo",
+            "color": "8f4df9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 18,
+    "created_at": "2020-04-20T16:25:18Z",
+    "updated_at": "2021-05-19T13:16:06Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16185",
+        "html_url": "https://github.com/spack/spack/pull/16185",
+        "diff_url": "https://github.com/spack/spack/pull/16185.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16185.patch"
+    },
+    "body": "This change introduces several features to improve the installation of packages written in Rust.\r\n\r\nFixes #16045 \r\n\r\ncc @adamjstewart @hartzell @ax3l \r\n\r\n# Automatic Vendoring of Cargo Dependencies\r\nThis change introduces the ability automatically vendor cargo dependencies by way of the new `cargo_manifest` directive.\r\n\r\nIf the cargo package has locked its dependencies via a \"Cargo.lock\" file, that is considered to sufficiently check the dependencies for purposes of spack's checksum validation. If there is no \"Cargo.lock\" file, the user will be prompted to disable checksums, and the `--no-checksum` flag is respected\r\n\r\nI still need to implement the caching of the vendored dependencies to support mirroring. See TODO.\r\n\r\n## TODO\r\n- [x] Add support for caching of cargo dependencies\r\n- [x] `.cargo/config` must include non-crates.io sources\r\n  - `.cargo/config` file should be derived from the output of `cargo vendor`.\r\n  - Particularly necessary for packages from non-crates.io sources, since they may include dependencies via version control\r\n- [x] Fix bug with cargo package as being listed as \"already staged\"\r\n  - This happens because the `CargoStage` expands the root stage during its own fetch\r\n  - EDIT: Just output a message indicating why the package is being staged early.\r\n\r\n## Limitations\r\nCurrently only supports vendoring from a single cargo manifest per-package. Perhaps this should be expanded, but I think it's pretty rare for a single package to vendor Cargo dependencies from multiple, disjoint manifests.\r\n\r\n# `CargoPackage`\r\nThis PR also includes a new `CargoPackage` base class, which stream-lines building cargo packages. This automatically implements `build` and `install`.\r\n\r\nThis is NOT implemented using `cargo install` because it only installs bin targets. However, I suspect a common case will be to also install dynamic and static libraries with a C interface. Therefore, I manually implement the install for all \"bin\", \"staticlib\", and \"cdylib\" targets.\r\n\r\nAdditionally, I provide a new `crates_io` fetch strategy. This makes it possible to directly import packages from \"crates.io\", which is the first-party package repository for Rust. The goal is to streamline import of Rust packages that people want to use.\r\n\r\n## TODO\r\n- [x] Make it easy to specify cargo features via spack variants.\r\n\r\n## Limitations\r\nIn the future, it may be necessary to provide a way to specify the targets which will be installed.\r\n\r\n# Miscellania\r\nImplemented `cargo checksum` for `crates_io` packages.\r\n\r\nFixed a bug in `_determine_extension` to respect `fetcher.extension`.\r\n\r\nAdd `ytop` package.\r\n\r\nUpdate `bat`, `fd-find`, `ripgrep`, and `rust-bindgen` packages to use `CargoPackage`.\r\n\r\n## TODO\r\n- [x] Documentation: https://spack.readthedocs.io/en/latest/build_systems.html\r\n- [x] Testing",
+    "performed_via_github_app": null
+}

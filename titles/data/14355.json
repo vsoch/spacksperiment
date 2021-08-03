@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14355",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14355/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14355/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14355/events",
+    "html_url": "https://github.com/spack/spack/pull/14355",
+    "id": 544742966,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4NzkxMTU0",
+    "number": 14355,
+    "title": "Mercury package: added verbose variant",
+    "user": {
+        "login": "mdorier",
+        "id": 598250,
+        "node_id": "MDQ6VXNlcjU5ODI1MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/598250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mdorier",
+        "html_url": "https://github.com/mdorier",
+        "followers_url": "https://api.github.com/users/mdorier/followers",
+        "following_url": "https://api.github.com/users/mdorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mdorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mdorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mdorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/mdorier/orgs",
+        "repos_url": "https://api.github.com/users/mdorier/repos",
+        "events_url": "https://api.github.com/users/mdorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mdorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-01-02T20:55:04Z",
+    "updated_at": "2020-01-02T21:29:19Z",
+    "closed_at": "2020-01-02T21:29:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14355",
+        "html_url": "https://github.com/spack/spack/pull/14355",
+        "diff_url": "https://github.com/spack/spack/pull/14355.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14355.patch"
+    },
+    "body": "Added `+verbose` variant to Mercury package. The variant is ON by default, and will make Mercury print errors on stderr.",
+    "performed_via_github_app": null
+}

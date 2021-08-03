@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15096",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15096/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15096/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15096/events",
+    "html_url": "https://github.com/spack/spack/pull/15096",
+    "id": 567865927,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc3NDExNjYx",
+    "number": 15096,
+    "title": "adding package igv",
+    "user": {
+        "login": "snehring",
+        "id": 7978778,
+        "node_id": "MDQ6VXNlcjc5Nzg3Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7978778?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/snehring",
+        "html_url": "https://github.com/snehring",
+        "followers_url": "https://api.github.com/users/snehring/followers",
+        "following_url": "https://api.github.com/users/snehring/following{/other_user}",
+        "gists_url": "https://api.github.com/users/snehring/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/snehring/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/snehring/subscriptions",
+        "organizations_url": "https://api.github.com/users/snehring/orgs",
+        "repos_url": "https://api.github.com/users/snehring/repos",
+        "events_url": "https://api.github.com/users/snehring/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/snehring/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1041152873,
+            "node_id": "MDU6TGFiZWwxMDQxMTUyODcz",
+            "url": "https://api.github.com/repos/spack/spack/labels/relicense",
+            "name": "relicense",
+            "color": "1d76db",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-02-19T21:43:04Z",
+    "updated_at": "2020-02-20T17:47:41Z",
+    "closed_at": "2020-02-20T17:45:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15096",
+        "html_url": "https://github.com/spack/spack/pull/15096",
+        "diff_url": "https://github.com/spack/spack/pull/15096.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15096.patch"
+    },
+    "body": "Noticed that this was removed some time ago during the license shenanigans. A previous version of this we had installed is broken so I thought I'd make a new package with the current version of igv.",
+    "performed_via_github_app": null
+}

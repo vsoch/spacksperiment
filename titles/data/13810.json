@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13810",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13810/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13810/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13810/events",
+    "html_url": "https://github.com/spack/spack/pull/13810",
+    "id": 526035068,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQzNTUzMTk4",
+    "number": 13810,
+    "title": "Package Index: Build in Dockerhub",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-20T18:59:59Z",
+    "updated_at": "2019-11-26T17:11:33Z",
+    "closed_at": "2019-11-26T17:11:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13810",
+        "html_url": "https://github.com/spack/spack/pull/13810",
+        "diff_url": "https://github.com/spack/spack/pull/13810.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13810.patch"
+    },
+    "body": "Prepare to build the package index service, packages.spack.io, on Dockerhub.\r\n\r\nLocal build (in spack root dir):\r\n```\r\ndocker build -t spack/packages.spack.io:latest -f share/spack/docker/package-index/Dockerfile .\r\n```\r\n\r\nLocal test:\r\n```\r\ndocker run -p 8080:80 spack/packages.spack.io:latest\r\n```\r\n\r\n- [x] Removes leftover docker build stages from Travis CI.\r\n- [x] setup at https://cloud.docker.com/u/spack/repository/docker/spack/packages.spack.io/builds/edit\r\n\r\nFollow-up to #11665 and #11621",
+    "performed_via_github_app": null
+}

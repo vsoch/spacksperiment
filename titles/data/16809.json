@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16809",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16809/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16809/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16809/events",
+    "html_url": "https://github.com/spack/spack/pull/16809",
+    "id": 624977357,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIzMjgyNDU3",
+    "number": 16809,
+    "title": "bugfix: local import in spec.py",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-05-26T15:32:48Z",
+    "updated_at": "2020-05-27T09:45:26Z",
+    "closed_at": "2020-05-27T09:45:15Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16809",
+        "html_url": "https://github.com/spack/spack/pull/16809",
+        "diff_url": "https://github.com/spack/spack/pull/16809.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16809.patch"
+    },
+    "body": "Without this we have:\r\n```console\r\n$ spack spec apple=banana\r\nInput spec\r\n--------------------------------\r\n apple=banana\r\n\r\nConcretized\r\n--------------------------------\r\n==> Error: local variable 'spack' referenced before assignment\r\n```\r\nWith this:\r\n```console\r\n$ spack spec apple=banana\r\nInput spec\r\n--------------------------------\r\n apple=banana\r\n\r\nConcretized\r\n--------------------------------\r\n==> Error: Attempting to concretize anonymous spec\r\n```\r\n@alalazo do we need this local import at all?",
+    "performed_via_github_app": null
+}

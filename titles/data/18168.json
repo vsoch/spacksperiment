@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18168",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18168/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18168/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18168/events",
+    "html_url": "https://github.com/spack/spack/pull/18168",
+    "id": 681613284,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5OTc1NDk2",
+    "number": 18168,
+    "title": "dakota: new version 6.12",
+    "user": {
+        "login": "g-mathias",
+        "id": 40861554,
+        "node_id": "MDQ6VXNlcjQwODYxNTU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40861554?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/g-mathias",
+        "html_url": "https://github.com/g-mathias",
+        "followers_url": "https://api.github.com/users/g-mathias/followers",
+        "following_url": "https://api.github.com/users/g-mathias/following{/other_user}",
+        "gists_url": "https://api.github.com/users/g-mathias/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/g-mathias/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/g-mathias/subscriptions",
+        "organizations_url": "https://api.github.com/users/g-mathias/orgs",
+        "repos_url": "https://api.github.com/users/g-mathias/repos",
+        "events_url": "https://api.github.com/users/g-mathias/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/g-mathias/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-19T07:27:47Z",
+    "updated_at": "2020-08-20T22:14:41Z",
+    "closed_at": "2020-08-20T22:14:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18168",
+        "html_url": "https://github.com/spack/spack/pull/18168",
+        "diff_url": "https://github.com/spack/spack/pull/18168.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18168.patch"
+    },
+    "body": "- added latest version\r\n- version limit for boost library\r\n- changed default url\r\nadresses #12782 #10505",
+    "performed_via_github_app": null
+}

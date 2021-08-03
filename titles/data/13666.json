@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13666",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13666/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13666/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13666/events",
+    "html_url": "https://github.com/spack/spack/pull/13666",
+    "id": 520630009,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5MTcxMTcz",
+    "number": 13666,
+    "title": "Improve spack checksum formatting",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-10T17:23:09Z",
+    "updated_at": "2019-11-10T22:48:00Z",
+    "closed_at": "2019-11-10T22:47:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13666",
+        "html_url": "https://github.com/spack/spack/pull/13666",
+        "diff_url": "https://github.com/spack/spack/pull/13666.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13666.patch"
+    },
+    "body": "Very minor change.\r\n\r\n### Before\r\n```console\r\n$ spack checksum mpich\r\n==> Found 35 versions of mpich:\r\n  \r\n  3.3.1   http://www.mpich.org/static/downloads/3.3.1/mpich-3.3.1.tar.gz\r\n  3.3rc1  http://www.mpich.org/static/downloads/3.3rc1/mpich-3.3rc1.tar.gz\r\n  3.3b3   http://www.mpich.org/static/downloads/3.3b3/mpich-3.3b3.tar.gz\r\n  3.3b2   http://www.mpich.org/static/downloads/3.3b2/mpich-3.3b2.tar.gz\r\n  3.3b1   http://www.mpich.org/static/downloads/3.3b1/mpich-3.3b1.tar.gz\r\n  3.3a3   http://www.mpich.org/static/downloads/3.3a3/mpich-3.3a3.tar.gz\r\n  3.3a2   http://www.mpich.org/static/downloads/3.3a2/mpich-3.3a2.tar.gz\r\n  3.3a1   http://www.mpich.org/static/downloads/3.3a1/mpich-3.3a1.tar.gz\r\n  3.3     http://www.mpich.org/static/downloads/3.3/mpich-3.3.tar.gz\r\n  ...\r\n  3.0     http://www.mpich.org/static/downloads/3.0/mpich-3.0.tar.gz\r\n==> \r\n==> How many would you like to checksum? (default is 1, q to abort) 3\r\n==> Downloading...\r\n==> Fetching http://www.mpich.org/static/downloads/3.3.1/mpich-3.3.1.tar.gz\r\n########################################################################### 100.0%\r\n==> Fetching http://www.mpich.org/static/downloads/3.3rc1/mpich-3.3rc1.tar.gz\r\n########################################################################### 100.0%\r\n==> Fetching http://www.mpich.org/static/downloads/3.3b3/mpich-3.3b3.tar.gz\r\n########################################################################### 100.0%\r\n==> Checksummed 3 versions of mpich\r\n\r\n    version('3.3.1',  sha256='fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5')\r\n    version('3.3rc1', sha256='4a83f1f3b28d1bcd2f6dc9f91c87cf74583dc5f29cfef172015844b9ec75e9f2')\r\n    version('3.3b3',  sha256='73a881c065f798a47a7db1e0ad34ad16c4cb73bf7ebf34c97618aac152c416bf')\r\n$\r\n```\r\n\r\n### After\r\n\r\n```console\r\n$ spack checksum mpich\r\n==> Found 35 versions of mpich:\r\n  \r\n  3.3.1   http://www.mpich.org/static/downloads/3.3.1/mpich-3.3.1.tar.gz\r\n  3.3rc1  http://www.mpich.org/static/downloads/3.3rc1/mpich-3.3rc1.tar.gz\r\n  3.3b3   http://www.mpich.org/static/downloads/3.3b3/mpich-3.3b3.tar.gz\r\n  3.3b2   http://www.mpich.org/static/downloads/3.3b2/mpich-3.3b2.tar.gz\r\n  3.3b1   http://www.mpich.org/static/downloads/3.3b1/mpich-3.3b1.tar.gz\r\n  3.3a3   http://www.mpich.org/static/downloads/3.3a3/mpich-3.3a3.tar.gz\r\n  3.3a2   http://www.mpich.org/static/downloads/3.3a2/mpich-3.3a2.tar.gz\r\n  3.3a1   http://www.mpich.org/static/downloads/3.3a1/mpich-3.3a1.tar.gz\r\n  3.3     http://www.mpich.org/static/downloads/3.3/mpich-3.3.tar.gz\r\n  ...\r\n  3.0     http://www.mpich.org/static/downloads/3.0/mpich-3.0.tar.gz\r\n\r\n==> How many would you like to checksum? (default is 1, q to abort) 3\r\n==> Downloading...\r\n==> Fetching http://www.mpich.org/static/downloads/3.3.1/mpich-3.3.1.tar.gz\r\n########################################################################### 100.0%\r\n==> Fetching http://www.mpich.org/static/downloads/3.3rc1/mpich-3.3rc1.tar.gz\r\n########################################################################### 100.0%\r\n==> Fetching http://www.mpich.org/static/downloads/3.3b3/mpich-3.3b3.tar.gz\r\n########################################################################### 100.0%\r\n==> Checksummed 3 versions of mpich:\r\n\r\n    version('3.3.1',  sha256='fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5')\r\n    version('3.3rc1', sha256='4a83f1f3b28d1bcd2f6dc9f91c87cf74583dc5f29cfef172015844b9ec75e9f2')\r\n    version('3.3b3',  sha256='73a881c065f798a47a7db1e0ad34ad16c4cb73bf7ebf34c97618aac152c416bf')\r\n\r\n$\r\n```",
+    "performed_via_github_app": null
+}

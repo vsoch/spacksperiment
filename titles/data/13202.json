@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13202",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13202/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13202/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13202/events",
+    "html_url": "https://github.com/spack/spack/pull/13202",
+    "id": 506108694,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI3NDA4ODky",
+    "number": 13202,
+    "title": "GCC: fix build on macOS Catalina",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-10-12T00:56:09Z",
+    "updated_at": "2019-11-02T19:36:32Z",
+    "closed_at": "2019-10-19T17:18:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13202",
+        "html_url": "https://github.com/spack/spack/pull/13202",
+        "diff_url": "https://github.com/spack/spack/pull/13202.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13202.patch"
+    },
+    "body": "Fixes #13232\r\n\r\nSee https://gcc.gnu.org/install/build.html:\r\n\r\n> For a native build, the default configuration is to perform a 3-stage bootstrap of the compiler when \u2018make\u2019 is invoked. This will build the entire GCC system and ensure that it compiles itself correctly. It can be disabled with the --disable-bootstrap parameter to \u2018configure\u2019, but bootstrapping is suggested because the compiler will be tested more completely and could also have better performance.\r\n\r\nAlthough bootstrapping is _suggested_, I found that disabling it changed the build time from 2 hrs to 30 min.",
+    "performed_via_github_app": null
+}

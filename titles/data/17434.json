@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17434",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17434/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17434/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17434/events",
+    "html_url": "https://github.com/spack/spack/pull/17434",
+    "id": 653762375,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ2NjE2NDY0",
+    "number": 17434,
+    "title": "py-pysam: add LDFLAGS to curl",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-07-09T04:54:15Z",
+    "updated_at": "2020-07-10T13:26:22Z",
+    "closed_at": "2020-07-10T13:26:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17434",
+        "html_url": "https://github.com/spack/spack/pull/17434",
+        "diff_url": "https://github.com/spack/spack/pull/17434.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17434.patch"
+    },
+    "body": "With %fj, build failed because fail to find libcurl.\r\n\r\n> /opt/arm/gcc-8.2.0_Generic-AArch64_RHEL-7_aarch64-linux/lib/gcc/aarch64-linux-gnu/8.2.0/../../../../aarch64-linux-gnu/bin/ld: cannot find -lcurl\r\n\r\nSo -L(spack's curl/lib) should be add to compiler option.\r\nI could not find fault in setup.py, so added LDFLAGS directly.\r\n `env.set('LDFLAGS', '-L' + self.spec['curl'].prefix.lib)`\r\nWith %gcc, build succeed. But options were similar to %fj.\r\nAnd probably link to /usr/lib64.\r\nTherefore, this patch should be applied to all compiler.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17071",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17071/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17071/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17071/events",
+    "html_url": "https://github.com/spack/spack/pull/17071",
+    "id": 637844744,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMzNzU2OTg4",
+    "number": 17071,
+    "title": "clang: add 'version_argument', remove redundant method",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-12T15:48:13Z",
+    "updated_at": "2020-06-13T13:31:32Z",
+    "closed_at": "2020-06-13T13:31:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17071",
+        "html_url": "https://github.com/spack/spack/pull/17071",
+        "diff_url": "https://github.com/spack/spack/pull/17071.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17071.patch"
+    },
+    "body": "This PR fixes the `version_argument` field for clang compilers and removes a redundant method in the Clang class that shadows the Compiler class.\r\n\r\nClang previously used GCCs `-dumpversion` argument, which returns `4.2.1` because that was the version of GCC that clang originally targeted for compatibility. Clang's version argument is `--version`.\r\n\r\nThis was obfuscated in the past by clang having its own version of all methods to get version info. #12989 made this problem apparent by using the `version_argument` flag in a method used by clang.",
+    "performed_via_github_app": null
+}

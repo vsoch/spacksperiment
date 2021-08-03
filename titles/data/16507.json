@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16507",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16507/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16507/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16507/events",
+    "html_url": "https://github.com/spack/spack/pull/16507",
+    "id": 614107513,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE0NzI3NDEx",
+    "number": 16507,
+    "title": "preCICE: Fix conflict with Boost 1.73.0",
+    "user": {
+        "login": "fsimonis",
+        "id": 13552216,
+        "node_id": "MDQ6VXNlcjEzNTUyMjE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13552216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fsimonis",
+        "html_url": "https://github.com/fsimonis",
+        "followers_url": "https://api.github.com/users/fsimonis/followers",
+        "following_url": "https://api.github.com/users/fsimonis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fsimonis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fsimonis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fsimonis/subscriptions",
+        "organizations_url": "https://api.github.com/users/fsimonis/orgs",
+        "repos_url": "https://api.github.com/users/fsimonis/repos",
+        "events_url": "https://api.github.com/users/fsimonis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fsimonis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-07T14:35:04Z",
+    "updated_at": "2020-05-08T17:26:38Z",
+    "closed_at": "2020-05-08T17:26:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16507",
+        "html_url": "https://github.com/spack/spack/pull/16507",
+        "diff_url": "https://github.com/spack/spack/pull/16507.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16507.patch"
+    },
+    "body": "This PR fixes a conflict with the version 1.73.0 of boost.\r\n\r\nA fix is in review and will make it into develop soon, so the next version will be compatible again.\r\n\r\n**To the reviewer(s)**\r\nCan you please check if I got the version notation right?",
+    "performed_via_github_app": null
+}

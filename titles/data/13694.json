@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13694",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13694/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13694/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13694/events",
+    "html_url": "https://github.com/spack/spack/pull/13694",
+    "id": 521303342,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NzA3MDE5",
+    "number": 13694,
+    "title": "damselfly: Add mpi dependency.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-12T03:16:27Z",
+    "updated_at": "2019-11-13T00:00:53Z",
+    "closed_at": "2019-11-12T17:58:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13694",
+        "html_url": "https://github.com/spack/spack/pull/13694",
+        "diff_url": "https://github.com/spack/spack/pull/13694.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13694.patch"
+    },
+    "body": "I got the following error when installing `damselfly`.\r\n```\r\n     35    mpicxx   -I/tmp/~/spack-stage-da\r\n           mselfly-1.0-2ag34mthvthcixrhtvt3djsp6o64jj2p/spack-build  -O2 -g -DN\r\n           DEBUG   -o CMakeFiles/damselfly.dir/src/ariesModeling.C.o -c /tmp/~\r\n           ~/spack-stage-damselfly-1.0-2ag34mthvthcixrhtvt3djsp6o64jj2p/\r\n           spack-src/src/ariesModeling.C\r\n     36    make[2]: mpicxx: Command not found \r\n```\r\nIt means that `damselfly` needs mpi library, so I added `mpi` dependency.",
+    "performed_via_github_app": null
+}

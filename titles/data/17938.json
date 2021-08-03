@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17938",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17938/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17938/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17938/events",
+    "html_url": "https://github.com/spack/spack/pull/17938",
+    "id": 675237091,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY0Nzg3MzIy",
+    "number": 17938,
+    "title": "[WIP] Load external modules in environments",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-08-07T19:44:55Z",
+    "updated_at": "2020-08-09T18:46:17Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17938",
+        "html_url": "https://github.com/spack/spack/pull/17938",
+        "diff_url": "https://github.com/spack/spack/pull/17938.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17938.patch"
+    },
+    "body": "See: https://github.com/spack/spack/issues/16910\r\n\r\n@quellyn does this resolve the problem you reported in #16910 (note that you should start a new shell, as this does not add corresponding cleanup functions)?\r\n\r\nThis loads every external module associated with each spec that was explicitly added to the environment or any of it's dependencies.\r\n\r\nTODOs\r\n\r\n- [ ] This doesn't have an \"undo\" operation right now (to get that precisely correct that may involve remembering the modules that were in place when the environment was activated, but maybe that's not important)\r\n- [ ] We may want to make this optional",
+    "performed_via_github_app": null
+}

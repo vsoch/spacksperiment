@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18675",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18675/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18675/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18675/events",
+    "html_url": "https://github.com/spack/spack/pull/18675",
+    "id": 701884309,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg3MjU4OTU1",
+    "number": 18675,
+    "title": "Likwid versions >= 5.0.0 depend on Lua 5.2.",
+    "user": {
+        "login": "severinstrobl",
+        "id": 10728360,
+        "node_id": "MDQ6VXNlcjEwNzI4MzYw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10728360?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/severinstrobl",
+        "html_url": "https://github.com/severinstrobl",
+        "followers_url": "https://api.github.com/users/severinstrobl/followers",
+        "following_url": "https://api.github.com/users/severinstrobl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/severinstrobl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/severinstrobl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/severinstrobl/subscriptions",
+        "organizations_url": "https://api.github.com/users/severinstrobl/orgs",
+        "repos_url": "https://api.github.com/users/severinstrobl/repos",
+        "events_url": "https://api.github.com/users/severinstrobl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/severinstrobl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-15T12:24:00Z",
+    "updated_at": "2020-09-17T08:23:56Z",
+    "closed_at": "2020-09-16T15:16:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18675",
+        "html_url": "https://github.com/spack/spack/pull/18675",
+        "diff_url": "https://github.com/spack/spack/pull/18675.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18675.patch"
+    },
+    "body": "According to https://github.com/RRZE-HPC/likwid/issues/324 recent versions of Likwid require Lua 5.2.",
+    "performed_via_github_app": null
+}

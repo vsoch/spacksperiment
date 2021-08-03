@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13946",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13946/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13946/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13946/events",
+    "html_url": "https://github.com/spack/spack/pull/13946",
+    "id": 530848865,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ3NDA2MjEz",
+    "number": 13946,
+    "title": "Fix conflict with respect to openssl and qt3 built for openspeedshop.",
+    "user": {
+        "login": "jgalarowicz",
+        "id": 630197,
+        "node_id": "MDQ6VXNlcjYzMDE5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/630197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jgalarowicz",
+        "html_url": "https://github.com/jgalarowicz",
+        "followers_url": "https://api.github.com/users/jgalarowicz/followers",
+        "following_url": "https://api.github.com/users/jgalarowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jgalarowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jgalarowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jgalarowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/jgalarowicz/orgs",
+        "repos_url": "https://api.github.com/users/jgalarowicz/repos",
+        "events_url": "https://api.github.com/users/jgalarowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jgalarowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-02T02:20:08Z",
+    "updated_at": "2019-12-02T19:13:32Z",
+    "closed_at": "2019-12-02T19:13:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13946",
+        "html_url": "https://github.com/spack/spack/pull/13946",
+        "diff_url": "https://github.com/spack/spack/pull/13946.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13946.patch"
+    },
+    "body": "Fix an issue where the latest openssl is desired for multiple packages for the openspeedshop qt3 build, but the qt build wants to use an older version of openssl.  There does not appear to be any side effects for the openspeedshop gui when using the latest openssl, so making the change to resolve the conflict.",
+    "performed_via_github_app": null
+}

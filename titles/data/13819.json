@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13819",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13819/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13819/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13819/events",
+    "html_url": "https://github.com/spack/spack/pull/13819",
+    "id": 526597947,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ0MDMzMjY4",
+    "number": 13819,
+    "title": "add package cuda@10.2.89",
+    "user": {
+        "login": "psychocoderHPC",
+        "id": 4037125,
+        "node_id": "MDQ6VXNlcjQwMzcxMjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4037125?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/psychocoderHPC",
+        "html_url": "https://github.com/psychocoderHPC",
+        "followers_url": "https://api.github.com/users/psychocoderHPC/followers",
+        "following_url": "https://api.github.com/users/psychocoderHPC/following{/other_user}",
+        "gists_url": "https://api.github.com/users/psychocoderHPC/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/psychocoderHPC/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/psychocoderHPC/subscriptions",
+        "organizations_url": "https://api.github.com/users/psychocoderHPC/orgs",
+        "repos_url": "https://api.github.com/users/psychocoderHPC/repos",
+        "events_url": "https://api.github.com/users/psychocoderHPC/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/psychocoderHPC/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-11-21T13:33:51Z",
+    "updated_at": "2019-12-04T01:22:51Z",
+    "closed_at": "2019-11-25T19:23:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13819",
+        "html_url": "https://github.com/spack/spack/pull/13819",
+        "diff_url": "https://github.com/spack/spack/pull/13819.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13819.patch"
+    },
+    "body": "add CUDA 10.2 support\r\n\r\nCUDA 10.2 can be downloaded from https://developer.nvidia.com/cuda-downloads",
+    "performed_via_github_app": null
+}

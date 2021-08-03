@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13954",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13954/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13954/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13954/events",
+    "html_url": "https://github.com/spack/spack/pull/13954",
+    "id": 531460774,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ3OTEyNTcw",
+    "number": 13954,
+    "title": "add `spack spec --uarch-flags` option",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-02T19:08:40Z",
+    "updated_at": "2020-08-22T17:53:53Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13954",
+        "html_url": "https://github.com/spack/spack/pull/13954",
+        "diff_url": "https://github.com/spack/spack/pull/13954.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13954.patch"
+    },
+    "body": "- [x] Add a convenience property that automatically gets the uarch flags for the particular compiler.  This makes it much simpler to get the target flags from a concrete spec.\r\n- [x] `spack spec --uarch-flags` will now show microarch flags for each node in the DAG, so that you can see what flags will be used more easily.\r\n- [ ] docs\r\n- [ ] test\r\n\r\nExample:\r\n\r\n```console\r\n$ spack spec --uarch-flags hdf5%gcc\r\nInput spec\r\n--------------------------------\r\nhdf5%gcc\r\n\r\nConcretized\r\n--------------------------------\r\nhdf5@1.10.5%gcc@8.2.0~cxx~debug~fortran~hl+mpi patches=b61e2f058964ad85be6ee5ecea10080bf79e73f83ff88d1fa4b602d00209da9c +pic+shared~szip~threadsafe arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n    ^openmpi@3.1.4%gcc@8.2.0~cuda+cxx_exceptions fabrics=none ~java~legacylaunchers~memchecker~pmi schedulers=none ~sqlite3~thread_multiple+vt arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n        ^hwloc@1.11.11%gcc@8.2.0~cairo~cuda~gl+libxml2~nvml~pci+shared arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n            ^libxml2@2.9.9%gcc@8.2.0~python arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n                ^libiconv@1.16%gcc@8.2.0 arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n                ^pkgconf@1.6.3%gcc@8.2.0 arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n                ^xz@5.2.4%gcc@8.2.0 arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n                ^zlib@1.2.11%gcc@8.2.0+optimize+pic+shared arch=darwin-mojave-skylake uarch_flags=\"-march=skylake -mtune=skylake\"\r\n```\r\n\r\n",
+    "performed_via_github_app": null
+}

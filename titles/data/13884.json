@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13884",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13884/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13884/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13884/events",
+    "html_url": "https://github.com/spack/spack/pull/13884",
+    "id": 528240824,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ1MzQxMDg1",
+    "number": 13884,
+    "title": "Forgot a trailing _PLUGIN in an ACTS build option...",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-25T17:47:41Z",
+    "updated_at": "2019-11-26T09:22:22Z",
+    "closed_at": "2019-11-25T22:56:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13884",
+        "html_url": "https://github.com/spack/spack/pull/13884",
+        "diff_url": "https://github.com/spack/spack/pull/13884.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13884.patch"
+    },
+    "body": "...which led said build option to be ignored.",
+    "performed_via_github_app": null
+}

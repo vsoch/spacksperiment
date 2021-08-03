@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14475",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14475/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14475/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14475/events",
+    "html_url": "https://github.com/spack/spack/pull/14475",
+    "id": 548638158,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYxODc5MDQw",
+    "number": 14475,
+    "title": "Remove overlapping depends_on statement for py-basemap",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-12T22:36:37Z",
+    "updated_at": "2020-01-14T19:16:07Z",
+    "closed_at": "2020-01-14T02:34:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14475",
+        "html_url": "https://github.com/spack/spack/pull/14475",
+        "diff_url": "https://github.com/spack/spack/pull/14475.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14475.patch"
+    },
+    "body": "This PR resolves an overlapping dependency specification for py-basemap.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14391",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14391/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14391/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14391/events",
+    "html_url": "https://github.com/spack/spack/pull/14391",
+    "id": 545559369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5NDA2NTY5",
+    "number": 14391,
+    "title": "Reference `spack help --spec` in `spack spec --help`",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-01-06T06:12:52Z",
+    "updated_at": "2020-01-06T17:31:06Z",
+    "closed_at": "2020-01-06T08:20:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14391",
+        "html_url": "https://github.com/spack/spack/pull/14391",
+        "diff_url": "https://github.com/spack/spack/pull/14391.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14391.patch"
+    },
+    "body": "@healther I finally figured out a clean way to do this!\r\n\r\n```console\r\n$ spack spec --help\r\nusage: spack spec [-hlLIyjNt] [-c {nodes,edges,paths}] ...\r\n\r\nshow what would be installed, given a spec\r\n\r\npositional arguments:\r\n  specs                 specs of packages\r\n\r\noptional arguments:\r\n  -h, --help            show this help message and exit\r\n  -l, --long            show dependency hashes as well as versions\r\n  -L, --very-long       show full dependency hashes as well as versions\r\n  -I, --install-status  show install status of packages. packages can be: installed [+], missing and needed by an installed package [-], or not installed (no annotation)\r\n  -y, --yaml            print concrete spec as YAML\r\n  -j, --json            print concrete spec as YAML\r\n  -c {nodes,edges,paths}, --cover {nodes,edges,paths}\r\n                        how extensively to traverse the DAG (default: nodes)\r\n  -N, --namespaces      show fully qualified package names\r\n  -t, --types           show dependency types\r\n\r\nfor further documentation regarding the spec syntax, see:\r\n    spack help --spec\r\n```\r\n\r\nSupersedes #7909",
+    "performed_via_github_app": null
+}

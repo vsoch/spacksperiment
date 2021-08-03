@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16560",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16560/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16560/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16560/events",
+    "html_url": "https://github.com/spack/spack/pull/16560",
+    "id": 615474489,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE1Nzc5NTA2",
+    "number": 16560,
+    "title": "PyTorch: fix master and mkldnn builds",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-10T20:55:17Z",
+    "updated_at": "2020-05-11T00:40:02Z",
+    "closed_at": "2020-05-11T00:40:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16560",
+        "html_url": "https://github.com/spack/spack/pull/16560",
+        "diff_url": "https://github.com/spack/spack/pull/16560.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16560.patch"
+    },
+    "body": "We can't set `PYTORCH_BUILD_VERSION` to `master`, otherwise the build crashes with:\r\n```\r\n     2051    In file included from ../caffe2/core/common.h:27:0,\r\n     2052                     from ../caffe2/perfkernels/common_avx2.cc:5:\r\n  >> 2053    ./caffe2/core/macros.h:12:30: error: 'master' was not declared in this scope\r\n     2054     #define CAFFE2_VERSION_MINOR master\r\n     2055                                  ^\r\n     2056    ./caffe2/core/macros.h:16:5: note: in expansion of macro 'CAFFE2_VERSION_MINOR'\r\n     2057         CAFFE2_VERSION_MINOR < 100,\r\n     2058         ^\r\n  >> 2059    ./caffe2/core/macros.h:13:30: error: 'master' was not declared in this scope\r\n     2060     #define CAFFE2_VERSION_PATCH master\r\n     2061                                  ^\r\n     2062    ./caffe2/core/macros.h:19:5: note: in expansion of macro 'CAFFE2_VERSION_PATCH'\r\n     2063         CAFFE2_VERSION_PATCH < 100,\r\n     2064         ^\r\n     2065    [1035/2226] Building CXX object caffe2/perfkernels/CMakeFiles/Caffe2_perfkernels_avx2.dir/fused_8bit_rowwise_conversion_avx2.cc.o\r\n```\r\nAlso, the `intel-mkl-dnn` package was renamed to `dnnl`, and then renamed again to `onednn`. Update `py-torch` to use the right dependency name.\r\n\r\n@tgamblin why didn't your package sanity dependency checks catch the missing `intel-mkl-dnn` package?\r\n\r\nEDIT: Oh, that test only looks at `depends_on`, the spec of non-existing package bug can only be caught at run-time.",
+    "performed_via_github_app": null
+}

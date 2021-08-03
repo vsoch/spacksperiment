@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13143",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13143/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13143/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13143/events",
+    "html_url": "https://github.com/spack/spack/pull/13143",
+    "id": 505599930,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI3MDAwMzA0",
+    "number": 13143,
+    "title": "arborx: update",
+    "user": {
+        "login": "aprokop",
+        "id": 7297887,
+        "node_id": "MDQ6VXNlcjcyOTc4ODc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7297887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aprokop",
+        "html_url": "https://github.com/aprokop",
+        "followers_url": "https://api.github.com/users/aprokop/followers",
+        "following_url": "https://api.github.com/users/aprokop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aprokop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aprokop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aprokop/subscriptions",
+        "organizations_url": "https://api.github.com/users/aprokop/orgs",
+        "repos_url": "https://api.github.com/users/aprokop/repos",
+        "events_url": "https://api.github.com/users/aprokop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aprokop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-10-11T02:21:31Z",
+    "updated_at": "2019-10-15T11:29:56Z",
+    "closed_at": "2019-10-15T09:19:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13143",
+        "html_url": "https://github.com/spack/spack/pull/13143",
+        "diff_url": "https://github.com/spack/spack/pull/13143.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13143.patch"
+    },
+    "body": "- Require Kokkos with c++14\r\n- Update the case of CMake options",
+    "performed_via_github_app": null
+}

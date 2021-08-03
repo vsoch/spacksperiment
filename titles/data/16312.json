@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16312",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16312/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16312/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16312/events",
+    "html_url": "https://github.com/spack/spack/pull/16312",
+    "id": 607115267,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA5MTU5Mjc1",
+    "number": 16312,
+    "title": "libpciaccess: mirror",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-26T21:16:09Z",
+    "updated_at": "2020-04-27T00:06:41Z",
+    "closed_at": "2020-04-27T00:06:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16312",
+        "html_url": "https://github.com/spack/spack/pull/16312",
+        "diff_url": "https://github.com/spack/spack/pull/16312.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16312.patch"
+    },
+    "body": "Support mirrors for libpciaccess downloads.\r\n\r\nThis sometimes failed in fetches in my nightly CD/CI scripts.",
+    "performed_via_github_app": null
+}

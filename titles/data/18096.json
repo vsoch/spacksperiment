@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18096",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18096/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18096/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18096/events",
+    "html_url": "https://github.com/spack/spack/pull/18096",
+    "id": 679897227,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY4NTUwMjk3",
+    "number": 18096,
+    "title": "Changes to url port and a bug fix in mvapich2x package",
+    "user": {
+        "login": "nithintsk",
+        "id": 52734841,
+        "node_id": "MDQ6VXNlcjUyNzM0ODQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52734841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nithintsk",
+        "html_url": "https://github.com/nithintsk",
+        "followers_url": "https://api.github.com/users/nithintsk/followers",
+        "following_url": "https://api.github.com/users/nithintsk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nithintsk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nithintsk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nithintsk/subscriptions",
+        "organizations_url": "https://api.github.com/users/nithintsk/orgs",
+        "repos_url": "https://api.github.com/users/nithintsk/repos",
+        "events_url": "https://api.github.com/users/nithintsk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nithintsk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-17T02:57:39Z",
+    "updated_at": "2020-08-17T20:33:27Z",
+    "closed_at": "2020-08-17T20:33:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18096",
+        "html_url": "https://github.com/spack/spack/pull/18096",
+        "diff_url": "https://github.com/spack/spack/pull/18096.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18096.patch"
+    },
+    "body": "1. Changed the binary mirror url in both packages to remove the port 8080.\r\n2. Fixed an error in setting slurm environment variable in mvapich2x package.",
+    "performed_via_github_app": null
+}

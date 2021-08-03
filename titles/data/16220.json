@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16220",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16220/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16220/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16220/events",
+    "html_url": "https://github.com/spack/spack/pull/16220",
+    "id": 604284464,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2OTA3Njg4",
+    "number": 16220,
+    "title": "qt : new version (@5.12.7), new variant (+debug), changed constraints (+opengl)",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-04-21T21:03:46Z",
+    "updated_at": "2021-04-01T02:20:55Z",
+    "closed_at": "2020-04-22T14:29:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16220",
+        "html_url": "https://github.com/spack/spack/pull/16220",
+        "diff_url": "https://github.com/spack/spack/pull/16220.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16220.patch"
+    },
+    "body": "The changes in this pull request modify the `qt` package in the following ways:\r\n\r\n- Add support for `@5.12.7`, which requires the new `qt5-12-configure` patch.\r\n- Add the `+debug` variant to allow for the export of debugging symbols.\r\n- Modify the `+opengl` variant to require any version of the `gl` package instead of only `gl@3.2:`.\r\n\r\nI've verified that the `qt@5.12.7{+/~}debug+opengl ^gl@1.4` variants work in the `gcc%4.9.3 arch=linux-rhel7-broadwell` build environment. In terms of more complete testing, I'm fairly confident that `+debug` variant will work for `qt@4` since I was using it in a local branch some time ago, but I'm unsure whether or not it will work for `qt@3`; I can test that version as well if needed.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14181",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14181/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14181/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14181/events",
+    "html_url": "https://github.com/spack/spack/pull/14181",
+    "id": 538410135,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUzNTYwODE4",
+    "number": 14181,
+    "title": "Add tooling to simplify the workflow for command extensions",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 742534409,
+            "node_id": "MDU6TGFiZWw3NDI1MzQ0MDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-command",
+            "name": "new-command",
+            "color": "275e99",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-16T13:24:29Z",
+    "updated_at": "2019-12-20T15:12:02Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14181",
+        "html_url": "https://github.com/spack/spack/pull/14181",
+        "diff_url": "https://github.com/spack/spack/pull/14181.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14181.patch"
+    },
+    "body": "fixes #12600\r\n\r\nThis PR adds a new command to simplify working with Spack extensions. Documentation is added to highlight its use and show common scenarios.\r\n\r\nCurrent roadmap for this PR:\r\n\r\n- [x] Add commands to manage command extensions from the command line\r\n- [x] Extend the documentation section on \"Custom extensions\"\r\n- [ ] Add tests for the new feature, consolidate the code",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18579",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18579/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18579/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18579/events",
+    "html_url": "https://github.com/spack/spack/pull/18579",
+    "id": 696168809,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgyMjg5Mjc0",
+    "number": 18579,
+    "title": "Added specific \"@master\" version specifier for SCR dependencies",
+    "user": {
+        "login": "robertkb",
+        "id": 9001420,
+        "node_id": "MDQ6VXNlcjkwMDE0MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9001420?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertkb",
+        "html_url": "https://github.com/robertkb",
+        "followers_url": "https://api.github.com/users/robertkb/followers",
+        "following_url": "https://api.github.com/users/robertkb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertkb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertkb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertkb/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertkb/orgs",
+        "repos_url": "https://api.github.com/users/robertkb/repos",
+        "events_url": "https://api.github.com/users/robertkb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertkb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-09-08T20:50:40Z",
+    "updated_at": "2020-09-09T17:52:37Z",
+    "closed_at": "2020-09-09T17:52:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18579",
+        "html_url": "https://github.com/spack/spack/pull/18579",
+        "diff_url": "https://github.com/spack/spack/pull/18579.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18579.patch"
+    },
+    "body": "Recent changes to the SCR develop branch requires the master branch of several component library dependencies. The dependencies for building the default version of spack are unchanged.",
+    "performed_via_github_app": null
+}

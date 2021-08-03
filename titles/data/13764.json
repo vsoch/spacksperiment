@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13764",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13764/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13764/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13764/events",
+    "html_url": "https://github.com/spack/spack/pull/13764",
+    "id": 524034148,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxODg3NDgw",
+    "number": 13764,
+    "title": "Py-pymol package has been updated to the latest version",
+    "user": {
+        "login": "hseara",
+        "id": 2016887,
+        "node_id": "MDQ6VXNlcjIwMTY4ODc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2016887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hseara",
+        "html_url": "https://github.com/hseara",
+        "followers_url": "https://api.github.com/users/hseara/followers",
+        "following_url": "https://api.github.com/users/hseara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hseara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hseara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hseara/subscriptions",
+        "organizations_url": "https://api.github.com/users/hseara/orgs",
+        "repos_url": "https://api.github.com/users/hseara/repos",
+        "events_url": "https://api.github.com/users/hseara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hseara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-17T19:47:04Z",
+    "updated_at": "2019-12-03T08:54:22Z",
+    "closed_at": "2019-11-26T16:42:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13764",
+        "html_url": "https://github.com/spack/spack/pull/13764",
+        "diff_url": "https://github.com/spack/spack/pull/13764.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13764.patch"
+    },
+    "body": "*   I have removed the previous py-pymol version as it was no longer compiling\r\n*   I have added a new package libmmtf-cpp that is a new dependency of py-pymol",
+    "performed_via_github_app": null
+}

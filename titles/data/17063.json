@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17063",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17063/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17063/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17063/events",
+    "html_url": "https://github.com/spack/spack/pull/17063",
+    "id": 637341266,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMzMzQ5MzM0",
+    "number": 17063,
+    "title": "libflame: replace 'no' with 'none' as possible value of 'threads' variant",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-11T21:45:05Z",
+    "updated_at": "2020-06-13T01:12:36Z",
+    "closed_at": "2020-06-13T01:12:36Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17063",
+        "html_url": "https://github.com/spack/spack/pull/17063",
+        "diff_url": "https://github.com/spack/spack/pull/17063.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17063.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/16970\r\n\r\nAs noted in #16970, Spack is currently having issues managing specs with variants that can have a value of \"no\"/\"yes\" - the internal yaml parsing confuses these for boolean values which can change the actual Spec after writing-to/reading-from yaml form.\r\n\r\nThis is an in-the-meantime fix while I can look into whether/how-to get our yaml storage/restoration to preserve \"yes\"/\"no\" as strings (or whether we want to make sure that Spec variants don't use those values in the future)",
+    "performed_via_github_app": null
+}

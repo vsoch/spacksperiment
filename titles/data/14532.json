@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14532",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14532/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14532/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14532/events",
+    "html_url": "https://github.com/spack/spack/pull/14532",
+    "id": 550595044,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzNDcyNTcy",
+    "number": 14532,
+    "title": "falcon: Set Py_None to return value",
+    "user": {
+        "login": "noguchi-k",
+        "id": 55966120,
+        "node_id": "MDQ6VXNlcjU1OTY2MTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55966120?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noguchi-k",
+        "html_url": "https://github.com/noguchi-k",
+        "followers_url": "https://api.github.com/users/noguchi-k/followers",
+        "following_url": "https://api.github.com/users/noguchi-k/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noguchi-k/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noguchi-k/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noguchi-k/subscriptions",
+        "organizations_url": "https://api.github.com/users/noguchi-k/orgs",
+        "repos_url": "https://api.github.com/users/noguchi-k/repos",
+        "events_url": "https://api.github.com/users/noguchi-k/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noguchi-k/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-16T06:08:08Z",
+    "updated_at": "2020-01-17T00:15:47Z",
+    "closed_at": "2020-01-16T18:14:53Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14532",
+        "html_url": "https://github.com/spack/spack/pull/14532",
+        "diff_url": "https://github.com/spack/spack/pull/14532.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14532.patch"
+    },
+    "body": "error: \r\n`non-void function 'initext_falcon' should return a value [-Wreturn-type]`\r\n\r\nI set Py_None to return value because Python version 3 and later should return a value of PyObject type.",
+    "performed_via_github_app": null
+}

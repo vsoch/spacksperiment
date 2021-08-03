@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18225",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18225/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18225/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18225/events",
+    "html_url": "https://github.com/spack/spack/pull/18225",
+    "id": 684302964,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyMjEzMDEz",
+    "number": 18225,
+    "title": "csh: don't require SPACK_ROOT for sourcing setup-env.csh",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 480046049,
+            "node_id": "MDU6TGFiZWw0ODAwNDYwNDk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/UI",
+            "name": "UI",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-24T01:39:56Z",
+    "updated_at": "2020-10-24T01:54:36Z",
+    "closed_at": "2020-10-24T01:54:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18225",
+        "html_url": "https://github.com/spack/spack/pull/18225",
+        "diff_url": "https://github.com/spack/spack/pull/18225.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18225.patch"
+    },
+    "body": "`setup-env.sh` and `setup-env.fish` know how to find themselves in `bash`, `zsh`, `dash`, and `fish` and how to set `SPACK_ROOT` automatically. `setup-env.csh` doesn't, and we still have to tell people to set `SPACK_ROOT` in this one case for csh, which can make initialization instructions confusing.\r\n\r\nThis uses the same trick we use for `dash` for `csh` and `tcsh`, and it adds some rudimentary testing for `setup-env.csh` to ensure it keeps working. It turns out we were broken for regular `csh` because it does not supporrt `[`, so this has been refactored as well.\r\n\r\nNew output looks like this:\r\n\r\n```console\r\n(spackbook):~$ src/spack/bin/spack env activate .\r\n==> `spack env activate` works best with spack's shell support.\r\n  \r\n  To set up shell support, run the command below for your shell.\r\n  \r\n  For bash/zsh/sh:\r\n    . /Users/gamblin2/src/spack/share/spack/setup-env.sh\r\n  \r\n  For csh/tcsh:\r\n    source /Users/gamblin2/src/spack/share/spack/setup-env.csh\r\n  \r\n  For fish:\r\n    source /Users/gamblin2/src/spack/share/spack/setup-env.fish\r\n  \r\n  Or, if you want to use `spack env activate` without shell\r\n  support, you can run one of these:\r\n  \r\n      eval `spack env activate --sh   .`  # bash/zsh/sh\r\n      eval `spack env activate --csh  .`  # csh/tcsh\r\n      eval `spack env activate --fish .`  # fish\r\n\r\n(spackbook):~$ \r\n```\r\n\r\n- [x] Add logic to `setup-env.csh` to automatically find the script and set `SPACK_ROOT`\r\n- [x] Add simple tests for `setup-env.csh`\r\n- [x] Refactor use of `[` out of `setup-env.csh` so it works with plain `csh`\r\n- [x] Remove SPACK_ROOT from csh/tcsh instructions\r\n- [x] Add fish to shell instructions\r\n- [x] make output consistent across commands",
+    "performed_via_github_app": null
+}

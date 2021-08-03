@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16929",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16929/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16929/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16929/events",
+    "html_url": "https://github.com/spack/spack/pull/16929",
+    "id": 630069032,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI3MjYwMjUy",
+    "number": 16929,
+    "title": "Gnuplot fix 16928",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-06-03T14:57:44Z",
+    "updated_at": "2020-06-04T03:08:08Z",
+    "closed_at": "2020-06-04T03:08:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16929",
+        "html_url": "https://github.com/spack/spack/pull/16929",
+        "diff_url": "https://github.com/spack/spack/pull/16929.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16929.patch"
+    },
+    "body": "Fixes #16928\r\n\r\nGetting an error\r\n==> Error: KeyError: 'No spec with name wx in gnuplot@5.2.8%gcc@8.4.0+X ...\r\n\r\nLooks like where adding the --with-wx configure option mistakenly referenced 'wx' instead of 'wxwidgets' as the dependent package.",
+    "performed_via_github_app": null
+}

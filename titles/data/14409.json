@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14409",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14409/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14409/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14409/events",
+    "html_url": "https://github.com/spack/spack/pull/14409",
+    "id": 546031028,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5Nzg2MzMz",
+    "number": 14409,
+    "title": "Package/opencv: cudacodec fix",
+    "user": {
+        "login": "Sinan81",
+        "id": 2924561,
+        "node_id": "MDQ6VXNlcjI5MjQ1NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2924561?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sinan81",
+        "html_url": "https://github.com/Sinan81",
+        "followers_url": "https://api.github.com/users/Sinan81/followers",
+        "following_url": "https://api.github.com/users/Sinan81/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sinan81/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sinan81/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sinan81/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sinan81/orgs",
+        "repos_url": "https://api.github.com/users/Sinan81/repos",
+        "events_url": "https://api.github.com/users/Sinan81/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sinan81/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-07T01:41:35Z",
+    "updated_at": "2020-03-27T08:12:44Z",
+    "closed_at": "2020-01-07T19:19:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14409",
+        "html_url": "https://github.com/spack/spack/pull/14409",
+        "diff_url": "https://github.com/spack/spack/pull/14409.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14409.patch"
+    },
+    "body": "Add a new variant: cudacodec and fix a related build error.\r\n\r\nFixes #14367 ",
+    "performed_via_github_app": null
+}

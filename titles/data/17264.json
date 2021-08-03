@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17264",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17264/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17264/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17264/events",
+    "html_url": "https://github.com/spack/spack/pull/17264",
+    "id": 645913026,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQwMzA4OTA0",
+    "number": 17264,
+    "title": "[geant4] depends_on qt@5: +opengl when +qt",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-06-25T23:38:28Z",
+    "updated_at": "2020-07-01T20:55:12Z",
+    "closed_at": "2020-06-29T06:09:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17264",
+        "html_url": "https://github.com/spack/spack/pull/17264",
+        "diff_url": "https://github.com/spack/spack/pull/17264.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17264.patch"
+    },
+    "body": "This adds `+opengl` to the current `depends_on qt@5:`.\r\n\r\nThe Geant4 cmake check requires Qt5OpenGL_FOUND, so we must require\r\nthe Qt5 +opengl variant. If not, the cmake phase fall through to Qt4\r\nand fails due to a missing Qt4::QtGui target.\r\n\r\nIn Geant4InterfaceOptions.cmake:\r\n```\r\n  if(Qt5Core_FOUND\r\n      AND Qt5Gui_FOUND\r\n      AND Qt5Widgets_FOUND\r\n      AND Qt5OpenGL_FOUND\r\n      AND Qt5PrintSupport_FOUND)\r\n```\r\n\r\nRef: https://github.com/Geant4/geant4/blob/master/cmake/Modules/Geant4InterfaceOptions.cmake#L90\r\n(5baee230e93612916bcea11ebf822756cfa7282c, \"Import Geant4 10.6.0 source tree\")",
+    "performed_via_github_app": null
+}

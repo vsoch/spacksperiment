@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16006",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16006/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16006/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16006/events",
+    "html_url": "https://github.com/spack/spack/pull/16006",
+    "id": 598392724,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAyMjc1ODIx",
+    "number": 16006,
+    "title": "Trilinos: add additional variants + housekeeping",
+    "user": {
+        "login": "carsonwoods",
+        "id": 11012397,
+        "node_id": "MDQ6VXNlcjExMDEyMzk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11012397?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carsonwoods",
+        "html_url": "https://github.com/carsonwoods",
+        "followers_url": "https://api.github.com/users/carsonwoods/followers",
+        "following_url": "https://api.github.com/users/carsonwoods/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carsonwoods/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carsonwoods/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carsonwoods/subscriptions",
+        "organizations_url": "https://api.github.com/users/carsonwoods/orgs",
+        "repos_url": "https://api.github.com/users/carsonwoods/repos",
+        "events_url": "https://api.github.com/users/carsonwoods/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carsonwoods/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-04-12T02:22:42Z",
+    "updated_at": "2021-02-19T15:39:12Z",
+    "closed_at": "2021-02-19T15:38:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16006",
+        "html_url": "https://github.com/spack/spack/pull/16006",
+        "diff_url": "https://github.com/spack/spack/pull/16006.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16006.patch"
+    },
+    "body": "This PR adds new variants to Trilinos as well as cleaning up some of the indentations for other variants and includes a little housekeeping. New variants have explicit togggles for enabling/disabling each option. I attempted to preserve original behavior by using the proper default values whenever possible. New variants include:\r\n\r\n- Enabling CTrilinos\r\n- Enabling CPPUnit Tests\r\n- Enabling PThread Support\r\n- Enabling QT Support\r\n- Enabling Trilinos Couplings\r\n- Enabling Didasko\r\n- Enabling Built in Examples\r\n- Enabling Expat support\r\n- Enabling GMP support\r\n- Enabling libxml2 support\r\n- Enabling built-in tests\r\n\r\nHouskeeping included ensure tabs were aligned (it seemed like some newer variants were out of line with the general organization of the package). And realphabetize some variants for readability and since the comments specifically ask for it. ",
+    "performed_via_github_app": null
+}

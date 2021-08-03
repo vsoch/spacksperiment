@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13185",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13185/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13185/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13185/events",
+    "html_url": "https://github.com/spack/spack/pull/13185",
+    "id": 505653967,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI3MDQxNjQ4",
+    "number": 13185,
+    "title": "checksums: use sha256 checksums everywhere",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446626162,
+            "node_id": "MDU6TGFiZWw0NDY2MjYxNjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hashes",
+            "name": "hashes",
+            "color": "9a69b7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-10-11T05:57:49Z",
+    "updated_at": "2019-10-12T17:28:00Z",
+    "closed_at": "2019-10-12T14:19:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13185",
+        "html_url": "https://github.com/spack/spack/pull/13185",
+        "diff_url": "https://github.com/spack/spack/pull/13185.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13185.patch"
+    },
+    "body": "I'm still working on some straggler packages, but this covers nearly all of the MD5 hashes in Spack.  [NIST recommends](https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions) that projects move away from MD5, and we've been meaning to do this for a while.\r\n\r\nNow that #12940 is available, we can fetch everything and hash it.  I've done that and re-written packages with SHA256's instead of with MD5 (or other algorithms).\r\n\r\nI will also add tests to enforce this, and the use of kwarg labels on hashes (i.e., `sha256=\"abc123abc123\"` instead of just `\"abc123abc123\"`).\r\n\r\nAlso, this makes the use of SHA256 consistent across Spack.  In addition to using a better hashing algorithm, we'd like to use a *consistent* checksum scheme everywhere so that we can eventually:\r\n\r\n  1. incorporate archive checksums into our specs and have a consistent hashing algorithm across all specs (and distinguish between multiple releases of the same version with different tarballs).\r\n  2. index mirrors with a consistent type of checksum, and not one that is dependent on how spack packages are written.\r\n\r\n(2) is a reason this should go in *before* #12940 -- if we don't put this in first, mirrors using the new layout will need to be re-fetched (or at least reorganized) when hashes change.\r\n\r\n- [x] convert existing md5, sha224, sha512, sha1 checksums to sha256\r\n- [x] test to enforce use of `sha256=` in new packages\r\n\r\n@citibeth FYI.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14308",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14308/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14308/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14308/events",
+    "html_url": "https://github.com/spack/spack/pull/14308",
+    "id": 543083769,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU3NDA3MTM5",
+    "number": 14308,
+    "title": "externals: avoid importing jinja2 on startup",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-28T07:10:48Z",
+    "updated_at": "2019-12-29T00:38:39Z",
+    "closed_at": "2019-12-28T22:43:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14308",
+        "html_url": "https://github.com/spack/spack/pull/14308",
+        "diff_url": "https://github.com/spack/spack/pull/14308.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14308.patch"
+    },
+    "body": "Jinja2 costs a tenth to a few tenths of a second to import, so we should avoid importing it on startup.  This seems to speed up spack startup on clusters (especially with NFS).\r\n\r\n- [x] only import jinja2 within functions",
+    "performed_via_github_app": null
+}

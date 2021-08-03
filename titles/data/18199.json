@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18199",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18199/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18199/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18199/events",
+    "html_url": "https://github.com/spack/spack/pull/18199",
+    "id": 683052889,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcxMjA1NjA2",
+    "number": 18199,
+    "title": "Add new RubyPackage build system base class",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 663894889,
+            "node_id": "MDU6TGFiZWw2NjM4OTQ4ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ruby",
+            "name": "ruby",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2020-08-20T19:47:16Z",
+    "updated_at": "2020-09-02T23:47:46Z",
+    "closed_at": "2020-09-02T23:26:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18199",
+        "html_url": "https://github.com/spack/spack/pull/18199",
+        "diff_url": "https://github.com/spack/spack/pull/18199.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18199.patch"
+    },
+    "body": "I've managed to successfully install most of these packages on macOS 10.15.6 with Apple Clang 11.0.3 and Ruby 2.7.1. I didn't test some of them that have a lot of non-Ruby dependencies.\r\n\r\nThis PR has the advantage over #3127 that it doesn't allow `gem` to pull in dependencies from the internet, users have to explicitly list dependencies in the `package.py`.\r\n\r\nCloses #16421\r\nCloses #12505\r\nCloses #3127 \r\n\r\n@Try2Code @t-brown @marcmengel @mathstuf @DiegoMagdaleno may all be interested in reviewing this PR.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13607",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13607/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13607/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13607/events",
+    "html_url": "https://github.com/spack/spack/pull/13607",
+    "id": 518096871,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM3MDQ4OTU3",
+    "number": 13607,
+    "title": "Follow up/11117 fixes and testing",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-11-05T22:39:16Z",
+    "updated_at": "2019-12-10T17:11:57Z",
+    "closed_at": "2019-12-09T22:23:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13607",
+        "html_url": "https://github.com/spack/spack/pull/13607",
+        "diff_url": "https://github.com/spack/spack/pull/13607.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13607.patch"
+    },
+    "body": "Follows up on #11117.\r\n\r\n - incorporate additional feedback from #11117 that was not merged.\r\n - fix an issue preventing prefix queries on AWS-hosted S3 buckets\r\n - adds more tests",
+    "performed_via_github_app": null
+}

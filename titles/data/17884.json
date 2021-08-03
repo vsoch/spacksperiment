@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17884",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17884/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17884/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17884/events",
+    "html_url": "https://github.com/spack/spack/pull/17884",
+    "id": 673167929,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYzMDc4NjYy",
+    "number": 17884,
+    "title": "bugfix: fix spack -V with releases/latest and shallow clones",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-05T00:34:43Z",
+    "updated_at": "2020-08-19T22:45:52Z",
+    "closed_at": "2020-08-06T00:01:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17884",
+        "html_url": "https://github.com/spack/spack/pull/17884",
+        "diff_url": "https://github.com/spack/spack/pull/17884.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17884.patch"
+    },
+    "body": "`spack -V` stopped working when we added the `releases/latest` tag to track the most recent release. It started just reporting the version, even on a `develop` checkout. We need to tell it to *only* search for tags that start with `v`, so that it will ignore `releases/latest`.\r\n\r\n`spack -V` also would print out unwanted git eror output on a shallow clone.\r\n\r\n- [x] add `--match 'v*'` to `git describe` arguments\r\n- [x] route error output to `os.devnull`",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18374",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18374/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18374/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18374/events",
+    "html_url": "https://github.com/spack/spack/pull/18374",
+    "id": 688450788,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1NzE0Mjkz",
+    "number": 18374,
+    "title": "Add standard `ipo` variant for CMakePackage",
+    "user": {
+        "login": "omor1",
+        "id": 4326436,
+        "node_id": "MDQ6VXNlcjQzMjY0MzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4326436?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omor1",
+        "html_url": "https://github.com/omor1",
+        "followers_url": "https://api.github.com/users/omor1/followers",
+        "following_url": "https://api.github.com/users/omor1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omor1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omor1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omor1/subscriptions",
+        "organizations_url": "https://api.github.com/users/omor1/orgs",
+        "repos_url": "https://api.github.com/users/omor1/repos",
+        "events_url": "https://api.github.com/users/omor1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omor1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 412006552,
+            "node_id": "MDU6TGFiZWw0MTIwMDY1NTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hash-change",
+            "name": "hash-change",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-08-29T03:44:48Z",
+    "updated_at": "2020-10-23T22:54:56Z",
+    "closed_at": "2020-10-21T09:09:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18374",
+        "html_url": "https://github.com/spack/spack/pull/18374",
+        "diff_url": "https://github.com/spack/spack/pull/18374.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18374.patch"
+    },
+    "body": "Due to CMake's handling of compilers, linkers, archivers, etc., it can be harder to enable IPO/LTO by simply manipulating `CFLAGS`, `AR`, `RANLIB`, etc. than in autotools-based projects. The variable `CMAKE_INTERPROCEDURAL_OPTIMIZATION` has existed since CMake 3.9 to allow compilation with IPO/LTO more easily.\r\n\r\nThis PR adds a standard `ipo` variant to CMake packages, defaulting to `False`, that allows users to control this variable. Enabling it possibly breaks some packages, but it defaults to off, so I don't think it should cause any problems.\r\n\r\nCloses #18373.",
+    "performed_via_github_app": null
+}

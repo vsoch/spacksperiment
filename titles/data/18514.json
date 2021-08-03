@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18514",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18514/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18514/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18514/events",
+    "html_url": "https://github.com/spack/spack/pull/18514",
+    "id": 693392622,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc5ODg0ODk3",
+    "number": 18514,
+    "title": "Modules: Fix configuration overriding",
+    "user": {
+        "login": "RemiLacroix-IDRIS",
+        "id": 11938940,
+        "node_id": "MDQ6VXNlcjExOTM4OTQw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11938940?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RemiLacroix-IDRIS",
+        "html_url": "https://github.com/RemiLacroix-IDRIS",
+        "followers_url": "https://api.github.com/users/RemiLacroix-IDRIS/followers",
+        "following_url": "https://api.github.com/users/RemiLacroix-IDRIS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RemiLacroix-IDRIS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RemiLacroix-IDRIS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RemiLacroix-IDRIS/subscriptions",
+        "organizations_url": "https://api.github.com/users/RemiLacroix-IDRIS/orgs",
+        "repos_url": "https://api.github.com/users/RemiLacroix-IDRIS/repos",
+        "events_url": "https://api.github.com/users/RemiLacroix-IDRIS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RemiLacroix-IDRIS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-09-04T17:00:29Z",
+    "updated_at": "2020-09-09T16:34:02Z",
+    "closed_at": "2020-09-09T16:05:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18514",
+        "html_url": "https://github.com/spack/spack/pull/18514",
+        "diff_url": "https://github.com/spack/spack/pull/18514.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18514.patch"
+    },
+    "body": "This got broken some times ago but nobody noticed.",
+    "performed_via_github_app": null
+}

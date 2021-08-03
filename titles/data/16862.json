@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16862",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16862/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16862/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16862/events",
+    "html_url": "https://github.com/spack/spack/pull/16862",
+    "id": 627033922,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0OTE0NDI4",
+    "number": 16862,
+    "title": "protobuf: support aarch64 @2.5.0",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-29T06:34:04Z",
+    "updated_at": "2020-06-15T11:18:01Z",
+    "closed_at": "2020-06-06T20:47:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16862",
+        "html_url": "https://github.com/spack/spack/pull/16862",
+        "diff_url": "https://github.com/spack/spack/pull/16862.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16862.patch"
+    },
+    "body": "Hbase depends on an old protobuf version 2.5.0, but the old version cannot support aarch64 platform.\r\nAccording to this issue:\r\nhttps://issues.apache.org/jira/browse/HBASE-19146\r\nSome one reported it to Google and want them to release a new version base on 2.5.0 to support aarch64. But looks like Google guys didn't do that:\r\nhttps://github.com/protocolbuffers/protobuf/issues/5115\r\n\r\nSo, we attached a special patch for aarch64 with protobuf@2.5.0.\r\nAnd because protobuf changed it's package type, we enabled that package according to @alalazo 's suggestion (e.g. https://github.com/spack/spack/pull/15420)",
+    "performed_via_github_app": null
+}

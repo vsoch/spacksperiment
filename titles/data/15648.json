@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15648",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15648/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15648/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15648/events",
+    "html_url": "https://github.com/spack/spack/pull/15648",
+    "id": 586720356,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkyNzk4NDI3",
+    "number": 15648,
+    "title": "py-onnx: Remove 'dllexport_decl'.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-24T06:15:38Z",
+    "updated_at": "2020-03-26T08:19:31Z",
+    "closed_at": "2020-03-24T08:56:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15648",
+        "html_url": "https://github.com/spack/spack/pull/15648",
+        "diff_url": "https://github.com/spack/spack/pull/15648.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15648.patch"
+    },
+    "body": "I got error following when installing `py-onnx`.\r\n```\r\n     91    [  7%] Running C++ protocol buffer compiler on /tmp/n0013/spack-stage/spack-stage-p\r\n           y-onnx-1.5.0-bzrosaagawrtjc5zjbefjb2hrncnwfhr/spack-src/.setuptools-cmake-build/onn\r\n           x/onnx-ml.proto\r\n     92    --python_out: onnx/onnx-ml.proto: Unknown generator option: dllexport_decl\r\n```\r\nIt seems that 'python_out' does not recognize dllexport_decl. So, Apply the following fix patch.\r\nRef: https://github.com/onnx/onnx/pull/2482\r\n\r\nThis fix will be included in the upstream package version:1.7.0.",
+    "performed_via_github_app": null
+}

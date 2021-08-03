@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17104",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17104/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17104/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17104/events",
+    "html_url": "https://github.com/spack/spack/pull/17104",
+    "id": 639036206,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM0Njg5NDY0",
+    "number": 17104,
+    "title": "Reframe 3.0 - fix package bug",
+    "user": {
+        "login": "victorusu",
+        "id": 15230430,
+        "node_id": "MDQ6VXNlcjE1MjMwNDMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15230430?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/victorusu",
+        "html_url": "https://github.com/victorusu",
+        "followers_url": "https://api.github.com/users/victorusu/followers",
+        "following_url": "https://api.github.com/users/victorusu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/victorusu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/victorusu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/victorusu/subscriptions",
+        "organizations_url": "https://api.github.com/users/victorusu/orgs",
+        "repos_url": "https://api.github.com/users/victorusu/repos",
+        "events_url": "https://api.github.com/users/victorusu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/victorusu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-15T18:00:38Z",
+    "updated_at": "2020-06-16T11:49:48Z",
+    "closed_at": "2020-06-16T11:49:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17104",
+        "html_url": "https://github.com/spack/spack/pull/17104",
+        "diff_url": "https://github.com/spack/spack/pull/17104.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17104.patch"
+    },
+    "body": "I have forgotten to add a `self.` before on the `spec.version` call on line 60. \r\nThis fixes the error when attempting to run\r\n```\r\nspack install --fake reframe\r\n```\r\n\r\nThe error message is\r\n```\r\nreframe: Building reframe [Package]\r\n==> Error: NameError: name 'spec' is not defined\r\n\r\n/users/hvictor/spack-victor/var/spack/repos/builtin/packages/reframe/package.py:60, in setup_run_environment:\r\n         59    def setup_run_environment(self, env):\r\n  >>     60        if spec.version >= Version('3.0'):\r\n         61            if \"+docs\" in spec:\r\n         62                env.prepend_path('MANPATH',  self.prefix.docs.man)\r\n```",
+    "performed_via_github_app": null
+}

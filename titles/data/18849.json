@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18849",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18849/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18849/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18849/events",
+    "html_url": "https://github.com/spack/spack/pull/18849",
+    "id": 705836117,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkwNDkzMzU0",
+    "number": 18849,
+    "title": "added magma variant to heffte develop",
+    "user": {
+        "login": "mkstoyanov",
+        "id": 30537612,
+        "node_id": "MDQ6VXNlcjMwNTM3NjEy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30537612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mkstoyanov",
+        "html_url": "https://github.com/mkstoyanov",
+        "followers_url": "https://api.github.com/users/mkstoyanov/followers",
+        "following_url": "https://api.github.com/users/mkstoyanov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mkstoyanov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mkstoyanov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mkstoyanov/subscriptions",
+        "organizations_url": "https://api.github.com/users/mkstoyanov/orgs",
+        "repos_url": "https://api.github.com/users/mkstoyanov/repos",
+        "events_url": "https://api.github.com/users/mkstoyanov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mkstoyanov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-09-21T18:53:15Z",
+    "updated_at": "2020-09-22T19:32:09Z",
+    "closed_at": "2020-09-22T19:05:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18849",
+        "html_url": "https://github.com/spack/spack/pull/18849",
+        "diff_url": "https://github.com/spack/spack/pull/18849.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18849.patch"
+    },
+    "body": "* next xSDK release will feature heFFTe 1.1 with UTK MAGMA support\r\n* added `+magma` variant to the heffte package so we can begin testing",
+    "performed_via_github_app": null
+}

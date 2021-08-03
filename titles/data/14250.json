@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14250",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14250/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14250/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14250/events",
+    "html_url": "https://github.com/spack/spack/pull/14250",
+    "id": 541040216,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1NzY4MDA0",
+    "number": 14250,
+    "title": "root: Record that old versions of ROOT don't support modern GCC",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-20T15:05:16Z",
+    "updated_at": "2020-01-02T13:16:42Z",
+    "closed_at": "2019-12-20T18:55:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14250",
+        "html_url": "https://github.com/spack/spack/pull/14250",
+        "diff_url": "https://github.com/spack/spack/pull/14250.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14250.patch"
+    },
+    "body": "@chissg After further investigation, the latest 6.06/xy releases clearly state that they're not compatible with the GCC 5 ABI, so getting ROOT 6.06 to work on GCC 5+ is probably a lost cause.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17041",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17041/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17041/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17041/events",
+    "html_url": "https://github.com/spack/spack/issues/17041",
+    "id": 636553080,
+    "node_id": "MDU6SXNzdWU2MzY1NTMwODA=",
+    "number": 17041,
+    "title": "buildcache: relocation of binaries is broken when $padding is used in the install_tree config variable.",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 44,
+    "created_at": "2020-06-10T21:11:39Z",
+    "updated_at": "2020-07-23T22:40:56Z",
+    "closed_at": "2020-07-10T03:28:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "I think there is a problem with the relocation logic used when installing a package from build cache. Specifically, I am seeing the following problem installing `Perl` from build cache using recent release of Spack.\r\n\r\nUsing `spack@develop` (commit id `478a8aff0`):\r\n\r\nBuilding and caching Perl as following, with `install_tree: $spack/$padding:640`\r\n```\r\n$> spack install --no-cache perl\r\n$> spack buildcache create -afr --key <key_id> -d / perl\r\n```\r\n\r\nThis completes just fine.\r\n\r\n```\r\n$> spack buildcache list\r\n==> Finding buildcaches in /build_cache\r\n-- linux-ubuntu18.04-x86_64 / gcc@7.3.0 -------------------------\r\ngdbm@1.18.1  ncurses@6.2  perl@5.30.2  readline@8.0\r\n```\r\n\r\nI can now install this cached `perl` into another instance of Spack, with a different, shorter `install_tree`:\r\n\r\n```\r\n$> spack install perl\r\n... no problems\r\n```\r\n\r\nBut if I go to build a package such as `autoconf`, which depends on `perl`:\r\n\r\n```\r\n$> spack install autoconf\r\n...\r\n==> Error: Failed to install autoconf due to ChildError: ProcessError: Command exited with status 2:\r\n    'make' '-j16'\r\n3 errors found in build log:\r\n     124    autom4te_perllibdir='/tmp/root/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-src'\r\n            /lib AUTOM4TE_CFG='../lib/autom4te.cfg'         ../bin/autom4te -B '..'/lib -B '/tmp/root/spack-stage/spack-stag\r\n            e-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-src'/lib         --language M4sh --cache '' --melt /tmp/r\r\n            oot/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-src/bin/autoconf.as -o autoconf\r\n            .in\r\n     125    Can't locate Data/Dumper.pm in @INC (you may need to install the Data::Dumper module) (@INC contains: /tmp/root/\r\n            spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-src/lib ///////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            /////////////////////////////////////////////////spack/////spack/linux-ubuntu18.04-x86_64/gcc-7.3.0/perl-5.30.2-\r\n            hywprwp45fr4koqfwyqus56cnqjyq2h3/lib/perl5 /////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ///////spack/////spack/linux-ubuntu18.04-x86_64/gcc-7.3.0/perl-5.30.2-hywprwp45fr4koqfwyqus56cnqjyq2h3/lib/site_\r\n            perl/5.30.2/x86_64-linux-thread-multi //////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            //spack/////spack/linux-ubuntu18.04-x86_64/gcc-7.3.0/perl-5.30.2-hywprwp45fr4koqfwyqus56cnqjyq2h3/lib/site_perl/\r\n            5.30.2 /////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ///////////////////////////////////////////////////////////////////////////////////spack/////spack/linux-ubuntu1\r\n            8.04-x86_64/gcc-7.3.0/perl-5.30.2-hywprwp45fr4koqfwyqus56cnqjyq2h3/lib/5.30.2/x86_64-linux-thread-multi ////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n            ////////////////////////////////////////////////////////////////////spack/////spack/linux-ubuntu18.04-x86_64/gcc\r\n            -7.3.0/perl-5.30.2-hywprwp45fr4koqfwyqus56cnqjyq2h3/lib/5.30.2) at /tmp/root/spack-stage/spack-stage-autoconf-2.\r\n            69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-src/lib/Autom4te/C4che.pm line 33.\r\n     126    BEGIN failed--compilation aborted at /tmp/root/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevb\r\n            yta2w/spack-src/lib/Autom4te/C4che.pm line 33.\r\n     127    Compilation failed in require at ../bin/autom4te line 37.\r\n     128    BEGIN failed--compilation aborted at ../bin/autom4te line 37.\r\n     129    Makefile:641: recipe for target 'autoconf.in' failed\r\n  >> 130    make[2]: *** [autoconf.in] Error 2\r\n     131    make[2]: Leaving directory '/tmp/root/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spa\r\n            ck-src/spack-build/bin'\r\n     132    Makefile:357: recipe for target 'all-recursive' failed\r\n  >> 133    make[1]: *** [all-recursive] Error 1\r\n     134    make[1]: Leaving directory '/tmp/root/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spa\r\n            ck-src/spack-build'\r\n     135    Makefile:292: recipe for target 'all' failed\r\n  >> 136    make: *** [all] Error 2\r\n\r\nSee build log for details:\r\n  /tmp/root/spack-stage/spack-stage-autoconf-2.69-2tb5phkcuq4v7b5ejtqkc62aevbyta2w/spack-build-out.txt\r\n```\r\n\r\nFull build log for autoconf: [autoconf.txt](https://github.com/spack/spack/files/4761235/autoconf.txt)\r\n\r\n@alalazo @becker33 @scottwittenburg \r\n",
+    "performed_via_github_app": null
+}

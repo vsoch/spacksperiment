@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17933",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17933/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17933/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17933/events",
+    "html_url": "https://github.com/spack/spack/pull/17933",
+    "id": 675168752,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY0NzMzMDI3",
+    "number": 17933,
+    "title": "PIL: add py-pillow 7.2.0",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-07T17:39:01Z",
+    "updated_at": "2020-08-09T15:20:55Z",
+    "closed_at": "2020-08-09T11:43:30Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17933",
+        "html_url": "https://github.com/spack/spack/pull/17933",
+        "diff_url": "https://github.com/spack/spack/pull/17933.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17933.patch"
+    },
+    "body": "Depends on #17959\r\n\r\n- [x] Tested on Ubuntu 20.04 with Python 3.7.8 and GCC 9.3.0 (via WSL)\r\n- [x] Tested on macOS 10.15.6 with Python 3.7.8 and Apple Clang 11.0.3\r\n- [x] Tested with all variants disabled\r\n- [x] Tested with all variants enabled\r\n\r\n```\r\n--------------------------------------------------------------------\r\nPIL SETUP SUMMARY\r\n--------------------------------------------------------------------\r\nversion      Pillow 7.2.0\r\nplatform     darwin 3.7.8 (default, Aug  1 2020, 15:48:36)\r\n             [Clang 11.0.3 (clang-1103.0.32.62)]\r\n--------------------------------------------------------------------\r\n--- JPEG support available\r\n--- OPENJPEG (JPEG2000) support available (2.3)\r\n--- ZLIB (PNG/ZIP) support available\r\n--- LIBIMAGEQUANT support available\r\n--- LIBTIFF support available\r\n--- FREETYPE2 support available\r\n--- LITTLECMS2 support available\r\n--- WEBP support available\r\n--- WEBPMUX support available\r\n--- XCB (X protocol) support available\r\n--------------------------------------------------------------------\r\n```",
+    "performed_via_github_app": null
+}

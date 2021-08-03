@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15029",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15029/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15029/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15029/events",
+    "html_url": "https://github.com/spack/spack/pull/15029",
+    "id": 566468628,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc2Mjc1NDYx",
+    "number": 15029,
+    "title": "libcircle depends on a provider of pkgconfig for build",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-17T18:52:46Z",
+    "updated_at": "2020-02-17T23:22:00Z",
+    "closed_at": "2020-02-17T23:22:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15029",
+        "html_url": "https://github.com/spack/spack/pull/15029",
+        "diff_url": "https://github.com/spack/spack/pull/15029.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15029.patch"
+    },
+    "body": "Change package `libcircle` so that it depends on a provider of pkgconfig, as opposed to specifically requiring pkg-config. @adammoody @adamjstewart ",
+    "performed_via_github_app": null
+}

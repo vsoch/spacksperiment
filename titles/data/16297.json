@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16297",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16297/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16297/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16297/events",
+    "html_url": "https://github.com/spack/spack/pull/16297",
+    "id": 606629634,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA4ODAyMjI5",
+    "number": 16297,
+    "title": "visit : improve dependencies, fix '@3%gcc' variant",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-24T23:07:22Z",
+    "updated_at": "2020-04-25T02:25:49Z",
+    "closed_at": "2020-04-25T02:25:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16297",
+        "html_url": "https://github.com/spack/spack/pull/16297",
+        "diff_url": "https://github.com/spack/spack/pull/16297.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16297.patch"
+    },
+    "body": "The changes in this pull request modify the `visit` package to fix minor issues with building using `gcc` and to improve the accuracy of the dependencies. The full list of dependency updates is as follows:\r\n\r\n- `@3: ^vtk@8.1.0:8.1.999` (see [here](https://github.com/visit-dav/visit/issues/3498))\r\n- `+silo ^silo@4.10+shared` (I got build failures for older versions because of missing ghost interfaces, which were added in [silo@4.10](https://wci.llnl.gov/simulation/computer-codes/silo/releases/release-notes-4.10))\r\n- `+silo{+|~mpi} ^silo{+|~}mpi` (makes building uniform `mpi` stacks easier)\r\n\r\nI tested that variant `visit@3.0.1~mpi~gui+python+silo+hdf5` installs in build environment `gcc%4.9.3 arch=linux-rhel7-broadwell`.",
+    "performed_via_github_app": null
+}

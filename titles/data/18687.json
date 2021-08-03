@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18687",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18687/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18687/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18687/events",
+    "html_url": "https://github.com/spack/spack/pull/18687",
+    "id": 702505257,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg3NzcyNDE0",
+    "number": 18687,
+    "title": "fraggenescan: Modify build_targets for aarch64",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-16T06:50:28Z",
+    "updated_at": "2020-09-16T15:40:34Z",
+    "closed_at": "2020-09-16T15:40:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18687",
+        "html_url": "https://github.com/spack/spack/pull/18687",
+        "diff_url": "https://github.com/spack/spack/pull/18687.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18687.patch"
+    },
+    "body": "I failed to build on aarch64. \r\nBecause FragGeneScan1.31.tar.gz includes an object file created with x86_64.\r\nI was able to build on aarch64 by changing build_targets.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15587",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15587/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15587/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15587/events",
+    "html_url": "https://github.com/spack/spack/pull/15587",
+    "id": 584987074,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkxNDY2MDk5",
+    "number": 15587,
+    "title": "New package: openturns",
+    "user": {
+        "login": "bfovet",
+        "id": 45510885,
+        "node_id": "MDQ6VXNlcjQ1NTEwODg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45510885?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bfovet",
+        "html_url": "https://github.com/bfovet",
+        "followers_url": "https://api.github.com/users/bfovet/followers",
+        "following_url": "https://api.github.com/users/bfovet/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bfovet/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bfovet/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bfovet/subscriptions",
+        "organizations_url": "https://api.github.com/users/bfovet/orgs",
+        "repos_url": "https://api.github.com/users/bfovet/repos",
+        "events_url": "https://api.github.com/users/bfovet/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bfovet/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-03-20T10:51:39Z",
+    "updated_at": "2020-03-20T16:56:12Z",
+    "closed_at": "2020-03-20T16:56:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15587",
+        "html_url": "https://github.com/spack/spack/pull/15587",
+        "diff_url": "https://github.com/spack/spack/pull/15587.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15587.patch"
+    },
+    "body": "This PR introduces the OpenTURNS UQ library, along with its dependencies and new versions for NLopt and Ceres Solver.\r\nThere might still be some work left to do with variants and dependencies.",
+    "performed_via_github_app": null
+}

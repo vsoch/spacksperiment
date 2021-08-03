@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16522",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16522/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16522/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16522/events",
+    "html_url": "https://github.com/spack/spack/pull/16522",
+    "id": 614545587,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDE1MDc4OTUw",
+    "number": 16522,
+    "title": "remove url function, it seems the pypi version of the package somehow\u2026",
+    "user": {
+        "login": "Sinan81",
+        "id": 2924561,
+        "node_id": "MDQ6VXNlcjI5MjQ1NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2924561?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sinan81",
+        "html_url": "https://github.com/Sinan81",
+        "followers_url": "https://api.github.com/users/Sinan81/followers",
+        "following_url": "https://api.github.com/users/Sinan81/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sinan81/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sinan81/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sinan81/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sinan81/orgs",
+        "repos_url": "https://api.github.com/users/Sinan81/repos",
+        "events_url": "https://api.github.com/users/Sinan81/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sinan81/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-08T06:53:30Z",
+    "updated_at": "2020-05-11T08:43:57Z",
+    "closed_at": "2020-05-11T08:43:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16522",
+        "html_url": "https://github.com/spack/spack/pull/16522",
+        "diff_url": "https://github.com/spack/spack/pull/16522.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16522.patch"
+    },
+    "body": "\u2026 compiles just fine\r\n\r\nChecked that both versions compile just fine without the url function.\r\n\r\nfixes #16407 ",
+    "performed_via_github_app": null
+}

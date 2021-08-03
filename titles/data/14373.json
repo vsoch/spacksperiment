@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14373",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14373/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14373/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14373/events",
+    "html_url": "https://github.com/spack/spack/pull/14373",
+    "id": 545077805,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MDU3Njk3",
+    "number": 14373,
+    "title": "Add setup_run_environment to spectrum-mpi package",
+    "user": {
+        "login": "robertsawko",
+        "id": 773606,
+        "node_id": "MDQ6VXNlcjc3MzYwNg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/773606?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertsawko",
+        "html_url": "https://github.com/robertsawko",
+        "followers_url": "https://api.github.com/users/robertsawko/followers",
+        "following_url": "https://api.github.com/users/robertsawko/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertsawko/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertsawko/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertsawko/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertsawko/orgs",
+        "repos_url": "https://api.github.com/users/robertsawko/repos",
+        "events_url": "https://api.github.com/users/robertsawko/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertsawko/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-01-03T17:07:40Z",
+    "updated_at": "2020-08-22T20:27:56Z",
+    "closed_at": "2020-08-22T20:27:56Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14373",
+        "html_url": "https://github.com/spack/spack/pull/14373",
+        "diff_url": "https://github.com/spack/spack/pull/14373.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14373.patch"
+    },
+    "body": "Spack install will now create a consistent module file with correct prepends.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17095",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17095/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17095/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17095/events",
+    "html_url": "https://github.com/spack/spack/pull/17095",
+    "id": 638666389,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM0Mzg3ODEx",
+    "number": 17095,
+    "title": "mxnet: avoid GNU parallel shuffle when without openmp.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1670554569,
+            "node_id": "MDU6TGFiZWwxNjcwNTU0NTY5",
+            "url": "https://api.github.com/repos/spack/spack/labels/openmp",
+            "name": "openmp",
+            "color": "ff6b9e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-06-15T08:53:23Z",
+    "updated_at": "2020-06-17T03:24:39Z",
+    "closed_at": "2020-06-17T03:24:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17095",
+        "html_url": "https://github.com/spack/spack/pull/17095",
+        "diff_url": "https://github.com/spack/spack/pull/17095.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17095.patch"
+    },
+    "body": "mxnet 1.6 is used GNU parallel shuffle when gcc and clang version 4 or newer.\r\nGNU parallel shuffle is used OpenMP, so this header file is included omp.h.\r\n\r\nThis PR is avoid include omp.h when OpenMP dose not used.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15239",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15239/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15239/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15239/events",
+    "html_url": "https://github.com/spack/spack/issues/15239",
+    "id": 571616860,
+    "node_id": "MDU6SXNzdWU1NzE2MTY4NjA=",
+    "number": 15239,
+    "title": "Enforce consistency with variant naming",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-02-26T19:49:46Z",
+    "updated_at": "2020-03-05T17:53:03Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "I was surprised by a new variant name in OpenBLAS being mixed case (https://github.com/spack/spack/pull/14876), since I thought variants were strictly `[a-z0-9-]+`. A grep of `builtin/packages/*/package.py` shows a number of inconsistencies:\r\n- That new `consistentFPCSR` variant is the only variant in any package to have mixed case\r\n- The only other variants to have upper case are `X`, `X11`, and a variant `K` in the `eem` package\r\n- `X`, `X11`, `x`, and `x11`  are all variants meaning \"require the `libx11` package\"\r\n- Most variants use underscores for separators if at all, but some use hyphens\r\n- There are surely gobs more.\r\n\r\nQuestions:\r\n1. Is there a point at which we unify these variant names?\r\n2. Is there documentation for best practices? (see https://github.com/spack/spack/issues/557 but a quick check in the [packaging guide](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) and [packaging creation tutorial](https://spack-tutorial.readthedocs.io/en/latest/tutorial_packaging.html#variants) revealed nothing)\r\n3. How can we prevent new odd cases from creeping in during MRs?",
+    "performed_via_github_app": null
+}

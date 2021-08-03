@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17374",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17374/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17374/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17374/events",
+    "html_url": "https://github.com/spack/spack/pull/17374",
+    "id": 650695646,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ0MTM3NTY3",
+    "number": 17374,
+    "title": "package Amber: amber tools 20",
+    "user": {
+        "login": "g-mathias",
+        "id": 40861554,
+        "node_id": "MDQ6VXNlcjQwODYxNTU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40861554?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/g-mathias",
+        "html_url": "https://github.com/g-mathias",
+        "followers_url": "https://api.github.com/users/g-mathias/followers",
+        "following_url": "https://api.github.com/users/g-mathias/following{/other_user}",
+        "gists_url": "https://api.github.com/users/g-mathias/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/g-mathias/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/g-mathias/subscriptions",
+        "organizations_url": "https://api.github.com/users/g-mathias/orgs",
+        "repos_url": "https://api.github.com/users/g-mathias/repos",
+        "events_url": "https://api.github.com/users/g-mathias/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/g-mathias/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-03T16:52:57Z",
+    "updated_at": "2020-07-05T20:17:39Z",
+    "closed_at": "2020-07-05T20:17:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17374",
+        "html_url": "https://github.com/spack/spack/pull/17374",
+        "diff_url": "https://github.com/spack/spack/pull/17374.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17374.patch"
+    },
+    "body": "Amber comes with the resource amber tools: added new version 20 of the tools\r\n- added a minor version to Amber to indicate the version of Amber tools\r\n- selecting the tools version by a variant was too messy, so I abandoned it\r\n- ran autopep8 on package.py\r\n\r\n@hseara might want to comment",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19044",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19044/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19044/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19044/events",
+    "html_url": "https://github.com/spack/spack/pull/19044",
+    "id": 711069938,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk0Nzk3OTAz",
+    "number": 19044,
+    "title": "Trilinos: restrict SuperLU-dist version",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-09-29T12:36:06Z",
+    "updated_at": "2020-10-02T21:53:35Z",
+    "closed_at": "2020-10-02T21:20:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19044",
+        "html_url": "https://github.com/spack/spack/pull/19044",
+        "diff_url": "https://github.com/spack/spack/pull/19044.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19044.patch"
+    },
+    "body": "SuperLU v6.3.0 changes the name of numerous structures, causing errors\r\nin Amesos up through Trilinos 13.\r\n\r\n```\r\npackages/amesos/src/Amesos_Superludist.cpp:50:3: error: 'ScalePermstruct_t' does not name a type; did you mean 'dScalePermstruct_t'?\r\npackages/amesos/src/Amesos_Superludist.cpp:51:3: error: 'LUstruct_t' does not name a type; did you mean 'dLUstruct_t'?\r\npackages/amesos/src/Amesos_Superludist.cpp:52:3: error: 'SOLVEstruct_t' does not name a type; did you mean 'dSOLVEstruct_t'?\r\npackages/amesos/src/Amesos_Superludist.cpp:166:47: error: 'class Amesos_Superlu_Pimpl' has no member named 'ScalePermstruct_'\r\npackages/amesos/src/Amesos_Superludist.cpp:166:5: error: 'ScalePermstructFree' was not declared in this scope\r\npackages/amesos/src/Amesos_Superludist.cpp:167:83: error: 'class Amesos_Superlu_Pimpl' has no member named 'LUstruct_'\r\npackages/amesos/src/Amesos_Superludist.cpp:167:5: error: 'Destroy_LU' was not declared in this scope\r\npackages/amesos/src/Amesos_Superludist.cpp:168:40: error: 'class Amesos_Superlu_Pimpl' has no member named 'LUstruct_'\r\npackages/amesos/src/Amesos_Superludist.cpp:168:5: error: 'LUstructFree' was not declared in this scope\r\npackages/amesos/src/Amesos_Superludist.cpp:170:76: error: 'class Amesos_Superlu_Pimpl' has no member named 'SOLVEstruct_'\r\npackages/amesos/src/Amesos_Superludist.cpp:426:47: error: 'class Amesos_Superlu_Pimpl' has no member named 'ScalePermstruct_'\r\npackages/amesos/src/Amesos_Superludist.cpp:426:5: error: 'ScalePermstructFree' was not declared in this scope\r\n```",
+    "performed_via_github_app": null
+}

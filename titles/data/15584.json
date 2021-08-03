@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15584",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15584/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15584/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15584/events",
+    "html_url": "https://github.com/spack/spack/pull/15584",
+    "id": 584898370,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkxMzk2MTkx",
+    "number": 15584,
+    "title": "[acts-core] v0.18 and boost version bump",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-20T07:52:09Z",
+    "updated_at": "2020-03-20T09:22:57Z",
+    "closed_at": "2020-03-20T09:06:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15584",
+        "html_url": "https://github.com/spack/spack/pull/15584",
+        "diff_url": "https://github.com/spack/spack/pull/15584.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15584.patch"
+    },
+    "body": "Yet another minor ACTS release. In addition, the boost version requirement was recently bumped on master, which will most likely affect v0.19+.",
+    "performed_via_github_app": null
+}

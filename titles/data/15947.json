@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15947",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15947/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15947/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15947/events",
+    "html_url": "https://github.com/spack/spack/pull/15947",
+    "id": 596546018,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwODIzMTQ5",
+    "number": 15947,
+    "title": "glib: Add new stable versions",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-08T12:38:20Z",
+    "updated_at": "2020-04-09T03:32:09Z",
+    "closed_at": "2020-04-09T03:32:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15947",
+        "html_url": "https://github.com/spack/spack/pull/15947",
+        "diff_url": "https://github.com/spack/spack/pull/15947.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15947.patch"
+    },
+    "body": "Newer versions of glib require Meson, so this PR adds support for that using a hybrid approach. glib@5.28: will be built using Meson, older versions still make use of Autotools.\r\n\r\nI have done test builds of all versions added in this PR (plus a few dependents). I will also forward the Meson patch upstream soon.",
+    "performed_via_github_app": null
+}

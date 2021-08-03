@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17210",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17210/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17210/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17210/events",
+    "html_url": "https://github.com/spack/spack/pull/17210",
+    "id": 643894487,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM4NjEzNDky",
+    "number": 17210,
+    "title": "Qt +webengine",
+    "user": {
+        "login": "cedricchevalier19",
+        "id": 19407793,
+        "node_id": "MDQ6VXNlcjE5NDA3Nzkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19407793?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cedricchevalier19",
+        "html_url": "https://github.com/cedricchevalier19",
+        "followers_url": "https://api.github.com/users/cedricchevalier19/followers",
+        "following_url": "https://api.github.com/users/cedricchevalier19/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cedricchevalier19/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cedricchevalier19/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cedricchevalier19/subscriptions",
+        "organizations_url": "https://api.github.com/users/cedricchevalier19/orgs",
+        "repos_url": "https://api.github.com/users/cedricchevalier19/repos",
+        "events_url": "https://api.github.com/users/cedricchevalier19/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cedricchevalier19/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-06-23T14:33:47Z",
+    "updated_at": "2020-08-21T22:48:59Z",
+    "closed_at": "2020-08-21T22:48:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17210",
+        "html_url": "https://github.com/spack/spack/pull/17210",
+        "diff_url": "https://github.com/spack/spack/pull/17210.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17210.patch"
+    },
+    "body": "Enable build of `qtwebengine`.\r\n\r\nStill a work in progress as concretizer cannot manage python in build dependencies properly.\r\nQt webengine needs Python 2 at build time while some dependencies use Meson so Python 3 at build time also.\r\n\r\nFix several bugs in dependencies for X packages, that should be also `link` and not only `build`.",
+    "performed_via_github_app": null
+}

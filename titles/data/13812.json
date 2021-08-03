@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13812",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13812/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13812/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13812/events",
+    "html_url": "https://github.com/spack/spack/pull/13812",
+    "id": 526061843,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQzNTc4Njkx",
+    "number": 13812,
+    "title": "Add mg, a gnu-emacs like fork of microemacs",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-11-20T19:15:41Z",
+    "updated_at": "2019-11-21T18:40:14Z",
+    "closed_at": "2019-11-21T18:40:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13812",
+        "html_url": "https://github.com/spack/spack/pull/13812",
+        "diff_url": "https://github.com/spack/spack/pull/13812.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13812.patch"
+    },
+    "body": "TODO:\r\n\r\n- [x] while it uses a `configure` script and builds as an `AutotoolsPackage` (`spack create` set it up this way), it is not truly an Autotools package.  Should I redo it as a `Package` instead?\r\n\r\n  **Switched to using Package**.\r\n---\r\n\r\nAdds a package for the portable OpenBSD version of mg.  mg is a gnu-emacs-ified version of the micro-emacs editor.\r\n\r\nSmall, fast, quick-starting editor with gnu-emacs compat. key bindings.",
+    "performed_via_github_app": null
+}

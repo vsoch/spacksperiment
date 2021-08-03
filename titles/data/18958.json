@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18958",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18958/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18958/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18958/events",
+    "html_url": "https://github.com/spack/spack/issues/18958",
+    "id": 708604347,
+    "node_id": "MDU6SXNzdWU3MDg2MDQzNDc=",
+    "number": 18958,
+    "title": "Version conflicts in concretizer",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-09-25T03:03:23Z",
+    "updated_at": "2021-01-08T20:48:24Z",
+    "closed_at": "2021-01-08T20:48:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "The ForTrilinos package uses a couple of SemVer (but not PEP-440) compatible version numbers such as `2.0.0-dev3` building up to a `2.0.0` release. Each of these dev versions requires a slightly different version of Trilinos, encoded as:\r\n```\r\n    depends_on('trilinos@13:', when='@2.0.0:')\r\n    depends_on('trilinos@12.18.1', when='@2.0.0-dev3')\r\n```\r\n\r\nhowever, the concretizer rejects this:\r\n```\r\n==> Error: Conflicting conditional dependencies for spec\r\n\r\n\tfortrilinos@2.0.0-dev3 ^cmake\r\n\r\nCannot merge constraint\r\n\r\n\ttrilinos@12.18.1\r\n\r\ninto\r\n\r\n\ttrilinos@13:\r\n```\r\n\r\nA possibly similar issue I hit (#17145) earlier indicates the concretizer might have trouble with unusual versions.\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n$ spack spec -I fortrilinos@2.0.0-dev3 ^trilinos@12.18.1+nox+stratimikos\r\n...\r\n```\r\n\r\n### Information on your system\r\n\r\n```\r\n$ spack debug report\r\n* **Spack:** 0.15.4-1165-5f87c7795\r\n* **Python:** 3.7.1\r\n* **Platform:** darwin-mojave-skylake\r\n```\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands in debug mode and reported the output\r\n",
+    "performed_via_github_app": null
+}

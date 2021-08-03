@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17271",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17271/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17271/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17271/events",
+    "html_url": "https://github.com/spack/spack/pull/17271",
+    "id": 646202721,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQwNTM2MTg3",
+    "number": 17271,
+    "title": "py-tensorflow and in-tree ROCm",
+    "user": {
+        "login": "aweits",
+        "id": 6664568,
+        "node_id": "MDQ6VXNlcjY2NjQ1Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6664568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aweits",
+        "html_url": "https://github.com/aweits",
+        "followers_url": "https://api.github.com/users/aweits/followers",
+        "following_url": "https://api.github.com/users/aweits/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aweits/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aweits/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aweits/subscriptions",
+        "organizations_url": "https://api.github.com/users/aweits/orgs",
+        "repos_url": "https://api.github.com/users/aweits/repos",
+        "events_url": "https://api.github.com/users/aweits/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aweits/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2020-06-26T11:37:14Z",
+    "updated_at": "2021-06-12T08:25:03Z",
+    "closed_at": "2021-06-12T08:25:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17271",
+        "html_url": "https://github.com/spack/spack/pull/17271",
+        "diff_url": "https://github.com/spack/spack/pull/17271.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17271.patch"
+    },
+    "body": "After a few conversations with @parallelo in slack, this is what is\r\nrequired to build tensorflow with ROCm in spack. After this work\r\nstarted, I discovered the existence of\r\nhttps://github.com/RadeonOpenCompute/rocm-spack. At some point these\r\ntwo efforts should be combined upstream? Also, I do not currently\r\nhave hardware to validate/test this on.\r\n@gkathirv @srekolam @streamhsa @radhaksri @adamjstewart \r\n",
+    "performed_via_github_app": null
+}

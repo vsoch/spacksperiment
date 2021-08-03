@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16432",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16432/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16432/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16432/events",
+    "html_url": "https://github.com/spack/spack/issues/16432",
+    "id": 611252080,
+    "node_id": "MDU6SXNzdWU2MTEyNTIwODA=",
+    "number": 16432,
+    "title": "View that include R libraries require setting R_LIBS",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        },
+        {
+            "id": 877274892,
+            "node_id": "MDU6TGFiZWw4NzcyNzQ4OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/views",
+            "name": "views",
+            "color": "70ff6d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 22,
+    "created_at": "2020-05-02T18:53:43Z",
+    "updated_at": "2020-05-05T05:05:58Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "<!-- Explain, in a clear and concise way, the command you ran and the result you were trying to achieve.\r\nExample: \"I ran `spack find` to list all the installed packages and ...\" -->\r\n\r\n### Steps to reproduce the issue\r\n\r\nWhen I create a view that includes R libraries, I was surprised to find them linked into the top level of the view and not into the R installation.\r\n\r\nPython packages, on the other hand, seem to be linked into `lib/python3.7/site-packages`, as if they were \"activated\".\r\n\r\n```console\r\n# given a Spack installation that includes R and r-packrat and Python and py-pip\r\n$ spack view symlink ape -i r r-packrat python@3.7.6 py-pip^python@3.7.6\r\n# try loading the packrat library\r\n$ R\r\n# at the R prompt, try `library(packrat)`, note failure :(\r\n# exit back to your shell\r\n$ R_LIBS=$(pwd)/ape/rlib/R/library R\r\n# at the R prompt, try `library(packrat)`, note success :)\r\n# exit back to your shell\r\n# \r\n# note where pip was installed....\r\n$ find ape/ | grep /pip/ | head\r\n```\r\n\r\n\r\n### Additional information\r\n\r\n```\r\nspack debug report\r\n* **Spack:** 0.14.1-901-32869648e\r\n* **Python:** 3.7.6\r\n* **Platform:** linux-centos7-skylake_avx512\r\n```\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [ ] I have run the failing commands in debug mode and reported the output\r\n",
+    "performed_via_github_app": null
+}

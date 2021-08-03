@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18272",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18272/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18272/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18272/events",
+    "html_url": "https://github.com/spack/spack/pull/18272",
+    "id": 685731150,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDczNDA5MTk2",
+    "number": 18272,
+    "title": "Remove unmatched triple quotes",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-25T19:26:34Z",
+    "updated_at": "2020-08-31T15:13:33Z",
+    "closed_at": "2020-08-31T11:05:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18272",
+        "html_url": "https://github.com/spack/spack/pull/18272",
+        "diff_url": "https://github.com/spack/spack/pull/18272.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18272.patch"
+    },
+    "body": "Somehow this isn't a syntax error in Python, and flake8 doesn't catch it either, but SLOCCount warned me about it.",
+    "performed_via_github_app": null
+}

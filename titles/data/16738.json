@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16738",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16738/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16738/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16738/events",
+    "html_url": "https://github.com/spack/spack/pull/16738",
+    "id": 621563150,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIwNTkwMTAx",
+    "number": 16738,
+    "title": "julia: Fix LLVM build failing with newer versions of CMake",
+    "user": {
+        "login": "zzzoom",
+        "id": 4043375,
+        "node_id": "MDQ6VXNlcjQwNDMzNzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4043375?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zzzoom",
+        "html_url": "https://github.com/zzzoom",
+        "followers_url": "https://api.github.com/users/zzzoom/followers",
+        "following_url": "https://api.github.com/users/zzzoom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zzzoom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zzzoom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zzzoom/subscriptions",
+        "organizations_url": "https://api.github.com/users/zzzoom/orgs",
+        "repos_url": "https://api.github.com/users/zzzoom/repos",
+        "events_url": "https://api.github.com/users/zzzoom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zzzoom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-20T08:24:46Z",
+    "updated_at": "2020-05-22T15:24:55Z",
+    "closed_at": "2020-05-22T15:24:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16738",
+        "html_url": "https://github.com/spack/spack/pull/16738",
+        "diff_url": "https://github.com/spack/spack/pull/16738.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16738.patch"
+    },
+    "body": "julia fails to build with CMake >= 3.12 because its built-in LLVM 8.0.1 uses FindPythonInterp, which has been deprecated. (similar to #11579)\r\nThis PR limits CMake to <= 3.11 when building Julia <= 1.4.x. Julia master branch uses LLVM 10 which has fixed this problem so the fix shouldn't be needed in future releases.",
+    "performed_via_github_app": null
+}

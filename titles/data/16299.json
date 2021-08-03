@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16299",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16299/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16299/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16299/events",
+    "html_url": "https://github.com/spack/spack/pull/16299",
+    "id": 606723914,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA4ODc0NjYy",
+    "number": 16299,
+    "title": "LLVM lldb 10.0: Python Link Dependency",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-04-25T08:55:29Z",
+    "updated_at": "2020-04-26T04:36:13Z",
+    "closed_at": "2020-04-26T04:36:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16299",
+        "html_url": "https://github.com/spack/spack/pull/16299",
+        "diff_url": "https://github.com/spack/spack/pull/16299.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16299.patch"
+    },
+    "body": "A CMake option changed in LLVM 10 that controls the LLDB python bindings. This fixes a linker issue on Darwin with AppleClang, but was generally a missing dependency control.\r\n\r\ncc @trws @naromero77 @adamjstewart \r\n\r\nRefs.:\r\n- fix #16246\r\n- see #16215\r\n- https://github.com/spack/macos-nightly\r\n- https://github.com/spack/macos-nightly/actions/runs/87264792 (`develop`)\r\n- [x] https://github.com/spack/macos-nightly/actions/runs/87484420 (this PR)\r\n- https://github.com/llvm/llvm-project/blob/release/10.x/lldb/include/lldb/Host/Config.h.cmake\r\n- https://lldb.llvm.org/resources/build.html#optional-dependencies",
+    "performed_via_github_app": null
+}

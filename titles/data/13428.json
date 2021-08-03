@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13428",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13428/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13428/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13428/events",
+    "html_url": "https://github.com/spack/spack/pull/13428",
+    "id": 512154808,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMyMjIwMTYz",
+    "number": 13428,
+    "title": "LLVM code-signing on OSX: link to the offical documentation",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-10-24T20:07:50Z",
+    "updated_at": "2019-10-28T12:38:32Z",
+    "closed_at": "2019-10-28T02:59:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13428",
+        "html_url": "https://github.com/spack/spack/pull/13428",
+        "diff_url": "https://github.com/spack/spack/pull/13428.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13428.patch"
+    },
+    "body": "Follow-up to #13047 @kljohann pointed out that my previous improvement was due to an old version being the head of someone's private fork and provided a link to the official documentation. Using that link here rather than the old one.",
+    "performed_via_github_app": null
+}

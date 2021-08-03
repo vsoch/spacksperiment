@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15342",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15342/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15342/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15342/events",
+    "html_url": "https://github.com/spack/spack/pull/15342",
+    "id": 575846359,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgzOTQzMzE2",
+    "number": 15342,
+    "title": "Corrected compiler filtering for TAU makefiles",
+    "user": {
+        "login": "wspear",
+        "id": 7329201,
+        "node_id": "MDQ6VXNlcjczMjkyMDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7329201?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wspear",
+        "html_url": "https://github.com/wspear",
+        "followers_url": "https://api.github.com/users/wspear/followers",
+        "following_url": "https://api.github.com/users/wspear/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wspear/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wspear/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wspear/subscriptions",
+        "organizations_url": "https://api.github.com/users/wspear/orgs",
+        "repos_url": "https://api.github.com/users/wspear/repos",
+        "events_url": "https://api.github.com/users/wspear/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wspear/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-04T22:44:01Z",
+    "updated_at": "2020-03-17T15:38:54Z",
+    "closed_at": "2020-03-17T15:38:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15342",
+        "html_url": "https://github.com/spack/spack/pull/15342",
+        "diff_url": "https://github.com/spack/spack/pull/15342.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15342.patch"
+    },
+    "body": "Implemented working file filtering to replace Spack compiler wrapper with real compiler. It was possible for TAU to grab the wrapper when configuring off of a spack-provided MPI.",
+    "performed_via_github_app": null
+}

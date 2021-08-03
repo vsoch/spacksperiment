@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18939",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18939/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18939/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18939/events",
+    "html_url": "https://github.com/spack/spack/issues/18939",
+    "id": 708245627,
+    "node_id": "MDU6SXNzdWU3MDgyNDU2Mjc=",
+    "number": 18939,
+    "title": "Can't install flang or gcc variants with CUDA support",
+    "user": {
+        "login": "rosenbe2",
+        "id": 32197935,
+        "node_id": "MDQ6VXNlcjMyMTk3OTM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32197935?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rosenbe2",
+        "html_url": "https://github.com/rosenbe2",
+        "followers_url": "https://api.github.com/users/rosenbe2/followers",
+        "following_url": "https://api.github.com/users/rosenbe2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rosenbe2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rosenbe2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rosenbe2/subscriptions",
+        "organizations_url": "https://api.github.com/users/rosenbe2/orgs",
+        "repos_url": "https://api.github.com/users/rosenbe2/repos",
+        "events_url": "https://api.github.com/users/rosenbe2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rosenbe2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2020-09-24T14:58:19Z",
+    "updated_at": "2020-10-14T16:35:26Z",
+    "closed_at": "2020-10-14T16:35:26Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "I am a complete beginner to using spack.\r\n\r\nBoth flang and gcc support OpenMP offloading - this is the future of supercomputing - just one version of your code with OpenMP offloading to support any accelerator device, GPU, Vector Engine, etc.\r\n\r\nI have not had any problems installing gcc or flang,  with CUDA support, using install scripts dowloaded from the web.\r\n\r\nHowever, with spack, I have had problems in both cases:\r\n[pgmath.txt](https://github.com/spack/spack/files/5277018/pgmath.txt)\r\n[gcc_cuda.txt](https://github.com/spack/spack/files/5277019/gcc_cuda.txt)\r\n[flang_cuda.txt](https://github.com/spack/spack/files/5277021/flang_cuda.txt)\r\n\r\n\r\n\r\n\r\nWhen I try to install flang, the installation errors out with pgmath install.\r\n\r\nWhen I try to install flang +cuda, the installation does not even begin due to 'conflict' diagnostics.\r\n\r\nI can install gcc, but gcc +nvptx errors out.\r\n\r\n* **Spack:** 0.15.4-1058-84dbf69\r\n* **Python:** 3.6.8\r\n* **Platform:** linux-centos7-skylake_avx512",
+    "performed_via_github_app": null
+}

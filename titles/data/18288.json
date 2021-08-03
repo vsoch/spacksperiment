@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18288",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18288/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18288/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18288/events",
+    "html_url": "https://github.com/spack/spack/pull/18288",
+    "id": 686414804,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDczOTg1OTUy",
+    "number": 18288,
+    "title": "release procedure: add step to activate the documentation on readthedocs",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-26T15:28:41Z",
+    "updated_at": "2020-08-27T12:58:35Z",
+    "closed_at": "2020-08-26T19:47:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18288",
+        "html_url": "https://github.com/spack/spack/pull/18288",
+        "diff_url": "https://github.com/spack/spack/pull/18288.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18288.patch"
+    },
+    "body": "I noticed today that we didn't have handles for any of the v0.15.X versions. Activating the corresponding tags on readthedocs built the documentation and made it selectable:\r\n\r\n![Screenshot from 2020-08-26 17-27-30](https://user-images.githubusercontent.com/4199709/91323685-740dfe80-e7c1-11ea-86ca-4eab9e1aac8b.png)\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

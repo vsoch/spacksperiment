@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18847",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18847/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18847/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18847/events",
+    "html_url": "https://github.com/spack/spack/pull/18847",
+    "id": 705759595,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkwNDI5OTgy",
+    "number": 18847,
+    "title": "Set conflicts parameter for cuda-11 in magma package",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-21T16:48:07Z",
+    "updated_at": "2020-10-06T15:01:16Z",
+    "closed_at": "2020-09-22T16:35:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18847",
+        "html_url": "https://github.com/spack/spack/pull/18847",
+        "diff_url": "https://github.com/spack/spack/pull/18847.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18847.patch"
+    },
+    "body": "Magma is not currently compatible with CUDA-11. While this is reflected\r\nin the package, it is done with a comment in a `depends_on` directive,\r\nwhich has the effect of trying to install a version of CUDA that may be\r\ndifferent from the one in the current environment, without any message\r\nto the end user. A `conflicts` is a better way to handle this.",
+    "performed_via_github_app": null
+}

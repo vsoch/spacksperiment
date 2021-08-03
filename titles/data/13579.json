@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13579",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13579/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13579/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13579/events",
+    "html_url": "https://github.com/spack/spack/pull/13579",
+    "id": 517389075,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM2NDY3MTQ3",
+    "number": 13579,
+    "title": "libxc download sources from gitlab / add new version 4.3.4",
+    "user": {
+        "login": "simonpintarelli",
+        "id": 1237199,
+        "node_id": "MDQ6VXNlcjEyMzcxOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1237199?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simonpintarelli",
+        "html_url": "https://github.com/simonpintarelli",
+        "followers_url": "https://api.github.com/users/simonpintarelli/followers",
+        "following_url": "https://api.github.com/users/simonpintarelli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simonpintarelli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simonpintarelli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simonpintarelli/subscriptions",
+        "organizations_url": "https://api.github.com/users/simonpintarelli/orgs",
+        "repos_url": "https://api.github.com/users/simonpintarelli/repos",
+        "events_url": "https://api.github.com/users/simonpintarelli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simonpintarelli/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-04T20:41:09Z",
+    "updated_at": "2019-11-26T18:25:13Z",
+    "closed_at": "2019-11-26T18:25:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13579",
+        "html_url": "https://github.com/spack/spack/pull/13579",
+        "diff_url": "https://github.com/spack/spack/pull/13579.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13579.patch"
+    },
+    "body": "tddft.org is offline again (responding with bad gateway). Perhaps it is better to download the sources from gitlab although the hashes change.",
+    "performed_via_github_app": null
+}

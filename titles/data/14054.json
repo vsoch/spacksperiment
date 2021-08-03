@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14054",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14054/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14054/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14054/events",
+    "html_url": "https://github.com/spack/spack/pull/14054",
+    "id": 534709226,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUwNTM1MTkw",
+    "number": 14054,
+    "title": "TensorFlow: don't override HOME env var",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-12-09T05:58:48Z",
+    "updated_at": "2019-12-09T17:23:02Z",
+    "closed_at": "2019-12-09T17:22:58Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14054",
+        "html_url": "https://github.com/spack/spack/pull/14054",
+        "diff_url": "https://github.com/spack/spack/pull/14054.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14054.patch"
+    },
+    "body": "Successfully installs and passes import tests on macOS 10.15.1 with Python 3.7.4 and Clang 11.0.0.\r\n\r\n@Sinan81 @healther ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15389",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15389/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15389/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15389/events",
+    "html_url": "https://github.com/spack/spack/pull/15389",
+    "id": 577406973,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg1MTk3ODE4",
+    "number": 15389,
+    "title": "libgcrypt: fix macOS tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1858171143,
+            "node_id": "MDU6TGFiZWwxODU4MTcxMTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/stand-alone-tests",
+            "name": "stand-alone-tests",
+            "color": "5ec0d6",
+            "default": false,
+            "description": "Stand-alone (or smoke) tests for installed packages"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-07T21:59:40Z",
+    "updated_at": "2020-03-07T22:43:42Z",
+    "closed_at": "2020-03-07T22:43:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15389",
+        "html_url": "https://github.com/spack/spack/pull/15389",
+        "diff_url": "https://github.com/spack/spack/pull/15389.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15389.patch"
+    },
+    "body": "Successfully builds and passes all tests on macOS 10.15.3 with Clang 11.0.0.",
+    "performed_via_github_app": null
+}

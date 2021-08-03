@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14545",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14545/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14545/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14545/events",
+    "html_url": "https://github.com/spack/spack/pull/14545",
+    "id": 551057493,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzODQ4MjIy",
+    "number": 14545,
+    "title": "Don't patch latest version of HDF5",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-16T21:13:55Z",
+    "updated_at": "2020-01-16T21:59:31Z",
+    "closed_at": "2020-01-16T21:59:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14545",
+        "html_url": "https://github.com/spack/spack/pull/14545",
+        "diff_url": "https://github.com/spack/spack/pull/14545.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14545.patch"
+    },
+    "body": "Fixes #14537 \r\n\r\nBased on https://github.com/spack/spack/issues/12586#issuecomment-532322303, it appears this patch is no longer needed in HDF5 1.10.6.\r\n\r\n@hightower8083 @omsai",
+    "performed_via_github_app": null
+}

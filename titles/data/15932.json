@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15932",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15932/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15932/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15932/events",
+    "html_url": "https://github.com/spack/spack/pull/15932",
+    "id": 596240965,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwNTc1MTMz",
+    "number": 15932,
+    "title": "Debugging: package gets incorrect patch",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-08T01:08:42Z",
+    "updated_at": "2021-06-11T15:11:24Z",
+    "closed_at": "2021-06-11T15:11:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15932",
+        "html_url": "https://github.com/spack/spack/pull/15932",
+        "diff_url": "https://github.com/spack/spack/pull/15932.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15932.patch"
+    },
+    "body": "This is intended for debugging https://github.com/spack/spack/issues/15780\r\n\r\nIt includes statements to keep track of stages and check whether different patches are being placed in the same stage directory.",
+    "performed_via_github_app": null
+}

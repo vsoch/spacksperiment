@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13881",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13881/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13881/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13881/events",
+    "html_url": "https://github.com/spack/spack/pull/13881",
+    "id": 528083356,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ1MjEzMjc1",
+    "number": 13881,
+    "title": "Fetching from URLs falls back to mirrors if they exist",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-11-25T13:22:05Z",
+    "updated_at": "2019-12-21T07:25:53Z",
+    "closed_at": "2019-12-20T22:32:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13881",
+        "html_url": "https://github.com/spack/spack/pull/13881",
+        "diff_url": "https://github.com/spack/spack/pull/13881.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13881.patch"
+    },
+    "body": "fixes #5613\r\nfixes #4212\r\nfixes #1090\r\nrefers to #13874 \r\n\r\nThis PR permits to list mirrors of the main `url` in packages. If the main `url` is not available the `url` in the mirrors will be tried in order. It also defines a `GNUMirrorPackage` mixin to deal with the special case of GNU packages and modifies all the GNU packages in the built-in repository.\r\n\r\nNote that the feature is implemented starting from 5b377a0 while previous commits are just trivial refactors that should reduce a bit the complexity of fetchers. If they are considered noise for a review I can split this PR into two.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13679",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13679/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13679/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13679/events",
+    "html_url": "https://github.com/spack/spack/pull/13679",
+    "id": 521017371,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NDc5NTc4",
+    "number": 13679,
+    "title": "Update Mathematica recipe",
+    "user": {
+        "login": "brisk022",
+        "id": 12082694,
+        "node_id": "MDQ6VXNlcjEyMDgyNjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12082694?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brisk022",
+        "html_url": "https://github.com/brisk022",
+        "followers_url": "https://api.github.com/users/brisk022/followers",
+        "following_url": "https://api.github.com/users/brisk022/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brisk022/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brisk022/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brisk022/subscriptions",
+        "organizations_url": "https://api.github.com/users/brisk022/orgs",
+        "repos_url": "https://api.github.com/users/brisk022/repos",
+        "events_url": "https://api.github.com/users/brisk022/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brisk022/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025497628,
+            "node_id": "MDU6TGFiZWwxMDI1NDk3NjI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/licenses",
+            "name": "licenses",
+            "color": "f97296",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-11-11T15:09:54Z",
+    "updated_at": "2019-11-26T18:22:31Z",
+    "closed_at": "2019-11-26T18:22:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13679",
+        "html_url": "https://github.com/spack/spack/pull/13679",
+        "diff_url": "https://github.com/spack/spack/pull/13679.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13679.patch"
+    },
+    "body": "This pull request addresses the following issues.\r\n\r\n- Licensing is currently missing from the recipe. Assuming that majority of the installations will be on clusters, information about the licence manager server would be required\r\n- Replace url with url_for_version in case subsequent versions are added\r\n- Create .spack dir during installation. This directory may not be created automatically causing installation failure when spack is trying to copy the log file there.\r\n- Symlink wolframscript. Most people running mathematica in the cluster environment would be using wolframscript binary. However, the installer does not symlink it, so full path is required to run it.\r\n- Generate spec.yaml. This file may not be created automatically causing package registration failure.",
+    "performed_via_github_app": null
+}

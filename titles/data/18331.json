@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18331",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18331/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18331/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18331/events",
+    "html_url": "https://github.com/spack/spack/pull/18331",
+    "id": 687458370,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc0ODgwODgy",
+    "number": 18331,
+    "title": "Add more updates for kokkos 3.2 release, particularly nvcc-wrapper",
+    "user": {
+        "login": "jjwilke",
+        "id": 106969,
+        "node_id": "MDQ6VXNlcjEwNjk2OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106969?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jjwilke",
+        "html_url": "https://github.com/jjwilke",
+        "followers_url": "https://api.github.com/users/jjwilke/followers",
+        "following_url": "https://api.github.com/users/jjwilke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jjwilke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jjwilke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jjwilke/subscriptions",
+        "organizations_url": "https://api.github.com/users/jjwilke/orgs",
+        "repos_url": "https://api.github.com/users/jjwilke/repos",
+        "events_url": "https://api.github.com/users/jjwilke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jjwilke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-08-27T18:41:50Z",
+    "updated_at": "2020-10-19T04:08:57Z",
+    "closed_at": "2020-10-19T04:08:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18331",
+        "html_url": "https://github.com/spack/spack/pull/18331",
+        "diff_url": "https://github.com/spack/spack/pull/18331.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18331.patch"
+    },
+    "body": "This adds some missing pieces for the Kokkos and Kokkos Kernels 3.2 release.\r\nThe nvcc-wrapper repo has also been deprecated in favor of just maintaining it inside the Kokkos repo.\r\nFor Spack purposes, kokkos-nvcc-wrapper must still be a separate package. This adds some workarounds to get nvcc-wrapper working from within the Kokkos repo.",
+    "performed_via_github_app": null
+}

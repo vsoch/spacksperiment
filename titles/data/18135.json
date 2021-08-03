@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18135",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18135/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18135/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18135/events",
+    "html_url": "https://github.com/spack/spack/pull/18135",
+    "id": 680710913,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5MjE4NTY5",
+    "number": 18135,
+    "title": "looptools: skip UNDERSCORE check and add -Fwide",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-18T05:43:02Z",
+    "updated_at": "2020-08-28T15:03:39Z",
+    "closed_at": "2020-08-28T15:03:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18135",
+        "html_url": "https://github.com/spack/spack/pull/18135",
+        "diff_url": "https://github.com/spack/spack/pull/18135.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18135.patch"
+    },
+    "body": "1. does Fortran append underscores to symbols?\r\nIn `configure` script, these files is build to check underscores.\r\n\r\ntest-c.c\r\n> int uscore_ = 95;\r\nint uscore = 59;\r\n\r\ntest.f\r\n> \tprogram test\r\n\tinteger i\r\n\tcommon /uscore/ i\r\n\tcall exit(i)\r\n\tend\r\n\r\nThese source seems GCC specific.\r\nSo I patched these real check as below.\r\n\r\n> CONF_BITS=\"\"\r\nCONF_NOUNDERSCORE=0\r\n\r\n(2020/08/24)\r\nI didn't submit upstream. Because this problem seems compiler specific.\r\nI tried to link C and fortran. Warning occurred and  `$?` was 0.\r\n>  [n0026@apollo13 spack-src]$ fcc -c testc.c\r\n[n0026@apollo13 spack-src]$ frt -o teste test.f testc.o\r\n/usr/bin/ld: Warning: alignment 4 of symbol `uscore_' in testc.o is smaller than 16 in /tmp/frtd78w7e.o\r\n\r\nResult of `looptools%fj` was same as `looptools%gcc(x86_64)` . So linking in real looptools seems OK.\r\n \r\n2. Long line\r\nAfter 1, Fortran error occured due to long line.\r\nSo I added `-Fwide` option for Fujitsu compiler directly to `configure` script.",
+    "performed_via_github_app": null
+}

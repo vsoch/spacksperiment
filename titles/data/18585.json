@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18585",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18585/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18585/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18585/events",
+    "html_url": "https://github.com/spack/spack/pull/18585",
+    "id": 696479459,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgyNTU2NDc4",
+    "number": 18585,
+    "title": "r-ff: support for aarch64",
+    "user": {
+        "login": "t-nojiri",
+        "id": 68096132,
+        "node_id": "MDQ6VXNlcjY4MDk2MTMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68096132?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-nojiri",
+        "html_url": "https://github.com/t-nojiri",
+        "followers_url": "https://api.github.com/users/t-nojiri/followers",
+        "following_url": "https://api.github.com/users/t-nojiri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-nojiri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-nojiri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-nojiri/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-nojiri/orgs",
+        "repos_url": "https://api.github.com/users/t-nojiri/repos",
+        "events_url": "https://api.github.com/users/t-nojiri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-nojiri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-09T06:36:43Z",
+    "updated_at": "2020-09-09T07:02:06Z",
+    "closed_at": "2020-09-09T07:01:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18585",
+        "html_url": "https://github.com/spack/spack/pull/18585",
+        "diff_url": "https://github.com/spack/spack/pull/18585.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18585.patch"
+    },
+    "body": "This PR is a fix for building on aarch64.\r\nNo response, but I did upstream on 8/27.\r\n",
+    "performed_via_github_app": null
+}

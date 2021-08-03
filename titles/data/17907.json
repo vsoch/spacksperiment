@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17907",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17907/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17907/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17907/events",
+    "html_url": "https://github.com/spack/spack/pull/17907",
+    "id": 674055670,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYzODE0NjQx",
+    "number": 17907,
+    "title": "Add new package: tiptop",
+    "user": {
+        "login": "darmac",
+        "id": 29532367,
+        "node_id": "MDQ6VXNlcjI5NTMyMzY3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29532367?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/darmac",
+        "html_url": "https://github.com/darmac",
+        "followers_url": "https://api.github.com/users/darmac/followers",
+        "following_url": "https://api.github.com/users/darmac/following{/other_user}",
+        "gists_url": "https://api.github.com/users/darmac/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/darmac/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/darmac/subscriptions",
+        "organizations_url": "https://api.github.com/users/darmac/orgs",
+        "repos_url": "https://api.github.com/users/darmac/repos",
+        "events_url": "https://api.github.com/users/darmac/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/darmac/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-06T06:32:45Z",
+    "updated_at": "2020-09-01T06:31:12Z",
+    "closed_at": "2020-08-11T02:26:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17907",
+        "html_url": "https://github.com/spack/spack/pull/17907",
+        "diff_url": "https://github.com/spack/spack/pull/17907.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17907.patch"
+    },
+    "body": "`tiptop` need a patch to support `aarch64` platform,\r\nbut looks no one maintains the community now.\r\nAnyway, I opened an issue for that: https://github.com/FeCastle/tiptop/issues/6\r\nand give the reason why we modified it like that:\r\n> And \"#define __NR_perf_counter_open 241\" comes from linux kernel code: include/uapi/asm-generic/unistd.h : \"#define __NR_perf_event_open 241\"\r\n",
+    "performed_via_github_app": null
+}

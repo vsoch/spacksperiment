@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15026",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15026/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15026/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15026/events",
+    "html_url": "https://github.com/spack/spack/pull/15026",
+    "id": 566452843,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc2MjYyNjk5",
+    "number": 15026,
+    "title": "Fix mercurial certificate finding, add latest version",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430651,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2NTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mercurial",
+            "name": "mercurial",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-17T18:10:04Z",
+    "updated_at": "2020-02-17T23:41:35Z",
+    "closed_at": "2020-02-17T23:41:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15026",
+        "html_url": "https://github.com/spack/spack/pull/15026",
+        "diff_url": "https://github.com/spack/spack/pull/15026.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15026.patch"
+    },
+    "body": "Thanks to @eugeneswalker for noticing that this is completely broken. I'm not sure how long it's been broken for, but adding `output=str` fixes the issue.\r\n\r\nAlso added the latest version while I was at it. Successfully builds on macOS 10.15.3 with Clang 11.0.0 and Python 3.7.6.\r\n```console\r\n$ /Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/mercurial-5.3-mpjblgfmwfpdktq4codfopllzktyabzz/bin/hg debuginstall\r\nchecking encoding (UTF-8)...\r\nchecking Python executable (/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/python-3.7.6-3gaqcongtvfw2l553jlr5lz3pug2z27w/bin/python3.7)\r\nchecking Python version (3.7.6)\r\nchecking Python lib (/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/python-3.7.6-3gaqcongtvfw2l553jlr5lz3pug2z27w/lib/python3.7)...\r\nchecking Python security support (sni,tls1.0,tls1.1,tls1.2)\r\nchecking Mercurial version (5.3)\r\nchecking Mercurial custom build ()\r\nchecking module policy (c)\r\nchecking installed modules (/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/mercurial-5.3-mpjblgfmwfpdktq4codfopllzktyabzz/lib/python3.7/site-packages/mercurial)...\r\nchecking registered compression engines (bz2, bz2truncated, none, zlib, zstd)\r\nchecking available compression engines (bz2, bz2truncated, none, zlib, zstd)\r\nchecking available compression engines for wire protocol (zstd, zlib, bz2, none)\r\nchecking \"re2\" regexp engine (missing)\r\nchecking templates (/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/mercurial-5.3-mpjblgfmwfpdktq4codfopllzktyabzz/lib/python3.7/site-packages/mercurial/templates)...\r\nchecking default template (/Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/mercurial-5.3-mpjblgfmwfpdktq4codfopllzktyabzz/lib/python3.7/site-packages/mercurial/templates/map-cmdline.default)\r\nchecking commit editor... (vim)\r\nchecking username (Adam J. Stewart <ajstewart426@gmail.com>)\r\nno problems detected\r\n$ /Users/Adam/spack/opt/spack/darwin-catalina-x86_64/clang-11.0.0-apple/mercurial-5.3-mpjblgfmwfpdktq4codfopllzktyabzz/bin/hg version\r\nMercurial Distributed SCM (version 5.3)\r\n(see https://mercurial-scm.org for more information)\r\n\r\nCopyright (C) 2005-2020 Matt Mackall and others\r\nThis is free software; see the source for copying conditions. There is NO\r\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n```",
+    "performed_via_github_app": null
+}

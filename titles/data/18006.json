@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18006",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18006/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18006/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18006/events",
+    "html_url": "https://github.com/spack/spack/pull/18006",
+    "id": 677334693,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY2NDY4Mzgw",
+    "number": 18006,
+    "title": "Java: add spack external find support",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-08-12T02:34:39Z",
+    "updated_at": "2020-08-20T21:51:56Z",
+    "closed_at": "2020-08-18T18:17:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18006",
+        "html_url": "https://github.com/spack/spack/pull/18006",
+        "diff_url": "https://github.com/spack/spack/pull/18006.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18006.patch"
+    },
+    "body": "I noticed something very odd. The first time I run `spack external find jdk openjdk`, I get:\r\n```yaml\r\n  jdk:\r\n    externals:\r\n    - spec: jdk@14.0.2_12-46\r\n      prefix: /Users/Adam/Downloads/jdk-14.0.2.jdk/Contents/Home\r\n    - spec: jdk@12.0.1_12\r\n      prefix: /usr\r\n  openjdk:\r\n    externals:\r\n    - spec: openjdk@14.0.2_12-46\r\n      prefix: /Users/Adam/Downloads/openjdk-14.0.2.jdk/Contents/Home\r\n```\r\nThe second time I run it, without changing my `PATH` or anything, I see:\r\n```yaml\r\n  jdk:\r\n    externals:\r\n    - spec: jdk@12.0.1_12\r\n      prefix: /usr\r\n    - spec: jdk@14.0.2_12-46\r\n      prefix: /Users/Adam/Downloads/jdk-14.0.2.jdk/Contents/Home\r\n    - spec: jdk@12.0.1_12\r\n      prefix: /Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home\r\n    - spec: jdk@10.0.1_10\r\n      prefix: /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home\r\n    - spec: jdk@1.8.0_231-b11\r\n      prefix: /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home\r\n    - spec: jdk@1.7.0_45-b18\r\n      prefix: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home\r\n  openjdk:\r\n    externals:\r\n    - spec: openjdk@14.0.2_12-46\r\n      prefix: /Users/Adam/Downloads/openjdk-14.0.2.jdk/Contents/Home\r\n```\r\n@alalazo @scheibelp is there any possible explanation for this non-deterministic behavior?",
+    "performed_via_github_app": null
+}

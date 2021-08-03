@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13434",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13434/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13434/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13434/events",
+    "html_url": "https://github.com/spack/spack/pull/13434",
+    "id": 512326712,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMyMzU4NjU3",
+    "number": 13434,
+    "title": "bugfix: reindexing is not necessary for DB v0.9.3 to v5 upgrade",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-25T06:22:05Z",
+    "updated_at": "2019-12-24T09:09:50Z",
+    "closed_at": "2019-10-25T14:10:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13434",
+        "html_url": "https://github.com/spack/spack/pull/13434",
+        "diff_url": "https://github.com/spack/spack/pull/13434.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13434.patch"
+    },
+    "body": "#13410 upgraded the database version, which is something we should've done after #12933.  However, Spack reindexes the whole database on read.  It can seem like Spack is taking a *really* long time to do this (10-20 seconds on my mac, and I'm sure much longer on a cluster with NFS and more installs).\r\n\r\nReindexing takes a significant amount of time, and there's no reason to do it from DB version `0.9.3` to version `5`. The only difference is that v5 can contain \"deprecated_for\" fields, which doesn't actually require a reindex -- just that we indicate when we've written a DB that could contain `deprecated_for` fields.\r\n\r\nAnother issue is that we print nothing when we do the reindex.  So for me, it just seemed like Spack was cranking away and taking a really long time and I hit ctrl-c.  When I launched Spack again, the reindex hadn't completed.\r\n\r\nI think we should rethink reindexing on DB upgrade and try to avoid it.  For now (for the 0.13.0 release) I'm just making it so that we skip it, since it is not necessary anyway.\r\n\r\n- [x] Add a `_skip_reindex` list at the start of `database.py`\r\n- [x] Skip the reindex for upgrades in this list. The new version will just be written to the file the first time we actually have to write the DB out (e.g., after an install), and reads will still work fine.\r\n- [x] Add a message so that users will know when we are reindexing.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14524",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14524/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14524/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14524/events",
+    "html_url": "https://github.com/spack/spack/pull/14524",
+    "id": 550434199,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYzMzQxNTkw",
+    "number": 14524,
+    "title": "Update RocksDB to current version",
+    "user": {
+        "login": "olafmersmann",
+        "id": 2335934,
+        "node_id": "MDQ6VXNlcjIzMzU5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2335934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olafmersmann",
+        "html_url": "https://github.com/olafmersmann",
+        "followers_url": "https://api.github.com/users/olafmersmann/followers",
+        "following_url": "https://api.github.com/users/olafmersmann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olafmersmann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olafmersmann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olafmersmann/subscriptions",
+        "organizations_url": "https://api.github.com/users/olafmersmann/orgs",
+        "repos_url": "https://api.github.com/users/olafmersmann/repos",
+        "events_url": "https://api.github.com/users/olafmersmann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olafmersmann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-15T21:17:24Z",
+    "updated_at": "2020-01-16T00:50:24Z",
+    "closed_at": "2020-01-16T00:50:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14524",
+        "html_url": "https://github.com/spack/spack/pull/14524",
+        "diff_url": "https://github.com/spack/spack/pull/14524.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14524.patch"
+    },
+    "body": "This series of commits updates RocksDB to the current version and adds some environment variables to avoid picking up system versions of some libraries if they are not explicitly requested as variants.",
+    "performed_via_github_app": null
+}

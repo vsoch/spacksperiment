@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19003",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19003/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19003/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19003/events",
+    "html_url": "https://github.com/spack/spack/pull/19003",
+    "id": 709661178,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkzNjY0Mzg4",
+    "number": 19003,
+    "title": "py-opencensus-context: add new package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-27T03:58:06Z",
+    "updated_at": "2020-10-05T12:46:33Z",
+    "closed_at": "2020-10-05T09:57:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19003",
+        "html_url": "https://github.com/spack/spack/pull/19003",
+        "diff_url": "https://github.com/spack/spack/pull/19003.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19003.patch"
+    },
+    "body": "Successfully installs on macOS 10.15.6 with Python 3.8.5 and Apple Clang 12.0.0.\r\n\r\nNewer versions distribute tarballs we can build from. Unfortunately, the latest version of `py-opencensus` requires this exact version of `py-opencensus-context`, so until a new release comes out we're stuck with building from wheel.",
+    "performed_via_github_app": null
+}

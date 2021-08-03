@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18437",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18437/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18437/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18437/events",
+    "html_url": "https://github.com/spack/spack/pull/18437",
+    "id": 689793599,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc2Nzk2MDM4",
+    "number": 18437,
+    "title": "modified:fftw/package.py,new file:a64fx-3.3.8.patch",
+    "user": {
+        "login": "hirashima-ryota",
+        "id": 68849435,
+        "node_id": "MDQ6VXNlcjY4ODQ5NDM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68849435?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hirashima-ryota",
+        "html_url": "https://github.com/hirashima-ryota",
+        "followers_url": "https://api.github.com/users/hirashima-ryota/followers",
+        "following_url": "https://api.github.com/users/hirashima-ryota/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hirashima-ryota/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hirashima-ryota/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hirashima-ryota/subscriptions",
+        "organizations_url": "https://api.github.com/users/hirashima-ryota/orgs",
+        "repos_url": "https://api.github.com/users/hirashima-ryota/repos",
+        "events_url": "https://api.github.com/users/hirashima-ryota/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hirashima-ryota/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-01T04:17:01Z",
+    "updated_at": "2021-01-14T18:34:13Z",
+    "closed_at": "2021-01-14T18:34:13Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18437",
+        "html_url": "https://github.com/spack/spack/pull/18437",
+        "diff_url": "https://github.com/spack/spack/pull/18437.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18437.patch"
+    },
+    "body": "Sorry for causing conflict.\r\nfftw(v3.3.8) tunning version for a64fx(fj 4.2.0).\r\nmodified:fftw/package.py\r\nnew file:a64fx-3.3.8.patch\r\n",
+    "performed_via_github_app": null
+}

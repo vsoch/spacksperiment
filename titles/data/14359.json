@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14359",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14359/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14359/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14359/events",
+    "html_url": "https://github.com/spack/spack/pull/14359",
+    "id": 544752232,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4Nzk4MzUy",
+    "number": 14359,
+    "title": "spack.cmd.compiler: Do not implicitly add compilers when using 'spack compiler list'",
+    "user": {
+        "login": "hainest",
+        "id": 1919990,
+        "node_id": "MDQ6VXNlcjE5MTk5OTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1919990?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hainest",
+        "html_url": "https://github.com/hainest",
+        "followers_url": "https://api.github.com/users/hainest/followers",
+        "following_url": "https://api.github.com/users/hainest/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hainest/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hainest/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hainest/subscriptions",
+        "organizations_url": "https://api.github.com/users/hainest/orgs",
+        "repos_url": "https://api.github.com/users/hainest/repos",
+        "events_url": "https://api.github.com/users/hainest/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hainest/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-01-02T21:21:47Z",
+    "updated_at": "2021-04-26T19:10:43Z",
+    "closed_at": "2021-04-26T19:07:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14359",
+        "html_url": "https://github.com/spack/spack/pull/14359",
+        "diff_url": "https://github.com/spack/spack/pull/14359.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14359.patch"
+    },
+    "body": "If Spack does not have any known compilers, running 'spack compiler list' should not implicitly add any as this violates the principle of least surprise. This also applies to 'spack compilers'. This is in more direct accord with the meaning of the current [documentation](https://spack.readthedocs.io/en/latest/getting_started.html#spack-compilers) of this command. This may adversely affect user workflows which previously relied on the surprising behavior, but I would argue such workflows are using unintended/undefined behavior.",
+    "performed_via_github_app": null
+}

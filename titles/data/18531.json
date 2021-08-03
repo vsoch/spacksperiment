@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18531",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18531/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18531/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18531/events",
+    "html_url": "https://github.com/spack/spack/pull/18531",
+    "id": 694506198,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgwODc0Mzk5",
+    "number": 18531,
+    "title": "openscenegraph: remove dependency on Qt for newer versions",
+    "user": {
+        "login": "aumuell",
+        "id": 481429,
+        "node_id": "MDQ6VXNlcjQ4MTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/481429?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/aumuell",
+        "html_url": "https://github.com/aumuell",
+        "followers_url": "https://api.github.com/users/aumuell/followers",
+        "following_url": "https://api.github.com/users/aumuell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/aumuell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/aumuell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/aumuell/subscriptions",
+        "organizations_url": "https://api.github.com/users/aumuell/orgs",
+        "repos_url": "https://api.github.com/users/aumuell/repos",
+        "events_url": "https://api.github.com/users/aumuell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/aumuell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-06T19:53:15Z",
+    "updated_at": "2020-09-09T02:28:27Z",
+    "closed_at": "2020-09-09T02:28:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18531",
+        "html_url": "https://github.com/spack/spack/pull/18531",
+        "diff_url": "https://github.com/spack/spack/pull/18531.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18531.patch"
+    },
+    "body": "Starting with OpenSceneGraph 3.5.5, support for windows managed by Qt\r\nhas been moved to the seperate project osgQt. Hence, a dependency on Qt\r\nis not needed any longer for version 3.5.5 or newer.\r\nIn order to still satisfy the dependency on OpenGL, a depends_on('gl')\r\nhas been added.",
+    "performed_via_github_app": null
+}

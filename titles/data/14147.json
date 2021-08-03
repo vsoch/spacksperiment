@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14147",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14147/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14147/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14147/events",
+    "html_url": "https://github.com/spack/spack/pull/14147",
+    "id": 537537142,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUyODc0Mjc1",
+    "number": 14147,
+    "title": "FIX: Making berkeley-db package fetch from correct links",
+    "user": {
+        "login": "mdorier",
+        "id": 598250,
+        "node_id": "MDQ6VXNlcjU5ODI1MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/598250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mdorier",
+        "html_url": "https://github.com/mdorier",
+        "followers_url": "https://api.github.com/users/mdorier/followers",
+        "following_url": "https://api.github.com/users/mdorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mdorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mdorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mdorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/mdorier/orgs",
+        "repos_url": "https://api.github.com/users/mdorier/repos",
+        "events_url": "https://api.github.com/users/mdorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mdorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-12-13T12:58:49Z",
+    "updated_at": "2019-12-13T21:20:00Z",
+    "closed_at": "2019-12-13T21:20:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14147",
+        "html_url": "https://github.com/spack/spack/pull/14147",
+        "diff_url": "https://github.com/spack/spack/pull/14147.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14147.patch"
+    },
+    "body": "The berkeley-db package normally fetches from the Gentoo repository because the Oracle website requires login. However the archives seem to have been removed from the Gentoo repository.\r\n\r\nThis PR comments the `url_for_version` function so that it reverts to downloading from Oracle. This will work for version 6.2.32 (the latest in this package) and 6.1.29, but not for older ones.\r\n\r\nIf anyone knows of another mirror from which more versions of BerkeleyDB can be downloaded, please update the package. At least with this PR the two latest versions are available again.\r\n\r\nFixes #14145",
+    "performed_via_github_app": null
+}

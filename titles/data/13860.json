@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13860/events",
+    "html_url": "https://github.com/spack/spack/pull/13860",
+    "id": 527453747,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ0NzMxNDI1",
+    "number": 13860,
+    "title": "Build go-md2man using Go modules",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1445245539,
+            "node_id": "MDU6TGFiZWwxNDQ1MjQ1NTM5",
+            "url": "https://api.github.com/repos/spack/spack/labels/build",
+            "name": "build",
+            "color": "a83f25",
+            "default": false,
+            "description": "General build capability"
+        },
+        {
+            "id": 1591861005,
+            "node_id": "MDU6TGFiZWwxNTkxODYxMDA1",
+            "url": "https://api.github.com/repos/spack/spack/labels/go",
+            "name": "go",
+            "color": "69dbf4",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-11-22T22:57:45Z",
+    "updated_at": "2019-12-10T18:35:46Z",
+    "closed_at": "2019-12-10T18:35:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13860",
+        "html_url": "https://github.com/spack/spack/pull/13860",
+        "diff_url": "https://github.com/spack/spack/pull/13860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13860.patch"
+    },
+    "body": "Release of go-md2man@v1.0.9: use the Go modules system ([release notes here](https://github.com/cpuguy83/go-md2man/releases)).  The current Go release at that point was v1.12, which supported modules.\r\n\r\nThe initial commit for this package set the build directory up to use the old-style GOPATH build system and defined a resource for the blackfriday markdown parser.\r\n\r\nThe package should use the build system intended by the go-md2man project, Go modules.\r\n\r\nThe package should *not* have overridden the copy of blackfriday that the go-md2man authors vendored into their repository, indeed it's not clear to me *which* copy the build actually uses.\r\n\r\nThe sole downside is that the build will not work for go@:1.10.8, which did *not* support modules.  Since the official Go support policy is\r\n\r\n> Each major Go release is supported until there are two newer major releases.\r\n\r\nthis is probably *not* an issue now, although it may have been a consideration when the package was originally submitted.",
+    "performed_via_github_app": null
+}

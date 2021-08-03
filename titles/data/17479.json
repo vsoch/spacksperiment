@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17479",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17479/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17479/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17479/events",
+    "html_url": "https://github.com/spack/spack/issues/17479",
+    "id": 655701094,
+    "node_id": "MDU6SXNzdWU2NTU3MDEwOTQ=",
+    "number": 17479,
+    "title": "\"spack ci\" unit tests add a test mirror to user configuration",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 1433532775,
+            "node_id": "MDU6TGFiZWwxNDMzNTMyNzc1",
+            "url": "https://api.github.com/repos/spack/spack/labels/triage",
+            "name": "triage",
+            "color": "ed9793",
+            "default": false,
+            "description": "The issue needs to be prioritized"
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-07-13T09:33:36Z",
+    "updated_at": "2020-07-15T17:07:03Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "Running:\r\n```console\r\nspack test lib/spack/spack/test/cmd/ci.py \r\n```\r\nchanges user configuration by adding a \"local_mirror\" that is apparently used for testing purposes.\r\n\r\n### Steps to reproduce the issue\r\nThe issue can be reproduced like this:\r\n```console\r\n$ spack mirror list\r\nspack-public    https://spack-llnl-mirror.s3-us-west-2.amazonaws.com/\r\n\r\n$ spack test lib/spack/spack/test/cmd/ci.py \r\n[ ... ]\r\n\r\n$ spack mirror list\r\nspack-public    https://spack-llnl-mirror.s3-us-west-2.amazonaws.com/\r\nlocal_mirror    file:///tmp/pytest-of-culpo/pytest-19/test_ci_rebuild_basic0/working_dir/local_mirror\r\n```\r\n\r\n### Error Message\r\n\r\nNo error message, but the user configuration gets changed by Spack unexpectedly. \r\n\r\nAs a side note, the tests above are failing when run on their own while they pass when they are run as part of the entire suite (so they might be depending on some global state set by previous tests to pass).\r\n\r\n### Information on your system\r\n\r\n* **Spack:** 0.15.1-107-9c42f246e\r\n* **Python:** 3.7.4\r\n* **Platform:** linux-ubuntu18.04-broadwell\r\n\r\n\r\n### Additional information\r\n\r\n- [x] I have run `spack debug report` and reported the version of Spack/Python/Platform\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate\r\n- [x] I have run the failing commands ~in debug mode~ and reported the output\r\n",
+    "performed_via_github_app": null
+}

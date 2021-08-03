@@ -1,0 +1,291 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14357",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14357/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14357/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14357/events",
+    "html_url": "https://github.com/spack/spack/pull/14357",
+    "id": 544745300,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4NzkyOTg4",
+    "number": 14357,
+    "title": "Docker image rework",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 501899682,
+            "node_id": "MDU6TGFiZWw1MDE4OTk2ODI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/RFC",
+            "name": "RFC",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1535715176,
+            "node_id": "MDU6TGFiZWwxNTM1NzE1MTc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/architectures",
+            "name": "architectures",
+            "color": "3571ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471440001,
+            "node_id": "MDU6TGFiZWw0NzE0NDAwMDE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/bundles",
+            "name": "bundles",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1491155556,
+            "node_id": "MDU6TGFiZWwxNDkxMTU1NTU2",
+            "url": "https://api.github.com/repos/spack/spack/labels/ci",
+            "name": "ci",
+            "color": "9891e0",
+            "default": false,
+            "description": "Issues related to Continuous Integration"
+        },
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1634941846,
+            "node_id": "MDU6TGFiZWwxNjM0OTQxODQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/dev",
+            "name": "dev",
+            "color": "c9ed7b",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1491154932,
+            "node_id": "MDU6TGFiZWwxNDkxMTU0OTMy",
+            "url": "https://api.github.com/repos/spack/spack/labels/gitlab",
+            "name": "gitlab",
+            "color": "f7b094",
+            "default": false,
+            "description": "Issues related to gitlab integration"
+        },
+        {
+            "id": 932844303,
+            "node_id": "MDU6TGFiZWw5MzI4NDQzMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/initialization",
+            "name": "initialization",
+            "color": "cad660",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1491156024,
+            "node_id": "MDU6TGFiZWwxNDkxMTU2MDI0",
+            "url": "https://api.github.com/repos/spack/spack/labels/pipelines",
+            "name": "pipelines",
+            "color": "b22353",
+            "default": false,
+            "description": "Issues related to spack's pipeline features"
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "assignees": [
+        {
+            "login": "alalazo",
+            "id": 4199709,
+            "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/alalazo",
+            "html_url": "https://github.com/alalazo",
+            "followers_url": "https://api.github.com/users/alalazo/followers",
+            "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+            "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+            "organizations_url": "https://api.github.com/users/alalazo/orgs",
+            "repos_url": "https://api.github.com/users/alalazo/repos",
+            "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/alalazo/received_events",
+            "type": "User",
+            "site_admin": false
+        }
+    ],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-01-02T21:02:07Z",
+    "updated_at": "2020-06-29T14:45:31Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14357",
+        "html_url": "https://github.com/spack/spack/pull/14357",
+        "diff_url": "https://github.com/spack/spack/pull/14357.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14357.patch"
+    },
+    "body": "This PR experiments with the idea of slimming down the base docker images and avoiding OS-specific packages as much as possible.  Instead, almost everything in this experimental version is provisioned using Spack, itself.\r\n\r\nCurrently, only the `ubuntu-1804` dockerfile is modified with the others to follow if others agree this is a good idea.\r\n\r\nThe build process starts with only what is absolutely necessary from the OS (basically, gcc and libc), and uses a new multi-phase bootstrapping approach in which a recent version of gcc is built and subsequently used to build all the software necessary to host a fully-featured installation of Spack.  Multiple docker build stages are used to ensure that the final image contains only the end products of this build process, minimizing the final image size.\r\n\r\nThe bootstrapped packages are maintained in a Spack chain separated from the primary Spack installation and are symlinked into a Spack view under `/usr/local`.  The bootstrapped packages are built using the lowest-common-denominator `target` for maximum portability.  This portability is limited to the bootstrapped packages and is configurable when building the docker image.\r\n\r\nThe main drawback to this approach is the build time.  On my 2018 Mac Pro (with 16/32 GB Ram dedicated to docker), it takes about 2 hours to build.  This issue should go away once we have a public build cache up and running, and we can effectively rely on our own infrastructure in place of Debian and Red Hat repositories.\r\n\r\nThis PR also adds a few other minor improvements:\r\n\r\nA new, unprivileged user, `spack` (`uid=1000, gid=1000`), is now created and runs of this new image now run under this user by default.  The user can install new packages and access the bootstrap chain, but cannot alter it or any other root-owned portions of the image's file system.\r\n\r\nA new entrypoint script simplifies the process of running Spack.  Whether running a `RUN` command in a new dockerfile build based on this one, running this image on the CLI, or using it in a CI environment, the entrypoint logic ensures that `spack install ...` always works without any additional initialization necessary.\r\n\r\nThe above entrypoint includes a workaround for #12636.  The workaround involves precreating modulefile directories for all the targets identified as compatible with the current architecture (`_sp_compatible_sys_types`) to ensure that an entry for each is added to the `MODULEPATH` up-front.",
+    "performed_via_github_app": null
+}

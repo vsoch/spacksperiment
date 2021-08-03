@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15316",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15316/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15316/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15316/events",
+    "html_url": "https://github.com/spack/spack/pull/15316",
+    "id": 575151806,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgzMzUxMTU1",
+    "number": 15316,
+    "title": "libunwind: remove version 2018.10.12, add stable branch",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-03-04T05:42:08Z",
+    "updated_at": "2020-03-06T14:49:48Z",
+    "closed_at": "2020-03-06T14:49:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15316",
+        "html_url": "https://github.com/spack/spack/pull/15316",
+        "diff_url": "https://github.com/spack/spack/pull/15316.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15316.patch"
+    },
+    "body": "Finish cleaning up the libunwind version numbers.  The 2018.10.12\r\nsnapshot number didn't fit well with spack's ordering (my bad), and\r\n1.4-rc1 is a near identical replacement.\r\n\r\nAdd a version for the 1.4-stable branch.\r\n\r\nAdd a variant for zlib compressed symbol tables (develop branch only).\r\n\r\nAdjust packages caliper and hpctoolkit to adapt to the changes.\r\n\r\nAdd myself as maintainer.\r\n\r\n----------\r\n\r\nI grep'ed the package.py files and only caliper and hpctoolkit\r\nmentioned 2018.10.12, so no other package should be affected.\r\n\r\n@daboehme This is the (tiny) change to the caliper recipe that I told\r\nyou about last week.\r\n\r\nFor libunwind, 'stable' is at the low end of the spack ordering,\r\nalthough based on the git repo, it should go 1.4 < stable < develop.\r\n\r\nThis is mildly inconvenient in some places.  For example, in\r\nhpctoolkit, I have to say `depends_on('libunwind@1.4:,stable')`\r\ninstead of the more natural `depends_on('libunwind@1.4:')`.\r\n\r\nWould it make sense to add 'stable' as a special, high-order version\r\nname like develop and master?\r\n\r\nOr, could we add support for a per-package way of adjusting the\r\nordering?\r\n",
+    "performed_via_github_app": null
+}

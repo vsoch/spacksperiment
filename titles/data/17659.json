@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17659",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17659/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17659/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17659/events",
+    "html_url": "https://github.com/spack/spack/pull/17659",
+    "id": 663771750,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU1MTI2ODg0",
+    "number": 17659,
+    "title": "New Versions: dd4hep, podio",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-22T13:40:48Z",
+    "updated_at": "2020-08-05T13:59:11Z",
+    "closed_at": "2020-07-31T03:21:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17659",
+        "html_url": "https://github.com/spack/spack/pull/17659",
+        "diff_url": "https://github.com/spack/spack/pull/17659.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17659.patch"
+    },
+    "body": "Also removed some env vars in podio that are no longer needed",
+    "performed_via_github_app": null
+}

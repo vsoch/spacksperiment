@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16740",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16740/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16740/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16740/events",
+    "html_url": "https://github.com/spack/spack/pull/16740",
+    "id": 621567862,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIwNTkzODA3",
+    "number": 16740,
+    "title": "julia: Add perf profiling support",
+    "user": {
+        "login": "zzzoom",
+        "id": 4043375,
+        "node_id": "MDQ6VXNlcjQwNDMzNzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4043375?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zzzoom",
+        "html_url": "https://github.com/zzzoom",
+        "followers_url": "https://api.github.com/users/zzzoom/followers",
+        "following_url": "https://api.github.com/users/zzzoom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zzzoom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zzzoom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zzzoom/subscriptions",
+        "organizations_url": "https://api.github.com/users/zzzoom/orgs",
+        "repos_url": "https://api.github.com/users/zzzoom/repos",
+        "events_url": "https://api.github.com/users/zzzoom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zzzoom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-05-20T08:31:22Z",
+    "updated_at": "2021-02-24T04:24:02Z",
+    "closed_at": "2021-02-24T04:24:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16740",
+        "html_url": "https://github.com/spack/spack/pull/16740",
+        "diff_url": "https://github.com/spack/spack/pull/16740.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16740.patch"
+    },
+    "body": "This PR adds a `perf` variant (disabled by default) to Julia that is able to generate `perf` data for [external profiling](https://docs.julialang.org/en/v1/manual/profile/#External-Profiling-1).",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18528",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18528/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18528/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18528/events",
+    "html_url": "https://github.com/spack/spack/pull/18528",
+    "id": 694260859,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgwNjYxNDg4",
+    "number": 18528,
+    "title": "Bugfix for fish support: overly zealous arg matching",
+    "user": {
+        "login": "JBlaschke",
+        "id": 4178946,
+        "node_id": "MDQ6VXNlcjQxNzg5NDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4178946?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JBlaschke",
+        "html_url": "https://github.com/JBlaschke",
+        "followers_url": "https://api.github.com/users/JBlaschke/followers",
+        "following_url": "https://api.github.com/users/JBlaschke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JBlaschke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JBlaschke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JBlaschke/subscriptions",
+        "organizations_url": "https://api.github.com/users/JBlaschke/orgs",
+        "repos_url": "https://api.github.com/users/JBlaschke/repos",
+        "events_url": "https://api.github.com/users/JBlaschke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JBlaschke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-09-06T05:50:38Z",
+    "updated_at": "2020-09-10T15:01:49Z",
+    "closed_at": "2020-09-10T15:01:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18528",
+        "html_url": "https://github.com/spack/spack/pull/18528",
+        "diff_url": "https://github.com/spack/spack/pull/18528.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18528.patch"
+    },
+    "body": "@wortiz brought up an interesting issue with the current way we're detecting `-h` (and so on) in #18369 \r\n\r\nThis PR fixes that bug by matching `-h`, `--help`, `--sh`, `--csh`, and `--fish` _exactly_. The old way would identify `<anything>-h` and `-h<anything>`.\r\n\r\nFixes #18369",
+    "performed_via_github_app": null
+}

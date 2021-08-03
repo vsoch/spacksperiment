@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13680",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13680/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13680/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13680/events",
+    "html_url": "https://github.com/spack/spack/pull/13680",
+    "id": 521056208,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM5NTExMTA1",
+    "number": 13680,
+    "title": "SIRIUS: add new version, etc.",
+    "user": {
+        "login": "simonpintarelli",
+        "id": 1237199,
+        "node_id": "MDQ6VXNlcjEyMzcxOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1237199?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simonpintarelli",
+        "html_url": "https://github.com/simonpintarelli",
+        "followers_url": "https://api.github.com/users/simonpintarelli/followers",
+        "following_url": "https://api.github.com/users/simonpintarelli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simonpintarelli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simonpintarelli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simonpintarelli/subscriptions",
+        "organizations_url": "https://api.github.com/users/simonpintarelli/orgs",
+        "repos_url": "https://api.github.com/users/simonpintarelli/repos",
+        "events_url": "https://api.github.com/users/simonpintarelli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simonpintarelli/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-11T16:19:49Z",
+    "updated_at": "2020-03-06T12:00:43Z",
+    "closed_at": "2019-11-11T22:19:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13680",
+        "html_url": "https://github.com/spack/spack/pull/13680",
+        "diff_url": "https://github.com/spack/spack/pull/13680.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13680.patch"
+    },
+    "body": "- depends on spfft starting from 6.4.0\r\n- add magma variant\r\n- avoid setting cuda_arch to none\r\n- add python dependencies\r\n- use release as default build type",
+    "performed_via_github_app": null
+}

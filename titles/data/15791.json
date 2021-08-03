@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15791",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15791/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15791/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15791/events",
+    "html_url": "https://github.com/spack/spack/pull/15791",
+    "id": 591524666,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk2Njg2MjYx",
+    "number": 15791,
+    "title": "Source devnull in environment_after_sourcing_files",
+    "user": {
+        "login": "anderbubble",
+        "id": 350294,
+        "node_id": "MDQ6VXNlcjM1MDI5NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/350294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anderbubble",
+        "html_url": "https://github.com/anderbubble",
+        "followers_url": "https://api.github.com/users/anderbubble/followers",
+        "following_url": "https://api.github.com/users/anderbubble/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anderbubble/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anderbubble/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anderbubble/subscriptions",
+        "organizations_url": "https://api.github.com/users/anderbubble/orgs",
+        "repos_url": "https://api.github.com/users/anderbubble/repos",
+        "events_url": "https://api.github.com/users/anderbubble/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anderbubble/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-01T00:06:16Z",
+    "updated_at": "2020-04-06T08:00:55Z",
+    "closed_at": "2020-04-06T08:00:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15791",
+        "html_url": "https://github.com/spack/spack/pull/15791",
+        "diff_url": "https://github.com/spack/spack/pull/15791.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15791.patch"
+    },
+    "body": "fixes #15775\r\n\r\n`spack.util.environment_after_sourcing_files` compares the local environment against a shell environment after having sourced a file; but this ends up including the default shell profile and rc, which might differ from the local environment.\r\n\r\nTo change this, compare against the default shell environment, expressed here as (effectively) `source /dev/null`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18253",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18253/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18253/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18253/events",
+    "html_url": "https://github.com/spack/spack/pull/18253",
+    "id": 685079740,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyODYyNzU2",
+    "number": 18253,
+    "title": "CMake: Update GCC on macOS Conflict message",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 20,
+    "created_at": "2020-08-25T01:02:37Z",
+    "updated_at": "2020-08-31T05:25:49Z",
+    "closed_at": "2020-08-27T06:51:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18253",
+        "html_url": "https://github.com/spack/spack/pull/18253",
+        "diff_url": "https://github.com/spack/spack/pull/18253.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18253.patch"
+    },
+    "body": "The latest release of CMake updates libuv, which fixes ObjC code usage on macOS. Passing ObjC code to non apple-clang compilers crashed the build before #16249.\r\n\r\nBut there are further issues to address before this conflict can be removed.\r\n\r\nRefs.:\r\n- https://gitlab.kitware.com/cmake/cmake/-/issues/20620 (fixed)\r\n- https://gitlab.kitware.com/cmake/cmake/-/merge_requests/4687 (merged)\r\n- https://gitlab.kitware.com/cmake/cmake/-/issues/21135 (open)",
+    "performed_via_github_app": null
+}

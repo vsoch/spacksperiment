@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14382",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14382/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14382/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14382/events",
+    "html_url": "https://github.com/spack/spack/pull/14382",
+    "id": 545336862,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MjUwMzQ0",
+    "number": 14382,
+    "title": "Add libs property to lcms package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-04T21:52:01Z",
+    "updated_at": "2020-01-04T22:46:43Z",
+    "closed_at": "2020-01-04T22:46:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14382",
+        "html_url": "https://github.com/spack/spack/pull/14382",
+        "diff_url": "https://github.com/spack/spack/pull/14382.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14382.patch"
+    },
+    "body": "Library is `liblcms2`, not `liblcms`",
+    "performed_via_github_app": null
+}

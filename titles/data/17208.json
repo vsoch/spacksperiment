@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17208",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17208/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17208/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17208/events",
+    "html_url": "https://github.com/spack/spack/pull/17208",
+    "id": 643672442,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM4NDM0OTk2",
+    "number": 17208,
+    "title": "Fix missing dependency in Mono",
+    "user": {
+        "login": "cedricchevalier19",
+        "id": 19407793,
+        "node_id": "MDQ6VXNlcjE5NDA3Nzkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19407793?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cedricchevalier19",
+        "html_url": "https://github.com/cedricchevalier19",
+        "followers_url": "https://api.github.com/users/cedricchevalier19/followers",
+        "following_url": "https://api.github.com/users/cedricchevalier19/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cedricchevalier19/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cedricchevalier19/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cedricchevalier19/subscriptions",
+        "organizations_url": "https://api.github.com/users/cedricchevalier19/orgs",
+        "repos_url": "https://api.github.com/users/cedricchevalier19/repos",
+        "events_url": "https://api.github.com/users/cedricchevalier19/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cedricchevalier19/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-23T09:16:42Z",
+    "updated_at": "2020-06-25T03:22:41Z",
+    "closed_at": "2020-06-25T03:22:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17208",
+        "html_url": "https://github.com/spack/spack/pull/17208",
+        "diff_url": "https://github.com/spack/spack/pull/17208.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17208.patch"
+    },
+    "body": "Mono requires `python` executable for building.\r\n\r\nUpdate to last mono version as well.",
+    "performed_via_github_app": null
+}

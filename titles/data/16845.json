@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16845",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16845/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16845/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16845/events",
+    "html_url": "https://github.com/spack/spack/pull/16845",
+    "id": 626513118,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0NDg5ODg1",
+    "number": 16845,
+    "title": "Fix error when no package is specified",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-05-28T13:33:45Z",
+    "updated_at": "2020-05-31T10:41:48Z",
+    "closed_at": "2020-05-31T10:41:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16845",
+        "html_url": "https://github.com/spack/spack/pull/16845",
+        "diff_url": "https://github.com/spack/spack/pull/16845.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16845.patch"
+    },
+    "body": "Not specifying a package name currently causes an unhelpful error message:\r\n```console\r\n$ spack spec -I ^intel-mkl\r\nInput spec\r\n--------------------------------\r\n==> Error: 'NoneType' object has no attribute 'endswith'\r\n```\r\n\r\nThis change fixes it so we get a slightly better one:\r\n```console\r\n$ spack spec -I ^intel-mkl\r\nInput spec\r\n--------------------------------\r\n==> Error: Package 'None' not found.\r\nNo package name has been specified.\r\n```",
+    "performed_via_github_app": null
+}

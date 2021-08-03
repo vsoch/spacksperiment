@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16883",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16883/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16883/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16883/events",
+    "html_url": "https://github.com/spack/spack/pull/16883",
+    "id": 628020894,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI1NjUzNTA0",
+    "number": 16883,
+    "title": "Fix parsing of EvtGen URL",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 497155826,
+            "node_id": "MDU6TGFiZWw0OTcxNTU4MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/url-parsing",
+            "name": "url-parsing",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-31T18:49:13Z",
+    "updated_at": "2020-06-04T03:09:24Z",
+    "closed_at": "2020-06-04T03:09:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16883",
+        "html_url": "https://github.com/spack/spack/pull/16883",
+        "diff_url": "https://github.com/spack/spack/pull/16883.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16883.patch"
+    },
+    "body": "Fixes name/version parsing of a URL reported by @vvolkl in #16880. \r\n\r\n### Before\r\n```console\r\n$ spack url parse \"https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\"\r\n==> Parsing URL: https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\r\n\r\n==> Error: Couldn't detect version in: https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\r\n```\r\n### After\r\n```console\r\n$ spack url parse \"https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\"\r\n==> Parsing URL: https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\r\n\r\n==> Matched version regex 21: r'[?&](?:filename|f|get)=[a-zA-Z\\\\d+-]+[_-]v?(\\\\d[\\\\da-zA-Z.]*)'\r\n==> Matched  name   regex  6: r'\\\\?f=([A-Za-z\\\\d+-]+)$'\r\n\r\n==> Detected:\r\n    https://evtgen.hepforge.org/downloads?f=EvtGen-01.07.00.tar.gz\r\n                                            ------ ~~~~~~~~\r\n    name:    EvtGen\r\n    version: 01.07.00\r\n\r\n==> Substituting version 9.9.9b:\r\n    https://evtgen.hepforge.org/downloads?f=EvtGen-9.9.9b.tar.gz\r\n                                            ------ ~~~~~~\r\n```\r\nOverall URL parsing performance is unchanged:\r\n```console\r\n$ spack url summary\r\n==> Generating a summary of URL parsing in Spack...\r\n\r\n    Total URLs found:          3796\r\n    Names correctly parsed:    3437/3796 (90.54%)\r\n    Versions correctly parsed: 3533/3796 (93.07%)\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17734",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17734/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17734/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17734/events",
+    "html_url": "https://github.com/spack/spack/pull/17734",
+    "id": 667178942,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU3ODk2MjI0",
+    "number": 17734,
+    "title": "Bazel: relax Java dependency",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1724606298,
+            "node_id": "MDU6TGFiZWwxNzI0NjA2Mjk4",
+            "url": "https://api.github.com/repos/spack/spack/labels/bazel",
+            "name": "bazel",
+            "color": "97ed93",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-07-28T15:45:36Z",
+    "updated_at": "2020-08-06T17:30:03Z",
+    "closed_at": "2020-08-06T17:02:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17734",
+        "html_url": "https://github.com/spack/spack/pull/17734",
+        "diff_url": "https://github.com/spack/spack/pull/17734.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17734.patch"
+    },
+    "body": "I know we've gone back and forth with this before (see #14058, #14234, #16350, etc) but I wanted to reopen this discussion.\r\n\r\nI propose we relax the Java dependency and let users build with whatever version of Java they want. Oracle JDK 8 can no longer be downloaded automatically, so that makes it problematic in many ways. I have OpenJDK 11.0.7 on my Ubuntu 20.04 instance and it builds Bazel just fine.\r\n\r\nPinging some interested parties: @lee218llnl @healther @coreyjadams @Sinan81 @s-sajid-ali @darmac \r\n\r\nCloses #14058",
+    "performed_via_github_app": null
+}

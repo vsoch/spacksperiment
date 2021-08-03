@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16358",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16358/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16358/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16358/events",
+    "html_url": "https://github.com/spack/spack/pull/16358",
+    "id": 608454035,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEwMjI5Njgx",
+    "number": 16358,
+    "title": "Update kokkos for new 3.x build systems",
+    "user": {
+        "login": "jjwilke",
+        "id": 106969,
+        "node_id": "MDQ6VXNlcjEwNjk2OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106969?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jjwilke",
+        "html_url": "https://github.com/jjwilke",
+        "followers_url": "https://api.github.com/users/jjwilke/followers",
+        "following_url": "https://api.github.com/users/jjwilke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jjwilke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jjwilke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jjwilke/subscriptions",
+        "organizations_url": "https://api.github.com/users/jjwilke/orgs",
+        "repos_url": "https://api.github.com/users/jjwilke/repos",
+        "events_url": "https://api.github.com/users/jjwilke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jjwilke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 21,
+    "created_at": "2020-04-28T16:31:48Z",
+    "updated_at": "2020-05-01T03:43:06Z",
+    "closed_at": "2020-04-30T14:13:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16358",
+        "html_url": "https://github.com/spack/spack/pull/16358",
+        "diff_url": "https://github.com/spack/spack/pull/16358.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16358.patch"
+    },
+    "body": "* Move old kokkos to kokkos-legacy\r\n* Move old kokkos-kernels to kokkos-kernels-legacy\r\n* Add Kokkos and Kokkos-Kernels 3.0 and 3.1\r\n* Add an nvcc_wrapper package",
+    "performed_via_github_app": null
+}

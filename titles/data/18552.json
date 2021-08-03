@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18552",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18552/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18552/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18552/events",
+    "html_url": "https://github.com/spack/spack/pull/18552",
+    "id": 695368475,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgxNjIzMTI1",
+    "number": 18552,
+    "title": "Update texlive/package.py",
+    "user": {
+        "login": "JaroslavHron",
+        "id": 729431,
+        "node_id": "MDQ6VXNlcjcyOTQzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/729431?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JaroslavHron",
+        "html_url": "https://github.com/JaroslavHron",
+        "followers_url": "https://api.github.com/users/JaroslavHron/followers",
+        "following_url": "https://api.github.com/users/JaroslavHron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaroslavHron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JaroslavHron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaroslavHron/subscriptions",
+        "organizations_url": "https://api.github.com/users/JaroslavHron/orgs",
+        "repos_url": "https://api.github.com/users/JaroslavHron/repos",
+        "events_url": "https://api.github.com/users/JaroslavHron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JaroslavHron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-07T20:07:28Z",
+    "updated_at": "2020-09-09T09:38:06Z",
+    "closed_at": "2020-09-09T02:05:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18552",
+        "html_url": "https://github.com/spack/spack/pull/18552",
+        "diff_url": "https://github.com/spack/spack/pull/18552.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18552.patch"
+    },
+    "body": "without setting the build enviroment, the installation (on ubuntu18 system) fails with\r\n\r\n```\r\n1 error found in build log:\r\n     35946    fmtutil [INFO]: /usr/local/pkg/Installs/linux-ubuntu18.04-skylake_avx512/gcc7.4.0/texlive/20190410/rgs2nakycorkgzno/t\r\n              exmf-var/web2c/pdftex/pdfcslatex.fmt installed.\r\n     35947    fmtutil [INFO]: Disabled formats: 6\r\n     35948    fmtutil [INFO]: Successfully rebuilt formats: 45\r\n     35949    fmtutil [INFO]: Total formats: 51\r\n     35950    fmtutil [INFO]: exiting with status 0\r\n     35951    ==> [2020-09-07-21:23:21.482745] '/usr/local/pkg/Installs/linux-ubuntu18.04-skylake_avx512/gcc7.4.0/texlive/20190410/\r\n              rgs2nakycorkgzno/bin/x86_64-linux/mtxrun' '--generate'\r\n  >> 35952    /usr/bin/env: 'texlua': No such file or directory\r\n```\r\n\r\nThis helps, but may be there is a better way...",
+    "performed_via_github_app": null
+}

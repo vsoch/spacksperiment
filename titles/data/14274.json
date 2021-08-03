@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14274",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14274/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14274/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14274/events",
+    "html_url": "https://github.com/spack/spack/pull/14274",
+    "id": 541593026,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU2MTkzNzc3",
+    "number": 14274,
+    "title": "MKL: set appropriate CMake env vars",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-23T06:08:02Z",
+    "updated_at": "2020-01-02T18:41:47Z",
+    "closed_at": "2020-01-02T18:41:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14274",
+        "html_url": "https://github.com/spack/spack/pull/14274",
+        "diff_url": "https://github.com/spack/spack/pull/14274.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14274.patch"
+    },
+    "body": "PyTorch has trouble finding the MKL libraries when they are not in default system install locations. On macOS, simply setting `CMAKE_PREFIX_PATH` to the `<prefix>/mkl` directory is sufficient, but on Linux, the libraries are tucked away inside `<prefix>/mkl/intel64/lib`. This PR sets the appropriate CMake environment variables to allow PyTorch to find MKL. I put the changes in the `IntelPackage` base class so that other packages can benefit from this too.\r\n\r\nTested with PyTorch 1.3.1 and master on macOS 10.15.2 and Amazon Linux 2 with Intel MKL 2019.4.233 and 2019.5.281.\r\n\r\nFixes #14232 \r\nFixes https://github.com/pytorch/pytorch/issues/24334\r\n\r\n@coreyjadams can you test this out?",
+    "performed_via_github_app": null
+}

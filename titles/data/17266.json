@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17266",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17266/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17266/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17266/events",
+    "html_url": "https://github.com/spack/spack/pull/17266",
+    "id": 646052370,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQwNDE1NDg5",
+    "number": 17266,
+    "title": "cp2k: variant tuning `lmax` was broken",
+    "user": {
+        "login": "bruneval",
+        "id": 11468010,
+        "node_id": "MDQ6VXNlcjExNDY4MDEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11468010?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bruneval",
+        "html_url": "https://github.com/bruneval",
+        "followers_url": "https://api.github.com/users/bruneval/followers",
+        "following_url": "https://api.github.com/users/bruneval/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bruneval/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bruneval/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bruneval/subscriptions",
+        "organizations_url": "https://api.github.com/users/bruneval/orgs",
+        "repos_url": "https://api.github.com/users/bruneval/repos",
+        "events_url": "https://api.github.com/users/bruneval/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bruneval/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-26T06:55:46Z",
+    "updated_at": "2020-06-30T02:24:26Z",
+    "closed_at": "2020-06-30T02:24:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17266",
+        "html_url": "https://github.com/spack/spack/pull/17266",
+        "diff_url": "https://github.com/spack/spack/pull/17266.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17266.patch"
+    },
+    "body": "- `spack install cp2k lmax=6` now works",
+    "performed_via_github_app": null
+}

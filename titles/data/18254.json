@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18254",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18254/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18254/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18254/events",
+    "html_url": "https://github.com/spack/spack/pull/18254",
+    "id": 685161495,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcyOTMwMjc5",
+    "number": 18254,
+    "title": "allow 4.08 and 4.09 to build with gcc10",
+    "user": {
+        "login": "joequant",
+        "id": 2908185,
+        "node_id": "MDQ6VXNlcjI5MDgxODU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2908185?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joequant",
+        "html_url": "https://github.com/joequant",
+        "followers_url": "https://api.github.com/users/joequant/followers",
+        "following_url": "https://api.github.com/users/joequant/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joequant/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joequant/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joequant/subscriptions",
+        "organizations_url": "https://api.github.com/users/joequant/orgs",
+        "repos_url": "https://api.github.com/users/joequant/repos",
+        "events_url": "https://api.github.com/users/joequant/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joequant/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-08-25T04:32:01Z",
+    "updated_at": "2020-09-01T03:53:14Z",
+    "closed_at": "2020-09-01T03:53:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18254",
+        "html_url": "https://github.com/spack/spack/pull/18254",
+        "diff_url": "https://github.com/spack/spack/pull/18254.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18254.patch"
+    },
+    "body": "fixes #18228.  This patch doesn't cover all old versions but it\r\nallows packages like whizard to build.",
+    "performed_via_github_app": null
+}

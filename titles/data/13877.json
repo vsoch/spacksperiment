@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13877",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13877/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13877/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13877/events",
+    "html_url": "https://github.com/spack/spack/pull/13877",
+    "id": 527909046,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ1MDY5MzUx",
+    "number": 13877,
+    "title": "Bugfix/prank",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-25T07:45:56Z",
+    "updated_at": "2019-11-25T23:58:44Z",
+    "closed_at": "2019-11-25T14:14:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13877",
+        "html_url": "https://github.com/spack/spack/pull/13877",
+        "diff_url": "https://github.com/spack/spack/pull/13877.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13877.patch"
+    },
+    "body": "* Rewrite `gcc/g++` to spack compiler commands to use compiler except `gcc`.\r\n* Remove options that may not be compatible with non-x86_64 environments.",
+    "performed_via_github_app": null
+}

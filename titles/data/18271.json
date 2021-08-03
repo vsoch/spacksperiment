@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18271",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18271/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18271/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18271/events",
+    "html_url": "https://github.com/spack/spack/pull/18271",
+    "id": 685730253,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDczNDA4NDQw",
+    "number": 18271,
+    "title": "SLOCCount: add new package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-25T19:25:05Z",
+    "updated_at": "2020-08-27T12:43:10Z",
+    "closed_at": "2020-08-27T12:39:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18271",
+        "html_url": "https://github.com/spack/spack/pull/18271",
+        "diff_url": "https://github.com/spack/spack/pull/18271.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18271.patch"
+    },
+    "body": "Successfully builds on macOS 10.15.6 with Apple Clang 11.0.3.\r\n\r\nFor the record, the output for `spack` is:\r\n```console\r\n$ sloccount .\r\n...\r\nSLOC\tDirectory\tSLOC-by-Language (Sorted)\r\n114063  var             python=113220,sh=609,ansic=205,cpp=29\r\n104986  lib             python=103355,ansic=1225,sh=402,tcl=4\r\n2310    share           sh=2112,csh=129,tcl=69\r\n53      bin             sh=53\r\n0       etc             (none)\r\n0       top_dir         (none)\r\n\r\n\r\nTotals grouped by language (dominant language first):\r\npython:      216575 (97.82%)\r\nsh:            3176 (1.43%)\r\nansic:         1430 (0.65%)\r\ncsh:            129 (0.06%)\r\ntcl:             73 (0.03%)\r\ncpp:             29 (0.01%)\r\n\r\n\r\n\r\n\r\nTotal Physical Source Lines of Code (SLOC)                = 221,412\r\nDevelopment Effort Estimate, Person-Years (Person-Months) = 58.01 (696.10)\r\n (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))\r\nSchedule Estimate, Years (Months)                         = 2.51 (30.07)\r\n (Basic COCOMO model, Months = 2.5 * (person-months**0.38))\r\nEstimated Average Number of Developers (Effort/Schedule)  = 23.15\r\nTotal Estimated Cost to Develop                           = $ 7,836,152\r\n (average salary = $56,286/year, overhead = 2.40).\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15983",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15983/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15983/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15983/events",
+    "html_url": "https://github.com/spack/spack/pull/15983",
+    "id": 597636058,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAxNzExNzIx",
+    "number": 15983,
+    "title": "Update yaml-cpp package to enable for build of old api",
+    "user": {
+        "login": "jacobmerson",
+        "id": 2366140,
+        "node_id": "MDQ6VXNlcjIzNjYxNDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2366140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jacobmerson",
+        "html_url": "https://github.com/jacobmerson",
+        "followers_url": "https://api.github.com/users/jacobmerson/followers",
+        "following_url": "https://api.github.com/users/jacobmerson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jacobmerson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jacobmerson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jacobmerson/subscriptions",
+        "organizations_url": "https://api.github.com/users/jacobmerson/orgs",
+        "repos_url": "https://api.github.com/users/jacobmerson/repos",
+        "events_url": "https://api.github.com/users/jacobmerson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jacobmerson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-10T01:02:15Z",
+    "updated_at": "2020-04-10T18:56:13Z",
+    "closed_at": "2020-04-10T14:35:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15983",
+        "html_url": "https://github.com/spack/spack/pull/15983",
+        "diff_url": "https://github.com/spack/spack/pull/15983.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15983.patch"
+    },
+    "body": "The old api is found in version 0.3.0 which uses a different release\r\nname, so the url function was updated to properly find the older\r\nreleases. Also, this removes the boost constraint on the 0.3.0 version\r\nwhich does not need it.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14394",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14394/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14394/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14394/events",
+    "html_url": "https://github.com/spack/spack/pull/14394",
+    "id": 545601106,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5NDQwODEz",
+    "number": 14394,
+    "title": "refactor: `spack.package.possible_dependencies()` handles virtuals",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-06T08:17:39Z",
+    "updated_at": "2020-03-19T16:00:49Z",
+    "closed_at": "2020-03-19T16:00:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14394",
+        "html_url": "https://github.com/spack/spack/pull/14394",
+        "diff_url": "https://github.com/spack/spack/pull/14394.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14394.patch"
+    },
+    "body": "This consolidates some code that was in `cmd/dependencies.py` to `spack.package.possible_dependencies()`, and it adds some tests  Specifically, it's code for dealing with virtuals -- `possible_dependencies()` can just take virtuals now, and does not need special logic in the `spack dependencies` command.  This is an ongoing attempt to get some stuff off `features/solver` and onto the mainline.\r\n\r\n- [x] fix a bug where possible_dependencies wasn't properly returning virtuals\r\n- [x] move some logic for handling virtual packages from the `spack dependencies` command into `spack.package.possible_dependencies()`\r\n- [x] rework possible dependencies tests so that expected and actual output are on the left/right respectively (I can't wrap my brain around `pytest` diff output where subtractions are from actual and additions are to expected -- \ud83e\udd2f)",
+    "performed_via_github_app": null
+}

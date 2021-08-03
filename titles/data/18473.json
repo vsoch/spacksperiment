@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18473",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18473/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18473/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18473/events",
+    "html_url": "https://github.com/spack/spack/pull/18473",
+    "id": 691504060,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc4MjQxOTY1",
+    "number": 18473,
+    "title": "Also allow --rpath as rpath linker flags",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-09-02T23:30:01Z",
+    "updated_at": "2020-12-04T17:29:56Z",
+    "closed_at": "2020-12-04T17:29:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18473",
+        "html_url": "https://github.com/spack/spack/pull/18473",
+        "diff_url": "https://github.com/spack/spack/pull/18473.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18473.patch"
+    },
+    "body": "When looking into what `hipcc` does, I found it adds `-Wl,--rpath=some/path`. Note the two dashes in `--rpath`. GCC is fine with this, but the Spack compiler wrapper is only looking for `-rpath`.\r\n\r\nFor example, this works:\r\n\r\n```console\r\n$ cat foo.c \r\n#include <stdio.h>\r\nvoid foo(void) { puts(\"hi\"); }\r\n$ cat main.c \r\nextern void foo(void);\r\nint main(void){ foo();return 0; }\r\n$ gcc -c foo.c main.c\r\n$ gcc -shared -o libfoo.so foo.o \r\n$ gcc -o main main.o -L. -lfoo -Wl,--rpath='$ORIGIN'\r\n$ ./main \r\nhi\r\n```\r\n\r\nThis PR makes the Spack compiler wrapper handle `--rpath` too. It rewrites arguments as follows now:\r\n\r\nBefore:\r\n\r\n```console\r\n$ gcc some.o file.o -Wl,--rpath -Wl,/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\nsome.o\r\nfile.o\r\n-Wl,--rpath\r\n-Wl,/some/path\r\n$ gcc some.o file.o -Wl,--rpath=/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\nsome.o\r\nfile.o\r\n-Wl,--rpath=/some/path\r\n$ gcc some.o file.o -Wl,--rpath,/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\nsome.o\r\nfile.o\r\n```\r\n\r\nAfter:\r\n\r\n```console\r\n$ gcc some.o file.o -Wl,--rpath -Wl,/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\n-Wl,-rpath,/some/path\r\nsome.o\r\nfile.o\r\n$ gcc some.o file.o -Wl,--rpath=/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\n-Wl,-rpath,/some/path\r\nsome.o\r\nfile.o\r\n$ gcc some.o file.o -Wl,--rpath,/some/path\r\n/usr/bin/gcc\r\n-march=znver2\r\n-mtune=znver2\r\n-Wl,--disable-new-dtags\r\n-Wl,-rpath,/some/path\r\nsome.o\r\nfile.o\r\n```\r\n\r\nSame for `-Xlinker`.",
+    "performed_via_github_app": null
+}

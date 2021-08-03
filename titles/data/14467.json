@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14467",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14467/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14467/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14467/events",
+    "html_url": "https://github.com/spack/spack/pull/14467",
+    "id": 548482790,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYxNzY2NjY5",
+    "number": 14467,
+    "title": "When spack install checks for buildcaches only add urls for current arch",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-01-11T21:32:30Z",
+    "updated_at": "2020-01-27T19:24:38Z",
+    "closed_at": "2020-01-26T03:15:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14467",
+        "html_url": "https://github.com/spack/spack/pull/14467",
+        "diff_url": "https://github.com/spack/spack/pull/14467.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14467.patch"
+    },
+    "body": "spack install command calls spack.package.try_install_from_binary_cache() which calls spack.binary_distribution.get_specs().\r\n\r\nspack.binary_distribution.get_specs() was modified in\r\n#13002\r\nto allow listing and installing buildcaches for macOS on a linux host.\r\n\r\nIn the case where a mirror contains buildcaches for multiple OSes the spack install command can spend more time downloading all of the specs from the build_cache directory than it takes to install the buildcache. The is especially true when using pipelines and the buildcache download directory is cleared between steps.\r\n\r\nI modified the get_specs() command to accept a filter option and pass the current OS as the filter option when get_specs() is called from spack.package.try_install_from_binary_cache()",
+    "performed_via_github_app": null
+}

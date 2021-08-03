@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17525",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17525/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17525/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17525/events",
+    "html_url": "https://github.com/spack/spack/pull/17525",
+    "id": 656614050,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ4ODgyMjY0",
+    "number": 17525,
+    "title": "Move compiler detection logic to packages",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-14T13:30:45Z",
+    "updated_at": "2020-08-14T07:57:36Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17525",
+        "html_url": "https://github.com/spack/spack/pull/17525",
+        "diff_url": "https://github.com/spack/spack/pull/17525.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17525.patch"
+    },
+    "body": "This PR builds on the detection mechanism introduced in #15158 and refined in #16526 and moves all the compiler detection logic to packages. This includes finding compilers on Cray by inspection of the environment modules. To this end the `spack external find` command has been extended with a new option `--craype` and new logic to inspect Cray Programming Environments has been added.\r\n\r\nThe `spack compiler find` command has been modified to rely on `spack external find` for compiler detection  \r\n\r\nModifications:\r\n\r\n- [x] Compiler detection logic is moved from `spack.compilers` to builtin packages\r\n- [x] Added a mechanism to search for external packages on Cray\r\n- [x] Added packages for each compiler supported by Spack\r\n- [x] XL compilers have been split into `xlc` and `xlf`\r\n- [x] CCE compilers have been split into `cce-classic` (Cray frontend) and `cce` (LLVM frontend)\r\n- [x] Added a way to bundle detection tests with packages by a `detection_test.yaml` file living alongside `package.py`\r\n- [ ] Document how to make a package detectable on Cray",
+    "performed_via_github_app": null
+}

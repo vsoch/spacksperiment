@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15556",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15556/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15556/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15556/events",
+    "html_url": "https://github.com/spack/spack/pull/15556",
+    "id": 584027333,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkwNjg1MzMz",
+    "number": 15556,
+    "title": "hpctoolkit: restore binutils 2.34 for master",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-03-18T21:56:34Z",
+    "updated_at": "2020-03-19T03:19:26Z",
+    "closed_at": "2020-03-19T03:19:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15556",
+        "html_url": "https://github.com/spack/spack/pull/15556",
+        "diff_url": "https://github.com/spack/spack/pull/15556.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15556.patch"
+    },
+    "body": "Hpctoolkit master was recently updated to test for and allow old\r\nbinutils <= 2.33.1 and/or new binutils 2.34.  Older hpctoolkit up to\r\n2030.03.01 will forever require :2.33.1.\r\n\r\nAdjust the libunwind dependency for safety with the current\r\nconcretizer.",
+    "performed_via_github_app": null
+}

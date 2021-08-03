@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18078",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18078/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18078/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18078/events",
+    "html_url": "https://github.com/spack/spack/pull/18078",
+    "id": 679537606,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY4Mjg3Nzg2",
+    "number": 18078,
+    "title": "[root] use compiler directly to avoid runtime cling issues",
+    "user": {
+        "login": "vvolkl",
+        "id": 5057884,
+        "node_id": "MDQ6VXNlcjUwNTc4ODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5057884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vvolkl",
+        "html_url": "https://github.com/vvolkl",
+        "followers_url": "https://api.github.com/users/vvolkl/followers",
+        "following_url": "https://api.github.com/users/vvolkl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vvolkl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vvolkl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vvolkl/subscriptions",
+        "organizations_url": "https://api.github.com/users/vvolkl/orgs",
+        "repos_url": "https://api.github.com/users/vvolkl/repos",
+        "events_url": "https://api.github.com/users/vvolkl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vvolkl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2020-08-15T09:55:04Z",
+    "updated_at": "2020-08-18T17:39:14Z",
+    "closed_at": "2020-08-18T17:22:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18078",
+        "html_url": "https://github.com/spack/spack/pull/18078",
+        "diff_url": "https://github.com/spack/spack/pull/18078.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18078.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/17488\r\nThe build system of root needs to access the actual compiler path to setup the includes for its interpreter. Otherwise the interpreter won't work when built with compilers outside of the system directories.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17574",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17574/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17574/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17574/events",
+    "html_url": "https://github.com/spack/spack/pull/17574",
+    "id": 659654169,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDUxNDc1MTcx",
+    "number": 17574,
+    "title": "Added Go 1.14.6 and 1.13.14",
+    "user": {
+        "login": "paulbry",
+        "id": 39570394,
+        "node_id": "MDQ6VXNlcjM5NTcwMzk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39570394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulbry",
+        "html_url": "https://github.com/paulbry",
+        "followers_url": "https://api.github.com/users/paulbry/followers",
+        "following_url": "https://api.github.com/users/paulbry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulbry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulbry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulbry/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulbry/orgs",
+        "repos_url": "https://api.github.com/users/paulbry/repos",
+        "events_url": "https://api.github.com/users/paulbry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulbry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1591861005,
+            "node_id": "MDU6TGFiZWwxNTkxODYxMDA1",
+            "url": "https://api.github.com/repos/spack/spack/labels/go",
+            "name": "go",
+            "color": "69dbf4",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-07-17T21:33:21Z",
+    "updated_at": "2020-08-03T14:42:06Z",
+    "closed_at": "2020-08-03T14:42:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17574",
+        "html_url": "https://github.com/spack/spack/pull/17574",
+        "diff_url": "https://github.com/spack/spack/pull/17574.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17574.patch"
+    },
+    "body": "Added another Go release (1.14.6 & 1.13.14) - https://golang.org/doc/devel/release.html#go1.14.minor\r\n\r\nAlso contains the support for `spack external find go` ",
+    "performed_via_github_app": null
+}

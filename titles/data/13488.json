@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13488",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13488/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13488/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13488/events",
+    "html_url": "https://github.com/spack/spack/pull/13488",
+    "id": 514098364,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMzNzY4MDQ0",
+    "number": 13488,
+    "title": "fix issue where spack.util.url.join() failed to correctly handle absolute path components",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 497155826,
+            "node_id": "MDU6TGFiZWw0OTcxNTU4MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/url-parsing",
+            "name": "url-parsing",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-10-29T17:35:27Z",
+    "updated_at": "2019-11-08T16:42:16Z",
+    "closed_at": "2019-11-01T10:42:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13488",
+        "html_url": "https://github.com/spack/spack/pull/13488",
+        "diff_url": "https://github.com/spack/spack/pull/13488.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13488.patch"
+    },
+    "body": "Needed to resolve #13474.\r\nOther fixes might be necessary.",
+    "performed_via_github_app": null
+}

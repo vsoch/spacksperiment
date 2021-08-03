@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16767",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16767/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16767/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16767/events",
+    "html_url": "https://github.com/spack/spack/pull/16767",
+    "id": 623464331,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDIyMTI5MzQ0",
+    "number": 16767,
+    "title": "Add GitHub Action to automatically notify maintainers",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1483219753,
+            "node_id": "MDU6TGFiZWwxNDgzMjE5NzUz",
+            "url": "https://api.github.com/repos/spack/spack/labels/actions",
+            "name": "actions",
+            "color": "a1bce0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-22T20:38:06Z",
+    "updated_at": "2020-07-28T15:50:53Z",
+    "closed_at": "2020-05-22T20:38:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16767",
+        "html_url": "https://github.com/spack/spack/pull/16767",
+        "diff_url": "https://github.com/spack/spack/pull/16767.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16767.patch"
+    },
+    "body": "This is a follow-up to #12269 and attempts to resolve #15019.\r\n\r\nUnfortunately, we discovered that GitHub Actions do not have the necessary privileges to comment on PRs when the PR is opened from a fork of a repository, so this action is rather useless. The next step is to write a GitHub App to do the same action.\r\n\r\nOpening this PR just so there is a historical record of what was tried, I'll close it right away.",
+    "performed_via_github_app": null
+}

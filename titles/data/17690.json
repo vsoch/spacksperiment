@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17690",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17690/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17690/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17690/events",
+    "html_url": "https://github.com/spack/spack/pull/17690",
+    "id": 664980254,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU2MTI5ODk4",
+    "number": 17690,
+    "title": "Updated iq-tree package",
+    "user": {
+        "login": "ilbiondo",
+        "id": 61497728,
+        "node_id": "MDQ6VXNlcjYxNDk3NzI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61497728?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ilbiondo",
+        "html_url": "https://github.com/ilbiondo",
+        "followers_url": "https://api.github.com/users/ilbiondo/followers",
+        "following_url": "https://api.github.com/users/ilbiondo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ilbiondo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ilbiondo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ilbiondo/subscriptions",
+        "organizations_url": "https://api.github.com/users/ilbiondo/orgs",
+        "repos_url": "https://api.github.com/users/ilbiondo/repos",
+        "events_url": "https://api.github.com/users/ilbiondo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ilbiondo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-24T07:42:22Z",
+    "updated_at": "2020-07-30T03:20:46Z",
+    "closed_at": "2020-07-30T03:20:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17690",
+        "html_url": "https://github.com/spack/spack/pull/17690",
+        "diff_url": "https://github.com/spack/spack/pull/17690.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17690.patch"
+    },
+    "body": "LSD option and a new version.\r\n\r\nNote that GitHub doesn't generate tarballs correctly for projects that use submodules so for the 2.x releases the code comes directly from git.",
+    "performed_via_github_app": null
+}

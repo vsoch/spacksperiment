@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18170",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18170/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18170/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18170/events",
+    "html_url": "https://github.com/spack/spack/pull/18170",
+    "id": 681708666,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcwMDU0MDc5",
+    "number": 18170,
+    "title": "petsc: new version add support for +mumps +int64",
+    "user": {
+        "login": "lpoirel",
+        "id": 4563513,
+        "node_id": "MDQ6VXNlcjQ1NjM1MTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4563513?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lpoirel",
+        "html_url": "https://github.com/lpoirel",
+        "followers_url": "https://api.github.com/users/lpoirel/followers",
+        "following_url": "https://api.github.com/users/lpoirel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lpoirel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lpoirel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lpoirel/subscriptions",
+        "organizations_url": "https://api.github.com/users/lpoirel/orgs",
+        "repos_url": "https://api.github.com/users/lpoirel/repos",
+        "events_url": "https://api.github.com/users/lpoirel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lpoirel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-19T09:56:59Z",
+    "updated_at": "2020-08-25T12:08:00Z",
+    "closed_at": "2020-08-25T12:08:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18170",
+        "html_url": "https://github.com/spack/spack/pull/18170",
+        "diff_url": "https://github.com/spack/spack/pull/18170.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18170.patch"
+    },
+    "body": "The latest petsc release allows using mumps while using 64 bit integers :\r\nhttps://www.mcs.anl.gov/petsc/documentation/changes/313.html\r\nhttps://gitlab.com/petsc/petsc/-/merge_requests/2591/",
+    "performed_via_github_app": null
+}

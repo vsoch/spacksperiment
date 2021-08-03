@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18195",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18195/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18195/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18195/events",
+    "html_url": "https://github.com/spack/spack/pull/18195",
+    "id": 682846791,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcxMDIxMDE0",
+    "number": 18195,
+    "title": "ParaView, LLVM: add -shared-intel to solve intel linking failures",
+    "user": {
+        "login": "EthanS94",
+        "id": 33101855,
+        "node_id": "MDQ6VXNlcjMzMTAxODU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33101855?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/EthanS94",
+        "html_url": "https://github.com/EthanS94",
+        "followers_url": "https://api.github.com/users/EthanS94/followers",
+        "following_url": "https://api.github.com/users/EthanS94/following{/other_user}",
+        "gists_url": "https://api.github.com/users/EthanS94/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/EthanS94/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/EthanS94/subscriptions",
+        "organizations_url": "https://api.github.com/users/EthanS94/orgs",
+        "repos_url": "https://api.github.com/users/EthanS94/repos",
+        "events_url": "https://api.github.com/users/EthanS94/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/EthanS94/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 22,
+    "created_at": "2020-08-20T16:00:25Z",
+    "updated_at": "2021-02-09T22:26:50Z",
+    "closed_at": "2021-02-09T22:26:50Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18195",
+        "html_url": "https://github.com/spack/spack/pull/18195",
+        "diff_url": "https://github.com/spack/spack/pull/18195.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18195.patch"
+    },
+    "body": "@chuckatkins fixes #18194 \r\n\r\nThis PR adds -shared-intel to the linking flags for LLVM, Mesa, and ParaView when using the intel compiler. This adds the flag specifically for each package. There may be a more general solution.",
+    "performed_via_github_app": null
+}

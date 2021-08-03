@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14902",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14902/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14902/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14902/events",
+    "html_url": "https://github.com/spack/spack/pull/14902",
+    "id": 563716900,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0MDc3Mzcw",
+    "number": 14902,
+    "title": "blast-plus: build fails on the IBM POWER8 unless the packaged config.guess is updated",
+    "user": {
+        "login": "dnanto",
+        "id": 49757922,
+        "node_id": "MDQ6VXNlcjQ5NzU3OTIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49757922?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dnanto",
+        "html_url": "https://github.com/dnanto",
+        "followers_url": "https://api.github.com/users/dnanto/followers",
+        "following_url": "https://api.github.com/users/dnanto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dnanto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dnanto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dnanto/subscriptions",
+        "organizations_url": "https://api.github.com/users/dnanto/orgs",
+        "repos_url": "https://api.github.com/users/dnanto/repos",
+        "events_url": "https://api.github.com/users/dnanto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dnanto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 883727171,
+            "node_id": "MDU6TGFiZWw4ODM3MjcxNzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/power",
+            "name": "power",
+            "color": "8a8edb",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-02-12T03:14:40Z",
+    "updated_at": "2020-10-16T10:07:35Z",
+    "closed_at": "2020-10-16T10:07:35Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14902",
+        "html_url": "https://github.com/spack/spack/pull/14902",
+        "diff_url": "https://github.com/spack/spack/pull/14902.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14902.patch"
+    },
+    "body": "NCBI packaged versions >=2.9.0 with a config.guess from 2013-02-12. This caused spack install to fail. The message suggested running `wget -O config.guess 'https://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD'` to obtain the latest config.guess script. Including the diff and patching it from within package.py resolved the issue.",
+    "performed_via_github_app": null
+}

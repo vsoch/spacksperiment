@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13639",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13639/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13639/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13639/events",
+    "html_url": "https://github.com/spack/spack/pull/13639",
+    "id": 519632494,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM4MzM3NjA2",
+    "number": 13639,
+    "title": "[Draft] py-geant4 (g4py)",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1281134171,
+            "node_id": "MDU6TGFiZWwxMjgxMTM0MTcx",
+            "url": "https://api.github.com/repos/spack/spack/labels/hep",
+            "name": "hep",
+            "color": "bfdadc",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-11-08T03:08:37Z",
+    "updated_at": "2019-11-17T22:33:12Z",
+    "closed_at": "2019-11-17T22:32:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13639",
+        "html_url": "https://github.com/spack/spack/pull/13639",
+        "diff_url": "https://github.com/spack/spack/pull/13639.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13639.patch"
+    },
+    "body": "Draft of a package shipping the [Geant4 python bindings](https://gitlab.cern.ch/geant4/geant4/tree/master/environments/g4py).\r\nSame-version-pinning as already working in `adios` package for a very similar situation.\r\n\r\nNote 1: `-lG4OpenGL` lib seam to be required to build `g4py`, otherwise related libs are not found during linking. Even with `^geant4+opengl` the lib is still missing in the install, but `^geant4+opengl+x11` helps.\r\n\r\nThe error that is then showing up in linking is\r\n```\r\n/usr/bin/ld: aTouchableHistoryAllocator: TLS reference in /home/axel/src/spack/opt/spack/linux-ubuntu18.04-skylake/gcc-8.3.0/geant4-10.04-bch5g6maf7srrfzageovu34dk3zyapmf/bin/../lib/libG4tracking.so mismatches non-TLS reference in CMakeFiles/pyG4geometry.dir/pyG4TouchableHistory.cc.o\r\n/home/axel/src/spack/opt/spack/linux-ubuntu18.04-skylake/gcc-8.3.0/geant4-10.04-bch5g6maf7srrfzageovu34dk3zyapmf/bin/../lib/libG4tracking.so: error adding symbols: Bad value\r\ncollect2: error: ld returned 1 exit status\r\n```\r\n\r\nNote 2: `g4py` tries to link `-lboost_python` instead of `-lboost_python37`\r\nNote 3: somehow `-lG4gl2ps` and `-lG4clhep` are also non-optional.\r\n\r\nNote 3: due to some problems installing root #13637 I am testing this package via `spack install py-geant4 ^root~xml~x~opengl`.\r\nNote 5: `root +x` (default) does not build (seen via `root ~xml`).\r\nNote 6: `root ~x` does not build unless I also deactivate `~opengl` (default: `+opengl`).\r\n",
+    "performed_via_github_app": null
+}

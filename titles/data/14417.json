@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14417",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14417/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14417/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14417/events",
+    "html_url": "https://github.com/spack/spack/pull/14417",
+    "id": 546491687,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYwMTU5Njk4",
+    "number": 14417,
+    "title": "Adding a new package, scikit-build, which is useful for building Python Extensions",
+    "user": {
+        "login": "coreyjadams",
+        "id": 6619961,
+        "node_id": "MDQ6VXNlcjY2MTk5NjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6619961?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/coreyjadams",
+        "html_url": "https://github.com/coreyjadams",
+        "followers_url": "https://api.github.com/users/coreyjadams/followers",
+        "following_url": "https://api.github.com/users/coreyjadams/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coreyjadams/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/coreyjadams/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coreyjadams/subscriptions",
+        "organizations_url": "https://api.github.com/users/coreyjadams/orgs",
+        "repos_url": "https://api.github.com/users/coreyjadams/repos",
+        "events_url": "https://api.github.com/users/coreyjadams/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/coreyjadams/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-01-07T20:30:20Z",
+    "updated_at": "2020-01-08T16:06:48Z",
+    "closed_at": "2020-01-08T16:06:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14417",
+        "html_url": "https://github.com/spack/spack/pull/14417",
+        "diff_url": "https://github.com/spack/spack/pull/14417.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14417.patch"
+    },
+    "body": "Scikit-build is a useful python repository for building python extensions that use CMake.  It is pure python and independent of cmake itself.\r\n\r\nSource code: https://github.com/scikit-build/scikit-build\r\nDocumentation: https://scikit-build.readthedocs.io/en/latest/index.html\r\n\r\nThis PR is exclusively the addition of a package for scikit-build.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17940",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17940/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17940/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17940/events",
+    "html_url": "https://github.com/spack/spack/pull/17940",
+    "id": 675243978,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY0NzkyNDkw",
+    "number": 17940,
+    "title": "Replace [] with () in description for r-dorng",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-07T19:59:09Z",
+    "updated_at": "2020-08-20T20:28:37Z",
+    "closed_at": "2020-08-09T11:54:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17940",
+        "html_url": "https://github.com/spack/spack/pull/17940",
+        "diff_url": "https://github.com/spack/spack/pull/17940.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17940.patch"
+    },
+    "body": "The tcl module for r-dorng will fail to load due to the [] characters in\r\nthe description. This happens for Tcl formatted modules loaded by Lmod\r\nat least.\r\n\r\n```\r\nmodule load r-dorng-1.7.1-gcc-9.2.0-wtq7bne\r\nLmod has detected the following error: .../spack/share/spack/modules/linux-centos7-broadwell/r-dorng-1.7.1-gcc-9.2.0-wtq7bne:(r-dorng-1.7.1-gcc-9.2.0-wtq7bne):\r\ninvalid command name \"L'Ecuyer\"\r\n```\r\n\r\nSplit text for short and long descriptions.",
+    "performed_via_github_app": null
+}

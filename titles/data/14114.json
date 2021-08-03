@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14114",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14114/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14114/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14114/events",
+    "html_url": "https://github.com/spack/spack/pull/14114",
+    "id": 536470570,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUxOTk0ODA3",
+    "number": 14114,
+    "title": "Build xed CLI for the intel-xed package",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-12-11T16:10:44Z",
+    "updated_at": "2019-12-11T20:03:16Z",
+    "closed_at": "2019-12-11T18:13:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14114",
+        "html_url": "https://github.com/spack/spack/pull/14114",
+        "diff_url": "https://github.com/spack/spack/pull/14114.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14114.patch"
+    },
+    "body": "The xed CLI is handy, and can be gotten by building the examples in the\r\nintel-xed package. This PR builds the examples and installs the xed CLI.\r\nIt would also be possible to install more of the example binaries if\r\nsomeone thinks they are useful.",
+    "performed_via_github_app": null
+}

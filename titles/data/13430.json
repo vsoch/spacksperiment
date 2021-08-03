@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13430",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13430/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13430/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13430/events",
+    "html_url": "https://github.com/spack/spack/pull/13430",
+    "id": 512201351,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMyMjU5MDAz",
+    "number": 13430,
+    "title": "allow bootstrap buildcache install of patchelf",
+    "user": {
+        "login": "marcmengel",
+        "id": 254807,
+        "node_id": "MDQ6VXNlcjI1NDgwNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/254807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marcmengel",
+        "html_url": "https://github.com/marcmengel",
+        "followers_url": "https://api.github.com/users/marcmengel/followers",
+        "following_url": "https://api.github.com/users/marcmengel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marcmengel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marcmengel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marcmengel/subscriptions",
+        "organizations_url": "https://api.github.com/users/marcmengel/orgs",
+        "repos_url": "https://api.github.com/users/marcmengel/repos",
+        "events_url": "https://api.github.com/users/marcmengel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marcmengel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-10-24T21:57:19Z",
+    "updated_at": "2019-11-01T16:19:50Z",
+    "closed_at": "2019-11-01T15:54:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13430",
+        "html_url": "https://github.com/spack/spack/pull/13430",
+        "diff_url": "https://github.com/spack/spack/pull/13430.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13430.patch"
+    },
+    "body": "\r\nCurrently, even if you have patchelf in your binary cache, you cannot use it, because we try to install it to relocate the patchelf binary.\r\n\r\nThis patch notices if we're trying to use patchelf on patchelf itself, and lets us use it to relocate it \r\n(Note, you have to make a copy of the binary to actually  patch it to avoid a busy file error).\r\n\r\nThis lets you \r\nspack buildcache install patchelf\r\nbefore buildcache installing anything else, and do all buildcache installs from the bottom up.\r\n",
+    "performed_via_github_app": null
+}

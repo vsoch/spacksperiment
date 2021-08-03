@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16219",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16219/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16219/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16219/events",
+    "html_url": "https://github.com/spack/spack/pull/16219",
+    "id": 604270151,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2ODk2MDE1",
+    "number": 16219,
+    "title": "opengl : add all older versions",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1022989250,
+            "node_id": "MDU6TGFiZWwxMDIyOTg5MjUw",
+            "url": "https://api.github.com/repos/spack/spack/labels/opengl",
+            "name": "opengl",
+            "color": "c2d9f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-21T20:38:03Z",
+    "updated_at": "2020-04-21T21:20:46Z",
+    "closed_at": "2020-04-21T21:20:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16219",
+        "html_url": "https://github.com/spack/spack/pull/16219",
+        "diff_url": "https://github.com/spack/spack/pull/16219.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16219.patch"
+    },
+    "body": "The changes in this pull request revise the `opengl` package so that all older versions of the library are included (see [the OpenGL wiki](https://www.khronos.org/opengl/wiki/History_of_OpenGL) for more information). These changes are important for older systems, which tend to only support versions of OpenGL up through `@1.4`.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18124",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18124/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18124/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18124/events",
+    "html_url": "https://github.com/spack/spack/pull/18124",
+    "id": 680553223,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY5MDkwNTg5",
+    "number": 18124,
+    "title": "use the 'fork' start method for multiprocessing, even on macOS with Python>=3.8",
+    "user": {
+        "login": "r-xue",
+        "id": 3730692,
+        "node_id": "MDQ6VXNlcjM3MzA2OTI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3730692?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/r-xue",
+        "html_url": "https://github.com/r-xue",
+        "followers_url": "https://api.github.com/users/r-xue/followers",
+        "following_url": "https://api.github.com/users/r-xue/following{/other_user}",
+        "gists_url": "https://api.github.com/users/r-xue/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/r-xue/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/r-xue/subscriptions",
+        "organizations_url": "https://api.github.com/users/r-xue/orgs",
+        "repos_url": "https://api.github.com/users/r-xue/repos",
+        "events_url": "https://api.github.com/users/r-xue/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/r-xue/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2020-08-17T22:05:20Z",
+    "updated_at": "2020-09-02T23:34:39Z",
+    "closed_at": "2020-09-02T07:15:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18124",
+        "html_url": "https://github.com/spack/spack/pull/18124",
+        "diff_url": "https://github.com/spack/spack/pull/18124.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18124.patch"
+    },
+    "body": "This is intended to fix #14102, only relevant to macOS with Python=3.8.\r\n\r\nPython 3.8 in macOS switches to the `spawn` start method in multiprocessing as [default](https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods), so the resources of the parent process may not be inherited by the child process. Forcing \"fork\" start might not be a permanent solution (see [here](https://bugs.python.org/issue33725)), but at least get things working on macOS for now.\r\n\r\nI came across a similar issue in a different setting, which was reported [here](https://github.com/dfm/emcee/issues/335).",
+    "performed_via_github_app": null
+}

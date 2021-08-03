@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15252",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15252/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15252/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15252/events",
+    "html_url": "https://github.com/spack/spack/pull/15252",
+    "id": 572254485,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzgwOTkxNTUy",
+    "number": 15252,
+    "title": "Added version 0.12.0 to py-pyfftw",
+    "user": {
+        "login": "LDAmorim",
+        "id": 15057096,
+        "node_id": "MDQ6VXNlcjE1MDU3MDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15057096?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LDAmorim",
+        "html_url": "https://github.com/LDAmorim",
+        "followers_url": "https://api.github.com/users/LDAmorim/followers",
+        "following_url": "https://api.github.com/users/LDAmorim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LDAmorim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LDAmorim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LDAmorim/subscriptions",
+        "organizations_url": "https://api.github.com/users/LDAmorim/orgs",
+        "repos_url": "https://api.github.com/users/LDAmorim/repos",
+        "events_url": "https://api.github.com/users/LDAmorim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LDAmorim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-02-27T17:57:56Z",
+    "updated_at": "2020-03-05T18:39:35Z",
+    "closed_at": "2020-02-28T02:31:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15252",
+        "html_url": "https://github.com/spack/spack/pull/15252",
+        "diff_url": "https://github.com/spack/spack/pull/15252.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15252.patch"
+    },
+    "body": "Hi all,\r\nThis small PR allows **pyfftw** version 0.12.0 to be fetched/pulled in order to fix #15218.\r\n\r\n---\r\n\r\n#### Successful **pyfftw** installation on the system with:\r\n\r\n 1. macOS Catalina - %clang@11.0.0-apple (but with gcc@9.2.0 fortran compilers - see compilers.yaml below)\r\n 2. spack installed python (@3.7.6)\r\n 3. spack installed py-scipy (@1.4.1)\r\n 4. spack installed py-pfftw (@0.11.1)\r\n 5. spack commit \r\n```console\r\n$ git rev-parse HEAD\r\nf7d13b4779dd3caa8046ff92a07342bdbccb2969\r\n```",
+    "performed_via_github_app": null
+}

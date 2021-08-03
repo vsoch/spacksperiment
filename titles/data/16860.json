@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16860/events",
+    "html_url": "https://github.com/spack/spack/pull/16860",
+    "id": 626992777,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0ODgwNTA2",
+    "number": 16860,
+    "title": "bazel: Update for use with Fujitsu compiler",
+    "user": {
+        "login": "takanori-ihara",
+        "id": 62980219,
+        "node_id": "MDQ6VXNlcjYyOTgwMjE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62980219?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/takanori-ihara",
+        "html_url": "https://github.com/takanori-ihara",
+        "followers_url": "https://api.github.com/users/takanori-ihara/followers",
+        "following_url": "https://api.github.com/users/takanori-ihara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/takanori-ihara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/takanori-ihara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/takanori-ihara/subscriptions",
+        "organizations_url": "https://api.github.com/users/takanori-ihara/orgs",
+        "repos_url": "https://api.github.com/users/takanori-ihara/repos",
+        "events_url": "https://api.github.com/users/takanori-ihara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/takanori-ihara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1724606298,
+            "node_id": "MDU6TGFiZWwxNzI0NjA2Mjk4",
+            "url": "https://api.github.com/repos/spack/spack/labels/bazel",
+            "name": "bazel",
+            "color": "97ed93",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-05-29T04:39:49Z",
+    "updated_at": "2020-06-17T04:57:55Z",
+    "closed_at": "2020-06-17T03:18:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16860",
+        "html_url": "https://github.com/spack/spack/pull/16860",
+        "diff_url": "https://github.com/spack/spack/pull/16860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16860.patch"
+    },
+    "body": "Add 2 patches to use with Fujitsu compiler.\r\n",
+    "performed_via_github_app": null
+}

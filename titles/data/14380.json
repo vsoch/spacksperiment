@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14380",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14380/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14380/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14380/events",
+    "html_url": "https://github.com/spack/spack/pull/14380",
+    "id": 545306218,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU5MjI4NTM5",
+    "number": 14380,
+    "title": "Use Spack target architecture to determine OpenBLAS target",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-01-04T16:54:32Z",
+    "updated_at": "2020-01-24T15:29:57Z",
+    "closed_at": "2020-01-24T14:19:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14380",
+        "html_url": "https://github.com/spack/spack/pull/14380",
+        "diff_url": "https://github.com/spack/spack/pull/14380.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14380.patch"
+    },
+    "body": "Closes #10638.\r\nFixes #12235.\r\n\r\n- If the spack target is a generic (e.g. x86_64), OpenBLAS will now use\r\n  the 'DYNAMIC_ARCH' setting instead of targeting the host architecture\r\n- Translate spack-defined microarchitecture into OpenBLAS TARGET=\r\n  argument\r\n- Removes 'target', 'virtual_machine', 'avx2', 'avx512' variants as they\r\n  are no longer needed\r\n- Adds option to disable build of static libraries",
+    "performed_via_github_app": null
+}

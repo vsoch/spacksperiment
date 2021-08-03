@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18457",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18457/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18457/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18457/events",
+    "html_url": "https://github.com/spack/spack/pull/18457",
+    "id": 690509950,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc3Mzg3MTMx",
+    "number": 18457,
+    "title": "Mfem: Fix transitive hdf5 static libs",
+    "user": {
+        "login": "white238",
+        "id": 595301,
+        "node_id": "MDQ6VXNlcjU5NTMwMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/595301?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/white238",
+        "html_url": "https://github.com/white238",
+        "followers_url": "https://api.github.com/users/white238/followers",
+        "following_url": "https://api.github.com/users/white238/following{/other_user}",
+        "gists_url": "https://api.github.com/users/white238/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/white238/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/white238/subscriptions",
+        "organizations_url": "https://api.github.com/users/white238/orgs",
+        "repos_url": "https://api.github.com/users/white238/repos",
+        "events_url": "https://api.github.com/users/white238/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/white238/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-01T23:17:16Z",
+    "updated_at": "2020-09-03T01:56:50Z",
+    "closed_at": "2020-09-02T22:06:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18457",
+        "html_url": "https://github.com/spack/spack/pull/18457",
+        "diff_url": "https://github.com/spack/spack/pull/18457.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18457.patch"
+    },
+    "body": "When building mfem+netcdf~shared, I ran into a lot of missing symbols from hdf5 (netcdf depends on hdf5).  This fixes this and is tested via Serac on Toss3.",
+    "performed_via_github_app": null
+}

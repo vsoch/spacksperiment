@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16360",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16360/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16360/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16360/events",
+    "html_url": "https://github.com/spack/spack/pull/16360",
+    "id": 608501828,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEwMjY4NTcy",
+    "number": 16360,
+    "title": "openscenegraph: add @3.4.0, @3.4.1; add '+ffmpeg'",
+    "user": {
+        "login": "xjrc",
+        "id": 17277866,
+        "node_id": "MDQ6VXNlcjE3Mjc3ODY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17277866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xjrc",
+        "html_url": "https://github.com/xjrc",
+        "followers_url": "https://api.github.com/users/xjrc/followers",
+        "following_url": "https://api.github.com/users/xjrc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xjrc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xjrc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xjrc/subscriptions",
+        "organizations_url": "https://api.github.com/users/xjrc/orgs",
+        "repos_url": "https://api.github.com/users/xjrc/repos",
+        "events_url": "https://api.github.com/users/xjrc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xjrc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-28T17:50:28Z",
+    "updated_at": "2020-04-29T07:27:28Z",
+    "closed_at": "2020-04-29T07:27:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16360",
+        "html_url": "https://github.com/spack/spack/pull/16360",
+        "diff_url": "https://github.com/spack/spack/pull/16360.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16360.patch"
+    },
+    "body": "This pull request makes the following changes to the `openscenegraph` package:\r\n\r\n- Adds older versions `@3.4.0` and `@3.4.1`.\r\n- Adds the `+ffmpeg` variant to enable conditionally building with OpenSceneGraph's `ffmpeg` plugin.\r\n- Adds the previously missing `jasper` dependency to this package.\r\n\r\nI've verified that the following variants of this package build with `gcc@4.9.3` on architecture `linux-rhel7-broadwell` using  `qt@5.12.7+shared+opengl+webkit+dbus` as a `qt` base:\r\n\r\n- `openscenegraph@3.4.0+ffmpeg ^ffmpeg@4.4` (verified that this **doesn't** work)\r\n- `openscenegraph@3.4.0{+|~}ffmpeg ^ffmpeg@2.8.15` (verified that this **does** work)\r\n- `openscenegraph@3.4.1{+|~}ffmpeg ^ffmpeg@4.4`\r\n- `openscenegraph@3.6.4{+|~}ffmpeg ^ffmpeg@4.4`\r\n\r\nIn order to build `openscenegraph@3.4.0` the latest `ffmpeg` changes are required (see #16359).\r\n\r\nAlso, tagging @glennpj again as he's the most recent contributor to this package!",
+    "performed_via_github_app": null
+}

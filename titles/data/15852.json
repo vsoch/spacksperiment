@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15852",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15852/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15852/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15852/events",
+    "html_url": "https://github.com/spack/spack/pull/15852",
+    "id": 593483222,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk4MjU2MjY4",
+    "number": 15852,
+    "title": "Package rename: intel-mkl-dnn -> dnnl",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-03T16:00:10Z",
+    "updated_at": "2020-04-04T16:35:25Z",
+    "closed_at": "2020-04-04T16:35:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15852",
+        "html_url": "https://github.com/spack/spack/pull/15852",
+        "diff_url": "https://github.com/spack/spack/pull/15852.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15852.patch"
+    },
+    "body": "This PR includes the following changes:\r\n\r\n- [x] Intel MKL DNN was renamed to DNNL\r\n- [x] Variants were added to control CPU/GPU runtimes\r\n- [x] Intel MKL dependency was removed\r\n- [x] macOS builds TBB by default instead of OpenMP\r\n\r\nThe previous package built fine, but a few of the unit tests were failing (see https://github.com/intel/mkl-dnn/issues/680). With the TBB runtime, all tests pass on macOS 10.15.4 with Clang 11.0.3.\r\n\r\n@rsdubtso Thanks for your help in debugging this! If you see anything else in our package that should be changed, let me know. Also, if you or any other DNNL devs would like to be added as \"maintainers\" of this package, let me know. You don't have to be Spack experts, it just gives us someone to ping when a user encounters build issues or someone submits a PR to change the Spack package and we need reviewers.",
+    "performed_via_github_app": null
+}

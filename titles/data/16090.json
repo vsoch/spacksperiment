@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16090",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16090/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16090/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16090/events",
+    "html_url": "https://github.com/spack/spack/pull/16090",
+    "id": 601113623,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0NDIwNTY1",
+    "number": 16090,
+    "title": "openbabel: fix compilation errors",
+    "user": {
+        "login": "athanasio",
+        "id": 12595662,
+        "node_id": "MDQ6VXNlcjEyNTk1NjYy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12595662?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/athanasio",
+        "html_url": "https://github.com/athanasio",
+        "followers_url": "https://api.github.com/users/athanasio/followers",
+        "following_url": "https://api.github.com/users/athanasio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/athanasio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/athanasio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/athanasio/subscriptions",
+        "organizations_url": "https://api.github.com/users/athanasio/orgs",
+        "repos_url": "https://api.github.com/users/athanasio/repos",
+        "events_url": "https://api.github.com/users/athanasio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/athanasio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-16T14:37:15Z",
+    "updated_at": "2020-04-16T15:49:44Z",
+    "closed_at": "2020-04-16T15:49:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16090",
+        "html_url": "https://github.com/spack/spack/pull/16090",
+        "diff_url": "https://github.com/spack/spack/pull/16090.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16090.patch"
+    },
+    "body": "- Disable maeparser as it is broken with CMake\r\n- Added missing dependencies",
+    "performed_via_github_app": null
+}

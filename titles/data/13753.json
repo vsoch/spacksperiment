@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13753",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13753/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13753/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13753/events",
+    "html_url": "https://github.com/spack/spack/pull/13753",
+    "id": 523447292,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxNDQ5NDEw",
+    "number": 13753,
+    "title": "Fix parsing of key=value pairs",
+    "user": {
+        "login": "obreitwi",
+        "id": 123140,
+        "node_id": "MDQ6VXNlcjEyMzE0MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/obreitwi",
+        "html_url": "https://github.com/obreitwi",
+        "followers_url": "https://api.github.com/users/obreitwi/followers",
+        "following_url": "https://api.github.com/users/obreitwi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/obreitwi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/obreitwi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/obreitwi/subscriptions",
+        "organizations_url": "https://api.github.com/users/obreitwi/orgs",
+        "repos_url": "https://api.github.com/users/obreitwi/repos",
+        "events_url": "https://api.github.com/users/obreitwi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/obreitwi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-11-15T12:38:00Z",
+    "updated_at": "2021-06-11T14:01:01Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13753",
+        "html_url": "https://github.com/spack/spack/pull/13753",
+        "diff_url": "https://github.com/spack/spack/pull/13753.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13753.patch"
+    },
+    "body": "Fix parsing key-value pairs being too greedy and only working if the\r\nkey=value pair is the last entry in the spec.\r\n\r\nExample:\r\n```\r\n$ spack spec \"py-matplotlib backend=agg target=x86_64 +image ^python@3.7.5\"\r\n==> Error: invalid values for variant \"backend\" in package \"py-matplotlib\": ['agg target=x86_64 +image ^python@3.7.5']\r\n```\r\n\r\nThe error is that the parser just checks for the first entry being\r\nnon-whitespace (`[\\S]`) and then simply matches the whole remaining\r\nstring (`.*`). However, we want the parser to match non-whitespace\r\ncharacters only.\r\n\r\nFixes: #13752\r\n\r\nChange-Id: I2314bbddff385fe5ccf6a39260332ec842d1b0cf",
+    "performed_via_github_app": null
+}

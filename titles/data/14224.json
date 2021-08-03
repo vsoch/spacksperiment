@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14224",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14224/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14224/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14224/events",
+    "html_url": "https://github.com/spack/spack/pull/14224",
+    "id": 540402210,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1MjE3MjE3",
+    "number": 14224,
+    "title": "root: Fix root+x breakage from #11129",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-12-19T15:56:11Z",
+    "updated_at": "2020-01-24T13:09:13Z",
+    "closed_at": "2020-01-23T17:42:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14224",
+        "html_url": "https://github.com/spack/spack/pull/14224",
+        "diff_url": "https://github.com/spack/spack/pull/14224.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14224.patch"
+    },
+    "body": "For those unfamiliar with this longstanding issue, here's a quick summary:\r\n\r\n- The design of Unices strongly favors putting all headers/libraries/binaries in one place, whereas the design of Spack strongly favors putting each package in its own prefix. As a result, if no further action is taken, file lookup sadness ensues.\r\n- Spack's standard answer to this problem is the moral equivalent of crafting a CPATH which contains the include prefix of all dependencies during a build (using headers as an example, but it's the same idea for libraries & friends). That's `SPACK_INCLUDE_DIRS`.\r\n- Sadly, this technique breaks when a package defines a header whose name clashes with that of a header of a dependency. Which is arguably a failure of C/++'s non-namespaced header file model, but well, we can't fix legacy programming languages...\r\n- As it happens, ROOT builds encounter this edge case because both `asimage` (internally built by ROOT) and `python` (used by ROOT) define an `import.h` header. That's issue https://github.com/spack/spack/issues/10850 .\r\n- In an attempt to fix that bug, PR https://github.com/spack/spack/pull/11129 disabled the `SPACK_INCLUDE_DIRS` mechanism for ROOT builds under the assumption that CMake would manage to find all the dependencies and to set include paths more precisely than Spack can.\r\n- This was forgetting, however, that not everyone uses CMake, and as a result that PR broke all X11 and OpenGL-related functionality in ROOT. That was issue https://github.com/spack/spack/issues/12481 .\r\n- So now, what I'm proposing to do is to bring back just enough of `SPACK_INCLUDE_DIRS` to get `root+x` and `root+x+opengl` builds to work again.\r\n\r\nFixes https://github.com/spack/spack/issues/12481 .",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17857",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17857/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17857/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17857/events",
+    "html_url": "https://github.com/spack/spack/pull/17857",
+    "id": 672283307,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYyMzQ3ODcx",
+    "number": 17857,
+    "title": "cray support: do not specify target args",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-08-03T19:09:53Z",
+    "updated_at": "2020-08-04T19:10:39Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17857",
+        "html_url": "https://github.com/spack/spack/pull/17857",
+        "diff_url": "https://github.com/spack/spack/pull/17857.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17857.patch"
+    },
+    "body": "We already load the module associated with the target on Cray systems. Delegate to cray modules for targeting options for the compiler.\r\n\r\nThis is important because Cray compiler wrappers enable combinations of compilers that we otherwise cannot concretize for, such as `%gcc@8.1.0 target=zen2`. The Cray module gracefully backs up to zen1 for that install. We cannot solve the problem by backtracking the architecture in Spack as we do on other systems, because Cray does not always publish modules for all ancestors to a given architecture they support.\r\n\r\nAll necessary information is already on the spec, since the Cray platform is noted in the architecture.",
+    "performed_via_github_app": null
+}

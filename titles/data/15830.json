@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15830",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15830/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15830/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15830/events",
+    "html_url": "https://github.com/spack/spack/pull/15830",
+    "id": 592589782,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk3NTQ0Mjcx",
+    "number": 15830,
+    "title": "unqlite: Patching unqlite to be able to build a shared library",
+    "user": {
+        "login": "mdorier",
+        "id": 598250,
+        "node_id": "MDQ6VXNlcjU5ODI1MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/598250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mdorier",
+        "html_url": "https://github.com/mdorier",
+        "followers_url": "https://api.github.com/users/mdorier/followers",
+        "following_url": "https://api.github.com/users/mdorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mdorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mdorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mdorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/mdorier/orgs",
+        "repos_url": "https://api.github.com/users/mdorier/repos",
+        "events_url": "https://api.github.com/users/mdorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mdorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-04-02T12:22:59Z",
+    "updated_at": "2020-04-02T22:15:46Z",
+    "closed_at": "2020-04-02T22:15:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15830",
+        "html_url": "https://github.com/spack/spack/pull/15830",
+        "diff_url": "https://github.com/spack/spack/pull/15830.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15830.patch"
+    },
+    "body": "This PR adds a patch to unqlite to enable building it a shared library instead of of static one, and adds the necessary cmake_args to build the shared library by default from Spack.",
+    "performed_via_github_app": null
+}

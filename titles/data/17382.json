@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17382",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17382/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17382/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17382/events",
+    "html_url": "https://github.com/spack/spack/pull/17382",
+    "id": 651050593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ0MzkzNDAy",
+    "number": 17382,
+    "title": "intel-mpi: fix for wrong structure name instroduced in ea8a0be4",
+    "user": {
+        "login": "tz-rrze",
+        "id": 6088631,
+        "node_id": "MDQ6VXNlcjYwODg2MzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6088631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tz-rrze",
+        "html_url": "https://github.com/tz-rrze",
+        "followers_url": "https://api.github.com/users/tz-rrze/followers",
+        "following_url": "https://api.github.com/users/tz-rrze/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tz-rrze/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tz-rrze/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tz-rrze/subscriptions",
+        "organizations_url": "https://api.github.com/users/tz-rrze/orgs",
+        "repos_url": "https://api.github.com/users/tz-rrze/repos",
+        "events_url": "https://api.github.com/users/tz-rrze/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tz-rrze/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-07-05T11:17:32Z",
+    "updated_at": "2020-07-05T19:51:02Z",
+    "closed_at": "2020-07-05T16:10:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17382",
+        "html_url": "https://github.com/spack/spack/pull/17382",
+        "diff_url": "https://github.com/spack/spack/pull/17382.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17382.patch"
+    },
+    "body": "it's mpi_compiler_wrappers and not mpi_compiler.wrappers (**underscore** instead of **dot** in front of \"wrappers\")\r\n\r\nfixes #17371 (2nd part)",
+    "performed_via_github_app": null
+}

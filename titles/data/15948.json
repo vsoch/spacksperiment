@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15948",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15948/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15948/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15948/events",
+    "html_url": "https://github.com/spack/spack/pull/15948",
+    "id": 596595409,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwODYyNzE0",
+    "number": 15948,
+    "title": "py-gpaw: Add libvdwxc as variant ",
+    "user": {
+        "login": "alchem0x2A",
+        "id": 6829706,
+        "node_id": "MDQ6VXNlcjY4Mjk3MDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6829706?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alchem0x2A",
+        "html_url": "https://github.com/alchem0x2A",
+        "followers_url": "https://api.github.com/users/alchem0x2A/followers",
+        "following_url": "https://api.github.com/users/alchem0x2A/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alchem0x2A/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alchem0x2A/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alchem0x2A/subscriptions",
+        "organizations_url": "https://api.github.com/users/alchem0x2A/orgs",
+        "repos_url": "https://api.github.com/users/alchem0x2A/repos",
+        "events_url": "https://api.github.com/users/alchem0x2A/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alchem0x2A/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-08T13:50:24Z",
+    "updated_at": "2020-04-09T03:22:20Z",
+    "closed_at": "2020-04-09T03:22:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15948",
+        "html_url": "https://github.com/spack/spack/pull/15948",
+        "diff_url": "https://github.com/spack/spack/pull/15948.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15948.patch"
+    },
+    "body": "From the documentation of GPAW, an additional variant of libvdwxc is added https://wiki.fysik.dtu.dk/gpaw/documentation/xc/libvdwxc.html\r\n\r\nI suggest to enable the libvdwxc variant by default.",
+    "performed_via_github_app": null
+}

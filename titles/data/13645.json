@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13645",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13645/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13645/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13645/events",
+    "html_url": "https://github.com/spack/spack/pull/13645",
+    "id": 519920341,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzM4NTk4Njk0",
+    "number": 13645,
+    "title": "Update openfoam to use new environment api (ref: #11115, 9ddc98e46a73)",
+    "user": {
+        "login": "olesenm",
+        "id": 76406,
+        "node_id": "MDQ6VXNlcjc2NDA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/76406?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olesenm",
+        "html_url": "https://github.com/olesenm",
+        "followers_url": "https://api.github.com/users/olesenm/followers",
+        "following_url": "https://api.github.com/users/olesenm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olesenm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olesenm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olesenm/subscriptions",
+        "organizations_url": "https://api.github.com/users/olesenm/orgs",
+        "repos_url": "https://api.github.com/users/olesenm/repos",
+        "events_url": "https://api.github.com/users/olesenm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olesenm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-11-08T09:58:37Z",
+    "updated_at": "2019-11-09T14:33:14Z",
+    "closed_at": "2019-11-08T16:32:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13645",
+        "html_url": "https://github.com/spack/spack/pull/13645",
+        "diff_url": "https://github.com/spack/spack/pull/13645.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13645.patch"
+    },
+    "body": "- build:\r\n  no special treatment - already addressed in the spack-Allwmake script\r\n\r\n- run:\r\n  use environment from the OpenFOAM etc/bashrc",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18062",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18062/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18062/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18062/events",
+    "html_url": "https://github.com/spack/spack/pull/18062",
+    "id": 678859167,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDY3NzM3MTYw",
+    "number": 18062,
+    "title": "Bash: add v5.0.18, external package detection",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-14T02:54:51Z",
+    "updated_at": "2020-08-14T13:57:32Z",
+    "closed_at": "2020-08-14T06:00:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18062",
+        "html_url": "https://github.com/spack/spack/pull/18062",
+        "diff_url": "https://github.com/spack/spack/pull/18062.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18062.patch"
+    },
+    "body": "Successfully builds and passes all unit tests on macOS 10.15.6 with Apple Clang 11.0.3.\r\n\r\n```yaml\r\n  bash:\r\n    externals:\r\n    - spec: bash@5.0.16\r\n      prefix: /Users/Adam/.spack/darwin/.spack-env/view\r\n    - spec: bash@3.2.57\r\n      prefix: /\r\n```\r\nBash is weird in the sense that they don't release a tarball for 5.0.18, they release a tarball for 5.0 and 18 consecutive patches to apply. I'm not sure if there's an easy way to sync Spack's version representation and our external package version detection.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15809",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15809/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15809/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15809/events",
+    "html_url": "https://github.com/spack/spack/pull/15809",
+    "id": 592115052,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk3MTU4ODAw",
+    "number": 15809,
+    "title": "Add build number to Arm compiler version identification",
+    "user": {
+        "login": "LPettey-Arm",
+        "id": 58987326,
+        "node_id": "MDQ6VXNlcjU4OTg3MzI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58987326?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LPettey-Arm",
+        "html_url": "https://github.com/LPettey-Arm",
+        "followers_url": "https://api.github.com/users/LPettey-Arm/followers",
+        "following_url": "https://api.github.com/users/LPettey-Arm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LPettey-Arm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LPettey-Arm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LPettey-Arm/subscriptions",
+        "organizations_url": "https://api.github.com/users/LPettey-Arm/orgs",
+        "repos_url": "https://api.github.com/users/LPettey-Arm/repos",
+        "events_url": "https://api.github.com/users/LPettey-Arm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LPettey-Arm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-04-01T18:24:06Z",
+    "updated_at": "2020-04-07T15:58:55Z",
+    "closed_at": "2020-04-07T15:58:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15809",
+        "html_url": "https://github.com/spack/spack/pull/15809",
+        "diff_url": "https://github.com/spack/spack/pull/15809.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15809.patch"
+    },
+    "body": "Arm, Inc. intends to use Spack as part of new internal CI process for HPC applications. As such, we would like Spack to identify the build number of the compiler as well as the major, minor and minor minor version numbers. This change will not affect any other compiler version identification. Thanks!",
+    "performed_via_github_app": null
+}

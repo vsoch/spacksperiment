@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16989",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16989/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16989/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16989/events",
+    "html_url": "https://github.com/spack/spack/pull/16989",
+    "id": 633385037,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDMwMDM5NDIy",
+    "number": 16989,
+    "title": "chill: Update dependency versions",
+    "user": {
+        "login": "jjolly",
+        "id": 137005,
+        "node_id": "MDQ6VXNlcjEzNzAwNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/137005?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jjolly",
+        "html_url": "https://github.com/jjolly",
+        "followers_url": "https://api.github.com/users/jjolly/followers",
+        "following_url": "https://api.github.com/users/jjolly/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jjolly/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jjolly/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jjolly/subscriptions",
+        "organizations_url": "https://api.github.com/users/jjolly/orgs",
+        "repos_url": "https://api.github.com/users/jjolly/repos",
+        "events_url": "https://api.github.com/users/jjolly/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jjolly/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-06-07T12:47:49Z",
+    "updated_at": "2020-06-16T06:08:35Z",
+    "closed_at": "2020-06-16T06:08:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16989",
+        "html_url": "https://github.com/spack/spack/pull/16989",
+        "diff_url": "https://github.com/spack/spack/pull/16989.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16989.patch"
+    },
+    "body": "Specified Python to be v2.7 only, as Python3 support is not currently\r\nimplemented in chill.\r\n\r\nUpdate chill dependency versions for the following libraries to the\r\nspecific versions:\r\n\r\n    * rose:  v0.9.13.0\r\n    * bison: v3.4.2\r\n\r\nBoth rose and iegenlib are build time dependencies, but are also run\r\ntime dependencies. Added 'run' to the build type for both dependencies.",
+    "performed_via_github_app": null
+}

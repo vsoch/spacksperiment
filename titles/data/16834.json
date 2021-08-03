@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16834",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16834/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16834/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16834/events",
+    "html_url": "https://github.com/spack/spack/pull/16834",
+    "id": 626057818,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0MTMyMzEw",
+    "number": 16834,
+    "title": "Per os config",
+    "user": {
+        "login": "marcmengel",
+        "id": 254807,
+        "node_id": "MDQ6VXNlcjI1NDgwNw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/254807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marcmengel",
+        "html_url": "https://github.com/marcmengel",
+        "followers_url": "https://api.github.com/users/marcmengel/followers",
+        "following_url": "https://api.github.com/users/marcmengel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marcmengel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marcmengel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marcmengel/subscriptions",
+        "organizations_url": "https://api.github.com/users/marcmengel/orgs",
+        "repos_url": "https://api.github.com/users/marcmengel/repos",
+        "events_url": "https://api.github.com/users/marcmengel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marcmengel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-05-27T21:52:01Z",
+    "updated_at": "2020-08-19T16:29:07Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16834",
+        "html_url": "https://github.com/spack/spack/pull/16834",
+        "diff_url": "https://github.com/spack/spack/pull/16834.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16834.patch"
+    },
+    "body": "This is a resubmit of https://github.com/spack/spack/pull/13686\r\nI've rebased the branch off of develop again.\r\n\r\nThis is a really simple change to allow per-operating-system config files; This is very useful in particular for shared filesystems, if you want to support,say, multiple CentOS releases, defining\r\nwhat packages are on the system in packages.yaml for example needs to be differrent per\r\noperating system, as opposed to other scope options.  With this patch you can have\r\n$SPACK_ROOT/etc/spack/centos6/packages.yaml\r\n$SPACK_ROOT/etc/spack/centos7/packages.yaml\r\nall applying to the appropriate operating system.\r\n",
+    "performed_via_github_app": null
+}

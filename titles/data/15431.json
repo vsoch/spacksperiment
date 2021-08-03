@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15431",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15431/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15431/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15431/events",
+    "html_url": "https://github.com/spack/spack/pull/15431",
+    "id": 578903598,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg2Mzk5MjQy",
+    "number": 15431,
+    "title": "fetch_strategy: remove vestigial code",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-10T22:43:34Z",
+    "updated_at": "2020-03-11T10:24:44Z",
+    "closed_at": "2020-03-11T10:24:39Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15431",
+        "html_url": "https://github.com/spack/spack/pull/15431",
+        "diff_url": "https://github.com/spack/spack/pull/15431.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15431.patch"
+    },
+    "body": "This code is not used anywhere in the project, and the import of xml causes errors on systems for which the default python was built without xml support.",
+    "performed_via_github_app": null
+}

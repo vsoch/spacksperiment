@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17399",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17399/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17399/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17399/events",
+    "html_url": "https://github.com/spack/spack/pull/17399",
+    "id": 651780641,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ0OTcwMzQy",
+    "number": 17399,
+    "title": "Rocm update py torch",
+    "user": {
+        "login": "srekolam",
+        "id": 67086238,
+        "node_id": "MDQ6VXNlcjY3MDg2MjM4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67086238?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srekolam",
+        "html_url": "https://github.com/srekolam",
+        "followers_url": "https://api.github.com/users/srekolam/followers",
+        "following_url": "https://api.github.com/users/srekolam/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srekolam/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srekolam/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srekolam/subscriptions",
+        "organizations_url": "https://api.github.com/users/srekolam/orgs",
+        "repos_url": "https://api.github.com/users/srekolam/repos",
+        "events_url": "https://api.github.com/users/srekolam/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srekolam/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-07-06T19:51:39Z",
+    "updated_at": "2020-07-07T15:58:34Z",
+    "closed_at": "2020-07-07T15:58:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17399",
+        "html_url": "https://github.com/spack/spack/pull/17399",
+        "diff_url": "https://github.com/spack/spack/pull/17399.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17399.patch"
+    },
+    "body": "made changes to enable the build and install of py-torch for rocm . I have tested the build and install for rocm-3.5.1 on centos8.1.\r\nThe script python('tools/amd_build/build_amd.py') should be invoked for rocm. ",
+    "performed_via_github_app": null
+}

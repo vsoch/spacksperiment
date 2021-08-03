@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17827",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17827/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17827/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17827/events",
+    "html_url": "https://github.com/spack/spack/pull/17827",
+    "id": 670573800,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDYwODMxODg3",
+    "number": 17827,
+    "title": "bugfix: fix spack buildcache list --allarch",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-08-01T06:14:14Z",
+    "updated_at": "2020-08-01T19:21:59Z",
+    "closed_at": "2020-08-01T15:36:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17827",
+        "html_url": "https://github.com/spack/spack/pull/17827",
+        "diff_url": "https://github.com/spack/spack/pull/17827.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17827.patch"
+    },
+    "body": "Fixes #17469.\r\n    \r\n`spack buildcache list` was trying to construct an `Arch` object and compare it to `arch_for_spec(<spec>)`. for each spec in the buildcache.  `Arch` objects are only intended to be constructed for the machine they describe. The `ArchSpec` object (part of the `Spec`) is the descriptor that lets us talk about architectures anywhere.\r\n    \r\n- [x] Make it easier to get a `Spec` with a proper `ArchSpec` from an `Arch` object via new `Arch.to_spec()` method.\r\n    \r\n- [x] Pull `spack.architecture.default_arch()` out of `spack.architecture.sys_type()` so we can get an `Arch` instead of a string.\r\n    \r\n- [x] Modify `spack buildcache list` and `spack buildcache install` to filter with `Spec` matching instead of using `Arch`.\r\n\r\n- [x] regression test",
+    "performed_via_github_app": null
+}

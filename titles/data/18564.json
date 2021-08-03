@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18564",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18564/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18564/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18564/events",
+    "html_url": "https://github.com/spack/spack/pull/18564",
+    "id": 695744840,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDgxOTM4MzE3",
+    "number": 18564,
+    "title": "metis: fix darwin install name",
+    "user": {
+        "login": "garth-wells",
+        "id": 3431333,
+        "node_id": "MDQ6VXNlcjM0MzEzMzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3431333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/garth-wells",
+        "html_url": "https://github.com/garth-wells",
+        "followers_url": "https://api.github.com/users/garth-wells/followers",
+        "following_url": "https://api.github.com/users/garth-wells/following{/other_user}",
+        "gists_url": "https://api.github.com/users/garth-wells/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/garth-wells/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/garth-wells/subscriptions",
+        "organizations_url": "https://api.github.com/users/garth-wells/orgs",
+        "repos_url": "https://api.github.com/users/garth-wells/repos",
+        "events_url": "https://api.github.com/users/garth-wells/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/garth-wells/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-08T10:14:27Z",
+    "updated_at": "2020-09-09T02:01:22Z",
+    "closed_at": "2020-09-09T02:01:22Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18564",
+        "html_url": "https://github.com/spack/spack/pull/18564",
+        "diff_url": "https://github.com/spack/spack/pull/18564.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18564.patch"
+    },
+    "body": "Fixes a linking problem on macos. Same fix (and problem) as  #12871 and consistent with ParMETIS (https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/parmetis/package.py#L82).",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14493",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14493/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14493/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14493/events",
+    "html_url": "https://github.com/spack/spack/pull/14493",
+    "id": 549684680,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzYyNzMwNjgw",
+    "number": 14493,
+    "title": "mesa: check aarch64 system type as well",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-14T16:36:53Z",
+    "updated_at": "2020-01-16T18:21:35Z",
+    "closed_at": "2020-01-16T18:21:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14493",
+        "html_url": "https://github.com/spack/spack/pull/14493",
+        "diff_url": "https://github.com/spack/spack/pull/14493.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14493.patch"
+    },
+    "body": "to disable use of libunwind.  Without this mesa fails to build\r\nusing recent Cray compilers - cce 9 and higher -  on aarch64 systems.\r\n\r\nSigned-off-by: Howard Pritchard <hppritcha@gmail.com>",
+    "performed_via_github_app": null
+}

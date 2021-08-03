@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15962",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15962/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15962/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15962/events",
+    "html_url": "https://github.com/spack/spack/pull/15962",
+    "id": 596925945,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAxMTMyNTMw",
+    "number": 15962,
+    "title": "Papi packge: refactored to inherit from AutotoolsPackage",
+    "user": {
+        "login": "G-Ragghianti",
+        "id": 33492707,
+        "node_id": "MDQ6VXNlcjMzNDkyNzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33492707?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/G-Ragghianti",
+        "html_url": "https://github.com/G-Ragghianti",
+        "followers_url": "https://api.github.com/users/G-Ragghianti/followers",
+        "following_url": "https://api.github.com/users/G-Ragghianti/following{/other_user}",
+        "gists_url": "https://api.github.com/users/G-Ragghianti/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/G-Ragghianti/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/G-Ragghianti/subscriptions",
+        "organizations_url": "https://api.github.com/users/G-Ragghianti/orgs",
+        "repos_url": "https://api.github.com/users/G-Ragghianti/repos",
+        "events_url": "https://api.github.com/users/G-Ragghianti/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/G-Ragghianti/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-08T23:39:10Z",
+    "updated_at": "2020-04-09T13:24:14Z",
+    "closed_at": "2020-04-09T07:13:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15962",
+        "html_url": "https://github.com/spack/spack/pull/15962",
+        "diff_url": "https://github.com/spack/spack/pull/15962.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15962.patch"
+    },
+    "body": "In addition to reimplementing this package as an AutotoolsPackage, I fixed a problem that was preventing the patch from working correctly when compiling old versions with newer gcc.  This now works as intended.",
+    "performed_via_github_app": null
+}

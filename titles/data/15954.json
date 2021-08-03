@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15954",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15954/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15954/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15954/events",
+    "html_url": "https://github.com/spack/spack/pull/15954",
+    "id": 596745708,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwOTg1NTky",
+    "number": 15954,
+    "title": "[WIP] AutotoolsPackage: ld access in /",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2020-04-08T17:37:48Z",
+    "updated_at": "2021-03-19T22:42:13Z",
+    "closed_at": "2021-03-19T22:42:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15954",
+        "html_url": "https://github.com/spack/spack/pull/15954",
+        "diff_url": "https://github.com/spack/spack/pull/15954.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15954.patch"
+    },
+    "body": "This PR tries to get rid of the (non-fatal) warning\r\n```\r\n/sbin/ldconfig.real:\r\n  Can't create temporary cache file /etc/ld.so.cache~:\r\n    Permission denied\r\n```\r\n\r\nwhen installing packages such as `ncurses`.\r\n\r\nThe proposed patch, setting an env recommended by @junghans, does not seam to fix this yet, as far as I could test on Ubuntu 18.04 with `GNU ld (GNU Binutils for Ubuntu) 2.30` and GCC 7.5.0.\r\n",
+    "performed_via_github_app": null
+}

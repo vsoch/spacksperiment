@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16385",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16385/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16385/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16385/events",
+    "html_url": "https://github.com/spack/spack/pull/16385",
+    "id": 609667041,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDExMjEzMTQ0",
+    "number": 16385,
+    "title": "Adapt to the latest Acts developments",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-30T07:30:05Z",
+    "updated_at": "2020-05-08T05:53:51Z",
+    "closed_at": "2020-05-07T13:40:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16385",
+        "html_url": "https://github.com/spack/spack/pull/16385",
+        "diff_url": "https://github.com/spack/spack/pull/16385.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16385.patch"
+    },
+    "body": "A long time ago, the Acts project (whose name was then capitalized ACTS) used\r\nto maintain multiple software repositories:\r\n\r\n- The heart of the tracking toolkit was located in the `acts-core` repository\r\n- Fast simulation extensions were located in the `acts-fatras` repository\r\n- Advanced usage examples were located in the `acts-framework` repository\r\n\r\nThis multi-repository organization, however, has been a source of constant\r\npain, which is why the various projects were gradually merged into a single\r\nmono-repo, called `acts`. Today, with the integration of `acts-framework`,\r\nthis merging process is reaching completion.\r\n\r\nThe present pull request adapts the Acts package to this evolution by...\r\n\r\n- Renaming the package to `acts`, reflecting the new repository name\r\n- Renaming the `test` variant to `unit_tests`, reflecting current CMake naming\r\n- Adding the new build variants that were inherited from `acts-framework`\r\n- Acknowledging the change of semantics of the `examples` variant, and only\r\n  supporting the new ones (as the former variant was almost unused)\r\n- Liberally using alphabetical order to make the package code more readable\r\n- Recording a large number of conflicts, some of which are introduced by the\r\n  merging of `acts-framework` and some of which already existed before\r\n- Using the new capitalization of \"Acts\"\r\n\r\n**EDIT 2020-05-05:** Added acts v0.23, which is the first release that incorporates these changes.\r\n\r\n**EDIT 2020-05-07:** Added acts v0.22.1, a [very minor bugfix](https://github.com/acts-project/acts/releases/tag/v0.22.01).",
+    "performed_via_github_app": null
+}

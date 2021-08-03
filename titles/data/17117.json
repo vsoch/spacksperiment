@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17117",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17117/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17117/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17117/events",
+    "html_url": "https://github.com/spack/spack/pull/17117",
+    "id": 639743276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDM1Mjc4MTYx",
+    "number": 17117,
+    "title": "argobots/bolt: update package.py",
+    "user": {
+        "login": "shintaro-iwasaki",
+        "id": 15073003,
+        "node_id": "MDQ6VXNlcjE1MDczMDAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15073003?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shintaro-iwasaki",
+        "html_url": "https://github.com/shintaro-iwasaki",
+        "followers_url": "https://api.github.com/users/shintaro-iwasaki/followers",
+        "following_url": "https://api.github.com/users/shintaro-iwasaki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shintaro-iwasaki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shintaro-iwasaki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shintaro-iwasaki/subscriptions",
+        "organizations_url": "https://api.github.com/users/shintaro-iwasaki/orgs",
+        "repos_url": "https://api.github.com/users/shintaro-iwasaki/repos",
+        "events_url": "https://api.github.com/users/shintaro-iwasaki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shintaro-iwasaki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-16T15:02:53Z",
+    "updated_at": "2020-10-30T15:48:18Z",
+    "closed_at": "2020-06-18T09:12:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17117",
+        "html_url": "https://github.com/spack/spack/pull/17117",
+        "diff_url": "https://github.com/spack/spack/pull/17117.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17117.patch"
+    },
+    "body": "This PR updates scripts of `argobots` and `bolt`.\r\n- `argobots`/`bolt`: move `master` to `main`\r\n- `argobots`: remove alpha/beta/RC versions that are no longer used.\r\n",
+    "performed_via_github_app": null
+}

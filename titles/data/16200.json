@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16200",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16200/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16200/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16200/events",
+    "html_url": "https://github.com/spack/spack/pull/16200",
+    "id": 603683740,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2NDIwMzY5",
+    "number": 16200,
+    "title": "Docs: Limit Microarch on Travis CI",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-21T03:47:52Z",
+    "updated_at": "2020-04-28T16:55:11Z",
+    "closed_at": "2020-04-28T16:54:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16200",
+        "html_url": "https://github.com/spack/spack/pull/16200",
+        "diff_url": "https://github.com/spack/spack/pull/16200.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16200.patch"
+    },
+    "body": "Update the travis CI docs: limiting the microarch is essential for caching.",
+    "performed_via_github_app": null
+}

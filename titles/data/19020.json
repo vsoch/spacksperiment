@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19020",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19020/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19020/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19020/events",
+    "html_url": "https://github.com/spack/spack/pull/19020",
+    "id": 709941461,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkzODc3MDk2",
+    "number": 19020,
+    "title": "itstool :Installation is not possible due to lack of itstool dependencies.",
+    "user": {
+        "login": "h-denpo",
+        "id": 57649496,
+        "node_id": "MDQ6VXNlcjU3NjQ5NDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/57649496?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/h-denpo",
+        "html_url": "https://github.com/h-denpo",
+        "followers_url": "https://api.github.com/users/h-denpo/followers",
+        "following_url": "https://api.github.com/users/h-denpo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/h-denpo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/h-denpo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/h-denpo/subscriptions",
+        "organizations_url": "https://api.github.com/users/h-denpo/orgs",
+        "repos_url": "https://api.github.com/users/h-denpo/repos",
+        "events_url": "https://api.github.com/users/h-denpo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/h-denpo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-09-28T05:23:51Z",
+    "updated_at": "2021-03-09T07:42:24Z",
+    "closed_at": "2020-10-12T08:29:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19020",
+        "html_url": "https://github.com/spack/spack/pull/19020",
+        "diff_url": "https://github.com/spack/spack/pull/19020.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19020.patch"
+    },
+    "body": " The installation fails with the following error.\r\n\r\n```\r\n   15    checking for python module libxml2... not found\r\n  >> 16    configure: error: Python module libxml2 is needed to run this packag\r\n```",
+    "performed_via_github_app": null
+}

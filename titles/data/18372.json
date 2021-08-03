@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18372",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18372/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18372/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18372/events",
+    "html_url": "https://github.com/spack/spack/issues/18372",
+    "id": 688433811,
+    "node_id": "MDU6SXNzdWU2ODg0MzM4MTE=",
+    "number": 18372,
+    "title": "BLAS/LAPACK providers should set CMake configure options in consumers",
+    "user": {
+        "login": "omor1",
+        "id": 4326436,
+        "node_id": "MDQ6VXNlcjQzMjY0MzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4326436?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omor1",
+        "html_url": "https://github.com/omor1",
+        "followers_url": "https://api.github.com/users/omor1/followers",
+        "following_url": "https://api.github.com/users/omor1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omor1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omor1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omor1/subscriptions",
+        "organizations_url": "https://api.github.com/users/omor1/orgs",
+        "repos_url": "https://api.github.com/users/omor1/repos",
+        "events_url": "https://api.github.com/users/omor1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omor1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-29T01:43:50Z",
+    "updated_at": "2020-08-31T09:50:08Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "BLAS and LAPACK providers should have a mechanism for allowing their consumers to properly set the CMake `BLA_STATIC` and `BLA_VENDOR` configuration options. This is similar in essence to the already-existing `blas_libs` property, but specific to CMake.\r\n\r\n### Rationale\r\nProperly linking to BLAS and LAPACK in a CMake is currently somewhat fraught. The preferred mechanism of using `FindBLAS` and `FindLAPACK` work, but without setting `BLA_STATIC` and `BLA_VENDOR`, which provider chosen can be unpredictable, particularly if a package provides multiple different versions of a library in the same prefix. An example of such is with Intel MKL, in which all variants (lp64/ilp64, threads/sequential, static/dynamic) are all installed in the same location with different naming.\r\n\r\nI would like to be able to have a CMake package `foo` depending on BLAS or LAPACK to have the correct implementation chosen via the dependency's specification: `spack install foo ^intel-mkl ~shared +ilp64 threads=none` should have `BLA_STATIC=ON` and `BLA_VENDOR=Intel10_64ilp_seq` set when configuring `foo`, as otherwise the default (dynamic linking, lp64, unsure about threading) may be chosen instead.\r\n\r\n### Description\r\nThe most straightforward solution is to add a `blas_cmake_args` property to BLAS providers (and `lapack_cmake_args` to LAPACK providers) that return arrays with the correct `BLA_STATIC` and `BLA_VENDOR` definitions. CMake packages can then make use of them as follows:\r\n```python\r\ndef cmake_args(self):\r\n    args = [\r\n        -DMY_DEFINITION=ON,\r\n        self.define_from_variant('EXAMPLE', 'example')\r\n    ]\r\n    args.extend(self.spec['lapack'].cmake_args)\r\n    return args\r\n```\r\n\r\n### Additional information\r\nSpack 0.15.4-710-12519193\r\n\r\nRelated to:\r\n* #234 (whoo, that's a while ago)\r\n* #13558: example attempting to set `BLA_VENDOR`, but I _think_ it's broken\u2014`self.spec['blas'].name.upper()` isn't a valid vendor in all cases\r\n* #9221: brief mention of `BLA_VENDOR`\r\n\r\nI don't mention ScaLAPACK as there is no official `FindScaLAPACK` module in CMake. (I've written an unofficial one that functions similarly to `FindBLAS` and `FindLAPACK`, but is somewhat more finicky as it requires determining the MPI implementation to work correctly.)\r\n\r\n### General information\r\n- [x] I have run `spack --version` and reported the version of Spack\r\n- [x] I have searched the issues of this repo and believe this is not a duplicate",
+    "performed_via_github_app": null
+}

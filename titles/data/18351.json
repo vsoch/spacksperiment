@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18351",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18351/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18351/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18351/events",
+    "html_url": "https://github.com/spack/spack/pull/18351",
+    "id": 687957823,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1MzA4NDA2",
+    "number": 18351,
+    "title": "Modules: Deduplicate suffixes but don't sort them.",
+    "user": {
+        "login": "RemiLacroix-IDRIS",
+        "id": 11938940,
+        "node_id": "MDQ6VXNlcjExOTM4OTQw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11938940?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RemiLacroix-IDRIS",
+        "html_url": "https://github.com/RemiLacroix-IDRIS",
+        "followers_url": "https://api.github.com/users/RemiLacroix-IDRIS/followers",
+        "following_url": "https://api.github.com/users/RemiLacroix-IDRIS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RemiLacroix-IDRIS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RemiLacroix-IDRIS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RemiLacroix-IDRIS/subscriptions",
+        "organizations_url": "https://api.github.com/users/RemiLacroix-IDRIS/orgs",
+        "repos_url": "https://api.github.com/users/RemiLacroix-IDRIS/repos",
+        "events_url": "https://api.github.com/users/RemiLacroix-IDRIS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RemiLacroix-IDRIS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2020-08-28T09:56:23Z",
+    "updated_at": "2020-09-08T15:38:32Z",
+    "closed_at": "2020-09-08T14:43:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18351",
+        "html_url": "https://github.com/spack/spack/pull/18351",
+        "diff_url": "https://github.com/spack/spack/pull/18351.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18351.patch"
+    },
+    "body": "PR #14920 changed the behavior to sorting the suffixes. That change is causing some issues with our modules.\r\n\r\n`foo/X.Y.Z-cuda-mpi` becomes `foo/X.Y.Z-cuda-mpi` for example, which we aren't really happy about because it is causing duplicated modules if we don't pay attention and we cannot have consistent module naming without breaking existing submission scripts.\r\n\r\nThe documentation (https://spack.readthedocs.io/en/latest/module_file_support.html#selection-by-anonymous-specs) currently states:\r\n> Order does matter\r\n> The modifications associated with the all keyword are always evaluated first, no matter where they appear in the configuration file. All the other spec constraints are instead evaluated top to bottom.\r\n\r\nI think that it makes sense that \"modifications\" also apply to `suffixes`. As far as I can tell, the suffixes' ordering is indeed guaranteed to follow the ordering of configuration files (except for `all` which is considered first, as already noted in the documentation).\r\n",
+    "performed_via_github_app": null
+}

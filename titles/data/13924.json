@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13924",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13924/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13924/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13924/events",
+    "html_url": "https://github.com/spack/spack/pull/13924",
+    "id": 529686632,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ2NTE1OTQx",
+    "number": 13924,
+    "title": "Mass conversion of setup_(dependent_)?environment",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-28T04:30:18Z",
+    "updated_at": "2019-11-29T21:00:48Z",
+    "closed_at": "2019-11-29T21:00:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13924",
+        "html_url": "https://github.com/spack/spack/pull/13924",
+        "diff_url": "https://github.com/spack/spack/pull/13924.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13924.patch"
+    },
+    "body": "Felt like procrastinating my research, and I got tired of asking contributors to update `setup_environment` themselves.\r\n\r\n@alalazo can you take a look? My goal is to change the current functionality as little as possible, just replacing `setup_(dependent_)?_environment` and fixing bugs I see along the way.\r\n\r\nNow that no packages use `setup_(dependent_)?_environment`, should we delete those methods and the respective tests, or keep them around as deprecated functions for a little while?",
+    "performed_via_github_app": null
+}

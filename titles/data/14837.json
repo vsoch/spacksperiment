@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14837",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14837/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14837/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14837/events",
+    "html_url": "https://github.com/spack/spack/pull/14837",
+    "id": 561538140,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzcyMzI5NTI1",
+    "number": 14837,
+    "title": "Module index should not be unconditionally overwritten",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1685802635,
+            "node_id": "MDU6TGFiZWwxNjg1ODAyNjM1",
+            "url": "https://api.github.com/repos/spack/spack/labels/spack-chains",
+            "name": "spack-chains",
+            "color": "eda4a3",
+            "default": false,
+            "description": "Related to chaining Spack"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-02-07T10:04:14Z",
+    "updated_at": "2020-06-23T20:38:05Z",
+    "closed_at": "2020-06-23T20:38:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14837",
+        "html_url": "https://github.com/spack/spack/pull/14837",
+        "diff_url": "https://github.com/spack/spack/pull/14837.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14837.patch"
+    },
+    "body": "Uncovered after we switched our CI to generate modules for packages one-by-one rather than in bulk.\r\n\r\nGenerating a module for a single package overwrote the complete module index with a single entry, and broke our downstream Spack instances that needed the upstream module index (with all packages inside it).",
+    "performed_via_github_app": null
+}

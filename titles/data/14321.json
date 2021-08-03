@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14321",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14321/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14321/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14321/events",
+    "html_url": "https://github.com/spack/spack/issues/14321",
+    "id": 543978072,
+    "node_id": "MDU6SXNzdWU1NDM5NzgwNzI=",
+    "number": 14321,
+    "title": "Installation issue: intel-mpi@2019.6.154%gcc@9.2.0 ",
+    "user": {
+        "login": "mkiernan",
+        "id": 24193619,
+        "node_id": "MDQ6VXNlcjI0MTkzNjE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24193619?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mkiernan",
+        "html_url": "https://github.com/mkiernan",
+        "followers_url": "https://api.github.com/users/mkiernan/followers",
+        "following_url": "https://api.github.com/users/mkiernan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mkiernan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mkiernan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mkiernan/subscriptions",
+        "organizations_url": "https://api.github.com/users/mkiernan/orgs",
+        "repos_url": "https://api.github.com/users/mkiernan/repos",
+        "events_url": "https://api.github.com/users/mkiernan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mkiernan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-12-30T18:56:21Z",
+    "updated_at": "2021-01-16T20:22:54Z",
+    "closed_at": "2021-01-16T20:22:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Looks like the URL for intel-mpi 2019.6 is incorrect. \r\n\r\nAlso, is there any particular reason why the 2019.5.281 version has been skipped ?\r\n\r\nspack install intel-mpi@2019.6.154%gcc@9.2.0\r\n==> Installing intel-mpi\r\n==> Searching for binary cache of intel-mpi\r\n==> No binary for intel-mpi found: installing from source\r\n==> Fetching http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/16120/l_mpi_2019.6.154.tgz\r\n######################################################################## 100.0%\r\ncurl: (22) The requested URL returned error: 404 Not Found\r\n==> Failed to fetch file from URL: http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/16120/l_mpi_2019.6.154.tgz\r\n    URL http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/16120/l_mpi_2019.6.154.tgz was not found!\r\n==> Fetching from http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/16120/l_mpi_2019.6.154.tgz failed.\r\n==> Error: FetchError: All fetchers failed for spack-stage-intel-mpi-2019.6.154-vkmf2q2jbqucj5fupebl3cmf6o652iw4\r\n\r\n/shared/home/mk/azure-spack/spack/lib/spack/spack/package.py:1110, in do_fetch:\r\n       1107                raise FetchError(\"Will not fetch %s\" %\r\n       1108                                 self.spec.format('{name}{@version}'), ck_msg)\r\n       1109\r\n  >>   1110        self.stage.create()\r\n       1111        self.stage.fetch(mirror_only)\r\n       1112        self._fetch_time = time.time() - start_time\r\n       1113\r\n\r\n",
+    "performed_via_github_app": null
+}

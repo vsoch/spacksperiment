@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16182",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16182/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16182/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16182/events",
+    "html_url": "https://github.com/spack/spack/pull/16182",
+    "id": 603354413,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA2MTU2NjY0",
+    "number": 16182,
+    "title": "qscintilla",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2020-04-20T16:07:58Z",
+    "updated_at": "2020-05-08T16:34:17Z",
+    "closed_at": "2020-05-06T20:35:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16182",
+        "html_url": "https://github.com/spack/spack/pull/16182",
+        "diff_url": "https://github.com/spack/spack/pull/16182.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16182.patch"
+    },
+    "body": "In order for Qt packages to find their dependencies, the `QMAKEFEATURE` env var must be set appropriately at build time.  This PR adds that necessary step.\r\n",
+    "performed_via_github_app": null
+}

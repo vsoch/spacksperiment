@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17295",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17295/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17295/events",
+    "html_url": "https://github.com/spack/spack/pull/17295",
+    "id": 647395873,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQxNDMwMDQ0",
+    "number": 17295,
+    "title": "py-mpi4py: Implement headers Property",
+    "user": {
+        "login": "sebasgo",
+        "id": 1256877,
+        "node_id": "MDQ6VXNlcjEyNTY4Nzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1256877?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sebasgo",
+        "html_url": "https://github.com/sebasgo",
+        "followers_url": "https://api.github.com/users/sebasgo/followers",
+        "following_url": "https://api.github.com/users/sebasgo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sebasgo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sebasgo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sebasgo/subscriptions",
+        "organizations_url": "https://api.github.com/users/sebasgo/orgs",
+        "repos_url": "https://api.github.com/users/sebasgo/repos",
+        "events_url": "https://api.github.com/users/sebasgo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sebasgo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 936777283,
+            "node_id": "MDU6TGFiZWw5MzY3NzcyODM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/headers",
+            "name": "headers",
+            "color": "782caa",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-29T13:52:04Z",
+    "updated_at": "2020-06-30T02:36:39Z",
+    "closed_at": "2020-06-30T02:36:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17295",
+        "html_url": "https://github.com/spack/spack/pull/17295",
+        "diff_url": "https://github.com/spack/spack/pull/17295.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17295.patch"
+    },
+    "body": "py-mpi4py installs its header files at a difficult-to-predict location:\r\n\r\n    $prefix/lib/python-x.y/site-packages/mpi4py/include\r\n\r\nWith the new `headers` properties, dependent packages have now an easy\r\nway to obtain this location:\r\n\r\n    spec['py-mpi4py'].headers.directories[0]",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13991",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13991/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13991/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13991/events",
+    "html_url": "https://github.com/spack/spack/pull/13991",
+    "id": 533083849,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQ5MjIyMTE4",
+    "number": 13991,
+    "title": "Spec Header Dirs: Only first include/",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 936777283,
+            "node_id": "MDU6TGFiZWw5MzY3NzcyODM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/headers",
+            "name": "headers",
+            "color": "782caa",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-12-05T02:26:40Z",
+    "updated_at": "2019-12-07T07:47:08Z",
+    "closed_at": "2019-12-07T07:47:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13991",
+        "html_url": "https://github.com/spack/spack/pull/13991",
+        "diff_url": "https://github.com/spack/spack/pull/13991.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13991.patch"
+    },
+    "body": "Avoid matching recurringly nested include paths that most certainly refer to internally shipped libraries in packages.\r\nExample in CUDA Toolkit #13819 #13983, shipping a libc++ fork internally with libcu++ since 10.2.89: `<prefix>/include/cuda/std/detail/libcxx/include`.\r\n\r\nQuick fix #13969 \r\n\r\nA more thorough solution is not to recursively search for headers anymore since this is against the idea of C/C++ facade headers: https://github.com/spack/spack/issues/13969#issuecomment-561929481 Unfortunately, it's not that easy for us to find which headers are facade and which ones are detail, but I am not sure we have to know anything besides the include dir locations.\r\n\r\nGenerally, just searching for *any* `include/` in the overall path (instead of just taking the `<prefix>/include`) is dangerous as well. For example, spack could be installed in `/my/large/software/include/here/is/axels/home/src/spack/` ;-)\r\n\r\nGeneral policy suggestion: just add `<prefix>/include` to the build environment by default. Packages that break this unix-wide default should provide the\r\n```py\r\n@property\r\ndef headers(self):\r\n```\r\n\r\n@adamjstewart mentioned on Slack that some Python packages might need special treatment, let's see if we can find examples again to double check.",
+    "performed_via_github_app": null
+}

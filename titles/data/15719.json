@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15719",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15719/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15719/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15719/events",
+    "html_url": "https://github.com/spack/spack/pull/15719",
+    "id": 589433195,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk0OTg2NDU1",
+    "number": 15719,
+    "title": "py-horovod: fix compilation of ~cuda",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2020-03-27T21:58:04Z",
+    "updated_at": "2020-03-30T21:09:19Z",
+    "closed_at": "2020-03-30T21:09:17Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15719",
+        "html_url": "https://github.com/spack/spack/pull/15719",
+        "diff_url": "https://github.com/spack/spack/pull/15719.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15719.patch"
+    },
+    "body": "Closes https://github.com/horovod/horovod/issues/1832\r\n\r\n@tgaddair let me know if you see anything else wrong with our build recipe. Also, if you or any other Horovod developers would like to be listed as \"maintainers\" of this package, let me know.",
+    "performed_via_github_app": null
+}

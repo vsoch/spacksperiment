@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17783",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17783/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17783/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17783/events",
+    "html_url": "https://github.com/spack/spack/pull/17783",
+    "id": 668494619,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU4OTczOTE4",
+    "number": 17783,
+    "title": "python: RPATH on fj",
+    "user": {
+        "login": "ketsubouchi",
+        "id": 67359246,
+        "node_id": "MDQ6VXNlcjY3MzU5MjQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67359246?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ketsubouchi",
+        "html_url": "https://github.com/ketsubouchi",
+        "followers_url": "https://api.github.com/users/ketsubouchi/followers",
+        "following_url": "https://api.github.com/users/ketsubouchi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ketsubouchi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ketsubouchi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ketsubouchi/subscriptions",
+        "organizations_url": "https://api.github.com/users/ketsubouchi/orgs",
+        "repos_url": "https://api.github.com/users/ketsubouchi/repos",
+        "events_url": "https://api.github.com/users/ketsubouchi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ketsubouchi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1452830834,
+            "node_id": "MDU6TGFiZWwxNDUyODMwODM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/fujitsu",
+            "name": "fujitsu",
+            "color": "d1234e",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2020-07-30T08:36:12Z",
+    "updated_at": "2020-08-03T03:53:15Z",
+    "closed_at": "2020-08-03T03:53:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17783",
+        "html_url": "https://github.com/spack/spack/pull/17783",
+        "diff_url": "https://github.com/spack/spack/pull/17783.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17783.patch"
+    },
+    "body": "See #4209 (Similar problem in Clay)\r\nThis patch patches `runtime_library_dir_option` function in distutils/unixccompiler.py\r\nFujitsu compiler use GNU LD. However, it recognized as \"unknown compiler\"\r\nSo I patched \"unknown compiler\" case to use GNU LD style options.\r\n\r\n>    def runtime_library_dir_option(self, dir):\r\n        compiler = os.path.basename(sysconfig.get_config_var(\"CC\"))\r\n        if sys.platform[:6] == \"darwin\":\r\n            # MacOSX's linker doesn't understand the -R flag at all\r\n            return \"-L\" + dir\r\n        elif sys.platform[:7] == \"freebsd\":\r\n            return \"-Wl,-rpath=\" + dir\r\n        elif sys.platform[:5] == \"hp-ux\":\r\n            if self._is_gcc(compiler):\r\n                return [\"-Wl,+s\", \"-L\" + dir]\r\n            return [\"+s\", \"-L\" + dir]\r\n        else:\r\n            if self._is_gcc(compiler):\r\n                if sysconfig.get_config_var(\"GNULD\") == \"yes\":\r\n                    # GNU ld needs an extra option to get a RUNPATH\r\n                    # instead of just an RPATH.\r\n                    return \"-Wl,--enable-new-dtags,-R\" + dir\r\n                else:\r\n                    return \"-Wl,-R\" + dir\r\n            else:\r\n                # No idea how --enable-new-dtags would be passed on to\r\n                # ld if this system was using GNU ld.  Don't know if a\r\n                # system like this even exists.\r\n                return \"-R\" + dir\r\n",
+    "performed_via_github_app": null
+}

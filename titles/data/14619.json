@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14619",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14619/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14619/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14619/events",
+    "html_url": "https://github.com/spack/spack/pull/14619",
+    "id": 554807939,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY2ODk1ODAz",
+    "number": 14619,
+    "title": "Get py-torch to build caffe2",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-24T15:41:54Z",
+    "updated_at": "2020-02-05T21:39:31Z",
+    "closed_at": "2020-01-25T04:57:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14619",
+        "html_url": "https://github.com/spack/spack/pull/14619",
+        "diff_url": "https://github.com/spack/spack/pull/14619.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14619.patch"
+    },
+    "body": "This PR gets the py-torch package to build with caffe2, and closes #14576. If building on a machine with CUDA but no GPU the build\r\nwill try to build with all compute capabilities. Older compute\r\ncapabilities are not supported so the build will fail. The list of\r\ncapabilities can be passed to the build using values set in the\r\ncuda_arch variant. Likewise, conflicts are also set to catch if the\r\nunsupported capabilities are listed in cuda_arch.\r\n\r\nThis PR also sets version constraints on using an external mkldnn for\r\nnewer versions. Currenly, only versions up to 0.4 use an external mkldnn\r\nlibrary. Also, the cuda variant is set to True, which restores\r\nprevious behavior.",
+    "performed_via_github_app": null
+}

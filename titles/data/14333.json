@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14333",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14333/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14333/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14333/events",
+    "html_url": "https://github.com/spack/spack/pull/14333",
+    "id": 544236642,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU4Mzk1ODM4",
+    "number": 14333,
+    "title": "Ignore coverage drop due to lack of macOS tests",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-31T17:32:17Z",
+    "updated_at": "2019-12-31T21:13:16Z",
+    "closed_at": "2019-12-31T21:13:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14333",
+        "html_url": "https://github.com/spack/spack/pull/14333",
+        "diff_url": "https://github.com/spack/spack/pull/14333.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14333.patch"
+    },
+    "body": "Ever since #13389 dropped macOS tests from PRs, GitHub has been a sea of \u274cas every single PR fails its codecov tests. This prevents PRs from being merged on mobile devices, and [causes](https://github.com/spack/spack/pull/14322#issuecomment-569898843) [confusion](https://github.com/spack/spack/pull/14147#issuecomment-565453920) [among](https://github.com/spack/spack/pull/13931#issuecomment-560079501) [PR](https://github.com/spack/spack/pull/13707#issuecomment-553587158) [contributors](https://github.com/spack/spack/pull/13658#issuecomment-552118257). \r\n\r\nA more permanent solution would be to:\r\n\r\n1. Skip coverage tests on package-only PRs, and\r\n2. Run macOS tests for all core changes\r\n\r\nThis PR is a workaround until that happens.\r\n\r\n@alalazo @tgamblin ",
+    "performed_via_github_app": null
+}

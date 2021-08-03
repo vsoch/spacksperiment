@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16105",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16105/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16105/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16105/events",
+    "html_url": "https://github.com/spack/spack/pull/16105",
+    "id": 601551032,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0Nzk5OTcy",
+    "number": 16105,
+    "title": "PAPI: implemented +shared and +static_tools variants",
+    "user": {
+        "login": "G-Ragghianti",
+        "id": 33492707,
+        "node_id": "MDQ6VXNlcjMzNDkyNzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33492707?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/G-Ragghianti",
+        "html_url": "https://github.com/G-Ragghianti",
+        "followers_url": "https://api.github.com/users/G-Ragghianti/followers",
+        "following_url": "https://api.github.com/users/G-Ragghianti/following{/other_user}",
+        "gists_url": "https://api.github.com/users/G-Ragghianti/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/G-Ragghianti/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/G-Ragghianti/subscriptions",
+        "organizations_url": "https://api.github.com/users/G-Ragghianti/orgs",
+        "repos_url": "https://api.github.com/users/G-Ragghianti/repos",
+        "events_url": "https://api.github.com/users/G-Ragghianti/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/G-Ragghianti/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-04-16T22:31:14Z",
+    "updated_at": "2020-11-16T12:51:10Z",
+    "closed_at": "2020-04-20T21:54:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16105",
+        "html_url": "https://github.com/spack/spack/pull/16105",
+        "diff_url": "https://github.com/spack/spack/pull/16105.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16105.patch"
+    },
+    "body": "This adds two variants (+shared and +static_tools) which are equivalent to the PAPI configure options `--with-shared_lib=yes` and `--with-static-tools=yes`.  It also explicitly enumerates the variant names that are also PAPI components instead of assuming that all variants are also components.\r\n\r\nCloses #16004",
+    "performed_via_github_app": null
+}

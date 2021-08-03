@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16049",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16049/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16049/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16049/events",
+    "html_url": "https://github.com/spack/spack/pull/16049",
+    "id": 599818801,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAzMzgxNTQw",
+    "number": 16049,
+    "title": "MAINT: Charliecloud OSX error",
+    "user": {
+        "login": "tylerjereddy",
+        "id": 7903078,
+        "node_id": "MDQ6VXNlcjc5MDMwNzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7903078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tylerjereddy",
+        "html_url": "https://github.com/tylerjereddy",
+        "followers_url": "https://api.github.com/users/tylerjereddy/followers",
+        "following_url": "https://api.github.com/users/tylerjereddy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tylerjereddy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tylerjereddy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tylerjereddy/subscriptions",
+        "organizations_url": "https://api.github.com/users/tylerjereddy/orgs",
+        "repos_url": "https://api.github.com/users/tylerjereddy/repos",
+        "events_url": "https://api.github.com/users/tylerjereddy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tylerjereddy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-04-14T19:51:31Z",
+    "updated_at": "2020-04-14T21:55:11Z",
+    "closed_at": "2020-04-14T21:55:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16049",
+        "html_url": "https://github.com/spack/spack/pull/16049",
+        "diff_url": "https://github.com/spack/spack/pull/16049.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16049.patch"
+    },
+    "body": "* raise an appropriate error when attempting to build\r\n`Charliecloud` on Mac OSX, since it will otherwise fail\r\nwith a more confusing configure stage link check failure\r\n\r\ncc @reidpr @junghans \r\n\r\nTechnically, the configure stage will almost certainly fail with `FreeBSD` as well since linker checks are Linux-specific at the moment, but maybe start with this for now.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16106",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16106/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16106/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16106/events",
+    "html_url": "https://github.com/spack/spack/pull/16106",
+    "id": 601570055,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0ODE2MjUx",
+    "number": 16106,
+    "title": "macOS: Fix emacs Linking",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-04-16T22:59:12Z",
+    "updated_at": "2020-04-17T00:44:41Z",
+    "closed_at": "2020-04-17T00:30:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16106",
+        "html_url": "https://github.com/spack/spack/pull/16106",
+        "diff_url": "https://github.com/spack/spack/pull/16106.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16106.patch"
+    },
+    "body": "Fix linking issue of emacs on macOS (clang and gcc).\r\n\r\nApplies the same work-around as conda-forge:\r\n  https://github.com/conda-forge/emacs-feedstock/blob/b051f6c928d8b99fed3fabd9a8d67be993f94494/recipe/build.sh\r\n\r\nHomebrew avoids this by linking against the system ncurses lib:\r\n  https://github.com/Homebrew/homebrew-core/blob/master/Formula/emacs.rb\r\n\r\nI tried this on Linux and there `tinfo` is always found properly inside spack, so the work-around is not needed.\r\n\r\nThanks to @maxthevenet for macOS testing!\r\n\r\nFix #16098",
+    "performed_via_github_app": null
+}

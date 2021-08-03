@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15758",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15758/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15758/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15758/events",
+    "html_url": "https://github.com/spack/spack/pull/15758",
+    "id": 590406477,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk1NzQ2MzMx",
+    "number": 15758,
+    "title": "Aded Option to Disable Shared Lua library Generation",
+    "user": {
+        "login": "rspavel",
+        "id": 4571189,
+        "node_id": "MDQ6VXNlcjQ1NzExODk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4571189?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rspavel",
+        "html_url": "https://github.com/rspavel",
+        "followers_url": "https://api.github.com/users/rspavel/followers",
+        "following_url": "https://api.github.com/users/rspavel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rspavel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rspavel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rspavel/subscriptions",
+        "organizations_url": "https://api.github.com/users/rspavel/orgs",
+        "repos_url": "https://api.github.com/users/rspavel/repos",
+        "events_url": "https://api.github.com/users/rspavel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rspavel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-03-30T16:01:06Z",
+    "updated_at": "2020-03-30T16:56:24Z",
+    "closed_at": "2020-03-30T16:56:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15758",
+        "html_url": "https://github.com/spack/spack/pull/15758",
+        "diff_url": "https://github.com/spack/spack/pull/15758.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15758.patch"
+    },
+    "body": "Added option to disable generation of shared object library for lua to\r\navoid build issues on static only platforms",
+    "performed_via_github_app": null
+}

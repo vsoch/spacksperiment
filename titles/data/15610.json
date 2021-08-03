@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15610",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15610/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15610/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15610/events",
+    "html_url": "https://github.com/spack/spack/pull/15610",
+    "id": 585360358,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzkxNzY2OTY0",
+    "number": 15610,
+    "title": "spack.relocate: add unit test",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-03-20T22:33:21Z",
+    "updated_at": "2020-03-24T08:03:02Z",
+    "closed_at": "2020-03-24T08:02:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15610",
+        "html_url": "https://github.com/spack/spack/pull/15610",
+        "diff_url": "https://github.com/spack/spack/pull/15610.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15610.patch"
+    },
+    "body": "This PR is a minor refactoring of a couple of functions in `spack.relocate` to be more in line with current practices in other parts Spack (see single commit descriptions for details). It also adds a unit test for the function searching for `patchelf`.",
+    "performed_via_github_app": null
+}

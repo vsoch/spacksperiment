@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14994",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14994/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14994/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14994/events",
+    "html_url": "https://github.com/spack/spack/pull/14994",
+    "id": 565372598,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc1NDI0ODU1",
+    "number": 14994,
+    "title": "Use separate build directory for gzip",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-14T14:48:58Z",
+    "updated_at": "2020-08-19T22:46:28Z",
+    "closed_at": "2020-02-16T14:31:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14994",
+        "html_url": "https://github.com/spack/spack/pull/14994",
+        "diff_url": "https://github.com/spack/spack/pull/14994.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14994.patch"
+    },
+    "body": "At least on mac systems (perhaps because of a case sensitivity issue?)\r\ngzip fails to build inside the source tree:\r\n```\r\nconfig.status: linking /var/folders/fy/x2xtwh1n7fn0_0q2kk29xkv9vvmbqb/T/spack-stage/s3j/spack-stage-gzip-1.10-iatwtuk2l5xgwmuh4pwu5bf27yezpydj/spack-src/GNUmakefile to GNUmakefile\r\nconfig.status: executing depfiles commands\r\n==> Executing phase: 'build'\r\n==> [2020-02-14-09:32:45.502913] 'make' '-j12'\r\nmake: GNUmakefile: Too many levels of symbolic links\r\nmake: stat: GNUmakefile: Too many levels of symbolic links\r\nmake: *** No rule to make target `GNUmakefile'.  Stop.\r\n```",
+    "performed_via_github_app": null
+}

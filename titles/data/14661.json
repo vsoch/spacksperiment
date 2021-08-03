@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14661",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14661/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14661/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14661/events",
+    "html_url": "https://github.com/spack/spack/pull/14661",
+    "id": 556670469,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY4Mzk4NTYx",
+    "number": 14661,
+    "title": "Faster spec parsing and imports",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025851999,
+            "node_id": "MDU6TGFiZWwxMDI1ODUxOTk5",
+            "url": "https://api.github.com/repos/spack/spack/labels/imports",
+            "name": "imports",
+            "color": "80f2ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-29T06:45:32Z",
+    "updated_at": "2020-02-14T22:11:18Z",
+    "closed_at": "2020-01-30T05:15:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14661",
+        "html_url": "https://github.com/spack/spack/pull/14661",
+        "diff_url": "https://github.com/spack/spack/pull/14661.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14661.patch"
+    },
+    "body": "Importing `package.py` files involves a lot of spec parsing, which currently takes the bulk of the time.  This `test.py` script:\r\n\r\n```python\r\n#!/usr/bin/env spack-python\r\nimport spack.repo\r\nfor name in spack.repo.all_package_names():\r\n    spack.repo.path.get_pkg_class(name)\r\n```\r\n\r\ntakes ~8.5s on my machine on current `develop`.  With the changes included here, it takes 7.4s.  It's small but it makes a difference when importing lots of files.  The new concretizer will import a lot of packages, so I'm trying to speed this up.\r\n\r\n- [x] Avoid auto-creating `Spec` objects in `filename_for_package_name()` when all we need is a package name.\r\n- [x] Avoid calling `traverse()` in `SpecParser`",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14128",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14128/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14128/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14128/events",
+    "html_url": "https://github.com/spack/spack/pull/14128",
+    "id": 536879409,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzUyMzMyMzk4",
+    "number": 14128,
+    "title": "Patch: explicitly use xbitmaps include dir in the automake package",
+    "user": {
+        "login": "awacha",
+        "id": 90952,
+        "node_id": "MDQ6VXNlcjkwOTUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/90952?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/awacha",
+        "html_url": "https://github.com/awacha",
+        "followers_url": "https://api.github.com/users/awacha/followers",
+        "following_url": "https://api.github.com/users/awacha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/awacha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/awacha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/awacha/subscriptions",
+        "organizations_url": "https://api.github.com/users/awacha/orgs",
+        "repos_url": "https://api.github.com/users/awacha/repos",
+        "events_url": "https://api.github.com/users/awacha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/awacha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-12-12T10:11:29Z",
+    "updated_at": "2019-12-14T16:54:27Z",
+    "closed_at": "2019-12-14T16:54:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14128",
+        "html_url": "https://github.com/spack/spack/pull/14128",
+        "diff_url": "https://github.com/spack/spack/pull/14128.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14128.patch"
+    },
+    "body": "Installing motif does not work, see the corresponding issue #14127 . The problem is that the upstream package does not expect header files from the `xbitmaps` package to appear in a different prefix than the other X11 libraries. I made a patch to correct for this, and force an autoreconf in the package.py script.\r\n\r\nAdditionally, I have found that autoreconf complains about missing AUTHORS and NEWS files in the source distribution. The same patch also adds dummy files to satisfy autoreconf.",
+    "performed_via_github_app": null
+}

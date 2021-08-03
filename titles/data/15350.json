@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15350",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15350/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15350/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15350/events",
+    "html_url": "https://github.com/spack/spack/pull/15350",
+    "id": 576039832,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzg0MTA1Mzk5",
+    "number": 15350,
+    "title": "lastz: declare ch as type int and add version 1.04.03",
+    "user": {
+        "login": "noguchi-k",
+        "id": 55966120,
+        "node_id": "MDQ6VXNlcjU1OTY2MTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55966120?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noguchi-k",
+        "html_url": "https://github.com/noguchi-k",
+        "followers_url": "https://api.github.com/users/noguchi-k/followers",
+        "following_url": "https://api.github.com/users/noguchi-k/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noguchi-k/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noguchi-k/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noguchi-k/subscriptions",
+        "organizations_url": "https://api.github.com/users/noguchi-k/orgs",
+        "repos_url": "https://api.github.com/users/noguchi-k/repos",
+        "events_url": "https://api.github.com/users/noguchi-k/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noguchi-k/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-03-05T07:11:55Z",
+    "updated_at": "2020-03-06T00:06:15Z",
+    "closed_at": "2020-03-05T21:06:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15350",
+        "html_url": "https://github.com/spack/spack/pull/15350",
+        "diff_url": "https://github.com/spack/spack/pull/15350.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15350.patch"
+    },
+    "body": "Administrator of `lastz` said that `ch` needs to be declared as type int in the function.\r\nso I declared `ch` as type int in the function.\r\n\r\nThis fix will be reflected the next release. I added version \"1.04.03\" in the recipe and applied a patch up to version \"1.04.03\".\r\n\r\nRef: https://github.com/lastz/lastz/commit/20aa14f483265b4eac97f25aca666c708b9655e4",
+    "performed_via_github_app": null
+}

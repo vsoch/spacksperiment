@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16972",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16972/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16972/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16972/events",
+    "html_url": "https://github.com/spack/spack/pull/16972",
+    "id": 631908603,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4NzE1NzI2",
+    "number": 16972,
+    "title": "intel-tbb: Fix for #16938 add custom libs method",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-06-05T20:02:08Z",
+    "updated_at": "2020-06-09T17:10:45Z",
+    "closed_at": "2020-06-06T21:12:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16972",
+        "html_url": "https://github.com/spack/spack/pull/16972",
+        "diff_url": "https://github.com/spack/spack/pull/16972.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16972.patch"
+    },
+    "body": "Override the libs method to look for libraries of form libtbb*\r\n(instead of inherited which looks for libintel-tbb*)\r\n\r\n(This is same patch as before, but cleaned up some git history)\r\n\r\nFixes #16938",
+    "performed_via_github_app": null
+}

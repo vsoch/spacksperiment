@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16480/events",
+    "html_url": "https://github.com/spack/spack/pull/16480",
+    "id": 612942818,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEzNzkxODgw",
+    "number": 16480,
+    "title": "Feature: add option to create view by copying/relocating files",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 877274892,
+            "node_id": "MDU6TGFiZWw4NzcyNzQ4OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/views",
+            "name": "views",
+            "color": "70ff6d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-05-05T22:52:40Z",
+    "updated_at": "2020-06-03T16:47:10Z",
+    "closed_at": "2020-06-03T16:45:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16480",
+        "html_url": "https://github.com/spack/spack/pull/16480",
+        "diff_url": "https://github.com/spack/spack/pull/16480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16480.patch"
+    },
+    "body": "Views can currently be created by symlinks or hardlinks. In both cases, dependencies are silently used from the original location.\r\n\r\nIn deployment contexts, this can cause permissions problems if one user installs a package and creates a public view for other users.\r\n\r\nThe `spack view copy` subcommand is an alternative that copies files into place, using logic from `lib/spack/spack/relocate.py` to edit the files in the new location to point to each other.\r\n\r\nTODO:\r\n- [x] tests",
+    "performed_via_github_app": null
+}

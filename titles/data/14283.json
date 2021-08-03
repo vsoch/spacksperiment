@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14283",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14283/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14283/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14283/events",
+    "html_url": "https://github.com/spack/spack/pull/14283",
+    "id": 541906804,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzU2NDU0OTUz",
+    "number": 14283,
+    "title": "libhio: remove autoreconf method",
+    "user": {
+        "login": "plamborn",
+        "id": 8998728,
+        "node_id": "MDQ6VXNlcjg5OTg3Mjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8998728?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/plamborn",
+        "html_url": "https://github.com/plamborn",
+        "followers_url": "https://api.github.com/users/plamborn/followers",
+        "following_url": "https://api.github.com/users/plamborn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/plamborn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/plamborn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/plamborn/subscriptions",
+        "organizations_url": "https://api.github.com/users/plamborn/orgs",
+        "repos_url": "https://api.github.com/users/plamborn/repos",
+        "events_url": "https://api.github.com/users/plamborn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/plamborn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-12-23T21:19:58Z",
+    "updated_at": "2020-01-25T02:20:59Z",
+    "closed_at": "2020-01-25T02:20:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14283",
+        "html_url": "https://github.com/spack/spack/pull/14283",
+        "diff_url": "https://github.com/spack/spack/pull/14283.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14283.patch"
+    },
+    "body": "The autoreconf is not necessary and can cause errors.",
+    "performed_via_github_app": null
+}

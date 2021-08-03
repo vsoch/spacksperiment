@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/14687",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/14687/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/14687/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/14687/events",
+    "html_url": "https://github.com/spack/spack/pull/14687",
+    "id": 557610233,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzY5MTcwMzg3",
+    "number": 14687,
+    "title": "lmod: update version of lmod to v8.3, updated docstring",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-01-30T16:31:08Z",
+    "updated_at": "2020-01-30T18:33:40Z",
+    "closed_at": "2020-01-30T18:33:17Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/14687",
+        "html_url": "https://github.com/spack/spack/pull/14687",
+        "diff_url": "https://github.com/spack/spack/pull/14687.diff",
+        "patch_url": "https://github.com/spack/spack/pull/14687.patch"
+    },
+    "body": "The first sentence in the docstring has been separated in its own paragraph since some tools (e.g. module generation) will use that as a short description.",
+    "performed_via_github_app": null
+}

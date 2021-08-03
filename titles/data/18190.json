@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18190",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18190/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18190/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18190/events",
+    "html_url": "https://github.com/spack/spack/pull/18190",
+    "id": 682619947,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDcwODMwMDEw",
+    "number": 18190,
+    "title": "gcc: fixed compilation on OpenSUSE",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-08-20T10:55:10Z",
+    "updated_at": "2020-08-20T15:42:26Z",
+    "closed_at": "2020-08-20T15:42:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18190",
+        "html_url": "https://github.com/spack/spack/pull/18190",
+        "diff_url": "https://github.com/spack/spack/pull/18190.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18190.patch"
+    },
+    "body": "fixes #17556\r\nfixes #10842\r\ncloses #18150\r\n\r\nSet location for dependencies specifying explicitly both the include and lib path. This permits to handle cases where the libraries are installed in `lib64` instead of `lib`",
+    "performed_via_github_app": null
+}

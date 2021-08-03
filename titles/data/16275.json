@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16275",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16275/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16275/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16275/events",
+    "html_url": "https://github.com/spack/spack/pull/16275",
+    "id": 606189565,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA4NDQ5ODMx",
+    "number": 16275,
+    "title": "adjust petsc to build cuda only when requested explicitly",
+    "user": {
+        "login": "js947",
+        "id": 2544051,
+        "node_id": "MDQ6VXNlcjI1NDQwNTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2544051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/js947",
+        "html_url": "https://github.com/js947",
+        "followers_url": "https://api.github.com/users/js947/followers",
+        "following_url": "https://api.github.com/users/js947/following{/other_user}",
+        "gists_url": "https://api.github.com/users/js947/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/js947/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/js947/subscriptions",
+        "organizations_url": "https://api.github.com/users/js947/orgs",
+        "repos_url": "https://api.github.com/users/js947/repos",
+        "events_url": "https://api.github.com/users/js947/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/js947/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2020-04-24T09:52:56Z",
+    "updated_at": "2020-04-29T20:39:58Z",
+    "closed_at": "2020-04-28T15:52:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16275",
+        "html_url": "https://github.com/spack/spack/pull/16275",
+        "diff_url": "https://github.com/spack/spack/pull/16275.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16275.patch"
+    },
+    "body": "Currently petsc package activates cuda support when cuda is anywhere in the spec (i.e. `'cuda' in spec`). This is perhaps a bit surprising as it means cuda support will be built if you ask for `petsc~cuda ^openmpi+cuda`. \r\n\r\nThis patch changes the PETSc package to only build with cuda support when `petsc+cuda` is specified. ",
+    "performed_via_github_app": null
+}

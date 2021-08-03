@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18983",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18983/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18983/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18983/events",
+    "html_url": "https://github.com/spack/spack/pull/18983",
+    "id": 709611659,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkzNjI4Mzc0",
+    "number": 18983,
+    "title": "Change how CUDA variants are handled for gpu-burn",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-26T21:10:50Z",
+    "updated_at": "2020-10-19T01:38:41Z",
+    "closed_at": "2020-10-12T12:00:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18983",
+        "html_url": "https://github.com/spack/spack/pull/18983",
+        "diff_url": "https://github.com/spack/spack/pull/18983.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18983.patch"
+    },
+    "body": "- Override the cuda_arch variant setup, with multi=False to ensure one\r\n  value is selected\r\n- Use a conflicts statement rather than InstallError",
+    "performed_via_github_app": null
+}

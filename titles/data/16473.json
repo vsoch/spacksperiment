@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16473",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16473/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16473/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16473/events",
+    "html_url": "https://github.com/spack/spack/pull/16473",
+    "id": 612791793,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDEzNjY5NDY5",
+    "number": 16473,
+    "title": "bugfix: spack shouldn't fail in an incomplete environment",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1566617052,
+            "node_id": "MDU6TGFiZWwxNTY2NjE3MDUy",
+            "url": "https://api.github.com/repos/spack/spack/labels/bugfix",
+            "name": "bugfix",
+            "color": "c4aaef",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2020-05-05T18:03:32Z",
+    "updated_at": "2020-06-10T17:18:26Z",
+    "closed_at": "2020-05-07T09:30:10Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16473",
+        "html_url": "https://github.com/spack/spack/pull/16473",
+        "diff_url": "https://github.com/spack/spack/pull/16473.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16473.patch"
+    },
+    "body": "Fixed #15884.\r\n\r\nSpack asks every package linked into an environment to tell us how environment variables should be modified when a spack environment is activated. As part of this, specs in an environment are symlinked into the environment's view (see #13249), and the package calculates environment modifications with *the default view as the prefix*.\r\n\r\nAll of this works nicely for pointing the user's environment at the view *if* every package is successfully linked. Unfortunately, right now we only track what specs \"should\" be in a view, not which specs actually are. So we end up calculating environment modifications on things that aren't linked into thee view, and the exception isn't caught, so lots of spack commands end up failing.\r\n\r\nThis fixes the issue by ignoring and warning about specs where calculating environment modifications fails. So we can still keep using Spack even if the current environment is incomplete.\r\n\r\nWe should probably also just avoid computing env modifications *entirely* for unlinked packages, but right now that is a slow operation (requires a lot of YAML parsing). We should revisit that when we have some better state management for views, but the fix adopted here will still be necessary, as we want spack commands to be resilient to other types of bugs in `setup_run_environment()` and friends. That code is in packages and we have to assume it could be buggy when we call it outside of builds (as it might fail more than just the build).\r\n\r\n- [x] add try/catch around calculation of each package's env modifications\r\n- [x] tests",
+    "performed_via_github_app": null
+}

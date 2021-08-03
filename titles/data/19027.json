@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/19027",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/19027/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/19027/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/19027/events",
+    "html_url": "https://github.com/spack/spack/pull/19027",
+    "id": 710365185,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDk0MjI2NjI0",
+    "number": 19027,
+    "title": "Bump rocblas to 3.8.0",
+    "user": {
+        "login": "haampie",
+        "id": 194764,
+        "node_id": "MDQ6VXNlcjE5NDc2NA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194764?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haampie",
+        "html_url": "https://github.com/haampie",
+        "followers_url": "https://api.github.com/users/haampie/followers",
+        "following_url": "https://api.github.com/users/haampie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haampie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haampie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haampie/subscriptions",
+        "organizations_url": "https://api.github.com/users/haampie/orgs",
+        "repos_url": "https://api.github.com/users/haampie/repos",
+        "events_url": "https://api.github.com/users/haampie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haampie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1571451565,
+            "node_id": "MDU6TGFiZWwxNTcxNDUxNTY1",
+            "url": "https://api.github.com/repos/spack/spack/labels/AMD",
+            "name": "AMD",
+            "color": "21a843",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-09-28T15:24:06Z",
+    "updated_at": "2020-10-02T16:14:13Z",
+    "closed_at": "2020-10-02T16:14:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/19027",
+        "html_url": "https://github.com/spack/spack/pull/19027",
+        "diff_url": "https://github.com/spack/spack/pull/19027.diff",
+        "patch_url": "https://github.com/spack/spack/pull/19027.patch"
+    },
+    "body": "and deploy `rocm_smi` executable in `bin/` folder. This is used in Tensile, which is part of rocblas.",
+    "performed_via_github_app": null
+}

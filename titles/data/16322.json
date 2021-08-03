@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/16322",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/16322/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/16322/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/16322/events",
+    "html_url": "https://github.com/spack/spack/pull/16322",
+    "id": 607562971,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDA5NTExNzE2",
+    "number": 16322,
+    "title": "Make mariadb provide mysql-client...",
+    "user": {
+        "login": "iarspider",
+        "id": 636602,
+        "node_id": "MDQ6VXNlcjYzNjYwMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/636602?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iarspider",
+        "html_url": "https://github.com/iarspider",
+        "followers_url": "https://api.github.com/users/iarspider/followers",
+        "following_url": "https://api.github.com/users/iarspider/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iarspider/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iarspider/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iarspider/subscriptions",
+        "organizations_url": "https://api.github.com/users/iarspider/orgs",
+        "repos_url": "https://api.github.com/users/iarspider/repos",
+        "events_url": "https://api.github.com/users/iarspider/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iarspider/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-27T13:44:29Z",
+    "updated_at": "2020-04-29T06:03:31Z",
+    "closed_at": "2020-04-27T16:01:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/16322",
+        "html_url": "https://github.com/spack/spack/pull/16322",
+        "diff_url": "https://github.com/spack/spack/pull/16322.diff",
+        "patch_url": "https://github.com/spack/spack/pull/16322.patch"
+    },
+    "body": "... as well as mariadb-client. Needed for ROOT.",
+    "performed_via_github_app": null
+}

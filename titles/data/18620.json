@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18620",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18620/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18620/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18620/events",
+    "html_url": "https://github.com/spack/spack/pull/18620",
+    "id": 698879106,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDg0Njc5NzU5",
+    "number": 18620,
+    "title": "Fixed to patch libtool existing in the lower directory.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2020-09-11T06:01:19Z",
+    "updated_at": "2020-09-28T10:48:49Z",
+    "closed_at": "2020-09-28T08:53:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18620",
+        "html_url": "https://github.com/spack/spack/pull/18620",
+        "diff_url": "https://github.com/spack/spack/pull/18620.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18620.patch"
+    },
+    "body": "`libtool` is not always generated only directly under `build_directory`.\r\nTherefore, search for `libtool` that exists in the lower directory and patch it in the same way.\r\n\r\nThis fix is an extension of the following pull request:\r\nhttps://github.com/spack/spack/pull/12004\r\nFYI, @NickRF @homerdin ",
+    "performed_via_github_app": null
+}

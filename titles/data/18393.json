@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18393",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18393/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18393/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18393/events",
+    "html_url": "https://github.com/spack/spack/pull/18393",
+    "id": 688581275,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDc1ODExNzg3",
+    "number": 18393,
+    "title": "[libdrm] AutotoolsPackage; %gcc@10.0.0 requires CFLAGS=-fcommon",
+    "user": {
+        "login": "wdconinc",
+        "id": 4656391,
+        "node_id": "MDQ6VXNlcjQ2NTYzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4656391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wdconinc",
+        "html_url": "https://github.com/wdconinc",
+        "followers_url": "https://api.github.com/users/wdconinc/followers",
+        "following_url": "https://api.github.com/users/wdconinc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wdconinc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wdconinc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wdconinc/subscriptions",
+        "organizations_url": "https://api.github.com/users/wdconinc/orgs",
+        "repos_url": "https://api.github.com/users/wdconinc/repos",
+        "events_url": "https://api.github.com/users/wdconinc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wdconinc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2020-08-29T18:20:16Z",
+    "updated_at": "2020-08-29T21:04:43Z",
+    "closed_at": "2020-08-29T20:39:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18393",
+        "html_url": "https://github.com/spack/spack/pull/18393",
+        "diff_url": "https://github.com/spack/spack/pull/18393.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18393.patch"
+    },
+    "body": "### Bugfix for `gcc@10.0.0:`\r\n\r\n`libdrm %gcc@10.2.0` fails to compile on `linux-ubuntu20.04-skylake_avx512` in `develop` with the following error ([spack-build-out.txt](https://github.com/spack/spack/files/5145785/spack-build-out.txt)):\r\n```console\r\n==> Installing libdrm\r\n==> No binary for libdrm found: installing from source\r\n==> Using cached archive: /data/spack/var/spack/cache/_source-cache/archive/6a/6a5337c054c0c47bc16607a21efa2b622e08030be4101ef4a241c5eb05b6619b.tar.gz\r\n==> libdrm: Executing phase: 'install'\r\n==> Error: ProcessError: Command exited with status 2:\r\n    'make' '-j16'\r\n\r\n1 error found in build log:\r\n     308      CC       bufctx.lo\r\n     309      CC       abi16.lo\r\n     310      CCLD     libdrm_nouveau.la\r\n     311    /usr/bin/ld: .libs/pushbuf.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/spack-src/nouveau/private.h:1\r\n            3: multiple definition of `nouveau_debug'; .libs/nouveau.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2\r\n            /spack-src/nouveau/private.h:13: first defined here\r\n     312    /usr/bin/ld: .libs/bufctx.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/spack-src/nouveau/private.h:13\r\n            : multiple definition of `nouveau_debug'; .libs/nouveau.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/\r\n            spack-src/nouveau/private.h:13: first defined here\r\n     313    /usr/bin/ld: .libs/abi16.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/spack-src/nouveau/private.h:13:\r\n             multiple definition of `nouveau_debug'; .libs/nouveau.o:/tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/s\r\n            pack-src/nouveau/private.h:13: first defined here\r\n  >> 314    collect2: error: ld returned 1 exit status\r\n     315    make[2]: *** [Makefile:657: libdrm_nouveau.la] Error 1\r\n     316    make[1]: *** [Makefile:859: all-recursive] Error 1\r\n     317    make: *** [Makefile:618: all] Error 2\r\n\r\nSee build log for details:\r\n  /tmp/wdconinc/spack-stage/spack-stage-libdrm-2.4.100-maf3nidkjafqyjfc66y4yvzxq6my4zl2/spack-build-out.txt\r\n```\r\n\r\nThis PR adds `CFLAGS=-fcommon` to the `configure` phase when `%gcc@10.0.0:`, which allows the compilation to succeed on my `%gcc@10.2.0:` ([spack-build-out.txt](https://github.com/spack/spack/files/5145819/spack-build-out.txt)).\r\n\r\n### Rewrite to use `AutotoolsPackage`\r\n\r\nFurthermore, anticipating the request, this is an autotools package, so it was rewritten to use AutotoolsPackage. The compiled versions on `%gcc@9.3.0` before and after the change were compared. The libraries had identical md5sum hashes. The only difference is that the previous version explicitly included the `make('check')` step, which is only included with `spack install --test all` in the AutotoolsPackage (as in the successful build output linked above).\r\n\r\n### Newer versions\r\n\r\nFinally, no attempt was made to support newer versions 2.4.101 or 2.4.102, which are distributed only as `tar.xz` files and use meson as the build system.",
+    "performed_via_github_app": null
+}

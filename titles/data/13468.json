@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13468",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13468/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13468/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13468/events",
+    "html_url": "https://github.com/spack/spack/pull/13468",
+    "id": 513371865,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzMzMTcxODA4",
+    "number": 13468,
+    "title": "CP2K: drop json-fortran dependency and add support for the Nvidia V100",
+    "user": {
+        "login": "dev-zero",
+        "id": 11307,
+        "node_id": "MDQ6VXNlcjExMzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dev-zero",
+        "html_url": "https://github.com/dev-zero",
+        "followers_url": "https://api.github.com/users/dev-zero/followers",
+        "following_url": "https://api.github.com/users/dev-zero/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dev-zero/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dev-zero/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dev-zero/subscriptions",
+        "organizations_url": "https://api.github.com/users/dev-zero/orgs",
+        "repos_url": "https://api.github.com/users/dev-zero/repos",
+        "events_url": "https://api.github.com/users/dev-zero/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dev-zero/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-28T15:18:09Z",
+    "updated_at": "2019-10-31T08:50:38Z",
+    "closed_at": "2019-10-29T13:08:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13468",
+        "html_url": "https://github.com/spack/spack/pull/13468",
+        "diff_url": "https://github.com/spack/spack/pull/13468.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13468.patch"
+    },
+    "body": "The json-support is now completely internal to the sirius dependency and the sirius support was only in the git-version of CP2K.",
+    "performed_via_github_app": null
+}

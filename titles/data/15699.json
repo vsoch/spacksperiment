@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15699",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15699/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15699/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15699/events",
+    "html_url": "https://github.com/spack/spack/pull/15699",
+    "id": 588634874,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk0MzQ0ODAz",
+    "number": 15699,
+    "title": "BLD: add XL support for pfunit (isolated version)",
+    "user": {
+        "login": "tylerjereddy",
+        "id": 7903078,
+        "node_id": "MDQ6VXNlcjc5MDMwNzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7903078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tylerjereddy",
+        "html_url": "https://github.com/tylerjereddy",
+        "followers_url": "https://api.github.com/users/tylerjereddy/followers",
+        "following_url": "https://api.github.com/users/tylerjereddy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tylerjereddy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tylerjereddy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tylerjereddy/subscriptions",
+        "organizations_url": "https://api.github.com/users/tylerjereddy/orgs",
+        "repos_url": "https://api.github.com/users/tylerjereddy/repos",
+        "events_url": "https://api.github.com/users/tylerjereddy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tylerjereddy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 16,
+    "created_at": "2020-03-26T18:28:44Z",
+    "updated_at": "2021-06-11T15:01:57Z",
+    "closed_at": "2021-06-11T15:01:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15699",
+        "html_url": "https://github.com/spack/spack/pull/15699",
+        "diff_url": "https://github.com/spack/spack/pull/15699.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15699.patch"
+    },
+    "body": "* pfunit `3.2.9` can now be built with XL compiler\r\ntoolchain; fixes are limited to this version because\r\nthe required changes were complex and time consuming\r\nto test\r\n\r\n* the changes include adding support for `xl_r` spec,\r\nFortran module path handling tailored to XLF, and a moderately-sized\r\npatch to avoid an apparent issue XLF has with deferred\r\nprocedure handling in inheritance chains\r\n\r\ncc: @AndrewGaspar @cferenba @gshipman @junghans \r\n\r\nProbably needs careful review. Haven't tried executing tests with it yet, but build succeeds with spack in my hands.",
+    "performed_via_github_app": null
+}

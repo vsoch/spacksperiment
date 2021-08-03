@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15186",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15186/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15186/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15186/events",
+    "html_url": "https://github.com/spack/spack/pull/15186",
+    "id": 570087093,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc5MTc5NjYz",
+    "number": 15186,
+    "title": "add new charmpp backend",
+    "user": {
+        "login": "s-sajid-ali",
+        "id": 30510036,
+        "node_id": "MDQ6VXNlcjMwNTEwMDM2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30510036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/s-sajid-ali",
+        "html_url": "https://github.com/s-sajid-ali",
+        "followers_url": "https://api.github.com/users/s-sajid-ali/followers",
+        "following_url": "https://api.github.com/users/s-sajid-ali/following{/other_user}",
+        "gists_url": "https://api.github.com/users/s-sajid-ali/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/s-sajid-ali/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/s-sajid-ali/subscriptions",
+        "organizations_url": "https://api.github.com/users/s-sajid-ali/orgs",
+        "repos_url": "https://api.github.com/users/s-sajid-ali/repos",
+        "events_url": "https://api.github.com/users/s-sajid-ali/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/s-sajid-ali/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2020-02-24T19:35:12Z",
+    "updated_at": "2020-05-12T22:08:16Z",
+    "closed_at": "2020-03-25T12:36:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15186",
+        "html_url": "https://github.com/spack/spack/pull/15186",
+        "diff_url": "https://github.com/spack/spack/pull/15186.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15186.patch"
+    },
+    "body": "As per https://github.com/UIUC-PPL/charm/issues/2477, an extra configuration step is needed when `backend=ucx`, hence I added a variant `ucx_pmi`. The default setting of `ucx_pmi` does not break the current logic but I'm not sure if there is a better way to do this (which would require a variant that is defined only if another variant is set to a particular value! ).\r\n\r\nThe doc error no longer exists for the latest charmpp release, hence it should only be fixed for older versions.\r\n\r\nFetching the latest version fails on develop, thus I switched to the github url but the checksums don't match. Perhaps someone who knows more about this package can point out what's going on. \r\n```\r\n[sajid@xrmlite ~]$ cd ~/packages/spack/ && git checkout develop && git log -n 1  && spack fetch charmpp@6.10.0\r\nAlready on 'develop'\r\nYour branch is up to date with 'origin/develop'.\r\ncommit 9b3f5f3890025494ffa620d144d22a4734c8fcee (HEAD -> develop, upstream/develop, origin/develop, origin/HEAD)\r\nAuthor: ktsai7 <35276356+ktsai7@users.noreply.github.com>\r\nDate:   Mon Feb 24 12:22:25 2020 -0700\r\n\r\n    update flecsi and legion package.py (#15159)\r\n\r\n    * update flecsi and legion package.py\r\n\r\n    * comment out a conflict\r\n\r\n    * update to use extend\r\n==> Fetching from /home/sajid/packages/spack/var/spack/cache/_source-cache/archive/7c/7c526a78aa0c202b7f0418b345138e7dc40496f0bb7b9e301e0381980450b25c.tar.gz failed.\r\n==> Fetching file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/charmpp/charmpp-6.10.0.tar.gz\r\ncurl: (37) Couldn't open file /tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/charmpp/charmpp-6.10.0.tar.gz\r\n==> Failed to fetch file from URL: file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/charmpp/charmpp-6.10.0.tar.gz\r\n    Curl failed with error 37\r\n==> Fetching from file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/charmpp/charmpp-6.10.0.tar.gz failed.\r\n==> Fetching file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/_source-cache/archive/7c/7c526a78aa0c202b7f0418b345138e7dc40496f0bb7b9e301e0381980450b25c.tar.gz\r\ncurl: (37) Couldn't open file /tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/_source-cache/archive/7c/7c526a78aa0c202b7f0418b345138e7dc40496f0bb7b9e301e0381980450b25c.tar.gz\r\n==> Failed to fetch file from URL: file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/_source-cache/archive/7c/7c526a78aa0c202b7f0418b345138e7dc40496f0bb7b9e301e0381980450b25c.tar.gz\r\n    Curl failed with error 37\r\n==> Fetching from file:///tmp/pytest-of-sajid/pytest-7/test_ci_rebuild_basic0/working_dir/local_mirror/_source-cache/archive/7c/7c526a78aa0c202b7f0418b345138e7dc40496f0bb7b9e301e0381980450b25c.tar.gz failed.\r\n==> Fetching https://charm.cs.illinois.edu/distrib/charm-6.10.0.tar.gz\r\n\r\ncurl: (35) error:1425F102:SSL routines:ssl_choose_client_version:unsupported protocol\r\n==> Failed to fetch file from URL: https://charm.cs.illinois.edu/distrib/charm-6.10.0.tar.gz\r\n    Curl failed with error 35\r\n==> Fetching from https://charm.cs.illinois.edu/distrib/charm-6.10.0.tar.gz failed.\r\n==> Error: All fetchers failed for spack-stage-charmpp-6.10.0-tirx7n7uwlvu7qok5etanggopadumynv\r\n[sajid@xrmlite spack]$\r\n``` \r\n\r\n\r\nRequesting @matthiasdiener for review.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,98 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/18937",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/18937/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/18937/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/18937/events",
+    "html_url": "https://github.com/spack/spack/pull/18937",
+    "id": 708180020,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDkyNDU0MDk2",
+    "number": 18937,
+    "title": "Hdf5 cmake",
+    "user": {
+        "login": "lrknox",
+        "id": 13421322,
+        "node_id": "MDQ6VXNlcjEzNDIxMzIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13421322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lrknox",
+        "html_url": "https://github.com/lrknox",
+        "followers_url": "https://api.github.com/users/lrknox/followers",
+        "following_url": "https://api.github.com/users/lrknox/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lrknox/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lrknox/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lrknox/subscriptions",
+        "organizations_url": "https://api.github.com/users/lrknox/orgs",
+        "repos_url": "https://api.github.com/users/lrknox/repos",
+        "events_url": "https://api.github.com/users/lrknox/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lrknox/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1474769306,
+            "node_id": "MDU6TGFiZWwxNDc0NzY5MzA2",
+            "url": "https://api.github.com/repos/spack/spack/labels/e4s",
+            "name": "e4s",
+            "color": "5224ad",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1638959676,
+            "node_id": "MDU6TGFiZWwxNjM4OTU5Njc2",
+            "url": "https://api.github.com/repos/spack/spack/labels/radiuss",
+            "name": "radiuss",
+            "color": "284fa3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 35,
+    "created_at": "2020-09-24T13:38:38Z",
+    "updated_at": "2021-06-28T19:42:54Z",
+    "closed_at": "2021-06-28T19:42:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/18937",
+        "html_url": "https://github.com/spack/spack/pull/18937",
+        "diff_url": "https://github.com/spack/spack/pull/18937.diff",
+        "patch_url": "https://github.com/spack/spack/pull/18937.patch"
+    },
+    "body": "Switch build system for hdf5 package from Autotools to CMake.\r\nTested initially with netcdf-c.\r\n\r\n@lkurz \r\n@chuckatkins \r\n\r\nCloses #18176",
+    "performed_via_github_app": null
+}

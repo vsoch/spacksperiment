@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/15933",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/15933/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/15933/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/15933/events",
+    "html_url": "https://github.com/spack/spack/pull/15933",
+    "id": 596246357,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDAwNTc5NDI1",
+    "number": 15933,
+    "title": "Update hugo version and add extended variant",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-04-08T01:26:40Z",
+    "updated_at": "2020-04-08T03:27:24Z",
+    "closed_at": "2020-04-08T03:27:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/15933",
+        "html_url": "https://github.com/spack/spack/pull/15933",
+        "diff_url": "https://github.com/spack/spack/pull/15933.diff",
+        "patch_url": "https://github.com/spack/spack/pull/15933.patch"
+    },
+    "body": "- Add info for version 0.68.3\r\n- Add variant to package that enables the \"extended\" features.  It\r\n  works with both of the existing versions (not sure how far back it\r\n  goes, but confirmed that it's valid fro 0.53).\r\n\r\nTested on OS X with go@1.14.1.",
+    "performed_via_github_app": null
+}

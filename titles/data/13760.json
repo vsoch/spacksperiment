@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13760",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13760/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13760/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13760/events",
+    "html_url": "https://github.com/spack/spack/pull/13760",
+    "id": 523700563,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzQxNjQ5Nzg1",
+    "number": 13760,
+    "title": "revbayes: add new versions",
+    "user": {
+        "login": "njbooher",
+        "id": 533823,
+        "node_id": "MDQ6VXNlcjUzMzgyMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/533823?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/njbooher",
+        "html_url": "https://github.com/njbooher",
+        "followers_url": "https://api.github.com/users/njbooher/followers",
+        "following_url": "https://api.github.com/users/njbooher/following{/other_user}",
+        "gists_url": "https://api.github.com/users/njbooher/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/njbooher/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/njbooher/subscriptions",
+        "organizations_url": "https://api.github.com/users/njbooher/orgs",
+        "repos_url": "https://api.github.com/users/njbooher/repos",
+        "events_url": "https://api.github.com/users/njbooher/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/njbooher/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-11-15T21:37:34Z",
+    "updated_at": "2020-05-22T15:48:08Z",
+    "closed_at": "2019-11-16T07:12:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13760",
+        "html_url": "https://github.com/spack/spack/pull/13760",
+        "diff_url": "https://github.com/spack/spack/pull/13760.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13760.patch"
+    },
+    "body": "The GCC version conflict has been resolved in newer versions as the build process specifies the C++ it needs rather than relying on the compiler default.\r\n\r\nThe MPI build is done in a different folder on development, and the executable name produced was different in 1.0.12 and 1.0.13 than before and in the current development branch.",
+    "performed_via_github_app": null
+}

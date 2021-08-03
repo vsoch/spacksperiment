@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/17480",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/17480/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/17480/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/17480/events",
+    "html_url": "https://github.com/spack/spack/pull/17480",
+    "id": 655740193,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ4MTY1NDc2",
+    "number": 17480,
+    "title": "Flang libstdc++ fix",
+    "user": {
+        "login": "owainkenwayucl",
+        "id": 4256093,
+        "node_id": "MDQ6VXNlcjQyNTYwOTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4256093?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/owainkenwayucl",
+        "html_url": "https://github.com/owainkenwayucl",
+        "followers_url": "https://api.github.com/users/owainkenwayucl/followers",
+        "following_url": "https://api.github.com/users/owainkenwayucl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/owainkenwayucl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/owainkenwayucl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/owainkenwayucl/subscriptions",
+        "organizations_url": "https://api.github.com/users/owainkenwayucl/orgs",
+        "repos_url": "https://api.github.com/users/owainkenwayucl/repos",
+        "events_url": "https://api.github.com/users/owainkenwayucl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/owainkenwayucl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2020-07-13T10:31:02Z",
+    "updated_at": "2020-07-30T13:14:43Z",
+    "closed_at": "2020-07-30T12:55:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/17480",
+        "html_url": "https://github.com/spack/spack/pull/17480",
+        "diff_url": "https://github.com/spack/spack/pull/17480.diff",
+        "patch_url": "https://github.com/spack/spack/pull/17480.patch"
+    },
+    "body": "Currently the way the flang `package.py` build process works, it uses the `clang++` from llvm-flang which was built in the previous step by whichever compiler the user is using (presumably GCC although possibly LLVM or other).  In the instance where this has a newer version of libstdc++ than the system one, `cmake` fails to tell the llvm-flang version of `clang++` the right path to `libstdc++` which results in it failing at the `cmake` stage complaining that your C++ comiler can't produce binaries.\r\n\r\n*Interestingly, outside of this process, the compiler works fine which makes me suspect that there's some cmake funkiness going on.*\r\n\r\nThis patch pulls the path the lib64 directory from `self.compiler.implicit_rpaths()[1]` (which is somewhat ugly and I'm open to better suggestions) explicitly to `CMAKE_CXX_FLAGS` which allows the llvm-flang `clang++` to find it and the build to proceed.",
+    "performed_via_github_app": null
+}
