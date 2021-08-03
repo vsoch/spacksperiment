@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/888",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/888/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/888/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/888/events",
+    "html_url": "https://github.com/spack/spack/issues/888",
+    "id": 152835311,
+    "node_id": "MDU6SXNzdWUxNTI4MzUzMTE=",
+    "number": 888,
+    "title": "boost: auto-detect and disable ~/user-config.jam",
+    "user": {
+        "login": "eschnett",
+        "id": 213514,
+        "node_id": "MDQ6VXNlcjIxMzUxNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/213514?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eschnett",
+        "html_url": "https://github.com/eschnett",
+        "followers_url": "https://api.github.com/users/eschnett/followers",
+        "following_url": "https://api.github.com/users/eschnett/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eschnett/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eschnett/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eschnett/subscriptions",
+        "organizations_url": "https://api.github.com/users/eschnett/orgs",
+        "repos_url": "https://api.github.com/users/eschnett/repos",
+        "events_url": "https://api.github.com/users/eschnett/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eschnett/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 718816393,
+            "node_id": "MDU6TGFiZWw3MTg4MTYzOTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/good%20first%20issue",
+            "name": "good first issue",
+            "color": "3a7caf",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2016-05-03T17:52:04Z",
+    "updated_at": "2020-08-14T04:39:36Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "I was trying to build Boost via Spack on a system where I previously had created a file `~/user-config.jam`. This file overrides Spack's configuration options for Boost, leading to a build failure. (The build failure is somewhat hard to detect since it doesn't mention this file, the symptoms are just that the build options that Boost reports are slightly different than what they should be.)\n\nSpack should detect the presence of that file, and should either abort with an error, or should temporarily disable it.\n",
+    "performed_via_github_app": null
+}

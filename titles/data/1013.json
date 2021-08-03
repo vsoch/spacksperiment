@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/1013",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/1013/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/1013/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/1013/events",
+    "html_url": "https://github.com/spack/spack/pull/1013",
+    "id": 157920970,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzIxOTA1NjE=",
+    "number": 1013,
+    "title": "WIP: Feature: creation of relocatable tarballs from installed packages",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 51,
+    "created_at": "2016-06-01T14:28:05Z",
+    "updated_at": "2017-07-21T14:49:48Z",
+    "closed_at": "2017-07-21T14:49:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/1013",
+        "html_url": "https://github.com/spack/spack/pull/1013",
+        "diff_url": "https://github.com/spack/spack/pull/1013.diff",
+        "patch_url": "https://github.com/spack/spack/pull/1013.patch"
+    },
+    "body": "This extends #445 which allows the creation of binary tarballs from installed packages and the installation of those tarballs on other machine with the appropriate rewriting of rpaths with patchelf on linux or install_name_tool on macos.\n",
+    "performed_via_github_app": null
+}

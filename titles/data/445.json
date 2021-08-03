@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/445",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/445/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/445/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/445/events",
+    "html_url": "https://github.com/spack/spack/pull/445",
+    "id": 134701705,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4NjU5NzY=",
+    "number": 445,
+    "title": "[WIP] Add support for binary package creation and install ",
+    "user": {
+        "login": "hegner",
+        "id": 1609504,
+        "node_id": "MDQ6VXNlcjE2MDk1MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1609504?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hegner",
+        "html_url": "https://github.com/hegner",
+        "followers_url": "https://api.github.com/users/hegner/followers",
+        "following_url": "https://api.github.com/users/hegner/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hegner/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hegner/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hegner/subscriptions",
+        "organizations_url": "https://api.github.com/users/hegner/orgs",
+        "repos_url": "https://api.github.com/users/hegner/repos",
+        "events_url": "https://api.github.com/users/hegner/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hegner/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2016-02-18T21:27:09Z",
+    "updated_at": "2017-08-16T18:27:54Z",
+    "closed_at": "2017-08-16T18:27:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/445",
+        "html_url": "https://github.com/spack/spack/pull/445",
+        "diff_url": "https://github.com/spack/spack/pull/445.diff",
+        "patch_url": "https://github.com/spack/spack/pull/445.patch"
+    },
+    "body": "This work-in-progress pull request adds support for binary packages. It enables the creation of tarballs of build artifacts via e.g.\n\n```\nspack create_tarball libelf\n```\n\nA tarball created that way can be downloaded and installed via\n\n```\nexport SPACK_DOWNLOAD_URL=http://your.own.webserver\nspack install --install-policy download libelf\n```\n\nAt the moment it relies on the dag hash and a platform naming convention to guarantee compatbility between build and install environment. As build and install location may however be different, it contains a placeholder for applying relocation commands. \n\nConsider the current state of the code as a proof-of-principle. I however wanted to share my activities early in the process.\n",
+    "performed_via_github_app": null
+}

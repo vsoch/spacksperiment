@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/212",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/212/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/212/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/212/events",
+    "html_url": "https://github.com/spack/spack/issues/212",
+    "id": 119525980,
+    "node_id": "MDU6SXNzdWUxMTk1MjU5ODA=",
+    "number": 212,
+    "title": "[idea] external packages via pkg-config",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654871697,
+            "node_id": "MDU6TGFiZWw2NTQ4NzE2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-config",
+            "name": "pkg-config",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2015-11-30T16:20:31Z",
+    "updated_at": "2020-07-07T00:52:03Z",
+    "closed_at": "2020-07-07T00:52:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Looking over PR #120, which looks great btw, it occurred to me that leveraging pkg-config might be a pretty cool way to extend this.  Specifically, I'm thinking of the fact that pkg-config files can carry arbitrary additional information, including potentially spack-compatible specs, hashes, etc.  If spack looks for a variable, say `spack-spec`, in each available pkg-config module, then loads them in much like it does for adding compilers from PATH, it could make external packages quite usable.  Especially if spack itself inserts these specs into its output, so packages installed globally that were built by a spack, but potentially not the one in use, could be picked up.\n",
+    "performed_via_github_app": null
+}

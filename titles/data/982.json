@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/982",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/982/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/982/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/982/events",
+    "html_url": "https://github.com/spack/spack/pull/982",
+    "id": 156165083,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NzA5ODQxNzU=",
+    "number": 982,
+    "title": "Rust",
+    "user": {
+        "login": "trws",
+        "id": 660149,
+        "node_id": "MDQ6VXNlcjY2MDE0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/660149?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/trws",
+        "html_url": "https://github.com/trws",
+        "followers_url": "https://api.github.com/users/trws/followers",
+        "following_url": "https://api.github.com/users/trws/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trws/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/trws/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trws/subscriptions",
+        "organizations_url": "https://api.github.com/users/trws/orgs",
+        "repos_url": "https://api.github.com/users/trws/repos",
+        "events_url": "https://api.github.com/users/trws/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/trws/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1888436240,
+            "node_id": "MDU6TGFiZWwxODg4NDM2MjQw",
+            "url": "https://api.github.com/repos/spack/spack/labels/rust",
+            "name": "rust",
+            "color": "B7410E",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2016-05-22T18:19:22Z",
+    "updated_at": "2020-03-05T01:31:11Z",
+    "closed_at": "2016-05-25T20:15:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/982",
+        "html_url": "https://github.com/spack/spack/pull/982",
+        "diff_url": "https://github.com/spack/spack/pull/982.diff",
+        "patch_url": "https://github.com/spack/spack/pull/982.patch"
+    },
+    "body": "Adds a rust package to build the rustc compiler as well as the cargo build manager, which provides a cargo command for extension packages.  This is meant to be used somewhat like the go package, where packages may not actually grab all of their dependencies through spack, but rather grab their static build-time dependencies independently and create a standalone result installed as a normal spack package.\n\nSince this depends on llvm, and llvm takes centuries to build all targets with static linkage, this also adds variants for various of the time-saving build options to llvm.\n",
+    "performed_via_github_app": null
+}
