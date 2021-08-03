@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8311",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8311/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8311/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8311/events",
+    "html_url": "https://github.com/spack/spack/pull/8311",
+    "id": 327428036,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkxMjI1OTIw",
+    "number": 8311,
+    "title": "netlib-lapack: changed handling of XL and clang compilers for the PPC64LE.",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2018-05-29T18:02:00Z",
+    "updated_at": "2020-03-27T10:23:43Z",
+    "closed_at": "2020-03-27T10:23:43Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8311",
+        "html_url": "https://github.com/spack/spack/pull/8311",
+        "diff_url": "https://github.com/spack/spack/pull/8311.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8311.patch"
+    },
+    "body": "On CORAL, LLVM will use the XL Fortran compiler and I need to apply a change for the xl_r compiler to the clang compiler to make netlib-lapack build w/clang+xlf.\r\n\r\nI split the xl_r patch in two: one specific to xl_r, that removes the -qfixed flag from Fortran compile options; and one that fixes the CBLAS use of default mangling definitions.",
+    "performed_via_github_app": null
+}

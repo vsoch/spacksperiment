@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9589",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9589/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9589/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9589/events",
+    "html_url": "https://github.com/spack/spack/pull/9589",
+    "id": 372061826,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI0MzY4NjUy",
+    "number": 9589,
+    "title": "Fix issue with miniconda attempting to install the incorrect version",
+    "user": {
+        "login": "rgmiller",
+        "id": 1301479,
+        "node_id": "MDQ6VXNlcjEzMDE0Nzk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1301479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rgmiller",
+        "html_url": "https://github.com/rgmiller",
+        "followers_url": "https://api.github.com/users/rgmiller/followers",
+        "following_url": "https://api.github.com/users/rgmiller/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rgmiller/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rgmiller/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rgmiller/subscriptions",
+        "organizations_url": "https://api.github.com/users/rgmiller/orgs",
+        "repos_url": "https://api.github.com/users/rgmiller/repos",
+        "events_url": "https://api.github.com/users/rgmiller/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rgmiller/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-10-19T18:10:55Z",
+    "updated_at": "2018-10-30T20:01:26Z",
+    "closed_at": "2018-10-26T01:16:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9589",
+        "html_url": "https://github.com/spack/spack/pull/9589",
+        "diff_url": "https://github.com/spack/spack/pull/9589.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9589.patch"
+    },
+    "body": "The install() function in the miniconda2 & 3 package.py files referenced\r\nself.url, which is hard-coded to 4.3.11.  That's not necessarily the\r\nversion that the user requested, though.  Changed the install() function\r\nto reference self.stage.archive_file.  Also added a version string for\r\n4.5.11.",
+    "performed_via_github_app": null
+}

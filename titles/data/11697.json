@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11697",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11697/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11697/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11697/events",
+    "html_url": "https://github.com/spack/spack/pull/11697",
+    "id": 455900362,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg4MDUyOTgx",
+    "number": 11697,
+    "title": "Add auto-dispatch specification to Intel packages",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-06-13T18:52:38Z",
+    "updated_at": "2019-07-19T15:34:52Z",
+    "closed_at": "2019-07-15T18:37:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11697",
+        "html_url": "https://github.com/spack/spack/pull/11697",
+        "diff_url": "https://github.com/spack/spack/pull/11697.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11697.patch"
+    },
+    "body": "This PR adds the ability to specify the auto-dispatch targets that can\r\nbe used by the Intel compilers. The `-ax` flag will be written to the\r\nrespective compiler configuration files. This ability is very handy when\r\nwanting to build optimized builds for various architectures. This PR\r\ndoes not set any optimization flags, however.",
+    "performed_via_github_app": null
+}

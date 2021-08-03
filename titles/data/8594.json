@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8594",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8594/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8594/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8594/events",
+    "html_url": "https://github.com/spack/spack/pull/8594",
+    "id": 336432858,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3ODg3Nzg4",
+    "number": 8594,
+    "title": "Generate pkgconfig file in qhull for py-matplotlib",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 654871697,
+            "node_id": "MDU6TGFiZWw2NTQ4NzE2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-config",
+            "name": "pkg-config",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2018-06-28T00:29:07Z",
+    "updated_at": "2019-08-03T18:23:59Z",
+    "closed_at": "2019-08-03T18:23:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8594",
+        "html_url": "https://github.com/spack/spack/pull/8594",
+        "diff_url": "https://github.com/spack/spack/pull/8594.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8594.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/8546\r\n\r\n@s-sajid-ali does this help?\r\n\r\nThe `py-matplotlib` package cannot find the Spack-installed `qhull` package with `pkgconfig`. `qhull` does not generate a `.pc` file itself. This adds a method to generate a `.pc` file from a Spec and makes use of that method for `qhull`.\r\n\r\nTODOs:\r\n\r\n- [ ] detect the include directory for the package rather than assuming it's always `prefix/include`\r\n- [ ] likewise for `libs/`",
+    "performed_via_github_app": null
+}

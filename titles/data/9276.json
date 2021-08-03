@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9276",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9276/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9276/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9276/events",
+    "html_url": "https://github.com/spack/spack/pull/9276",
+    "id": 361511956,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE2NDY1OTMy",
+    "number": 9276,
+    "title": "kokkos: add serial backend explicitly. add kokkos options and kokkos cuda options.",
+    "user": {
+        "login": "womeld",
+        "id": 9054143,
+        "node_id": "MDQ6VXNlcjkwNTQxNDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9054143?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/womeld",
+        "html_url": "https://github.com/womeld",
+        "followers_url": "https://api.github.com/users/womeld/followers",
+        "following_url": "https://api.github.com/users/womeld/following{/other_user}",
+        "gists_url": "https://api.github.com/users/womeld/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/womeld/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/womeld/subscriptions",
+        "organizations_url": "https://api.github.com/users/womeld/orgs",
+        "repos_url": "https://api.github.com/users/womeld/repos",
+        "events_url": "https://api.github.com/users/womeld/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/womeld/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 618601843,
+            "node_id": "MDU6TGFiZWw2MTg2MDE4NDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cuda",
+            "name": "cuda",
+            "color": "85b737",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-09-18T22:46:10Z",
+    "updated_at": "2018-10-01T16:25:50Z",
+    "closed_at": "2018-10-01T16:24:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9276",
+        "html_url": "https://github.com/spack/spack/pull/9276",
+        "diff_url": "https://github.com/spack/spack/pull/9276.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9276.patch"
+    },
+    "body": "Adds the serial backend explicitly to the kokkos spackage (was implicitly activated previously) with a default of 'true' to match previous behaviour. Also adds support for internal Kokkos options (vectorization, deprecated code, etc.) and Kokkos CUDA options (uvm, lambdas, etc.).\r\n\r\nRe-fork to address rebasing problem in https://github.com/spack/spack/pull/9242 . ",
+    "performed_via_github_app": null
+}

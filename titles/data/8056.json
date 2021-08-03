@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8056/events",
+    "html_url": "https://github.com/spack/spack/pull/8056",
+    "id": 321273172,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg2NzAwMjY4",
+    "number": 8056,
+    "title": "Updates to Google Benchmark package:",
+    "user": {
+        "login": "AndrewGaspar",
+        "id": 2292643,
+        "node_id": "MDQ6VXNlcjIyOTI2NDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2292643?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AndrewGaspar",
+        "html_url": "https://github.com/AndrewGaspar",
+        "followers_url": "https://api.github.com/users/AndrewGaspar/followers",
+        "following_url": "https://api.github.com/users/AndrewGaspar/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AndrewGaspar/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AndrewGaspar/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AndrewGaspar/subscriptions",
+        "organizations_url": "https://api.github.com/users/AndrewGaspar/orgs",
+        "repos_url": "https://api.github.com/users/AndrewGaspar/repos",
+        "events_url": "https://api.github.com/users/AndrewGaspar/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AndrewGaspar/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-08T17:16:34Z",
+    "updated_at": "2018-05-08T18:40:03Z",
+    "closed_at": "2018-05-08T18:04:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8056",
+        "html_url": "https://github.com/spack/spack/pull/8056",
+        "diff_url": "https://github.com/spack/spack/pull/8056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8056.patch"
+    },
+    "body": "- Adds v1.3.0 and v1.4.0\r\n- List explicit CMake version dependency (from Benchmark CMake files)\r\n- Disable the building of tests. Starting in v1.4.0 this introduced a dependency on GoogleTest\r\n\r\nTested by building all versions on macOS High Sierra",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12088",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12088/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12088/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12088/events",
+    "html_url": "https://github.com/spack/spack/pull/12088",
+    "id": 471372449,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwMDY2MjU2",
+    "number": 12088,
+    "title": "ioapi: add version 3.2",
+    "user": {
+        "login": "omsai",
+        "id": 166624,
+        "node_id": "MDQ6VXNlcjE2NjYyNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/166624?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omsai",
+        "html_url": "https://github.com/omsai",
+        "followers_url": "https://api.github.com/users/omsai/followers",
+        "following_url": "https://api.github.com/users/omsai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omsai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omsai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omsai/subscriptions",
+        "organizations_url": "https://api.github.com/users/omsai/orgs",
+        "repos_url": "https://api.github.com/users/omsai/repos",
+        "events_url": "https://api.github.com/users/omsai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omsai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-22T22:45:44Z",
+    "updated_at": "2019-07-23T18:01:38Z",
+    "closed_at": "2019-07-23T17:10:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12088",
+        "html_url": "https://github.com/spack/spack/pull/12088",
+        "diff_url": "https://github.com/spack/spack/pull/12088.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12088.patch"
+    },
+    "body": "New package for IOAPI.\r\n\r\nSo far only works on GNU/Linux.  \r\n\r\nI've posted on the [mailing list](https://groups.google.com/forum/#!topic/spack/R6orWxLCtfg) about adding logic for other architectures supported by upstream, but I don't have exotic hardware to test anyway besides `linux x86_64`, so I figured I would send the working version with my architecture.",
+    "performed_via_github_app": null
+}

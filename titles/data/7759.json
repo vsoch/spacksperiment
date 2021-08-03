@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7759",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7759/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7759/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7759/events",
+    "html_url": "https://github.com/spack/spack/pull/7759",
+    "id": 314251223,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxNTk2NzM3",
+    "number": 7759,
+    "title": "enable using spack-installed packages as externals",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-04-13T21:09:14Z",
+    "updated_at": "2018-09-27T01:18:49Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7759",
+        "html_url": "https://github.com/spack/spack/pull/7759",
+        "diff_url": "https://github.com/spack/spack/pull/7759.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7759.patch"
+    },
+    "body": "Makes the following changes:\r\n\r\n* Don't generate modules for external packages\r\n* Remove assertion from `Spec.path_for_spec` which checks that the path doesn't contain the spack install root: it isn't required\r\n* Check for non-existent prefixes in build_environment when collecting prefixes (e.g. if the package has a module rather than a prefix - this isn't and issue with spack-installed packages though)",
+    "performed_via_github_app": null
+}

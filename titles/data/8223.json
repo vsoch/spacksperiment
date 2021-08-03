@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8223",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8223/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8223/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8223/events",
+    "html_url": "https://github.com/spack/spack/pull/8223",
+    "id": 324782121,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg5Mjc4Njc0",
+    "number": 8223,
+    "title": "Better Makefile target parsing",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 624275116,
+            "node_id": "MDU6TGFiZWw2MjQyNzUxMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/makefile",
+            "name": "makefile",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2018-05-21T04:13:27Z",
+    "updated_at": "2018-07-28T03:28:43Z",
+    "closed_at": "2018-07-18T18:11:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8223",
+        "html_url": "https://github.com/spack/spack/pull/8223",
+        "diff_url": "https://github.com/spack/spack/pull/8223.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8223.patch"
+    },
+    "body": "While working on the `cryptopp` package, I ran into a `GNUmakefile` that didn't have a `^check:` or `^test:` target, it had a `^test check:` target. Apparently Makefiles can contain [multiple targets](https://www.gnu.org/software/make/manual/html_node/Multiple-Targets.html) that act as aliases. They can also have a space between the target and the colon. All of these things break our previous Makefile parsing logic.\r\n\r\nI started playing around with regexes, but things quickly became complicated. I discovered an easier way to use `make` to query whether or not a specific target exists.\r\n\r\n### Pros\r\n\r\nMore reliable Makefile parsing.\r\n\r\n### Cons\r\n\r\nThis approach only works for GNU Make, it fails for BSD Make. I'm not sure how common BSD Make is (macOS and Linux both use GNU Make). The downside to this approach is that if someone runs `spack install --test` on a system that uses BSD Make, it will always think that a `check` target exists and run it even if it doesn't. The solution would either be to install GNU Make or to re-run `spack install` without `--test` if the test crashes.\r\n\r\nP.S. I found a similar feature for Ninja and implemented that as well.",
+    "performed_via_github_app": null
+}

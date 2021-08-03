@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12063",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12063/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12063/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12063/events",
+    "html_url": "https://github.com/spack/spack/pull/12063",
+    "id": 470186547,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk5MjIyMjA5",
+    "number": 12063,
+    "title": "fixes spack module loads for upstream packages",
+    "user": {
+        "login": "albestro",
+        "id": 9337627,
+        "node_id": "MDQ6VXNlcjkzMzc2Mjc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337627?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/albestro",
+        "html_url": "https://github.com/albestro",
+        "followers_url": "https://api.github.com/users/albestro/followers",
+        "following_url": "https://api.github.com/users/albestro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/albestro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/albestro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/albestro/subscriptions",
+        "organizations_url": "https://api.github.com/users/albestro/orgs",
+        "repos_url": "https://api.github.com/users/albestro/repos",
+        "events_url": "https://api.github.com/users/albestro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/albestro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-19T07:44:29Z",
+    "updated_at": "2019-08-19T12:16:36Z",
+    "closed_at": "2019-08-13T18:09:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12063",
+        "html_url": "https://github.com/spack/spack/pull/12063",
+        "diff_url": "https://github.com/spack/spack/pull/12063.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12063.patch"
+    },
+    "body": "Fixes #12062\r\n\r\nIt seems that a non-existing function was used. I replaced it with the one used also by the `find` sub-command.\r\n\r\n@scheibelp, it seems that last change to this section was from you, I tried tracking if this function was existing before, but with no luck. I mentioned you just because you may be able to check quickly if this is the right fix.",
+    "performed_via_github_app": null
+}

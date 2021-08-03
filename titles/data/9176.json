@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9176",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9176/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9176/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9176/events",
+    "html_url": "https://github.com/spack/spack/pull/9176",
+    "id": 356995961,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEzMTE4OTM0",
+    "number": 9176,
+    "title": "r-nloptr: Explicit depends_on(nlopt). Previously there was a hidden d\u2026",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-04T22:16:55Z",
+    "updated_at": "2018-09-16T05:22:57Z",
+    "closed_at": "2018-09-14T13:11:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9176",
+        "html_url": "https://github.com/spack/spack/pull/9176",
+        "diff_url": "https://github.com/spack/spack/pull/9176.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9176.patch"
+    },
+    "body": "\u2026ependency, masked by the package's configure script.\r\n\r\nThis R package is a wrapper around the nlopt library. If not told explicitly where to find this, the configure script will go and download its own copy of the library, and silently build it. This seems contrary to Spack's approach, as one would never know what version of the underlying library was in use. This pull request adds an explicit dependency on the Spack-installed nlopt, and explicitly nominates where to find it. \r\n\r\nNot sure if I am doing the right thing to find the library location, so any corrections welcomed.  ",
+    "performed_via_github_app": null
+}

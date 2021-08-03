@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12336",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12336/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12336/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12336/events",
+    "html_url": "https://github.com/spack/spack/pull/12336",
+    "id": 478626711,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA1Njk4NjM3",
+    "number": 12336,
+    "title": "Do not report on packages installed from the cache",
+    "user": {
+        "login": "zackgalbreath",
+        "id": 224720,
+        "node_id": "MDQ6VXNlcjIyNDcyMA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/224720?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zackgalbreath",
+        "html_url": "https://github.com/zackgalbreath",
+        "followers_url": "https://api.github.com/users/zackgalbreath/followers",
+        "following_url": "https://api.github.com/users/zackgalbreath/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zackgalbreath/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zackgalbreath/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zackgalbreath/subscriptions",
+        "organizations_url": "https://api.github.com/users/zackgalbreath/orgs",
+        "repos_url": "https://api.github.com/users/zackgalbreath/repos",
+        "events_url": "https://api.github.com/users/zackgalbreath/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zackgalbreath/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 821226751,
+            "node_id": "MDU6TGFiZWw4MjEyMjY3NTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cdash",
+            "name": "cdash",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-08-08T18:35:19Z",
+    "updated_at": "2019-09-03T05:30:23Z",
+    "closed_at": "2019-08-16T17:19:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12336",
+        "html_url": "https://github.com/spack/spack/pull/12336",
+        "diff_url": "https://github.com/spack/spack/pull/12336.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12336.patch"
+    },
+    "body": "Skip generating reports for any packages that were found in the binary cache.",
+    "performed_via_github_app": null
+}

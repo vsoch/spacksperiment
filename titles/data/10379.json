@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10379",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10379/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10379/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10379/events",
+    "html_url": "https://github.com/spack/spack/pull/10379",
+    "id": 400421813,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ1NjEzMzAw",
+    "number": 10379,
+    "title": "fix issue where docker images were being pushed without login",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-01-17T19:11:20Z",
+    "updated_at": "2019-01-24T18:12:24Z",
+    "closed_at": "2019-01-24T18:08:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10379",
+        "html_url": "https://github.com/spack/spack/pull/10379",
+        "diff_url": "https://github.com/spack/spack/pull/10379.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10379.patch"
+    },
+    "body": "Hopefully the last minor quirk in the way of docker images.",
+    "performed_via_github_app": null
+}

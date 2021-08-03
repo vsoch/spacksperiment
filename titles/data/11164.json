@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11164",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11164/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11164/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11164/events",
+    "html_url": "https://github.com/spack/spack/issues/11164",
+    "id": 431697261,
+    "node_id": "MDU6SXNzdWU0MzE2OTcyNjE=",
+    "number": 11164,
+    "title": "Permit to install packages under the same prefix if they are concretizable together",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-04-10T20:28:54Z",
+    "updated_at": "2019-04-10T20:28:54Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "This is a proposal to allow installing specs that are part of an environment under the same common prefix, if they are concretizable together. Installing under a common prefix should happen only upon user request.\r\n\r\n### Rationale\r\nThis is a feature proposal based on #11158 and depending on #9902 being implemented. The basic idea is that, if we can concretize all the abstract specs of an environment together, then we can also install them under the same prefix without any conflict. This might be an option that would prove to be useful in some use-cases.\r\n\r\nFor instance a user might consider building a custom Docker image using a [multi-stage stage build](https://docs.docker.com/develop/develop-images/multistage-build/) and a `spack.yaml` file with specs that can be concretized together. With a `spack.yaml` file similar to:\r\n```yaml\r\n# This is a Spack Environment file.\r\n#\r\n# It describes a set of packages to be installed, along with\r\n# configuration settings.\r\nspack:\r\n  # add package specs to the `specs` list\r\n  specs: ['hdf5+mpi', 'mpich', 'zlib@1.2.8' ]\r\n  concretize_together: True\r\n  common_prefix: '/opt'\r\n```\r\nand a Dockerfile like:\r\n```dockerfile\r\nFROM spack/centos as builder\r\nCOPY spack.yaml .\r\nRUN spack install\r\n\r\nFROM centos\r\n[...]\r\nCOPY --from=builder /opt .\r\n[...]\r\n```\r\nwe could create a container with our environment installed in standard locations. This container can then be consumed by users without any knowledge of Spack or modules, etc.\r\n\r\nAnother use case might be software development, where we would give the choice to the user on whether to employ a view like in #10017 or install all the dependencies needed to start working on a software in some specific directory. \r\n\r\n### Description\r\n\r\nThe implementation of this - if considered a good feature - should involve:\r\n\r\n- [ ] Modifying `spack.yaml` config file to support the use of a common installation prefix (ideally set to `None` by default and settable only if `concretize_together: True` is in `spack.yaml`)\r\n- [ ] Add logic at install time to change the prefix of all the concretized specs before installing them (with possibly preliminary checks on the state of the common prefix)",
+    "performed_via_github_app": null
+}

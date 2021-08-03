@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9016",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9016/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9016/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9016/events",
+    "html_url": "https://github.com/spack/spack/pull/9016",
+    "id": 351643110,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5MTg2MDk5",
+    "number": 9016,
+    "title": "Fix missing makefile variable in clapack package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-17T15:40:39Z",
+    "updated_at": "2018-08-18T16:19:44Z",
+    "closed_at": "2018-08-18T16:19:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9016",
+        "html_url": "https://github.com/spack/spack/pull/9016",
+        "diff_url": "https://github.com/spack/spack/pull/9016.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9016.patch"
+    },
+    "body": "Fixes #9013 \r\n\r\nIt looks like this package has been broken since @fanne-stat added it in #7992.\r\n\r\n@yrevaz Can you see if this solves your problem?",
+    "performed_via_github_app": null
+}

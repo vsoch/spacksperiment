@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8992",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8992/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8992/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8992/events",
+    "html_url": "https://github.com/spack/spack/pull/8992",
+    "id": 351026361,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4NzI1MzA1",
+    "number": 8992,
+    "title": "Download GNU packages from mirrors",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-16T01:48:45Z",
+    "updated_at": "2018-08-16T12:51:30Z",
+    "closed_at": "2018-08-16T06:27:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8992",
+        "html_url": "https://github.com/spack/spack/pull/8992",
+        "diff_url": "https://github.com/spack/spack/pull/8992.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8992.patch"
+    },
+    "body": "Fixes #8983 \r\n\r\nAlthough https://ftp.gnu.org/ is back online now, we should still be downloading all GNU software from the officially recommended mirror URL. According to https://www.gnu.org/server/mirror.en.html:\r\n\r\n> First, for users/downloaders: the address http://ftpmirror.gnu.org/ multiplexes between the mirrors, trying to choose one that is nearby and up to date. E.g., http://ftpmirror.gnu.org/emacs/ goes to a mirror's directory of GNU Emacs. We recommend using this generic ftpmirror.gnu.org address wherever possible in links, documentation, etc., to reduce load on the main GNU server.\r\n\r\nHopefully http://ftpmirror.gnu.org/ is more stable than https://ftp.gnu.org/. This PR also changes many URLs from http to https, further improving security. I purged my downloads cache and confirmed that I can download all of these packages with the new URLs.\r\n\r\n@healther @bassenj @tz-rrze ",
+    "performed_via_github_app": null
+}

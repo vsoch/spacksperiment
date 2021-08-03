@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11951",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11951/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11951/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11951/events",
+    "html_url": "https://github.com/spack/spack/pull/11951",
+    "id": 465295013,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk1MzY1Mjgw",
+    "number": 11951,
+    "title": "Allow user to specify location of spack user config path",
+    "user": {
+        "login": "tjfulle",
+        "id": 1564391,
+        "node_id": "MDQ6VXNlcjE1NjQzOTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1564391?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tjfulle",
+        "html_url": "https://github.com/tjfulle",
+        "followers_url": "https://api.github.com/users/tjfulle/followers",
+        "following_url": "https://api.github.com/users/tjfulle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tjfulle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tjfulle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tjfulle/subscriptions",
+        "organizations_url": "https://api.github.com/users/tjfulle/orgs",
+        "repos_url": "https://api.github.com/users/tjfulle/repos",
+        "events_url": "https://api.github.com/users/tjfulle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tjfulle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-07-08T14:36:16Z",
+    "updated_at": "2020-08-22T19:18:55Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11951",
+        "html_url": "https://github.com/spack/spack/pull/11951",
+        "diff_url": "https://github.com/spack/spack/pull/11951.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11951.patch"
+    },
+    "body": "Environment variable `SPACK_USER_CONFIG_PATH` can optionally specify the location of the user's spack config.\r\n\r\nCloses #506\r\nCloses #11919",
+    "performed_via_github_app": null
+}

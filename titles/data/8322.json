@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8322",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8322/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8322/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8322/events",
+    "html_url": "https://github.com/spack/spack/pull/8322",
+    "id": 327928589,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkxNjAzMTUw",
+    "number": 8322,
+    "title": "Update the clang compiler definition to allow it to use IBM XL Fortran compiler",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-05-30T22:59:18Z",
+    "updated_at": "2020-08-18T18:28:40Z",
+    "closed_at": "2020-08-18T18:28:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8322",
+        "html_url": "https://github.com/spack/spack/pull/8322",
+        "diff_url": "https://github.com/spack/spack/pull/8322.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8322.patch"
+    },
+    "body": "On CORAL systems (linux-rhel7-ppc64le), users will use clang with IBM XL Fortran, as the flang front end from PGI is not available yet.",
+    "performed_via_github_app": null
+}

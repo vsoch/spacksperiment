@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9207",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9207/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9207/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9207/events",
+    "html_url": "https://github.com/spack/spack/pull/9207",
+    "id": 358935952,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE0NTQ4MzA0",
+    "number": 9207,
+    "title": "remove py-setuptools dependency from py-spyder",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 20,
+    "created_at": "2018-09-11T08:15:20Z",
+    "updated_at": "2018-10-13T09:40:02Z",
+    "closed_at": "2018-10-12T17:57:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9207",
+        "html_url": "https://github.com/spack/spack/pull/9207",
+        "diff_url": "https://github.com/spack/spack/pull/9207.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9207.patch"
+    },
+    "body": "closes #9205\r\n\r\nreordered dependencies to confirm to the ordering in setup.py",
+    "performed_via_github_app": null
+}

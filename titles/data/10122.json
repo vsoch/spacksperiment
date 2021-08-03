@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10122",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10122/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10122/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10122/events",
+    "html_url": "https://github.com/spack/spack/pull/10122",
+    "id": 391553505,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5MDIzNjY1",
+    "number": 10122,
+    "title": "Add missing libbsd dependency to libxdmcp",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-17T04:25:26Z",
+    "updated_at": "2018-12-17T19:04:04Z",
+    "closed_at": "2018-12-17T19:04:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10122",
+        "html_url": "https://github.com/spack/spack/pull/10122",
+        "diff_url": "https://github.com/spack/spack/pull/10122.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10122.patch"
+    },
+    "body": "### Before\r\n\r\n```\r\n4 errors found in build log:\r\n     163      CC       Key.lo\r\n     164      CC       Read.lo\r\n     165      CC       Unwrap.lo\r\n     166      CC       Wrap.lo\r\n     167      CC       Write.lo\r\n     168      CC       Wraphelp.lo\r\n  >> 169    Key.c:36:10: fatal error: bsd/stdlib.h: No such file or directory\r\n     170     #include <bsd/stdlib.h> /* for arc4random_buf() */\r\n     171              ^~~~~~~~~~~~~~\r\n     172    compilation terminated.\r\n  >> 173    make[2]: *** [Key.lo] Error 1\r\n     174    make[2]: *** Waiting for unfinished jobs....\r\n     175    make[2]: Leaving directory `/mnt/c/scratch/sciteam/stewart1/spack-stage/spack-stage-392119gc/libXdmcp-1.1.2'\r\n  >> 176    make[1]: *** [all-recursive] Error 1\r\n     177    make[1]: Leaving directory `/mnt/c/scratch/sciteam/stewart1/spack-stage/spack-stage-392119gc/libXdmcp-1.1.2'\r\n  >> 178    make: *** [all] Error 2\r\n```\r\n\r\n### After\r\n\r\n```\r\n$ ldd -r ~/spack/opt/spack/cray-cnl5-interlagos/gcc-7.3.0/libxdmcp-1.1.2-7himptjvbwcqej32qgrxlamssvzteiny/lib/libXdmcp.so\r\n\tlinux-vdso.so.1 =>  (0x00002aaaaaaab000)\r\n\tlibbsd.so.0 => /mnt/a/u/sciteam/stewart1/spack/opt/spack/cray-cnl5-interlagos/gcc-7.3.0/libbsd-0.9.1-a5womix7sgzat5etdlaoabpne7o5l3cl/lib/libbsd.so.0 (0x00002aaaaacb4000)\r\n\tlibpthread.so.0 => /lib/../lib64/libpthread.so.0 (0x00002aaaaaecb000)\r\n\tlibc.so.6 => /lib/../lib64/libc.so.6 (0x00002aaaab0e9000)\r\n\tlibrt.so.1 => /lib64/librt.so.1 (0x00002aaaab4fc000)\r\n\tlibrca.so.0 => /opt/cray/rca/default/lib64/librca.so.0 (0x00002aaaab706000)\r\n\t/lib64/ld-linux-x86-64.so.2 (0x0000555555554000)\r\n```",
+    "performed_via_github_app": null
+}

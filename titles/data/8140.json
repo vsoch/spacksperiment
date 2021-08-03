@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8140",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8140/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8140/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8140/events",
+    "html_url": "https://github.com/spack/spack/pull/8140",
+    "id": 323224831,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg4MTMzNjU3",
+    "number": 8140,
+    "title": "trinity: fixing jdk dependency",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-15T13:45:12Z",
+    "updated_at": "2018-05-18T12:27:12Z",
+    "closed_at": "2018-05-18T01:03:36Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8140",
+        "html_url": "https://github.com/spack/spack/pull/8140",
+        "diff_url": "https://github.com/spack/spack/pull/8140.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8140.patch"
+    },
+    "body": "due to jdk's goofy version numbers, the minor version parsing seems to break without trailing colon\r\n\r\nAlso changing to java virtual dependency instead of jdk explicitly",
+    "performed_via_github_app": null
+}

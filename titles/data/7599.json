@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7599",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7599/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7599/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7599/events",
+    "html_url": "https://github.com/spack/spack/pull/7599",
+    "id": 308495414,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc3Mzg4MDg2",
+    "number": 7599,
+    "title": "Add missing X-libs dependencies to vim+x",
+    "user": {
+        "login": "muffgaga",
+        "id": 1506210,
+        "node_id": "MDQ6VXNlcjE1MDYyMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1506210?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/muffgaga",
+        "html_url": "https://github.com/muffgaga",
+        "followers_url": "https://api.github.com/users/muffgaga/followers",
+        "following_url": "https://api.github.com/users/muffgaga/following{/other_user}",
+        "gists_url": "https://api.github.com/users/muffgaga/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/muffgaga/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/muffgaga/subscriptions",
+        "organizations_url": "https://api.github.com/users/muffgaga/orgs",
+        "repos_url": "https://api.github.com/users/muffgaga/repos",
+        "events_url": "https://api.github.com/users/muffgaga/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/muffgaga/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 470680435,
+            "node_id": "MDU6TGFiZWw0NzA2ODA0MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/X11",
+            "name": "X11",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-26T09:27:27Z",
+    "updated_at": "2018-03-26T18:55:41Z",
+    "closed_at": "2018-03-26T15:24:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7599",
+        "html_url": "https://github.com/spack/spack/pull/7599",
+        "diff_url": "https://github.com/spack/spack/pull/7599.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7599.patch"
+    },
+    "body": "This seems to be the minimal set of X-related libraries needed for vim+x build (btw. vim's `configure` step does NOT break if `--with-x` is specified but no X libs are found).",
+    "performed_via_github_app": null
+}

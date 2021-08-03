@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7696",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7696/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7696/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7696/events",
+    "html_url": "https://github.com/spack/spack/pull/7696",
+    "id": 312333593,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgwMTc2Mjk2",
+    "number": 7696,
+    "title": "Fix GCC 6/7 build on APFS",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-04-08T19:37:17Z",
+    "updated_at": "2018-04-10T16:46:48Z",
+    "closed_at": "2018-04-10T16:46:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7696",
+        "html_url": "https://github.com/spack/spack/pull/7696",
+        "diff_url": "https://github.com/spack/spack/pull/7696.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7696.patch"
+    },
+    "body": "Fixes #7689.\r\n\r\n@gozwei Can you test this? It should fix your `gcc%clang` problems. I'm not sure if it will fix your `gcc%gcc` problems, but `%gcc` never works great on macOS.\r\n\r\nThis PR extends the patch added in #5647 to other recent versions of GCC. This patch is also used by [Homebrew](https://github.com/Homebrew/homebrew-core/blob/master/Formula/gcc.rb#L57,L65). According to the [bug report](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=81797), this patch is likely necessary for older versions of GCC as well, so we may need to expand this range in the future. It has been fixed upstream for GCC 6.5, 7.4, and 8.1.\r\n\r\nConfirmed that the patch applies to GCC 6.1, 6.4, and 7.3. Confirmed that the installation succeeds for GCC 7.3 on macOS 10.13.3 with Clang 9.0.0. I didn't get around to testing other versions as it takes 2 hours and 15 minutes to install.\r\n\r\nAlso uncommented the test dependencies now that #5132 has been merged.",
+    "performed_via_github_app": null
+}

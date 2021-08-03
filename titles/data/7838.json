@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7838",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7838/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7838/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7838/events",
+    "html_url": "https://github.com/spack/spack/pull/7838",
+    "id": 316006021,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyODcyNDM0",
+    "number": 7838,
+    "title": "Libfabric: updating fabrics & adding deps",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-04-19T19:17:25Z",
+    "updated_at": "2018-04-27T02:06:30Z",
+    "closed_at": "2018-04-25T15:35:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7838",
+        "html_url": "https://github.com/spack/spack/pull/7838",
+        "diff_url": "https://github.com/spack/spack/pull/7838.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7838.patch"
+    },
+    "body": "Based on #6978 \r\n\r\nAdding one new fabric, and removing one very old one.\r\n\r\nAdding dependencies that exist in spack.  Anyone currently using this was using system libraries, and can continue to do so via setting dependencies to continue to use system libs via packages.yaml\r\n\r\n",
+    "performed_via_github_app": null
+}

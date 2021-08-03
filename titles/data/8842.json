@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8842",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8842/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8842/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8842/events",
+    "html_url": "https://github.com/spack/spack/pull/8842",
+    "id": 346167201,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA1MDk2Nzcx",
+    "number": 8842,
+    "title": "Introduce templates for specific issue types",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 746029681,
+            "node_id": "MDU6TGFiZWw3NDYwMjk2ODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/community",
+            "name": "community",
+            "color": "e2c48e",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2018-07-31T12:33:22Z",
+    "updated_at": "2018-08-21T07:48:44Z",
+    "closed_at": "2018-08-20T19:24:43Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8842",
+        "html_url": "https://github.com/spack/spack/pull/8842",
+        "diff_url": "https://github.com/spack/spack/pull/8842.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8842.patch"
+    },
+    "body": "refers #8811 \r\n\r\nAs a user contributing to Spack I want to be guided when reporting a bug or requesting a feature so that it's clear which kind of information is needed for maintainers to triage my issue and start working on it.\r\n\r\n### Rationale\r\n\r\n@scheibelp raised a fair point in #8811 \r\n\r\n>The overall theme of this response is that we should put more effort into prioritization, and specifically that it's worth discussing ways to make it easier to prioritize issues, and that this may involve categorizing issues (some categories of issues may be easier to prioritize, and in some cases may benefit from a documented approach).\r\n\r\nWhile I disagree with the fact that a bot could not help, I am also convinced (as Peter is) that a better categorization of issues and PRs will improve our response time. This PR is an attempt to use [this feature](https://help.github.com/articles/about-issue-and-pull-request-templates/) of Github to that aim.\r\n\r\n### Description\r\nThe single issue template we had before has now been substituted by three more specialized templates, which account for:\r\n- Feature requests\r\n- Bug reports\r\n- Build errors\r\n\r\n*The idea* is, instead of categorizing issues ourselves, to let a contributor decide which kind of issue he's about to open and help him provide the maintainers with all the necessary information. *The hope* is that this will help categorizing and prioritizing reports.\r\n\r\n### Additional information\r\n\r\nThere are a few things worth remarking:\r\n- The wording in the templates is tentative. Suggestions to improve it are welcome.\r\n- I was looking for ways to auto-label issues based on templates, but couldn't find any. Will investigate more and report back.\r\n\r\nIf you want to see the mechanism live, try open an issue repository in this [toy-repository](https://github.com/forthelols/ubimaior/issues) of mine.",
+    "performed_via_github_app": null
+}

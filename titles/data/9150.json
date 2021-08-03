@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9150",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9150/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9150/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9150/events",
+    "html_url": "https://github.com/spack/spack/pull/9150",
+    "id": 356060891,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEyNDQ1MzE5",
+    "number": 9150,
+    "title": "Update openspeedshop and cbtf version numbers",
+    "user": {
+        "login": "jgalarowicz",
+        "id": 630197,
+        "node_id": "MDQ6VXNlcjYzMDE5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/630197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jgalarowicz",
+        "html_url": "https://github.com/jgalarowicz",
+        "followers_url": "https://api.github.com/users/jgalarowicz/followers",
+        "following_url": "https://api.github.com/users/jgalarowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jgalarowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jgalarowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jgalarowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/jgalarowicz/orgs",
+        "repos_url": "https://api.github.com/users/jgalarowicz/repos",
+        "events_url": "https://api.github.com/users/jgalarowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jgalarowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-31T17:16:10Z",
+    "updated_at": "2019-05-20T14:37:33Z",
+    "closed_at": "2018-09-04T01:35:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9150",
+        "html_url": "https://github.com/spack/spack/pull/9150",
+        "diff_url": "https://github.com/spack/spack/pull/9150.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9150.patch"
+    },
+    "body": "Update the version numbers and now depend on\r\nthe develop version of dyninst because of a\r\nfeature in openspeedshop depends on new code\r\nin the dyninst develop tree.  Without dyninst\r\ndevelop, openspeedshop will not build.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8804",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8804/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8804/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8804/events",
+    "html_url": "https://github.com/spack/spack/pull/8804",
+    "id": 344570888,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAzOTM1MDM3",
+    "number": 8804,
+    "title": "updated Tasmanian spack with latest options",
+    "user": {
+        "login": "mkstoyanov",
+        "id": 30537612,
+        "node_id": "MDQ6VXNlcjMwNTM3NjEy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30537612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mkstoyanov",
+        "html_url": "https://github.com/mkstoyanov",
+        "followers_url": "https://api.github.com/users/mkstoyanov/followers",
+        "following_url": "https://api.github.com/users/mkstoyanov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mkstoyanov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mkstoyanov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mkstoyanov/subscriptions",
+        "organizations_url": "https://api.github.com/users/mkstoyanov/orgs",
+        "repos_url": "https://api.github.com/users/mkstoyanov/repos",
+        "events_url": "https://api.github.com/users/mkstoyanov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mkstoyanov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-07-25T19:11:34Z",
+    "updated_at": "2018-07-27T15:29:02Z",
+    "closed_at": "2018-07-27T15:10:32Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8804",
+        "html_url": "https://github.com/spack/spack/pull/8804",
+        "diff_url": "https://github.com/spack/spack/pull/8804.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8804.patch"
+    },
+    "body": "* added Tasmanian versions 5.1\r\n* added Tasmanian development version (future 6.0)\r\n* added options through `+~` flags\r\n* added and tested the `+xsdkflags`\r\n",
+    "performed_via_github_app": null
+}

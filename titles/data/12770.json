@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12770",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12770/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12770/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12770/events",
+    "html_url": "https://github.com/spack/spack/pull/12770",
+    "id": 491124684,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE1NTU0NDIy",
+    "number": 12770,
+    "title": "binutils: fix undefined symbol libintl_dgettext",
+    "user": {
+        "login": "viniciusvgp",
+        "id": 7587101,
+        "node_id": "MDQ6VXNlcjc1ODcxMDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7587101?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/viniciusvgp",
+        "html_url": "https://github.com/viniciusvgp",
+        "followers_url": "https://api.github.com/users/viniciusvgp/followers",
+        "following_url": "https://api.github.com/users/viniciusvgp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/viniciusvgp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/viniciusvgp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/viniciusvgp/subscriptions",
+        "organizations_url": "https://api.github.com/users/viniciusvgp/orgs",
+        "repos_url": "https://api.github.com/users/viniciusvgp/repos",
+        "events_url": "https://api.github.com/users/viniciusvgp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/viniciusvgp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-09-09T14:16:56Z",
+    "updated_at": "2019-09-09T16:05:04Z",
+    "closed_at": "2019-09-09T16:05:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12770",
+        "html_url": "https://github.com/spack/spack/pull/12770",
+        "diff_url": "https://github.com/spack/spack/pull/12770.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12770.patch"
+    },
+    "body": "This fixes undefined symbol `libintl_dgettext` on `libbfd.so` when building `bintuils+nls`, which depends on `gettext`.\r\n\r\n```\r\nldd -r `./spack/bin/spack location -i binutils+nls`/lib/libbfd.so\r\n\tlinux-vdso.so.1 (0x00007ffcf4551000)\r\n\tlibz.so.1 => /tmp/spack/opt/spack/linux-ubuntu19.04-x86_64/gcc-8.3.0/zlib-1.2.11-svvxgn7pln5jyvtfaexp4s6kkfwefraf/lib/libz.so.1 (0x00007f07ed9a6000)\r\n\tlibdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f07ed97b000)\r\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f07ed790000)\r\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f07ee082000)\r\nundefined symbol: libintl_dngettext\t(/tmp/spack/opt/spack/linux-ubuntu19.04-x86_64/gcc-8.3.0/binutils-2.32-wedlillsmksloz46hpuf6uywypwb3fvw/lib/libbfd.so)\r\nundefined symbol: libintl_dgettext\t(/tmp/spack/opt/spack/linux-ubuntu19.04-x86_64/gcc-8.3.0/binutils-2.32-wedlillsmksloz46hpuf6uywypwb3fvw/lib/libbfd.so)\r\n```",
+    "performed_via_github_app": null
+}

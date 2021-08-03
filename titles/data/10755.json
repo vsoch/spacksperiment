@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10755",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10755/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10755/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10755/events",
+    "html_url": "https://github.com/spack/spack/pull/10755",
+    "id": 415670569,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjU3MTA2Nzc0",
+    "number": 10755,
+    "title": "vtk-m: Turn of mpi by default",
+    "user": {
+        "login": "HaochengLIU",
+        "id": 30446009,
+        "node_id": "MDQ6VXNlcjMwNDQ2MDA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30446009?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HaochengLIU",
+        "html_url": "https://github.com/HaochengLIU",
+        "followers_url": "https://api.github.com/users/HaochengLIU/followers",
+        "following_url": "https://api.github.com/users/HaochengLIU/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HaochengLIU/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HaochengLIU/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HaochengLIU/subscriptions",
+        "organizations_url": "https://api.github.com/users/HaochengLIU/orgs",
+        "repos_url": "https://api.github.com/users/HaochengLIU/repos",
+        "events_url": "https://api.github.com/users/HaochengLIU/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HaochengLIU/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-02-28T15:08:46Z",
+    "updated_at": "2019-03-07T13:23:04Z",
+    "closed_at": "2019-03-07T02:34:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10755",
+        "html_url": "https://github.com/spack/spack/pull/10755",
+        "diff_url": "https://github.com/spack/spack/pull/10755.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10755.patch"
+    },
+    "body": "Since there is no real mpi based functionality currently in VTK-m,\r\nmpi is off by default. Otherwise building the spack package inside of\r\n a TravisCI ubuntu docker container fails with compile errors in DIY.",
+    "performed_via_github_app": null
+}

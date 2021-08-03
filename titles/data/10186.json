@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10186",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10186/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10186/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10186/events",
+    "html_url": "https://github.com/spack/spack/pull/10186",
+    "id": 393816444,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQwNzI0ODg5",
+    "number": 10186,
+    "title": "bugfix: handle unicode properly in spack.util.executable",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-24T06:05:11Z",
+    "updated_at": "2018-12-24T08:28:01Z",
+    "closed_at": "2018-12-24T07:59:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10186",
+        "html_url": "https://github.com/spack/spack/pull/10186",
+        "diff_url": "https://github.com/spack/spack/pull/10186.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10186.patch"
+    },
+    "body": "Supersedes #10050.\r\n\r\nThis fixes bugs in `spack blame` like this:\r\n\r\n```console\r\n(spackbook):spack$ spack blame catalyst\r\n==> Error: 'ascii' codec can't decode byte 0xc3 in position 9: ordinal not in range(128)\r\n```\r\n\r\nIn this case it was the \"\u00e0\" in \"Simone Bn\u00e0\" that was causing Python to fail.  The #10050 tried to solve this in `colify.py`, but I think the issue is that we weren't properly decoding text at the edges in the first place. I tracked this down to the pipe read in `spack.util.executable`, and just made *that* treat everything as proper unicode.\r\n\r\nThis also adds a test to verify that we're able to round-trip unicode through an `Executable` object.\r\n\r\n- [x] When returning string output, use text_type and decode utf-8 in Python 2 instead of using `str`\r\n- [x] This properly handles unicode, whereas before we would pass bad strings to colify in `spack blame` when reading git output\r\n- [x] add a test that round-trips some unicode through an Executable object",
+    "performed_via_github_app": null
+}

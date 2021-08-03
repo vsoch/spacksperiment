@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7609",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7609/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7609/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7609/events",
+    "html_url": "https://github.com/spack/spack/pull/7609",
+    "id": 308958178,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc3NzMxODc3",
+    "number": 7609,
+    "title": "tinyxml: added -fpic variant",
+    "user": {
+        "login": "Zehvogel",
+        "id": 12029880,
+        "node_id": "MDQ6VXNlcjEyMDI5ODgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12029880?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Zehvogel",
+        "html_url": "https://github.com/Zehvogel",
+        "followers_url": "https://api.github.com/users/Zehvogel/followers",
+        "following_url": "https://api.github.com/users/Zehvogel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Zehvogel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Zehvogel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Zehvogel/subscriptions",
+        "organizations_url": "https://api.github.com/users/Zehvogel/orgs",
+        "repos_url": "https://api.github.com/users/Zehvogel/repos",
+        "events_url": "https://api.github.com/users/Zehvogel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Zehvogel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-03-27T12:59:11Z",
+    "updated_at": "2019-02-12T14:17:24Z",
+    "closed_at": "2019-02-12T14:17:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7609",
+        "html_url": "https://github.com/spack/spack/pull/7609",
+        "diff_url": "https://github.com/spack/spack/pull/7609.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7609.patch"
+    },
+    "body": "this is needed by nektar++ which i will add a package for shortly",
+    "performed_via_github_app": null
+}

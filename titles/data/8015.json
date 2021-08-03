@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8015",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8015/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8015/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8015/events",
+    "html_url": "https://github.com/spack/spack/pull/8015",
+    "id": 320070803,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg1ODMwODUz",
+    "number": 8015,
+    "title": "Fix petsc spec file so verification test case works with Spectrum MPI",
+    "user": {
+        "login": "dwootton-ny",
+        "id": 38671868,
+        "node_id": "MDQ6VXNlcjM4NjcxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38671868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dwootton-ny",
+        "html_url": "https://github.com/dwootton-ny",
+        "followers_url": "https://api.github.com/users/dwootton-ny/followers",
+        "following_url": "https://api.github.com/users/dwootton-ny/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dwootton-ny/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dwootton-ny/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dwootton-ny/subscriptions",
+        "organizations_url": "https://api.github.com/users/dwootton-ny/orgs",
+        "repos_url": "https://api.github.com/users/dwootton-ny/repos",
+        "events_url": "https://api.github.com/users/dwootton-ny/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dwootton-ny/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-05-03T20:35:57Z",
+    "updated_at": "2018-05-10T17:49:18Z",
+    "closed_at": "2018-05-10T17:49:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8015",
+        "html_url": "https://github.com/spack/spack/pull/8015",
+        "diff_url": "https://github.com/spack/spack/pull/8015.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8015.patch"
+    },
+    "body": "Running 'spack install --test=root petsc' using Spectrum MPI as the MPI provider fails running the ex50 testcase in the verification step.\r\n\r\nThe verification step issues 'mpirun ex50 -da_grid_x 4 -da_grid_y 4' which fails with the message '[0]PETSC ERROR: Argument out of range\r\n[0]PETSC ERROR: Partition in y direction is too fine! 4 11' on my system, where the mpirun default is to run with 44 tasks since I have 44 cores available.\r\n\r\nBy adding '-np 4' to the mpirun command, a reasonable number of tasks is specified and ex50 runs.",
+    "performed_via_github_app": null
+}

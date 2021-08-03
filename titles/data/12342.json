@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12342",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12342/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12342/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12342/events",
+    "html_url": "https://github.com/spack/spack/pull/12342",
+    "id": 478694895,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA1NzU1MDQ1",
+    "number": 12342,
+    "title": "Add latest versions of openssl",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-08-08T21:25:38Z",
+    "updated_at": "2019-08-09T02:54:55Z",
+    "closed_at": "2019-08-09T00:04:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12342",
+        "html_url": "https://github.com/spack/spack/pull/12342",
+        "diff_url": "https://github.com/spack/spack/pull/12342.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12342.patch"
+    },
+    "body": "Question: should we remove the 1.0.1 versions now that they are no longer supported? I don't want Spack responsible for security issues because we allowed people to use ancient openssl versions.",
+    "performed_via_github_app": null
+}

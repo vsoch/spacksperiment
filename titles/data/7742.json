@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7742",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7742/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7742/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7742/events",
+    "html_url": "https://github.com/spack/spack/pull/7742",
+    "id": 313876446,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxMzE3MTY0",
+    "number": 7742,
+    "title": "libfabric: Version bumps and provider additions",
+    "user": {
+        "login": "rajachan",
+        "id": 742736,
+        "node_id": "MDQ6VXNlcjc0MjczNg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/742736?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rajachan",
+        "html_url": "https://github.com/rajachan",
+        "followers_url": "https://api.github.com/users/rajachan/followers",
+        "following_url": "https://api.github.com/users/rajachan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rajachan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rajachan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rajachan/subscriptions",
+        "organizations_url": "https://api.github.com/users/rajachan/orgs",
+        "repos_url": "https://api.github.com/users/rajachan/repos",
+        "events_url": "https://api.github.com/users/rajachan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rajachan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-04-12T20:30:20Z",
+    "updated_at": "2018-04-13T07:09:55Z",
+    "closed_at": "2018-04-13T07:09:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7742",
+        "html_url": "https://github.com/spack/spack/pull/7742",
+        "diff_url": "https://github.com/spack/spack/pull/7742.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7742.patch"
+    },
+    "body": "Making the latest stable version of libfabric (v1.6) the default version, bumping up the bugfix version of the 1.5 series, and adding the TCP and SHM core providers.",
+    "performed_via_github_app": null
+}

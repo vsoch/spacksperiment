@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10003",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10003/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10003/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10003/events",
+    "html_url": "https://github.com/spack/spack/pull/10003",
+    "id": 386897545,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM1NTA5MjI5",
+    "number": 10003,
+    "title": "Download CMake sources from the Github releases",
+    "user": {
+        "login": "robertmaynard",
+        "id": 215756,
+        "node_id": "MDQ6VXNlcjIxNTc1Ng==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215756?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/robertmaynard",
+        "html_url": "https://github.com/robertmaynard",
+        "followers_url": "https://api.github.com/users/robertmaynard/followers",
+        "following_url": "https://api.github.com/users/robertmaynard/following{/other_user}",
+        "gists_url": "https://api.github.com/users/robertmaynard/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/robertmaynard/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/robertmaynard/subscriptions",
+        "organizations_url": "https://api.github.com/users/robertmaynard/orgs",
+        "repos_url": "https://api.github.com/users/robertmaynard/repos",
+        "events_url": "https://api.github.com/users/robertmaynard/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/robertmaynard/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2018-12-03T16:27:11Z",
+    "updated_at": "2018-12-04T16:15:45Z",
+    "closed_at": "2018-12-03T18:35:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10003",
+        "html_url": "https://github.com/spack/spack/pull/10003",
+        "diff_url": "https://github.com/spack/spack/pull/10003.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10003.patch"
+    },
+    "body": "Now that CMake is providing CMake release artifacts on github,\r\nwe should prefer those as they have better download speeds and\r\nuptime.",
+    "performed_via_github_app": null
+}

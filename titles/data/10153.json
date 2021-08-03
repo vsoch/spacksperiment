@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10153/events",
+    "html_url": "https://github.com/spack/spack/pull/10153",
+    "id": 392619811,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5ODUwMTI0",
+    "number": 10153,
+    "title": "fetch_strategy: improve GitFetchStrategy",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-19T14:13:59Z",
+    "updated_at": "2018-12-19T22:33:59Z",
+    "closed_at": "2018-12-19T22:33:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10153",
+        "html_url": "https://github.com/spack/spack/pull/10153",
+        "diff_url": "https://github.com/spack/spack/pull/10153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10153.patch"
+    },
+    "body": "Currently, only the Git repsository's URL shows up in the `spack info` output, which makes it hard to distinguish different versions:\r\n```\r\nSafe versions:\r\n    develop    [git] https://github.com/LLNL/H5Z-ZFP.git\r\n    0.8.0      [git] https://github.com/LLNL/H5Z-ZFP.git\r\n    0.7.0      [git] https://github.com/LLNL/H5Z-ZFP.git\r\n```\r\n\r\nThis change adds additional information as shown when cloning a Git repository:\r\n```\r\nSafe versions:\r\n    develop    [git] https://github.com/LLNL/H5Z-ZFP.git on branch master\r\n    0.8.0      [git] https://github.com/LLNL/H5Z-ZFP.git at commit af165c4\r\n    0.7.0      [git] https://github.com/LLNL/H5Z-ZFP.git at commit 58ac811\r\n```",
+    "performed_via_github_app": null
+}

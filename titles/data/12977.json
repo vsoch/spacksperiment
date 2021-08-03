@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12977",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12977/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12977/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12977/events",
+    "html_url": "https://github.com/spack/spack/pull/12977",
+    "id": 500288796,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIyNzkxNjIy",
+    "number": 12977,
+    "title": "Added go 1.13.1 and 1.12.10",
+    "user": {
+        "login": "paulbry",
+        "id": 39570394,
+        "node_id": "MDQ6VXNlcjM5NTcwMzk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39570394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulbry",
+        "html_url": "https://github.com/paulbry",
+        "followers_url": "https://api.github.com/users/paulbry/followers",
+        "following_url": "https://api.github.com/users/paulbry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulbry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulbry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulbry/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulbry/orgs",
+        "repos_url": "https://api.github.com/users/paulbry/repos",
+        "events_url": "https://api.github.com/users/paulbry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulbry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-09-30T13:46:58Z",
+    "updated_at": "2019-10-07T16:44:25Z",
+    "closed_at": "2019-10-07T01:22:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12977",
+        "html_url": "https://github.com/spack/spack/pull/12977",
+        "diff_url": "https://github.com/spack/spack/pull/12977.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12977.patch"
+    },
+    "body": "Added latest version of Go that address security issues (https://groups.google.com/forum/#!topic/golang-announce/cszieYyuL9Q)",
+    "performed_via_github_app": null
+}

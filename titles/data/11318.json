@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11318",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11318/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11318/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11318/events",
+    "html_url": "https://github.com/spack/spack/pull/11318",
+    "id": 438357251,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc0NDA1NzEz",
+    "number": 11318,
+    "title": "llvm: Adjust default supported targets",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-04-29T14:53:08Z",
+    "updated_at": "2019-07-15T16:11:41Z",
+    "closed_at": "2019-05-07T19:36:44Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11318",
+        "html_url": "https://github.com/spack/spack/pull/11318",
+        "diff_url": "https://github.com/spack/spack/pull/11318.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11318.patch"
+    },
+    "body": "The default install for llvm should just be the common typical case, i.e.\r\nsupport for local host and cpu architectures.  Enabling support for the wide\r\narray of auxiliary architectures should be explicit rather than implicit.\r\n\r\nNote that this is merely a bandaid.  I have the intention later to make the targets a multi-valued variant, but there's no particular timeline on that.",
+    "performed_via_github_app": null
+}

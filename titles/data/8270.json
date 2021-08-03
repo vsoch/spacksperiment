@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8270",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8270/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8270/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8270/events",
+    "html_url": "https://github.com/spack/spack/pull/8270",
+    "id": 326272085,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkwNDA1NjM4",
+    "number": 8270,
+    "title": "Don't duplicate Python error messages",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-05-24T20:08:22Z",
+    "updated_at": "2018-06-03T16:58:47Z",
+    "closed_at": "2018-06-03T04:04:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8270",
+        "html_url": "https://github.com/spack/spack/pull/8270",
+        "diff_url": "https://github.com/spack/spack/pull/8270.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8270.patch"
+    },
+    "body": "### Before\r\n\r\n```\r\n==> Error: NameError: name 'foobar' is not defined\r\nNameError: NameError: name 'foobar' is not defined\r\n\r\n/Users/Adam/spack/var/spack/repos/builtin/packages/zstd/package.py:41, in install:\r\n     0         def install(self, spec, prefix):\r\n     1             make('install', 'PREFIX={0}'.format(foobar))\r\n\r\nSee build log for details:\r\n  /Users/Adam/spack/var/spack/stage/zstd-1.3.0-6bt7wh3xgg242a4saz3oojkcxbixoqar/zstd-1.3.0/spack-build.out\r\n```\r\n\r\n### After\r\n\r\n```\r\n==> Error: NameError: name 'foobar' is not defined\r\n\r\n/Users/Adam/spack/var/spack/repos/builtin/packages/zstd/package.py:41, in install:\r\n     0         def install(self, spec, prefix):\r\n     1             make('install', 'PREFIX={0}'.format(foobar))\r\n\r\nSee build log for details:\r\n  /Users/Adam/spack/var/spack/stage/zstd-1.3.0-6bt7wh3xgg242a4saz3oojkcxbixoqar/zstd-1.3.0/spack-build.out\r\n```",
+    "performed_via_github_app": null
+}

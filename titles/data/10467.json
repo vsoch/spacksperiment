@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10467",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10467/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10467/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10467/events",
+    "html_url": "https://github.com/spack/spack/pull/10467",
+    "id": 404385462,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ4NTc5ODA5",
+    "number": 10467,
+    "title": "cmake: Fix linker errors on Darwin when using external dependencies",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-01-29T16:48:13Z",
+    "updated_at": "2019-04-01T05:23:59Z",
+    "closed_at": "2019-01-31T02:24:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10467",
+        "html_url": "https://github.com/spack/spack/pull/10467",
+        "diff_url": "https://github.com/spack/spack/pull/10467.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10467.patch"
+    },
+    "body": "Adds upstream patch for a missing framework and drops external rhash\r\nrhash support.",
+    "performed_via_github_app": null
+}

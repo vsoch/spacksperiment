@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8524",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8524/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8524/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8524/events",
+    "html_url": "https://github.com/spack/spack/pull/8524",
+    "id": 334060087,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2MTI1NDI4",
+    "number": 8524,
+    "title": "libbeagle: add java dependency so jni hooks get built",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-20T12:44:26Z",
+    "updated_at": "2018-07-22T22:16:44Z",
+    "closed_at": "2018-07-22T22:16:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8524",
+        "html_url": "https://github.com/spack/spack/pull/8524",
+        "diff_url": "https://github.com/spack/spack/pull/8524.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8524.patch"
+    },
+    "body": "also sets ld_library_path so dependents (like beast) can find libbeagle correctly",
+    "performed_via_github_app": null
+}

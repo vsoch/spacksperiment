@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9088",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9088/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9088/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9088/events",
+    "html_url": "https://github.com/spack/spack/pull/9088",
+    "id": 353694603,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwNjc0OTYw",
+    "number": 9088,
+    "title": "improve spack load error",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-24T08:38:03Z",
+    "updated_at": "2018-08-28T07:53:40Z",
+    "closed_at": "2018-08-28T01:26:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9088",
+        "html_url": "https://github.com/spack/spack/pull/9088",
+        "diff_url": "https://github.com/spack/spack/pull/9088.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9088.patch"
+    },
+    "body": "addresses #9077 (at least it improves the situation)\r\n\r\n* now additionally prints hash and options\r\n ",
+    "performed_via_github_app": null
+}

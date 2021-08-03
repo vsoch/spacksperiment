@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8766",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8766/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8766/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8766/events",
+    "html_url": "https://github.com/spack/spack/pull/8766",
+    "id": 342922705,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNzA5NTYy",
+    "number": 8766,
+    "title": "Package/flang: Updated to use own version of llvm",
+    "user": {
+        "login": "tinlun",
+        "id": 4332057,
+        "node_id": "MDQ6VXNlcjQzMzIwNTc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4332057?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tinlun",
+        "html_url": "https://github.com/tinlun",
+        "followers_url": "https://api.github.com/users/tinlun/followers",
+        "following_url": "https://api.github.com/users/tinlun/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tinlun/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tinlun/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tinlun/subscriptions",
+        "organizations_url": "https://api.github.com/users/tinlun/orgs",
+        "repos_url": "https://api.github.com/users/tinlun/repos",
+        "events_url": "https://api.github.com/users/tinlun/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tinlun/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-07-19T23:26:26Z",
+    "updated_at": "2018-08-07T15:31:05Z",
+    "closed_at": "2018-08-04T00:35:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8766",
+        "html_url": "https://github.com/spack/spack/pull/8766",
+        "diff_url": "https://github.com/spack/spack/pull/8766.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8766.patch"
+    },
+    "body": "Flang now uses its own version of llvm and clang (re-named\r\nflang-driver).\r\n\r\nUpdated preferred version to 2018-06-12 build.\r\n\r\nIncludes a specific version for ppc64le targets.\r\n\r\nAny feedback appreciated! Especially for LLVM's version name.",
+    "performed_via_github_app": null
+}

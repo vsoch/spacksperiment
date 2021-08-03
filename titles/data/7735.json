@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7735",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7735/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7735/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7735/events",
+    "html_url": "https://github.com/spack/spack/pull/7735",
+    "id": 313795643,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxMjU1NTc4",
+    "number": 7735,
+    "title": "Add missing dependency to py-matplotlib",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-04-12T16:13:47Z",
+    "updated_at": "2018-04-12T18:04:57Z",
+    "closed_at": "2018-04-12T17:53:31Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7735",
+        "html_url": "https://github.com/spack/spack/pull/7735",
+        "diff_url": "https://github.com/spack/spack/pull/7735.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7735.patch"
+    },
+    "body": "kiwisolver is a required dependency as of [2.2.0](https://github.com/matplotlib/matplotlib/releases/tag/v2.2.0)\r\n\r\nThis only turns up when actually trying to import matplotlib... Build goes through without and their dependency management is abyssal... (read: I gave up trying to understand it)",
+    "performed_via_github_app": null
+}

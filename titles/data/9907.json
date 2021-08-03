@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9907",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9907/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9907/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9907/events",
+    "html_url": "https://github.com/spack/spack/pull/9907",
+    "id": 382898860,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjMyNDk3ODc4",
+    "number": 9907,
+    "title": "correct sha for axl v0.1.1",
+    "user": {
+        "login": "gonsie",
+        "id": 135808,
+        "node_id": "MDQ6VXNlcjEzNTgwOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135808?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gonsie",
+        "html_url": "https://github.com/gonsie",
+        "followers_url": "https://api.github.com/users/gonsie/followers",
+        "following_url": "https://api.github.com/users/gonsie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gonsie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gonsie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gonsie/subscriptions",
+        "organizations_url": "https://api.github.com/users/gonsie/orgs",
+        "repos_url": "https://api.github.com/users/gonsie/repos",
+        "events_url": "https://api.github.com/users/gonsie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gonsie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-21T00:02:56Z",
+    "updated_at": "2018-11-21T01:28:52Z",
+    "closed_at": "2018-11-21T01:28:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9907",
+        "html_url": "https://github.com/spack/spack/pull/9907",
+        "diff_url": "https://github.com/spack/spack/pull/9907.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9907.patch"
+    },
+    "body": "I guess if you use the \"draft\" release on GitHub, it doesn't actually create the git tag for you. Now that v0.1.1 is an actual release, this should be the actual hash.",
+    "performed_via_github_app": null
+}

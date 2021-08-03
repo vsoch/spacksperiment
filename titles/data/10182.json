@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10182",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10182/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10182/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10182/events",
+    "html_url": "https://github.com/spack/spack/pull/10182",
+    "id": 393706143,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQwNjU1NDU2",
+    "number": 10182,
+    "title": "Add missing module environment variable setting causing OpenSpeedShop to fail at runtime",
+    "user": {
+        "login": "jgalarowicz",
+        "id": 630197,
+        "node_id": "MDQ6VXNlcjYzMDE5Nw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/630197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jgalarowicz",
+        "html_url": "https://github.com/jgalarowicz",
+        "followers_url": "https://api.github.com/users/jgalarowicz/followers",
+        "following_url": "https://api.github.com/users/jgalarowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jgalarowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jgalarowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jgalarowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/jgalarowicz/orgs",
+        "repos_url": "https://api.github.com/users/jgalarowicz/repos",
+        "events_url": "https://api.github.com/users/jgalarowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jgalarowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-22T22:06:04Z",
+    "updated_at": "2019-05-20T14:36:38Z",
+    "closed_at": "2018-12-22T23:24:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10182",
+        "html_url": "https://github.com/spack/spack/pull/10182",
+        "diff_url": "https://github.com/spack/spack/pull/10182.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10182.patch"
+    },
+    "body": "Set the OPENSS_PLUGIN_PATH environment variable.  Users have sent in issues where OpenSpeedShop can't find the analyst plugin when trying to run OpenSpeedShop on their applications.  This mod fixes that issue by setting the variable to the proper path.",
+    "performed_via_github_app": null
+}

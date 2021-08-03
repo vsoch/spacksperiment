@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8034",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8034/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8034/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8034/events",
+    "html_url": "https://github.com/spack/spack/pull/8034",
+    "id": 320806433,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg2MzUzMDA3",
+    "number": 8034,
+    "title": "Add patch to pixman for clang 5.0 and up",
+    "user": {
+        "login": "anne-glerum",
+        "id": 7631624,
+        "node_id": "MDQ6VXNlcjc2MzE2MjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7631624?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anne-glerum",
+        "html_url": "https://github.com/anne-glerum",
+        "followers_url": "https://api.github.com/users/anne-glerum/followers",
+        "following_url": "https://api.github.com/users/anne-glerum/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anne-glerum/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anne-glerum/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anne-glerum/subscriptions",
+        "organizations_url": "https://api.github.com/users/anne-glerum/orgs",
+        "repos_url": "https://api.github.com/users/anne-glerum/repos",
+        "events_url": "https://api.github.com/users/anne-glerum/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anne-glerum/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-07T13:33:29Z",
+    "updated_at": "2018-05-08T07:43:00Z",
+    "closed_at": "2018-05-07T14:51:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8034",
+        "html_url": "https://github.com/spack/spack/pull/8034",
+        "diff_url": "https://github.com/spack/spack/pull/8034.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8034.patch"
+    },
+    "body": "Fixes #7911.\r\nDoes this suffice or should I check for non apple-clang as well?",
+    "performed_via_github_app": null
+}

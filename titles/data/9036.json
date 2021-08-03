@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9036",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9036/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9036/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9036/events",
+    "html_url": "https://github.com/spack/spack/pull/9036",
+    "id": 352611282,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5ODc5MDgy",
+    "number": 9036,
+    "title": "More consistent colored messages from activate/deactivate",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 513710280,
+            "node_id": "MDU6TGFiZWw1MTM3MTAyODA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/color",
+            "name": "color",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-08-21T16:07:27Z",
+    "updated_at": "2018-08-23T12:32:57Z",
+    "closed_at": "2018-08-23T05:09:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9036",
+        "html_url": "https://github.com/spack/spack/pull/9036",
+        "diff_url": "https://github.com/spack/spack/pull/9036.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9036.patch"
+    },
+    "body": "Previously, the following discrepancies existed in the messages printed by `spack activate` and `spack deactivate`:\r\n\r\n* `spack activate` would print twice (once before \"activating\" and once when \"activated\"), while `spack deactivate` would only print once (when \"deactivate\")\r\n* Specs when \"activating\" and when \"activated\" were colored differently\r\n* Extendee spec was colored but extension spec was not\r\n\r\nThis PR removes those discrepancies.\r\n\r\n### Before\r\n\r\n<img width=\"651\" alt=\"screen shot 2018-08-21 at 11 01 17 am\" src=\"https://user-images.githubusercontent.com/12021217/44413877-04aa0800-a532-11e8-8543-e5c90a5ff22a.png\">\r\n\r\n### After\r\n\r\n<img width=\"650\" alt=\"screen shot 2018-08-21 at 11 00 21 am\" src=\"https://user-images.githubusercontent.com/12021217/44413894-0a9fe900-a532-11e8-83ca-4f1b7e38fab3.png\">\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

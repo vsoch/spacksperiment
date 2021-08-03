@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8130",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8130/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8130/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8130/events",
+    "html_url": "https://github.com/spack/spack/pull/8130",
+    "id": 322998457,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3OTYzODI1",
+    "number": 8130,
+    "title": "Added Shim to Support hdf5+mpi in Spack Silo",
+    "user": {
+        "login": "rspavel",
+        "id": 4571189,
+        "node_id": "MDQ6VXNlcjQ1NzExODk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4571189?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rspavel",
+        "html_url": "https://github.com/rspavel",
+        "followers_url": "https://api.github.com/users/rspavel/followers",
+        "following_url": "https://api.github.com/users/rspavel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rspavel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rspavel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rspavel/subscriptions",
+        "organizations_url": "https://api.github.com/users/rspavel/orgs",
+        "repos_url": "https://api.github.com/users/rspavel/repos",
+        "events_url": "https://api.github.com/users/rspavel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rspavel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-14T22:05:05Z",
+    "updated_at": "2018-05-15T01:29:04Z",
+    "closed_at": "2018-05-15T01:29:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8130",
+        "html_url": "https://github.com/spack/spack/pull/8130",
+        "diff_url": "https://github.com/spack/spack/pull/8130.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8130.patch"
+    },
+    "body": "Added compatibility for hdf5+mpi to silo spackage to support spackages\r\nwith dependency chains that include silo and hf5+mpi\r\n\r\nFix proxyapps/proxy-ci#16",
+    "performed_via_github_app": null
+}

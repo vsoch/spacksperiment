@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10442",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10442/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10442/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10442/events",
+    "html_url": "https://github.com/spack/spack/pull/10442",
+    "id": 402958317,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ3NTI0NzYz",
+    "number": 10442,
+    "title": "Update the PMIx package",
+    "user": {
+        "login": "rhc54",
+        "id": 2440928,
+        "node_id": "MDQ6VXNlcjI0NDA5Mjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2440928?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rhc54",
+        "html_url": "https://github.com/rhc54",
+        "followers_url": "https://api.github.com/users/rhc54/followers",
+        "following_url": "https://api.github.com/users/rhc54/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rhc54/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rhc54/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rhc54/subscriptions",
+        "organizations_url": "https://api.github.com/users/rhc54/orgs",
+        "repos_url": "https://api.github.com/users/rhc54/repos",
+        "events_url": "https://api.github.com/users/rhc54/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rhc54/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-01-25T00:44:50Z",
+    "updated_at": "2019-01-26T20:25:19Z",
+    "closed_at": "2019-01-26T20:25:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10442",
+        "html_url": "https://github.com/spack/spack/pull/10442",
+        "diff_url": "https://github.com/spack/spack/pull/10442.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10442.patch"
+    },
+    "body": "- Add latest releases to the list.\r\n- Add dependency on hwloc for versions >= 3.0\r\n- Flag preferred versions for libevent and hwloc\r\n- Improve the description\r\n- Point the project URL to the correct site\r\n\r\nSigned-off-by: Ralph Castain <rhc@pmix.org>",
+    "performed_via_github_app": null
+}

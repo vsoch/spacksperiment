@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7181",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7181/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7181/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7181/events",
+    "html_url": "https://github.com/spack/spack/pull/7181",
+    "id": 294183879,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY3MDAyMzE1",
+    "number": 7181,
+    "title": "apple-dtrace: new package",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-02-04T09:34:25Z",
+    "updated_at": "2019-08-27T23:42:53Z",
+    "closed_at": "2019-08-27T23:42:52Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7181",
+        "html_url": "https://github.com/spack/spack/pull/7181",
+        "diff_url": "https://github.com/spack/spack/pull/7181.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7181.patch"
+    },
+    "body": "Adds Apple versions of libelf, libdwarf, and some system libraries it looks like dyninst needs to build.\r\n\r\nIssues that need to be addressed:\r\n\r\n* what version of `elf` does this provide? I can't tell what makes an ELF implementation `elf@0` versus `elf@1`.\r\n\r\n* will making this package a provider of `libdwarf` break anything?",
+    "performed_via_github_app": null
+}

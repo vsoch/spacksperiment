@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12758",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12758/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12758/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12758/events",
+    "html_url": "https://github.com/spack/spack/pull/12758",
+    "id": 490703198,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE1MjQwNDcw",
+    "number": 12758,
+    "title": "upcxx: remove warnings from package",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-09-08T02:51:10Z",
+    "updated_at": "2019-09-23T21:28:08Z",
+    "closed_at": "2019-09-23T21:10:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12758",
+        "html_url": "https://github.com/spack/spack/pull/12758",
+        "diff_url": "https://github.com/spack/spack/pull/12758.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12758.patch"
+    },
+    "body": "fixes #12800 \r\n\r\nWarnings in `detect_scheduler()` print out whenever the package is loaded, which  means you can see them in Spack commands that load all packages but have nothing to do with UPC++ (e.g., `spack clean -a`,  `spack dependents`, and others).\r\n\r\n- [x] Remove these and other warnings, since the scheduler is visible in the package variant anyway.\r\n\r\n- [x] Also remove the `user` scheduler option from `upcxx`, as it depends on the user's environment in a way that is not likely to be the same across systems.\r\n\r\n@bonachea, @mjacquel can you take a look at this one?  The main thing I need feedback on is what the user setting for `CROSS` can be.  Is it needed?  Can it be something other than SLURM or ALPS?  If not we should remove it.  If so, then it should be changed to be a string-valued variant, so the user can set its value in a way Spack will actually understand.   Basically we're trying to avoid environment-dependent things in Spack --  one hash should map to one build.\r\n\r\nJust for my own edification, does the UPC++  build link to different libraries depending on what CROSS is set to?  Does it actually affect the final binary somehow, or is that just a build-time thing?",
+    "performed_via_github_app": null
+}

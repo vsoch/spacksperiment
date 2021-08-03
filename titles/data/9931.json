@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9931",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9931/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9931/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9931/events",
+    "html_url": "https://github.com/spack/spack/pull/9931",
+    "id": 383675072,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjMzMDg2Nzcy",
+    "number": 9931,
+    "title": "gromacs: added simd and rdtscp variants",
+    "user": {
+        "login": "marvinbernhardt",
+        "id": 25516935,
+        "node_id": "MDQ6VXNlcjI1NTE2OTM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25516935?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marvinbernhardt",
+        "html_url": "https://github.com/marvinbernhardt",
+        "followers_url": "https://api.github.com/users/marvinbernhardt/followers",
+        "following_url": "https://api.github.com/users/marvinbernhardt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marvinbernhardt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marvinbernhardt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marvinbernhardt/subscriptions",
+        "organizations_url": "https://api.github.com/users/marvinbernhardt/orgs",
+        "repos_url": "https://api.github.com/users/marvinbernhardt/repos",
+        "events_url": "https://api.github.com/users/marvinbernhardt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marvinbernhardt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-11-23T00:00:50Z",
+    "updated_at": "2019-01-09T09:39:25Z",
+    "closed_at": "2019-01-09T09:39:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9931",
+        "html_url": "https://github.com/spack/spack/pull/9931",
+        "diff_url": "https://github.com/spack/spack/pull/9931.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9931.patch"
+    },
+    "body": "This PR adds variants to the gromacs package.\r\n- simd determines the SIMD instruction set. Only a single value is allowed. Gromacs 5.1.x does not support all settings, cmake will then complain.\r\n- rdtscp is default on, but some old processors need it off.",
+    "performed_via_github_app": null
+}

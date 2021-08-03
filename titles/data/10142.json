@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10142",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10142/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10142/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10142/events",
+    "html_url": "https://github.com/spack/spack/pull/10142",
+    "id": 392344881,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5NjM4NzY5",
+    "number": 10142,
+    "title": "fix for mpifileutils package",
+    "user": {
+        "login": "gonsie",
+        "id": 135808,
+        "node_id": "MDQ6VXNlcjEzNTgwOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135808?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gonsie",
+        "html_url": "https://github.com/gonsie",
+        "followers_url": "https://api.github.com/users/gonsie/followers",
+        "following_url": "https://api.github.com/users/gonsie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gonsie/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gonsie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gonsie/subscriptions",
+        "organizations_url": "https://api.github.com/users/gonsie/orgs",
+        "repos_url": "https://api.github.com/users/gonsie/repos",
+        "events_url": "https://api.github.com/users/gonsie/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gonsie/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-18T21:33:25Z",
+    "updated_at": "2018-12-19T03:51:28Z",
+    "closed_at": "2018-12-19T03:51:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10142",
+        "html_url": "https://github.com/spack/spack/pull/10142",
+        "diff_url": "https://github.com/spack/spack/pull/10142.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10142.patch"
+    },
+    "body": "I'm not sure the mpifileutils package ever properly built, especially if trying to use a system libarchive. In any case, I have a bunch of fixes here:\r\n- this package will not work on macs\r\n- all dependency paths are set on the `./configure` line, rather than relying on pkg-config\r\n- the mfu sub tools need to include `src/common`",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11348",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11348/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11348/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11348/events",
+    "html_url": "https://github.com/spack/spack/pull/11348",
+    "id": 439718972,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc1NDY0MzI2",
+    "number": 11348,
+    "title": "llvm: depend on python only when +python",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-05-02T18:08:41Z",
+    "updated_at": "2019-05-31T15:42:55Z",
+    "closed_at": "2019-05-02T20:21:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11348",
+        "html_url": "https://github.com/spack/spack/pull/11348",
+        "diff_url": "https://github.com/spack/spack/pull/11348.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11348.patch"
+    },
+    "body": "Based on the LLVM documentation [1], Python is used to run the automated\r\ntest suite. Therefore is it always a dependency for LLVM. However, if\r\nbuild without Python (~python), we limit it to a build time dependency.\r\n\r\nNote that py-lit is not added as a spack dependency even though it is\r\navailable as a spack package. This is because it is already included\r\nin llvm and llvm is difficult to configure using an external py-lit\r\n(several CMake variables to set correctly). Additionally, having\r\npy-lit as a spack dependency adds Python as a runtime dependency\r\nfor llvm even though it is not required at runtime.\r\n\r\n[1] https://llvm.org/docs/GettingStarted.html#requirements\r\n\r\nReplaces accidentally closed and deleted #10986",
+    "performed_via_github_app": null
+}

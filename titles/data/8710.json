@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8710",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8710/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8710/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8710/events",
+    "html_url": "https://github.com/spack/spack/pull/8710",
+    "id": 341265971,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAxNDY4MDc5",
+    "number": 8710,
+    "title": "Fixing error in amrvis package.",
+    "user": {
+        "login": "jrood-nrel",
+        "id": 23264326,
+        "node_id": "MDQ6VXNlcjIzMjY0MzI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23264326?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrood-nrel",
+        "html_url": "https://github.com/jrood-nrel",
+        "followers_url": "https://api.github.com/users/jrood-nrel/followers",
+        "following_url": "https://api.github.com/users/jrood-nrel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrood-nrel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrood-nrel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrood-nrel/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrood-nrel/orgs",
+        "repos_url": "https://api.github.com/users/jrood-nrel/repos",
+        "events_url": "https://api.github.com/users/jrood-nrel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrood-nrel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-14T20:35:58Z",
+    "updated_at": "2018-07-14T23:19:27Z",
+    "closed_at": "2018-07-14T23:19:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8710",
+        "html_url": "https://github.com/spack/spack/pull/8710",
+        "diff_url": "https://github.com/spack/spack/pull/8710.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8710.patch"
+    },
+    "body": "Somehow this mistake eluded me when I first developed this package.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9597",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9597/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9597/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9597/events",
+    "html_url": "https://github.com/spack/spack/pull/9597",
+    "id": 372260515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI0NTA2MzAy",
+    "number": 9597,
+    "title": "vtk: Fix leftovers",
+    "user": {
+        "login": "rubendibattista",
+        "id": 8077364,
+        "node_id": "MDQ6VXNlcjgwNzczNjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8077364?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rubendibattista",
+        "html_url": "https://github.com/rubendibattista",
+        "followers_url": "https://api.github.com/users/rubendibattista/followers",
+        "following_url": "https://api.github.com/users/rubendibattista/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rubendibattista/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rubendibattista/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rubendibattista/subscriptions",
+        "organizations_url": "https://api.github.com/users/rubendibattista/orgs",
+        "repos_url": "https://api.github.com/users/rubendibattista/repos",
+        "events_url": "https://api.github.com/users/rubendibattista/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rubendibattista/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-10-20T22:55:30Z",
+    "updated_at": "2018-10-30T19:47:49Z",
+    "closed_at": "2018-10-30T19:47:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9597",
+        "html_url": "https://github.com/spack/spack/pull/9597",
+        "diff_url": "https://github.com/spack/spack/pull/9597.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9597.patch"
+    },
+    "body": "In #9510 I left some stuff from copy/paste. Removing them.",
+    "performed_via_github_app": null
+}

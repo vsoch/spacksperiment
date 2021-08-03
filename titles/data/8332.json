@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8332",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8332/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8332/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8332/events",
+    "html_url": "https://github.com/spack/spack/pull/8332",
+    "id": 328171994,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkxNzc5NzA5",
+    "number": 8332,
+    "title": "Albany: Add Albany package.",
+    "user": {
+        "login": "gahansen",
+        "id": 5393804,
+        "node_id": "MDQ6VXNlcjUzOTM4MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5393804?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gahansen",
+        "html_url": "https://github.com/gahansen",
+        "followers_url": "https://api.github.com/users/gahansen/followers",
+        "following_url": "https://api.github.com/users/gahansen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gahansen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gahansen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gahansen/subscriptions",
+        "organizations_url": "https://api.github.com/users/gahansen/orgs",
+        "repos_url": "https://api.github.com/users/gahansen/repos",
+        "events_url": "https://api.github.com/users/gahansen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gahansen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2018-05-31T14:52:06Z",
+    "updated_at": "2018-06-18T19:28:13Z",
+    "closed_at": "2018-06-18T18:50:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8332",
+        "html_url": "https://github.com/spack/spack/pull/8332",
+        "diff_url": "https://github.com/spack/spack/pull/8332.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8332.patch"
+    },
+    "body": "* Add package.py to support the Albany GitHub project builds.\r\n\r\n* Update the Trilinos package.py script to provide additional\r\n  options needed for Albany.",
+    "performed_via_github_app": null
+}

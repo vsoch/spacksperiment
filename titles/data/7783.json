@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7783",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7783/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7783/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7783/events",
+    "html_url": "https://github.com/spack/spack/pull/7783",
+    "id": 315039366,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyMTUwNjc5",
+    "number": 7783,
+    "title": "Autocomplete spack providers",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456144594,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1OTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/virtual-dependencies",
+            "name": "virtual-dependencies",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-04-17T12:35:04Z",
+    "updated_at": "2018-04-17T14:33:09Z",
+    "closed_at": "2018-04-17T14:33:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7783",
+        "html_url": "https://github.com/spack/spack/pull/7783",
+        "diff_url": "https://github.com/spack/spack/pull/7783.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7783.patch"
+    },
+    "body": "We no longer have to manually update the list of Spack providers in our autocompletion scripts thanks to @alalazo's #7748.",
+    "performed_via_github_app": null
+}

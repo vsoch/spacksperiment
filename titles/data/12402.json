@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12402",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12402/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12402/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12402/events",
+    "html_url": "https://github.com/spack/spack/pull/12402",
+    "id": 480048609,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2ODE3Njc5",
+    "number": 12402,
+    "title": "package/gromacs: simd optimizations autodetection for more versions",
+    "user": {
+        "login": "rmsds",
+        "id": 1918414,
+        "node_id": "MDQ6VXNlcjE5MTg0MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1918414?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rmsds",
+        "html_url": "https://github.com/rmsds",
+        "followers_url": "https://api.github.com/users/rmsds/followers",
+        "following_url": "https://api.github.com/users/rmsds/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rmsds/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rmsds/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rmsds/subscriptions",
+        "organizations_url": "https://api.github.com/users/rmsds/orgs",
+        "repos_url": "https://api.github.com/users/rmsds/repos",
+        "events_url": "https://api.github.com/users/rmsds/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rmsds/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-13T09:18:36Z",
+    "updated_at": "2019-08-14T07:25:29Z",
+    "closed_at": "2019-08-14T00:22:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12402",
+        "html_url": "https://github.com/spack/spack/pull/12402",
+        "diff_url": "https://github.com/spack/spack/pull/12402.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12402.patch"
+    },
+    "body": "* pre 2018 the cmake file was named differently\r\n* fixed up post 2018 patch file which was not pretty",
+    "performed_via_github_app": null
+}

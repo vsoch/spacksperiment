@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12353",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12353/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12353/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12353/events",
+    "html_url": "https://github.com/spack/spack/pull/12353",
+    "id": 478964123,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA1OTcxMzYw",
+    "number": 12353,
+    "title": "Bug/py pyqt5",
+    "user": {
+        "login": "Bidibulke",
+        "id": 34576189,
+        "node_id": "MDQ6VXNlcjM0NTc2MTg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34576189?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Bidibulke",
+        "html_url": "https://github.com/Bidibulke",
+        "followers_url": "https://api.github.com/users/Bidibulke/followers",
+        "following_url": "https://api.github.com/users/Bidibulke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Bidibulke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Bidibulke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Bidibulke/subscriptions",
+        "organizations_url": "https://api.github.com/users/Bidibulke/orgs",
+        "repos_url": "https://api.github.com/users/Bidibulke/repos",
+        "events_url": "https://api.github.com/users/Bidibulke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Bidibulke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1492788682,
+            "node_id": "MDU6TGFiZWwxNDkyNzg4Njgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/sip",
+            "name": "sip",
+            "color": "d33bd1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-08-09T12:34:47Z",
+    "updated_at": "2019-09-08T15:48:51Z",
+    "closed_at": "2019-09-08T15:48:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12353",
+        "html_url": "https://github.com/spack/spack/pull/12353",
+        "diff_url": "https://github.com/spack/spack/pull/12353.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12353.patch"
+    },
+    "body": "Bug fix in py-sip and py-qt5 recipe to prevent:\r\n```\r\n>>> import PyQt5\r\n>>> from PyQt5 import QtCore\r\nTraceback (most recent call last):\r\n  File  \"<stdin>\", line 1, in <module>\r\nModuleNotFoundError: No module named 'PyQt5.sip'\r\n```\r\n\r\n",
+    "performed_via_github_app": null
+}

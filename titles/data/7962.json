@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7962",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7962/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7962/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7962/events",
+    "html_url": "https://github.com/spack/spack/pull/7962",
+    "id": 319338740,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg1Mjg0MTE2",
+    "number": 7962,
+    "title": "graphviz: add version 2.30.1, bundled with RHEL 7",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-05-01T21:43:03Z",
+    "updated_at": "2019-08-28T09:20:08Z",
+    "closed_at": "2018-05-05T22:36:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7962",
+        "html_url": "https://github.com/spack/spack/pull/7962",
+        "diff_url": "https://github.com/spack/spack/pull/7962.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7962.patch"
+    },
+    "body": "Adds graphviz version 2.30.1 so that `packages.yaml` can use version from RHEL 7 RPM repo.",
+    "performed_via_github_app": null
+}

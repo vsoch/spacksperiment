@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10289",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10289/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10289/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10289/events",
+    "html_url": "https://github.com/spack/spack/pull/10289",
+    "id": 397429834,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQzMzc5MDkw",
+    "number": 10289,
+    "title": "fix archlinux docker build",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-09T15:44:02Z",
+    "updated_at": "2019-01-12T23:56:29Z",
+    "closed_at": "2019-01-12T08:52:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10289",
+        "html_url": "https://github.com/spack/spack/pull/10289",
+        "diff_url": "https://github.com/spack/spack/pull/10289.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10289.patch"
+    },
+    "body": "Fix Arch Linux docker build.\r\n\r\n - Switch from an unsupported base image to a community-supported image, based on the information found [here](https://wiki.archlinux.org/index.php/Docker#Images).\r\n\r\n - Perform the equivalent of `sudo apt-get update` prior to installing Arch packages.\r\n\r\n - Add a few missing packages.",
+    "performed_via_github_app": null
+}

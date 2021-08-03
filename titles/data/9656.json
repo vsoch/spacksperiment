@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9656",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9656/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9656/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9656/events",
+    "html_url": "https://github.com/spack/spack/pull/9656",
+    "id": 374588435,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI2MjU3NDk3",
+    "number": 9656,
+    "title": "config: `spack config blame` now colors filenames in config output",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-10-27T00:41:59Z",
+    "updated_at": "2018-10-27T10:50:12Z",
+    "closed_at": "2018-10-27T05:19:11Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9656",
+        "html_url": "https://github.com/spack/spack/pull/9656",
+        "diff_url": "https://github.com/spack/spack/pull/9656.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9656.patch"
+    },
+    "body": "This builds on #8081.\r\n\r\n- it was hard to distinguish all-gray filenames\r\n- added rotating colors to `spack config blame`\r\n\r\n![screen shot 2018-10-26 at 5 40 03 pm](https://user-images.githubusercontent.com/299842/47597693-4ac28400-d946-11e8-905d-9b187b499a55.png)\r\n",
+    "performed_via_github_app": null
+}

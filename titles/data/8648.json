@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8648",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8648/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8648/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8648/events",
+    "html_url": "https://github.com/spack/spack/pull/8648",
+    "id": 338790183,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk5NjM0MzMw",
+    "number": 8648,
+    "title": "Glog: make is a function",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 624275116,
+            "node_id": "MDU6TGFiZWw2MjQyNzUxMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/makefile",
+            "name": "makefile",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-06T03:08:26Z",
+    "updated_at": "2019-10-20T01:43:08Z",
+    "closed_at": "2018-07-06T12:15:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8648",
+        "html_url": "https://github.com/spack/spack/pull/8648",
+        "diff_url": "https://github.com/spack/spack/pull/8648.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8648.patch"
+    },
+    "body": "Miraculously, this didn't break anything, but also doesn't run `make`. The only reason that this worked is that `make install` knows that it has to build the libraries first.\r\n\r\nThe `trinity` package also makes this mistake, but will be fixed in #8516.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12739",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12739/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12739/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12739/events",
+    "html_url": "https://github.com/spack/spack/pull/12739",
+    "id": 490411159,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE1MDIzMjA3",
+    "number": 12739,
+    "title": "add mpi variant to p4est package to allow turning off MPI",
+    "user": {
+        "login": "jlippuner",
+        "id": 2790769,
+        "node_id": "MDQ6VXNlcjI3OTA3Njk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2790769?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jlippuner",
+        "html_url": "https://github.com/jlippuner",
+        "followers_url": "https://api.github.com/users/jlippuner/followers",
+        "following_url": "https://api.github.com/users/jlippuner/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlippuner/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jlippuner/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlippuner/subscriptions",
+        "organizations_url": "https://api.github.com/users/jlippuner/orgs",
+        "repos_url": "https://api.github.com/users/jlippuner/repos",
+        "events_url": "https://api.github.com/users/jlippuner/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jlippuner/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-09-06T16:16:08Z",
+    "updated_at": "2019-09-08T03:29:54Z",
+    "closed_at": "2019-09-08T03:29:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12739",
+        "html_url": "https://github.com/spack/spack/pull/12739",
+        "diff_url": "https://github.com/spack/spack/pull/12739.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12739.patch"
+    },
+    "body": "The default is to have MPI enabled, as before. But now the user has the option to turn off MPI if desired.",
+    "performed_via_github_app": null
+}

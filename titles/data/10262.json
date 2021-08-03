@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10262",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10262/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10262/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10262/events",
+    "html_url": "https://github.com/spack/spack/pull/10262",
+    "id": 396366635,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQyNTY2NzEx",
+    "number": 10262,
+    "title": "r-dbplyr: new versions",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-07T06:41:46Z",
+    "updated_at": "2019-03-18T17:37:26Z",
+    "closed_at": "2019-01-09T00:14:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10262",
+        "html_url": "https://github.com/spack/spack/pull/10262",
+        "diff_url": "https://github.com/spack/spack/pull/10262.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10262.patch"
+    },
+    "body": "* added new versions\r\n* tightened up `depends_on()` specs per https://cran.r-project.org/web/packages/dbplyr/index.html",
+    "performed_via_github_app": null
+}

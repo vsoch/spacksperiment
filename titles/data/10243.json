@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10243",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10243/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10243/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10243/events",
+    "html_url": "https://github.com/spack/spack/pull/10243",
+    "id": 395456999,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxOTA1NTE3",
+    "number": 10243,
+    "title": "bugfix: add missing code block",
+    "user": {
+        "login": "benzwick",
+        "id": 33216696,
+        "node_id": "MDQ6VXNlcjMzMjE2Njk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33216696?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/benzwick",
+        "html_url": "https://github.com/benzwick",
+        "followers_url": "https://api.github.com/users/benzwick/followers",
+        "following_url": "https://api.github.com/users/benzwick/following{/other_user}",
+        "gists_url": "https://api.github.com/users/benzwick/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/benzwick/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/benzwick/subscriptions",
+        "organizations_url": "https://api.github.com/users/benzwick/orgs",
+        "repos_url": "https://api.github.com/users/benzwick/repos",
+        "events_url": "https://api.github.com/users/benzwick/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/benzwick/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-03T04:57:17Z",
+    "updated_at": "2019-01-12T04:47:59Z",
+    "closed_at": "2019-01-03T15:41:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10243",
+        "html_url": "https://github.com/spack/spack/pull/10243",
+        "diff_url": "https://github.com/spack/spack/pull/10243.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10243.patch"
+    },
+    "body": "Otherwise the `--` in `--dot` is rendered as a single en-dash.",
+    "performed_via_github_app": null
+}

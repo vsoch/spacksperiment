@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12860/events",
+    "html_url": "https://github.com/spack/spack/pull/12860",
+    "id": 495214047,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE4ODAyNjQ1",
+    "number": 12860,
+    "title": "libxc: Download from git, new version 4.3.4",
+    "user": {
+        "login": "jabl",
+        "id": 392634,
+        "node_id": "MDQ6VXNlcjM5MjYzNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/392634?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jabl",
+        "html_url": "https://github.com/jabl",
+        "followers_url": "https://api.github.com/users/jabl/followers",
+        "following_url": "https://api.github.com/users/jabl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jabl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jabl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jabl/subscriptions",
+        "organizations_url": "https://api.github.com/users/jabl/orgs",
+        "repos_url": "https://api.github.com/users/jabl/repos",
+        "events_url": "https://api.github.com/users/jabl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jabl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-09-18T13:05:52Z",
+    "updated_at": "2019-10-28T17:22:41Z",
+    "closed_at": "2019-10-28T17:22:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12860",
+        "html_url": "https://github.com/spack/spack/pull/12860",
+        "diff_url": "https://github.com/spack/spack/pull/12860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12860.patch"
+    },
+    "body": "The libxc homepage has been missing in action for a long time, making\r\ninstallations fail. See e.g. https://gitlab.com/libxc/libxc/issues/110\r\n.  Thus switch to downloading from the upstream git repo.  The old\r\nversion hashes are left commented out, in case the libxc website\r\nreturns to life at some point and somebody wishes to switch the spack\r\npackage back to downloading tarballs.\r\n\r\nHowever, the upstream repo does not contain a configure script, thus:\r\n\r\n- To generate the configure script, add build dependencies on\r\n  autotools.\r\n\r\n- The patch file patches the configure script from the tarballs, which\r\n  doesn't exist when downloading via git. Thus remove it. This then\r\n  effectively removes the support for the Fujitsu compiler that was\r\n  added by the patch. I guess the proper solution would be to add\r\n  Fujitsu compiler support to autoconf, but that is probably better\r\n  done by somebody having access to said compiler and being able to\r\n  test it.",
+    "performed_via_github_app": null
+}

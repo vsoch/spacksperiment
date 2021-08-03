@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12504",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12504/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12504/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12504/events",
+    "html_url": "https://github.com/spack/spack/pull/12504",
+    "id": 483491369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA5NTU3NzY0",
+    "number": 12504,
+    "title": "mercury: Fix CMake 3.15 configure error",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-08-21T15:26:37Z",
+    "updated_at": "2019-08-21T17:28:27Z",
+    "closed_at": "2019-08-21T17:28:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12504",
+        "html_url": "https://github.com/spack/spack/pull/12504",
+        "diff_url": "https://github.com/spack/spack/pull/12504.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12504.patch"
+    },
+    "body": "Fixes https://github.com/mercury-hpc/mercury/issues/301",
+    "performed_via_github_app": null
+}

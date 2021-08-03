@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12816",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12816/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12816/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12816/events",
+    "html_url": "https://github.com/spack/spack/pull/12816",
+    "id": 493407004,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE3MzkyODA1",
+    "number": 12816,
+    "title": "Add py-astropy 2.0.14",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-09-13T16:09:37Z",
+    "updated_at": "2019-09-16T18:09:36Z",
+    "closed_at": "2019-09-16T18:09:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12816",
+        "html_url": "https://github.com/spack/spack/pull/12816",
+        "diff_url": "https://github.com/spack/spack/pull/12816.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12816.patch"
+    },
+    "body": "This PR includes the following changes:\r\n\r\n- [x] Astropy 3 drops Python 3 support\r\n- [x] Add latest version of Astropy that still supports Python 2\r\n- [x] Add explicit version requirements for Python and NumPy\r\n- [x] Make optional variants actually optional\r\n- [x] Add additional external libraries that Astropy looks for\r\n- [x] Build in parallel\r\n\r\nSuccessfully builds on macOS 10.14.6 with Clang 10.0.1 and Python 3.7.4.",
+    "performed_via_github_app": null
+}

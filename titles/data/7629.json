@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7629",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7629/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7629/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7629/events",
+    "html_url": "https://github.com/spack/spack/issues/7629",
+    "id": 309446165,
+    "node_id": "MDU6SXNzdWUzMDk0NDYxNjU=",
+    "number": 7629,
+    "title": "cray: spack tries to install to a system directory when using cmake module",
+    "user": {
+        "login": "cwsmith",
+        "id": 1024438,
+        "node_id": "MDQ6VXNlcjEwMjQ0Mzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1024438?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cwsmith",
+        "html_url": "https://github.com/cwsmith",
+        "followers_url": "https://api.github.com/users/cwsmith/followers",
+        "following_url": "https://api.github.com/users/cwsmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cwsmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cwsmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cwsmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/cwsmith/orgs",
+        "repos_url": "https://api.github.com/users/cwsmith/repos",
+        "events_url": "https://api.github.com/users/cwsmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cwsmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 616910686,
+            "node_id": "MDU6TGFiZWw2MTY5MTA2ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pgi",
+            "name": "pgi",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-03-28T16:46:12Z",
+    "updated_at": "2019-07-03T18:26:30Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "### Summary\r\n\r\nOn Titan (Cray XK7) spack (`develop` branch, 70a8219f9) successfully builds metis, but fails during the install when it tries to write to a system directory.  Interestingly, the directory it is trying to install to is where cmake was installed by OLCF admins using spack.\r\n\r\nNote, the above problem occurs when I use the cmake module in my `packages.yaml`. When the path is specified as follows:\r\n```yaml\r\n  cmake:\r\n    paths:\r\n      cmake@3.9.0: /autofs/nccs-svm1_sw/titan/.swci/0-login/opt/spack/20170612/linux-suse_linux11-x86_64/gcc-4.3.4/cmake-3.9.0-owxiriblogovogl5zbrg45ulm3ln34cx\r\n    buildable: False\r\n```\r\nthe installation completes successfully.\r\n\r\n### Expected Result\r\n\r\nmetis installed in my local spack directory.\r\n\r\n### Actual Result\r\n\r\nspack fails when trying to install metis to a system directory\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\n$ ./bin/spack --debug --verbose install -v metis%pgi@17.9.0 target=interlagos &> usingModules.log \r\n```\r\n[`usingModules.log`](https://github.com/spack/spack/files/1856865/usingModules.log)\r\n\r\n### Information on your system\r\n\r\nThis includes:\r\n\r\n 1. which platform you are using: \r\nTitan Cray XK7\r\n```console\r\n$ ./bin/spack arch                                                                                                                                   \r\ncray-cnl5-interlagos\r\n```\r\n\r\n 2. any relevant configuration detail:\r\n\r\npackages.yaml\r\n```yaml\r\npackages:\r\n  mpich:\r\n    modules:\r\n      mpich@7.6.3%cce@8.6.4 arch=cray-CNL-interlagos: cray-mpich\r\n      mpich@7.6.3%pgi@17.9.0 arch=cray-CNL-interlagos: cray-mpich\r\n    buildable: False\r\n  cmake:\r\n    modules:\r\n      cmake@3.9.0: cmake3/3.9.0\r\n    buildable: False\r\n  all:\r\n    compiler: [cce/8.6.4,pgi/17.9.0]\r\n    providers:\r\n      mpi: [mpich]\r\n```\r\n\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10229",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10229/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10229/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10229/events",
+    "html_url": "https://github.com/spack/spack/pull/10229",
+    "id": 395022442,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxNTk0MzUz",
+    "number": 10229,
+    "title": "bamutil builds with newer gcc's",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-12-31T19:26:03Z",
+    "updated_at": "2019-01-01T00:37:28Z",
+    "closed_at": "2018-12-31T22:12:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10229",
+        "html_url": "https://github.com/spack/spack/pull/10229",
+        "diff_url": "https://github.com/spack/spack/pull/10229.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10229.patch"
+    },
+    "body": "The most recent release of bamutil that we support uses an embedded\r\ncopy of libStatGen that has several issues that keep it from building\r\nwith newer releases of gcc.\r\n\r\nThey've all been fixed upstream and the latest release of bamutil\r\nwould pick them up if/when we support it.  The build process has\r\nchanged though, plus my team needs *this* version.\r\n\r\nThis commit backports those fixes.",
+    "performed_via_github_app": null
+}

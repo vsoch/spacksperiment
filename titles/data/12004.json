@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12004",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12004/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12004/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12004/events",
+    "html_url": "https://github.com/spack/spack/pull/12004",
+    "id": 467574567,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk3MjAxOTE3",
+    "number": 12004,
+    "title": "Patch libtool when using the Arm compiler",
+    "user": {
+        "login": "NickRF",
+        "id": 916385,
+        "node_id": "MDQ6VXNlcjkxNjM4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/916385?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NickRF",
+        "html_url": "https://github.com/NickRF",
+        "followers_url": "https://api.github.com/users/NickRF/followers",
+        "following_url": "https://api.github.com/users/NickRF/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NickRF/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NickRF/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NickRF/subscriptions",
+        "organizations_url": "https://api.github.com/users/NickRF/orgs",
+        "repos_url": "https://api.github.com/users/NickRF/repos",
+        "events_url": "https://api.github.com/users/NickRF/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NickRF/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-07-12T19:49:37Z",
+    "updated_at": "2019-10-24T14:51:01Z",
+    "closed_at": "2019-10-24T14:51:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12004",
+        "html_url": "https://github.com/spack/spack/pull/12004",
+        "diff_url": "https://github.com/spack/spack/pull/12004.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12004.patch"
+    },
+    "body": "If libtool does not have values for linker/pic flags, patch them in.\r\n\r\nCaused by older versions of config.guess.\r\n\r\nAkin to `sed` commands seen here: https://developer.arm.com/tools-and-software/server-and-hpc/arm-architecture-tools/resources/porting-and-tuning/building-hdf5-with-arm-compiler",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8104",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8104/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8104/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8104/events",
+    "html_url": "https://github.com/spack/spack/pull/8104",
+    "id": 322592265,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3NjY5MDYx",
+    "number": 8104,
+    "title": "boost: added the +numpy variant which enables building libboost_numpy",
+    "user": {
+        "login": "dorier",
+        "id": 11654861,
+        "node_id": "MDQ6VXNlcjExNjU0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11654861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dorier",
+        "html_url": "https://github.com/dorier",
+        "followers_url": "https://api.github.com/users/dorier/followers",
+        "following_url": "https://api.github.com/users/dorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/dorier/orgs",
+        "repos_url": "https://api.github.com/users/dorier/repos",
+        "events_url": "https://api.github.com/users/dorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-13T13:04:43Z",
+    "updated_at": "2018-05-14T02:54:13Z",
+    "closed_at": "2018-05-14T02:54:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8104",
+        "html_url": "https://github.com/spack/spack/pull/8104",
+        "diff_url": "https://github.com/spack/spack/pull/8104.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8104.patch"
+    },
+    "body": "This PR adds the +numpy variant in the boost package.\r\n\r\nThe Boost.NumPy library is particular: it is not enabled by a build flag when building boost; it is instead enabled automatically when Boost.Python is built and boost detects that Numpy is present on the targeted Python installation. Hence the `+numpy` variant needs the `+python` variant to be active, and it depends on the `py-numpy` package.",
+    "performed_via_github_app": null
+}

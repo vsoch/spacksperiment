@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7498",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7498/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7498/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7498/events",
+    "html_url": "https://github.com/spack/spack/pull/7498",
+    "id": 305786021,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc1NDI4NjI5",
+    "number": 7498,
+    "title": "module_cmd: remove spurious warning",
+    "user": {
+        "login": "matthiasdiener",
+        "id": 1772435,
+        "node_id": "MDQ6VXNlcjE3NzI0MzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1772435?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matthiasdiener",
+        "html_url": "https://github.com/matthiasdiener",
+        "followers_url": "https://api.github.com/users/matthiasdiener/followers",
+        "following_url": "https://api.github.com/users/matthiasdiener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matthiasdiener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matthiasdiener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matthiasdiener/subscriptions",
+        "organizations_url": "https://api.github.com/users/matthiasdiener/orgs",
+        "repos_url": "https://api.github.com/users/matthiasdiener/repos",
+        "events_url": "https://api.github.com/users/matthiasdiener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matthiasdiener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-16T02:55:45Z",
+    "updated_at": "2018-04-17T20:41:59Z",
+    "closed_at": "2018-04-17T20:41:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7498",
+        "html_url": "https://github.com/spack/spack/pull/7498",
+        "diff_url": "https://github.com/spack/spack/pull/7498.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7498.patch"
+    },
+    "body": "When running on systems where `get_module_cmd_from_bash()` fails (e.g. Blue Waters), this warning is printed more than 10 times for each package installation.\r\nSee also issue #6954.",
+    "performed_via_github_app": null
+}

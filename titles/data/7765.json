@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7765",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7765/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7765/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7765/events",
+    "html_url": "https://github.com/spack/spack/pull/7765",
+    "id": 314643149,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxODU0OTkw",
+    "number": 7765,
+    "title": "openPMD-api",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-04-16T13:08:48Z",
+    "updated_at": "2018-04-19T15:43:21Z",
+    "closed_at": "2018-04-19T14:04:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7765",
+        "html_url": "https://github.com/spack/spack/pull/7765",
+        "diff_url": "https://github.com/spack/spack/pull/7765.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7765.patch"
+    },
+    "body": "Add a new package for openPMD-api.\r\n\r\nopenPMD is a meta-data standard (markup, schema) for hierarchical, scientific particle and mesh based data.\r\n\r\nopenPMD-api is a library wrapping the underlying backends ([HDF5](hierarchical), [ADIOS](https://github.com/ornladios/ADIOS), ...) into a single, object-aware API.\r\n\r\n* Repository: https://github.com/openPMD/openPMD-api\r\n* Project: https://github.com/openPMD http://www.openPMD.org",
+    "performed_via_github_app": null
+}

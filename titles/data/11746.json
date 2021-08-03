@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11746",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11746/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11746/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11746/events",
+    "html_url": "https://github.com/spack/spack/pull/11746",
+    "id": 456736735,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg4NjkwNjI2",
+    "number": 11746,
+    "title": "Add --frontend and --backend option to spack arch.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-06-17T04:27:08Z",
+    "updated_at": "2019-06-26T15:19:52Z",
+    "closed_at": "2019-06-26T15:19:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11746",
+        "html_url": "https://github.com/spack/spack/pull/11746",
+        "diff_url": "https://github.com/spack/spack/pull/11746.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11746.patch"
+    },
+    "body": "spack has frontend and backend in platform.\r\nFor example, we install zlib to frontend, we can use as follows:\r\n `spack install zlib arch=frontend`\r\nBut `spack arch` output only default (currently same as backend) architecture, and we can't known frontend archtecture.\r\n\r\nThis patch add --frontend and --backend options on `spack arch` to print frontned and backend architecture.",
+    "performed_via_github_app": null
+}

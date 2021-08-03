@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7804",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7804/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7804/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7804/events",
+    "html_url": "https://github.com/spack/spack/pull/7804",
+    "id": 315365940,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyMzkyNTgx",
+    "number": 7804,
+    "title": "add variants and conflicts for curl",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2018-04-18T07:42:12Z",
+    "updated_at": "2018-04-19T17:44:54Z",
+    "closed_at": "2018-04-19T12:23:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7804",
+        "html_url": "https://github.com/spack/spack/pull/7804",
+        "diff_url": "https://github.com/spack/spack/pull/7804.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7804.patch"
+    },
+    "body": "* darwinssl - Apple's SSL/TLS implementation\r\n* libssh    - use libssh implementation\r\n* add darwin conflict for libssh{,2}\r\n* add linux conflict for darwinssl\r\n\r\nThis still doesn't actually fix #7777, but is my result from trying to get `curl +libssh{,2}` to build. Now explicitly conflicts with known not-buildable configurations",
+    "performed_via_github_app": null
+}

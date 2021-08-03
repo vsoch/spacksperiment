@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10058",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10058/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10058/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10058/events",
+    "html_url": "https://github.com/spack/spack/pull/10058",
+    "id": 388826458,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM3MDAzMzY5",
+    "number": 10058,
+    "title": "metis: Fix issues with gcc6 and misleading indentation",
+    "user": {
+        "login": "payerle",
+        "id": 19287807,
+        "node_id": "MDQ6VXNlcjE5Mjg3ODA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19287807?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/payerle",
+        "html_url": "https://github.com/payerle",
+        "followers_url": "https://api.github.com/users/payerle/followers",
+        "following_url": "https://api.github.com/users/payerle/following{/other_user}",
+        "gists_url": "https://api.github.com/users/payerle/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/payerle/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/payerle/subscriptions",
+        "organizations_url": "https://api.github.com/users/payerle/orgs",
+        "repos_url": "https://api.github.com/users/payerle/repos",
+        "events_url": "https://api.github.com/users/payerle/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/payerle/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-07T21:49:55Z",
+    "updated_at": "2018-12-10T15:52:34Z",
+    "closed_at": "2018-12-09T19:08:39Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10058",
+        "html_url": "https://github.com/spack/spack/pull/10058",
+        "diff_url": "https://github.com/spack/spack/pull/10058.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10058.patch"
+    },
+    "body": "Added patch to GKlibSystem.cmake to disable warnings (which get\r\npromoted to errors) due to -Wmisleading-indentation being added\r\nto -Wall in gcc 6",
+    "performed_via_github_app": null
+}

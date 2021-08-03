@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12962",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12962/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12962/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12962/events",
+    "html_url": "https://github.com/spack/spack/pull/12962",
+    "id": 499112062,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIxOTA0MDg5",
+    "number": 12962,
+    "title": "Add all compatible system types directory to module paths",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-09-26T20:56:09Z",
+    "updated_at": "2019-10-02T04:44:00Z",
+    "closed_at": "2019-10-02T02:18:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12962",
+        "html_url": "https://github.com/spack/spack/pull/12962",
+        "diff_url": "https://github.com/spack/spack/pull/12962.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12962.patch"
+    },
+    "body": "fixes #12915\r\ncloses #12916\r\n\r\nSince Spack has support for specific targets it might happen that software is built for targets that are not exactly the host because it was either an explicit user request or the compiler being used is too old to support the host.\r\n\r\nModules for different targets are written into different directories and by default Spack was adding to MODULEPATH only the directory corresponding to the current host. This PR modifies this behavior to add all the directories that are **compatible** with the current host.\r\n\r\n@smjenness @pat-s @oehlrich9 @marcmengel",
+    "performed_via_github_app": null
+}

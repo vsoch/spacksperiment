@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12785",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12785/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12785/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12785/events",
+    "html_url": "https://github.com/spack/spack/pull/12785",
+    "id": 491900370,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE2MTc5ODIy",
+    "number": 12785,
+    "title": "singularity: updated to 3.4.0",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-09-10T21:10:36Z",
+    "updated_at": "2019-09-12T20:45:25Z",
+    "closed_at": "2019-09-12T20:45:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12785",
+        "html_url": "https://github.com/spack/spack/pull/12785",
+        "diff_url": "https://github.com/spack/spack/pull/12785.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12785.patch"
+    },
+    "body": "updated singularity 3.4.0, with patch to allow non-root make install.\r\n\r\nTested with updates in pending PRs #12783 #12762 \r\n\r\nThe major new feature in v3.4.0 is container encryption, which appears to work:\r\n\r\n```console\r\n$ singularity build --encrypt lolcow.sif library://sylabsed/examples/lolcow\r\nFATAL:   You must be root to build an encrypted container\r\n\r\n$ sudo -i\r\n\r\n# export SINGULARITY_ENCRYPTION_PASSPHRASE=lolcow\r\n\r\n# singularity build --encrypt lolcow.sif library://sylabsed/examples/lolcow\r\nINFO:    Starting build...\r\nINFO:    Downloading library image\r\nINFO:    Creating SIF file...\r\nINFO:    Build complete: lolcow.sif\r\n\r\n# singularity run lolcow.sif \r\n ______________________________________\r\n/ You will soon meet a person who will \\\r\n\\ play an important role in your life. /\r\n --------------------------------------\r\n        \\   ^__^\r\n         \\  (oo)\\_______\r\n            (__)\\       )\\/\\\r\n                ||----w |\r\n                ||     ||\r\n\r\n# unset SINGULARITY_ENCRYPTION_PASSPHRASE\r\n\r\n# singularity run lolcow.sif \r\nFATAL:   Unable to use container encryption. Must supply encryption material through enironment variables or flags.\r\n```\r\n\r\nAnd switching back to normal user, the sif file can be run with the passphrase.\r\n```console\r\n$ export SINGULARITY_ENCRYPTION_PASSPHRASE=lolcow\r\n$ singularity run lolcow.sif \r\n ________________________________________\r\n/ You possess a mind not merely twisted, \\\r\n\\ but actually sprained.                 /\r\n ----------------------------------------\r\n        \\   ^__^\r\n         \\  (oo)\\_______\r\n            (__)\\       )\\/\\\r\n                ||----w |\r\n                ||     ||\r\n```",
+    "performed_via_github_app": null
+}

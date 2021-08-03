@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8990",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8990/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8990/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8990/events",
+    "html_url": "https://github.com/spack/spack/pull/8990",
+    "id": 350933838,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4NjU2NDI0",
+    "number": 8990,
+    "title": "add patch for gcc@8 for python 2.7.14",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-15T19:24:16Z",
+    "updated_at": "2018-08-16T13:46:42Z",
+    "closed_at": "2018-08-16T12:51:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8990",
+        "html_url": "https://github.com/spack/spack/pull/8990",
+        "diff_url": "https://github.com/spack/spack/pull/8990.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8990.patch"
+    },
+    "body": "This fixes a compile error caused by a more aggressive optimiser in gcc8, fixed in mainline python2 starting at 2.7.15. I have no idea which other versions of python are affected (From the discussion on their mailing list I assume <3.5 and <2.7.14) and don't have the time to test build a lot of python's. I don't think that this will hit a lot of people in practice, but should be included anyway",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12295",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12295/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12295/events",
+    "html_url": "https://github.com/spack/spack/pull/12295",
+    "id": 477501918,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA0ODE0OTE5",
+    "number": 12295,
+    "title": "singularity: update version to 3.3.0",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 19,
+    "created_at": "2019-08-06T17:22:17Z",
+    "updated_at": "2019-08-12T20:38:16Z",
+    "closed_at": "2019-08-12T20:38:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12295",
+        "html_url": "https://github.com/spack/spack/pull/12295",
+        "diff_url": "https://github.com/spack/spack/pull/12295.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12295.patch"
+    },
+    "body": "Tested successfully on linux-centos7-x86_64 / gcc@4.8.5\r\n\r\nI added what I hope is a slightly more helpful note, referring folks to the build log (where the fully instantiated post-install instructions wind up) rather than just the package definition.\r\n\r\nURL for security implications updated per admonition banner at https://singularity.lbl.gov/docs-security\r\n",
+    "performed_via_github_app": null
+}

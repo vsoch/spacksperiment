@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9311",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9311/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9311/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9311/events",
+    "html_url": "https://github.com/spack/spack/pull/9311",
+    "id": 362740384,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE3Mzc0OTkx",
+    "number": 9311,
+    "title": "Update samrai 2.4.4",
+    "user": {
+        "login": "drwells",
+        "id": 3917035,
+        "node_id": "MDQ6VXNlcjM5MTcwMzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3917035?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/drwells",
+        "html_url": "https://github.com/drwells",
+        "followers_url": "https://api.github.com/users/drwells/followers",
+        "following_url": "https://api.github.com/users/drwells/following{/other_user}",
+        "gists_url": "https://api.github.com/users/drwells/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/drwells/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/drwells/subscriptions",
+        "organizations_url": "https://api.github.com/users/drwells/orgs",
+        "repos_url": "https://api.github.com/users/drwells/repos",
+        "events_url": "https://api.github.com/users/drwells/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/drwells/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-09-21T19:08:57Z",
+    "updated_at": "2018-10-18T20:20:14Z",
+    "closed_at": "2018-10-18T20:20:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9311",
+        "html_url": "https://github.com/spack/spack/pull/9311",
+        "diff_url": "https://github.com/spack/spack/pull/9311.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9311.patch"
+    },
+    "body": "I know it seems a bit unusual to add a patch supporting this ancient version of SAMRAI (released in 2008) but we need it for a project here at UNC (www.github.com/ibamr/ibamr). This version of SAMRAI has a bunch of (easy to fix) ADL problems and some performance issues; the provided patch addresses both.",
+    "performed_via_github_app": null
+}

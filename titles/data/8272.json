@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8272",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8272/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8272/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8272/events",
+    "html_url": "https://github.com/spack/spack/pull/8272",
+    "id": 326346778,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkwNDU3NzAx",
+    "number": 8272,
+    "title": "Fix bug where patches specified by dependents were not applied",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2018-05-25T01:02:04Z",
+    "updated_at": "2018-06-07T01:55:48Z",
+    "closed_at": "2018-06-07T01:28:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8272",
+        "html_url": "https://github.com/spack/spack/pull/8272",
+        "diff_url": "https://github.com/spack/spack/pull/8272.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8272.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/7885\r\n\r\nhttps://github.com/spack/spack/pull/7193 added the `patches_to_apply` function to collect patches which are then applied in `Package.do_patch`. However this only collects patches that are associated with the `Package` object and does not include `Spec`-related patches (which are applied by dependents, added in https://github.com/spack/spack/pull/5476). ~This updates the `Package.patches_to_apply` function to add `Spec` patches.~\r\n\r\nEDIT: turns out `Spec.patches` already collects patches from the package so the `Package.patches_to_apply` function isn't necessary. All uses of `Package.patches_to_apply` are replaced with `Package.spec.patches`.",
+    "performed_via_github_app": null
+}

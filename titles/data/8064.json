@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8064",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8064/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8064/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8064/events",
+    "html_url": "https://github.com/spack/spack/pull/8064",
+    "id": 321358130,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg2NzY0ODE0",
+    "number": 8064,
+    "title": "Create custom PATH that texlive requires in its module.",
+    "user": {
+        "login": "jrood-nrel",
+        "id": 23264326,
+        "node_id": "MDQ6VXNlcjIzMjY0MzI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23264326?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrood-nrel",
+        "html_url": "https://github.com/jrood-nrel",
+        "followers_url": "https://api.github.com/users/jrood-nrel/followers",
+        "following_url": "https://api.github.com/users/jrood-nrel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrood-nrel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrood-nrel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrood-nrel/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrood-nrel/orgs",
+        "repos_url": "https://api.github.com/users/jrood-nrel/repos",
+        "events_url": "https://api.github.com/users/jrood-nrel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrood-nrel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-05-08T21:45:55Z",
+    "updated_at": "2018-05-12T23:40:37Z",
+    "closed_at": "2018-05-12T23:40:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8064",
+        "html_url": "https://github.com/spack/spack/pull/8064",
+        "diff_url": "https://github.com/spack/spack/pull/8064.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8064.patch"
+    },
+    "body": "Addresses #4811. Note the actual PATH on linux should be `bin/x86_64-linux`. It appears to be in reversed in that issue.\r\n\r\nTo be honest I haven't had a chance to test this because it seems like something is out of sync with the texlive CTAN servers or whatever. I did test it on another package though and it does what I want. I get this error on all systems I've tried when installing texlive today:\r\n```\r\n./install-tl: The TeX Live versions of the local installation\r\nand the repository being accessed are not compatible:\r\n      local: 2017\r\n repository: 2018\r\nPerhaps you need to use a different CTAN mirror?\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8296",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8296/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8296/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8296/events",
+    "html_url": "https://github.com/spack/spack/pull/8296",
+    "id": 326945582,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkwODcwMjE4",
+    "number": 8296,
+    "title": "petsc: added version 3.9.2",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-05-28T08:41:09Z",
+    "updated_at": "2018-06-25T06:26:29Z",
+    "closed_at": "2018-06-25T06:26:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8296",
+        "html_url": "https://github.com/spack/spack/pull/8296",
+        "diff_url": "https://github.com/spack/spack/pull/8296.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8296.patch"
+    },
+    "body": "The restriction on petsc versions to depend on boost seems to be overly restrictive (`petsc@3.9.2` seems to have the possibility to depend on boost too).",
+    "performed_via_github_app": null
+}

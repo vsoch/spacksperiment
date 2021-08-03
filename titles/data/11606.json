@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11606",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11606/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11606/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11606/events",
+    "html_url": "https://github.com/spack/spack/pull/11606",
+    "id": 451511471,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg0NTg2OTk3",
+    "number": 11606,
+    "title": "A few more ACTS releases that I forgot in my last update",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-06-03T14:20:51Z",
+    "updated_at": "2019-06-19T08:50:01Z",
+    "closed_at": "2019-06-18T18:00:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11606",
+        "html_url": "https://github.com/spack/spack/pull/11606",
+        "diff_url": "https://github.com/spack/spack/pull/11606.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11606.patch"
+    },
+    "body": "Here are a couple extra ACTS releases that I forgot during my last round of updates.\r\n\r\nAlong the way, I...\r\n\r\n- Add a leading zero to old version numbers, to please old-school sorting algorithms (the hash is unchanged, as you can check)\r\n- Remove the mention of the acts-framework package, which isn't in Spack upstream yet, and will likely depend on a different ACTS release when it will land.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8532",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8532/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8532/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8532/events",
+    "html_url": "https://github.com/spack/spack/pull/8532",
+    "id": 334238851,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2MjY0MDQy",
+    "number": 8532,
+    "title": "py-matplotlib: Add patch to fix FreeType library detection",
+    "user": {
+        "login": "NickRF",
+        "id": 916385,
+        "node_id": "MDQ6VXNlcjkxNjM4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/916385?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NickRF",
+        "html_url": "https://github.com/NickRF",
+        "followers_url": "https://api.github.com/users/NickRF/followers",
+        "following_url": "https://api.github.com/users/NickRF/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NickRF/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NickRF/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NickRF/subscriptions",
+        "organizations_url": "https://api.github.com/users/NickRF/orgs",
+        "repos_url": "https://api.github.com/users/NickRF/repos",
+        "events_url": "https://api.github.com/users/NickRF/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NickRF/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-06-20T20:33:25Z",
+    "updated_at": "2018-09-04T01:34:42Z",
+    "closed_at": "2018-09-04T01:34:42Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8532",
+        "html_url": "https://github.com/spack/spack/pull/8532",
+        "diff_url": "https://github.com/spack/spack/pull/8532.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8532.patch"
+    },
+    "body": "Adds patch to add $CPATH to locations searched for FreeType header file\r\n\r\nPatch has been upstreamed:\r\nhttps://github.com/matplotlib/matplotlib/pull/11457",
+    "performed_via_github_app": null
+}

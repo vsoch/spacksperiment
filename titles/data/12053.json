@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12053",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12053/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12053/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12053/events",
+    "html_url": "https://github.com/spack/spack/pull/12053",
+    "id": 469834444,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk4OTY3MTIz",
+    "number": 12053,
+    "title": "font-util: add missing autoconf automake dependencies",
+    "user": {
+        "login": "zzotta",
+        "id": 1826859,
+        "node_id": "MDQ6VXNlcjE4MjY4NTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1826859?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zzotta",
+        "html_url": "https://github.com/zzotta",
+        "followers_url": "https://api.github.com/users/zzotta/followers",
+        "following_url": "https://api.github.com/users/zzotta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zzotta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zzotta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zzotta/subscriptions",
+        "organizations_url": "https://api.github.com/users/zzotta/orgs",
+        "repos_url": "https://api.github.com/users/zzotta/repos",
+        "events_url": "https://api.github.com/users/zzotta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zzotta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-07-18T15:22:55Z",
+    "updated_at": "2019-07-23T14:41:05Z",
+    "closed_at": "2019-07-23T14:41:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12053",
+        "html_url": "https://github.com/spack/spack/pull/12053",
+        "diff_url": "https://github.com/spack/spack/pull/12053.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12053.patch"
+    },
+    "body": "This fixes the following post install error on systems where autoreconf and aclocal are not available:\r\n\r\n> 0dpi-1.0.3.tar.gz\r\n==> Created stage in /home/marlin/tmp/spack-font-util/spack/var/spack/stage/resource-font-bh-lucidatypewriter-100dpi-q3hfsdfvovwl5i6757tgiesw5z4tfrhn\r\n==> Moving resource stage\r\n        source : /home/marlin/tmp/spack-font-util/spack/var/spack/stage/resource-font-bh-lucidatypewriter-100dpi-q3hfsdfvovwl5i6757tgiesw5z4tfrhn/spack-src/\r\n        destination : /home/marlin/tmp/spack-font-util/spack/var/spack/stage/font-util-1.3.1-q3hfsdfvovwl5i6757tgiesw5z4tfrhn/spack-src/font-bh-lucidatypewriter-100dpi/font-bh-lucidatypewriter-100dpi-1.0.3\r\n==> No patches needed for font-util\r\n==> Building font-util [AutotoolsPackage]\r\n==> Executing phase: 'autoreconf'\r\n==> Executing phase: 'configure'\r\n==> Executing phase: 'build'\r\n==> Executing phase: 'install'\r\n==> Error: TypeError: 'NoneType' object is not callable\r\n> /home/marlin/tmp/spack-font-util/spack/var/spack/repos/builtin/packages/font-util/package.py:105, in font_install:\r\n        102                autoreconf(*autoconf_args)\r\n        103                configure = Executable(\"./configure\")\r\n        104                configure('--prefix={0}'.format(self.prefix))\r\n        105                make('install')",
+    "performed_via_github_app": null
+}

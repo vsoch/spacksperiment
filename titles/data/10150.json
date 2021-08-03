@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10150",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10150/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10150/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10150/events",
+    "html_url": "https://github.com/spack/spack/pull/10150",
+    "id": 392587136,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5ODI0NDkx",
+    "number": 10150,
+    "title": "patch: split up fetch and clean into separate methods",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-12-19T12:49:37Z",
+    "updated_at": "2020-10-31T06:22:19Z",
+    "closed_at": "2019-01-02T19:44:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10150",
+        "html_url": "https://github.com/spack/spack/pull/10150",
+        "diff_url": "https://github.com/spack/spack/pull/10150.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10150.patch"
+    },
+    "body": "Currently, `spack mirror create bzip2` fails with the following error:\r\n```\r\n==> Warning: Error while fetching bzip2@1.0.6\r\n  global name 'spack_cc' is not defined\r\n```\r\n\r\nThis is due to the fact that `mirror create` invokes `do_patch`, which calls the package's `patch` method. Since `mirror create` does not set up the appropriate environment, variables like `spack_cc` are not set.\r\n\r\nThis change introduces `fetch` and `clean` methods for patches. They are no-ops for `FilePatch` but perform the appropriate actions for `UrlPatch`. This allows `mirror create` to invoke `do_fetch`, which does not call the package's `patch` method.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8572",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8572/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8572/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8572/events",
+    "html_url": "https://github.com/spack/spack/pull/8572",
+    "id": 335616915,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3MjcyMjUw",
+    "number": 8572,
+    "title": "Add Caliper 1.7.0 and Gotcha 1.0.2",
+    "user": {
+        "login": "daboehme",
+        "id": 10790104,
+        "node_id": "MDQ6VXNlcjEwNzkwMTA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10790104?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daboehme",
+        "html_url": "https://github.com/daboehme",
+        "followers_url": "https://api.github.com/users/daboehme/followers",
+        "following_url": "https://api.github.com/users/daboehme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daboehme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daboehme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daboehme/subscriptions",
+        "organizations_url": "https://api.github.com/users/daboehme/orgs",
+        "repos_url": "https://api.github.com/users/daboehme/repos",
+        "events_url": "https://api.github.com/users/daboehme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daboehme/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-26T00:40:48Z",
+    "updated_at": "2018-06-27T22:21:23Z",
+    "closed_at": "2018-06-27T22:21:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8572",
+        "html_url": "https://github.com/spack/spack/pull/8572",
+        "diff_url": "https://github.com/spack/spack/pull/8572.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8572.patch"
+    },
+    "body": "Add new versions of Caliper and Gotcha. Caliper now uses spack-built gotcha instead of downloading its own.",
+    "performed_via_github_app": null
+}

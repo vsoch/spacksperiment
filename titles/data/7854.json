@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7854",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7854/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7854/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7854/events",
+    "html_url": "https://github.com/spack/spack/pull/7854",
+    "id": 316421718,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgzMTc4Mzc5",
+    "number": 7854,
+    "title": "Make py-h5py use hdf5@1.10.1 instead of 1.8.4 and set variant 'hl' to True. ",
+    "user": {
+        "login": "s-sajid-ali",
+        "id": 30510036,
+        "node_id": "MDQ6VXNlcjMwNTEwMDM2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30510036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/s-sajid-ali",
+        "html_url": "https://github.com/s-sajid-ali",
+        "followers_url": "https://api.github.com/users/s-sajid-ali/followers",
+        "following_url": "https://api.github.com/users/s-sajid-ali/following{/other_user}",
+        "gists_url": "https://api.github.com/users/s-sajid-ali/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/s-sajid-ali/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/s-sajid-ali/subscriptions",
+        "organizations_url": "https://api.github.com/users/s-sajid-ali/orgs",
+        "repos_url": "https://api.github.com/users/s-sajid-ali/repos",
+        "events_url": "https://api.github.com/users/s-sajid-ali/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/s-sajid-ali/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2018-04-20T21:49:23Z",
+    "updated_at": "2018-04-22T01:00:13Z",
+    "closed_at": "2018-04-21T23:24:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7854",
+        "html_url": "https://github.com/spack/spack/pull/7854",
+        "diff_url": "https://github.com/spack/spack/pull/7854.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7854.patch"
+    },
+    "body": "As per the comment on issue [6602](https://github.com/spack/spack/issues/6602)\r\n\r\nmodified:   var/spack/repos/builtin/packages/hdf5/package.py\r\nmodified:   var/spack/repos/builtin/packages/py-h5py/package.py",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8560",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8560/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8560/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8560/events",
+    "html_url": "https://github.com/spack/spack/pull/8560",
+    "id": 335162195,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2OTM5MTgy",
+    "number": 8560,
+    "title": "Command-line scopes",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-24T08:37:43Z",
+    "updated_at": "2019-07-20T19:06:36Z",
+    "closed_at": "2018-07-21T21:04:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8560",
+        "html_url": "https://github.com/spack/spack/pull/8560",
+        "diff_url": "https://github.com/spack/spack/pull/8560.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8560.patch"
+    },
+    "body": "This is a slight rework of the very nice #2686 that @citibeth wrote a while ago.  Key differences:\r\n\r\n* it accounts for the changes in #7774 \r\n* it improves the way initialization works in `spack.main`\r\n* the argument for passing a configuration scope is `-C` / `--config-scope`\r\n\r\nThe last one leaves room for a future `-c` / `--config` option that would adjust *one* configuration setting (like `git`'s `-c`).\r\n\r\nBasically, this PR lets you do this:\r\n\r\n```\r\nspack -C /path/to/special-config install package\r\n```\r\n\r\nWhere `path/to/special-config` can contain `packages.yaml`, `config.yaml`, etc.\r\n\r\nThere is more fancy stuff coming in #8231, but we have some users who need to make use of this feature now, and it's still useful even with #8231.  People would like to keep several different configurations in version control, and this enables them to do that easily.\r\n\r\n@cyrush @mwkrentel @stephdempsey: this should help you out.  I think others will also be interested.\r\n\r\n- [x] add command-line scopes\r\n- [x] rework `spack.main.main` to handle exceptions raised by the config system gracefully\r\n- [x] docs for command-line scopes\r\n- [x] docs for `spack config blame` (added in #8081)\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8655",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8655/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8655/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8655/events",
+    "html_url": "https://github.com/spack/spack/pull/8655",
+    "id": 339074778,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk5ODUwMDEy",
+    "number": 8655,
+    "title": "Added support for uncrustify 0.67.",
+    "user": {
+        "login": "estebanpauli",
+        "id": 40901502,
+        "node_id": "MDQ6VXNlcjQwOTAxNTAy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40901502?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/estebanpauli",
+        "html_url": "https://github.com/estebanpauli",
+        "followers_url": "https://api.github.com/users/estebanpauli/followers",
+        "following_url": "https://api.github.com/users/estebanpauli/following{/other_user}",
+        "gists_url": "https://api.github.com/users/estebanpauli/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/estebanpauli/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/estebanpauli/subscriptions",
+        "organizations_url": "https://api.github.com/users/estebanpauli/orgs",
+        "repos_url": "https://api.github.com/users/estebanpauli/repos",
+        "events_url": "https://api.github.com/users/estebanpauli/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/estebanpauli/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-07-06T21:21:09Z",
+    "updated_at": "2018-07-10T21:57:23Z",
+    "closed_at": "2018-07-07T00:59:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8655",
+        "html_url": "https://github.com/spack/spack/pull/8655",
+        "diff_url": "https://github.com/spack/spack/pull/8655.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8655.patch"
+    },
+    "body": "Since the build system changed for uncrustify at version 0.64,\r\nI had to change the package from an AutotoolsPackage to a plain\r\nPackage and use @when annotations to build the packages differently.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13012",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13012/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13012/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13012/events",
+    "html_url": "https://github.com/spack/spack/pull/13012",
+    "id": 501306938,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIzNjA2NDgx",
+    "number": 13012,
+    "title": "Added NEON to the list of features required for the aarch64 family",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1574436554,
+            "node_id": "MDU6TGFiZWwxNTc0NDM2NTU0",
+            "url": "https://api.github.com/repos/spack/spack/labels/microarchitectures",
+            "name": "microarchitectures",
+            "color": "011970",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-10-02T06:41:54Z",
+    "updated_at": "2019-10-11T05:03:58Z",
+    "closed_at": "2019-10-10T23:24:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13012",
+        "html_url": "https://github.com/spack/spack/pull/13012",
+        "diff_url": "https://github.com/spack/spack/pull/13012.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13012.patch"
+    },
+    "body": "Both floating-point and NEON are required in all standard ARMv8 implementations. Theoretically \r\n though specialized markets can support no NEON or floating-point at all. Source for this info [here](https://developer.arm.com/docs/den0024/latest/aarch64-floating-point-and-neon).\r\n\r\nOn the other hand the base procedure call standard for Aarch64:\r\n\r\n> assumes the availability of the vector registers for passing floating-point and SIMD arguments. \r\n\r\nFurther:\r\n> the Arm 64-bit architecture defines two mandatory register banks: a general-purpose register bank which can be used for scalar integer processing and pointer arithmetic; and a SIMD and Floating-Point register bank\".\r\n\r\nSource for this info [here](https://developer.arm.com/docs/ihi0055/latest/procedure-call-standard-for-the-arm-64-bit-architecture).\r\n\r\nThis makes customization of Aarch64 with no NEON instructions available so unlikely that we can probably consider them a feature of the generic family. \r\n\r\n@fspiga @t-karatsu ",
+    "performed_via_github_app": null
+}

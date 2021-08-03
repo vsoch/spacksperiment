@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8278",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8278/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8278/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8278/events",
+    "html_url": "https://github.com/spack/spack/pull/8278",
+    "id": 326592187,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkwNjQwNTY1",
+    "number": 8278,
+    "title": "Less sensitive error detection in build logs",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-25T16:37:30Z",
+    "updated_at": "2018-06-03T16:59:08Z",
+    "closed_at": "2018-06-03T04:07:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8278",
+        "html_url": "https://github.com/spack/spack/pull/8278",
+        "diff_url": "https://github.com/spack/spack/pull/8278.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8278.patch"
+    },
+    "body": "Fixes #8199 \r\n\r\nSpack's build log error parser is a direct port of CTest's. The regexes it uses may work well for CMake, but they often trigger false positives for Autotools-based packages (see #8199). To reproduce this, uncomment any patches for the `fyba` package and try installing on macOS or with GCC 6.\r\n\r\nPreviously, any line containing `text:number: ` was matched. This regex has been removed. This resulted in the following error message no longer being caught:\r\n```\r\nINQTID.cpp:18:11: fatal error: 'sys/vfs.h' file not found\r\n```\r\nI removed the requirement for `: fatal error` to be preceded by a space to solve this. _Is the line after this now redundant?_\r\n\r\n### Pros\r\n\r\nFewer false positives for Autotools-based packages.\r\n\r\n### Cons\r\n\r\nMore false negatives?",
+    "performed_via_github_app": null
+}

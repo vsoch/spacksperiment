@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9327",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9327/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9327/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9327/events",
+    "html_url": "https://github.com/spack/spack/pull/9327",
+    "id": 363311594,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE3NzgxMzUz",
+    "number": 9327,
+    "title": "travis: require sudo in an attempt to avoid build timeouts",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-09-24T20:39:57Z",
+    "updated_at": "2018-10-17T22:08:12Z",
+    "closed_at": "2018-09-24T21:55:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9327",
+        "html_url": "https://github.com/spack/spack/pull/9327",
+        "diff_url": "https://github.com/spack/spack/pull/9327.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9327.patch"
+    },
+    "body": "- Many container builds are timing out frequently during Spack tests in Travis CI.\r\n\r\n- Travis recommends adding `sudo: required` to see whether this is an infrastructure issue or something else.\r\n\r\n- added `sudo: required` to all Linux builds.",
+    "performed_via_github_app": null
+}

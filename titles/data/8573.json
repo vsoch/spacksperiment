@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8573",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8573/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8573/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8573/events",
+    "html_url": "https://github.com/spack/spack/pull/8573",
+    "id": 335680177,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3MzE3Njg3",
+    "number": 8573,
+    "title": "bugfix: fix macos incompatibility in lock test",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-06-26T06:46:42Z",
+    "updated_at": "2018-06-26T12:51:07Z",
+    "closed_at": "2018-06-26T12:51:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8573",
+        "html_url": "https://github.com/spack/spack/pull/8573",
+        "diff_url": "https://github.com/spack/spack/pull/8573.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8573.patch"
+    },
+    "body": "Fixes #8225.\r\n\r\n- Spack was assuming that a group with gid == current uid would always exist.\r\n- This was breaking the travis build for macos.\r\n\r\n- also fixed a bug in the `create_db_tarball` test where `.coverage.*` files weren't properly considered.",
+    "performed_via_github_app": null
+}

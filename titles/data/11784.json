@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11784",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11784/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11784/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11784/events",
+    "html_url": "https://github.com/spack/spack/pull/11784",
+    "id": 457741442,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg5NDg5MzA4",
+    "number": 11784,
+    "title": "Testing bugfix: Spurious MacOS failures",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-06-18T23:36:28Z",
+    "updated_at": "2019-06-19T03:15:12Z",
+    "closed_at": "2019-06-19T00:50:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11784",
+        "html_url": "https://github.com/spack/spack/pull/11784",
+        "diff_url": "https://github.com/spack/spack/pull/11784.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11784.patch"
+    },
+    "body": "Currently, all macos tests are failing because brew cannot install ccache without updating brew.\r\n\r\nThis PR: ensure `brew update` is run before using brew in test environment",
+    "performed_via_github_app": null
+}

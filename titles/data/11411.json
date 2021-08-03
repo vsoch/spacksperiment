@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11411",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11411/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11411/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11411/events",
+    "html_url": "https://github.com/spack/spack/pull/11411",
+    "id": 442566288,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc3NjUyNDUy",
+    "number": 11411,
+    "title": "coverage: only run coverage for subset of unit tests",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2019-05-10T06:55:57Z",
+    "updated_at": "2020-08-22T17:22:57Z",
+    "closed_at": "2019-05-10T17:23:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11411",
+        "html_url": "https://github.com/spack/spack/pull/11411",
+        "diff_url": "https://github.com/spack/spack/pull/11411.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11411.patch"
+    },
+    "body": "- Codecov cannot handle as many coverage reports as we are generating\r\n- As a result, our PR coverage pages have been broken for a while, and it's hard to tell people where to enhance their testing in PR reviews.\r\n- Scale back to only running coverage for 3.7 and 2.7\r\n- Make coverage depend on `COVERAGE=true` being in the environment, so we can control it from `.travis.yml`\r\n- This is *probably* better.  We run the build tests for good measure, but we do not need to evaluate them for coverage.  The coverage reports are about unit tests.",
+    "performed_via_github_app": null
+}

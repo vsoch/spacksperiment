@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11977",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11977/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11977/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11977/events",
+    "html_url": "https://github.com/spack/spack/pull/11977",
+    "id": 466372589,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk2MjI0NzAy",
+    "number": 11977,
+    "title": "spack uninstall can uninstall specs with multiple roots",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-07-10T15:21:19Z",
+    "updated_at": "2019-07-15T17:35:34Z",
+    "closed_at": "2019-07-15T17:30:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11977",
+        "html_url": "https://github.com/spack/spack/pull/11977",
+        "diff_url": "https://github.com/spack/spack/pull/11977.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11977.patch"
+    },
+    "body": "fixes #3690\r\nfixes #5637 \r\n\r\nUninstalling dependents of a spec was relying on a traversal of the parents done by inspecting `spec._dependents`. This is in turn a `DependencyMap` that maps a package name to a single `DependencySpec` object (an edge in the DAG) and cannot thus model the case where a spec has multiple configurations of the same parent package installed.\r\n\r\nThis commit works around this issue by constructing the list of specs to be uninstalled in an alternative way, and adds tests to verify the behavior. The core issue with `DependencyMap` is not resolved here.",
+    "performed_via_github_app": null
+}

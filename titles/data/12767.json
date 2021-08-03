@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12767",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12767/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12767/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12767/events",
+    "html_url": "https://github.com/spack/spack/issues/12767",
+    "id": 491013561,
+    "node_id": "MDU6SXNzdWU0OTEwMTM1NjE=",
+    "number": 12767,
+    "title": "Errors installing packages on aarch64?",
+    "user": {
+        "login": "jdomke",
+        "id": 28772296,
+        "node_id": "MDQ6VXNlcjI4NzcyMjk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28772296?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdomke",
+        "html_url": "https://github.com/jdomke",
+        "followers_url": "https://api.github.com/users/jdomke/followers",
+        "following_url": "https://api.github.com/users/jdomke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdomke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdomke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdomke/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdomke/orgs",
+        "repos_url": "https://api.github.com/users/jdomke/repos",
+        "events_url": "https://api.github.com/users/jdomke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdomke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 512483406,
+            "node_id": "MDU6TGFiZWw1MTI0ODM0MDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/impact-high",
+            "name": "impact-high",
+            "color": "fef2c0",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-09-09T10:29:51Z",
+    "updated_at": "2019-09-17T02:09:29Z",
+    "closed_at": "2019-09-17T02:09:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "current main branch (develop) cannot build any packages\r\n(git hash 02931a82fd506a095ab93d6ad1d0dc416caf141d)\r\n\r\n### Steps to reproduce the issue\r\n\r\n```console\r\ngit clone https://github.com/spack/spack.git\r\n. spack/share/spack/setup-env.sh\r\nspack install hdf5\r\n```\r\n\r\n### Error Message\r\n\r\n```console\r\n==> Warning: CROSS has not been set, however cannot detect scheduler.\r\n==> Error: Command exited with status 1:\r\n'/usr/bin/clang' '-v' '/tmp/spack-implicit-link-infobHKHO2/main.c' '-o' '/tmp/spack-implicit-link-infobHKHO2/output'\r\nclang version 3.4.2 (tags/RELEASE_34/dot2-final)\r\nTarget: aarch64-redhat-linux-gnu\r\nThread model: posix\r\nSelected GCC installation: \r\n \"/usr/bin/clang\" -cc1 -triple aarch64-redhat-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -main-file-name main.c -mrelocation-model static -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-linker-version 2.27 -v -resource-dir /usr/bin/../lib/clang/3.4.2 -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/clang/3.4.2/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/jens -ferror-limit 19 -fmessage-length 0 -mstackrealign -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -vectorize-slp -o /tmp/main-07f21b.o -x c /tmp/spack-implicit-link-infobHKHO2/main.c\r\nclang -cc1 version 3.4.2 based upon LLVM 3.4.2 default target aarch64-redhat-linux-gnu\r\nignoring nonexistent directory \"/include\"\r\n#include \"...\" search starts here:\r\n#include <...> search starts here:\r\n /usr/local/include\r\n /usr/bin/../lib/clang/3.4.2/include\r\n /usr/include\r\nEnd of search list.\r\n \"/usr/bin/ld\" --hash-style=gnu --no-add-needed --build-id --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -o /tmp/spack-implicit-link-infobHKHO2/output /lib/../lib64/crt1.o /lib/../lib64/crti.o crtbegin.o -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib /tmp/main-07f21b.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed crtend.o /lib/../lib64/crtn.o\r\n/usr/bin/ld: cannot find crtbegin.o: No such file or directory\r\n/usr/bin/ld: cannot find -lgcc\r\n/usr/bin/ld: cannot find -lgcc_s\r\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\r\n```\r\n\r\n### Possible mitigation\r\n\r\n```\r\ngit checkout v0.12.1\r\n```\r\n\r\n### Information on your system\r\n\r\nSystem: ThunderX2 (aarch64)\r\nLinux: CentOS Linux release 7.6.1810\r\nKernel: 4.14.0-115.10.1.el7a.aarch64",
+    "performed_via_github_app": null
+}

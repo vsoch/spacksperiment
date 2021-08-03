@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10432",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10432/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10432/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10432/events",
+    "html_url": "https://github.com/spack/spack/pull/10432",
+    "id": 402801367,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ3NDAyOTc1",
+    "number": 10432,
+    "title": "Packages/zoltan",
+    "user": {
+        "login": "DarylGrunau",
+        "id": 6332737,
+        "node_id": "MDQ6VXNlcjYzMzI3Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6332737?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DarylGrunau",
+        "html_url": "https://github.com/DarylGrunau",
+        "followers_url": "https://api.github.com/users/DarylGrunau/followers",
+        "following_url": "https://api.github.com/users/DarylGrunau/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DarylGrunau/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DarylGrunau/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DarylGrunau/subscriptions",
+        "organizations_url": "https://api.github.com/users/DarylGrunau/orgs",
+        "repos_url": "https://api.github.com/users/DarylGrunau/repos",
+        "events_url": "https://api.github.com/users/DarylGrunau/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DarylGrunau/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-01-24T16:52:51Z",
+    "updated_at": "2019-04-18T15:15:37Z",
+    "closed_at": "2019-03-23T12:38:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10432",
+        "html_url": "https://github.com/spack/spack/pull/10432",
+        "diff_url": "https://github.com/spack/spack/pull/10432.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10432.patch"
+    },
+    "body": "This PR inserts a patch when Zoltan version 3.8 is selected which serializes the F90 interface build.  The _tiny_ patch introduces syntax to 3.8 which was already added to the latest version (3.83) to prevent the same dependency nightmare, thereby enabling version 3.8 to build consistently.",
+    "performed_via_github_app": null
+}

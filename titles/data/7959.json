@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7959",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7959/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7959/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7959/events",
+    "html_url": "https://github.com/spack/spack/pull/7959",
+    "id": 319300714,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg1MjU1ODU1",
+    "number": 7959,
+    "title": "Fix initialization of defaults in yaml schema validation",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-05-01T19:33:01Z",
+    "updated_at": "2018-05-02T00:25:24Z",
+    "closed_at": "2018-05-02T00:23:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7959",
+        "html_url": "https://github.com/spack/spack/pull/7959",
+        "diff_url": "https://github.com/spack/spack/pull/7959.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7959.patch"
+    },
+    "body": "Fixes #7924 \r\n\r\nSee also: https://github.com/spack/spack/pull/7925\r\n\r\nSpack's yaml schema validator was initializing all instances of unspecified properties with the same object, so that updating the property for one entry was updating it for others (e.g. updating versions for one package would update it for other packages).\r\n\r\nThis updates the schema validator to instantiate defaults with separate object instances and adds a test to confirm this behavior (and also confirms #7924 without this change).",
+    "performed_via_github_app": null
+}

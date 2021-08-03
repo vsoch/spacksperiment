@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7214",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7214/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7214/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7214/events",
+    "html_url": "https://github.com/spack/spack/pull/7214",
+    "id": 296180819,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY4NDQ3OTk2",
+    "number": 7214,
+    "title": "Improve the Spack command reference ",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-02-11T10:54:54Z",
+    "updated_at": "2018-05-15T20:08:33Z",
+    "closed_at": "2018-02-13T04:25:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7214",
+        "html_url": "https://github.com/spack/spack/pull/7214",
+        "diff_url": "https://github.com/spack/spack/pull/7214.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7214.patch"
+    },
+    "body": "This improves the command reference in the docs. Previously, the command reference listed only commands for which we explicitly wrote documentation.  Now it lists all Spack commands and shows their usage.  This was sort of inspired by the [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/docker/).\r\n\r\nThis also contains a number of improvements to `spack <cmd> -h` output.\r\n\r\n- [x] Add a `spack commands` command to list commands in various formats (including RST)\r\n- [x] Rework the docs to use `spack commands` to generate the command reference. Docs now have an index by type of command and show full usage.\r\n- [x] Add proper help for `spack buildcache` subcommands\r\n- [x] Fix some bugs with `spack -h` argument display\r\n- [x] Display options in help output as `[-abc]`, not `[-a] [-b] [-c]`\r\n- [x] Clean up the metavar for `--scope` arguments in configuration commands like `mirror`, `repo`, etc. (it's now much shorter)\r\n\r\nYou can [look at a preview here](https://spack.readthedocs.io/en/features-better-command-index/command_index.html).\r\n\r\n@JusticeForMikeBrown: you might like this, as it would've saved you a few issue submissions.",
+    "performed_via_github_app": null
+}

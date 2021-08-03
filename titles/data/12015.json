@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12015",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12015/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12015/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12015/events",
+    "html_url": "https://github.com/spack/spack/pull/12015",
+    "id": 467781919,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk3MzU4NDQy",
+    "number": 12015,
+    "title": "Build R without recommended packages",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-07-14T01:04:09Z",
+    "updated_at": "2020-02-26T19:47:37Z",
+    "closed_at": "2019-11-28T02:58:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12015",
+        "html_url": "https://github.com/spack/spack/pull/12015",
+        "diff_url": "https://github.com/spack/spack/pull/12015.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12015.patch"
+    },
+    "body": "The documentation states that Spack builds R without the recommmened\r\npackages, with Spack handling the build of those packages to satisfy\r\ndependencies. From the docs:\r\n\r\n> Spack explicitly adds the --without-recommended-packages flag to\r\n> prevent the installation of these packages. Due to the way Spack\r\n> handles package activation (symlinking packages to the R installation\r\n> directory), pre-existing recommended packages will cause conflicts for\r\n> already-existing files. We could either not include these recommended\r\n> packages in Spack and require them to be installed through\r\n> --with-recommended-packages, or we could not install them with R and\r\n> let users choose the version of the package they want to install. We\r\n> chose the latter.\r\n\r\nHowever, this is not what Spack is actually doing. The\r\n`--without-recommended` configure option is not passed to R and\r\ntherefore those packages are built. This prevents R extension activation\r\nfrom working as files in the recommended packages installed with R will\r\nblock linking of file from the respective `r-` packages.\r\n\r\nThis PR adds the `--without-recommended` flag to the configure options\r\nof the R package. This will then have the Spack R build match what is\r\ndocumented.",
+    "performed_via_github_app": null
+}

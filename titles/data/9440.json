@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9440",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9440/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9440/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9440/events",
+    "html_url": "https://github.com/spack/spack/pull/9440",
+    "id": 366898014,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjIwNDYxMTI5",
+    "number": 9440,
+    "title": "Add multiprocessing to buildcache command",
+    "user": {
+        "login": "obreitwi",
+        "id": 123140,
+        "node_id": "MDQ6VXNlcjEyMzE0MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/obreitwi",
+        "html_url": "https://github.com/obreitwi",
+        "followers_url": "https://api.github.com/users/obreitwi/followers",
+        "following_url": "https://api.github.com/users/obreitwi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/obreitwi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/obreitwi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/obreitwi/subscriptions",
+        "organizations_url": "https://api.github.com/users/obreitwi/orgs",
+        "repos_url": "https://api.github.com/users/obreitwi/repos",
+        "events_url": "https://api.github.com/users/obreitwi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/obreitwi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1230290682,
+            "node_id": "MDU6TGFiZWwxMjMwMjkwNjgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/blocked",
+            "name": "blocked",
+            "color": "b611f7",
+            "default": false,
+            "description": "Things currently blocked by other PRs or issues"
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2018-10-04T17:42:02Z",
+    "updated_at": "2020-08-19T09:28:23Z",
+    "closed_at": "2020-08-19T09:26:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9440",
+        "html_url": "https://github.com/spack/spack/pull/9440",
+        "diff_url": "https://github.com/spack/spack/pull/9440.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9440.patch"
+    },
+    "body": "* Add `-w/--without-dependencies` to suppress dependency resolution.\r\n\r\n* Add `-j/--jobs` to install/create several package from/to buildcache in parallel (defaults to 1).\r\n\r\n* Applied some flake8-fixes\r\n\r\n* Added (and compressed) tests\r\n\r\n### Reasoning:\r\nThe current buildcache implementation lacks the ability to install packages/create tarballs en bulk:\r\n\r\n* Dependencies are *always* checked for and included\r\n* the package index is updated after EVERY installed package instead of   once after everything is installed\r\n\r\nIn order to reduce build time of our spack-based singularity container we want to pre-compute all hashes to be installed from buildcache in advance (i.e. we do not want spack to perform additional checks) and we want this installation to be possible with more than one core (decompressing is cpu-intensive and therefore not completely IO-bound).\r\n\r\nThe same goes for creating tarballs that are put into the buildcache after container creation.\r\n\r\nHence this commit introduces these two possibilities.\r\n\r\nBy default the behavior remains the same, i.e. spack fails after encountering its first error. When using several cores we gather all occurred errors and print them afterwards.\r\n\r\nIn theory parallelization could also be achieved by using tools such as `xargs` and spawning multiple python processes, but I think it would be nicer to have this possibility out of the box in spack (in the same way as you can install packages with multiple cores).\r\n\r\n_Note:_ We [already use](https://github.com/electronicvisions/spack/commit/837974be138a08dab3e712734d1866a28dcc1f3) the proposed modifications without problems. I only got around to porting the modifications to the current `develop`-branch now and added some tests while I was at it.",
+    "performed_via_github_app": null
+}

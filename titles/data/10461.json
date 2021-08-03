@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10461",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10461/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10461/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10461/events",
+    "html_url": "https://github.com/spack/spack/pull/10461",
+    "id": 404030996,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ4MzA1OTg5",
+    "number": 10461,
+    "title": "Added py-jupyterhub package.",
+    "user": {
+        "login": "wspear",
+        "id": 7329201,
+        "node_id": "MDQ6VXNlcjczMjkyMDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7329201?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/wspear",
+        "html_url": "https://github.com/wspear",
+        "followers_url": "https://api.github.com/users/wspear/followers",
+        "following_url": "https://api.github.com/users/wspear/following{/other_user}",
+        "gists_url": "https://api.github.com/users/wspear/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/wspear/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/wspear/subscriptions",
+        "organizations_url": "https://api.github.com/users/wspear/orgs",
+        "repos_url": "https://api.github.com/users/wspear/repos",
+        "events_url": "https://api.github.com/users/wspear/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/wspear/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-28T22:13:31Z",
+    "updated_at": "2019-02-07T22:47:46Z",
+    "closed_at": "2019-02-07T22:47:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10461",
+        "html_url": "https://github.com/spack/spack/pull/10461",
+        "diff_url": "https://github.com/spack/spack/pull/10461.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10461.patch"
+    },
+    "body": "This depends on recent PRs for py-send2trash (#10441) which is merged and py-async-generator (#10439), py-prometheus-client (#10440) and py-alembic (#10436) which are pending as of this commit.\r\n\r\nThis package depends on both python 3.5+ and node-js which depends on python 2.7/2.8 to build. Currently it can only be installed if the node-js package's python dependency is manually removed, so node-js will build with python found on the system rather than provided by Spack. Upcoming commits may allow Spack to reconcile this automatically.\r\n\r\nI have no prior experience with this program and have not tested it except to check for immediate and obvious build and run-time errors. Dependencies exercised by regular usage may not be included in this package.",
+    "performed_via_github_app": null
+}

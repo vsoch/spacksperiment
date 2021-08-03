@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11331",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11331/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11331/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11331/events",
+    "html_url": "https://github.com/spack/spack/pull/11331",
+    "id": 438973139,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc0ODg0MDYz",
+    "number": 11331,
+    "title": "Homebrew style caveats (in info and post-install)",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 18,
+    "created_at": "2019-04-30T20:54:20Z",
+    "updated_at": "2019-11-21T15:43:34Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11331",
+        "html_url": "https://github.com/spack/spack/pull/11331",
+        "diff_url": "https://github.com/spack/spack/pull/11331.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11331.patch"
+    },
+    "body": "ToDo (Feedback welcome):\r\n\r\n- [ ] if more tests are necessary, how should they be set up?\r\n- [ ] should this PR include additions to the Spack documentation?\r\n\r\n---\r\n\r\nThere are times when special information needs to be called to the\r\nuser's attention.  For example, for full functionality the singularity\r\npackage requires that several files need to be owned by root and one\r\nneeds to be setuid.  Caveats can be used to remind the user and to\r\npoint to the Spack-built helper script.\r\n\r\nThis:\r\n\r\n- Adds a post-install hook that uses `tty.warn()` to display caveats\r\n  to the installer.\r\n- Adds a 'Caveats:' section to the output of the `info` command.\r\n- Adds a caveats method to the template for the `create` command,\r\n  commented out and marked \"FIXME\".\r\n- Teaches the info cmd test to check for the presence of the\r\n  'Caveats:' section.\r\n\r\nSee Also:\r\n\r\n- #11244 (There appears to be no way to print a message after installing a package)\r\n- #2566 (Allow tty output during spack install)\r\n    - #10412 (Allow tty output during spack install)\r\n- #11094 (Update/package singularity)\r\n\r\nCloses #11244 \r\n\r\nFYI @vsoch",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8551",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8551/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8551/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8551/events",
+    "html_url": "https://github.com/spack/spack/pull/8551",
+    "id": 335025792,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2ODUwNDUw",
+    "number": 8551,
+    "title": "silo: Make silo use AutotoolsPackage",
+    "user": {
+        "login": "NickRF",
+        "id": 916385,
+        "node_id": "MDQ6VXNlcjkxNjM4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/916385?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NickRF",
+        "html_url": "https://github.com/NickRF",
+        "followers_url": "https://api.github.com/users/NickRF/followers",
+        "following_url": "https://api.github.com/users/NickRF/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NickRF/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NickRF/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NickRF/subscriptions",
+        "organizations_url": "https://api.github.com/users/NickRF/orgs",
+        "repos_url": "https://api.github.com/users/NickRF/repos",
+        "events_url": "https://api.github.com/users/NickRF/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NickRF/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-22T21:33:57Z",
+    "updated_at": "2018-06-22T22:19:04Z",
+    "closed_at": "2018-06-22T22:19:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8551",
+        "html_url": "https://github.com/spack/spack/pull/8551",
+        "diff_url": "https://github.com/spack/spack/pull/8551.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8551.patch"
+    },
+    "body": "To benefit from updates to config.guess for newer architectures.\r\n\r\nMore info: https://github.com/spack/spack/issues/2063",
+    "performed_via_github_app": null
+}

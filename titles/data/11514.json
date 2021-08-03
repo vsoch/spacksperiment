@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11514",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11514/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11514/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11514/events",
+    "html_url": "https://github.com/spack/spack/pull/11514",
+    "id": 445757594,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjgwMTI4NjY3",
+    "number": 11514,
+    "title": "Check \"if version is not None\", not \"if version\"",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-05-18T21:51:49Z",
+    "updated_at": "2020-01-23T21:03:00Z",
+    "closed_at": "2020-01-23T21:02:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11514",
+        "html_url": "https://github.com/spack/spack/pull/11514",
+        "diff_url": "https://github.com/spack/spack/pull/11514.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11514.patch"
+    },
+    "body": "I discovered several places in `version.py` where we were checking to see if a version evaluated as True when we really meant to check if a version is not None.\r\n\r\nFor example, `VersionRange(2, 1)` raised an \"Invalid version range\" ValueError, but `VersionRange(2, 0)` did not. Also, during string conversion, `VersionRange(0, 0)` and `VersionRange(None, None)` were equivalent.\r\n\r\nFrom PEP-8:\r\n\r\n> Comparisons to singletons like None should always be done with is or is not, never the equality operators.\r\n> \r\n> Also, beware of writing if x when you really mean if x is not None -- e.g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context!",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8136",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8136/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8136/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8136/events",
+    "html_url": "https://github.com/spack/spack/pull/8136",
+    "id": 323058690,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg4MDA4MDc4",
+    "number": 8136,
+    "title": "Don't hard-code include/lib paths in compiler wrapper",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2018-05-15T04:00:16Z",
+    "updated_at": "2019-02-14T13:54:40Z",
+    "closed_at": "2019-02-13T23:38:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8136",
+        "html_url": "https://github.com/spack/spack/pull/8136",
+        "diff_url": "https://github.com/spack/spack/pull/8136.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8136.patch"
+    },
+    "body": "Fixes #7855 \r\n\r\nCloses https://github.com/spack/spack/pull/8070\r\n\r\nCloses: https://github.com/spack/spack/pull/2645 (although this does not replicate the `path_list`/`pyformat` functionality from that PR)\r\n\r\nThis implements the logic described in https://github.com/spack/spack/pull/8070#issuecomment-387929464 to use Spack's existing include/lib discovery functionality in place of hard-coded paths set by the compiler wrapper.\r\n\r\nIt may need to refactor the method by which it reuses this functionality: as of now it instantiates a `SpecBuildInterface` when actually the logic in `SpecBuildInterface` should be refactored into a more straightforward location. Nevertheless this is anticipated to be a useful starting point.\r\n\r\nTODOs:\r\n\r\n- [x] (updated 9/18): remove `SPACK_INSTALL` and `SPACK_PREFIX` wrappers from cc wrapper?",
+    "performed_via_github_app": null
+}

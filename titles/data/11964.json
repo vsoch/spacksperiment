@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11964",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11964/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11964/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11964/events",
+    "html_url": "https://github.com/spack/spack/pull/11964",
+    "id": 465733958,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk1NzE2MDAz",
+    "number": 11964,
+    "title": "lame & libmad: Added two new packages for sox mp3 support.",
+    "user": {
+        "login": "simo-tuomisto",
+        "id": 7014138,
+        "node_id": "MDQ6VXNlcjcwMTQxMzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7014138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simo-tuomisto",
+        "html_url": "https://github.com/simo-tuomisto",
+        "followers_url": "https://api.github.com/users/simo-tuomisto/followers",
+        "following_url": "https://api.github.com/users/simo-tuomisto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simo-tuomisto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simo-tuomisto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simo-tuomisto/subscriptions",
+        "organizations_url": "https://api.github.com/users/simo-tuomisto/orgs",
+        "repos_url": "https://api.github.com/users/simo-tuomisto/repos",
+        "events_url": "https://api.github.com/users/simo-tuomisto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simo-tuomisto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-09T11:45:30Z",
+    "updated_at": "2019-07-25T15:40:51Z",
+    "closed_at": "2019-07-25T15:40:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11964",
+        "html_url": "https://github.com/spack/spack/pull/11964",
+        "diff_url": "https://github.com/spack/spack/pull/11964.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11964.patch"
+    },
+    "body": "Added a new package for [LAME encoder](http://lame.sourceforge.net) and added a variant in sox-package for it. ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12293",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12293/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12293/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12293/events",
+    "html_url": "https://github.com/spack/spack/pull/12293",
+    "id": 477376292,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA0NzEyOTI0",
+    "number": 12293,
+    "title": "Avoid sending empty reports to codecov",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-06T13:18:25Z",
+    "updated_at": "2019-08-06T17:35:56Z",
+    "closed_at": "2019-08-06T17:35:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12293",
+        "html_url": "https://github.com/spack/spack/pull/12293",
+        "diff_url": "https://github.com/spack/spack/pull/12293.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12293.patch"
+    },
+    "body": "Before this commit we were sending reports also for unit tests that were not collecting coverage data.",
+    "performed_via_github_app": null
+}

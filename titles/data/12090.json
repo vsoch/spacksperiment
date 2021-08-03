@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12090",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12090/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12090/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12090/events",
+    "html_url": "https://github.com/spack/spack/pull/12090",
+    "id": 471414348,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwMDgzMTEx",
+    "number": 12090,
+    "title": "Add `spack pkg changed` command",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-07-23T00:11:01Z",
+    "updated_at": "2019-07-25T00:42:04Z",
+    "closed_at": "2019-07-23T06:01:46Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12090",
+        "html_url": "https://github.com/spack/spack/pull/12090",
+        "diff_url": "https://github.com/spack/spack/pull/12090.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12090.patch"
+    },
+    "body": "This provides some updates to the `spack pkg` command.  This command has been around for a while, though it is [only documented here](https://spack.readthedocs.io/en/latest/command_index.html#spack-pkg).  It'll tell you what packages were present in particular revisions of Spack, e.g.:\r\n\r\n```console\r\n$ spack pkg list v0.10.0 | wc -l\r\n1114\r\n$ spack pkg list v0.11.0 | wc -l\r\n2177\r\n$ spack pkg list v0.12.1 | wc -l\r\n2907\r\n```\r\n\r\nIt can diff two revisions, e.g.:\r\n\r\n```console\r\n$ spack pkg diff HEAD~150 \r\nHEAD~150:\r\n    openfoam-com\r\n\r\nHEAD:\r\n    dimemas       llvm-openmp  powerapi                   py-mlxtend       py-pyke      r-grbase     r-spatialreg\r\n    jube          nim          py-antlr4-python3-runtime  py-mo-pack       py-pyugrid   r-gwmodel    r-spdata\r\n    libmo-unpack  openfoam     py-cf-units                py-nc-time-axis  py-stratify  r-spacetime  umap\r\n```\r\n\r\nThis PR adds the `spack pkg changed` command, which will tell you which packages have *changed* from one commit to another, e.g.:\r\n\r\n```console\r\n$ spack pkg changed  HEAD~40\r\nbmi           cmake      hpcviewer  kim-api  libjpeg-turbo  llvm-openmp-ompt  openkim-models  prrte     py-scikit-learn\r\ncharliecloud  font-util  ibm-java   leveldb  libxpm         ompt-openmp       pmix            py-numpy\r\n```\r\nYou can also ask for added, removed, and changed packages all at once:\r\n\r\n```console\r\n$ spack pkg changed --type ARC HEAD~40\r\nbmi           font-util  kim-api        libxpm            ompt-openmp     prrte       py-scikit-learn\r\ncharliecloud  hpcviewer  leveldb        llvm-openmp       openkim-models  py-mlxtend\r\ncmake         ibm-java   libjpeg-turbo  llvm-openmp-ompt  pmix            py-numpy\r\n```\r\n\r\nThe motivation here is really to support a GitHub action that adds any `maintainers` specified on the package as reviewers for changed packages in the PR.  You can get that with, e.g.:\r\n\r\n```console\r\n$ spack pkg changed develop...\r\n```\r\n\r\n- [x] Added `spack pkg changed` command\r\n- [x] Added tests for all `spack pkg` subcommands",
+    "performed_via_github_app": null
+}

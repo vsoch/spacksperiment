@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12880",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12880/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12880/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12880/events",
+    "html_url": "https://github.com/spack/spack/pull/12880",
+    "id": 495888539,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE5MzQ5MzMz",
+    "number": 12880,
+    "title": "Upcxx/2019.9.0",
+    "user": {
+        "login": "mjacquel",
+        "id": 6740366,
+        "node_id": "MDQ6VXNlcjY3NDAzNjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6740366?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mjacquel",
+        "html_url": "https://github.com/mjacquel",
+        "followers_url": "https://api.github.com/users/mjacquel/followers",
+        "following_url": "https://api.github.com/users/mjacquel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mjacquel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mjacquel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mjacquel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mjacquel/orgs",
+        "repos_url": "https://api.github.com/users/mjacquel/repos",
+        "events_url": "https://api.github.com/users/mjacquel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mjacquel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-09-19T15:54:40Z",
+    "updated_at": "2019-09-24T20:25:07Z",
+    "closed_at": "2019-09-24T20:25:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12880",
+        "html_url": "https://github.com/spack/spack/pull/12880",
+        "diff_url": "https://github.com/spack/spack/pull/12880.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12880.patch"
+    },
+    "body": "fixes #12800 \r\ncloses #12758 \r\n\r\nThis PR introduces the latest version of UPC++ (2019.9.0), fixes an issue with the compiler passed on to the UPC++ install script (to get the full path to the actual compiler instead of Spack's compiler wrapper) in order to achieve the correct behavior when doing `spack load upcxx`.\r\nIt also removes the warning messages that were printed out when detecting the presence of a scheduler (slurm, alps, etc.) and thus supersedes pull request #12758 . ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8774",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8774/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8774/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8774/events",
+    "html_url": "https://github.com/spack/spack/pull/8774",
+    "id": 343356621,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAzMDI3NTAy",
+    "number": 8774,
+    "title": "bugfix: stage test no longer modifies ~/.spack/config.yaml",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-21T21:19:21Z",
+    "updated_at": "2018-07-22T00:33:34Z",
+    "closed_at": "2018-07-22T00:12:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8774",
+        "html_url": "https://github.com/spack/spack/pull/8774",
+        "diff_url": "https://github.com/spack/spack/pull/8774.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8774.patch"
+    },
+    "body": "I kept seeing things like this in my `~/.spack/config.yaml`:\r\n\r\n```cosole\r\n$ cat config.yaml \r\nconfig:\r\n  build_stage:\r\n  - /private/var/folders/0s/q_y0zhfj6xdd5n7rn780zz6h001qr7/T/pytest-of-gamblin2/pytest-842/test_keep_exceptions0/tmp\r\n```\r\n\r\nTurns out two tests were modifying the *actual* config rather than a temporary test config.  This fixes the fixtures so that doesn't happen.\r\n\r\n- [x] two stage tests weren't properly using the mutable_config fixture.\r\n- [x] this caused running `spack test` to modify the user's config.yaml",
+    "performed_via_github_app": null
+}

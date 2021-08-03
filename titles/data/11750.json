@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11750",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11750/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11750/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11750/events",
+    "html_url": "https://github.com/spack/spack/pull/11750",
+    "id": 457031131,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg4OTI0MTE4",
+    "number": 11750,
+    "title": "Libmesh updates",
+    "user": {
+        "login": "manavbhatia",
+        "id": 4251244,
+        "node_id": "MDQ6VXNlcjQyNTEyNDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4251244?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/manavbhatia",
+        "html_url": "https://github.com/manavbhatia",
+        "followers_url": "https://api.github.com/users/manavbhatia/followers",
+        "following_url": "https://api.github.com/users/manavbhatia/following{/other_user}",
+        "gists_url": "https://api.github.com/users/manavbhatia/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/manavbhatia/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/manavbhatia/subscriptions",
+        "organizations_url": "https://api.github.com/users/manavbhatia/orgs",
+        "repos_url": "https://api.github.com/users/manavbhatia/repos",
+        "events_url": "https://api.github.com/users/manavbhatia/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/manavbhatia/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-06-17T16:33:33Z",
+    "updated_at": "2019-06-19T16:18:57Z",
+    "closed_at": "2019-06-18T00:38:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11750",
+        "html_url": "https://github.com/spack/spack/pull/11750",
+        "diff_url": "https://github.com/spack/spack/pull/11750.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11750.patch"
+    },
+    "body": "- updates version number \r\n- added master as a version\r\n- added new variant options for perflog, metaphysicl and blocked storage\r\n- bug-fix for metis variant",
+    "performed_via_github_app": null
+}

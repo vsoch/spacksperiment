@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11647",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11647/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11647/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11647/events",
+    "html_url": "https://github.com/spack/spack/pull/11647",
+    "id": 453191432,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg1OTMxNDIy",
+    "number": 11647,
+    "title": "bugfix: StageComposite must include the `expanded` property`",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1371552534,
+            "node_id": "MDU6TGFiZWwxMzcxNTUyNTM0",
+            "url": "https://api.github.com/repos/spack/spack/labels/stage",
+            "name": "stage",
+            "color": "b50fc1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2019-06-06T19:05:40Z",
+    "updated_at": "2019-06-08T00:03:17Z",
+    "closed_at": "2019-06-06T21:09:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11647",
+        "html_url": "https://github.com/spack/spack/pull/11647",
+        "diff_url": "https://github.com/spack/spack/pull/11647.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11647.patch"
+    },
+    "body": "After #11528, `spack cd` would fail like this in `spack location` because the `StageComposite` object didn't have all the necessary properties:\r\n\r\n```console\r\n(spackbook):~$ spack cd lua-luafilesystem\r\n==> Error: 'StageComposite' object has no attribute 'expanded'\r\n```\r\n\r\nAdded the new `expanded` property to it.",
+    "performed_via_github_app": null
+}

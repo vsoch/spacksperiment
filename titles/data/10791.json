@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10791",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10791/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10791/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10791/events",
+    "html_url": "https://github.com/spack/spack/pull/10791",
+    "id": 417075441,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjU4MTUzNDA5",
+    "number": 10791,
+    "title": "Fix clearing EnvironmentModifications with python2",
+    "user": {
+        "login": "NickRF",
+        "id": 916385,
+        "node_id": "MDQ6VXNlcjkxNjM4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/916385?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NickRF",
+        "html_url": "https://github.com/NickRF",
+        "followers_url": "https://api.github.com/users/NickRF/followers",
+        "following_url": "https://api.github.com/users/NickRF/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NickRF/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NickRF/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NickRF/subscriptions",
+        "organizations_url": "https://api.github.com/users/NickRF/orgs",
+        "repos_url": "https://api.github.com/users/NickRF/repos",
+        "events_url": "https://api.github.com/users/NickRF/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NickRF/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-03-05T01:49:19Z",
+    "updated_at": "2019-03-13T01:12:51Z",
+    "closed_at": "2019-03-13T01:12:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10791",
+        "html_url": "https://github.com/spack/spack/pull/10791",
+        "diff_url": "https://github.com/spack/spack/pull/10791.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10791.patch"
+    },
+    "body": "list.clear not present in python2",
+    "performed_via_github_app": null
+}

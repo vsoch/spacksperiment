@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11133",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11133/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11133/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11133/events",
+    "html_url": "https://github.com/spack/spack/pull/11133",
+    "id": 430671735,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY4NTA5NDAw",
+    "number": 11133,
+    "title": "Allow spack-build.env file to be safely `source`d",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 616910800,
+            "node_id": "MDU6TGFiZWw2MTY5MTA4MDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/nag",
+            "name": "nag",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-04-08T21:41:43Z",
+    "updated_at": "2019-05-08T12:09:43Z",
+    "closed_at": "2019-05-07T21:36:53Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11133",
+        "html_url": "https://github.com/spack/spack/pull/11133",
+        "diff_url": "https://github.com/spack/spack/pull/11133.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11133.patch"
+    },
+    "body": "- Escape environment values that contain unusual characters (newlines\r\n  in functions or quotes in other variables would cause failures)\r\n- Comment out environment variables that would cause undesirable changes\r\n  (don't arbitrarily reset PWD and OLD_PWD when sourcing, as well as other\r\n  session-specific IDs)",
+    "performed_via_github_app": null
+}

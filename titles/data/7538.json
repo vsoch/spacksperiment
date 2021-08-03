@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7538",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7538/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7538/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7538/events",
+    "html_url": "https://github.com/spack/spack/pull/7538",
+    "id": 307128083,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc2Mzg4MzUz",
+    "number": 7538,
+    "title": "suite-sparse: add cmake dependency for 5.2.0",
+    "user": {
+        "login": "davydden",
+        "id": 8023934,
+        "node_id": "MDQ6VXNlcjgwMjM5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8023934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davydden",
+        "html_url": "https://github.com/davydden",
+        "followers_url": "https://api.github.com/users/davydden/followers",
+        "following_url": "https://api.github.com/users/davydden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davydden/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davydden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davydden/subscriptions",
+        "organizations_url": "https://api.github.com/users/davydden/orgs",
+        "repos_url": "https://api.github.com/users/davydden/repos",
+        "events_url": "https://api.github.com/users/davydden/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davydden/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-03-21T05:59:52Z",
+    "updated_at": "2018-03-21T21:49:02Z",
+    "closed_at": "2018-03-21T21:49:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7538",
+        "html_url": "https://github.com/spack/spack/pull/7538",
+        "diff_url": "https://github.com/spack/spack/pull/7538.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7538.patch"
+    },
+    "body": "fixes https://github.com/spack/spack/issues/7537\r\n\r\n@adamjstewart @cpraveen  ping.",
+    "performed_via_github_app": null
+}

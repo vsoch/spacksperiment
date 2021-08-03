@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11562",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11562/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11562/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11562/events",
+    "html_url": "https://github.com/spack/spack/pull/11562",
+    "id": 448524723,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjgyMjY4OTI5",
+    "number": 11562,
+    "title": "xsdk@0.4.0: update dealii defaults wrt changes in a973ab475",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-05-26T03:44:12Z",
+    "updated_at": "2019-05-26T15:43:30Z",
+    "closed_at": "2019-05-26T15:43:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11562",
+        "html_url": "https://github.com/spack/spack/pull/11562",
+        "diff_url": "https://github.com/spack/spack/pull/11562.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11562.patch"
+    },
+    "body": "wrt xsdk@develop - ginkgo requires openmp - so disable until we can add openmp dependencies consistantly",
+    "performed_via_github_app": null
+}

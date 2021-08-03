@@ -1,0 +1,143 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11621",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11621/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11621/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11621/events",
+    "html_url": "https://github.com/spack/spack/pull/11621",
+    "id": 452123270,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg1MDc1NzI0",
+    "number": 11621,
+    "title": "fix docker builds/remove extra builds/add ci builds",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 519278357,
+            "node_id": "MDU6TGFiZWw1MTkyNzgzNTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/releases",
+            "name": "releases",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 583316991,
+            "node_id": "MDU6TGFiZWw1ODMzMTY5OTE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/repos",
+            "name": "repos",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 660438974,
+            "node_id": "MDU6TGFiZWw2NjA0Mzg5NzQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tags",
+            "name": "tags",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-06-04T17:40:41Z",
+    "updated_at": "2019-09-02T15:27:39Z",
+    "closed_at": "2019-07-20T21:46:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11621",
+        "html_url": "https://github.com/spack/spack/pull/11621",
+        "diff_url": "https://github.com/spack/spack/pull/11621.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11621.patch"
+    },
+    "body": "Fixes several issues that prevented the docker image builds from completing.  Also, removes and simplifies much of the current docker offerings.\r\n\r\n### Removed Images\r\n - `spack/ubuntu`\r\n - `spack/scilinux`\r\n - `spack/opensuse`\r\n - `spack/fedora`\r\n - `spack/centos`\r\n - `spack/archlinux`\r\n\r\nNow, all images meant for general use are under the single `spack/spack` image name, with tags to differentiate between versions of Spack and OS.  In addition, this PR integrates work from @scottwittenburg that brings the docker images we use for our Gitlab CI process into the Spack repo.  These images are under the `spack/ci` name.\r\n\r\n### Added Images and Tags\r\n\r\nThe tags follow the general format `{SPACK_VERSION}-${OS_NAME_AND_VERSION}`.  Aliasing tags are included so that `SPACK_VERSION` and/or `OS_NAME_AND_VERSION` can be omitted.  The default version of Spack is whatever is the \"latest\" version at the time, and the default OS + version is \"centos-7\".  Note that per Docker tagging standards, the tag `latest` is used for the case where both are omitted, as it is the default tag used when none is provided.  This is a special case, and there is no other corresponding tag as in e.g.: `spack/spack:latest-ubuntu-18.04`; such a tag is simply spelled `spack/spack:ubuntu-18.04`.\r\n\r\n<table>\r\n  <thead>\r\n    <tr>\r\n      <th>Image & Tag</td>\r\n      <th>Contents</td>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-centos-6</td>\r\n      <td>The given Spack version on centos 6.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-centos-7</td>\r\n      <td rowspan=\"2\">The given Spack version on centos 7.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-ubuntu-16.04</td>\r\n      <td rowspan=\"2\">The given Spack version on ubuntu 16.04.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-ubuntu-xenial</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-ubuntu-18.04</td>\r\n      <td rowspan=\"2\">The given Spack version on ubuntu 18.04.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:{VERSION}-ubuntu-bionic</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:centos-6</td>\r\n      <td>The latest Spack version on centos 6.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:centos-7</td>\r\n      <td rowspan=\"2\">The latest Spack version on centos 7.</td>\r\n    </tr>\r\n    <tr>\r\n      <td>spack/spack:latest</td>\r\n    </tr>\r\n    <tr>\r\n      <td><s>spack/ci:centos-7</s></td>\r\n      <td><s>CI image with the latest version of Spack on centos 7.</s></td>\r\n    </tr>\r\n    <tr>\r\n      <td><s>spack/ci:ubuntu-18.04</s></td>\r\n      <td><s>CI image with the latest version of Spack on ubuntu-18.04.</s></td>\r\n    </tr>\r\n  </tbody>\r\n</table>\r\n\r\n#### Related to-do items.\r\n\r\n- [ ] Remove old dockerhub repos/add new dockerhub repos.\r\n- [ ] Decide on a policy for mapping Spack version to docker tag.\r\n    - Right now, the current PR just checks for the output of `spack --version` and assumes that we are always building using the \"latest\" version of Spack.  Is this behavior enough?\r\n- [x] ~~Finish S3 work (#11117) and start populating the public mirror with binary packages.~~\r\n    - ~~I expect this step to be necessary because it takes a very long time to build e.g.: llvm in a docker container (for the centos CI image); far longer than I expect travis to run before timing out.  Once binary packages become available, this issue should go away.~~ EDIT: This should no longer be necessary, since we have eliminated the CI images in favor of \"bootstrapping\" compilers as part of the CI process.\r\n- [ ] Also, once these builds are running successfully and consistently, I think we should turn them \"back on\" in the Travis build matrix, that is, allow their failures to fail the whole build.  Looking at docker hub, it's clear that we haven't been building up-to-date images for the last several months.  If not from Travis, we should at least have *some* kind of notification that our docker images have stopped building.\r\n\r\nEDIT: Added Travis todo item.",
+    "performed_via_github_app": null
+}

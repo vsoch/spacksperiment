@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7380",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7380/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7380/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7380/events",
+    "html_url": "https://github.com/spack/spack/pull/7380",
+    "id": 301851184,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTcyNTY0ODg5",
+    "number": 7380,
+    "title": "py-py{gobject,gtk} require pkgconfig for build",
+    "user": {
+        "login": "muffgaga",
+        "id": 1506210,
+        "node_id": "MDQ6VXNlcjE1MDYyMTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1506210?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/muffgaga",
+        "html_url": "https://github.com/muffgaga",
+        "followers_url": "https://api.github.com/users/muffgaga/followers",
+        "following_url": "https://api.github.com/users/muffgaga/following{/other_user}",
+        "gists_url": "https://api.github.com/users/muffgaga/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/muffgaga/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/muffgaga/subscriptions",
+        "organizations_url": "https://api.github.com/users/muffgaga/orgs",
+        "repos_url": "https://api.github.com/users/muffgaga/repos",
+        "events_url": "https://api.github.com/users/muffgaga/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/muffgaga/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-02T17:52:51Z",
+    "updated_at": "2018-03-21T18:22:09Z",
+    "closed_at": "2018-03-21T18:22:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7380",
+        "html_url": "https://github.com/spack/spack/pull/7380",
+        "diff_url": "https://github.com/spack/spack/pull/7380.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7380.patch"
+    },
+    "body": "I tried a test-build on a fairly minimal Debian Stretch (minimal + packages `git-core, curl, ca-certificates, python, procps, gcc, g++, file, make, patch, libc6-dev, xz-utils, lbzip2, sudo, ssh, unzip`) and encountered that `py-py{gobjects,gtk}` depend on `pkg-config`.",
+    "performed_via_github_app": null
+}

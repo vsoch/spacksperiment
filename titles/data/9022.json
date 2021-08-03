@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9022",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9022/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9022/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9022/events",
+    "html_url": "https://github.com/spack/spack/pull/9022",
+    "id": 351984938,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5NDExMTQy",
+    "number": 9022,
+    "title": "yaml: use `ruamel.yaml` instead of `pyyaml`",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1029761810,
+            "node_id": "MDU6TGFiZWwxMDI5NzYxODEw",
+            "url": "https://api.github.com/repos/spack/spack/labels/vendored-dependencies",
+            "name": "vendored-dependencies",
+            "color": "b1fc49",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-08-20T04:55:02Z",
+    "updated_at": "2018-08-20T23:57:27Z",
+    "closed_at": "2018-08-20T23:36:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9022",
+        "html_url": "https://github.com/spack/spack/pull/9022",
+        "diff_url": "https://github.com/spack/spack/pull/9022.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9022.patch"
+    },
+    "body": "[PyYAML](https://pyyaml.org/) is no longer maintained (or at least it wasn't for a long while) and it's somewhat awkward to use - we have to vendor it twice (for Python 2 and Python 3, since the source is separate).\r\n\r\n[ruamel.yaml](https://yaml.readthedocs.io/en/latest/) is a drop-in replacement.  It seems to work fine -- it took me 15 minutes to convert. All of our YAML modifications (`spack config blame`, line numbers, etc.) work on top of it.  It's single-source, works with `python2`/`python3` compatible, is actually maintained, and there are a few nice things about it that I'm particularly interested in:\r\n\r\n1. It allows round-tripping comments from/to files (so we could update configuration files and preserve comments)\r\n2. It can preserve line/column information from files read in, so we *might* be able to get rid of the line tracking we do in `spack.util.spack_yaml`.  It doesn't do it quite the same way that we do, and it doesn't preserve file information for commands like [`spack config blame`](https://github.com/spack/spack/pull/8081), so I'm not sure that's completely possible yet.\r\n3. It has its own support for ordered keys in `dicts`, so we could potentially trim that out of `spack.util.spack_yaml`, too.\r\n\r\nI'm mostly interested in (1) right now.  This addition removes ~3k lines of code from what we have to vendor for `PyYAML`, so that's a plus already, and while round-tripping comments doesn't yet work with configs, we can make that work gradually.\r\n\r\nI've vendored an old version (0.11) because it's the last version that supported Python 2.6.  When we one day drop 2.6 support, we can get the latest `ruamel` too.\r\n\r\nNote: there is also [`strictyaml`](https://github.com/crdoconnor/strictyaml), which kind of looks nicer (in the sense that I like all the simplifying assumptions it puts forth), but it appears to just use `ruamel` underneath and then restricts it.  I might like it better if it was simpler, faster, from-scratch implementation, because we definitely *don't* use all the YAML features.",
+    "performed_via_github_app": null
+}

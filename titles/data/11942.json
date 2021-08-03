@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11942",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11942/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11942/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11942/events",
+    "html_url": "https://github.com/spack/spack/pull/11942",
+    "id": 464779468,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk0OTg2OTQ0",
+    "number": 11942,
+    "title": "environments: activate/deactivate tests, support `set -u`",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-05T21:35:09Z",
+    "updated_at": "2019-07-20T08:11:02Z",
+    "closed_at": "2019-07-20T07:36:57Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11942",
+        "html_url": "https://github.com/spack/spack/pull/11942",
+        "diff_url": "https://github.com/spack/spack/pull/11942.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11942.patch"
+    },
+    "body": "After #4048 I tried running `spack env activate` and `despacktivate` and noticed some problems.  Turned out they were with my environment, but I added shell tests for this stuff anyway.  This actually ended up catching a bug in the code output by `spack env deactivate --sh` -- it now works properly with `set -u`.\r\n\r\n- [x] Add shell tests to ensure that `spack env activate`, `spack env deactivate`, and `despacktivate` continue to work.\r\n\r\n- [x] Also ensure that activate and deactivate both work with `set -u`",
+    "performed_via_github_app": null
+}

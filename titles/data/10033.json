@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10033",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10033/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10033/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10033/events",
+    "html_url": "https://github.com/spack/spack/pull/10033",
+    "id": 387981948,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM2MzUxMTgw",
+    "number": 10033,
+    "title": "Spades: Add version 3.13.0",
+    "user": {
+        "login": "mamelara",
+        "id": 7441417,
+        "node_id": "MDQ6VXNlcjc0NDE0MTc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7441417?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mamelara",
+        "html_url": "https://github.com/mamelara",
+        "followers_url": "https://api.github.com/users/mamelara/followers",
+        "following_url": "https://api.github.com/users/mamelara/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mamelara/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mamelara/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mamelara/subscriptions",
+        "organizations_url": "https://api.github.com/users/mamelara/orgs",
+        "repos_url": "https://api.github.com/users/mamelara/repos",
+        "events_url": "https://api.github.com/users/mamelara/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mamelara/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-12-05T22:54:34Z",
+    "updated_at": "2018-12-07T17:24:18Z",
+    "closed_at": "2018-12-07T17:24:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10033",
+        "html_url": "https://github.com/spack/spack/pull/10033",
+        "diff_url": "https://github.com/spack/spack/pull/10033.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10033.patch"
+    },
+    "body": "In version 3.13.0 the CmakeLists.txt dir is at a different location than\r\nin other versions. Versions up to 3.12.0 are located in \"src\" whereas\r\n3.13.0 is a level deeper at \"assemblers/src\".",
+    "performed_via_github_app": null
+}

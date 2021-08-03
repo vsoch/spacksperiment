@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10240",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10240/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10240/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10240/events",
+    "html_url": "https://github.com/spack/spack/pull/10240",
+    "id": 395325499,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxODA2MTA3",
+    "number": 10240,
+    "title": "FEniCS: update to latest stable version (2018.1.0)",
+    "user": {
+        "login": "benzwick",
+        "id": 33216696,
+        "node_id": "MDQ6VXNlcjMzMjE2Njk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33216696?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/benzwick",
+        "html_url": "https://github.com/benzwick",
+        "followers_url": "https://api.github.com/users/benzwick/followers",
+        "following_url": "https://api.github.com/users/benzwick/following{/other_user}",
+        "gists_url": "https://api.github.com/users/benzwick/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/benzwick/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/benzwick/subscriptions",
+        "organizations_url": "https://api.github.com/users/benzwick/orgs",
+        "repos_url": "https://api.github.com/users/benzwick/repos",
+        "events_url": "https://api.github.com/users/benzwick/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/benzwick/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2019-01-02T17:47:32Z",
+    "updated_at": "2020-12-11T01:31:49Z",
+    "closed_at": "2020-12-11T01:31:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10240",
+        "html_url": "https://github.com/spack/spack/pull/10240",
+        "diff_url": "https://github.com/spack/spack/pull/10240.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10240.patch"
+    },
+    "body": "I have split the FEniCS components into separate packages because:\r\n1. Each component has its own git repository, tarball and build instructions.\r\n2. Some components can be used independently of the others so should be installable on their own.\r\n3. It simplifies the package.py for each component.\r\n4. It will make it easier in the futue to add/remove FEniCS dependencies (e.g. recent versions of DOLFIN don't require the deprecated instant package).\r\n\r\nI may need some assistance to get the following to work:\r\n\r\n- Compile DOLFIN Python interface after installing DOLFIN\r\n- Compile mshr Python interface after installing mshr (similar to above)\r\n- Install with PETSc (FEniCS requires Python 3 but PETSc requires Python 2)\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9739",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9739/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9739/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9739/events",
+    "html_url": "https://github.com/spack/spack/issues/9739",
+    "id": 377839402,
+    "node_id": "MDU6SXNzdWUzNzc4Mzk0MDI=",
+    "number": 9739,
+    "title": "Unit tests failing on Travis with Python 3.7",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 468766000,
+            "node_id": "MDU6TGFiZWw0Njg3NjYwMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/broken-develop",
+            "name": "broken-develop",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-11-06T13:09:54Z",
+    "updated_at": "2018-11-07T00:02:38Z",
+    "closed_at": "2018-11-07T00:02:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "Unit tests are failing on Travis for Python 3.7. \r\n\r\n### Steps to reproduce the issue\r\nAny PR or build of the `develop` branch since October 21st started failing for Python 3.7. The error could be reproduced locally by just using python 3.7 as an interpreter:\r\n```console\r\n$ python3.7 \r\nPython 3.7.1 (default, Oct 21 2018, 04:01:51) \r\n[GCC 7.3.0] on linux\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> \r\n\r\n$ python3.7 bin/spack test\r\n...\r\nweb.py:133: AssertionError\r\n_____________________________________________________ test_find_exotic_versions_of_archive_3 _____________________________________________________\r\n\r\n    def test_find_exotic_versions_of_archive_3():\r\n        versions = find_versions_of_archive(root_tarball, root, list_depth=3)\r\n>       assert ver('2.0.0b2') in versions\r\nE       AssertionError: assert Version('2.0.0b2') in {Version('0.0.0'): 'file:///home/mculpo/PycharmProjects/spack/lib/spack/spack/test/data/web/foo-0.0.0.tar.gz'}\r\nE        +  where Version('2.0.0b2') = ver('2.0.0b2')\r\n\r\nweb.py:141: AssertionError\r\n========================================= 9 failed, 1182 passed, 83 skipped, 1 xfailed in 221.95 seconds =========================================\r\n```\r\n\r\n\r\nThe [last successful build](https://travis-ci.org/spack/spack/builds/444198345) appears to be have the same hash as the [first failing build](https://travis-ci.org/spack/spack/builds/444484951). \r\n\r\n### Error Message\r\nThere are 9 tests that seems to be failing. The log can be found [here](https://travis-ci.org/spack/spack/jobs/444484960). \r\n\r\n\r\n### Information on your system\r\n\r\nThe errors have been reproduced on an Ubuntu 18.04 machine and are persistent in Travis.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8476",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8476/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8476/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8476/events",
+    "html_url": "https://github.com/spack/spack/pull/8476",
+    "id": 332475495,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk0OTQ5OTI4",
+    "number": 8476,
+    "title": "New environment manipulation functions for system path deprioritization and duplicate removal.",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2018-06-14T16:26:33Z",
+    "updated_at": "2019-08-12T13:26:04Z",
+    "closed_at": "2019-05-07T02:29:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8476",
+        "html_url": "https://github.com/spack/spack/pull/8476",
+        "diff_url": "https://github.com/spack/spack/pull/8476.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8476.patch"
+    },
+    "body": "New functions `deprioritize_system_paths()` and `prune_duplicate_paths()` have been added to `util/environment.py` with tests, and functionality to use them from `EnvironmentModifications` has been added, along with tests. In addition, all functions in `util/environment.py` have tests in `test/util/environment.py` and one now-redundant test in `test/environment.py` has been removed in favor of an equivalent test in the more appropriate `test/util/environment.py`.\r\n\r\nThe new functions are particularly useful in recipes using `PATH`-like variables where entries in `packages.yaml` might cause issues by putting (_e.g._) `/usr/include` ahead of paths from specific spack-installed packages.\r\n\r\n`deprioritize_system_paths(name)` will move identified system paths to the end of the `name` `PATH`-like variable (preserving the original relative order of same), while `prune_duplicate_paths(name)` will remove the second and subsequent mentions of any given path.\r\n",
+    "performed_via_github_app": null
+}

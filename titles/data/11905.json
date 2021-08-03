@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11905",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11905/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11905/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11905/events",
+    "html_url": "https://github.com/spack/spack/pull/11905",
+    "id": 462632673,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjkzMjc0MzA1",
+    "number": 11905,
+    "title": "portcullis: remove -m64 on aarch64.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-01T10:20:14Z",
+    "updated_at": "2019-07-02T17:42:07Z",
+    "closed_at": "2019-07-02T17:42:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11905",
+        "html_url": "https://github.com/spack/spack/pull/11905",
+        "diff_url": "https://github.com/spack/spack/pull/11905.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11905.patch"
+    },
+    "body": "portcullis package is useed -m64 flag to compile.\r\nBut gcc on aarch64 dose not support -m64.\r\n\r\nThis patch remove -m64 flag if target is aarch64.",
+    "performed_via_github_app": null
+}

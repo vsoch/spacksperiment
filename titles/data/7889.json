@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7889",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7889/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7889/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7889/events",
+    "html_url": "https://github.com/spack/spack/pull/7889",
+    "id": 317394451,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgzODYzNjQ1",
+    "number": 7889,
+    "title": "Add boost 1.67.0",
+    "user": {
+        "login": "Rombur",
+        "id": 368538,
+        "node_id": "MDQ6VXNlcjM2ODUzOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/368538?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Rombur",
+        "html_url": "https://github.com/Rombur",
+        "followers_url": "https://api.github.com/users/Rombur/followers",
+        "following_url": "https://api.github.com/users/Rombur/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Rombur/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Rombur/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Rombur/subscriptions",
+        "organizations_url": "https://api.github.com/users/Rombur/orgs",
+        "repos_url": "https://api.github.com/users/Rombur/repos",
+        "events_url": "https://api.github.com/users/Rombur/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Rombur/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-04-24T21:03:34Z",
+    "updated_at": "2018-04-30T12:56:59Z",
+    "closed_at": "2018-04-26T02:00:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7889",
+        "html_url": "https://github.com/spack/spack/pull/7889",
+        "diff_url": "https://github.com/spack/spack/pull/7889.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7889.patch"
+    },
+    "body": "Add the latest version of boost. I had to set it as the preferred version, otherwise the release candidate was the preferred version.",
+    "performed_via_github_app": null
+}

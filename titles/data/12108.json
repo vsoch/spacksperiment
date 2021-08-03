@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12108",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12108/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12108/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12108/events",
+    "html_url": "https://github.com/spack/spack/pull/12108",
+    "id": 472039028,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwNTI5MDQw",
+    "number": 12108,
+    "title": "rocksdb: Don't add -march=native on ARM and gcc 5.x or before.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-24T01:42:26Z",
+    "updated_at": "2019-07-24T03:33:06Z",
+    "closed_at": "2019-07-24T03:33:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12108",
+        "html_url": "https://github.com/spack/spack/pull/12108",
+        "diff_url": "https://github.com/spack/spack/pull/12108.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12108.patch"
+    },
+    "body": "rocksdb add -march=native for gcc.\r\nBut gcc on aarch64 is supported -mcpu=native on gcc version 6:\r\nhttps://www.gnu.org/software/gcc/gcc-6/changes.html#aarch64\r\n\r\nThis patch avoid -march=native on aarch64 and gcc 5 or before.",
+    "performed_via_github_app": null
+}

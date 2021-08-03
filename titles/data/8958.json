@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8958",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8958/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8958/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8958/events",
+    "html_url": "https://github.com/spack/spack/pull/8958",
+    "id": 349759538,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA3NzkwMDM2",
+    "number": 8958,
+    "title": "Don't run ibv_devices every time packages are loaded",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-11T19:53:17Z",
+    "updated_at": "2019-10-20T01:43:12Z",
+    "closed_at": "2018-08-18T18:39:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8958",
+        "html_url": "https://github.com/spack/spack/pull/8958",
+        "diff_url": "https://github.com/spack/spack/pull/8958.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8958.patch"
+    },
+    "body": "While debugging #8954, I discovered that if you are on a system where `ibv_devices` exists, every time you run a command that touches any `package.py` file, the `openmpi` package tries to run `ibv_devices` to set the default variant value. This is true even if you don't reference any package that depends on `openmpi`. You can see this for yourself by running:\r\n```console\r\n$ spack --debug spec zlib\r\n...\r\n==> '/usr/bin/ibv_devices'\r\n...\r\n```\r\nI don't think this is the root cause of #8954, but I also think running this command every time is unnecessary. Convenient, but slow.\r\n\r\nThis has been in place since @eschnett's #973.",
+    "performed_via_github_app": null
+}

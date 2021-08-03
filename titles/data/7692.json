@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7692",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7692/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7692/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7692/events",
+    "html_url": "https://github.com/spack/spack/pull/7692",
+    "id": 312283901,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgwMTQ2Njk4",
+    "number": 7692,
+    "title": "config and command-line options to disable locking",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-04-08T08:13:19Z",
+    "updated_at": "2018-06-16T18:22:32Z",
+    "closed_at": "2018-05-18T21:41:04Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7692",
+        "html_url": "https://github.com/spack/spack/pull/7692",
+        "diff_url": "https://github.com/spack/spack/pull/7692.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7692.patch"
+    },
+    "body": "Depends on #7774.  Merge once that's in.\r\n\r\nThis adds an option to `config.yaml` that enables and disables locking.  This is intended to allow people on filesystems that do not support locking to use Spack more easily.\r\n\r\n```yaml\r\n  # When set to true, concurrent instances of Spack will use locks to\r\n  # avoid modifying the install tree, database file, etc. If false, Spack\r\n  # will disable all locking, but you must NOT run concurrent instances\r\n  # of Spack.  For filesystems that don't support locking, you should set\r\n  # this to false and run one Spack at a time, but otherwise we recommend\r\n  # enabling locks.\r\n  locks: true\r\n```\r\n\r\nYou can also now run `spack -L ...` to disable locking:\r\n\r\n```console\r\n$ spack help -a\r\n...\r\noptional arguments:\r\n...\r\n  -l, --enable-locks    force spack to use filesystem locking\r\n  -L, --disable-locks   force spack to disable filesystem locking\r\n```\r\n\r\nThis isn't recommended, but sometimes it's the only option.\r\n\r\nYou can ignore the first commit, which simplifies some import madness to make disabling locks possible.  The second two add the actual feature.\r\n\r\n@cyrush @junghans @ianfoster",
+    "performed_via_github_app": null
+}

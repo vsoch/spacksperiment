@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8623",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8623/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8623/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8623/events",
+    "html_url": "https://github.com/spack/spack/pull/8623",
+    "id": 337488689,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4NjU3MTc3",
+    "number": 8623,
+    "title": "Unset environment variables that are used by Autotools packages.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-07-02T11:59:20Z",
+    "updated_at": "2020-06-24T15:39:05Z",
+    "closed_at": "2020-06-24T15:39:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8623",
+        "html_url": "https://github.com/spack/spack/pull/8623",
+        "diff_url": "https://github.com/spack/spack/pull/8623.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8623.patch"
+    },
+    "body": "It happens that the listed variables (see the changes) are set in the environment and affect the installation process of Autotools packages. With this PR, Spack unsets them when it's run with `--clean` flag (by default).\r\n\r\nProbably, putting this logic to the `setup_environment` of `AutotoolsPackage` is better but I don't know the best way to get the value of `args.dirty` from there.",
+    "performed_via_github_app": null
+}

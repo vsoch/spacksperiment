@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10596",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10596/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10596/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10596/events",
+    "html_url": "https://github.com/spack/spack/pull/10596",
+    "id": 409997148,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUyODQzNDY5",
+    "number": 10596,
+    "title": "antlr: Disble C# support",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-02-13T20:53:56Z",
+    "updated_at": "2019-02-15T20:35:38Z",
+    "closed_at": "2019-02-15T20:35:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10596",
+        "html_url": "https://github.com/spack/spack/pull/10596",
+        "diff_url": "https://github.com/spack/spack/pull/10596.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10596.patch"
+    },
+    "body": "Nobody in Spack-land is ever going to build this with C# support.  And if they are, they can update the package in the future and enable C# support then.  In the meantime, it builds more cleanly and reliably without.\r\n",
+    "performed_via_github_app": null
+}

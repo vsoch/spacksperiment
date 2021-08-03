@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8153/events",
+    "html_url": "https://github.com/spack/spack/pull/8153",
+    "id": 323672061,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg4NDcxOTcw",
+    "number": 8153,
+    "title": "tcl: Install sources",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2018-05-16T15:27:20Z",
+    "updated_at": "2018-06-08T18:27:33Z",
+    "closed_at": "2018-06-08T18:10:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8153",
+        "html_url": "https://github.com/spack/spack/pull/8153",
+        "diff_url": "https://github.com/spack/spack/pull/8153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8153.patch"
+    },
+    "body": "This fixes a bug in the Tcl/Tk installation #8151.  Previously, the recipe for `tk` would erroneously pick up the system-installed `tcl.h` file.  This \"worked\" for newer systems that had TCL 8.6 installed.  The bug was unmasked building on SLES 11, which comes with an older version of TCL.\r\n\r\nLong story short, the `tcl` build references the original sources upon install, and the `tk` build requires the `tcl` sources.  TCL sources were installed following the example of #4102.  If the user installs with `spack install --source`, then the sources would be copied twice.  This should not be a serious problem.\r\n\r\n\r\n@junghans @davydden @tgamblin from #4083:\r\n> Do we need a global variant, which modifies the hash for no reason related to the artifact, or would it make sense to just make this an install option\r\n\r\nNote that this is a case in which the presence of the source is structural, not an install option.  If it were optional (it's not), then a `+source` variant would be warranted here.\r\n\r\n\r\n*** In addition, a `make install-headers` was added, as per advice for TCL 8.6\r\n\r\n#",
+    "performed_via_github_app": null
+}

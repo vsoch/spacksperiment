@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8182",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8182/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8182/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8182/events",
+    "html_url": "https://github.com/spack/spack/pull/8182",
+    "id": 324251086,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg4OTA4MTc4",
+    "number": 8182,
+    "title": "[WIP] install_tree can install into an existing directory structure",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2018-05-18T02:42:26Z",
+    "updated_at": "2018-05-26T15:46:24Z",
+    "closed_at": "2018-05-26T15:46:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8182",
+        "html_url": "https://github.com/spack/spack/pull/8182",
+        "diff_url": "https://github.com/spack/spack/pull/8182.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8182.patch"
+    },
+    "body": "I've been meaning to do this for years, but kept forgetting.\r\n\r\nSpack has these really useful `install` and `install_tree` commands for copying files and directories to the installation directory. The only problem is that `install_tree` crashed if the directory you were trying to install to already existed (for example, if you wanted to copy everything in the current directory to `prefix`). See https://github.com/spack/spack/pull/8126/files#r188393176 for an example error message.\r\n\r\nThis PR replaces the call to [`shutil.copytree`](https://docs.python.org/3/library/shutil.html#shutil.copytree) with a call to [`distutils.dir_util.copy_tree`](https://docs.python.org/3.6/distutils/apiref.html#distutils.dir_util.copy_tree). As far as I can tell, these functions are largely the same, except that `distutils.dir_util.copy_tree` works when the destination directory already exists and `shutil.copytree` does not. If you know of any other important differences, please let me know.\r\n\r\nAlso replaced dozens of calls to `shutil` and `distutils.dir_util` with `install` and `install_tree`. Note that I didn't test any of these package installations, so a careful review would be appreciated.",
+    "performed_via_github_app": null
+}

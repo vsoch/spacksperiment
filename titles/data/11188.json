@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11188",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11188/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11188/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11188/events",
+    "html_url": "https://github.com/spack/spack/pull/11188",
+    "id": 433102409,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjcwMzc2NDg1",
+    "number": 11188,
+    "title": "petsc: fix suitesparse configure options.",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-04-15T05:37:32Z",
+    "updated_at": "2019-04-23T02:17:03Z",
+    "closed_at": "2019-04-19T18:44:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11188",
+        "html_url": "https://github.com/spack/spack/pull/11188",
+        "diff_url": "https://github.com/spack/spack/pull/11188.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11188.patch"
+    },
+    "body": "- spec[ss_spec].libs.ld_flags results in:\r\n\r\n--with-suitesparse-lib=\"-L/raid/home/sajid/packages/spack/opt/spack/linux-rhel7-x86_64/gcc-8.3.0/suite-sparse-5.3.0-vteg2xpr3uz2ppisgdrjtacwpavzydm7/lib -L/lib64 -lumfpack\r\n-lklu -lcholmod -lbtf -lccolamd -lcolamd -lcamd -lamd -lsuitesparseconfig -lrt\"\r\n\r\n-L/lib64 from above results in system libraries getting picked-up instead of spack installed packages [in this case hdf5]\r\n\r\nFixed-by: \"Smith, Barry F.\" <bsmith@mcs.anl.gov>\r\nReported-by: \"Syed, Sajid Ali\" <sajidsyed2021@u.northwestern.edu>\r\n\r\ncc: @BarrySmith @s-sajid-ali ",
+    "performed_via_github_app": null
+}

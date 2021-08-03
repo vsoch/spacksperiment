@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8748",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8748/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8748/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8748/events",
+    "html_url": "https://github.com/spack/spack/pull/8748",
+    "id": 342542657,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDE5Mjc0",
+    "number": 8748,
+    "title": "py-snuggs: Added depends_on py-parsing. The build uses setuptools, wh\u2026",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-19T01:04:03Z",
+    "updated_at": "2018-07-19T04:12:13Z",
+    "closed_at": "2018-07-19T02:42:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8748",
+        "html_url": "https://github.com/spack/spack/pull/8748",
+        "diff_url": "https://github.com/spack/spack/pull/8748.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8748.patch"
+    },
+    "body": "\u2026ich would otherwise silently try to install pyparsing itself, presumably into the python home dir (obviously not ideal).",
+    "performed_via_github_app": null
+}

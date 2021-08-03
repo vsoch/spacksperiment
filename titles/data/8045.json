@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8045",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8045/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8045/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8045/events",
+    "html_url": "https://github.com/spack/spack/pull/8045",
+    "id": 321028036,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg2NTE2MjYy",
+    "number": 8045,
+    "title": "perl-extutils-pkgconfig: Add pkg-config dependency",
+    "user": {
+        "login": "erimar77",
+        "id": 6336162,
+        "node_id": "MDQ6VXNlcjYzMzYxNjI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6336162?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/erimar77",
+        "html_url": "https://github.com/erimar77",
+        "followers_url": "https://api.github.com/users/erimar77/followers",
+        "following_url": "https://api.github.com/users/erimar77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/erimar77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/erimar77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/erimar77/subscriptions",
+        "organizations_url": "https://api.github.com/users/erimar77/orgs",
+        "repos_url": "https://api.github.com/users/erimar77/repos",
+        "events_url": "https://api.github.com/users/erimar77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/erimar77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-05-08T03:14:50Z",
+    "updated_at": "2018-05-14T15:42:18Z",
+    "closed_at": "2018-05-09T18:10:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8045",
+        "html_url": "https://github.com/spack/spack/pull/8045",
+        "diff_url": "https://github.com/spack/spack/pull/8045.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8045.patch"
+    },
+    "body": "Fixes error build error\r\n\r\n```     \r\n     4     *** ExtUtils::PkgConfig requires the pkg-config utility, but it doesn't\r\n     5     *** seem to be in your PATH.  Is it correctly installed?\r\n```",
+    "performed_via_github_app": null
+}

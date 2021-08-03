@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9279",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9279/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9279/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9279/events",
+    "html_url": "https://github.com/spack/spack/pull/9279",
+    "id": 361577597,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE2NTEzNjM4",
+    "number": 9279,
+    "title": "Add fish shell support",
+    "user": {
+        "login": "JBlaschke",
+        "id": 4178946,
+        "node_id": "MDQ6VXNlcjQxNzg5NDY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4178946?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JBlaschke",
+        "html_url": "https://github.com/JBlaschke",
+        "followers_url": "https://api.github.com/users/JBlaschke/followers",
+        "following_url": "https://api.github.com/users/JBlaschke/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JBlaschke/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JBlaschke/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JBlaschke/subscriptions",
+        "organizations_url": "https://api.github.com/users/JBlaschke/orgs",
+        "repos_url": "https://api.github.com/users/JBlaschke/repos",
+        "events_url": "https://api.github.com/users/JBlaschke/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JBlaschke/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 74,
+    "created_at": "2018-09-19T04:51:40Z",
+    "updated_at": "2020-09-05T23:24:19Z",
+    "closed_at": "2020-06-30T19:26:28Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9279",
+        "html_url": "https://github.com/spack/spack/pull/9279",
+        "diff_url": "https://github.com/spack/spack/pull/9279.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9279.patch"
+    },
+    "body": "As requested in #7311, this adds a `setup-env.fish` enabling the same level of user interactivity in fish as in bash. \r\n\r\nSince `setup-env.sh` uses quite a bit of shell magic specific to bash-like syntax, I've had to completely rewrite it for fish. The design is very much based in `setup-env.sh`. I've tested this on a few standard use cases (bootstraping, inspecting packages, installing, loading and unloading with `environment-modules`). I do welcome feedback from more rigorous tests.\r\n\r\nNote that in order to get `environment-modules` to cooperate with fish, I had to upgrade it to >v4.\r\n\r\nCloses #7311",
+    "performed_via_github_app": null
+}

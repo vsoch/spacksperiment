@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12115",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12115/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12115/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12115/events",
+    "html_url": "https://github.com/spack/spack/pull/12115",
+    "id": 472123763,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwNTk1NDA4",
+    "number": 12115,
+    "title": "new command: `spack maintainers` queries package maintainers",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1369661382,
+            "node_id": "MDU6TGFiZWwxMzY5NjYxMzgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/maintainers",
+            "name": "maintainers",
+            "color": "f2d76a",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-07-24T07:29:31Z",
+    "updated_at": "2019-07-24T22:18:51Z",
+    "closed_at": "2019-07-24T21:10:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12115",
+        "html_url": "https://github.com/spack/spack/pull/12115",
+        "diff_url": "https://github.com/spack/spack/pull/12115.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12115.patch"
+    },
+    "body": "We don't currently make enough use of the maintainers field on packages, though we could use it to assign reviews.\r\n\r\nHere are some examples:\r\n\r\n```console\r\n$ spack maintainers --by-user ax3l\r\nadios         isaac-server   mpark-variant  py-adios              xtensor\r\nadios2        jansson        mpilander      py-openpmd-validator  xtensor-python\r\ncuda-memtest  libsplash      nlohmann-json  py-pybind11           xtl\r\ngearshifft    libwebsockets  openpmd-api    rmlab\r\nisaac         mallocmc       pngwriter      xsimd\r\n\r\n$ spack maintainers adios\r\nax3l\r\n\r\n$ spack maintainers dealii\r\ndavydden  jppelteret\r\n\r\n$ spack maintainers --by-user jppelteret\r\ndealii\r\n\r\n$ spack maintainers --all | head -10\r\nadios: ax3l\r\nadios2: ax3l, chuckatkins\r\nalbany: gahansen\r\nalquimia: balay, smolins\r\namrex: asalmgren, mic84\r\nascent: cyrush\r\naspect: tjhei\r\nbohrium: mfherbst\r\ncamellia: CamelliaDPG\r\ncardioid: rblake-llnl\r\n\r\n$ spack maintainers hdf5\r\n\r\n$ spack maintainers hdf5 || echo 'oh no!'\r\noh no!\r\n```\r\n\r\n- [x] add a command that allows maintainers to be queried\r\n  - [x] can ask who is maintaining a package or packages\r\n  - [x] can ask what packages users are maintaining\r\n  - [x] can list all maintained or unmaintained packages\r\n\r\n- [x] add tests for the command",
+    "performed_via_github_app": null
+}

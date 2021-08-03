@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8585",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8585/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8585/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8585/events",
+    "html_url": "https://github.com/spack/spack/pull/8585",
+    "id": 336001766,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3NTU5ODc1",
+    "number": 8585,
+    "title": "mirror create: non-zero return code",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2018-06-26T21:43:01Z",
+    "updated_at": "2019-05-28T09:20:11Z",
+    "closed_at": "2019-05-27T11:01:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8585",
+        "html_url": "https://github.com/spack/spack/pull/8585",
+        "diff_url": "https://github.com/spack/spack/pull/8585.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8585.patch"
+    },
+    "body": "`mirror create` should return a non-zero return code if errors occurred. In such a case, a user could retry, e.g. with\r\n\r\n```bash\r\nwhile [ $? -ne 0 ]\r\ndo\r\n    spack mirror create -d spack-mirror -D mpileaks\r\ndone\r\n```",
+    "performed_via_github_app": null
+}

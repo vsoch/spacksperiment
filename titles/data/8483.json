@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8483",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8483/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8483/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8483/events",
+    "html_url": "https://github.com/spack/spack/pull/8483",
+    "id": 332532512,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk0OTkzMjM1",
+    "number": 8483,
+    "title": "[WIP] mfem: if using clang, link to llvm libunwind",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-06-14T19:24:16Z",
+    "updated_at": "2018-07-31T05:27:07Z",
+    "closed_at": "2018-07-30T23:45:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8483",
+        "html_url": "https://github.com/spack/spack/pull/8483",
+        "diff_url": "https://github.com/spack/spack/pull/8483.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8483.patch"
+    },
+    "body": "This patch is intended to build MFEM with LLVM's libunwind if the spec contains `+libunwind%clang`; however, I can't find a succinct way of doing that here. Lines 204-206 are supposed to enumerate all compilers other than clang, but I'm sure I'm missing XL, and possibly other compilers; this partial fix is temporary, mainly to PR a patch that almost does what it's supposed to. I'm also pretty sure I need to add a `-g` flag to the compiler commands for `mfem+libunwind%clang`; for now, I've built locally with `mfem+debug+libunwind%clang` because I need the debug info anyway, and I think bigger issues with this PR need to be addressed first, before adding flags.\r\n\r\nA related PR is #7263; also see the comment at https://github.com/spack/spack/pull/7263#issuecomment-367258043. I don't think forcing users to add an external `libunwind` using system paths will be any easier, because:\r\n\r\n- LLVM's libunwind is definitely different than the https://savannah.nongnu.org/projects/libunwind/ version of libunwind currently built by spack's libunwind package. Although they have a common ABI and some functions that form a common API (see http://lists.llvm.org/pipermail/cfe-dev/2016-September/050649.html), the libraries provide different symbols and the non-GNU version has more features\r\n\r\n- The path of the LLVM libunwind header looks like `${LLVM_PREFIX}/lib/clang/${VERSION}/include/unwind.h` (e.g., `/usr/local/opt/llvm/lib/clang/6.0.0/include/unwind.h`), so listing a prefix isn't necessarily helpful for non-Apple LLVM installs. Apple installs have a simpler path (`/usr/include/unwind.h`), and libraries for Apple and non-Apple LLVM installs are in the usual directory (i.e., `$PREFIX/lib`)\r\n\r\n- If a user installs LLVM via spack, they might want to use the accompanying libunwind, but it's not clear to me how to encode that information in a `packages.yaml` programmatically; maybe it's worth putting a `provides('llvm-libunwind')` directive in the LLVM spack package\r\n\r\nSuggestions to make adding this feature more workable are welcome; I will do what I can to address them.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7602",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7602/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7602/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7602/events",
+    "html_url": "https://github.com/spack/spack/pull/7602",
+    "id": 308641647,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc3NDk4NTQw",
+    "number": 7602,
+    "title": "conflicts directives extended to accept a predicate",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-03-26T16:21:29Z",
+    "updated_at": "2019-10-14T06:53:22Z",
+    "closed_at": "2019-10-14T06:53:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7602",
+        "html_url": "https://github.com/spack/spack/pull/7602",
+        "diff_url": "https://github.com/spack/spack/pull/7602.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7602.patch"
+    },
+    "body": "`conflicts` directives have been modified to accept a predicate. This should largely extend the range of \r\n checks that can be used to issue a conflict.\r\n\r\nAll the MPI packages have been modified to use this new feature, and raise a conflict after concretization if Fortran compilers are not found.\r\n\r\nExamples of use:\r\n```console\r\n$ spack spec mvapich2\r\nInput spec\r\n--------------------------------\r\nmvapich2\r\n\r\nConcretized\r\n--------------------------------\r\n==> Error: Conflicts in concretized spec \"mvapich2@2.2%gcc@4.8 ch3_rank_bits=32 ~cuda~debug fabrics=psm process_managers= threads=multiple arch=linux-ubuntu14.04-x86_64 /uwp6cqd\"\r\n\r\nList of matching conflicts for spec:\r\n\r\n    mvapich2@2.2%gcc@4.8 ch3_rank_bits=32 ~cuda~debug fabrics=psm process_managers= threads=multiple arch=linux-ubuntu14.04-x86_64 \r\n        ^bison@3.0.4%gcc@4.8 patches=b72914fe38e54a6fc25f29019e0a0786705c4f61ce20d414cc2010c8d62448c7 arch=linux-ubuntu14.04-x86_64 \r\n            ^m4@1.4.18%gcc@4.8 patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00 +sigsegv arch=linux-ubuntu14.04-x86_64 \r\n                ^libsigsegv@2.11%gcc@4.8 arch=linux-ubuntu14.04-x86_64 \r\n        ^libpciaccess@0.13.5%gcc@4.8 arch=linux-ubuntu14.04-x86_64 \r\n            ^libtool@2.4.6%gcc@4.8 arch=linux-ubuntu14.04-x86_64 \r\n            ^pkgconf@1.4.0%gcc@4.8 arch=linux-ubuntu14.04-x86_64 \r\n            ^util-macros@1.19.1%gcc@4.8 arch=linux-ubuntu14.04-x86_64 \r\n\r\n1. \"mvapich2\" conflicts with \"no_fortran_compilers_available\" [Mvapich2 requires both C and Fortran compilers!]\r\n```",
+    "performed_via_github_app": null
+}

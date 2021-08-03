@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8704",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8704/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8704/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8704/events",
+    "html_url": "https://github.com/spack/spack/pull/8704",
+    "id": 341135840,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAxMzgxNjQx",
+    "number": 8704,
+    "title": "Scotch: fix compilation of 6.0.5a",
+    "user": {
+        "login": "matthiasdiener",
+        "id": 1772435,
+        "node_id": "MDQ6VXNlcjE3NzI0MzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1772435?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matthiasdiener",
+        "html_url": "https://github.com/matthiasdiener",
+        "followers_url": "https://api.github.com/users/matthiasdiener/followers",
+        "following_url": "https://api.github.com/users/matthiasdiener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matthiasdiener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matthiasdiener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matthiasdiener/subscriptions",
+        "organizations_url": "https://api.github.com/users/matthiasdiener/orgs",
+        "repos_url": "https://api.github.com/users/matthiasdiener/repos",
+        "events_url": "https://api.github.com/users/matthiasdiener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matthiasdiener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-13T19:35:14Z",
+    "updated_at": "2018-07-13T20:51:39Z",
+    "closed_at": "2018-07-13T20:51:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8704",
+        "html_url": "https://github.com/spack/spack/pull/8704",
+        "diff_url": "https://github.com/spack/spack/pull/8704.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8704.patch"
+    },
+    "body": "Prevent this error:\r\n\r\nmetis_graph_part.c:301:7: error: non-void function 'METIS_PartGraphVKway' should return a value\r\n      [-Wreturn-type]",
+    "performed_via_github_app": null
+}

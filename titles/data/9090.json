@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9090",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9090/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9090/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9090/events",
+    "html_url": "https://github.com/spack/spack/pull/9090",
+    "id": 353754995,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwNzIwMjgy",
+    "number": 9090,
+    "title": "Update the pocl package",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-24T11:59:36Z",
+    "updated_at": "2018-09-04T08:52:42Z",
+    "closed_at": "2018-08-24T17:26:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9090",
+        "html_url": "https://github.com/spack/spack/pull/9090",
+        "diff_url": "https://github.com/spack/spack/pull/9090.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9090.patch"
+    },
+    "body": "This is an attempt to integrate new versions of pocl in the corresponding package. It should not be merged yet as I am still testing the new versions.\r\n\r\nSince the tarball URL has changed as part of the 1.0 release process, support for old 0.x versions of pocl now adds a bit of complexity. Should I drop these old releases or do we need to keep them around for compatibility?",
+    "performed_via_github_app": null
+}

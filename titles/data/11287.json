@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11287",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11287/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11287/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11287/events",
+    "html_url": "https://github.com/spack/spack/pull/11287",
+    "id": 437096484,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjczNDQzODQy",
+    "number": 11287,
+    "title": "Add Fujitsu compiler to Spack.",
+    "user": {
+        "login": "t-karatsu",
+        "id": 49965247,
+        "node_id": "MDQ6VXNlcjQ5OTY1MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49965247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/t-karatsu",
+        "html_url": "https://github.com/t-karatsu",
+        "followers_url": "https://api.github.com/users/t-karatsu/followers",
+        "following_url": "https://api.github.com/users/t-karatsu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/t-karatsu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/t-karatsu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/t-karatsu/subscriptions",
+        "organizations_url": "https://api.github.com/users/t-karatsu/orgs",
+        "repos_url": "https://api.github.com/users/t-karatsu/repos",
+        "events_url": "https://api.github.com/users/t-karatsu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/t-karatsu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-04-25T09:25:35Z",
+    "updated_at": "2019-05-22T06:01:34Z",
+    "closed_at": "2019-05-22T01:31:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11287",
+        "html_url": "https://github.com/spack/spack/pull/11287",
+        "diff_url": "https://github.com/spack/spack/pull/11287.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11287.patch"
+    },
+    "body": "# Purpose\r\nWe want to add Fujitsu compiler to Spack.\r\n\r\n# List of Changes\r\nChanges of lib/spack/env/cc\r\n\u2026Add Fujitsu compiler commands that\r\n\u3000fcc as C compiler, FCC as C++ compiler, and frt as fortran compiler.\r\n\r\nAdd files to lib/spack/env\r\n\u2026Make a directory named compiler's name, then \"fj\" is an abbreviation of Fujitsu compiler.\r\n\u3000And make symbolic links to cc.\r\n\r\nChanges of etc/spack/defaults/packages.yaml\r\n\u2026Add \"fj\" to list of compilers.\r\n\r\nAdd a file \"lib/spack/spack/compilers/fj.py\"\r\n\u2026This file defines Fujitsu compiler commands and available options.\r\n\r\n# Confirmed operation\r\n$ spack compiler add\r\n \u2192spack detected Fujitsu compiler as spack's compiler.\r\n$ spack compilers\r\n \u2192Fujitsu compiler was displayed.\r\n$ spack install zlib %fj\r\n \u2192I could install zlib by Fujitsu compiler on spack.",
+    "performed_via_github_app": null
+}

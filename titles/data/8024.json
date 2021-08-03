@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8024",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8024/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8024/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8024/events",
+    "html_url": "https://github.com/spack/spack/pull/8024",
+    "id": 320336709,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg2MDMwNTk4",
+    "number": 8024,
+    "title": "Add package wireshark and dependencies",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-05-04T16:20:42Z",
+    "updated_at": "2018-05-08T09:34:45Z",
+    "closed_at": "2018-05-06T14:32:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8024",
+        "html_url": "https://github.com/spack/spack/pull/8024",
+        "diff_url": "https://github.com/spack/spack/pull/8024.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8024.patch"
+    },
+    "body": "This is mostly a copy of the respective homebrew receipts, I don't have first hand knowledge of the options and/or dependencies. If someone knows/finds the version information I'd be happy to add them in.",
+    "performed_via_github_app": null
+}

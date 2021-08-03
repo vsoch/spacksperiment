@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7403",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7403/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7403/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7403/events",
+    "html_url": "https://github.com/spack/spack/pull/7403",
+    "id": 302774898,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTczMjEzNDcz",
+    "number": 7403,
+    "title": "Disable intel packages for macOS",
+    "user": {
+        "login": "f-sim",
+        "id": 24602920,
+        "node_id": "MDQ6VXNlcjI0NjAyOTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24602920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/f-sim",
+        "html_url": "https://github.com/f-sim",
+        "followers_url": "https://api.github.com/users/f-sim/followers",
+        "following_url": "https://api.github.com/users/f-sim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/f-sim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/f-sim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/f-sim/subscriptions",
+        "organizations_url": "https://api.github.com/users/f-sim/orgs",
+        "repos_url": "https://api.github.com/users/f-sim/repos",
+        "events_url": "https://api.github.com/users/f-sim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/f-sim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446622613,
+            "node_id": "MDU6TGFiZWw0NDY2MjI2MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/needs-response",
+            "name": "needs-response",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-03-06T16:38:48Z",
+    "updated_at": "2020-08-18T16:08:12Z",
+    "closed_at": "2020-08-18T16:08:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7403",
+        "html_url": "https://github.com/spack/spack/pull/7403",
+        "diff_url": "https://github.com/spack/spack/pull/7403.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7403.patch"
+    },
+    "body": "The intel build process is not supported for macOS. A workaround is documented in the documentation.\r\n\r\nThis PR resolves #7396.",
+    "performed_via_github_app": null
+}

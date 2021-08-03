@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12106",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12106/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12106/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12106/events",
+    "html_url": "https://github.com/spack/spack/pull/12106",
+    "id": 471994884,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwNDk0MzYx",
+    "number": 12106,
+    "title": "Make OpenJDK the default",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456144565,
+            "node_id": "MDU6TGFiZWw0NTYxNDQ1NjU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/defaults",
+            "name": "defaults",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-07-23T22:27:33Z",
+    "updated_at": "2019-07-25T17:58:16Z",
+    "closed_at": "2019-07-25T17:25:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12106",
+        "html_url": "https://github.com/spack/spack/pull/12106",
+        "diff_url": "https://github.com/spack/spack/pull/12106.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12106.patch"
+    },
+    "body": "Makes OpenJDK the default over JDK because JDK is now a licensed product that is not freely available.  Having JDK as default broke builds of people who didn't even care about Java (eg: R).",
+    "performed_via_github_app": null
+}

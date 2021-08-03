@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12943",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12943/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12943/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12943/events",
+    "html_url": "https://github.com/spack/spack/pull/12943",
+    "id": 498352115,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIxMzAwNjc4",
+    "number": 12943,
+    "title": "binary cache: show all packages for compatible differing targets",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-09-25T15:13:09Z",
+    "updated_at": "2019-10-13T00:17:23Z",
+    "closed_at": "2019-10-01T22:03:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12943",
+        "html_url": "https://github.com/spack/spack/pull/12943",
+        "diff_url": "https://github.com/spack/spack/pull/12943.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12943.patch"
+    },
+    "body": "Since #3206 build caches are too specific in which packages they show as available. On a broadwell machine, build caches should consider all packages built for x86_64 architectures broadwell or earlier.\r\n\r\nFixes #12935 ",
+    "performed_via_github_app": null
+}

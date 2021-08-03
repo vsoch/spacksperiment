@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12357",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12357/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12357/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12357/events",
+    "html_url": "https://github.com/spack/spack/pull/12357",
+    "id": 479087457,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2MDcyMjAx",
+    "number": 12357,
+    "title": "blaze: converted to CMakePackage",
+    "user": {
+        "login": "rhewett",
+        "id": 2152937,
+        "node_id": "MDQ6VXNlcjIxNTI5Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2152937?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rhewett",
+        "html_url": "https://github.com/rhewett",
+        "followers_url": "https://api.github.com/users/rhewett/followers",
+        "following_url": "https://api.github.com/users/rhewett/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rhewett/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rhewett/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rhewett/subscriptions",
+        "organizations_url": "https://api.github.com/users/rhewett/orgs",
+        "repos_url": "https://api.github.com/users/rhewett/repos",
+        "events_url": "https://api.github.com/users/rhewett/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rhewett/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-08-09T17:17:28Z",
+    "updated_at": "2019-08-12T19:47:55Z",
+    "closed_at": "2019-08-12T19:47:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12357",
+        "html_url": "https://github.com/spack/spack/pull/12357",
+        "diff_url": "https://github.com/spack/spack/pull/12357.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12357.patch"
+    },
+    "body": "The previous version does not properly install the required cmake\r\nconfiguration files for blaze-lib, so find_package does not work\r\ncorrectly.\r\n\r\nThis patch converts the blaze-lib package to use CMakePackage,\r\nadds the required cmake dependency, and removes the install()\r\nmember function, which is not working correctly and is no longer\r\nneeded.",
+    "performed_via_github_app": null
+}

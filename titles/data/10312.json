@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10312",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10312/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10312/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10312/events",
+    "html_url": "https://github.com/spack/spack/pull/10312",
+    "id": 398101475,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQzODkwNDU4",
+    "number": 10312,
+    "title": "bugfix/gdk-pixbuf",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 24,
+    "created_at": "2019-01-11T02:16:14Z",
+    "updated_at": "2020-09-21T07:00:54Z",
+    "closed_at": "2019-01-13T20:40:20Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10312",
+        "html_url": "https://github.com/spack/spack/pull/10312",
+        "diff_url": "https://github.com/spack/spack/pull/10312.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10312.patch"
+    },
+    "body": "[edit: wordsmith point 4]\r\n\r\nDocbook processing now works correctly for gdk-pixbuf\r\n\r\n1. The various bits of documentation in gdk-pixbuf include hardcoded references to dtd's and stuff at their canonical, Internet, locations.  BUT, gdk-pixbuf runs xslt-proc with the `--nonet` option, which forbids it from using the network.\r\n\r\n    Sadness ensues.\r\n\r\n   Traditionally folks use XML Catalogs to map these to local copies.  Our docbook-xsl package wasn't setting the appropriate env var in its dependents environments to use our catalog.\r\n\r\n   Now it does.  Less sadness ensues.\r\n\r\n2. If we're going to use these things, we should depend on them.\r\n\r\n3. The \"post-install.sh\" script uses gdk-pixbuf-query-loaders, which was installed earlier.\r\n\r\n   If py-psyclone can set its own bin on its PATH in its environment, so can we...\r\n\r\n4. Our docbook-xsl package assumes that the canonical location is  `http://cdn.docbook.org/release/xsl/current/manpages/docbook.xsl`,  but the gdk-pixbuf's meson build script uses\r\n`http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl`.\r\n\r\n   This means that our XML Catalog doesn't fix the reference and sadness happens.\r\n\r\n   Just patch the build so that it sees what it wants to see, then it can make it right.\r\n\r\nThere are at least two things that I could use some feedback on:\r\n\r\n1. I made a little helper `catalog` method in the docbook-xsl package.  Perhaps is should not be a method and should instead have some sort of a decorator on it.  Python feedback welcome....\r\n\r\n2. The docbook-xml package almost certainly should also be setting XML_CATALOG_FILES for it's dependents, it's basically a clone of docbook-xsl.  But *If It Ain't Broke, Don't Fix It* and *It's Not My Problem* and *What Docbook-xml Package?*.  More seriously, I don't have anything useful to test any changes I might make.  Perhaps just throw a note over there?\r\n\r\nFixes #10222",
+    "performed_via_github_app": null
+}

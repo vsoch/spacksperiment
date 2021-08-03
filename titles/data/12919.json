@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12919",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12919/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12919/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12919/events",
+    "html_url": "https://github.com/spack/spack/pull/12919",
+    "id": 497350152,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIwNDk5MjE4",
+    "number": 12919,
+    "title": "Fix installation permissions on BLIS and libflame libs",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1024483943,
+            "node_id": "MDU6TGFiZWwxMDI0NDgzOTQz",
+            "url": "https://api.github.com/repos/spack/spack/labels/permissions",
+            "name": "permissions",
+            "color": "cc374f",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-09-23T22:00:18Z",
+    "updated_at": "2019-09-23T23:54:52Z",
+    "closed_at": "2019-09-23T23:54:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12919",
+        "html_url": "https://github.com/spack/spack/pull/12919",
+        "diff_url": "https://github.com/spack/spack/pull/12919.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12919.patch"
+    },
+    "body": "With this, I can finally build `py-numpy+blas+lapack ^blis ^libflame` on Linux. There are still build problems on macOS, and `libflame` still has undefined symbols, but it's a step in the right direction.\r\n\r\n@s-sajid-ali ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10295",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10295/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10295/events",
+    "html_url": "https://github.com/spack/spack/pull/10295",
+    "id": 397563977,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQzNDgyNDA4",
+    "number": 10295,
+    "title": "boost: fix the bjam build for Cray",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-01-09T21:11:45Z",
+    "updated_at": "2019-01-11T00:34:12Z",
+    "closed_at": "2019-01-11T00:34:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10295",
+        "html_url": "https://github.com/spack/spack/pull/10295",
+        "diff_url": "https://github.com/spack/spack/pull/10295.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10295.patch"
+    },
+    "body": "Fixes #9613, fixes #3209.\r\n\r\nRemove the spack wrapper directories from PATH for the bootstrap step.\r\nThis was breaking the build for Cray (and other cross-compile) because\r\nbjam was built for the BE and died on SIGILL on the FE.\r\n\r\nThis only affects building bjam.  The boost libraries are still built\r\nthe normal spack way with the spack wrappers.\r\n\r\n----------\r\n\r\nI wrote the patch to apply to Cray, without a variant.  Technically,\r\nthis patch (or something similar) would be needed on any cross-\r\ncompile, anywhere BE code would not run on the FE.\r\n\r\nBut Cray is the only example I could find that actually fell over.\r\n(It seems to work on Blue Gene without this fix.)  So, I decided that\r\nboost already has enough variants.  But if spack supports a true cross\r\ncompile, then this will be needed on all cross compiles.  (It would even\r\nbe harmless to just always apply the patch.)\r\n\r\nI've checked that the patch applies cleanly to boost 1.39 to 1.69.\r\nThe bootstrap.sh script never changes.\r\n\r\nBut before 1.39, bootstrap.sh was named 'configure'.  (Same file, it\r\nwas renamed between 1.38 and 1.39.)  So, if you want to build a very\r\nold boost on Cray, then you'll need the same patch for the file\r\n'configure.'  (I decided not to bother.)\r\n\r\nBtw, I think the boost recipe is broken for :1.38 because it doesn't\r\nunderstand that the bootstrap.sh script used to be called 'configure'.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8750",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8750/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8750/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8750/events",
+    "html_url": "https://github.com/spack/spack/pull/8750",
+    "id": 342552315,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyNDI2MDEw",
+    "number": 8750,
+    "title": "py-pytest: Added dependency on py-setuptools-scm, as well as py-setup\u2026",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-19T02:03:00Z",
+    "updated_at": "2018-07-19T04:10:26Z",
+    "closed_at": "2018-07-19T03:52:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8750",
+        "html_url": "https://github.com/spack/spack/pull/8750",
+        "diff_url": "https://github.com/spack/spack/pull/8750.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8750.patch"
+    },
+    "body": "\u2026tools, to prevent the build from silently installing its own copy of setuptools-scm",
+    "performed_via_github_app": null
+}

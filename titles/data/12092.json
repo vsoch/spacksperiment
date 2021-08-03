@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12092",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12092/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12092/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12092/events",
+    "html_url": "https://github.com/spack/spack/pull/12092",
+    "id": 471544950,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwMTc0MTEy",
+    "number": 12092,
+    "title": "jube: set default resource manager to 'none'",
+    "user": {
+        "login": "mahermanns",
+        "id": 830198,
+        "node_id": "MDQ6VXNlcjgzMDE5OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/830198?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mahermanns",
+        "html_url": "https://github.com/mahermanns",
+        "followers_url": "https://api.github.com/users/mahermanns/followers",
+        "following_url": "https://api.github.com/users/mahermanns/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mahermanns/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mahermanns/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mahermanns/subscriptions",
+        "organizations_url": "https://api.github.com/users/mahermanns/orgs",
+        "repos_url": "https://api.github.com/users/mahermanns/repos",
+        "events_url": "https://api.github.com/users/mahermanns/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mahermanns/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-23T08:05:16Z",
+    "updated_at": "2019-08-06T06:42:43Z",
+    "closed_at": "2019-08-03T00:23:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12092",
+        "html_url": "https://github.com/spack/spack/pull/12092",
+        "diff_url": "https://github.com/spack/spack/pull/12092.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12092.patch"
+    },
+    "body": "This sets the default resource_manager to `none`. The previous default `slurm` was arbitrary and not setting the template directory if the user does not explicitly requests it is the better choice.",
+    "performed_via_github_app": null
+}

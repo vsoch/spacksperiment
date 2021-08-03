@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12869",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12869/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12869/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12869/events",
+    "html_url": "https://github.com/spack/spack/pull/12869",
+    "id": 495439362,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE4OTg3MTk3",
+    "number": 12869,
+    "title": "blis: fix darwin install name",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 447742985,
+            "node_id": "MDU6TGFiZWw0NDc3NDI5ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/linking",
+            "name": "linking",
+            "color": "f2aed4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-09-18T20:30:21Z",
+    "updated_at": "2019-09-19T03:46:38Z",
+    "closed_at": "2019-09-19T03:46:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12869",
+        "html_url": "https://github.com/spack/spack/pull/12869",
+        "diff_url": "https://github.com/spack/spack/pull/12869.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12869.patch"
+    },
+    "body": "Fixes https://github.com/numpy/numpy/issues/14180\r\n\r\n### Before\r\n\r\n```console\r\n$ otool -L /Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-rufmzbffyfzqafiolixs4ztwdwz73adj/lib/libblis.dylib \r\n/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-rufmzbffyfzqafiolixs4ztwdwz73adj/lib/libblis.dylib:\r\n\tlibblis.2.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)\r\n```\r\n\r\n### After\r\n\r\n```console\r\n$ otool -L /Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-v7dirtoptoe5d3vaxjb223mr6to6y3sb/lib/libblis.dylib \r\n/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-v7dirtoptoe5d3vaxjb223mr6to6y3sb/lib/libblis.dylib:\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-v7dirtoptoe5d3vaxjb223mr6to6y3sb/lib/libblis.2.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)\r\n```\r\n\r\nWith this PR, I'm finally able to build `py-numpy +blas~lapack ^blis+cblas`! All numpy unit tests pass, and library is linked correctly:\r\n```console\r\n$ otool -L /Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/py-numpy-1.17.2-pi2y57jtkngucg44dn2w5m3rgtkd2r66/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-darwin.so \r\n/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/py-numpy-1.17.2-pi2y57jtkngucg44dn2w5m3rgtkd2r66/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-darwin.so:\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.1-apple/blis-0.6.0-v7dirtoptoe5d3vaxjb223mr6to6y3sb/lib/libblis.2.dylib (compatibility version 0.0.0, current version 0.0.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)\r\n```\r\nSince `--enable-cblas` is required to build `py-numpy`, I opted to switch it to `default=True` in the `blis` package.\r\n\r\n@s-sajid-ali ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12649",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12649/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12649/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12649/events",
+    "html_url": "https://github.com/spack/spack/pull/12649",
+    "id": 487101986,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzEyNDMzNDAy",
+    "number": 12649,
+    "title": "silo: add an updated config.guess to configury",
+    "user": {
+        "login": "hppritcha",
+        "id": 7818666,
+        "node_id": "MDQ6VXNlcjc4MTg2NjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7818666?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hppritcha",
+        "html_url": "https://github.com/hppritcha",
+        "followers_url": "https://api.github.com/users/hppritcha/followers",
+        "following_url": "https://api.github.com/users/hppritcha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hppritcha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hppritcha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hppritcha/subscriptions",
+        "organizations_url": "https://api.github.com/users/hppritcha/orgs",
+        "repos_url": "https://api.github.com/users/hppritcha/repos",
+        "events_url": "https://api.github.com/users/hppritcha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hppritcha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475441813,
+            "node_id": "MDU6TGFiZWw0NzU0NDE4MTM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/autotools",
+            "name": "autotools",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-08-29T18:06:59Z",
+    "updated_at": "2020-10-16T10:56:13Z",
+    "closed_at": "2020-10-16T10:56:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12649",
+        "html_url": "https://github.com/spack/spack/pull/12649",
+        "diff_url": "https://github.com/spack/spack/pull/12649.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12649.patch"
+    },
+    "body": "I tried to just do a autoreconf on the contents of the 4.10.2-bsd tarball but\r\nthat caused a meltdown due to missing subdirs, etc.  So just insert manually\r\nan updated config.guess.\r\n\r\nUseful for detecting aarch64 and latest cray compilers.\r\n\r\nI don't have access to older tarballs, so only patch for the two tarballs I can test.\r\n\r\nSigned-off-by: Howard Pritchard <hppritcha@gmail.com>",
+    "performed_via_github_app": null
+}

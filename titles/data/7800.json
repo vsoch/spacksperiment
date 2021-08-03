@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7800",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7800/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7800/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7800/events",
+    "html_url": "https://github.com/spack/spack/pull/7800",
+    "id": 315195742,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyMjY3OTA1",
+    "number": 7800,
+    "title": "Add latest version of cURL",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-04-17T19:19:15Z",
+    "updated_at": "2018-04-17T20:33:24Z",
+    "closed_at": "2018-04-17T20:33:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7800",
+        "html_url": "https://github.com/spack/spack/pull/7800",
+        "diff_url": "https://github.com/spack/spack/pull/7800.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7800.patch"
+    },
+    "body": "Fixes #7777 \r\n\r\nIn addition to adding the latest version, this PR also disables the `libssh2` variant by default. See #7777 for backstory. I've tried all of the following things to get `curl+libssh2` to build on macOS but with no luck:\r\n\r\n1. Explicitly specify `--with-libssh2=PATH`\r\n2. Add `pkg-config` dependency\r\n3. Set `PKG_CONFIG_PATH` to the directory containing `libssh2`'s pkg-config files\r\n\r\n@weijianwen you added the `libssh2` variant in #6980. Is this change okay with you? If not, can you figure out how to get `curl+libssh2` to build on macOS? I generally prefer not to enable variants that add dependencies by default.\r\n\r\nFor comparison, MacPorts disables `libssh2` support by default:\r\nhttps://github.com/macports/macports-ports/blob/master/net/curl/Portfile#L52\r\nI believe Homebrew does as well:\r\nhttps://github.com/Homebrew/homebrew-core/blob/master/Formula/curl.rb#L47\r\n\r\nAlso pinging @JohnWGrove @healther @junghans ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7979",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7979/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7979/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7979/events",
+    "html_url": "https://github.com/spack/spack/pull/7979",
+    "id": 319767494,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg1NjAyNzcw",
+    "number": 7979,
+    "title": "New Package: ruby-svn2git",
+    "user": {
+        "login": "KineticTheory",
+        "id": 17579601,
+        "node_id": "MDQ6VXNlcjE3NTc5NjAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/17579601?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KineticTheory",
+        "html_url": "https://github.com/KineticTheory",
+        "followers_url": "https://api.github.com/users/KineticTheory/followers",
+        "following_url": "https://api.github.com/users/KineticTheory/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KineticTheory/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KineticTheory/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KineticTheory/subscriptions",
+        "organizations_url": "https://api.github.com/users/KineticTheory/orgs",
+        "repos_url": "https://api.github.com/users/KineticTheory/repos",
+        "events_url": "https://api.github.com/users/KineticTheory/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KineticTheory/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-05-03T02:04:59Z",
+    "updated_at": "2019-04-02T21:28:09Z",
+    "closed_at": "2018-05-03T15:12:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7979",
+        "html_url": "https://github.com/spack/spack/pull/7979",
+        "diff_url": "https://github.com/spack/spack/pull/7979.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7979.patch"
+    },
+    "body": "https://github.com/nirvdrum/svn2git\r\n\r\nsvn2git is a tiny utility for migrating projects from Subversion to Git while keeping the trunk, branches and tags where they should be. It uses git-svn to clone an svn repository and does some clean-up to make sure branches and tags are imported in a meaningful way, and that the code checked into master ends up being what's currently in your svn trunk rather than whichever svn branch your last commit was in.",
+    "performed_via_github_app": null
+}

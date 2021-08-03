@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8538",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8538/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8538/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8538/events",
+    "html_url": "https://github.com/spack/spack/pull/8538",
+    "id": 334623748,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2NTUwNzUz",
+    "number": 8538,
+    "title": "use new valgrind repo",
+    "user": {
+        "login": "cyrush",
+        "id": 1194526,
+        "node_id": "MDQ6VXNlcjExOTQ1MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1194526?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrush",
+        "html_url": "https://github.com/cyrush",
+        "followers_url": "https://api.github.com/users/cyrush/followers",
+        "following_url": "https://api.github.com/users/cyrush/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrush/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrush/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrush/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrush/orgs",
+        "repos_url": "https://api.github.com/users/cyrush/repos",
+        "events_url": "https://api.github.com/users/cyrush/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrush/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-21T19:20:07Z",
+    "updated_at": "2018-06-21T22:34:14Z",
+    "closed_at": "2018-06-21T21:35:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8538",
+        "html_url": "https://github.com/spack/spack/pull/8538",
+        "diff_url": "https://github.com/spack/spack/pull/8538.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8538.patch"
+    },
+    "body": "valgrind moved from svn to a git repo:\r\n\r\nhttp://valgrind.org/downloads/repository.html\r\n\r\nWhile the svn repo listed in spack still fetches, it's not the latest and greatest. \r\nI needed the latest develop branch to build on macOS 10.13 w/ xcode 9\r\n\r\nThe new url uses the `git://` protocol, which worked for me at home -- however this isn't idea b/c since many companies block a wide range of ports and the git protocol uses 9418.  (I can't fetch from it while at work)\r\n\r\nI did also try:  https://sourceware.org/git/valgrind.git \r\n\r\nBut this hung spack:\r\n \r\n==> Trying to clone git repository: https://sourceware.org/git/valgrind.git \r\nfatal: dumb http transport does not support shallow capabilities",
+    "performed_via_github_app": null
+}

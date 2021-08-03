@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8090",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8090/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8090/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8090/events",
+    "html_url": "https://github.com/spack/spack/pull/8090",
+    "id": 322091938,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3MzEyNzA2",
+    "number": 8090,
+    "title": "Remove all imports from __init__.py",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 932844303,
+            "node_id": "MDU6TGFiZWw5MzI4NDQzMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/initialization",
+            "name": "initialization",
+            "color": "cad660",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 28,
+    "created_at": "2018-05-10T21:29:40Z",
+    "updated_at": "2018-05-22T15:49:44Z",
+    "closed_at": "2018-05-18T23:06:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8090",
+        "html_url": "https://github.com/spack/spack/pull/8090",
+        "diff_url": "https://github.com/spack/spack/pull/8090.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8090.patch"
+    },
+    "body": "This is based on and depends on #7774.  Merge it after.\r\n\r\nThis removes all imports from `__init__.py`, allowing the Spack core to be more modular.\r\n\r\nSpack packages were originally expected to call `from spack import *` themselves, but it has become difficult to manage imports in the core.\r\n\r\n- The top-level namespace polluted by package symbols, and it's not possible to avoid circular dependencies and unnecessary module loads in the core, given all the stuff the packages need.\r\n\r\n- This makes the top-level `spack` package essentially empty, save for a version tuple and a version string, and `from spack import *` is now essentially a no-op.  That means when you import `spack.repo`, you _aren't_ importing a bunch of other things from `spack` that you don't need.\r\n\r\n- The imports formerly in `spack` are now in `spack.pkgkit`, and the import system (in `spack.repo`) forces packages to automatically include this so that old packages that call `from spack import *` will continue to work without modification.\r\n\r\nThis basically means that packages *do not* need to write `from spack import *` at the top anymore.  It's a no-op.  We could consider removing ``from spack import *`` from packages in the future and shifting to ``from spack.pkgkit import *``, but we can wait a while to do this.",
+    "performed_via_github_app": null
+}

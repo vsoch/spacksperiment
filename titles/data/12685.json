@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12685",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12685/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12685/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12685/events",
+    "html_url": "https://github.com/spack/spack/pull/12685",
+    "id": 488356720,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzEzMzk0NTA3",
+    "number": 12685,
+    "title": "improve ssh handling in docker images",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-09-03T01:54:35Z",
+    "updated_at": "2020-09-01T02:28:12Z",
+    "closed_at": "2020-09-01T02:28:08Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12685",
+        "html_url": "https://github.com/spack/spack/pull/12685",
+        "diff_url": "https://github.com/spack/spack/pull/12685.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12685.patch"
+    },
+    "body": "Salvaged from #12636, this PR reworks how some of the shell scripts in the docker images work.  The most visible effect of these changes are that downstream image builds now have access to a few commands implemented as shell functions, mostly for cleanly starting and stopping sshd.\r\n\r\nFor example:\r\n\r\n```Dockerfile\r\nFROM spack/centos7\r\n\r\nRUN spack install my-mpi-app \\\r\n && ssh_init \\\r\n && some-command-that-uses-mpi # needs ssh \\\r\n && ssh_clear\r\n\r\n...\r\n```",
+    "performed_via_github_app": null
+}

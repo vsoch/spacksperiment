@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8092",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8092/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8092/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8092/events",
+    "html_url": "https://github.com/spack/spack/pull/8092",
+    "id": 322149083,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3MzU0MzY2",
+    "number": 8092,
+    "title": "llvm: replace @when with internal check in @run_before",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-05-11T02:46:16Z",
+    "updated_at": "2018-05-11T19:32:27Z",
+    "closed_at": "2018-05-11T19:32:27Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8092",
+        "html_url": "https://github.com/spack/spack/pull/8092",
+        "diff_url": "https://github.com/spack/spack/pull/8092.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8092.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/8088\r\n\r\nhttps://github.com/spack/spack/pull/7012 added a `@when` condition for a `@run_before` check to constrain that check to only run on Darwin. Spack doesn't appear to support the combination of `@when` and `@run_before` (or `@run_after`). This replaces the external decorator with a check that executes at the beginning of the function.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9075",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9075/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9075/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9075/events",
+    "html_url": "https://github.com/spack/spack/pull/9075",
+    "id": 353123717,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwMjYzMjQ1",
+    "number": 9075,
+    "title": "Better warning message when fetching non-existent URL",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-22T21:00:46Z",
+    "updated_at": "2018-09-04T12:12:51Z",
+    "closed_at": "2018-09-04T03:42:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9075",
+        "html_url": "https://github.com/spack/spack/pull/9075",
+        "diff_url": "https://github.com/spack/spack/pull/9075.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9075.patch"
+    },
+    "body": "There are a variety of reasons that could cause a download to fail. The most common one in my experience has either been using the wrong URL when creating a package, or using a URL that has been moved and no longer exists. Previously, the warning message only warned of internet gateway issues.\r\n\r\nWith this PR, the chance of an invalid URL is mentioned as a possibility. Also fixed the formatting of the warning message.\r\n\r\n### Before\r\n\r\n```console\r\n$ spack fetch animation\r\n==> Fetching https://github.com/yihui/animation/releases/tag/v2.5/animation-2.5.tar.gz\r\n######################################################################## 100.0%\r\n==> Warning: The contents of \r\n  the archive\r\n   look like HTML.\r\n  The checksum will likely be bad.  If it is, you can use\r\n  'spack clean <package>' to remove the bad archive, then\r\n  fix your internet gateway issue and install again.\r\n==> Error: sha256 checksum failed for /Users/Adam/spack/var/spack/stage/animation-2.5-nudyoiycwxtzdq4tgzb2loj4y6fr5jsq/animation-2.5.tar.gz\r\nExpected aab13e325ac27979b354dab8432b408c42a37ac5e73b63fc1def26062f018393 but got 1acc5431515abebba2685991f3964ce38be3ed6dee04b73d743eacc0ecd09823\r\n```\r\n\r\n### After\r\n\r\n```console\r\n$ spack fetch animation\r\n==> Fetching https://github.com/yihui/animation/releases/tag/v2.5/animation-2.5.tar.gz\r\n######################################################################## 100.0%\r\n==> Warning: The contents of the archive look like HTML. Either the URL you are trying to use does not exist or you have an internet gateway issue. You can remove the bad archive using 'spack clean <package>', then try again using the correct URL.\r\n==> Error: sha256 checksum failed for /Users/Adam/spack/var/spack/stage/animation-2.5-nudyoiycwxtzdq4tgzb2loj4y6fr5jsq/animation-2.5.tar.gz\r\nExpected aab13e325ac27979b354dab8432b408c42a37ac5e73b63fc1def26062f018393 but got 27cfe034f50222e7dc4361a5dbd14080e24e107b02dc41e19dba085ee8071139\r\n```\r\n\r\nP.S. There doesn't seem to be a way to access the package name in `FetchStrategy`, is this correct?",
+    "performed_via_github_app": null
+}

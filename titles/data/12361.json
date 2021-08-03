@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12361",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12361/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12361/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12361/events",
+    "html_url": "https://github.com/spack/spack/pull/12361",
+    "id": 479217268,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2MTc3NTgy",
+    "number": 12361,
+    "title": "[WIP] Debugging spurious deactivate for environment view",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881813076,
+            "node_id": "MDU6TGFiZWw4ODE4MTMwNzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/debugging",
+            "name": "debugging",
+            "color": "d7ff82",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-08-10T02:10:40Z",
+    "updated_at": "2021-02-19T09:18:34Z",
+    "closed_at": "2021-02-19T09:18:34Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12361",
+        "html_url": "https://github.com/spack/spack/pull/12361",
+        "diff_url": "https://github.com/spack/spack/pull/12361.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12361.patch"
+    },
+    "body": "~(EDIT 8/12: fixing some problems with this, I'll remove this message when this PR is useful for debugging)~ (UPDATE: this is now useful for debugging errors)\r\n\r\nThis is for debugging https://github.com/spack/spack/issues/12323\r\n\r\nIt doesn't contain any fix (since I don't know what the problem is yet) - it is for printing out additional information. I will update it as I get ideas about other things to try.\r\n\r\n@adamjstewart @citibeth would you be able to use this branch to rerun failing Spack commands related to https://github.com/spack/spack/issues/12323 and report the output here?",
+    "performed_via_github_app": null
+}

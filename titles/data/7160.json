@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7160",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7160/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7160/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7160/events",
+    "html_url": "https://github.com/spack/spack/pull/7160",
+    "id": 293717363,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY2Njc3Nzg5",
+    "number": 7160,
+    "title": "properly trap error when depends_on() non existing variant",
+    "user": {
+        "login": "luigi-calori",
+        "id": 5165864,
+        "node_id": "MDQ6VXNlcjUxNjU4NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5165864?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luigi-calori",
+        "html_url": "https://github.com/luigi-calori",
+        "followers_url": "https://api.github.com/users/luigi-calori/followers",
+        "following_url": "https://api.github.com/users/luigi-calori/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luigi-calori/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luigi-calori/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luigi-calori/subscriptions",
+        "organizations_url": "https://api.github.com/users/luigi-calori/orgs",
+        "repos_url": "https://api.github.com/users/luigi-calori/repos",
+        "events_url": "https://api.github.com/users/luigi-calori/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luigi-calori/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-02-01T23:11:09Z",
+    "updated_at": "2019-12-02T10:14:27Z",
+    "closed_at": "2019-12-02T10:14:27Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7160",
+        "html_url": "https://github.com/spack/spack/pull/7160",
+        "diff_url": "https://github.com/spack/spack/pull/7160.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7160.patch"
+    },
+    "body": "Fix #7158",
+    "performed_via_github_app": null
+}

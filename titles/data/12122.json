@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12122",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12122/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12122/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12122/events",
+    "html_url": "https://github.com/spack/spack/pull/12122",
+    "id": 472502616,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwODgxNjQ4",
+    "number": 12122,
+    "title": "Fetch strategies: new global option no_cache, new git options full_depth and all_branches.",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-07-24T20:25:06Z",
+    "updated_at": "2019-08-22T12:35:17Z",
+    "closed_at": "2019-08-22T01:21:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12122",
+        "html_url": "https://github.com/spack/spack/pull/12122",
+        "diff_url": "https://github.com/spack/spack/pull/12122.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12122.patch"
+    },
+    "body": "Fetch strategies: new global option `no_cache`, new git option `get_full_repo`.\r\n\r\n* All fetch strategies now accept the Boolean version keyword option `no_cache` in order to allow per-version control of cache-ability.\r\n* New git-specific version keyword option `get_full_repo` (Boolean). When true, disables the default `--depth 1` and `--single-branch` optimizations that are applied if supported by the git version and (in the former case) transport protocol.\r\n* The try / catch blog attempting `--depth 1` and retrying on failure has been removed in favor of more accurately ascertaining when the `--depth` option should work based on git version and protocol choice. Any failure is now treated as a real problem, and the clone is only attempted once.\r\n* Test improvements:\r\n * `mock_git_repository.checks[type_of_test].args['git']` is now specified as the URL (with leading `file://`) in order to avoid complaints when using `--depth`.\r\n * New type_of_test `tag-branch`.\r\n * mock_git_repository now provides `git_exe`.\r\n * Improved the action of the `git_version` fixture, which was previously hard-wired.\r\n * New tests of `--single-branch` and `--depth 1` behavior.\r\n* Add documentation of new options to the packaging guide.\r\n",
+    "performed_via_github_app": null
+}

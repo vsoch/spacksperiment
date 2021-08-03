@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8822",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8822/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8822/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8822/events",
+    "html_url": "https://github.com/spack/spack/pull/8822",
+    "id": 345517840,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0NjM0NDAy",
+    "number": 8822,
+    "title": "Update and Bugfix for pexsi/package.py",
+    "user": {
+        "login": "irisTa56",
+        "id": 27466252,
+        "node_id": "MDQ6VXNlcjI3NDY2MjUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/27466252?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/irisTa56",
+        "html_url": "https://github.com/irisTa56",
+        "followers_url": "https://api.github.com/users/irisTa56/followers",
+        "following_url": "https://api.github.com/users/irisTa56/following{/other_user}",
+        "gists_url": "https://api.github.com/users/irisTa56/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/irisTa56/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/irisTa56/subscriptions",
+        "organizations_url": "https://api.github.com/users/irisTa56/orgs",
+        "repos_url": "https://api.github.com/users/irisTa56/repos",
+        "events_url": "https://api.github.com/users/irisTa56/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/irisTa56/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-29T09:55:04Z",
+    "updated_at": "2018-08-02T16:24:58Z",
+    "closed_at": "2018-08-02T16:24:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8822",
+        "html_url": "https://github.com/spack/spack/pull/8822",
+        "diff_url": "https://github.com/spack/spack/pull/8822.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8822.patch"
+    },
+    "body": "I found that pexsi@0.10.2 cannot be installed due to the following two reasons.\r\n\r\n1. pexsi@0.10.2 is not compatible with superlu-dist@5.4.0 due to [Change LargeDiag to LargeDiag_MC64; Add LargeDiag_AWPM](https://github.com/xiaoyeli/superlu_dist/commit/d7dce5a3488f80645023ab8431d82399e5546ebf).\r\n\r\n2. In the 'edit' phase, '@MPICXX_LIB' must be substituted before '@MPICXX' is substituted.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12381",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12381/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12381/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12381/events",
+    "html_url": "https://github.com/spack/spack/pull/12381",
+    "id": 479281964,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2MjIyMTQ3",
+    "number": 12381,
+    "title": "Use correct GCC installation when installing clang with GCC",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 654034395,
+            "node_id": "MDU6TGFiZWw2NTQwMzQzOTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/clang",
+            "name": "clang",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-08-10T16:11:29Z",
+    "updated_at": "2019-10-12T22:47:54Z",
+    "closed_at": "2019-08-11T17:40:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12381",
+        "html_url": "https://github.com/spack/spack/pull/12381",
+        "diff_url": "https://github.com/spack/spack/pull/12381.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12381.patch"
+    },
+    "body": "This fixes #12380 by configuring Clang to include the correct GCC version in its search paths if building with GCC.\r\n\r\nSee [this thread](http://clang-developers.42468.n3.nabble.com/Control-selected-GCC-installation-selected-libstdc-version-td4050363.html) for the relevant configure option.\r\n\r\n---\r\n\r\nBefore this change, the search directories for Clang seem to be using the system GCC instead of the 8.2 that it was compiled with:\r\n```console\r\n$ clang -print-search-dirs\r\nprograms: =/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-avafczo6dbasez3obndejep4rwbmwnrl/bin:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/bin\r\nlibraries: =/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-avafczo6dbasez3obndejep4rwbmwnrl/lib/clang/7.0.1:/usr/lib/gcc/x86_64-redhat-linux/4.8.5:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64:/lib/../lib64:/usr/lib/../lib64:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..:/projects/spack/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-avafczo6dbasez3obndejep4rwbmwnrl/bin/../lib:/lib:/usr/lib\r\n```\r\n\r\n---\r\n\r\nAfter the change, \r\n\r\n```console\r\n$ $(spack location -i llvm)/bin/clang -print-search-dirs\r\nprograms: =/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-rnw3lziolux2ylebsuof3laiqiqjhops/bin:/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-8.2.0-3gf5hj6qpbqqh44sdsnueyyvbnjtbgnh/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../x86_64-pc-linux-gnu/bin\r\nlibraries: =/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-rnw3lziolux2ylebsuof3laiqiqjhops/lib/clang/7.0.1:/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-8.2.0-3gf5hj6qpbqqh44sdsnueyyvbnjtbgnh/lib/gcc/x86_64-pc-linux-gnu/8.2.0:/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-8.2.0-3gf5hj6qpbqqh44sdsnueyyvbnjtbgnh/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../../../lib64:/lib/../lib64:/usr/lib/../lib64:/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-8.2.0-3gf5hj6qpbqqh44sdsnueyyvbnjtbgnh/lib/gcc/x86_64-pc-linux-gnu/8.2.0/../../..:/projects/spack2/opt/spack/linux-rhel7-x86_64/gcc-8.2.0/llvm-7.0.1-rnw3lziolux2ylebsuof3laiqiqjhops/bin/../lib:/lib:/usr/lib\r\n```",
+    "performed_via_github_app": null
+}

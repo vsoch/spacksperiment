@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7934",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7934/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7934/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7934/events",
+    "html_url": "https://github.com/spack/spack/pull/7934",
+    "id": 318523631,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg0NzA3OTg5",
+    "number": 7934,
+    "title": "Reduce CPU usage while logging",
+    "user": {
+        "login": "eschnett",
+        "id": 213514,
+        "node_id": "MDQ6VXNlcjIxMzUxNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/213514?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eschnett",
+        "html_url": "https://github.com/eschnett",
+        "followers_url": "https://api.github.com/users/eschnett/followers",
+        "following_url": "https://api.github.com/users/eschnett/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eschnett/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eschnett/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eschnett/subscriptions",
+        "organizations_url": "https://api.github.com/users/eschnett/orgs",
+        "repos_url": "https://api.github.com/users/eschnett/repos",
+        "events_url": "https://api.github.com/users/eschnett/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eschnett/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-04-27T19:28:51Z",
+    "updated_at": "2020-12-02T20:03:41Z",
+    "closed_at": "2020-12-02T20:03:41Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7934",
+        "html_url": "https://github.com/spack/spack/pull/7934",
+        "diff_url": "https://github.com/spack/spack/pull/7934.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7934.patch"
+    },
+    "body": "Spack uses 100% CPU time while logging output when installing packages. This patch introduces a `sleep(1)` statement that is called when there is no input or output.",
+    "performed_via_github_app": null
+}

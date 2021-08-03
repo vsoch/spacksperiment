@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7844",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7844/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7844/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7844/events",
+    "html_url": "https://github.com/spack/spack/pull/7844",
+    "id": 316097021,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyOTQwMTM3",
+    "number": 7844,
+    "title": "Factored out some arguments",
+    "user": {
+        "login": "citibeth",
+        "id": 1924215,
+        "node_id": "MDQ6VXNlcjE5MjQyMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1924215?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/citibeth",
+        "html_url": "https://github.com/citibeth",
+        "followers_url": "https://api.github.com/users/citibeth/followers",
+        "following_url": "https://api.github.com/users/citibeth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/citibeth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/citibeth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/citibeth/subscriptions",
+        "organizations_url": "https://api.github.com/users/citibeth/orgs",
+        "repos_url": "https://api.github.com/users/citibeth/repos",
+        "events_url": "https://api.github.com/users/citibeth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/citibeth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620033,
+            "node_id": "MDU6TGFiZWw0NDY2MjAwMzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ready",
+            "name": "ready",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-04-20T01:45:17Z",
+    "updated_at": "2019-12-02T10:33:50Z",
+    "closed_at": "2019-12-02T10:33:50Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7844",
+        "html_url": "https://github.com/spack/spack/pull/7844",
+        "diff_url": "https://github.com/spack/spack/pull/7844.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7844.patch"
+    },
+    "body": "Some comment arguments were factored out, in preparation for Spack Environments and Setup.  This PR should have no effect on anything.\r\n",
+    "performed_via_github_app": null
+}

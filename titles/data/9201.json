@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9201",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9201/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9201/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9201/events",
+    "html_url": "https://github.com/spack/spack/pull/9201",
+    "id": 358792620,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE0NDQyNjIy",
+    "number": 9201,
+    "title": "Allow `spack install --overwrite` for nonexistent or multiple packages",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-09-10T21:00:01Z",
+    "updated_at": "2019-01-24T20:10:45Z",
+    "closed_at": "2019-01-24T20:10:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9201",
+        "html_url": "https://github.com/spack/spack/pull/9201",
+        "diff_url": "https://github.com/spack/spack/pull/9201.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9201.patch"
+    },
+    "body": "Previously, the `--overwrite` flag to the `install` command required a single, previously installed spec.\r\n\r\nNow, it can accept multiple specs.\r\nNow, it can accept specs that are not already installed.\r\n\r\nIt will warn/prompt the user before installing a spec top-level spec that was not previously installed (can be suppressed with the `-y` option)",
+    "performed_via_github_app": null
+}

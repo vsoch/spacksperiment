@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7746",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7746/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7746/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7746/events",
+    "html_url": "https://github.com/spack/spack/pull/7746",
+    "id": 313930679,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxMzU4NDc3",
+    "number": 7746,
+    "title": "Fix when_spec inheritance for extensions",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-04-13T00:27:05Z",
+    "updated_at": "2018-04-13T19:22:19Z",
+    "closed_at": "2018-04-13T18:38:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7746",
+        "html_url": "https://github.com/spack/spack/pull/7746",
+        "diff_url": "https://github.com/spack/spack/pull/7746.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7746.patch"
+    },
+    "body": "Popping the when spec from kwargs in the extends directive breaks\r\nclass inheritance. Inheriting classes do not find their when spec.\r\n\r\nWe now get the when spec from kwargs instead, leaving it to be found\r\nby any downstream package classes.\r\n\r\nAs an example suppose two packages foo and bar\r\n\r\n```\r\n$ cat foo/package.py\r\n...\r\nclass Foo(Package):\r\n    ...\r\n    variant('python', default=False, description=\"\")\r\n    extends('python', when='+python')\r\n    ...\r\n\r\n$ cat bar/package.py\r\n...\r\nclass Bar(Foo):\r\n    ...\r\n\r\n$ spack spec foo\r\nInput spec\r\n--------------------------------\r\nfoo\r\n\r\nConcretized\r\n--------------------------------\r\nfoo@1.2.11%clang@6.1~python arch=darwin-sierra-x86_64 \r\n\r\n$ spack spec bar\r\nInput spec\r\n--------------------------------\r\nbar\r\n\r\nConcretized\r\n--------------------------------\r\nbar@1.2.11%clang@6.1~python arch=darwin-sierra-x86_64 \r\n    ^python@2.7.14%clang@6.1 patches=123082ab3483ded78e86d7c809e98a804b3465b4683c96bd79a2fd799f572244 +pic~shared~tk~ucs4 arch=darwin-sierra-x86_64 \r\n        ^bzip2@1.0.6%clang@6.1~shared arch=darwin-sierra-x86_64 \r\n        ^ncurses@6.0%clang@6.1 patches=f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57 ~symlinks~termlib arch=darwin-sierra-x86_64 \r\n            ^pkgconf@1.4.0%clang@6.1 arch=darwin-sierra-x86_64 \r\n        ^openssl@1.0.2n%clang@6.1 arch=darwin-sierra-x86_64 \r\n            ^zlib@1.2.11%clang@6.1+optimize+pic~shared arch=darwin-sierra-x86_64 \r\n        ^readline@7.0%clang@6.1 arch=darwin-sierra-x86_64 \r\n        ^sqlite@3.21.0%clang@6.1 patches=5bbcba091045e547eb550e6e9b9372009c41be0a9de8a5c030d03361c11ff939  arch=darwin-sierra-x86_64\r\n```\r\n\r\nObviously this is a problem, as `bar~python` should not build python. Note this is NOT fixed by specifying `bar~python` from the command-line.\r\n\r\nUnder the new behavior:\r\n\r\n```\r\n$ spack spec bar\r\nInput spec\r\n--------------------------------\r\nbar\r\n\r\nConcretized\r\n--------------------------------\r\nbar@1.2.11%clang@6.1~python arch=darwin-sierra-x86_64\r\n```\r\n\r\nThanks to @mclarsen for bringing this bug to my attention.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11599",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11599/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11599/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11599/events",
+    "html_url": "https://github.com/spack/spack/pull/11599",
+    "id": 450910790,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg0MTM2Njg0",
+    "number": 11599,
+    "title": "added tix package and python variant for tix",
+    "user": {
+        "login": "lee218llnl",
+        "id": 3641995,
+        "node_id": "MDQ6VXNlcjM2NDE5OTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3641995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lee218llnl",
+        "html_url": "https://github.com/lee218llnl",
+        "followers_url": "https://api.github.com/users/lee218llnl/followers",
+        "following_url": "https://api.github.com/users/lee218llnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lee218llnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lee218llnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lee218llnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/lee218llnl/orgs",
+        "repos_url": "https://api.github.com/users/lee218llnl/repos",
+        "events_url": "https://api.github.com/users/lee218llnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lee218llnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-05-31T17:46:48Z",
+    "updated_at": "2019-06-07T17:24:04Z",
+    "closed_at": "2019-06-06T21:19:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11599",
+        "html_url": "https://github.com/spack/spack/pull/11599",
+        "diff_url": "https://github.com/spack/spack/pull/11599.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11599.patch"
+    },
+    "body": "Tix appears to be old, but a user at LLNL has requested it be supported in Python. It looks like Tix uses structures in tcl that were removed from tcl 8.6, hence the dependence on older versions. Because of this, I thought it would be best to make tix a variant in python that is not enabled by default, rather than forcing all python builds to use the older tcl/tk versions.",
+    "performed_via_github_app": null
+}

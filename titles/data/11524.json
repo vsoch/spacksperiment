@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11524",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11524/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11524/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11524/events",
+    "html_url": "https://github.com/spack/spack/pull/11524",
+    "id": 446575793,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjgwNzQ3OTQ1",
+    "number": 11524,
+    "title": "Simplified handling of parallel jobs during builds",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-05-21T11:53:30Z",
+    "updated_at": "2019-05-24T18:49:00Z",
+    "closed_at": "2019-05-24T18:45:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11524",
+        "html_url": "https://github.com/spack/spack/pull/11524",
+        "diff_url": "https://github.com/spack/spack/pull/11524.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11524.patch"
+    },
+    "body": "This PR implements the refactoring requests in https://github.com/spack/spack/pull/11373#discussion_r281064828, in particular:\r\n\r\n- [x] Config scopes are used to handle builtin defaults, command line overrides and package overrides (`parallel=False`)\r\n- [x] `Package.make_jobs` attribute has been removed\r\n- [x] The use of the argument `-j` has been rationalized across commands\r\n- [x] Add unit tests to check that setting parallel jobs works as expected\r\n- [x] Fix packages that used `Package.make_jobs` (i.e. `bazel`)",
+    "performed_via_github_app": null
+}

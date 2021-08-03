@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12447",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12447/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12447/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12447/events",
+    "html_url": "https://github.com/spack/spack/pull/12447",
+    "id": 481768114,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA4MjA0MDcw",
+    "number": 12447,
+    "title": "Armor test script against shebang character limit if appropriate.",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1504562794,
+            "node_id": "MDU6TGFiZWwxNTA0NTYyNzk0",
+            "url": "https://api.github.com/repos/spack/spack/labels/robustness",
+            "name": "robustness",
+            "color": "e0694c",
+            "default": false,
+            "description": "Enhancements to reduce fragility under different conditions."
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-08-16T20:13:00Z",
+    "updated_at": "2019-12-18T19:49:42Z",
+    "closed_at": "2019-11-30T19:00:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12447",
+        "html_url": "https://github.com/spack/spack/pull/12447",
+        "diff_url": "https://github.com/spack/spack/pull/12447.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12447.patch"
+    },
+    "body": "The unicode script written by `test_read_unicode()` can fail the shebang character limit with some development environments. Use `filter_shebangs_in_directory()` to guard against this.\r\n",
+    "performed_via_github_app": null
+}

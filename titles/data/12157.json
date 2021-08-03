@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12157",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12157/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12157/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12157/events",
+    "html_url": "https://github.com/spack/spack/pull/12157",
+    "id": 473672344,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAxNzgxODUy",
+    "number": 12157,
+    "title": "Add SIPPackage base class",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1472097646,
+            "node_id": "MDU6TGFiZWwxNDcyMDk3NjQ2",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-systems",
+            "name": "build-systems",
+            "color": "2450af",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-27T19:57:53Z",
+    "updated_at": "2019-07-30T22:12:51Z",
+    "closed_at": "2019-07-30T22:12:48Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12157",
+        "html_url": "https://github.com/spack/spack/pull/12157",
+        "diff_url": "https://github.com/spack/spack/pull/12157.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12157.patch"
+    },
+    "body": "Added a new base class for the SIP build system. SIP is very similar to QMake in the sense that it contains a `configure.py` script that generates `.pro` files, followed by the usual `qmake`, `make`, `make install`. SIP is also similar to Python's build system in the sense that it is designed to install Python bindings for a C/C++ library like Qt. SIP was originally designed for PyQt and PyKDE but can be used as the build system for any Python/C/C++ project.\r\n\r\n- [x] Added `SIPPackage` base class\r\n- [x] Added `spack create` support\r\n- [x] Added `spack configure` support\r\n- [x] Added `spack build` support\r\n- [x] Added unit tests\r\n- [x] Added documentation\r\n\r\nLet me know if there's anything else I'm forgetting.\r\n\r\nWith this branch, `py-pyqt5` successfully installs and passes the import tests. I was unable to test `py-pyqt4` due to #12139.",
+    "performed_via_github_app": null
+}

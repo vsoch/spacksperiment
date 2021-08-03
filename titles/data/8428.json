@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8428",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8428/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8428/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8428/events",
+    "html_url": "https://github.com/spack/spack/pull/8428",
+    "id": 330676732,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkzNjI4MTE2",
+    "number": 8428,
+    "title": "root package major update",
+    "user": {
+        "login": "JavierCVilla",
+        "id": 4431174,
+        "node_id": "MDQ6VXNlcjQ0MzExNzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4431174?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JavierCVilla",
+        "html_url": "https://github.com/JavierCVilla",
+        "followers_url": "https://api.github.com/users/JavierCVilla/followers",
+        "following_url": "https://api.github.com/users/JavierCVilla/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JavierCVilla/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JavierCVilla/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JavierCVilla/subscriptions",
+        "organizations_url": "https://api.github.com/users/JavierCVilla/orgs",
+        "repos_url": "https://api.github.com/users/JavierCVilla/repos",
+        "events_url": "https://api.github.com/users/JavierCVilla/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JavierCVilla/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 43,
+    "created_at": "2018-06-08T14:18:01Z",
+    "updated_at": "2020-09-24T19:32:45Z",
+    "closed_at": "2019-02-08T17:17:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8428",
+        "html_url": "https://github.com/spack/spack/pull/8428",
+        "diff_url": "https://github.com/spack/spack/pull/8428.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8428.patch"
+    },
+    "body": "I would like to propose a major update of the current recipe for the `root` package. [`root`](https://root.cern/) is a big package with plenty of different options, a lot of dependencies and a crazy amount of build combinations, so I guess this PR may need more than one iteration.\r\n\r\nThe current recipe seems to support a quite old `root` version (`6.08.06`) as the preferred one, which is way behind new developments and added features. The problem comes when trying to build newer versions with the recipe as it is now, due to many recent changes on the internal build system of `root` and some new dependencies.\r\n\r\nThe aim of this proposal is to add support for these new versions as well as to align the result of a `root` installation with the one produced by other package manager tools. In particular, I have tried to get as a reference the `ebuild` used in [Gentoo/Portage](https://gitweb.gentoo.org/repo/gentoo.git/tree/sci-physics/root/root-6.12.06-r1.ebuild) to install the package, since it is quite complete and it is currently maintained by one of the core root-developers.\r\n\r\nAdditionally, as some of you may already know, there is a [HSF Packaging Working group](https://github.com/HSF/packaging) analysing different tools for building and distributing the software stacks used by HEP (High Energy Physics) experiments and communities. One of the tools under the spotlight is Spack. The way to compare different tools will be to make them build the same software stack, which needs to provide `root-6.12.06`.\r\n\r\nI have tested the package before creating this PR, but most likely there will be some issues that I might have missed, so the idea is to iterate on this first PR fixing possible problems and reviewing multiple comments and `TODO`'s I have left on this purpose. Besides the main collaborators/maintainers, I would like to know what @gartung and @briedel think about these changes as they are the main contributors of the current `root` recipe.\r\n\r\nBelow I list the modifications included on this PR:\r\n\r\n- Add `master` version, pulled from github\r\n- Add new production and development versions\r\n- Add most of the build options as variants\r\n- Define all needed dependencies, so that `root` does not download any `builtin` dependency, considering the defined variants.\r\n- Set to `default=OFF` all `builtin` dependencies that require to be downloaded\r\n- Extend cmake arguments based on the enabled variants\r\n- Define a set of fixed options, so every option is explicitly defined.\r\n  + Options requiring packages not supported by `spack` have been commented for future modifications\r\n  + Experimental options have also been marked `OFF` by default\r\n- Dependencies on packages not supported by `spack ` have been commented for future modifications\r\n  + This includes the so called `grid-packages`\r\n- Dependencies commented out with '??' would need some discussion, I don't really know what to do with them.\r\n\r\nAdditional comments:\r\n\r\n- This PR seems to solve [#6339 issue](https://github.com/spack/spack/issues/6339)\r\n- The installation of `root-6.08.06`, which works with the current recipe, works with this one too.\r\n- This PR requires #8397 \r\n\r\nTODO list:\r\n\r\n- [x] Add compiler variants\r\n- ~[ ] Define DB support~\r\n- [x] Prepare `LZ4`/`xxhash` support for the upcoming `6.14` version\r\n- [x] Include `6.14` version once released\r\n- [x] Define `pythia6` ~and `pythia8`~ support. `pythia8` support not required so far\r\n- [x] Check old dependencies (currently commented)\r\n- [x] Determine how to support `asimage` variant\r\n- [x] Solve dependencies among variants\r\n- [x] Consider Python2 vs Python3 support",
+    "performed_via_github_app": null
+}

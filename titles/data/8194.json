@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8194",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8194/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8194/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8194/events",
+    "html_url": "https://github.com/spack/spack/pull/8194",
+    "id": 324607687,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg5MTc0ODM4",
+    "number": 8194,
+    "title": "fix leftover references to spack.<symbol>",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 932844303,
+            "node_id": "MDU6TGFiZWw5MzI4NDQzMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/initialization",
+            "name": "initialization",
+            "color": "cad660",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-19T07:00:35Z",
+    "updated_at": "2018-05-19T14:56:33Z",
+    "closed_at": "2018-05-19T14:37:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8194",
+        "html_url": "https://github.com/spack/spack/pull/8194",
+        "diff_url": "https://github.com/spack/spack/pull/8194.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8194.patch"
+    },
+    "body": "Fixes #8196.\r\n\r\nFixes issue mentioned by @adamjstewart at [#8090 (comment)](https://github.com/spack/spack/pull/8090#issuecomment-390375659), along with some other lingering undefined names and flake8 errors.\r\n\r\n- there were some leftover spack.* names being used after we removed globals and moved everything in the top-level namespace to spack.pkgkit\r\n\r\n- point those references to their new homes",
+    "performed_via_github_app": null
+}

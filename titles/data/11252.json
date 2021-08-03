@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11252",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11252/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11252/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11252/events",
+    "html_url": "https://github.com/spack/spack/pull/11252",
+    "id": 435727232,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjcyMzczOTU5",
+    "number": 11252,
+    "title": "Fix spack flake8 to use Travis's target as base when needed",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-04-22T13:29:21Z",
+    "updated_at": "2019-05-07T18:16:14Z",
+    "closed_at": "2019-04-30T19:44:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11252",
+        "html_url": "https://github.com/spack/spack/pull/11252",
+        "diff_url": "https://github.com/spack/spack/pull/11252.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11252.patch"
+    },
+    "body": "- We were previously hardcoding the branch that `spack flake8` bases its changes on to `develop`\r\n- Now it will use `$TRAVIS_BRANCH` as the base instead of `develop`\r\n- This is needed for cases where `develop` is not the PR target.",
+    "performed_via_github_app": null
+}

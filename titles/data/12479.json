@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12479",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12479/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12479/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12479/events",
+    "html_url": "https://github.com/spack/spack/pull/12479",
+    "id": 482590741,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA4ODM0MjM2",
+    "number": 12479,
+    "title": "Fix PyQt installation",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1133985072,
+            "node_id": "MDU6TGFiZWwxMTMzOTg1MDcy",
+            "url": "https://api.github.com/repos/spack/spack/labels/qt",
+            "name": "qt",
+            "color": "b6d82b",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1492788682,
+            "node_id": "MDU6TGFiZWwxNDkyNzg4Njgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/sip",
+            "name": "sip",
+            "color": "d33bd1",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 28,
+    "created_at": "2019-08-20T00:44:07Z",
+    "updated_at": "2020-06-30T13:06:29Z",
+    "closed_at": "2019-09-08T15:48:51Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12479",
+        "html_url": "https://github.com/spack/spack/pull/12479",
+        "diff_url": "https://github.com/spack/spack/pull/12479.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12479.patch"
+    },
+    "body": "Closes #12353 \r\n\r\n@Bidibulke @Sinan81 can you test this? It fixes both `py-pyqt4` and `py-pyqt5` and should be generic enough that it can be extended to new SIP packages. I also added additional import tests that should catch the bug before it happens again.",
+    "performed_via_github_app": null
+}

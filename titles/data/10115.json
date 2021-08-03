@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10115",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10115/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10115/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10115/events",
+    "html_url": "https://github.com/spack/spack/pull/10115",
+    "id": 391333282,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM4ODgzODA3",
+    "number": 10115,
+    "title": "spack buildcache: --allow_root -> --allow-root",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-15T01:58:46Z",
+    "updated_at": "2018-12-17T19:02:33Z",
+    "closed_at": "2018-12-17T19:02:29Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10115",
+        "html_url": "https://github.com/spack/spack/pull/10115",
+        "diff_url": "https://github.com/spack/spack/pull/10115.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10115.patch"
+    },
+    "body": "This specific flag for this specific command is the only one in Spack containing underscores. Since every Unix command I know of uses [dashes](https://stackoverflow.com/q/1253679/5828163), I switched it to dashes for conformity. No changes are needed for the Bash completion script, as the script already thinks it is `--all-root`.",
+    "performed_via_github_app": null
+}

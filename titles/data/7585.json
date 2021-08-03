@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7585",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7585/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7585/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7585/events",
+    "html_url": "https://github.com/spack/spack/pull/7585",
+    "id": 308229951,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc3MjIxMDA5",
+    "number": 7585,
+    "title": "Remove case consistency check at startup.",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-24T05:04:09Z",
+    "updated_at": "2018-04-20T17:49:41Z",
+    "closed_at": "2018-03-24T05:38:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7585",
+        "html_url": "https://github.com/spack/spack/pull/7585",
+        "diff_url": "https://github.com/spack/spack/pull/7585.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7585.patch"
+    },
+    "body": "- The case check was needed when we transitioned to all lowercase packages because git didn't handle case changes well on case-insensitive filesystems.\r\n\r\n- Now it just adds extra stat calls to startup, and we check for all-lowercase package names in tests, so we'll remove it.\r\n\r\n- people using really old versions of Spack can re-clone.",
+    "performed_via_github_app": null
+}

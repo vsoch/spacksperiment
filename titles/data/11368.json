@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11368",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11368/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11368/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11368/events",
+    "html_url": "https://github.com/spack/spack/pull/11368",
+    "id": 440164562,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc1ODA1NjE2",
+    "number": 11368,
+    "title": "Fix mercury package dependencies and use tarballs",
+    "user": {
+        "login": "soumagne",
+        "id": 5613371,
+        "node_id": "MDQ6VXNlcjU2MTMzNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5613371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/soumagne",
+        "html_url": "https://github.com/soumagne",
+        "followers_url": "https://api.github.com/users/soumagne/followers",
+        "following_url": "https://api.github.com/users/soumagne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/soumagne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/soumagne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/soumagne/subscriptions",
+        "organizations_url": "https://api.github.com/users/soumagne/orgs",
+        "repos_url": "https://api.github.com/users/soumagne/repos",
+        "events_url": "https://api.github.com/users/soumagne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/soumagne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-05-03T18:22:06Z",
+    "updated_at": "2019-05-09T18:14:57Z",
+    "closed_at": "2019-05-09T17:56:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11368",
+        "html_url": "https://github.com/spack/spack/pull/11368",
+        "diff_url": "https://github.com/spack/spack/pull/11368.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11368.patch"
+    },
+    "body": "Clean up mercury package and add boostsys, shared variants\r\nUse tarballs instead of git tags\r\nFix openpa dependency on gcc < 4.9\r\nFix boost dependency",
+    "performed_via_github_app": null
+}

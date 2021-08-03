@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12718",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12718/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12718/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12718/events",
+    "html_url": "https://github.com/spack/spack/pull/12718",
+    "id": 489927064,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE0NjM5NDAy",
+    "number": 12718,
+    "title": "patch boost version 1.54-1.55 with ANY gcc >= 5.0",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-09-05T18:26:12Z",
+    "updated_at": "2019-09-08T03:45:54Z",
+    "closed_at": "2019-09-08T03:45:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12718",
+        "html_url": "https://github.com/spack/spack/pull/12718",
+        "diff_url": "https://github.com/spack/spack/pull/12718.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12718.patch"
+    },
+    "body": "I need to build boost 1.54 with gcc 8.20 and it currently fails with _exactly_ the same error as reported by #2821\r\n\r\nI propose to extend the patch introduced in #2822 to apply to any gcc after 5.0, and not just 5.0-5.9.\r\n\r\nI have tested this with gcc 8.2 on Centos 7 machine and it works nicely.  Perhaps I should conservatively bookend the patch to `%gcc@5.0:8.2`?\r\n\r\n@hartzell ",
+    "performed_via_github_app": null
+}

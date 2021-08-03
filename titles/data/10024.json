@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10024",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10024/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10024/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10024/events",
+    "html_url": "https://github.com/spack/spack/pull/10024",
+    "id": 387742627,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM2MTYyNjkx",
+    "number": 10024,
+    "title": "{,py-py}spark: add 2.4.0",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1230290682,
+            "node_id": "MDU6TGFiZWwxMjMwMjkwNjgy",
+            "url": "https://api.github.com/repos/spack/spack/labels/blocked",
+            "name": "blocked",
+            "color": "b611f7",
+            "default": false,
+            "description": "Things currently blocked by other PRs or issues"
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 560616785,
+            "node_id": "MDU6TGFiZWw1NjA2MTY3ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/don't-merge-yet",
+            "name": "don't-merge-yet",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-12-05T12:51:03Z",
+    "updated_at": "2019-11-21T13:54:47Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10024",
+        "html_url": "https://github.com/spack/spack/pull/10024",
+        "diff_url": "https://github.com/spack/spack/pull/10024.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10024.patch"
+    },
+    "body": "This update treats the hadoop variant a little different:\r\n\r\n* for older versions: keep the external hadoop dependency\r\n* for newer versions: download a different tarball containing both\r\n                      hadoop and additional JARs\r\n\r\nWe require the latter, as the tarball including hadoop also provides\r\nhive support specific to Spark. See also #9910.",
+    "performed_via_github_app": null
+}

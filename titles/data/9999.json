@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9999",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9999/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9999/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9999/events",
+    "html_url": "https://github.com/spack/spack/pull/9999",
+    "id": 386652313,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM1MzIxMjY3",
+    "number": 9999,
+    "title": "Add thread count variant to atlas",
+    "user": {
+        "login": "daveh86",
+        "id": 909151,
+        "node_id": "MDQ6VXNlcjkwOTE1MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/909151?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daveh86",
+        "html_url": "https://github.com/daveh86",
+        "followers_url": "https://api.github.com/users/daveh86/followers",
+        "following_url": "https://api.github.com/users/daveh86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daveh86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daveh86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daveh86/subscriptions",
+        "organizations_url": "https://api.github.com/users/daveh86/orgs",
+        "repos_url": "https://api.github.com/users/daveh86/repos",
+        "events_url": "https://api.github.com/users/daveh86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daveh86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-03T04:10:39Z",
+    "updated_at": "2018-12-18T01:12:04Z",
+    "closed_at": "2018-12-18T01:12:01Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9999",
+        "html_url": "https://github.com/spack/spack/pull/9999",
+        "diff_url": "https://github.com/spack/spack/pull/9999.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9999.patch"
+    },
+    "body": "Atlas automatically configures itself and optimizes to run with a fixed number of threads. This can be overridden during compile by setting a flag and atlas will tune itself to use the specified number, rather than all system CPUs. \r\n\r\nDefault value is the existing logic, autoconfigure.",
+    "performed_via_github_app": null
+}

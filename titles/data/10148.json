@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10148",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10148/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10148/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10148/events",
+    "html_url": "https://github.com/spack/spack/pull/10148",
+    "id": 392441441,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5NzEyNTc2",
+    "number": 10148,
+    "title": "Add missing libiconv dependency to libxml2",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-19T04:59:33Z",
+    "updated_at": "2018-12-19T17:38:18Z",
+    "closed_at": "2018-12-19T17:38:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10148",
+        "html_url": "https://github.com/spack/spack/pull/10148",
+        "diff_url": "https://github.com/spack/spack/pull/10148.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10148.patch"
+    },
+    "body": "```\r\n$ otool -L /Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/libxml2-2.9.8-m6e5jpylv5o4bhxc6ops5oclun3qi52z/lib/libxml2.dylib \r\n/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/libxml2-2.9.8-m6e5jpylv5o4bhxc6ops5oclun3qi52z/lib/libxml2.dylib:\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/libxml2-2.9.8-m6e5jpylv5o4bhxc6ops5oclun3qi52z/lib/libxml2.2.dylib (compatibility version 12.0.0, current version 12.8.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.200.5)\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/zlib-1.2.11-uw6agnye4za7cpgyyaaejrzorhbhqno5/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.11)\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/xz-5.2.4-i47twa3ynjmijdjvt4nag47wtg65m7jc/lib/liblzma.5.dylib (compatibility version 8.0.0, current version 8.4.0)\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-x86_64/clang-10.0.0-apple/libiconv-1.15-u27q4rowrbactosi7n57ever5q44jddx/lib/libiconv.2.dylib (compatibility version 9.0.0, current version 9.0.0)\r\n```\r\nAlso adds `pkg-config` dependency version requirements, fixes a bug on macOS where the Python libraries don't actually work, adds additional compliance unit tests (that all pass), and adds a Python import test.",
+    "performed_via_github_app": null
+}

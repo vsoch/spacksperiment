@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10067",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10067/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10067/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10067/events",
+    "html_url": "https://github.com/spack/spack/pull/10067",
+    "id": 389075352,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM3MTY0Mzky",
+    "number": 10067,
+    "title": "mapserver: new package",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-12-09T23:11:02Z",
+    "updated_at": "2018-12-19T09:04:26Z",
+    "closed_at": "2018-12-19T09:04:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10067",
+        "html_url": "https://github.com/spack/spack/pull/10067",
+        "diff_url": "https://github.com/spack/spack/pull/10067.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10067.patch"
+    },
+    "body": "I confess I have only tested the client-side part of this, and only the Python binding. The rest builds fine, but I have not actually tried to run a server with the result. ",
+    "performed_via_github_app": null
+}

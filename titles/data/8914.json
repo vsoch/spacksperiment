@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8914",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8914/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8914/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8914/events",
+    "html_url": "https://github.com/spack/spack/pull/8914",
+    "id": 348615763,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA2OTIyNTEw",
+    "number": 8914,
+    "title": "R-CPP: Archive Link",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908757,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Nw==",
+            "url": "https://api.github.com/repos/spack/spack/labels/invalid",
+            "name": "invalid",
+            "color": "e6e6e6",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-08T07:57:48Z",
+    "updated_at": "2018-08-08T15:07:01Z",
+    "closed_at": "2018-08-08T15:07:01Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8914",
+        "html_url": "https://github.com/spack/spack/pull/8914",
+        "diff_url": "https://github.com/spack/spack/pull/8914.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8914.patch"
+    },
+    "body": "All but the latest `R-CPP` package are available under the archive prefix URL.\r\n\r\nSince the latest `R-CPP` package is currently not check-summed, there is no need to add the logic (which is quickly outdated) for it as well.",
+    "performed_via_github_app": null
+}

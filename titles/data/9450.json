@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9450",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9450/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9450/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9450/events",
+    "html_url": "https://github.com/spack/spack/pull/9450",
+    "id": 367671176,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjIxMDI3MzMx",
+    "number": 9450,
+    "title": "Relicense to Apache2/MIT",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025497628,
+            "node_id": "MDU6TGFiZWwxMDI1NDk3NjI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/licenses",
+            "name": "licenses",
+            "color": "f97296",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1041152873,
+            "node_id": "MDU6TGFiZWwxMDQxMTUyODcz",
+            "url": "https://api.github.com/repos/spack/spack/labels/relicense",
+            "name": "relicense",
+            "color": "1d76db",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-10-08T07:47:01Z",
+    "updated_at": "2018-10-17T23:05:51Z",
+    "closed_at": "2018-10-17T21:42:07Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9450",
+        "html_url": "https://github.com/spack/spack/pull/9450",
+        "diff_url": "https://github.com/spack/spack/pull/9450.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9450.patch"
+    },
+    "body": "**With this PR, Spack is relicensed to Apache-2.0/MIT.**\r\n\r\nAll prior versions are still available under LGPL-2.1, but going forward Spack will be under the permissive Apache-2.0 and MIT licenses.\r\n\r\nResolves #9137.\r\nResolves #9144.\r\nResolves #9145.\r\n\r\nThis updates files in the Spack repository with the Apache-2.0 and MIT licenses. This updates the top-level metadata files to remove the LGPL, and it modifies source files to use shorter headers with [SPDX](https://spdx.org/) identifiers showing their licenses.\r\n\r\nSummary of changes:\r\n\r\n- [x] Update headers on source files to look like this (much shorter than before):\r\n\r\n        # Copyright 2013-2018 Lawrence Livermore National Security, LLC and other\r\n        # Spack Project Developers. See the top-level COPYRIGHT file for details.\r\n        # \r\n        # SPDX-License-Identifier: (Apache-2.0 OR MIT)\r\n\r\n- [x] Update `CONTRIBUTING.md` to clarify that the license for inbound contributions is dual Apache-2.0/MIT.\r\n- [x] Add a top-level `COPYRIGHT` file describing the dual license, who the copyright holders are, and licenses on bundled external packages.\r\n- [x] Add top-level `LICENSE-MIT` and `LICENSE-APACHE` files\r\n- [x] Add a `spack license` command with the following subcommands:\r\n    * `spack license list-files`: list all files that should have a license header\r\n    * `spack license verify`: verify that all source files have the right license header.\r\n- [x] Add a regression test that validates the license header on incoming files, so that new PRs will not inject unintended code with LGPL headers.\r\n\r\nWe got an amazing number of consents (over 300) in a little over a month, and without that, this relicense wouldn't have been possible!  See #9137 for details on consents; some consents were also received by private email.\r\n\r\n2,881 out of 2,896 packages will remain after the relicense.  We were able to get the consent we needed for everything in the Spack core, and for all packages except those by @AP97 and @peetsv.  Rather than leave some LGPL code in Spack, we opted to remove the remaining LGPL code entirely, so that the new release can be purely Apache-2.0 and MIT.\r\n\r\nOn the portions of code we did *not* get consent for: @jlingema changed one word on one line in core, and we deemed that to be trivial and included it.  For @AP97, we removed `farmhash`.  For @peetsv, we removed 14 packages that had non-trivial contributions:\r\n\r\n* `fast-gbs`\r\n* `igv`\r\n* `metasv`\r\n* `perl-xml-libxml`\r\n* `py-cnvkit`\r\n* `py-crossmap`\r\n* `py-pybedtools`\r\n* `py-pyfaidx`\r\n* `py-pyvcf`\r\n* `py-vmd-python`\r\n* `r-cghflasso`\r\n* `r-dismo`\r\n* `r-proc`\r\n* `r-spatial`\r\n* `r-utf8`\r\n\r\nWe also removed @peetsv's gcc 5.4.0 patch from `dialign-tx`.  See 3501bc912 and 7ba4c6200 for details.  We will happily accept rewritten versions of the packages above to be included under the new license!\r\n\r\nThanks again for making this happen.  It is not often that a project with over 300 contributors can pull this off, especially in a month.  Thanks to all of you for your ongoing contributions to Spack!",
+    "performed_via_github_app": null
+}

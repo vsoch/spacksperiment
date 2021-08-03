@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11564",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11564/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11564/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11564/events",
+    "html_url": "https://github.com/spack/spack/pull/11564",
+    "id": 448577029,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjgyMzAzMzA4",
+    "number": 11564,
+    "title": "Update GnuPG and associated packages",
+    "user": {
+        "login": "olafmersmann",
+        "id": 2335934,
+        "node_id": "MDQ6VXNlcjIzMzU5MzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2335934?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olafmersmann",
+        "html_url": "https://github.com/olafmersmann",
+        "followers_url": "https://api.github.com/users/olafmersmann/followers",
+        "following_url": "https://api.github.com/users/olafmersmann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olafmersmann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olafmersmann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olafmersmann/subscriptions",
+        "organizations_url": "https://api.github.com/users/olafmersmann/orgs",
+        "repos_url": "https://api.github.com/users/olafmersmann/repos",
+        "events_url": "https://api.github.com/users/olafmersmann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olafmersmann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-05-26T15:14:22Z",
+    "updated_at": "2019-05-27T01:41:38Z",
+    "closed_at": "2019-05-27T01:41:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11564",
+        "html_url": "https://github.com/spack/spack/pull/11564",
+        "diff_url": "https://github.com/spack/spack/pull/11564.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11564.patch"
+    },
+    "body": "Update GnuPG to the latest version. Note that while some of the updates are only housekeeping, libassuan must be updated to at least version 2.5.0 for GnuPG version 2.2.15.",
+    "performed_via_github_app": null
+}

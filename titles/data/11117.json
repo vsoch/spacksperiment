@@ -1,0 +1,107 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11117",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11117/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11117/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11117/events",
+    "html_url": "https://github.com/spack/spack/pull/11117",
+    "id": 429814383,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY3ODY5Mjk1",
+    "number": 11117,
+    "title": "S3 upload and download",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 880675484,
+            "node_id": "MDU6TGFiZWw4ODA2NzU0ODQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/binary-packages",
+            "name": "binary-packages",
+            "color": "fc5fb3",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 759411369,
+            "node_id": "MDU6TGFiZWw3NTk0MTEzNjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/buildcache",
+            "name": "buildcache",
+            "color": "bf354c",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446756736,
+            "node_id": "MDU6TGFiZWw0NDY3NTY3MzY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mirrors",
+            "name": "mirrors",
+            "color": "ade2f2",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-04-05T15:30:27Z",
+    "updated_at": "2019-11-01T18:44:19Z",
+    "closed_at": "2019-10-22T07:32:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11117",
+        "html_url": "https://github.com/spack/spack/pull/11117",
+        "diff_url": "https://github.com/spack/spack/pull/11117.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11117.patch"
+    },
+    "body": "This extends Spack functionality so that it can fetch sources and binaries from-, push sources and binaries to-, and index the contents of- mirrors hosted on an S3 bucket.\r\n\r\nRough to-do list:\r\n\r\n- [x] Extend mirrors configuration to add support for `file://`, and `s3://` URLs.\r\n- [x] Ensure all fetching, pushing, and indexing operations work for `file://` URLs.\r\n- [x] Implement S3 source fetching\r\n- [x] Implement S3 binary mirror indexing\r\n- [x] Implement S3 binary package fetching\r\n- [x] Implement S3 source pushing\r\n- [x] Implement S3 binary package pushing",
+    "performed_via_github_app": null
+}

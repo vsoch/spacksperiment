@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10817",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10817/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10817/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10817/events",
+    "html_url": "https://github.com/spack/spack/pull/10817",
+    "id": 417871542,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjU4NzcxMTE3",
+    "number": 10817,
+    "title": "qt: Use more system dependencies and fix build with new gcc versions",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-03-06T15:42:50Z",
+    "updated_at": "2019-04-11T17:21:17Z",
+    "closed_at": "2019-03-13T01:04:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10817",
+        "html_url": "https://github.com/spack/spack/pull/10817",
+        "diff_url": "https://github.com/spack/spack/pull/10817.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10817.patch"
+    },
+    "body": "qt currently falls back to bundled versions of sqlite, harfbuzz, pcre, double-conversion and xcb. This adds the appropriate dependencies and configure arguments. A new variant adds multibyte support to pcre and pcre2, which is required by qt.\r\n\r\nAdditionally, newer versions of gcc (starting with @8.3.0) cause build failures. This adds a patch to fix the problem.\r\n\r\nThe changes have been tested with all versions of qt currently available in Spack. 5.2 and 5.3 do not build for reasons that seem to be unrelated to these changes, though.",
+    "performed_via_github_app": null
+}

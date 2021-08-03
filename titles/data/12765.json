@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12765",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12765/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12765/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12765/events",
+    "html_url": "https://github.com/spack/spack/pull/12765",
+    "id": 490728828,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE1MjU3NTIy",
+    "number": 12765,
+    "title": "filter_file uses \"surrogateescape\" error handling",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2019-09-08T08:55:09Z",
+    "updated_at": "2019-10-30T12:27:59Z",
+    "closed_at": "2019-10-15T03:35:16Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12765",
+        "html_url": "https://github.com/spack/spack/pull/12765",
+        "diff_url": "https://github.com/spack/spack/pull/12765.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12765.patch"
+    },
+    "body": "fixes #13101\r\nfixes #7358 \r\n\r\nWhen filtering files that have encoding which are not compatible with ASCII there could be weird differences depending if a user employs Python 2 vs. 3 as an interpreter for Spack. One example was for instance reported in #7358 for PAPI (installs with Python 2 but fails with Python 3).\r\n\r\nReasearching a bit on the [subject](https://stackoverflow.com/a/436299/771663) makes it clear that detecting the encoding of a text file 100% correctly all the time is impossible. This PR thus forces the error handling of `filter_file` to be [surrogateescape](https://docs.python.org/3.7/library/functions.html#open):\r\n\r\n> 'surrogateescape' will represent any incorrect bytes as code points in the Unicode Private Use Area ranging from U+DC80 to U+DCFF. These private code points will then be turned back into the same bytes when the surrogateescape error handler is used when writing data. This is useful for processing files in an unknown encoding.\r\n\r\nThis should allow us to ignore all the characters that are not natively understood by the current Python interpreter and to restore them as they were when writing the filtered file back.\r\n\r\nI'm not sure if a user could specify \"strange\" characters as Unicode code points and perform a match  on them but hopefully we'll never have a need for this use case :slightly_smiling_face:",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11153",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11153/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11153/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11153/events",
+    "html_url": "https://github.com/spack/spack/pull/11153",
+    "id": 431260580,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY4OTc1NjIx",
+    "number": 11153,
+    "title": "Update setup-env.sh",
+    "user": {
+        "login": "paulanda",
+        "id": 40282207,
+        "node_id": "MDQ6VXNlcjQwMjgyMjA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40282207?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulanda",
+        "html_url": "https://github.com/paulanda",
+        "followers_url": "https://api.github.com/users/paulanda/followers",
+        "following_url": "https://api.github.com/users/paulanda/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulanda/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulanda/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulanda/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulanda/orgs",
+        "repos_url": "https://api.github.com/users/paulanda/repos",
+        "events_url": "https://api.github.com/users/paulanda/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulanda/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-04-10T01:16:51Z",
+    "updated_at": "2019-04-16T19:33:03Z",
+    "closed_at": "2019-04-16T19:33:03Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11153",
+        "html_url": "https://github.com/spack/spack/pull/11153",
+        "diff_url": "https://github.com/spack/spack/pull/11153.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11153.patch"
+    },
+    "body": "Per [this](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/) post on safer bash scripts, I've been adding `set -Eeuxo pipefail` to many of my bash/zsh scripts. This caused `setup-env.sh` to fail during sourcing with an unset parameter error, namely `_sp_source_file`, because I use `zsh`. In addition, per [this](https://stackoverflow.com/questions/9901210/bash-source0-equivalent-in-zsh) SO question, the syntax for `BASH_SOURCE[0]` in `zsh` is slightly different than the existing code.\r\n\r\nThe proposed changes still look for `BASH_SOURCE[0]` first, but if it's not set, `_sp_source_file` is initialized to an empty value addressing the unset parameter error (line 217). The change on line 219 moves to the zsh syntax mentioned in the SO question referenced above.\r\n\r\nCheers,\r\nDavid",
+    "performed_via_github_app": null
+}

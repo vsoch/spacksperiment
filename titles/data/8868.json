@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8868",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8868/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8868/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8868/events",
+    "html_url": "https://github.com/spack/spack/pull/8868",
+    "id": 347002412,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA1NzI3MTgw",
+    "number": 8868,
+    "title": "sz: fix checksum for 2.0.2.0",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-02T13:03:30Z",
+    "updated_at": "2018-08-02T16:44:00Z",
+    "closed_at": "2018-08-02T16:43:59Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8868",
+        "html_url": "https://github.com/spack/spack/pull/8868",
+        "diff_url": "https://github.com/spack/spack/pull/8868.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8868.patch"
+    },
+    "body": "It looks like the checksum for SZ 2.0.2.0 has changed.\r\n\r\n@disheng222 Can you say something about this? Thanks!",
+    "performed_via_github_app": null
+}

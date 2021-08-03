@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10230",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10230/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10230/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10230/events",
+    "html_url": "https://github.com/spack/spack/pull/10230",
+    "id": 395045202,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxNjEwNzUy",
+    "number": 10230,
+    "title": "express: new version, use tags and fix gcc@6.0.0:",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-01-01T00:35:40Z",
+    "updated_at": "2019-01-01T02:30:10Z",
+    "closed_at": "2019-01-01T02:28:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10230",
+        "html_url": "https://github.com/spack/spack/pull/10230",
+        "diff_url": "https://github.com/spack/spack/pull/10230.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10230.patch"
+    },
+    "body": "Express fails to build with gcc@6.0.0:.\r\n\r\nThe debian project [has a fix](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=811859) but they don't seem to have pushed it upstream.\r\n\r\nI've opened an issue and a PR in eXpress repo, but eXpress isn't actively developed, so I'm fixing it here too.\r\n\r\nSince the Spack package was created, the eXpress team tagged their releases.  I've updated the package to use the tags.\r\n\r\nVersion 1.5.1 used to be known as 2015-11-29 (same commit).  1.5.2 is new(er).\r\n\r\n@odoublewen ",
+    "performed_via_github_app": null
+}

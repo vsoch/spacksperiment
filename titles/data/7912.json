@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7912",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7912/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7912/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7912/events",
+    "html_url": "https://github.com/spack/spack/pull/7912",
+    "id": 318017182,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg0MzMwNTU4",
+    "number": 7912,
+    "title": "Package 'gdbm': do not set CC.",
+    "user": {
+        "login": "skosukhin",
+        "id": 19591868,
+        "node_id": "MDQ6VXNlcjE5NTkxODY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19591868?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skosukhin",
+        "html_url": "https://github.com/skosukhin",
+        "followers_url": "https://api.github.com/users/skosukhin/followers",
+        "following_url": "https://api.github.com/users/skosukhin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skosukhin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skosukhin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skosukhin/subscriptions",
+        "organizations_url": "https://api.github.com/users/skosukhin/orgs",
+        "repos_url": "https://api.github.com/users/skosukhin/repos",
+        "events_url": "https://api.github.com/users/skosukhin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skosukhin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-04-26T12:55:16Z",
+    "updated_at": "2018-08-02T11:54:45Z",
+    "closed_at": "2018-04-26T13:44:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7912",
+        "html_url": "https://github.com/spack/spack/pull/7912",
+        "diff_url": "https://github.com/spack/spack/pull/7912.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7912.patch"
+    },
+    "body": "A funny story, actually.\r\n\r\nTired of strange warnings that Spack generated each time I installed `gdbm`, I decided to figure out what was the reason for them. The warnings were the following:\r\n\r\n```\r\n==> Installing gdbm\r\n==> Warning: Suspicious requests to set or unset 'CC' found\r\n==> Warning:            env.set('CC', join_path(link_dir, compiler.link_paths['cc'])) at /scratch/local1/spack/lib/spack/spack/build_environment.py:146\r\n==> Warning:    --->    spack_env.set('CC', spack_cc) at /scratch/local1/spack/var/spack/repos/builtin/packages/gdbm/package.py:49\r\n```\r\n\r\nThe strange thing about these warnings is that the two referenced lines of code do the same thing: they set `CC` to Spack's wrapper. Setting `CC` in the package script is redundant, isn't it? But why did this line appear in the code?\r\n\r\nThis line was introduced in #7225. I assume that it was a compromise between solving another problem and keeping the special treatment for the building system of `gdbm`, which allegedly couldn't find Spack's wrapper without additional help. The special treatment was introduced in #5893. The fact that the compromise (which, in fact, consisted of removing the special treatment and adding a redundant line of code) worked means either that, starting version `1.14.1` (which was added to Spack after #5893 was merged), the building system of `gdbm` \"learned\" to respect the environment variable `CC`, or that the building system didn't need any special treatment at all. It turned out that the latter is true (it's a standard Automake system after all). So, this PR reverts both of the mentioned changes.\r\n\r\nThe last question to answer is what was the real reason for the problem described in #5892 and fixed in #5893. I think that it's related to the order, in which Spack performs modifications to the building environment (see https://github.com/spack/spack/issues/5019#issuecomment-341356757). My assumption is that `compilers.yaml` that @certik used instructed Spack to load an environment module in order to enable Intel compiler. The module, in turn, set `CC` to the path of the real compiler. Since Spack loads compiler modules after setting `CC` to the path of the wrapper, the package script used the real compiler instead of the wrapper. Setting `CC` back to the wrapper in `setup_environment()` of the package helps in this case, and this PR breaks the installation of `gdbm` in all similar situations, but the problem is bigger and needs a general solution.\r\n",
+    "performed_via_github_app": null
+}

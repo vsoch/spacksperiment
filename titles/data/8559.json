@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8559",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8559/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8559/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8559/events",
+    "html_url": "https://github.com/spack/spack/pull/8559",
+    "id": 335122458,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2OTE1NzI5",
+    "number": 8559,
+    "title": "Fix m4 on OS X highsierra (allows nettle to build)",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-06-23T18:46:21Z",
+    "updated_at": "2018-06-25T15:47:28Z",
+    "closed_at": "2018-06-24T01:34:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8559",
+        "html_url": "https://github.com/spack/spack/pull/8559",
+        "diff_url": "https://github.com/spack/spack/pull/8559.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8559.patch"
+    },
+    "body": "m4 exited immediately (causing the nettle build to fail).\r\n\r\n```\r\n(alice)[11:09:46]spack>>/Users/hartzell/tmp/spack-mac/spack/opt/spack/darwin-highsierra-x86_64/clang-9.1.0-apple/m4-1.4.18-caxsf7l5yd7qbq2bown6bzi5el3ltfwf/bin/m4\r\nAbort trap: 6\r\n(alice)[11:10:18]spack>>fg\r\n```\r\n\r\nTracked down a fix via the Homebrew recipe.  I'll send a note to the\r\n`bug-m4@gnu.org` list to ensure that upstream knows about it.\r\n\r\nHigh Sierra does not seem to need the additional args appended that Sierra does so no changes were necessary in `configure_args`.\r\n\r\nTested by building nettle.",
+    "performed_via_github_app": null
+}

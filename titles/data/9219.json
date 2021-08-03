@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9219",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9219/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9219/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9219/events",
+    "html_url": "https://github.com/spack/spack/pull/9219",
+    "id": 359292152,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE0ODE4NTQw",
+    "number": 9219,
+    "title": "Increase and customize lock timeouts",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-09-12T02:30:51Z",
+    "updated_at": "2018-09-26T01:58:52Z",
+    "closed_at": "2018-09-26T01:58:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9219",
+        "html_url": "https://github.com/spack/spack/pull/9219",
+        "diff_url": "https://github.com/spack/spack/pull/9219.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9219.patch"
+    },
+    "body": "See https://github.com/spack/spack/issues/9166\r\nSee https://github.com/spack/spack/issues/8915\r\n\r\nThis is intended to reduce errors related to lock timeouts by making the following changes\r\n\r\n* (new 9/18) locks (those created using `spack.llnl.util.lock.Lock`) now have no timeout by default\r\n* (updated 9/18) increases the default timeout *for database locks*\r\n* (new 9/18) by default locks taken on individual packages do not have a timeout. A timeout can be added by setting `package_lock_timeout` in `config.yaml`\r\n* ~allows users to set `file_lock_timeout` in `config.yaml`~ (update 9/18, this is replaced with two separate configurable timeout parameters)\r\n* (new 9/18) users can configure the whole-database lock timeout using the `db_lock_timout` setting in `config.yaml`\r\n* (updated 9/18) Reduces the amount of spinning on the spin lock, to reduce impact in the case where NFS is overtaxed (~at the moment this simply increases the sleep time between polls, it could be smarter than that~ as of 9/18 there is a slightly-more-sophisticated backoff strategy)\r\n\r\nIt would not address implementations of NFS that do not support file locking, or detect cases where services that may be required (nfslock/statd) aren't running.\r\n\r\nUsers may want to be able to more-aggressively release locks when they know they are the only one using their Spack instance, and they encounter lock errors after a crash (e.g. a remote terminal disconnect like https://github.com/spack/spack/issues/8915#issuecomment-417728118).",
+    "performed_via_github_app": null
+}

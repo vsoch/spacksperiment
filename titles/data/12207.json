@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12207",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12207/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12207/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12207/events",
+    "html_url": "https://github.com/spack/spack/pull/12207",
+    "id": 474883004,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAyNzQ2MjA5",
+    "number": 12207,
+    "title": "Fix CNL version detection",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614485,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ0ODU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cray",
+            "name": "cray",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-31T00:45:11Z",
+    "updated_at": "2019-08-03T19:16:39Z",
+    "closed_at": "2019-08-03T19:00:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12207",
+        "html_url": "https://github.com/spack/spack/pull/12207",
+        "diff_url": "https://github.com/spack/spack/pull/12207.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12207.patch"
+    },
+    "body": "Fixes #12187 \r\n\r\nWith this PR, Spack successfully detects the Cray OS version on Blue Waters:\r\n```console\r\n$ spack arch\r\ncray-cnl5-interlagos\r\n```",
+    "performed_via_github_app": null
+}

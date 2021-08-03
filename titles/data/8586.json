@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8586",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8586/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8586/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8586/events",
+    "html_url": "https://github.com/spack/spack/pull/8586",
+    "id": 336211074,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk3NzE4MTcy",
+    "number": 8586,
+    "title": "contribution guide: tip for running flake8",
+    "user": {
+        "login": "cwsmith",
+        "id": 1024438,
+        "node_id": "MDQ6VXNlcjEwMjQ0Mzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1024438?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cwsmith",
+        "html_url": "https://github.com/cwsmith",
+        "followers_url": "https://api.github.com/users/cwsmith/followers",
+        "following_url": "https://api.github.com/users/cwsmith/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cwsmith/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cwsmith/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cwsmith/subscriptions",
+        "organizations_url": "https://api.github.com/users/cwsmith/orgs",
+        "repos_url": "https://api.github.com/users/cwsmith/repos",
+        "events_url": "https://api.github.com/users/cwsmith/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cwsmith/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        },
+        {
+            "id": 584430621,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2MjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/flake8",
+            "name": "flake8",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-27T12:37:28Z",
+    "updated_at": "2018-08-01T16:05:00Z",
+    "closed_at": "2018-07-06T20:04:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8586",
+        "html_url": "https://github.com/spack/spack/pull/8586",
+        "diff_url": "https://github.com/spack/spack/pull/8586.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8586.patch"
+    },
+    "body": "Using ``module load py-flake8`` allowed me to run ``spack flake8`` and I figured this could be useful for others.  \r\n\r\nRunning ``spack activate py-flake8`` before ``spack flake8`` did not resolve the \r\n\r\n```\r\n==> Error: spack requires 'flake8'. Make sure it is in your path.\r\n```\r\n\r\nerror on my arch linux system.",
+    "performed_via_github_app": null
+}

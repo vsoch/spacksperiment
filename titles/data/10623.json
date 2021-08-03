@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10623",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10623/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10623/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10623/events",
+    "html_url": "https://github.com/spack/spack/pull/10623",
+    "id": 410929721,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUzNTUxOTMx",
+    "number": 10623,
+    "title": "Restore computation of include directories",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 936777283,
+            "node_id": "MDU6TGFiZWw5MzY3NzcyODM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/headers",
+            "name": "headers",
+            "color": "782caa",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2019-02-15T20:23:38Z",
+    "updated_at": "2019-02-26T18:45:01Z",
+    "closed_at": "2019-02-26T18:42:31Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10623",
+        "html_url": "https://github.com/spack/spack/pull/10623",
+        "diff_url": "https://github.com/spack/spack/pull/10623.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10623.patch"
+    },
+    "body": "This PR restores the computation of the include directories that was remove as part of the hotfix in #10604 It also adds the following modifications:\r\n\r\n- [x] Remove the separate addition of `<prefix>/include` to the list of include dirs\r\n- [x] Add unit tests to stress the behavior of `HeaderList.directories`\r\n\r\n- [x] Implement a way for packages to customize the include dirs injected into compiler wrappers (refers to #8324 or `libxml2` - thanks to @scheibelp for the reference)",
+    "performed_via_github_app": null
+}

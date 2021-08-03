@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7414",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7414/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7414/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7414/events",
+    "html_url": "https://github.com/spack/spack/pull/7414",
+    "id": 303003355,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTczMzgwNjcy",
+    "number": 7414,
+    "title": "Solve macOS High Sierra syslog.h bug in openssl and openmpi.",
+    "user": {
+        "login": "f-sim",
+        "id": 24602920,
+        "node_id": "MDQ6VXNlcjI0NjAyOTIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24602920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/f-sim",
+        "html_url": "https://github.com/f-sim",
+        "followers_url": "https://api.github.com/users/f-sim/followers",
+        "following_url": "https://api.github.com/users/f-sim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/f-sim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/f-sim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/f-sim/subscriptions",
+        "organizations_url": "https://api.github.com/users/f-sim/orgs",
+        "repos_url": "https://api.github.com/users/f-sim/repos",
+        "events_url": "https://api.github.com/users/f-sim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/f-sim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-03-07T08:20:27Z",
+    "updated_at": "2019-11-18T10:35:37Z",
+    "closed_at": "2019-11-18T10:35:37Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7414",
+        "html_url": "https://github.com/spack/spack/pull/7414",
+        "diff_url": "https://github.com/spack/spack/pull/7414.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7414.patch"
+    },
+    "body": "macOS High Sierra has a bug in syslog.h described in\r\nhttps://discussions.apple.com/thread/8127677. Therefore, openssl\r\nfailed to build. The solution described in the discussion is\r\nimplemented by this commit.",
+    "performed_via_github_app": null
+}

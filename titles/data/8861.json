@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8861/events",
+    "html_url": "https://github.com/spack/spack/pull/8861",
+    "id": 346851069,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA1NjEyNTM3",
+    "number": 8861,
+    "title": "libdwarf: remove use of hide_files()",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 936777283,
+            "node_id": "MDU6TGFiZWw5MzY3NzcyODM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/headers",
+            "name": "headers",
+            "color": "782caa",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-02T04:02:25Z",
+    "updated_at": "2018-08-03T02:00:57Z",
+    "closed_at": "2018-08-03T02:00:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8861",
+        "html_url": "https://github.com/spack/spack/pull/8861",
+        "diff_url": "https://github.com/spack/spack/pull/8861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8861.patch"
+    },
+    "body": "- This was a nasty workaround due to the way our compiler wrappers used\r\n  to work.  We don't want to have to modify our elfutils installation to\r\n  install libdwarf.\r\n\r\n- Since cd9691de5 (#4692), we no longer need this because the package will always\r\n  come before dependencies in our include order.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8970",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8970/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8970/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8970/events",
+    "html_url": "https://github.com/spack/spack/pull/8970",
+    "id": 350102699,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4MDMzODAx",
+    "number": 8970,
+    "title": "bugfix EnvironmentModifications:from_sourcing_file",
+    "user": {
+        "login": "tz-rrze",
+        "id": 6088631,
+        "node_id": "MDQ6VXNlcjYwODg2MzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6088631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tz-rrze",
+        "html_url": "https://github.com/tz-rrze",
+        "followers_url": "https://api.github.com/users/tz-rrze/followers",
+        "following_url": "https://api.github.com/users/tz-rrze/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tz-rrze/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tz-rrze/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tz-rrze/subscriptions",
+        "organizations_url": "https://api.github.com/users/tz-rrze/orgs",
+        "repos_url": "https://api.github.com/users/tz-rrze/repos",
+        "events_url": "https://api.github.com/users/tz-rrze/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tz-rrze/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-13T16:30:15Z",
+    "updated_at": "2019-02-27T16:17:36Z",
+    "closed_at": "2019-02-27T16:17:36Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8970",
+        "html_url": "https://github.com/spack/spack/pull/8970",
+        "diff_url": "https://github.com/spack/spack/pull/8970.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8970.patch"
+    },
+    "body": "- directly continue with next loop iteration if 'start', 'end', or\r\n  'search' could not successfully be defined within try/except block",
+    "performed_via_github_app": null
+}

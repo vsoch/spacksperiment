@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12086",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12086/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12086/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12086/events",
+    "html_url": "https://github.com/spack/spack/pull/12086",
+    "id": 471366234,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwMDYxMTcz",
+    "number": 12086,
+    "title": "ncurses: remove TERMINFO from build env",
+    "user": {
+        "login": "becker33",
+        "id": 13971568,
+        "node_id": "MDQ6VXNlcjEzOTcxNTY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13971568?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/becker33",
+        "html_url": "https://github.com/becker33",
+        "followers_url": "https://api.github.com/users/becker33/followers",
+        "following_url": "https://api.github.com/users/becker33/following{/other_user}",
+        "gists_url": "https://api.github.com/users/becker33/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/becker33/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/becker33/subscriptions",
+        "organizations_url": "https://api.github.com/users/becker33/orgs",
+        "repos_url": "https://api.github.com/users/becker33/repos",
+        "events_url": "https://api.github.com/users/becker33/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/becker33/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-22T22:24:41Z",
+    "updated_at": "2019-07-23T15:53:19Z",
+    "closed_at": "2019-07-23T15:13:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12086",
+        "html_url": "https://github.com/spack/spack/pull/12086",
+        "diff_url": "https://github.com/spack/spack/pull/12086.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12086.patch"
+    },
+    "body": "Fixes #11369\r\n\r\nncurses build system respects the $TERMINFO environment variable for the location of terminfo database. We need to unset this variable to keep the database inside the Spack install tree.",
+    "performed_via_github_app": null
+}

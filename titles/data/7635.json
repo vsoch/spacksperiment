@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7635",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7635/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7635/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7635/events",
+    "html_url": "https://github.com/spack/spack/pull/7635",
+    "id": 309592907,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc4MjA5NTQ0",
+    "number": 7635,
+    "title": "don't concretize mpileaks with clang in unit tests",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-29T02:05:22Z",
+    "updated_at": "2018-03-29T19:24:36Z",
+    "closed_at": "2018-03-29T19:24:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7635",
+        "html_url": "https://github.com/spack/spack/pull/7635",
+        "diff_url": "https://github.com/spack/spack/pull/7635.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7635.patch"
+    },
+    "body": "This updates qa script to ~build~ concretize mpileaks with gcc (so it doesnt try with clang)\r\n\r\nFor some reason the nightly mac testing has started concretizing `spec mpileaks` with clang, which fails for `elfutils`. See: https://travis-ci.org/spack/spack/jobs/359536956. This updates the qa script to do `spec mpileaks%gcc`.",
+    "performed_via_github_app": null
+}

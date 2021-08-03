@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7868",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7868/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7868/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7868/events",
+    "html_url": "https://github.com/spack/spack/pull/7868",
+    "id": 316701515,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgzMzUyOTIy",
+    "number": 7868,
+    "title": "'spack compiler add' can directly register spack installed compilers",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-04-23T07:58:35Z",
+    "updated_at": "2019-03-08T04:32:59Z",
+    "closed_at": "2019-03-08T04:32:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7868",
+        "html_url": "https://github.com/spack/spack/pull/7868",
+        "diff_url": "https://github.com/spack/spack/pull/7868.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7868.patch"
+    },
+    "body": "The command line interface for `spack compiler add` has been extended with an additional flag that adds the prefix of specs to the search paths when registering a compiler.\r\n\r\nThe logic is such that a basic check is performed to ensure that the specified spec is that of a compiler. By default the compiler must be already installed but, if the `--install-missing` flag is passed, it will be bootstrapped.\r\n\r\n### Examples\r\n```console\r\n$ spack compiler add --spec autoconf --spec gcc --spec cmake\r\n==> Error: these packages are not compilers [autoconf, cmake]\r\n\r\n$ spack compiler list\r\n==> Available compilers\r\n-- gcc rhel7-x86_64 ---------------------------------------------\r\ngcc@4.8.5\r\n\r\n$ spack compiler add --spec 'gcc %gcc@4.8.5' \r\n==> Error: the following specs need to be installed first [gcc %gcc@4.8.5]\r\n\r\n$ spack compiler add --spec 'gcc %gcc@4.8.5' --install-missing\r\n==> Installing missing spec for 'gcc %gcc@4.8.5' (might take a while)\r\n==> Installing libsigsegv\r\n==> Using cached archive: /home/culpo/github/spack-scitas/var/spack/cache/libsigsegv/libsigsegv-2.11.tar.gz\r\n==> Staging archive: /home/culpo/github/spack-scitas/var/spack/stage/libsigsegv-2.11-3byxblkv2nvzumj3wk5cbzyud5hpjdlv/libsigsegv-2.11.tar.gz\r\n==> Created stage in /home/culpo/github/spack-scitas/var/spack/stage/libsigsegv-2.11-3byxblkv2nvzumj3wk5cbzyud5hpjdlv\r\n==> No patches needed for libsigsegv\r\n==> Building libsigsegv [AutotoolsPackage]\r\n==> Executing phase: 'autoreconf'\r\n==> Executing phase: 'configure'\r\n...\r\n==> Successfully installed gcc\r\n  Fetch: 10.95s.  Build: 13m 19.90s.  Total: 13m 30.85s.\r\n[+] /home/culpo/github/spack-scitas/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gcc-7.3.0-qrjpi76aeo4bysagruwwfii6oneh56lj\r\n==> Added 1 new compiler to /home/culpo/.spack/linux/compilers.yaml\r\n    gcc@7.3.0\r\n==> Compilers are defined in the following files:\r\n    /home/culpo/.spack/linux/compilers.yaml\r\n```",
+    "performed_via_github_app": null
+}

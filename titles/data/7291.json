@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7291",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7291/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7291/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7291/events",
+    "html_url": "https://github.com/spack/spack/pull/7291",
+    "id": 298713146,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTcwMjgxOTc2",
+    "number": 7291,
+    "title": "charm: Update install script",
+    "user": {
+        "login": "jimmy04500",
+        "id": 5799254,
+        "node_id": "MDQ6VXNlcjU3OTkyNTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5799254?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jimmy04500",
+        "html_url": "https://github.com/jimmy04500",
+        "followers_url": "https://api.github.com/users/jimmy04500/followers",
+        "following_url": "https://api.github.com/users/jimmy04500/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jimmy04500/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jimmy04500/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jimmy04500/subscriptions",
+        "organizations_url": "https://api.github.com/users/jimmy04500/orgs",
+        "repos_url": "https://api.github.com/users/jimmy04500/repos",
+        "events_url": "https://api.github.com/users/jimmy04500/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jimmy04500/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-02-20T19:10:41Z",
+    "updated_at": "2018-05-23T19:07:12Z",
+    "closed_at": "2018-05-23T18:27:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7291",
+        "html_url": "https://github.com/spack/spack/pull/7291",
+        "diff_url": "https://github.com/spack/spack/pull/7291.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7291.patch"
+    },
+    "body": "Updating install script for charm.\r\n\r\nChanges:\r\n- Updated latest version\r\n- mpi.patch is not needed in versions 6.8.0+\r\n- Added build targets: AMPI, LIBS\r\n- Added backend variants: gni, ofi, pami, pamilrts\r\n- Removed deprecated net backend\r\n- Added compiler and fortran compiler variants\r\n- Added compile time options\r\n- Added more version combinations\r\n- Added check for tracing when papi is enabled",
+    "performed_via_github_app": null
+}

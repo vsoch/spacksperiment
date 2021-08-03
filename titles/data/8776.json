@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8776",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8776/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8776/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8776/events",
+    "html_url": "https://github.com/spack/spack/pull/8776",
+    "id": 343430107,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAzMDcxMzQ2",
+    "number": 8776,
+    "title": "add necessary dependence on lapack, and fix ld_flags for blas",
+    "user": {
+        "login": "likask",
+        "id": 9337413,
+        "node_id": "MDQ6VXNlcjkzMzc0MTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337413?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/likask",
+        "html_url": "https://github.com/likask",
+        "followers_url": "https://api.github.com/users/likask/followers",
+        "following_url": "https://api.github.com/users/likask/following{/other_user}",
+        "gists_url": "https://api.github.com/users/likask/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/likask/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/likask/subscriptions",
+        "organizations_url": "https://api.github.com/users/likask/orgs",
+        "repos_url": "https://api.github.com/users/likask/repos",
+        "events_url": "https://api.github.com/users/likask/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/likask/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-22T19:02:23Z",
+    "updated_at": "2020-12-19T08:10:10Z",
+    "closed_at": "2018-07-22T21:32:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8776",
+        "html_url": "https://github.com/spack/spack/pull/8776",
+        "diff_url": "https://github.com/spack/spack/pull/8776.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8776.patch"
+    },
+    "body": "Dependence on Lapack is necessary for MoAB. MoAB installation had been working because the specific implementation of Blas, i.e. OpenBlas provided Lapacak. However virtual package Lapack and Blas could have a separate implementation, and for such case MoAB install would not work.\r\n\r\nMoreover, PR fixes flags for Blas. The previous fix will not work on the same platforms, and MoAB install will throw linking errors for blas and lapack functions.",
+    "performed_via_github_app": null
+}

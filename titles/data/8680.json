@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8680",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8680/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8680/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8680/events",
+    "html_url": "https://github.com/spack/spack/pull/8680",
+    "id": 340246758,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAwNzAzNjc3",
+    "number": 8680,
+    "title": "fix to build libmatheval with guile@2.0:",
+    "user": {
+        "login": "g-mathias",
+        "id": 40861554,
+        "node_id": "MDQ6VXNlcjQwODYxNTU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40861554?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/g-mathias",
+        "html_url": "https://github.com/g-mathias",
+        "followers_url": "https://api.github.com/users/g-mathias/followers",
+        "following_url": "https://api.github.com/users/g-mathias/following{/other_user}",
+        "gists_url": "https://api.github.com/users/g-mathias/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/g-mathias/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/g-mathias/subscriptions",
+        "organizations_url": "https://api.github.com/users/g-mathias/orgs",
+        "repos_url": "https://api.github.com/users/g-mathias/repos",
+        "events_url": "https://api.github.com/users/g-mathias/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/g-mathias/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-07-11T13:39:58Z",
+    "updated_at": "2018-07-22T22:07:45Z",
+    "closed_at": "2018-07-22T22:07:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8680",
+        "html_url": "https://github.com/spack/spack/pull/8680",
+        "diff_url": "https://github.com/spack/spack/pull/8680.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8680.patch"
+    },
+    "body": "With guile 2.0 the naming scheme of the library has changed and libmatheval will not build against it.\r\nPrevious builds may have worked if a local guile@1.X version was installed.\r\n\r\nI patch the configure.in of libmatheval using the appropriate guile macros.\r\nAn empty config.rpath has been added (seems obligatory for autotools).\r\nIn the package file the patch is applied and an autoreconf is forced if guile@2.0:\r\n",
+    "performed_via_github_app": null
+}

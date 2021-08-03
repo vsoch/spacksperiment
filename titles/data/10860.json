@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10860",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10860/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10860/events",
+    "html_url": "https://github.com/spack/spack/pull/10860",
+    "id": 419938770,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjYwMzI1MTk1",
+    "number": 10860,
+    "title": "elmer-fem: New package for Elmer finite element method solver.",
+    "user": {
+        "login": "simo-tuomisto",
+        "id": 7014138,
+        "node_id": "MDQ6VXNlcjcwMTQxMzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7014138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simo-tuomisto",
+        "html_url": "https://github.com/simo-tuomisto",
+        "followers_url": "https://api.github.com/users/simo-tuomisto/followers",
+        "following_url": "https://api.github.com/users/simo-tuomisto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simo-tuomisto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simo-tuomisto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simo-tuomisto/subscriptions",
+        "organizations_url": "https://api.github.com/users/simo-tuomisto/orgs",
+        "repos_url": "https://api.github.com/users/simo-tuomisto/repos",
+        "events_url": "https://api.github.com/users/simo-tuomisto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simo-tuomisto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-03-12T11:36:53Z",
+    "updated_at": "2019-03-26T00:47:16Z",
+    "closed_at": "2019-03-26T00:47:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10860",
+        "html_url": "https://github.com/spack/spack/pull/10860",
+        "diff_url": "https://github.com/spack/spack/pull/10860.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10860.patch"
+    },
+    "body": "This new package contains instructions on building [Elmer FEM solver](https://www.csc.fi/web/elmer).\r\n\r\nIt builds Elmer, ElmerICE and contributed solvers with MPI support.\r\n\r\nVariants include:\r\n- `+hypre` - For Hypre support (default: off).\r\n- `+lua` - For Lua support  (default: off).\r\n- `+mumps` - For MUMPS support  (default: off).\r\n- `+openmp` - For OpenMP support  (default: on).\r\n- `+trilinos` - For Trilinos support  (default: off).\r\n- `+zoltan` - For Zoltan support  (default: off). ",
+    "performed_via_github_app": null
+}

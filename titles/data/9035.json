@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9035",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9035/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9035/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9035/events",
+    "html_url": "https://github.com/spack/spack/pull/9035",
+    "id": 352608018,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5ODc2NTA2",
+    "number": 9035,
+    "title": "on error spack view suggests -i option",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 877274892,
+            "node_id": "MDU6TGFiZWw4NzcyNzQ4OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/views",
+            "name": "views",
+            "color": "70ff6d",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-21T15:59:07Z",
+    "updated_at": "2018-08-29T17:12:32Z",
+    "closed_at": "2018-08-29T17:10:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9035",
+        "html_url": "https://github.com/spack/spack/pull/9035",
+        "diff_url": "https://github.com/spack/spack/pull/9035.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9035.patch"
+    },
+    "body": "After we have now 3 open issues due to merge conflicts in `spack view`, I added a note to the existence of the `-i` (ignore conflicts) option in case of an error.\r\n\r\nI'm not sure if I should intercept the error and update the error message or if this should directly be part of the original error message. This is the least invasive solution, nothing more.\r\n\r\nRelates to #9029, #7001, #6266 ",
+    "performed_via_github_app": null
+}

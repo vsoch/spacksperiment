@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8014",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8014/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8014/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8014/events",
+    "html_url": "https://github.com/spack/spack/pull/8014",
+    "id": 320056522,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg1ODE5ODU0",
+    "number": 8014,
+    "title": "Spack Chain",
+    "user": {
+        "login": "amundson",
+        "id": 139985,
+        "node_id": "MDQ6VXNlcjEzOTk4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139985?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/amundson",
+        "html_url": "https://github.com/amundson",
+        "followers_url": "https://api.github.com/users/amundson/followers",
+        "following_url": "https://api.github.com/users/amundson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/amundson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/amundson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/amundson/subscriptions",
+        "organizations_url": "https://api.github.com/users/amundson/orgs",
+        "repos_url": "https://api.github.com/users/amundson/repos",
+        "events_url": "https://api.github.com/users/amundson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/amundson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 27,
+    "created_at": "2018-05-03T19:50:32Z",
+    "updated_at": "2018-11-01T16:01:16Z",
+    "closed_at": "2018-11-01T16:01:16Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8014",
+        "html_url": "https://github.com/spack/spack/pull/8014",
+        "diff_url": "https://github.com/spack/spack/pull/8014.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8014.patch"
+    },
+    "body": "Note: This pull request is being presented for discussion. At the very least, testing and documentation are required before it can be accepted.\r\n\r\nSpack Chain\r\n\r\nSpack Chain implements a chain of spack install trees.\r\n\r\nUse cases:\r\n* A two-link chain: Packages are provided by a system-level spack\r\n      installation. The user adds packages to his/her own private spack\r\n      installation.\r\n* A three-link chain: Same as above, but with a group-level installation\r\n      in between the user and system.\r\n* Another three-link chain: Same as the two-link chain, but with an\r\n      additional development area.\r\n* An n-link chain: Madness may ensue. Use with caution.\r\n \r\n Defining the chain:\r\n* The chain is defined in config.yaml:\r\n\r\n```\r\n config:\r\n    chain_prefixes:\r\n      - /Users/amundson/work/projects/spack-chain/systemlike\r\n      - /Users/amundson/work/projects/spack-chain/userlike\r\n\r\n```\r\n* The precedence is bottom-first -- userlike is searched before\r\n      systemlike.\r\n* The current spack instance is implicitly at the end of the chain.\r\n* If the current spack instance is part of the chain, the chain is\r\n      truncated at the current instance.\r\n\r\n Demo:\r\n\r\nThis demonstration uses my toy repo: \r\n    `git@bitbucket.org:amundsonfnal/metasynrepo.git`\r\nTo use it, do:\r\n```\r\ngit clone git@bitbucket.org:amundsonfnal/metasynrepo.git\r\ncd metasynrepo\r\nspack repo add metasynrepo `pwd`\r\n```\r\nIt contains three packages, `corge`, which depends on `quux`, which depends\r\non `garply`.\r\n\r\nEdit config.yaml to look like the example above.\r\n\r\nsession 1:\r\n```\r\ngit clone git@github.com:amundson/spack.git systemlike\r\ncd systemlike\r\ngit checkout develop-chain\r\n. share/spack/setup-env.sh\r\nspack install garply\r\n```\r\n```\r\n|zlorfik>spack find\r\n==> 5 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\ncmake@3.6.3  cmake@3.11.1  garply@3.0.0  ncurses@5.9  openssl@1.0.2k\r\n```\r\n\r\nsession 2:\r\n```\r\ngit clone git@github.com:amundson/spack.git userlike\r\ncd userlike\r\ngit checkout develop-chain\r\n. share/spack/setup-env.sh\r\nspack install quux\r\n```\r\n```\r\n|zlorfik>spack find\r\n==> In /home/amundson/work/projects/spack-chain/systemlike/opt/spack:\r\n==> 5 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\ncmake@3.6.3  cmake@3.11.1  garply@3.0.0  ncurses@5.9  openssl@1.0.2k\r\n==> In /home/amundson/work/projects/spack-chain/userlike/opt/spack:\r\n==> 1 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\nquux@3.0.0\r\n```\r\n\r\nsession 3:\r\n\r\n```\r\ngit clone git@github.com:amundson/spack.git devlike\r\ncd devlike\r\ngit checkout develop-chain\r\n. share/spack/setup-env.sh\r\nspack install corge\r\n```\r\n```\r\n|zlorfik>spack find\r\n==> In /home/amundson/work/projects/spack-chain/systemlike/opt/spack:\r\n==> 5 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\ncmake@3.6.3  cmake@3.11.1  garply@3.0.0  ncurses@5.9  openssl@1.0.2k\r\n==> In /home/amundson/work/projects/spack-chain/userlike/opt/spack:\r\n==> 1 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\nquux@3.0.0\r\n==> In /home/amundson/work/projects/spack-chain/devlike/opt/spack:\r\n==> 4 installed packages.\r\n-- linux-rhel7-x86_64 / gcc@7.2.0 -------------------------------\r\ncmake@3.11.1  corge@3.0.0  ncurses@5.9  openssl@1.0.2k\r\n```\r\n",
+    "performed_via_github_app": null
+}

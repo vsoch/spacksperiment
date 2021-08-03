@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8743",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8743/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8743/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8743/events",
+    "html_url": "https://github.com/spack/spack/pull/8743",
+    "id": 342437487,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAyMzM3Njcy",
+    "number": 8743,
+    "title": "openmpi: add c++ exceptions cfg option variant",
+    "user": {
+        "login": "cyrush",
+        "id": 1194526,
+        "node_id": "MDQ6VXNlcjExOTQ1MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1194526?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrush",
+        "html_url": "https://github.com/cyrush",
+        "followers_url": "https://api.github.com/users/cyrush/followers",
+        "following_url": "https://api.github.com/users/cyrush/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrush/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrush/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrush/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrush/orgs",
+        "repos_url": "https://api.github.com/users/cyrush/repos",
+        "events_url": "https://api.github.com/users/cyrush/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrush/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-07-18T18:15:15Z",
+    "updated_at": "2018-07-18T19:54:13Z",
+    "closed_at": "2018-07-18T19:54:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8743",
+        "html_url": "https://github.com/spack/spack/pull/8743",
+        "diff_url": "https://github.com/spack/spack/pull/8743.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8743.patch"
+    },
+    "body": "This adds variant `cxx_exceptions`, to the openmpi package. When on, this passes `--enable-cxx-exceptions` as a config argument to openmpi. The variant defaults to `True`. \r\n\r\nThis option avoids outright openmpi crashes when C++ MPI programs throw exceptions, and allows you to actually see c++ exception messages. \r\n \r\n\r\n",
+    "performed_via_github_app": null
+}

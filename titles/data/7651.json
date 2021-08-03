@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7651",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7651/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7651/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7651/events",
+    "html_url": "https://github.com/spack/spack/pull/7651",
+    "id": 310198043,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc4NjU3MjE3",
+    "number": 7651,
+    "title": "Avoid double 'lib' for packages whose name already starts with lib",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-31T00:35:20Z",
+    "updated_at": "2018-03-31T15:38:23Z",
+    "closed_at": "2018-03-31T15:33:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7651",
+        "html_url": "https://github.com/spack/spack/pull/7651",
+        "diff_url": "https://github.com/spack/spack/pull/7651.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7651.patch"
+    },
+    "body": "This bug was first reported by @muffgaga in https://github.com/spack/spack/pull/7611#discussion_r177663583. This PR implements his suggested fix.\r\n\r\nThe problem is that the default libs handler always added `lib` to the start of the package name, even when the package name already started with `lib`. This would result in `spec['libiconv'].libs` searching for `liblibiconv.so`. The solution is to only add `lib` when the package name doesn't start with `lib`.",
+    "performed_via_github_app": null
+}

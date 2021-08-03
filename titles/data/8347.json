@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8347",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8347/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8347/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8347/events",
+    "html_url": "https://github.com/spack/spack/pull/8347",
+    "id": 328485347,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkyMDA5NDQ4",
+    "number": 8347,
+    "title": "py-pybind11: making building tests optional",
+    "user": {
+        "login": "dorier",
+        "id": 11654861,
+        "node_id": "MDQ6VXNlcjExNjU0ODYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11654861?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dorier",
+        "html_url": "https://github.com/dorier",
+        "followers_url": "https://api.github.com/users/dorier/followers",
+        "following_url": "https://api.github.com/users/dorier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dorier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dorier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dorier/subscriptions",
+        "organizations_url": "https://api.github.com/users/dorier/orgs",
+        "repos_url": "https://api.github.com/users/dorier/repos",
+        "events_url": "https://api.github.com/users/dorier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dorier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908755,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NQ==",
+            "url": "https://api.github.com/repos/spack/spack/labels/duplicate",
+            "name": "duplicate",
+            "color": "cccccc",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-06-01T11:36:32Z",
+    "updated_at": "2018-06-04T14:50:19Z",
+    "closed_at": "2018-06-04T14:50:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8347",
+        "html_url": "https://github.com/spack/spack/pull/8347",
+        "diff_url": "https://github.com/spack/spack/pull/8347.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8347.patch"
+    },
+    "body": "Making building tests optional (variant `+test` in py-pybind11, now) prevents py-pybind11 from requiring py-test and its dependencies. Also since py-pybind11 is a header-only library, 99% of the build time is spent building the tests. Making that optional enables faster installation of py-pybind11.",
+    "performed_via_github_app": null
+}

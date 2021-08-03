@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12356",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12356/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12356/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12356/events",
+    "html_url": "https://github.com/spack/spack/pull/12356",
+    "id": 479070309,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2MDU4MjQ1",
+    "number": 12356,
+    "title": "Add preCICE xSDK support",
+    "user": {
+        "login": "fsimonis",
+        "id": 13552216,
+        "node_id": "MDQ6VXNlcjEzNTUyMjE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13552216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fsimonis",
+        "html_url": "https://github.com/fsimonis",
+        "followers_url": "https://api.github.com/users/fsimonis/followers",
+        "following_url": "https://api.github.com/users/fsimonis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fsimonis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fsimonis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fsimonis/subscriptions",
+        "organizations_url": "https://api.github.com/users/fsimonis/orgs",
+        "repos_url": "https://api.github.com/users/fsimonis/repos",
+        "events_url": "https://api.github.com/users/fsimonis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fsimonis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-09T16:29:37Z",
+    "updated_at": "2019-08-11T18:40:25Z",
+    "closed_at": "2019-08-11T17:19:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12356",
+        "html_url": "https://github.com/spack/spack/pull/12356",
+        "diff_url": "https://github.com/spack/spack/pull/12356.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12356.patch"
+    },
+    "body": "This PR\r\n* adds support for the build system changes introduced by the adaptation of the xSDK installation policies,\r\n* fixes some python related bugs discovered during the migration, and\r\n* fixes unprecice cmake and eigen dependencies.",
+    "performed_via_github_app": null
+}

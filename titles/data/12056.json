@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12056",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12056/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12056/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12056/events",
+    "html_url": "https://github.com/spack/spack/pull/12056",
+    "id": 469881524,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk5MDA1ODkx",
+    "number": 12056,
+    "title": "cmake: Move cxx11 flags for fujitsu into the flag_handler method",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-07-18T16:56:24Z",
+    "updated_at": "2021-02-03T17:12:58Z",
+    "closed_at": "2019-07-22T22:33:40Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12056",
+        "html_url": "https://github.com/spack/spack/pull/12056",
+        "diff_url": "https://github.com/spack/spack/pull/12056.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12056.patch"
+    },
+    "body": "This is a follow-up to #11839, which I merged prematurely.\r\n\r\nSee https://github.com/spack/spack/pull/11839#issuecomment-512863141",
+    "performed_via_github_app": null
+}

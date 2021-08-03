@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10471",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10471/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10471/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10471/events",
+    "html_url": "https://github.com/spack/spack/pull/10471",
+    "id": 404522048,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ4Njg1ODA2",
+    "number": 10471,
+    "title": "Using ninja as cmake generator for trilinos",
+    "user": {
+        "login": "jrood-nrel",
+        "id": 23264326,
+        "node_id": "MDQ6VXNlcjIzMjY0MzI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23264326?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrood-nrel",
+        "html_url": "https://github.com/jrood-nrel",
+        "followers_url": "https://api.github.com/users/jrood-nrel/followers",
+        "following_url": "https://api.github.com/users/jrood-nrel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrood-nrel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrood-nrel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrood-nrel/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrood-nrel/orgs",
+        "repos_url": "https://api.github.com/users/jrood-nrel/repos",
+        "events_url": "https://api.github.com/users/jrood-nrel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrood-nrel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2019-01-29T22:49:22Z",
+    "updated_at": "2019-03-20T19:32:54Z",
+    "closed_at": "2019-03-20T19:32:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10471",
+        "html_url": "https://github.com/spack/spack/pull/10471",
+        "diff_url": "https://github.com/spack/spack/pull/10471.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10471.patch"
+    },
+    "body": "Depends on if https://github.com/spack/spack/pull/10470 would be merged. I haven't formally tested how much faster this is, but anybody using trilinos would benefit from reduced build time with this.",
+    "performed_via_github_app": null
+}

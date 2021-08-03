@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11743",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11743/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11743/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11743/events",
+    "html_url": "https://github.com/spack/spack/pull/11743",
+    "id": 456647274,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg4NjI4NDA2",
+    "number": 11743,
+    "title": "cowsay: new package",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 719256959,
+            "node_id": "MDU6TGFiZWw3MTkyNTY5NTk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/singularity",
+            "name": "singularity",
+            "color": "aae562",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-06-16T14:29:25Z",
+    "updated_at": "2019-06-16T16:43:47Z",
+    "closed_at": "2019-06-16T15:29:26Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11743",
+        "html_url": "https://github.com/spack/spack/pull/11743",
+        "diff_url": "https://github.com/spack/spack/pull/11743.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11743.patch"
+    },
+    "body": "- A program that generates ASCII pictures of a cow with a message.\r\n- Spack is missing this important package.\r\n- This is used by @ArangoGutierrez the ISC19 Singularity tutorial, so we clearly need it in Spack.\r\n\r\n```\r\n$ cowsay spack needs more moo\r\n ______________________ \r\n< spack needs more moo >\r\n ---------------------- \r\n        \\   ^__^\r\n         \\  (oo)\\_______\r\n            (__)\\       )\\/\\\r\n                ||----w |\r\n                ||     ||\r\n```",
+    "performed_via_github_app": null
+}

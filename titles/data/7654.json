@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7654",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7654/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7654/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7654/events",
+    "html_url": "https://github.com/spack/spack/pull/7654",
+    "id": 310545241,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc4ODgzNDIw",
+    "number": 7654,
+    "title": "Current versions of kokkos conflict with hwloc 2.x",
+    "user": {
+        "login": "rspavel",
+        "id": 4571189,
+        "node_id": "MDQ6VXNlcjQ1NzExODk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4571189?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rspavel",
+        "html_url": "https://github.com/rspavel",
+        "followers_url": "https://api.github.com/users/rspavel/followers",
+        "following_url": "https://api.github.com/users/rspavel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rspavel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rspavel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rspavel/subscriptions",
+        "organizations_url": "https://api.github.com/users/rspavel/orgs",
+        "repos_url": "https://api.github.com/users/rspavel/repos",
+        "events_url": "https://api.github.com/users/rspavel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rspavel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-04-02T17:18:02Z",
+    "updated_at": "2018-04-03T00:22:47Z",
+    "closed_at": "2018-04-03T00:22:47Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7654",
+        "html_url": "https://github.com/spack/spack/pull/7654",
+        "diff_url": "https://github.com/spack/spack/pull/7654.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7654.patch"
+    },
+    "body": "Current versions of kokkos cannot build with hwloc v2.x due to changes in the associated structs. Requiring v1.11.9 for the time being until it becomes clear what the kokkos model for support will be.",
+    "performed_via_github_app": null
+}

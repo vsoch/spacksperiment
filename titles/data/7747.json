@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7747",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7747/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7747/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7747/events",
+    "html_url": "https://github.com/spack/spack/pull/7747",
+    "id": 314015987,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxNDE5OTM4",
+    "number": 7747,
+    "title": "environment shell: fix `spack load`",
+    "user": {
+        "login": "psychocoderHPC",
+        "id": 4037125,
+        "node_id": "MDQ6VXNlcjQwMzcxMjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4037125?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/psychocoderHPC",
+        "html_url": "https://github.com/psychocoderHPC",
+        "followers_url": "https://api.github.com/users/psychocoderHPC/followers",
+        "following_url": "https://api.github.com/users/psychocoderHPC/following{/other_user}",
+        "gists_url": "https://api.github.com/users/psychocoderHPC/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/psychocoderHPC/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/psychocoderHPC/subscriptions",
+        "organizations_url": "https://api.github.com/users/psychocoderHPC/orgs",
+        "repos_url": "https://api.github.com/users/psychocoderHPC/repos",
+        "events_url": "https://api.github.com/users/psychocoderHPC/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/psychocoderHPC/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-04-13T08:33:26Z",
+    "updated_at": "2018-04-25T07:39:11Z",
+    "closed_at": "2018-04-24T20:43:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7747",
+        "html_url": "https://github.com/spack/spack/pull/7747",
+        "diff_url": "https://github.com/spack/spack/pull/7747.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7747.patch"
+    },
+    "body": "Fix `spack load` with extended packet specifications that include spaces.\r\nSolved by using perfect parameter forwarding via temporary array.\r\n\r\nTo be consistent with the current used shell features in `setup-env.sh` this PR is **not** compatible with the `dash` shell (there are no arrays in `dash`). PR #4048 is adding `dash` compatibility. To be `dash` shell compatible the usage of the temporary array `_sp_spec` must be removed and `\"${_sp_spec[@]}\"` must be substituted with `\"$@\"`.\r\n\r\n# example\r\n```\r\n$ spack install zlib\r\n$ spack install zlib cppflags='-O3 -march=native'\r\n$ spack install zlib cppflags='-O2 -march=native'\r\n\r\n$ spack find -d -L -f zlib\r\n==> 3 installed packages.\r\n-- linux-linuxmint18-x86_64 / gcc@5.4.0 -------------------------\r\nk5hg4kkxiutkfl6n53ogz5wnlbdrsdtf    zlib@1.2.11%gcc\r\n\r\nmse2fyzdxciszdhiqi4b5kl6fxkps3fh    zlib@1.2.11%gcc cppflags=\"-O2 -march=native\"\r\n\r\nvrnvj2fikcbxqxrymctnlpmud7wbuahk    zlib@1.2.11%gcc cppflags=\"-O3 -march=native\"\r\n\r\n$ spack load zlib cppflags='-O3 -march=native'\r\n==> Error: Unexpected token\r\n['zlib', 'cppflags=-O3', '-march=native']\r\n```",
+    "performed_via_github_app": null
+}

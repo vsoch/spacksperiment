@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8622",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8622/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8622/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8622/events",
+    "html_url": "https://github.com/spack/spack/pull/8622",
+    "id": 337273348,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4NTEzMjAy",
+    "number": 8622,
+    "title": "Improve lock error messages and permission checks",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780710,
+            "node_id": "MDU6TGFiZWw0NDY3ODA3MTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/locking",
+            "name": "locking",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456121338,
+            "node_id": "MDU6TGFiZWw0NTYxMjEzMzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/refactoring",
+            "name": "refactoring",
+            "color": "f28f2a",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-01T08:17:47Z",
+    "updated_at": "2018-07-21T21:56:18Z",
+    "closed_at": "2018-07-12T17:59:54Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8622",
+        "html_url": "https://github.com/spack/spack/pull/8622",
+        "diff_url": "https://github.com/spack/spack/pull/8622.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8622.patch"
+    },
+    "body": "- [x] Speed up locking a bit by disabling the debug info we write to lock files by default.\r\n  - Can still construct a lock with `debug=True`, but we no longer write to/read from the lock file every time we acquire a lock.\r\n- [x] Clean up error messages for when a lock can't be created, or when an exclusive (write) lock can't be taken on a file.\r\n- [x] Add a number of subclasses of LockError to distinguish timeouts from permission issues.\r\n- [x] Add an explicit check to tell the user they're taking a write lock on a read-only file.\r\n  - We had a check for this for when we try to *upgrade* a lock on an RO file, but not for an initial write lock attempt.\r\n- [x] Add more tests for different lock permission scenarios.\r\n- [x] Separate tests for `spack.util.lock` from `llnl.util.lock`, and move `spack.util.multiproc` to `llnl.util.multiproc`\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10251",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10251/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10251/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10251/events",
+    "html_url": "https://github.com/spack/spack/pull/10251",
+    "id": 395698805,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQyMDkwNTY4",
+    "number": 10251,
+    "title": "[WIP] Fix module's approach to testing for overriding keys",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-01-03T19:37:36Z",
+    "updated_at": "2020-05-01T09:08:49Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10251",
+        "html_url": "https://github.com/spack/spack/pull/10251",
+        "diff_url": "https://github.com/spack/spack/pull/10251.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10251.patch"
+    },
+    "body": "Looking for feedback.\r\n\r\nThis probably needs tests before being merged. \r\n\r\nSee issue: #10245\r\n\r\nThe code was testing for a trailing ':', but `_mark_overrides`, from https://github.com/spack/spack/commit/8f21332fec4c8adb5349ff90e30bb0e4f75e090e was stripping it off and setting a attribute (?) instead.",
+    "performed_via_github_app": null
+}

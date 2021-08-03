@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8335",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8335/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8335/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8335/events",
+    "html_url": "https://github.com/spack/spack/pull/8335",
+    "id": 328306022,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkxODgwMzA3",
+    "number": 8335,
+    "title": "Revert the patching of PETSc test cases.",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-05-31T21:35:15Z",
+    "updated_at": "2018-06-01T14:22:24Z",
+    "closed_at": "2018-06-01T14:22:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8335",
+        "html_url": "https://github.com/spack/spack/pull/8335",
+        "diff_url": "https://github.com/spack/spack/pull/8335.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8335.patch"
+    },
+    "body": "These test cases are not used for build and sanity check, so the tests should be patched only when somebody wants to build and run them, manually.\r\nThe reason for removing the patching of these test case is that I cannot determine the Fortran compiler used by clang at patch time.  I can only determine the compiler used, like %clang, %xl_r, etc., and this test case patching is required whenever the XL Fortran compiler is used, which is definitely the case for %xl and %xl_r, and may be the case for %clang.",
+    "performed_via_github_app": null
+}

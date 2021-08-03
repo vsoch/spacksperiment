@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10314",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10314/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10314/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10314/events",
+    "html_url": "https://github.com/spack/spack/pull/10314",
+    "id": 398293602,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ0MDI2NTI4",
+    "number": 10314,
+    "title": "openPMD-api: Dependency Update",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-11T13:41:59Z",
+    "updated_at": "2019-01-16T09:57:18Z",
+    "closed_at": "2019-01-15T15:28:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10314",
+        "html_url": "https://github.com/spack/spack/pull/10314",
+        "diff_url": "https://github.com/spack/spack/pull/10314.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10314.patch"
+    },
+    "body": "openPMD-api only supports Python 3, needs a newer CMake and ADIOS1 and also learned to read & write JSON :-)\r\n\r\nNote that I am maintaining this package both upstream and in spack.",
+    "performed_via_github_app": null
+}

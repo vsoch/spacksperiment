@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12999",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12999/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12999/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12999/events",
+    "html_url": "https://github.com/spack/spack/pull/12999",
+    "id": 501039752,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIzMzg5NTc0",
+    "number": 12999,
+    "title": "ZFP: CMake Package",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T17:30:07Z",
+    "updated_at": "2019-10-02T06:28:41Z",
+    "closed_at": "2019-10-02T06:28:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12999",
+        "html_url": "https://github.com/spack/spack/pull/12999",
+        "diff_url": "https://github.com/spack/spack/pull/12999.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12999.patch"
+    },
+    "body": "ZFP is primarily build via CMake, which will have all install logic and configuration files generated.\r\nThe 0.5.0 release did not support this yet, so we toss it.\r\n\r\nFix #12998\r\n\r\ncc @markcmiller86 @michaelkuhn \r\n\r\n## Install Tests\r\n\r\n- [x] ZFP 0.5.1-0.5.5\r\n- [x] ADIOS 1.13.1 https://github.com/ornladios/ADIOS/issues/203\r\n- [x] ADIOS2 2.4.0 & 2.5.0\r\n- [x] h5z-zfp 0.8.0 (^hdf5@1.10.5)\r\n- [x] ecp-viz-sdk 1.0 (+zfp)\r\n- [x] savanna https://github.com/ornladios/ADIOS/issues/203 #13001\r\n- [x] macsio 1.1 (+zfp)",
+    "performed_via_github_app": null
+}

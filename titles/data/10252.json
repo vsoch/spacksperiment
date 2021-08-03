@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10252",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10252/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10252/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10252/events",
+    "html_url": "https://github.com/spack/spack/pull/10252",
+    "id": 395744221,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQyMTI2MjA2",
+    "number": 10252,
+    "title": "QMCPACK Update - Jan 2019",
+    "user": {
+        "login": "naromero77",
+        "id": 7633854,
+        "node_id": "MDQ6VXNlcjc2MzM4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7633854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/naromero77",
+        "html_url": "https://github.com/naromero77",
+        "followers_url": "https://api.github.com/users/naromero77/followers",
+        "following_url": "https://api.github.com/users/naromero77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/naromero77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/naromero77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/naromero77/subscriptions",
+        "organizations_url": "https://api.github.com/users/naromero77/orgs",
+        "repos_url": "https://api.github.com/users/naromero77/repos",
+        "events_url": "https://api.github.com/users/naromero77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/naromero77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-01-03T22:15:28Z",
+    "updated_at": "2019-01-28T21:27:33Z",
+    "closed_at": "2019-01-26T16:13:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10252",
+        "html_url": "https://github.com/spack/spack/pull/10252",
+        "diff_url": "https://github.com/spack/spack/pull/10252.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10252.patch"
+    },
+    "body": "This update to the QMCPACK Spack package has a number of updates and bug fixes:\r\n\r\n- QMCPACK now uses the FFTW-API provider. You can only need intel-mkl or fftw, but not both.\r\n- QMCPACK release 6.0 is now supported. This requires detection of a compiler that supports C++14, a newer version of boost, a newer version of CMake, etc.\r\n- Relax dependencies on the +da variant\r\n- Issue conflicts when an incompatible compiler-CUDA combination is chosen.\r\n- Added QMCPACK collective I/O variant.\r\n- Some clean-up of Spack code.\r\n- Update conflicts, in particular qmcpack+qe~mpi variant does not work due to limitations in QE 3.6.0. May be able to fix this later by applying patch to QE.\r\n- Correctly set-up Python environment for QMCPACK data analysis scripts",
+    "performed_via_github_app": null
+}

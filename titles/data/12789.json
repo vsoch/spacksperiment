@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12789",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12789/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12789/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12789/events",
+    "html_url": "https://github.com/spack/spack/pull/12789",
+    "id": 491961276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE2MjI5NDg2",
+    "number": 12789,
+    "title": "implicit rpaths filtering",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446779717,
+            "node_id": "MDU6TGFiZWw0NDY3Nzk3MTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/rpath",
+            "name": "rpath",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2019-09-11T00:47:38Z",
+    "updated_at": "2019-09-17T22:45:22Z",
+    "closed_at": "2019-09-17T22:45:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12789",
+        "html_url": "https://github.com/spack/spack/pull/12789",
+        "diff_url": "https://github.com/spack/spack/pull/12789.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12789.patch"
+    },
+    "body": "@becker33 @tgamblin @adamjstewart\r\n\r\nFixes https://github.com/spack/spack/issues/12709\r\n\r\nhttps://github.com/spack/spack/pull/7153 (merged August 24) started including more implicit RPATHs, specifically those associated with the compiler used to build a package; this also brought in unwanted RPATHs so this PR aims to filter them out. This includes the following changes:\r\n\r\n* Spack now starts with the set of link directories reported by the compiler, and selects only the subset of directories which contain libraries that are expected to be important for running programs built with that compiler.\r\n* Compilers can now implement a function `rpaths_to_include_for_compiler` which identifies the paths that need to be included. The utility function `paths_containing_libs` is provided to select a subset of paths which contain specified libraries (so Compiler classes can identify libraries that are specific to them).\r\n* UPDATE `implicit_rpaths` is now a per-compiler boolean configuration variable that can be set to `False` to disable all compiler library RPATHing (if it is causing trouble, which `spack build-env` can help detect). Any prior setting of `implicit_rpaths` in `compilers.yaml` will be removed. ~`implicit_rpaths` is no longer a config entry in `compilers.yaml`: this entry is ignored if set, and it will be removed whenever Spack updates `compilers.yaml`. Implicit RPATHs are now determined dynamically at build time.~\r\n\r\nTODOs:\r\n\r\n- [x] (new: 9/11) allow user to disable insertion of compiler lib dirs as RPATHs by setting `implicit_rpaths: False` in `compilers.yaml`\r\n- [x] update link_paths tests (which currently only supply paths: they'll need to actually create files that Spack now looks for)\r\n- [x] Look for important compiler libraries for Cray/cce (currently Arm, Clang, Gcc, Intel, and PGI are handled)\r\n- [ ] (I propose doing this in a later PR) when searching for link directories, the compiler should be invoked with the same flags that are used at build time (this apparently is an issue for Intel in particular)\r\n- [ ] (I propose doing this in a later PR) which paths qualify as system paths depends on the system. Right now the calculation is Linux-specific. ",
+    "performed_via_github_app": null
+}

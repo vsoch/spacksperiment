@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9580",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9580/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9580/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9580/events",
+    "html_url": "https://github.com/spack/spack/pull/9580",
+    "id": 371652361,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI0MDUyNDU1",
+    "number": 9580,
+    "title": "STRUMPACK: update version to 3.1.0",
+    "user": {
+        "login": "pghysels",
+        "id": 29239758,
+        "node_id": "MDQ6VXNlcjI5MjM5NzU4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29239758?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pghysels",
+        "html_url": "https://github.com/pghysels",
+        "followers_url": "https://api.github.com/users/pghysels/followers",
+        "following_url": "https://api.github.com/users/pghysels/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pghysels/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pghysels/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pghysels/subscriptions",
+        "organizations_url": "https://api.github.com/users/pghysels/orgs",
+        "repos_url": "https://api.github.com/users/pghysels/repos",
+        "events_url": "https://api.github.com/users/pghysels/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pghysels/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-10-18T18:21:24Z",
+    "updated_at": "2018-10-22T18:05:37Z",
+    "closed_at": "2018-10-22T18:05:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9580",
+        "html_url": "https://github.com/spack/spack/pull/9580",
+        "diff_url": "https://github.com/spack/spack/pull/9580.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9580.patch"
+    },
+    "body": "- add new version 3.1.0\r\n- add conflict for parmetis without mpi\r\n- strumpack >= 3.1.0 uses -DTPL_ENABLE_<package> instead of\r\n  -DSTRUMPACK_USE_<package>\r\n- require cmake at least 3.2",
+    "performed_via_github_app": null
+}

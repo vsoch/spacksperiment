@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10445",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10445/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10445/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10445/events",
+    "html_url": "https://github.com/spack/spack/pull/10445",
+    "id": 403176319,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ3NjkwMjA1",
+    "number": 10445,
+    "title": "bcftools: do not use bundled htslib",
+    "user": {
+        "login": "rmsds",
+        "id": 1918414,
+        "node_id": "MDQ6VXNlcjE5MTg0MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1918414?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rmsds",
+        "html_url": "https://github.com/rmsds",
+        "followers_url": "https://api.github.com/users/rmsds/followers",
+        "following_url": "https://api.github.com/users/rmsds/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rmsds/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rmsds/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rmsds/subscriptions",
+        "organizations_url": "https://api.github.com/users/rmsds/orgs",
+        "repos_url": "https://api.github.com/users/rmsds/repos",
+        "events_url": "https://api.github.com/users/rmsds/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rmsds/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-25T14:21:00Z",
+    "updated_at": "2019-01-26T15:21:05Z",
+    "closed_at": "2019-01-26T15:21:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10445",
+        "html_url": "https://github.com/spack/spack/pull/10445",
+        "diff_url": "https://github.com/spack/spack/pull/10445.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10445.patch"
+    },
+    "body": "* if the path to htslib is not specified the bundled one is built instead\r\n* additionally this fixes the build with the intel compiler",
+    "performed_via_github_app": null
+}

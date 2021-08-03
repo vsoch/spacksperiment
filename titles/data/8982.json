@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8982",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8982/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8982/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8982/events",
+    "html_url": "https://github.com/spack/spack/pull/8982",
+    "id": 350723375,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA4NDk5MDM5",
+    "number": 8982,
+    "title": "patch for OF.com@18.06 to correctly find KAHIP",
+    "user": {
+        "login": "tz-rrze",
+        "id": 6088631,
+        "node_id": "MDQ6VXNlcjYwODg2MzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6088631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tz-rrze",
+        "html_url": "https://github.com/tz-rrze",
+        "followers_url": "https://api.github.com/users/tz-rrze/followers",
+        "following_url": "https://api.github.com/users/tz-rrze/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tz-rrze/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tz-rrze/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tz-rrze/subscriptions",
+        "organizations_url": "https://api.github.com/users/tz-rrze/orgs",
+        "repos_url": "https://api.github.com/users/tz-rrze/repos",
+        "events_url": "https://api.github.com/users/tz-rrze/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tz-rrze/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-08-15T08:13:50Z",
+    "updated_at": "2018-09-12T06:47:02Z",
+    "closed_at": "2018-08-27T00:44:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8982",
+        "html_url": "https://github.com/spack/spack/pull/8982",
+        "diff_url": "https://github.com/spack/spack/pull/8982.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8982.patch"
+    },
+    "body": "- OpenFOAM-v1806/wmake/scripts/have_kahip must check $KAHIP_ARCH_PATH\r\n  instead of $METIS_ARCH_PATH to detect the KAHIB library\r\n- use a local patch file until the issue is hopefully fixed upstream",
+    "performed_via_github_app": null
+}

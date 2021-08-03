@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12859",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12859/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12859/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12859/events",
+    "html_url": "https://github.com/spack/spack/pull/12859",
+    "id": 495144013,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE4NzQ2NDYy",
+    "number": 12859,
+    "title": "openfoam-org: Adding openfoam-org versions 6 and 7 and a metis variant.",
+    "user": {
+        "login": "simo-tuomisto",
+        "id": 7014138,
+        "node_id": "MDQ6VXNlcjcwMTQxMzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7014138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simo-tuomisto",
+        "html_url": "https://github.com/simo-tuomisto",
+        "followers_url": "https://api.github.com/users/simo-tuomisto/followers",
+        "following_url": "https://api.github.com/users/simo-tuomisto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simo-tuomisto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simo-tuomisto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simo-tuomisto/subscriptions",
+        "organizations_url": "https://api.github.com/users/simo-tuomisto/orgs",
+        "repos_url": "https://api.github.com/users/simo-tuomisto/repos",
+        "events_url": "https://api.github.com/users/simo-tuomisto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simo-tuomisto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2019-09-18T10:43:04Z",
+    "updated_at": "2019-12-10T15:42:02Z",
+    "closed_at": "2019-12-10T15:42:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12859",
+        "html_url": "https://github.com/spack/spack/pull/12859",
+        "diff_url": "https://github.com/spack/spack/pull/12859.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12859.patch"
+    },
+    "body": "This pull request adds openfoam-org versions 6 and 7 and a variant +metis for linking metis.\r\n\r\nThe version number change from 5.0 to 6 and 7 is due to the change made by OpenFOAM developers on their repository naming convention.\r\n\r\nThe included patch contains changes made by [this commit](https://github.com/OpenFOAM/OpenFOAM-7/commit/ef33cf38ac9b811072a8970c71fbda35a90f6641). Without it the +int64 variant will not build correctly.",
+    "performed_via_github_app": null
+}

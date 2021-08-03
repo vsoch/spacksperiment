@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12697",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12697/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12697/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12697/events",
+    "html_url": "https://github.com/spack/spack/pull/12697",
+    "id": 489102690,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzEzOTg4NDI0",
+    "number": 12697,
+    "title": "py-ase: New version 3.18",
+    "user": {
+        "login": "jabl",
+        "id": 392634,
+        "node_id": "MDQ6VXNlcjM5MjYzNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/392634?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jabl",
+        "html_url": "https://github.com/jabl",
+        "followers_url": "https://api.github.com/users/jabl/followers",
+        "following_url": "https://api.github.com/users/jabl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jabl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jabl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jabl/subscriptions",
+        "organizations_url": "https://api.github.com/users/jabl/orgs",
+        "repos_url": "https://api.github.com/users/jabl/repos",
+        "events_url": "https://api.github.com/users/jabl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jabl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-09-04T11:28:41Z",
+    "updated_at": "2019-09-05T14:09:38Z",
+    "closed_at": "2019-09-05T14:09:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12697",
+        "html_url": "https://github.com/spack/spack/pull/12697",
+        "diff_url": "https://github.com/spack/spack/pull/12697.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12697.patch"
+    },
+    "body": "Add ASE version 3.18. ASE 3.18 has dropped support for python 2.x,\r\nhence add a dependency on python@3.5: for it.",
+    "performed_via_github_app": null
+}

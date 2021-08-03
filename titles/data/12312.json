@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12312",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12312/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12312/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12312/events",
+    "html_url": "https://github.com/spack/spack/pull/12312",
+    "id": 478120258,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA1MzA0MzM1",
+    "number": 12312,
+    "title": "Fix typo in yaml config docs",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-07T20:17:57Z",
+    "updated_at": "2019-08-08T15:02:20Z",
+    "closed_at": "2019-08-08T08:56:12Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12312",
+        "html_url": "https://github.com/spack/spack/pull/12312",
+        "diff_url": "https://github.com/spack/spack/pull/12312.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12312.patch"
+    },
+    "body": "Whenever a compiler or package spec contains a version range, the `:` messes up our YAML parsing with an error message like:\r\n```\r\n==> Error: Error parsing yaml  in \"/u/sciteam/stewart1/.spack/packages.yaml\", line 4, column 20: found unexpected ':'\r\n```\r\nThe solution is to wrap that spec in quotes.",
+    "performed_via_github_app": null
+}

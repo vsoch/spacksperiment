@@ -1,0 +1,92 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8398",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8398/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8398/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8398/events",
+    "html_url": "https://github.com/spack/spack/issues/8398",
+    "id": 329778045,
+    "node_id": "MDU6SXNzdWUzMjk3NzgwNDU=",
+    "number": 8398,
+    "title": "spectrum-mpi & depends_on type 'test'",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 446623247,
+            "node_id": "MDU6TGFiZWw0NDY2MjMyNDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/unreproducible",
+            "name": "unreproducible",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-06-06T09:02:13Z",
+    "updated_at": "2018-06-06T14:11:38Z",
+    "closed_at": "2018-06-06T14:10:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "The missing version in `spectrum-mpi` causes issues with MPI packages and tests.\r\n\r\nAs soon as one adds a `depends_on('anything_really', type='test')` to a package that also `depends_on('mpi')` the install with tests fails.\r\n\r\n### Expected Result\r\n\r\n```bash\r\nspack install --test=root package\r\n```\r\nshould start installing.\r\n\r\n### Actual Result\r\n\r\n```bash\r\n$ spack install --test=root package\r\n==> Error: There are no valid versions for spectrum-mpi that match ':'\r\n```\r\n\r\n### Steps to reproduce the issue\r\n\r\n- take a package that depends on MPI, say `mpileaks`\r\n- add a `test` dependency\r\n```diff\r\ndiff --git a/var/spack/repos/builtin/packages/mpileaks/package.py b/var/spack/repos/builtin/packages/mpileaks/package.py\r\nindex 33c617205..28bf5f247 100644\r\n--- a/var/spack/repos/builtin/packages/mpileaks/package.py\r\n+++ b/var/spack/repos/builtin/packages/mpileaks/package.py\r\n@@ -37,6 +37,7 @@ class Mpileaks(Package):\r\n     depends_on(\"mpi\")\r\n     depends_on(\"adept-utils\")\r\n     depends_on(\"callpath\")\r\n+    depends_on(\"vim\", type=\"test\")\r\n \r\n     def install(self, spec, prefix):\r\n         configure(\"--prefix=\" + prefix,\r\n```\r\n- run `spack install --test=root mpileaks`\r\n\r\n### Information on your system\r\n\r\nSpack `develop` as of 80564fae5df952eb8544272e178d283bac0c0f57 on Debian 9.4 with Python 3.6.4",
+    "performed_via_github_app": null
+}

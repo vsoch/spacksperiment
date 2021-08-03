@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13044",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13044/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13044/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13044/events",
+    "html_url": "https://github.com/spack/spack/pull/13044",
+    "id": 502437585,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI0NTE4Mzg3",
+    "number": 13044,
+    "title": "Add watch package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-04T05:40:03Z",
+    "updated_at": "2019-10-07T14:08:20Z",
+    "closed_at": "2019-10-07T09:11:18Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13044",
+        "html_url": "https://github.com/spack/spack/pull/13044",
+        "diff_url": "https://github.com/spack/spack/pull/13044.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13044.patch"
+    },
+    "body": "Adds a new package for the Linux `watch` command. Unfortunately the full procps package is Linux-only, so I had to make a separate package for this single command to build on macOS. This package is based off of https://github.com/Homebrew/homebrew-core/blob/master/Formula/watch.rb\r\n\r\nSuccessfully installs on macOS 10.14.6 with Clang 11.0.0.\r\n```console\r\n$ otool -L /Users/Adam/spack/opt/spack/darwin-mojave-ivybridge/clang-11.0.0-apple/watch-3.3.15-kiz3awhf7mwvjm2fj2dzyfymwiv6rwz3/bin/watch \r\n/Users/Adam/spack/opt/spack/darwin-mojave-ivybridge/clang-11.0.0-apple/watch-3.3.15-kiz3awhf7mwvjm2fj2dzyfymwiv6rwz3/bin/watch:\r\n\t/Users/Adam/spack/opt/spack/darwin-mojave-ivybridge/clang-11.0.0-apple/ncurses-6.1-ugyc74k76z7yu52ik3epobty2dscu53z/lib/libncurses.6.dylib (compatibility version 6.0.0, current version 6.0.0)\r\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1252.250.1)\r\n```",
+    "performed_via_github_app": null
+}

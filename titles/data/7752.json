@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7752",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7752/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7752/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7752/events",
+    "html_url": "https://github.com/spack/spack/pull/7752",
+    "id": 314195817,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgxNTU0NzA4",
+    "number": 7752,
+    "title": "Activation of activated package just msg's",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-04-13T17:48:48Z",
+    "updated_at": "2018-04-17T14:59:23Z",
+    "closed_at": "2018-04-17T12:44:09Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7752",
+        "html_url": "https://github.com/spack/spack/pull/7752",
+        "diff_url": "https://github.com/spack/spack/pull/7752.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7752.patch"
+    },
+    "body": "Activating a package that is already activated now sends a `tty.msg`\r\nand returns.\r\n\r\n```\r\n-bash-4.2$ ~/spack/bin/spack activate aspell6-en\r\n==> Package aspell6-en/lc4v24f is already activated.\r\n```\r\n\r\n~TODO: I'm not sure if a naked `return` is sufficient or if I should return a particular value?~\r\n\r\nCloses #7750 ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12197",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12197/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12197/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12197/events",
+    "html_url": "https://github.com/spack/spack/pull/12197",
+    "id": 474480129,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAyNDEzNTk4",
+    "number": 12197,
+    "title": "Add gromacs@4.5.5 .",
+    "user": {
+        "login": "weijianwen",
+        "id": 908249,
+        "node_id": "MDQ6VXNlcjkwODI0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/908249?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/weijianwen",
+        "html_url": "https://github.com/weijianwen",
+        "followers_url": "https://api.github.com/users/weijianwen/followers",
+        "following_url": "https://api.github.com/users/weijianwen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/weijianwen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/weijianwen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/weijianwen/subscriptions",
+        "organizations_url": "https://api.github.com/users/weijianwen/orgs",
+        "repos_url": "https://api.github.com/users/weijianwen/repos",
+        "events_url": "https://api.github.com/users/weijianwen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/weijianwen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-07-30T09:38:52Z",
+    "updated_at": "2020-06-08T12:03:35Z",
+    "closed_at": "2019-07-30T14:07:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12197",
+        "html_url": "https://github.com/spack/spack/pull/12197",
+        "diff_url": "https://github.com/spack/spack/pull/12197.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12197.patch"
+    },
+    "body": "This PR adds gromacs@4.5.5 which will benifit users who are stick to outdated version. It has been built successfully against GCC@5.4.0 on CascadeLake platform with\r\n\r\n ``$ spack install gromacs@4.5.5+mpi %gcc@5.4.0 ^openmpi ^fftw+mpi simd=avx512``",
+    "performed_via_github_app": null
+}

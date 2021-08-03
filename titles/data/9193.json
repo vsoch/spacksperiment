@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9193",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9193/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9193/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9193/events",
+    "html_url": "https://github.com/spack/spack/pull/9193",
+    "id": 358328589,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE0MTE0OTcx",
+    "number": 9193,
+    "title": "trilinos: disable xlf_tpetra.patch for trilinos@develop",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-08T21:16:43Z",
+    "updated_at": "2018-09-09T04:51:21Z",
+    "closed_at": "2018-09-09T04:51:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9193",
+        "html_url": "https://github.com/spack/spack/pull/9193",
+        "diff_url": "https://github.com/spack/spack/pull/9193.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9193.patch"
+    },
+    "body": "This patch does not apply cleanly anymore and breaks clang/Mac builds\r\n```\r\nbalay@asterix /home/balay/git-repo/github/trilinos (develop=)\r\n$ patch -Np1 < /home/balay/git-repo/github/spack/var/spack/repos/builtin/packages/trilinos/xlf_tpetra.patch\r\ncan't find file to patch at input line 3\r\nPerhaps you used the wrong -p or --strip option?\r\nThe text leading up to this was:\r\n--------------------------\r\n|--- a/packages/tpetra/core/src/Tpetra_Details_libGemm.cpp\r\n|+++ b/packages/tpetra/core/src/Tpetra_Details_libGemm.cpp\r\n--------------------------\r\nFile to patch:\r\n```\r\n\r\ncc: @jwillenbring @keitat\r\n\r\nThis was previously changed at 54aab585c4 so cc: @djfitzgerald\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10606",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10606/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10606/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10606/events",
+    "html_url": "https://github.com/spack/spack/pull/10606",
+    "id": 410384288,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUzMTM4MjM2",
+    "number": 10606,
+    "title": "xxhash: edit prefix in Makefile for macOS",
+    "user": {
+        "login": "drbenmorgan",
+        "id": 1102642,
+        "node_id": "MDQ6VXNlcjExMDI2NDI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1102642?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/drbenmorgan",
+        "html_url": "https://github.com/drbenmorgan",
+        "followers_url": "https://api.github.com/users/drbenmorgan/followers",
+        "following_url": "https://api.github.com/users/drbenmorgan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/drbenmorgan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/drbenmorgan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/drbenmorgan/subscriptions",
+        "organizations_url": "https://api.github.com/users/drbenmorgan/orgs",
+        "repos_url": "https://api.github.com/users/drbenmorgan/repos",
+        "events_url": "https://api.github.com/users/drbenmorgan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/drbenmorgan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-02-14T16:28:59Z",
+    "updated_at": "2019-06-13T15:27:58Z",
+    "closed_at": "2019-02-20T09:55:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10606",
+        "html_url": "https://github.com/spack/spack/pull/10606",
+        "diff_url": "https://github.com/spack/spack/pull/10606.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10606.patch"
+    },
+    "body": "On macOS, the build of libxxhash is performed by a bare `make` launched by `MakePackage`s default `build` phase. As `prefix` is not set in `xxhash`'s `Makefile` at this point, the library gets compiled with a hard-coded install name of `/usr/local/libxxhash.dylib`. Downstream clients, in the tested case Root, will then fail to build as the install name is incorrect.\r\n\r\nMove setting of `prefix` from `install` to `edit` so that it propagates to subsequent `build` and `install` phases.\r\n",
+    "performed_via_github_app": null
+}

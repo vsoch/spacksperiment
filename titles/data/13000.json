@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/13000",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/13000/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/13000/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/13000/events",
+    "html_url": "https://github.com/spack/spack/pull/13000",
+    "id": 501054697,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIzNDAxNzA5",
+    "number": 13000,
+    "title": "Gcc package: setup environment bug when installing",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T17:59:51Z",
+    "updated_at": "2019-10-01T21:29:02Z",
+    "closed_at": "2019-10-01T21:29:02Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/13000",
+        "html_url": "https://github.com/spack/spack/pull/13000",
+        "diff_url": "https://github.com/spack/spack/pull/13000.diff",
+        "patch_url": "https://github.com/spack/spack/pull/13000.patch"
+    },
+    "body": "https://github.com/spack/spack/pull/12454 (7bcb306) updated `setup_environment` in the GCC package to examine the bin/ directory to find alternatively-named instances of CC but this failed to account for when GCC was being installed and failed when it attempted to list the not-yet-existing installation prefix.\r\n\r\nThis problem would also be addressed by https://github.com/spack/spack/pull/11115",
+    "performed_via_github_app": null
+}

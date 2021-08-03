@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11371",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11371/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11371/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11371/events",
+    "html_url": "https://github.com/spack/spack/pull/11371",
+    "id": 440403520,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc1OTcwMjI4",
+    "number": 11371,
+    "title": "intel-tbb: fix patch for old compilers",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2019-05-05T05:41:05Z",
+    "updated_at": "2019-05-19T02:06:12Z",
+    "closed_at": "2019-05-19T02:00:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11371",
+        "html_url": "https://github.com/spack/spack/pull/11371",
+        "diff_url": "https://github.com/spack/spack/pull/11371.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11371.patch"
+    },
+    "body": "This PR appears to fix #10395 -- I ran into the same patch error when building on a centos6 system.  With the changes in this PR, I was able to build the package. \r\n\r\nBetween intel-tbb releases `2019` and `2019_U1` (what Spack calls `2019.1`), there was an [upstream change to  `build/linux.gcc.inc`](https://github.com/intel/tbb/commit/4cebdd9a1c9f0c56c4ddcbbb400447ab2a11fad4#diff-76933eb251f8863acd03337b951b04fbL48) that broke our patch file `tbb_gcc_rtm_key.patch`.\r\n\r\nHowever I think this PR still needs some work.  Here are the two most obvious defects I see:\r\n\r\n1. According to the comment, the patch should only be applied \"on an OS with an elderly assembler\".  I don't know what is meant by \"elderly\" -- was this supposed to mean anything less than gcc 5?  At any rate, the way the `when` spec is written, I think it applies the patch to any gcc **greater than** 4.8.0.  Which will include modern assemblers,  right?!   Seems like the `:` character should be removed so that it reads `when='%gcc@4.8.0'` or even just `when='%gcc@4'`?\r\n\r\n2. What is the correct way to specify that the patch file `tbb_gcc_rtm_key.patch` (which is already in develop) should be applied only up to and including `@2019`?  (The patch file does not work starting with `tbb@2019.1`.)  The lack of consistent version tagging system seems to complicate matters.  For example `@2017:2019` (if that is allowed syntax) would seem to also include `2019.1`, etc, right?\r\n\r\n@hartzell \r\n\r\nedit: fix markdown hyperlink",
+    "performed_via_github_app": null
+}

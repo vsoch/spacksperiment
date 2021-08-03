@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10517",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10517/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10517/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10517/events",
+    "html_url": "https://github.com/spack/spack/pull/10517",
+    "id": 406919893,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUwNTA5NTk0",
+    "number": 10517,
+    "title": "libarchive: remove lzma dependency",
+    "user": {
+        "login": "matthiasdiener",
+        "id": 1772435,
+        "node_id": "MDQ6VXNlcjE3NzI0MzU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1772435?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matthiasdiener",
+        "html_url": "https://github.com/matthiasdiener",
+        "followers_url": "https://api.github.com/users/matthiasdiener/followers",
+        "following_url": "https://api.github.com/users/matthiasdiener/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matthiasdiener/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matthiasdiener/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matthiasdiener/subscriptions",
+        "organizations_url": "https://api.github.com/users/matthiasdiener/orgs",
+        "repos_url": "https://api.github.com/users/matthiasdiener/repos",
+        "events_url": "https://api.github.com/users/matthiasdiener/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matthiasdiener/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-02-05T18:39:30Z",
+    "updated_at": "2019-02-15T02:43:27Z",
+    "closed_at": "2019-02-08T15:33:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10517",
+        "html_url": "https://github.com/spack/spack/pull/10517",
+        "diff_url": "https://github.com/spack/spack/pull/10517.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10517.patch"
+    },
+    "body": "lzma was last updated in 2008 and has compilation\r\nissues on some platforms. The format has been superceded\r\nby xz (see e.g. https://tukaani.org/xz/).",
+    "performed_via_github_app": null
+}

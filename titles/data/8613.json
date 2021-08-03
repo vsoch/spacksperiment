@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8613",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8613/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8613/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8613/events",
+    "html_url": "https://github.com/spack/spack/pull/8613",
+    "id": 337039823,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4MzQ5MTY5",
+    "number": 8613,
+    "title": "Major overhaul of Java packages",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 461818061,
+            "node_id": "MDU6TGFiZWw0NjE4MTgwNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/extensions",
+            "name": "extensions",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2018-06-29T15:21:02Z",
+    "updated_at": "2018-08-28T19:43:16Z",
+    "closed_at": "2018-08-28T18:35:14Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8613",
+        "html_url": "https://github.com/spack/spack/pull/8613",
+        "diff_url": "https://github.com/spack/spack/pull/8613.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8613.patch"
+    },
+    "body": "This PR includes the following changes:\r\n\r\n- [x] Added JDK 10\r\n- [x] Changed the JDK version numbers according to the consensus reached in #2284\r\n- [x] Added `spec['java'].home` and `spec['java'].libs`, similar to #3367\r\n- [x] Added a check to prevent people from installing JDK on macOS\r\n- [x] Set `CLASSPATH` for all Java extensions\r\n- [ ] Made `java` extendable\r\n\r\nThe last point is still a work in progress. Bugs I've discovered so far:\r\n\r\n1. It is not possible to write `extends('java')`, you have to write `extends('jdk')` or `extends('icedtea')`. It seems that virtual providers are not extendable. This is important not only for Java, but also for Python. Someday we would like Python to become a virtual provider for CPython, Intel Python, PyPy, IronPython, etc. See #7966.\r\n2. Packages cannot `extend` multiple packages: #987.\r\n3. In order to activate/deactive a Java extension, we need to symlink all `*.jar` files to `spec['java'].lib.ext`. How do I do this? I only know how to merge the two installation prefixes. I guess I could start installing `.jar` files to `prefix.lib.ext` instead of `prefix`...\r\n\r\n@hartzell I was looking through #4386. I'm guessing you have a lot more Java experience than me. Can you take a look at this?\r\n@snehring It looks like you wrote the `icedtea` package. Is it actually working? Would you like me to make similar changes to `icedtea` as well, so things like `spec['java'].home` and `spec['java'].libs` work no matter what Java provider you are using?",
+    "performed_via_github_app": null
+}

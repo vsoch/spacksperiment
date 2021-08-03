@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10290",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10290/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10290/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10290/events",
+    "html_url": "https://github.com/spack/spack/pull/10290",
+    "id": 397432145,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQzMzgwOTI1",
+    "number": 10290,
+    "title": "Update templight pseudo-release to remove need for patching",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-01-09T15:48:51Z",
+    "updated_at": "2019-01-17T12:01:40Z",
+    "closed_at": "2019-01-16T16:36:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10290",
+        "html_url": "https://github.com/spack/spack/pull/10290",
+        "diff_url": "https://github.com/spack/spack/pull/10290.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10290.patch"
+    },
+    "body": "Templight, while very useful, has hopelessly optimistic build requirements. One is supposed to link the master of a mostly stagnant project with unstable APIs of the LLVM trunk and expect that to work. In principle, there are also branches building against old clang versions, but in practice these are quite ancient and did not work last time I checked.\r\n\r\nFor this reason, when I packaged Templight, I introduced an artificial stable release which pinned the version of every package involved to something which I know to work with a bit of patching. This is an update of this artificial stable release which takes advantages of some updates on the Templight side that make my patching unnecessary.",
+    "performed_via_github_app": null
+}

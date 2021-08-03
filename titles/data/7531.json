@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7531",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7531/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7531/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7531/events",
+    "html_url": "https://github.com/spack/spack/pull/7531",
+    "id": 306666022,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc2MDQ2MTQz",
+    "number": 7531,
+    "title": "Support MD5 with a warning when OpenSSL is compiled in FIPS mode",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 511006597,
+            "node_id": "MDU6TGFiZWw1MTEwMDY1OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/security",
+            "name": "security",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-03-19T22:48:13Z",
+    "updated_at": "2018-03-21T21:11:55Z",
+    "closed_at": "2018-03-21T21:11:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7531",
+        "html_url": "https://github.com/spack/spack/pull/7531",
+        "diff_url": "https://github.com/spack/spack/pull/7531.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7531.patch"
+    },
+    "body": "FIPS-compliant machines reject md5 hashing by default\r\n\r\nOn some systems, the `hashlib` library for python has a `usedforsecurity` option. This attempts to set that as `False` where possible to make use of `md5` hashes but also prints a warning (the goal being that a package installer can add a PR to update the checksums for the packages they build).",
+    "performed_via_github_app": null
+}

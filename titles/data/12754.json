@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12754",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12754/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12754/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12754/events",
+    "html_url": "https://github.com/spack/spack/pull/12754",
+    "id": 490692663,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE1MjMzNDI0",
+    "number": 12754,
+    "title": "for fakeroot support, add \"shadow\" dependency",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-09-07T23:59:56Z",
+    "updated_at": "2019-09-08T21:05:24Z",
+    "closed_at": "2019-09-08T18:55:16Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12754",
+        "html_url": "https://github.com/spack/spack/pull/12754",
+        "diff_url": "https://github.com/spack/spack/pull/12754.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12754.patch"
+    },
+    "body": "WIP.  @vsoch @hartzell \r\n\r\n* v3.3 now depends on the new package `shadow` (#12750) and appears to build successfully.  --fakeroot option still needs testing.\r\n* v3.4 does not yet build.  The build error message is:\r\n\r\n```\r\n checking: libseccomp+headers... no\r\n checking: cryptsetup... no\r\n\r\nunable to find the cryptsetup program, is the package cryptsetup-bin installed?\r\n```\r\n",
+    "performed_via_github_app": null
+}

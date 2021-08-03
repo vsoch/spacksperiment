@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11245",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11245/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11245/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11245/events",
+    "html_url": "https://github.com/spack/spack/pull/11245",
+    "id": 435460511,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjcyMTg2MDQ2",
+    "number": 11245,
+    "title": "spack edit: use execv instead of Executable",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-04-21T00:48:32Z",
+    "updated_at": "2019-04-23T02:17:01Z",
+    "closed_at": "2019-04-21T03:51:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11245",
+        "html_url": "https://github.com/spack/spack/pull/11245",
+        "diff_url": "https://github.com/spack/spack/pull/11245.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11245.patch"
+    },
+    "body": "TL; DR: `spack edit` could be weird because it relied on `Popen` (via `Executable`), not `execv`\r\n\r\nThe problem:\r\n- `spack edit` previously used `spack.util.executable` `Executable` objects, and didn't `exec` the editor.\r\n- This meant that Spack was still running while your editor was, and it could lead to weird behavior\r\n- e.g. on Mac OS the builtin `emacs` will quit with \"Keyboard interrupt\" when you type `Ctrl-g` -- this is obviously not what we want\r\n\r\nThe fix:\r\n- [x] Fix all this by changing spack.util.editor to use `os.execv` instead of the Spack Executable object\r\n- [x] Add tests to make sure `editor()` works.\r\n\r\nThis slightly changes the behavior from #10898 (@chissg -- take a look).\r\n\r\nBefore, if you launched the editor and it exited 1, you'd try the next editor.  Now we'll only do that if there is a problem with `execv`.  I think that is fine, because you could launch `$VISUAL`, do edits, and `exit 1` for perfectly normal reasons, and then you would likely be surprised if Spack immediately went and launched `$EDITOR`.  I am hoping that @chissg was not relying on this behavior for something.",
+    "performed_via_github_app": null
+}

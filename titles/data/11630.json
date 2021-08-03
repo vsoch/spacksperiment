@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11630",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11630/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11630/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11630/events",
+    "html_url": "https://github.com/spack/spack/pull/11630",
+    "id": 452304582,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg1MjE5NDE1",
+    "number": 11630,
+    "title": "[vim] Add sys_vimrc_file variant",
+    "user": {
+        "login": "pozulp",
+        "id": 2090931,
+        "node_id": "MDQ6VXNlcjIwOTA5MzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2090931?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pozulp",
+        "html_url": "https://github.com/pozulp",
+        "followers_url": "https://api.github.com/users/pozulp/followers",
+        "following_url": "https://api.github.com/users/pozulp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pozulp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pozulp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pozulp/subscriptions",
+        "organizations_url": "https://api.github.com/users/pozulp/orgs",
+        "repos_url": "https://api.github.com/users/pozulp/repos",
+        "events_url": "https://api.github.com/users/pozulp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pozulp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1547855104,
+            "node_id": "MDU6TGFiZWwxNTQ3ODU1MTA0",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-variant",
+            "name": "new-variant",
+            "color": "c0d147",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-06-05T03:58:02Z",
+    "updated_at": "2021-06-11T13:45:20Z",
+    "closed_at": "2021-06-11T13:45:20Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11630",
+        "html_url": "https://github.com/spack/spack/pull/11630",
+        "diff_url": "https://github.com/spack/spack/pull/11630.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11630.patch"
+    },
+    "body": "The vim source distribution has a file `src/feature.h` that users can edit to set defines for optional code and preferences. This PR adds a variant which triggers an edit of said file prior to running `make`.\r\n\r\nThis allowed me to run `spack install sys_vimrc_file=/etc/vimrc` which causes the system vimrc file in the vim installation to be set to `/etc/vimrc`, as confirmed by running `:version` inside of `vim` to observe\r\n\r\n`\r\n   system vimrc file: \"/etc/vimrc\"\r\n`\r\n\r\nwhich differs from a vanilla `vim` install in which\r\n\r\n`\r\n   system vimrc file: \"$VIM/vimrc\"\r\n`\r\n\r\nNOTE: I'm not sure this is the best way to connect package variants and header file edits, so if there is a better pattern to accomplish this, please let me know! @becker33 may know a better way.",
+    "performed_via_github_app": null
+}

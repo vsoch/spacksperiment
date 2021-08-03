@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8409",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8409/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8409/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8409/events",
+    "html_url": "https://github.com/spack/spack/pull/8409",
+    "id": 329948462,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkzMDc1NjIx",
+    "number": 8409,
+    "title": "ADIOS: Serial API with Parallel Lib",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-06T16:44:31Z",
+    "updated_at": "2018-06-07T07:54:26Z",
+    "closed_at": "2018-06-06T20:38:37Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8409",
+        "html_url": "https://github.com/spack/spack/pull/8409",
+        "diff_url": "https://github.com/spack/spack/pull/8409.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8409.patch"
+    },
+    "body": "Provides a patch for the fix in\r\n  https://github.com/ornladios/ADIOS/pull/182\r\n\r\nInstalled ADIOS MPI-enabled libraries are with that able to also perform serial I/O without the need to start the whole app via `mpiexec`.",
+    "performed_via_github_app": null
+}

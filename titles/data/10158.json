@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10158",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10158/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10158/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10158/events",
+    "html_url": "https://github.com/spack/spack/pull/10158",
+    "id": 392733848,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5OTM5OTE5",
+    "number": 10158,
+    "title": "kallisto: updated checksum",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 921357381,
+            "node_id": "MDU6TGFiZWw5MjEzNTczODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/checksum",
+            "name": "checksum",
+            "color": "54d8b5",
+            "default": false,
+            "description": "Tarball checksum mismatches."
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-12-19T18:53:46Z",
+    "updated_at": "2018-12-19T23:06:34Z",
+    "closed_at": "2018-12-19T23:06:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10158",
+        "html_url": "https://github.com/spack/spack/pull/10158",
+        "diff_url": "https://github.com/spack/spack/pull/10158.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10158.patch"
+    },
+    "body": "[Per kallisto package maintainer](https://github.com/pachterlab/kallisto/issues/195#issuecomment-448542235):\r\n\r\n> The md5sum is `071e6bfb62be06fd76552298d4cf8144`.  I've checked the file that I downloaded on March 20th 2017 on the machine where I build the binaries as well as the file served from github.\r\n\r\nThis fixes #10118\r\n\r\nFYI @adamjstewart  ",
+    "performed_via_github_app": null
+}

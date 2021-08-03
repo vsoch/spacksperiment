@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11360",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11360/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11360/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11360/events",
+    "html_url": "https://github.com/spack/spack/pull/11360",
+    "id": 439835794,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc1NTU3OTc4",
+    "number": 11360,
+    "title": "Mesa should depend_on('glproto')",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 12,
+    "created_at": "2019-05-02T23:58:10Z",
+    "updated_at": "2019-05-06T18:37:14Z",
+    "closed_at": "2019-05-06T18:37:14Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11360",
+        "html_url": "https://github.com/spack/spack/pull/11360",
+        "diff_url": "https://github.com/spack/spack/pull/11360.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11360.patch"
+    },
+    "body": "This should be ready to go, see conversation for details.\r\n\r\n---\r\n\r\nToDo:\r\n\r\n- [x] I suspect that this should be conditional on the `opengl` variant, but would appreciate guidance from someone more familiar with that world.\r\n\r\n---\r\n\r\nThe mesa package refers to `GL/glproto.h`.  On systems that don't have the OS packages installed, this leads to failures during the build [e.g. this comment in 01482](https://github.com/spack/spack/pull/10482#issuecomment-488786745).\r\n\r\nThis fixes it.  Tested on a minimally provisioned CentOS 7.\r\n\r\n@opadron, can you check it on your systems (I'm using the same base system that @odoublewen is, but I'm sure he'll test it too...).\r\n\r\n\r\n",
+    "performed_via_github_app": null
+}

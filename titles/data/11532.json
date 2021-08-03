@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11532",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11532/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11532/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11532/events",
+    "html_url": "https://github.com/spack/spack/pull/11532",
+    "id": 447199628,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjgxMjQ1MDIy",
+    "number": 11532,
+    "title": "Add external package for IBM Platform LSF and have OpenMPI depend on it when LSF is specified in the schedulers variant.",
+    "user": {
+        "login": "mdwheele",
+        "id": 2453394,
+        "node_id": "MDQ6VXNlcjI0NTMzOTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2453394?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mdwheele",
+        "html_url": "https://github.com/mdwheele",
+        "followers_url": "https://api.github.com/users/mdwheele/followers",
+        "following_url": "https://api.github.com/users/mdwheele/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mdwheele/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mdwheele/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mdwheele/subscriptions",
+        "organizations_url": "https://api.github.com/users/mdwheele/orgs",
+        "repos_url": "https://api.github.com/users/mdwheele/repos",
+        "events_url": "https://api.github.com/users/mdwheele/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mdwheele/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 459210887,
+            "node_id": "MDU6TGFiZWw0NTkyMTA4ODc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/mpi",
+            "name": "mpi",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-05-22T15:20:51Z",
+    "updated_at": "2019-05-29T17:54:43Z",
+    "closed_at": "2019-05-29T17:38:56Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11532",
+        "html_url": "https://github.com/spack/spack/pull/11532",
+        "diff_url": "https://github.com/spack/spack/pull/11532.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11532.patch"
+    },
+    "body": "Related: #8503\r\n\r\nHello!\r\n\r\n:tipping_hand_woman: This PR adds a new external package for [IBM Platform LSF](https://www.ibm.com/marketplace/hpc-workload-management) (`lsf`) and adds it as a dependency for `openmpi` when `schedulers=lsf`.\r\n\r\nLSF (Load Sharing Facility) is a batch scheduler for HPC environments; similar to Slurm, Torque, etc. The current Open MPI package supports `lsf` as a scheduler variant and will add the `--with-lsf` configure flag when compiling `openmpi`. However, the path for LSF is not necessarily standardized. It is also closed-source software that you retrieve from the IBM website and unpack onto a cluster as part of the initial setup, so it cannot be naturally-managed by Spack. Because the path is not standardized, passing `--with-lsf` instead of `--with-lsf=/path/to/lsf/install` will likely fail during configure.\r\n\r\nAdditionally, the dependency on LSF (when using `schedulers=lsf`) is loose and not represented as a true dependency during concretization. Therefore, we add a new external package (similar to how `spectrum-mpi`, an IBM implementation of MPI is implemented).\r\n\r\nSimilar work was done in #8503 but also couples the addition of this external package with changes to Open MPI defaults. This PR has a narrower focus and simply sets up the dependency.\r\n\r\nLastly, users of Spack that need to compile support for LSF into Open MPI will need to maintain a `packages.yaml` (documented in comments of the `lsf` package) that specifies the version of LSF they are using as well as the path to that installation.\r\n\r\nI appreciate your time in review and look forward to diving deeper into Spack. I'm at NC State in the College of Engineering; working with our central HPC unit to evaluate moving a lot of our maintained cluster software into Spack. This was the first issue I've hit so far. ",
+    "performed_via_github_app": null
+}

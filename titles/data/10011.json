@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10011",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10011/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10011/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10011/events",
+    "html_url": "https://github.com/spack/spack/pull/10011",
+    "id": 387345604,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM1ODU0ODE1",
+    "number": 10011,
+    "title": "Use a bot to mark top issues",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 746029681,
+            "node_id": "MDU6TGFiZWw3NDYwMjk2ODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/community",
+            "name": "community",
+            "color": "e2c48e",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-12-04T15:38:08Z",
+    "updated_at": "2020-05-25T20:04:43Z",
+    "closed_at": "2020-05-25T20:04:38Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10011",
+        "html_url": "https://github.com/spack/spack/pull/10011",
+        "diff_url": "https://github.com/spack/spack/pull/10011.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10011.patch"
+    },
+    "body": "As a member of the community I want the top issues to be labeled so that I can quickly track which features or bug-fixes are the most requested.\r\n\r\n**Rationale**\r\nThis can be an effective way for a contributor to select something to work on that can have the most impact on the community. \r\n\r\n**Alternatives**\r\nGithub already permits to sort issues by the number of the various reactions. Using a bot can be  nonetheless an improvement as:\r\n- It labels issues, so that we can keep track of historical information e.g. if some issue has been in the top 10 at some point\r\n- We will develop an habit, as a community, to vote for features or bug fixes we care the most\r\n\r\nN.B. In case we want to merge the PR, this [bot](https://probot.github.io/apps/topissues/) needs to be activated first by an owner of the repository.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9861",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9861/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9861/events",
+    "html_url": "https://github.com/spack/spack/pull/9861",
+    "id": 381358698,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjMxMzQ5NDEz",
+    "number": 9861,
+    "title": "openjdk: adding new package openjdk",
+    "user": {
+        "login": "snehring",
+        "id": 7978778,
+        "node_id": "MDQ6VXNlcjc5Nzg3Nzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7978778?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/snehring",
+        "html_url": "https://github.com/snehring",
+        "followers_url": "https://api.github.com/users/snehring/followers",
+        "following_url": "https://api.github.com/users/snehring/following{/other_user}",
+        "gists_url": "https://api.github.com/users/snehring/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/snehring/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/snehring/subscriptions",
+        "organizations_url": "https://api.github.com/users/snehring/orgs",
+        "repos_url": "https://api.github.com/users/snehring/repos",
+        "events_url": "https://api.github.com/users/snehring/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/snehring/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 503169733,
+            "node_id": "MDU6TGFiZWw1MDMxNjk3MzM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/java",
+            "name": "java",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2018-11-15T22:03:35Z",
+    "updated_at": "2019-05-14T21:04:18Z",
+    "closed_at": "2019-01-31T18:54:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9861",
+        "html_url": "https://github.com/spack/spack/pull/9861",
+        "diff_url": "https://github.com/spack/spack/pull/9861.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9861.patch"
+    },
+    "body": "closes #2622\r\n\r\nI got annoyed trying to install jdk about 20 min ago.\r\n\r\nAnyway, it seems it's much easier to get a binary distribution of openjdk with version 11. \r\n\r\nThis is basically entirely copied from the jdk package to hopefully provide similar functionality. There are binaries for windows and macos as well, but I'm not sure how to denote different downloads for different os versions.",
+    "performed_via_github_app": null
+}

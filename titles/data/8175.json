@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8175",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8175/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8175/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8175/events",
+    "html_url": "https://github.com/spack/spack/issues/8175",
+    "id": 324160699,
+    "node_id": "MDU6SXNzdWUzMjQxNjA2OTk=",
+    "number": 8175,
+    "title": "cmake install on Mac OS 10.13.4 using intel@18.0.2 fails",
+    "user": {
+        "login": "JohnWGrove",
+        "id": 33465019,
+        "node_id": "MDQ6VXNlcjMzNDY1MDE5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33465019?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JohnWGrove",
+        "html_url": "https://github.com/JohnWGrove",
+        "followers_url": "https://api.github.com/users/JohnWGrove/followers",
+        "following_url": "https://api.github.com/users/JohnWGrove/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JohnWGrove/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JohnWGrove/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JohnWGrove/subscriptions",
+        "organizations_url": "https://api.github.com/users/JohnWGrove/orgs",
+        "repos_url": "https://api.github.com/users/JohnWGrove/repos",
+        "events_url": "https://api.github.com/users/JohnWGrove/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JohnWGrove/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 477156668,
+            "node_id": "MDU6TGFiZWw0NzcxNTY2Njg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/intel",
+            "name": "intel",
+            "color": "127cc1",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 15,
+    "created_at": "2018-05-17T19:47:27Z",
+    "updated_at": "2018-05-18T17:11:40Z",
+    "closed_at": null,
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "body": "\r\nSummary\r\nI tried to install pfunit using spack on my Mac Pro workstation using the intel 18.0.2 compiler. The installation failed when the dependency for cmake was attempted to be installed. The error was the the intel C++ compiler did not support C++11, which is false. By default this compiler enables the C++11 standard via the command line -std=c++11. The build script for cmake did not know enough about the Intel compiler to automatically add this argument. I probably could work around this problem, but it should have been handled transparently by me. In fact this issue brings up the general question of why spack thought it needed to install cmake in the first place since I already had a working version in my path via macports. I probably could also have added one via spack using clang@9.1.0. This seems to be a general issue with spack. When it needs a executable tool it just blindly installs one, without first checking whether it was really needed.  I assume this has something to do with the \"build clean\" philosophy spack uses since it probably clobbers the executable path as well as the rest of the environment.\r\n\r\nExpected Result\r\n\r\nSpack would do correctly what I requested and be smart enough to know about compiler options and executable tools.\r\n\r\n### Actual Result\r\n\r\nThe installation failed for the reasons described above.\r\n\r\n### Steps to reproduce the issue\r\n\r\nI ran \"spack install pfunit %intel@18.0.2\" but the problem should be reproduced by\r\n\"spack install cmake %intel@18.0.2\"\r\n\r\nIncidentally, the installation use gnu@7.3.0 for cmake failed due to incompatibilities with the CoreGraphics framework on my mac and the installation for pfunit using clang also fails since the git site https://git.code.sf.net/p/pfunit/code was unavailable. Could this address be obsolete?\r\n\r\n### Information on your system\r\n\r\nMac Pro late 2013 model running OS 10.13.4. I have the gnu compilers via spack and purchased licenses for the intel compilers, current version 18.0.2.\r\n\r\n-----\r\n\r\nWe encourage you to try, as much as possible, to reduce your problem to the minimal example that still reproduces the issue. That would help us a lot in fixing it quickly and effectively!\r\n\r\nIf you want to ask a question about the tool (how to use it, what it can currently do, etc.), try the `#general` channel on our Slack first. We have a welcoming community and chances are you'll get your reply faster and without opening an issue.\r\n\r\nOther than that, thanks for taking the time to contribute to Spack!",
+    "performed_via_github_app": null
+}

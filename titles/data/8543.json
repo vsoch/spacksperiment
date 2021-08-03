@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8543",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8543/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8543/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8543/events",
+    "html_url": "https://github.com/spack/spack/pull/8543",
+    "id": 334779430,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2NjYxOTEx",
+    "number": 8543,
+    "title": "omega-h: fix -std=c++11 build error",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-06-22T07:47:42Z",
+    "updated_at": "2018-06-24T03:04:03Z",
+    "closed_at": "2018-06-23T12:25:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8543",
+        "html_url": "https://github.com/spack/spack/pull/8543",
+        "diff_url": "https://github.com/spack/spack/pull/8543.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8543.patch"
+    },
+    "body": "```\r\ncd /tmp/balay/spack-stage/spack-stage-joxtpr/omega_h-9.13.4/spack-build/src && /home/balay/spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/openmpi-3.1.0-7ws4tgx4z3o\r\nru5g5skjrxs5sobpeiyef/bin/mpic++   -Domega_h_EXPORTS -I/home/balay/spack/var/spack/stage/omega-h-9.13.4-th4b67fz5es6cbgcar742jxamjt3tqjb/omega_h-9.13.4/src -I/tmp/bala\r\ny/spack-stage/spack-stage-joxtpr/omega_h-9.13.4/spack-build/src -I/home/balay/spack/var/spack/stage/omega-h-9.13.4-th4b67fz5es6cbgcar742jxamjt3tqjb/omega_h-9.13.4/tpl\r\n-I/home/balay/spack/opt/spack/linux-ubuntu16.04-x86_64/gcc-5.4.0/zlib-1.2.11-5nus6knzumx4ik2yl44jxtgtsl7d54xb/include  -O2 -g -DNDEBUG -fPIC   -o CMakeFiles/omega_h.di\r\nr/Omega_h_map.cpp.o -c /home/balay/spack/var/spack/stage/omega-h-9.13.4-th4b67fz5es6cbgcar742jxamjt3tqjb/omega_h-9.13.4/src/Omega_h_map.cpp\r\nIn file included from /usr/include/c++/5/chrono:35:0,\r\n                 from /home/balay/spack/var/spack/stage/omega-h-9.13.4-th4b67fz5es6cbgcar742jxamjt3tqjb/omega_h-9.13.4/src/Omega_h_timer.hpp:4,\r\n                 from /home/balay/spack/var/spack/stage/omega-h-9.13.4-th4b67fz5es6cbgcar742jxamjt3tqjb/omega_h-9.13.4/src/Omega_h_timer.cpp:1:\r\n/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.\r\n #error This file requires compiler and library support \\\r\n  ^\r\n```\r\n#8542\r\n\r\ncc: @ibaned @tgamblin",
+    "performed_via_github_app": null
+}

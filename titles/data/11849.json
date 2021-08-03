@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11849",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11849/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11849/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11849/events",
+    "html_url": "https://github.com/spack/spack/pull/11849",
+    "id": 460681556,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjkxNzYwNTE0",
+    "number": 11849,
+    "title": "boost: Fix build with XL/nvcc",
+    "user": {
+        "login": "jdahm",
+        "id": 68032,
+        "node_id": "MDQ6VXNlcjY4MDMy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68032?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdahm",
+        "html_url": "https://github.com/jdahm",
+        "followers_url": "https://api.github.com/users/jdahm/followers",
+        "following_url": "https://api.github.com/users/jdahm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdahm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdahm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdahm/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdahm/orgs",
+        "repos_url": "https://api.github.com/users/jdahm/repos",
+        "events_url": "https://api.github.com/users/jdahm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdahm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-06-25T22:54:09Z",
+    "updated_at": "2020-05-01T19:47:37Z",
+    "closed_at": "2020-05-01T19:47:36Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11849",
+        "html_url": "https://github.com/spack/spack/pull/11849",
+        "diff_url": "https://github.com/spack/spack/pull/11849.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11849.patch"
+    },
+    "body": "This addresses two issue found when trying to build boost with XL as:\r\n```\r\n$ spack install boost@1.69 %xl\r\n```\r\nbzip2 issues:\r\n- xl does not support `-fpic`. `-fPIC` is supported.\r\n- nvcc does not support absolute paths to shared objects. Requires `-L. -l:<lib>` syntax.\r\n\r\nboost issues:\r\n- boost.thread uses decltype and therefore requires the c++11 standard. Modern xlC versions seem not to default to C++11.\r\n\r\nThis is my first contribution to spack, so I would appreciate any suggestions to improve it. Thanks!",
+    "performed_via_github_app": null
+}

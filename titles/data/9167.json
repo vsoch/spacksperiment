@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9167",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9167/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9167/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9167/events",
+    "html_url": "https://github.com/spack/spack/pull/9167",
+    "id": 356490511,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEyNzM2ODQ4",
+    "number": 9167,
+    "title": "msgpack-c, snappy: explicitly depend on googletest",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-09-03T12:41:29Z",
+    "updated_at": "2018-09-04T06:42:35Z",
+    "closed_at": "2018-09-04T01:25:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9167",
+        "html_url": "https://github.com/spack/spack/pull/9167",
+        "diff_url": "https://github.com/spack/spack/pull/9167.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9167.patch"
+    },
+    "body": "At least two patches have been filed upstream for the linking issue regarding snappy (the patch in this PR). Issues discovered when `googletest` was installed on one of the systems I work on.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8228",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8228/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8228/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8228/events",
+    "html_url": "https://github.com/spack/spack/pull/8228",
+    "id": 324981547,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg5NDI5MTI2",
+    "number": 8228,
+    "title": "Rename Tpetra C wrappers for *gemm Fortran functions in Trilinos 12.12.1",
+    "user": {
+        "login": "djfitzgerald",
+        "id": 38731008,
+        "node_id": "MDQ6VXNlcjM4NzMxMDA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38731008?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/djfitzgerald",
+        "html_url": "https://github.com/djfitzgerald",
+        "followers_url": "https://api.github.com/users/djfitzgerald/followers",
+        "following_url": "https://api.github.com/users/djfitzgerald/following{/other_user}",
+        "gists_url": "https://api.github.com/users/djfitzgerald/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/djfitzgerald/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/djfitzgerald/subscriptions",
+        "organizations_url": "https://api.github.com/users/djfitzgerald/orgs",
+        "repos_url": "https://api.github.com/users/djfitzgerald/repos",
+        "events_url": "https://api.github.com/users/djfitzgerald/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/djfitzgerald/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-05-21T16:37:34Z",
+    "updated_at": "2018-05-23T15:57:28Z",
+    "closed_at": "2018-05-21T21:00:11Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8228",
+        "html_url": "https://github.com/spack/spack/pull/8228",
+        "diff_url": "https://github.com/spack/spack/pull/8228.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8228.patch"
+    },
+    "body": "Fixes #7247, as well as an issue that was discovered trying to build Trilinos with PGI.",
+    "performed_via_github_app": null
+}

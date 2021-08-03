@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11362",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11362/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11362/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11362/events",
+    "html_url": "https://github.com/spack/spack/pull/11362",
+    "id": 439963473,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc1NjQ3MTgz",
+    "number": 11362,
+    "title": "newpackage: py-awscli (and dependencies)",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-05-03T09:30:43Z",
+    "updated_at": "2019-06-19T22:25:15Z",
+    "closed_at": "2019-06-19T22:25:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11362",
+        "html_url": "https://github.com/spack/spack/pull/11362",
+        "diff_url": "https://github.com/spack/spack/pull/11362.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11362.patch"
+    },
+    "body": "Package for command line tools for Amazon Web Services. Also 5 other packages it requires which were not already in Spack.  \r\n\r\nI have tried to put in all the version restrictions contained in all the various setup.py and requirements.txt files associated with these packages. A few of the single-version requirements seemed overly restrictive, so I have left out a few, but may well be proven wrong in the end. It was a bit of a nightmare to track through......\r\n\r\nIf anyone thinks the main package should not have the leading \"py-\" I am open to changing that. I just went with what Spack wanted to call it. \r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8197",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8197/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8197/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8197/events",
+    "html_url": "https://github.com/spack/spack/pull/8197",
+    "id": 324636881,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg5MTkyNDY2",
+    "number": 8197,
+    "title": "py-pytorch: a new package.",
+    "user": {
+        "login": "weijianwen",
+        "id": 908249,
+        "node_id": "MDQ6VXNlcjkwODI0OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/908249?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/weijianwen",
+        "html_url": "https://github.com/weijianwen",
+        "followers_url": "https://api.github.com/users/weijianwen/followers",
+        "following_url": "https://api.github.com/users/weijianwen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/weijianwen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/weijianwen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/weijianwen/subscriptions",
+        "organizations_url": "https://api.github.com/users/weijianwen/orgs",
+        "repos_url": "https://api.github.com/users/weijianwen/repos",
+        "events_url": "https://api.github.com/users/weijianwen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/weijianwen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-05-19T15:16:07Z",
+    "updated_at": "2019-09-01T03:51:49Z",
+    "closed_at": "2018-07-27T09:55:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8197",
+        "html_url": "https://github.com/spack/spack/pull/8197",
+        "diff_url": "https://github.com/spack/spack/pull/8197.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8197.patch"
+    },
+    "body": "- [ ] Add the aten libray: 1) Patch CMakeLists to add `cpuinfo` lib dependency, not source dependency. 2) Patch CMaakeLists to add `sleef` lib dependency, not source dependency.",
+    "performed_via_github_app": null
+}

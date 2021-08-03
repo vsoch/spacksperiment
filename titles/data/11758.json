@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11758",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11758/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11758/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11758/events",
+    "html_url": "https://github.com/spack/spack/pull/11758",
+    "id": 457147565,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg5MDE5NTk2",
+    "number": 11758,
+    "title": "Add CDO 1.9.7.1",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471440001,
+            "node_id": "MDU6TGFiZWw0NzE0NDAwMDE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/bundles",
+            "name": "bundles",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-06-17T21:03:27Z",
+    "updated_at": "2019-07-20T19:01:45Z",
+    "closed_at": "2019-06-18T18:22:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11758",
+        "html_url": "https://github.com/spack/spack/pull/11758",
+        "diff_url": "https://github.com/spack/spack/pull/11758.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11758.patch"
+    },
+    "body": "Successfully built and passes all tests with Clang 10.0.1 on macOS 10.14.5.\r\n\r\nI tried building with PROJ.6 and everything built just fine and all of the tests passed. However, according to https://code.mpimet.mpg.de/boards/1/topics/7600, PROJ.6 is still not supported in CDO. I'm going to err on the side of caution and restrict the dependency to `proj@:5`.\r\n\r\n@skosukhin",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8544",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8544/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8544/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8544/events",
+    "html_url": "https://github.com/spack/spack/pull/8544",
+    "id": 334782234,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk2NjY0MDE4",
+    "number": 8544,
+    "title": "tasmanian: fix unzip dependency error",
+    "user": {
+        "login": "balay",
+        "id": 5642668,
+        "node_id": "MDQ6VXNlcjU2NDI2Njg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5642668?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/balay",
+        "html_url": "https://github.com/balay",
+        "followers_url": "https://api.github.com/users/balay/followers",
+        "following_url": "https://api.github.com/users/balay/following{/other_user}",
+        "gists_url": "https://api.github.com/users/balay/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/balay/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/balay/subscriptions",
+        "organizations_url": "https://api.github.com/users/balay/orgs",
+        "repos_url": "https://api.github.com/users/balay/repos",
+        "events_url": "https://api.github.com/users/balay/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/balay/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 451092161,
+            "node_id": "MDU6TGFiZWw0NTEwOTIxNjE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xSDK",
+            "name": "xSDK",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2018-06-22T07:58:26Z",
+    "updated_at": "2018-06-22T13:29:05Z",
+    "closed_at": "2018-06-22T13:28:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8544",
+        "html_url": "https://github.com/spack/spack/pull/8544",
+        "diff_url": "https://github.com/spack/spack/pull/8544.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8544.patch"
+    },
+    "body": "```\r\n==> Installing tasmanian\r\n==> Fetching http://tasmanian.ornl.gov/documents/Tasmanian_v5.0.zip\r\n######################################################################## 100.0%\r\n==> Staging archive: /home/balay/spack/var/spack/stage/tasmanian-5.0-sfa7smmito7cdxkcpa6oahdabzibhvcq/Tasmanian_v5.0.zip\r\n==> Error: spack requires 'unzip'. Make sure it is in your path.\r\n==> Error: SystemExit: 1\r\n```\r\ncc: @mkstoyanov",
+    "performed_via_github_app": null
+}

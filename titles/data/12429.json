@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12429",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12429/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12429/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12429/events",
+    "html_url": "https://github.com/spack/spack/pull/12429",
+    "id": 480956039,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA3NTUyMjI4",
+    "number": 12429,
+    "title": "Update icu4c to version 64.1",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-15T01:31:28Z",
+    "updated_at": "2019-10-06T11:09:18Z",
+    "closed_at": "2019-08-15T03:54:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12429",
+        "html_url": "https://github.com/spack/spack/pull/12429",
+        "diff_url": "https://github.com/spack/spack/pull/12429.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12429.patch"
+    },
+    "body": "icu4c is a dependency of `qt@4.8.7`. Version 60.1 fails to build on linux with clang@7.0.1 and clang@8.0.0:\r\n\r\n```\r\ndigitlst.cpp:508:9: error: use of undeclared identifier 'freelocale'\r\n        freelocale(gCLocale);\r\n        ^\r\n   clang++     ...  coll.cpp\r\ndigitlst.cpp:520:26: error: use of undeclared identifier 'LC_ALL_MASK'\r\n    gCLocale = newlocale(LC_ALL_MASK, \"C\", (locale_t)0);\r\n                         ^\r\n   clang++     ...  sortkey.cpp\r\n   clang++     ...  bocsu.cpp\r\n   clang++     ...  ucoleitr.cpp\r\n   clang++     ...  ucol.cpp\r\n   clang++     ...  ucol_res.cpp\r\n2 errors generated.\r\n   clang++     ...  ucol_sit.cpp\r\n   clang++     ...  collation.cpp\r\n*** Failed compilation command follows:\r\n----------------------------------------------------------\r\n/projects/spack/lib/spack/env/clang/clang++ -D_REENTRANT\r\n-DU_HAVE_ELF_H=1 -DU_HAVE_ATOMIC=1 -DU_HAVE_STRTOD_L=1\r\n-DU_HAVE_XLOCALE_H=1 -I. -I../common -DU_ATTRIBUTE_DEPRECATED=\r\n-DU_I18N_IMPLEMENTATION -std=c++11 -W -Wall -pedantic -Wpointer-arith\r\n-Wwrite-strings -Wno-long-long -c -DPIC -fPIC -o digitlst.o digitlst.cpp\r\n--- ( rebuild with \"make VERBOSE=1 all\" to show all parameters )\r\n--------\r\nmake[1]: *** [digitlst.o] Error 1\r\nmake[1]: *** Waiting for unfinished jobs....\r\n   clang++     ...  collationsettings.cpp\r\nmake[1]: Leaving directory\r\n`/build/s3j-spack/spack-stage/spack-stage-k9ba3gqo/spack-src/source/i18n'\r\nmake: *** [all-recursive] Error 2\r\n```",
+    "performed_via_github_app": null
+}

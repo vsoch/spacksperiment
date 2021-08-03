@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7840",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7840/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7840/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7840/events",
+    "html_url": "https://github.com/spack/spack/pull/7840",
+    "id": 316046220,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyOTAyODI3",
+    "number": 7840,
+    "title": "Update GlobalArrays package to new releases",
+    "user": {
+        "login": "tjstavenger-pnnl",
+        "id": 10565618,
+        "node_id": "MDQ6VXNlcjEwNTY1NjE4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10565618?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tjstavenger-pnnl",
+        "html_url": "https://github.com/tjstavenger-pnnl",
+        "followers_url": "https://api.github.com/users/tjstavenger-pnnl/followers",
+        "following_url": "https://api.github.com/users/tjstavenger-pnnl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tjstavenger-pnnl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tjstavenger-pnnl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tjstavenger-pnnl/subscriptions",
+        "organizations_url": "https://api.github.com/users/tjstavenger-pnnl/orgs",
+        "repos_url": "https://api.github.com/users/tjstavenger-pnnl/repos",
+        "events_url": "https://api.github.com/users/tjstavenger-pnnl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tjstavenger-pnnl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-04-19T21:24:13Z",
+    "updated_at": "2018-05-22T01:06:30Z",
+    "closed_at": "2018-05-22T01:06:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7840",
+        "html_url": "https://github.com/spack/spack/pull/7840",
+        "diff_url": "https://github.com/spack/spack/pull/7840.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7840.patch"
+    },
+    "body": "This is an update to the existing GlobalArrays package to support the current releases. This is likely a breaking change to existing users; however, the existing package would likely not work anymore anyway. It was based on patching a cmake build from the master branch of GA that was current in April 2017, but has changed significantly since then (i.e., the patch wouldn't work anymore).\r\n\r\nI contacted the previous developer @serbanmaerean and got permission to modify the existing package as needed. Serban is no longer using the existing GlobalArrays package.",
+    "performed_via_github_app": null
+}

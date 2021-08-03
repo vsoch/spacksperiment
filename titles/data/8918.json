@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8918",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8918/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8918/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8918/events",
+    "html_url": "https://github.com/spack/spack/pull/8918",
+    "id": 348805833,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA3MDY5OTk0",
+    "number": 8918,
+    "title": "Add mutil patch",
+    "user": {
+        "login": "jcftang",
+        "id": 652532,
+        "node_id": "MDQ6VXNlcjY1MjUzMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/652532?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jcftang",
+        "html_url": "https://github.com/jcftang",
+        "followers_url": "https://api.github.com/users/jcftang/followers",
+        "following_url": "https://api.github.com/users/jcftang/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jcftang/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jcftang/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jcftang/subscriptions",
+        "organizations_url": "https://api.github.com/users/jcftang/orgs",
+        "repos_url": "https://api.github.com/users/jcftang/repos",
+        "events_url": "https://api.github.com/users/jcftang/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jcftang/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2018-08-08T16:43:36Z",
+    "updated_at": "2020-12-03T07:57:05Z",
+    "closed_at": "2020-12-02T20:06:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8918",
+        "html_url": "https://github.com/spack/spack/pull/8918",
+        "diff_url": "https://github.com/spack/spack/pull/8918.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8918.patch"
+    },
+    "body": "I'm not quite sure if this should be here as an option to coreutils or if it should be something entirely separate, but the base of this mod is here for discussion.\r\n\r\nmutil is a patch on top of coreutils cp and md5sum that adds a bunch of concurrency and large scale copying operations see https://github.com/pkolano/mutil",
+    "performed_via_github_app": null
+}

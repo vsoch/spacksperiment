@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7096",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7096/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7096/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7096/events",
+    "html_url": "https://github.com/spack/spack/pull/7096",
+    "id": 292198643,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY1NTYzMzAz",
+    "number": 7096,
+    "title": "elfutils: document conflict with clang",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-01-28T11:50:45Z",
+    "updated_at": "2018-03-21T21:00:49Z",
+    "closed_at": "2018-03-21T21:00:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7096",
+        "html_url": "https://github.com/spack/spack/pull/7096",
+        "diff_url": "https://github.com/spack/spack/pull/7096.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7096.patch"
+    },
+    "body": "Elfutils doesn't build with clang because it uses nested functions in C, which is implemented in gcc, but not in clang.",
+    "performed_via_github_app": null
+}

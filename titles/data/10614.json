@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10614",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10614/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10614/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10614/events",
+    "html_url": "https://github.com/spack/spack/pull/10614",
+    "id": 410686290,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUzMzY3NDM0",
+    "number": 10614,
+    "title": "Fix plural typo in ROOT package",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-02-15T09:52:04Z",
+    "updated_at": "2019-02-18T10:20:43Z",
+    "closed_at": "2019-02-16T20:22:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10614",
+        "html_url": "https://github.com/spack/spack/pull/10614",
+        "diff_url": "https://github.com/spack/spack/pull/10614.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10614.patch"
+    },
+    "body": "During discussion around https://github.com/spack/spack/pull/10583 , there was general agreement on the fact that the plural \"Development versions\" wording in ROOT's package.py was confusing, but the PR was merged too quickly for me to fix it. So here's my smallest Spack PR diff ever. :wink: ",
+    "performed_via_github_app": null
+}

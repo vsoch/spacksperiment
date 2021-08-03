@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7879",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7879/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7879/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7879/events",
+    "html_url": "https://github.com/spack/spack/pull/7879",
+    "id": 317019784,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgzNTg1MTYz",
+    "number": 7879,
+    "title": "multithreading update in Open MPI 2.0",
+    "user": {
+        "login": "floquet",
+        "id": 13126143,
+        "node_id": "MDQ6VXNlcjEzMTI2MTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13126143?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/floquet",
+        "html_url": "https://github.com/floquet",
+        "followers_url": "https://api.github.com/users/floquet/followers",
+        "following_url": "https://api.github.com/users/floquet/following{/other_user}",
+        "gists_url": "https://api.github.com/users/floquet/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/floquet/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/floquet/subscriptions",
+        "organizations_url": "https://api.github.com/users/floquet/orgs",
+        "repos_url": "https://api.github.com/users/floquet/repos",
+        "events_url": "https://api.github.com/users/floquet/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/floquet/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-04-23T23:38:41Z",
+    "updated_at": "2018-06-04T18:49:50Z",
+    "closed_at": "2018-04-25T03:24:02Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7879",
+        "html_url": "https://github.com/spack/spack/pull/7879",
+        "diff_url": "https://github.com/spack/spack/pull/7879.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7879.patch"
+    },
+    "body": "As of Open MPI 2.0.0, the option --enable-mpi-thread-multiple is no longer recognized.",
+    "performed_via_github_app": null
+}

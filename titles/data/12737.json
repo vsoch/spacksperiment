@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12737",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12737/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12737/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12737/events",
+    "html_url": "https://github.com/spack/spack/pull/12737",
+    "id": 490299036,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzE0OTMxNTU0",
+    "number": 12737,
+    "title": "py-gpaw: Fixing missing numpy include path, adding newer version of p\u2026",
+    "user": {
+        "login": "simo-tuomisto",
+        "id": 7014138,
+        "node_id": "MDQ6VXNlcjcwMTQxMzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7014138?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simo-tuomisto",
+        "html_url": "https://github.com/simo-tuomisto",
+        "followers_url": "https://api.github.com/users/simo-tuomisto/followers",
+        "following_url": "https://api.github.com/users/simo-tuomisto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simo-tuomisto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simo-tuomisto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simo-tuomisto/subscriptions",
+        "organizations_url": "https://api.github.com/users/simo-tuomisto/orgs",
+        "repos_url": "https://api.github.com/users/simo-tuomisto/repos",
+        "events_url": "https://api.github.com/users/simo-tuomisto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simo-tuomisto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-09-06T12:24:53Z",
+    "updated_at": "2019-09-08T15:46:48Z",
+    "closed_at": "2019-09-08T15:46:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12737",
+        "html_url": "https://github.com/spack/spack/pull/12737",
+        "diff_url": "https://github.com/spack/spack/pull/12737.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12737.patch"
+    },
+    "body": "The following commit fixes the following issues with py-gpaw package:\r\n1. py-numpy's include directory was not set correctly in the original package.\r\n2. Older version of gpaw had a call to a function in libxc that is no longer present. The patch fixes this. See [this issue](https://gitlab.com/gpaw/gpaw/merge_requests/267)\u00a0for more information. \r\n\r\nIn addition the newest version of py-gpaw is added. ",
+    "performed_via_github_app": null
+}

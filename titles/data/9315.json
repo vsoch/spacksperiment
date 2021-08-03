@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9315",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9315/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9315/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9315/events",
+    "html_url": "https://github.com/spack/spack/pull/9315",
+    "id": 362782257,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE3NDA3ODI1",
+    "number": 9315,
+    "title": "qt: fix dbus builds",
+    "user": {
+        "login": "codeandkey",
+        "id": 3630356,
+        "node_id": "MDQ6VXNlcjM2MzAzNTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3630356?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/codeandkey",
+        "html_url": "https://github.com/codeandkey",
+        "followers_url": "https://api.github.com/users/codeandkey/followers",
+        "following_url": "https://api.github.com/users/codeandkey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/codeandkey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/codeandkey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/codeandkey/subscriptions",
+        "organizations_url": "https://api.github.com/users/codeandkey/orgs",
+        "repos_url": "https://api.github.com/users/codeandkey/repos",
+        "events_url": "https://api.github.com/users/codeandkey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/codeandkey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881441689,
+            "node_id": "MDU6TGFiZWw4ODE0NDE2ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/libraries",
+            "name": "libraries",
+            "color": "bab8f9",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-09-21T21:37:12Z",
+    "updated_at": "2018-09-25T16:33:19Z",
+    "closed_at": "2018-09-25T16:33:19Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9315",
+        "html_url": "https://github.com/spack/spack/pull/9315",
+        "diff_url": "https://github.com/spack/spack/pull/9315.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9315.patch"
+    },
+    "body": "\"-ldbus-1\" was being passed as a configure arg and was breaking builds with dbus. I couldn't find any reference to this option in the Qt docs.",
+    "performed_via_github_app": null
+}

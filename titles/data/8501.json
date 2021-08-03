@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8501",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8501/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8501/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8501/events",
+    "html_url": "https://github.com/spack/spack/pull/8501",
+    "id": 333137650,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk1NDI1MjM5",
+    "number": 8501,
+    "title": "samrai: update package for 3.12.0 and fix compilation bugs for earlier versions",
+    "user": {
+        "login": "twang15",
+        "id": 16219606,
+        "node_id": "MDQ6VXNlcjE2MjE5NjA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16219606?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/twang15",
+        "html_url": "https://github.com/twang15",
+        "followers_url": "https://api.github.com/users/twang15/followers",
+        "following_url": "https://api.github.com/users/twang15/following{/other_user}",
+        "gists_url": "https://api.github.com/users/twang15/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/twang15/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/twang15/subscriptions",
+        "organizations_url": "https://api.github.com/users/twang15/orgs",
+        "repos_url": "https://api.github.com/users/twang15/repos",
+        "events_url": "https://api.github.com/users/twang15/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/twang15/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-18T05:30:46Z",
+    "updated_at": "2018-06-18T21:11:47Z",
+    "closed_at": "2018-06-18T18:52:25Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8501",
+        "html_url": "https://github.com/spack/spack/pull/8501",
+        "diff_url": "https://github.com/spack/spack/pull/8501.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8501.patch"
+    },
+    "body": "SAMRAI: remove dependency on boost for samrai 3.12.0 or later versions, but keep the older versions continuing working with boost 1.64.0 or earlier. Also, the older versions cannot compile with boost 1.65.0 or above. (#8491)",
+    "performed_via_github_app": null
+}

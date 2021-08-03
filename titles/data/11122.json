@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11122",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11122/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11122/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11122/events",
+    "html_url": "https://github.com/spack/spack/pull/11122",
+    "id": 429982337,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY4MDAyMTA0",
+    "number": 11122,
+    "title": "Fix compile errors with VisIt, VTK, QWT",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 1132691819,
+            "node_id": "MDU6TGFiZWwxMTMyNjkxODE5",
+            "url": "https://api.github.com/repos/spack/spack/labels/vtk",
+            "name": "vtk",
+            "color": "23ef9a",
+            "default": false,
+            "description": "Issues regarding VTK."
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-04-06T01:18:44Z",
+    "updated_at": "2019-09-22T11:42:01Z",
+    "closed_at": "2019-07-29T17:19:29Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11122",
+        "html_url": "https://github.com/spack/spack/pull/11122",
+        "diff_url": "https://github.com/spack/spack/pull/11122.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11122.patch"
+    },
+    "body": "Using `%clang@10.0.0-apple platform=darwin`",
+    "performed_via_github_app": null
+}

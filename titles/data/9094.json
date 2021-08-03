@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9094",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9094/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9094/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9094/events",
+    "html_url": "https://github.com/spack/spack/pull/9094",
+    "id": 353785711,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwNzQyMDAy",
+    "number": 9094,
+    "title": "New package: AIDA",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-08-24T13:34:10Z",
+    "updated_at": "2018-09-04T08:47:15Z",
+    "closed_at": "2018-09-04T02:02:07Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9094",
+        "html_url": "https://github.com/spack/spack/pull/9094",
+        "diff_url": "https://github.com/spack/spack/pull/9094.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9094.patch"
+    },
+    "body": "This is old and long-abandoned HEP software, but for some reason a few important projects still rely on it.\r\n\r\nAs the package does not have a readily usable and well-documented automated installation mechanism, one needs to guess how to install things. I know how to install the C++ headers, which is what is usually needed, but there are also documentation and java files in that package which I don't know how to deal with.\r\n\r\nAs far as I know, Spack does not usually install docs, and no one is currently using the Java version of AIDA, so perhaps just installing the C++ headers is enough. If not, a bit of help from Java folks would be handy in order to get the installation right :)",
+    "performed_via_github_app": null
+}

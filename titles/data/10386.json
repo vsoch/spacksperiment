@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10386",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10386/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10386/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10386/events",
+    "html_url": "https://github.com/spack/spack/pull/10386",
+    "id": 400809145,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ1OTExMTY4",
+    "number": 10386,
+    "title": "Make is a required dependency of Spack",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446625544,
+            "node_id": "MDU6TGFiZWw0NDY2MjU1NDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/documentation",
+            "name": "documentation",
+            "color": "0d5977",
+            "default": true,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-01-18T16:58:46Z",
+    "updated_at": "2019-03-07T04:14:44Z",
+    "closed_at": "2019-03-07T01:46:55Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10386",
+        "html_url": "https://github.com/spack/spack/pull/10386",
+        "diff_url": "https://github.com/spack/spack/pull/10386.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10386.patch"
+    },
+    "body": "Closes #10346 \r\n\r\nStill trying to think of a way to get a better error message when the `make` executable is not found. Perhaps we can add a `required=True` flag to `Executable`? Should `Executable` always call `which`?\r\n\r\n@grahamlopez",
+    "performed_via_github_app": null
+}

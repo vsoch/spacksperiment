@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9978",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9978/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9978/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9978/events",
+    "html_url": "https://github.com/spack/spack/pull/9978",
+    "id": 385556248,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM0NDk4OTcy",
+    "number": 9978,
+    "title": "Fix mysqldb1",
+    "user": {
+        "login": "daveh86",
+        "id": 909151,
+        "node_id": "MDQ6VXNlcjkwOTE1MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/909151?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daveh86",
+        "html_url": "https://github.com/daveh86",
+        "followers_url": "https://api.github.com/users/daveh86/followers",
+        "following_url": "https://api.github.com/users/daveh86/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daveh86/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daveh86/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daveh86/subscriptions",
+        "organizations_url": "https://api.github.com/users/daveh86/orgs",
+        "repos_url": "https://api.github.com/users/daveh86/repos",
+        "events_url": "https://api.github.com/users/daveh86/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daveh86/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2018-11-29T03:39:08Z",
+    "updated_at": "2019-03-15T15:02:53Z",
+    "closed_at": "2019-03-13T01:57:30Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9978",
+        "html_url": "https://github.com/spack/spack/pull/9978",
+        "diff_url": "https://github.com/spack/spack/pull/9978.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9978.patch"
+    },
+    "body": "This fixes the missing mysql package dependency on mysqldb1, and of course adds mysql",
+    "performed_via_github_app": null
+}

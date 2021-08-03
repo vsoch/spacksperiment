@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12290",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12290/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12290/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12290/events",
+    "html_url": "https://github.com/spack/spack/pull/12290",
+    "id": 477137920,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA0NTI0MjY2",
+    "number": 12290,
+    "title": "bugfix for -p,--prompt switch to `spack env activate`",
+    "user": {
+        "login": "eugeneswalker",
+        "id": 38933153,
+        "node_id": "MDQ6VXNlcjM4OTMzMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38933153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eugeneswalker",
+        "html_url": "https://github.com/eugeneswalker",
+        "followers_url": "https://api.github.com/users/eugeneswalker/followers",
+        "following_url": "https://api.github.com/users/eugeneswalker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eugeneswalker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eugeneswalker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eugeneswalker/subscriptions",
+        "organizations_url": "https://api.github.com/users/eugeneswalker/orgs",
+        "repos_url": "https://api.github.com/users/eugeneswalker/repos",
+        "events_url": "https://api.github.com/users/eugeneswalker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eugeneswalker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-06T02:31:22Z",
+    "updated_at": "2019-08-13T20:44:49Z",
+    "closed_at": "2019-08-13T20:44:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12290",
+        "html_url": "https://github.com/spack/spack/pull/12290",
+        "diff_url": "https://github.com/spack/spack/pull/12290.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12290.patch"
+    },
+    "body": "This fixes a couple issues with the `-p,--prompt` option passed to `spack env activate`. \r\n\r\n* The escape sequences used to color+tag the Bash prompt with the name of the active Spack environment need to be enclosed in escaped square brackets. This is a special requirement when ANSI escape sequences are used to modify PS1, ensuring that the character count of the prompt  is accurate. \r\n\r\n* Invocation of `spack env activate -p <env>` when inside an already active Spack environment also activated with the `-p` switch led to problems like below:\r\n   - `$> spack env activate -p env1`\r\n   - `[env1] $> spack env activate -p env2`\r\n   - `[env2] [env1] $>`",
+    "performed_via_github_app": null
+}

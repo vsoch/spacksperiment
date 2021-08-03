@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9926",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9926/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9926/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9926/events",
+    "html_url": "https://github.com/spack/spack/pull/9926",
+    "id": 383398394,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjMyODczMDIz",
+    "number": 9926,
+    "title": "py-psycopg2: new package",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-22T06:36:39Z",
+    "updated_at": "2018-11-24T23:45:17Z",
+    "closed_at": "2018-11-24T23:45:17Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9926",
+        "html_url": "https://github.com/spack/spack/pull/9926",
+        "diff_url": "https://github.com/spack/spack/pull/9926.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9926.patch"
+    },
+    "body": "I note that there is an old PR https://github.com/spack/spack/pull/7728 for this package, bundled in with a server-less subset of postgresql. That seems to have stalled, with a lot of complexity. This PR is simpler, and depends on the full postgresql package, even though the same arguments could apply. \r\n\r\nI also note that I have recently put in a PR https://github.com/spack/spack/pull/9922, which is a different package for a similar Python PostgreSQL client. Other (currently non-spack) software require one or other of them, so it seemed easiest to keep them independent. \r\n",
+    "performed_via_github_app": null
+}

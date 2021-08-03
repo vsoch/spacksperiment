@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12454",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12454/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12454/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12454/events",
+    "html_url": "https://github.com/spack/spack/pull/12454",
+    "id": 481898541,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA4MzAwMDcx",
+    "number": 12454,
+    "title": "Fix GCC environment variables for external installations",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446632829,
+            "node_id": "MDU6TGFiZWw0NDY2MzI4Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/modules",
+            "name": "modules",
+            "color": "fef2c0",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2019-08-17T15:39:06Z",
+    "updated_at": "2019-10-06T11:09:13Z",
+    "closed_at": "2019-09-30T18:02:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12454",
+        "html_url": "https://github.com/spack/spack/pull/12454",
+        "diff_url": "https://github.com/spack/spack/pull/12454.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12454.patch"
+    },
+    "body": "Unlike the compiler binary name search logic, the `setup_environment` in GCC's package assumes the compiler names are *exactly* `gcc`, `g++`, etc. In many external installations (Homebrew, Macports) the installation includes only *suffixed* versions such as `gcc-9`.\r\n\r\nThis patch uses the GCC compiler search suffixes to actually locate the correct filenames for the installed compilers, allowing the Spack-generated module file to have useful definitions of CC, CXX, etc.\r\n\r\nIt also allows for the possibility that the user's external installation of GCC is compiled without Fortran support, in which case the `FC` environment variables are not defined.\r\n\r\n@tmdelellis",
+    "performed_via_github_app": null
+}

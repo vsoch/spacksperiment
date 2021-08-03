@@ -1,0 +1,101 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9740",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9740/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9740/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9740/events",
+    "html_url": "https://github.com/spack/spack/issues/9740",
+    "id": 377853951,
+    "node_id": "MDU6SXNzdWUzNzc4NTM5NTE=",
+    "number": 9740,
+    "title": "Variants might be conditional on the version of the package",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 574967592,
+            "node_id": "MDU6TGFiZWw1NzQ5Njc1OTI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/directives",
+            "name": "directives",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908756,
+            "node_id": "MDU6TGFiZWw3MzkwODc1Ng==",
+            "url": "https://api.github.com/repos/spack/spack/labels/feature",
+            "name": "feature",
+            "color": "84b6eb",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-11-06T13:47:25Z",
+    "updated_at": "2021-02-11T10:04:20Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "body": "As a packager I want the possibility to attach variants to a spec depending on its version so that I can model in a more natural way the evolution of the features of a package over time.\r\n\r\n### Rationale\r\n\r\nMany packages evolve during time and they add or remove features as they see fit. As we support more and more versions of the same package we might be faced with the problem of having either to expose just the \"lowest common denominator\" (i.e. only the features supported by *all* the versions) or to explicitly manage conflicts among variants and package versions. A prime example of this is `boost`, for which we have an issue open since a couple of years (see #1486). If variants could depend on the package version this issue would be solved neatly.\r\n\r\n### Description\r\n\r\nThe proposal here is to extend the allowed syntax for the variant directive to allow for a version range to be specified:\r\n```python\r\nclass Boost(Package):\r\n    ...\r\n    variant('atomic', description='...', applies_to='@1.53:')\r\n```\r\nThe directive above means that the variant `atomic` exists for the package starting at version 1.53. Any command that refers to it for a version that does not satisfy the constraint should fail with an error:\r\n```console\r\n$ spack spec boost@1.52.0+atomic\r\nInput spec\r\n--------------------------------\r\nboost@1.52.0+atomic\r\n\r\nConcretized\r\n--------------------------------\r\n==> Error: Package boost has no variant 'atomic' at version 1.52.0 [the variant starts at 1.53.0]\r\n```\r\nThis should also affect the concretizer in the other way around (if we ask for `boost+atomic` we have an implicit constraint on `boost@1.53.0:`). Probably also `spack info` should be updated to match the new feature:\r\n```console\r\n$ spack info boost\r\n...\r\nVariants:\r\n    Name [Default]       Allowed values      Description                    Range of validity\r\n\r\n\r\n    atomic [on]          True, False         Compile with atomic library    @1.53.0:\r\n    chrono [on]          True, False         Compile with chrono library\r\n...\r\n```",
+    "performed_via_github_app": null
+}

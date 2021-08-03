@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10046",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10046/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10046/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10046/events",
+    "html_url": "https://github.com/spack/spack/pull/10046",
+    "id": 388428442,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM2Njk2NjA5",
+    "number": 10046,
+    "title": "gcc: Add patch to build GCC with glibc 2.28 and later",
+    "user": {
+        "login": "jameshclrk",
+        "id": 15854165,
+        "node_id": "MDQ6VXNlcjE1ODU0MTY1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15854165?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jameshclrk",
+        "html_url": "https://github.com/jameshclrk",
+        "followers_url": "https://api.github.com/users/jameshclrk/followers",
+        "following_url": "https://api.github.com/users/jameshclrk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jameshclrk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jameshclrk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jameshclrk/subscriptions",
+        "organizations_url": "https://api.github.com/users/jameshclrk/orgs",
+        "repos_url": "https://api.github.com/users/jameshclrk/repos",
+        "events_url": "https://api.github.com/users/jameshclrk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jameshclrk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 616911200,
+            "node_id": "MDU6TGFiZWw2MTY5MTEyMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/gcc",
+            "name": "gcc",
+            "color": "0052cc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-12-06T22:39:06Z",
+    "updated_at": "2018-12-13T13:25:06Z",
+    "closed_at": "2018-12-08T02:06:08Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10046",
+        "html_url": "https://github.com/spack/spack/pull/10046",
+        "diff_url": "https://github.com/spack/spack/pull/10046.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10046.patch"
+    },
+    "body": "Fixes #10035",
+    "performed_via_github_app": null
+}

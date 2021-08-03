@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9704",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9704/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9704/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9704/events",
+    "html_url": "https://github.com/spack/spack/pull/9704",
+    "id": 376521151,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI3NzIwNjI0",
+    "number": 9704,
+    "title": "Arm Compiler",
+    "user": {
+        "login": "srinathv",
+        "id": 585481,
+        "node_id": "MDQ6VXNlcjU4NTQ4MQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/585481?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/srinathv",
+        "html_url": "https://github.com/srinathv",
+        "followers_url": "https://api.github.com/users/srinathv/followers",
+        "following_url": "https://api.github.com/users/srinathv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/srinathv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/srinathv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/srinathv/subscriptions",
+        "organizations_url": "https://api.github.com/users/srinathv/orgs",
+        "repos_url": "https://api.github.com/users/srinathv/repos",
+        "events_url": "https://api.github.com/users/srinathv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/srinathv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-11-01T18:47:56Z",
+    "updated_at": "2018-11-02T19:54:41Z",
+    "closed_at": "2018-11-02T19:53:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9704",
+        "html_url": "https://github.com/spack/spack/pull/9704",
+        "diff_url": "https://github.com/spack/spack/pull/9704.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9704.patch"
+    },
+    "body": "This new arm.py compiler file identifies the arm hpc compiler to be used on aarch64.  Followup pull requests will exercise autodetection for arm hpc compilers on aarch64 as is done for gcc. \r\nThe main author of this file is Nick Forrington <Nick.Forrington@arm.com> and minor edits and legalese settlement by Srinath Vadlamani <srinath.vadlamani@arm.com>.",
+    "performed_via_github_app": null
+}

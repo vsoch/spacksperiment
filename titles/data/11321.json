@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11321",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11321/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11321/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11321/events",
+    "html_url": "https://github.com/spack/spack/pull/11321",
+    "id": 438452844,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc0NDgwNDU1",
+    "number": 11321,
+    "title": "fix error when adding package to env in container",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-04-29T18:41:56Z",
+    "updated_at": "2019-05-02T16:04:22Z",
+    "closed_at": "2019-05-02T16:04:22Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11321",
+        "html_url": "https://github.com/spack/spack/pull/11321",
+        "diff_url": "https://github.com/spack/spack/pull/11321.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11321.patch"
+    },
+    "body": "When trying to use a spack environment in a singularity container, I came across the following:\r\n\r\n```\r\n+ spack -e canu add canu@1.8\r\nTraceback (most recent call last):\r\n  File \"/opt/spack/bin/spack\", line 48, in <module>\r\n    sys.exit(spack.main.main())\r\n  File \"/opt/spack/lib/spack/spack/main.py\", line 633, in main\r\n    ev.activate(env, args.use_env_repo)\r\n  File \"/opt/spack/lib/spack/spack/environment.py\", line 128, in activate\r\n    if 'color' in os.environ['TERM'] and prompt:\r\n  File \"/usr/lib64/python2.7/UserDict.py\", line 23, in __getitem__\r\n    raise KeyError(key)\r\nKeyError: 'TERM'\r\nABORT: Aborting with RETVAL=255\r\n```\r\n\r\nThis patch corrects the issue",
+    "performed_via_github_app": null
+}

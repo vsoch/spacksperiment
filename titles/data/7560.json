@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7560",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7560/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7560/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7560/events",
+    "html_url": "https://github.com/spack/spack/pull/7560",
+    "id": 307746242,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc2ODU2NzQ3",
+    "number": 7560,
+    "title": "Package/geopm",
+    "user": {
+        "login": "maiterth",
+        "id": 1112113,
+        "node_id": "MDQ6VXNlcjExMTIxMTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1112113?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maiterth",
+        "html_url": "https://github.com/maiterth",
+        "followers_url": "https://api.github.com/users/maiterth/followers",
+        "following_url": "https://api.github.com/users/maiterth/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maiterth/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maiterth/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maiterth/subscriptions",
+        "organizations_url": "https://api.github.com/users/maiterth/orgs",
+        "repos_url": "https://api.github.com/users/maiterth/repos",
+        "events_url": "https://api.github.com/users/maiterth/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maiterth/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-22T17:38:41Z",
+    "updated_at": "2018-04-17T14:39:06Z",
+    "closed_at": "2018-04-17T12:51:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7560",
+        "html_url": "https://github.com/spack/spack/pull/7560",
+        "diff_url": "https://github.com/spack/spack/pull/7560.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7560.patch"
+    },
+    "body": "Pull request for GEOPM.\r\nThis includes package py-natsort since it is a run dependency.\r\n(Only built when running 'spack install geopm +python')",
+    "performed_via_github_app": null
+}

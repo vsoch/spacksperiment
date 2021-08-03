@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11221",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11221/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11221/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11221/events",
+    "html_url": "https://github.com/spack/spack/pull/11221",
+    "id": 434839276,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjcxNzQzMjMx",
+    "number": 11221,
+    "title": "Add Open MPI v3.0.4",
+    "user": {
+        "login": "floquet",
+        "id": 13126143,
+        "node_id": "MDQ6VXNlcjEzMTI2MTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13126143?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/floquet",
+        "html_url": "https://github.com/floquet",
+        "followers_url": "https://api.github.com/users/floquet/followers",
+        "following_url": "https://api.github.com/users/floquet/following{/other_user}",
+        "gists_url": "https://api.github.com/users/floquet/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/floquet/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/floquet/subscriptions",
+        "organizations_url": "https://api.github.com/users/floquet/orgs",
+        "repos_url": "https://api.github.com/users/floquet/repos",
+        "events_url": "https://api.github.com/users/floquet/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/floquet/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-04-18T15:49:43Z",
+    "updated_at": "2019-04-19T02:02:41Z",
+    "closed_at": "2019-04-18T17:33:26Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11221",
+        "html_url": "https://github.com/spack/spack/pull/11221",
+        "diff_url": "https://github.com/spack/spack/pull/11221.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11221.patch"
+    },
+    "body": "tarball posted 2019-04-15\r\nhttps://www.open-mpi.org/software/ompi/v3.0/\r\n\r\n```\r\ndantopa@cn209:openmpi-3.0.4-5ienfvwpcxky3nz5jt3rygxzxzltkwm4 $ cd lib/\r\n\r\ndantopa@cn209:lib $ ls -alh\r\ntotal 27M\r\n...\r\nlrwxrwxrwx 1 dantopa dantopa   16 Apr 17 10:01 libmpi.so -> libmpi.so.40.0.5\r\n```\r\n\r\n## confirmation builds Darwin (LANL): ##\r\n\r\n### x86_64 ###\r\n```\r\n-- linux-centos7-x86_64 / gcc@4.8.5 -----------------------------\r\n5ienfvw    openmpi@3.0.4%gcc\r\nbkkhvej        ^hwloc@1.11.11%gcc\r\n5chyfxo            ^libpciaccess@0.13.5%gcc\r\nbcnjbc3            ^libxml2@2.9.8%gcc\r\ntt2hkol            ^numactl@2.0.12%gcc\r\n64vg6e4        ^zlib@1.2.11%gcc\r\n```\r\n\r\n## ARM ##\r\n-- linux-rhel7-aarch64 / gcc@4.8.5 ------------------------------\r\n```\r\ncq2y6b3    openmpi@3.0.4%gcc\r\n7gqvelc        ^hwloc@1.11.11%gcc\r\n6a4he35            ^libpciaccess@0.13.5%gcc\r\n6a5uzd6            ^libxml2@2.9.8%gcc\r\nm5neuus            ^numactl@2.0.12%gcc\r\n67s2oqn        ^zlib@1.2.11%gcc\r\n```\r\n\r\n## Power9 ##\r\n-- linux-rhel7-ppc64le / gcc@4.8.5 ------------------------------\r\n```\r\notirvfn    openmpi@3.0.4%gcc\r\nr6cylpu        ^hwloc@1.11.11%gcc\r\nuzm3xdv            ^libpciaccess@0.13.5%gcc\r\ntrik6hj            ^libxml2@2.9.8%gcc\r\npmgndwh            ^numactl@2.0.12%gcc\r\n4v3ticy        ^zlib@1.2.11%gcc\r\n```\r\n\r\n2019-04-18\r\n\r\nSigned-off-by: Daniel Topa <dantopa@lanl.gov>",
+    "performed_via_github_app": null
+}

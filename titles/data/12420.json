@@ -1,0 +1,89 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12420",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12420/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12420/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12420/events",
+    "html_url": "https://github.com/spack/spack/pull/12420",
+    "id": 480835892,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA3NDU1NTI2",
+    "number": 12420,
+    "title": "Overhaul PyTorch package",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-14T18:54:49Z",
+    "updated_at": "2019-08-15T22:54:13Z",
+    "closed_at": "2019-08-15T22:54:09Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12420",
+        "html_url": "https://github.com/spack/spack/pull/12420",
+        "diff_url": "https://github.com/spack/spack/pull/12420.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12420.patch"
+    },
+    "body": "Made the following changes:\r\n\r\n- [x] Add PyTorch 1.2.0 and `master`\r\n- [x] Add additional variants, dependencies, and conflicts\r\n- [x] Fix environment variables that changed from `NO_*` to `USE_*`\r\n- [x] Force installation to use particular BLAS library\r\n- [x] Add unit tests\r\n\r\nI was able to successfully build PyTorch 1.2.0 on macOS 10.14.6 with Clang 10.0.1 with no optional variants enabled. Build worked with OpenBLAS but not with MKL. Still needs a bit of testing, but is probably safe to merge.",
+    "performed_via_github_app": null
+}

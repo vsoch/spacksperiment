@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9021",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9021/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9021/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9021/events",
+    "html_url": "https://github.com/spack/spack/pull/9021",
+    "id": 351869610,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA5MzQwNDM2",
+    "number": 9021,
+    "title": "Open MPI: add v2.1.5",
+    "user": {
+        "login": "floquet",
+        "id": 13126143,
+        "node_id": "MDQ6VXNlcjEzMTI2MTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13126143?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/floquet",
+        "html_url": "https://github.com/floquet",
+        "followers_url": "https://api.github.com/users/floquet/followers",
+        "following_url": "https://api.github.com/users/floquet/following{/other_user}",
+        "gists_url": "https://api.github.com/users/floquet/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/floquet/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/floquet/subscriptions",
+        "organizations_url": "https://api.github.com/users/floquet/orgs",
+        "repos_url": "https://api.github.com/users/floquet/repos",
+        "events_url": "https://api.github.com/users/floquet/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/floquet/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-19T03:10:13Z",
+    "updated_at": "2018-08-22T23:03:08Z",
+    "closed_at": "2018-08-19T03:44:15Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9021",
+        "html_url": "https://github.com/spack/spack/pull/9021",
+        "diff_url": "https://github.com/spack/spack/pull/9021.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9021.patch"
+    },
+    "body": "Final fix for v2.1 (hopefully)\r\nTest build on LANL CCSCS4, Desktop\r\n\r\nSigned-off-by: Daniel Topa <dantopa@lanl.gov>\r\n\r\n## Verification of libmpi.so\r\ndantopa@ccscs4.lanl.gov:spack.log.in.ompi $ cd $(spack location -i openmpi/lrl77yt)\r\ndantopa@ccscs4.lanl.gov:openmpi-**2.1.5**-lrl77ytyucpcld67c6g2bsl7zzolfdyv $ cd lib\r\ndantopa@ccscs4.lanl.gov:lib $ ls -alh\r\ntotal 20M\r\ndrwxr-x--- 4 dantopa dantopa 4.0K Aug 18 14:08 .\r\ndrwxr-x--- 8 dantopa dantopa  103 Aug 18 14:07 ..\r\n. . .\r\nlrwxrwxrwx 1 dantopa dantopa   17 Aug 18 14:08 libmpi.so.20 -> l**ibmpi.so.20.10.3**",
+    "performed_via_github_app": null
+}

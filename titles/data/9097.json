@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9097",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9097/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9097/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9097/events",
+    "html_url": "https://github.com/spack/spack/pull/9097",
+    "id": 353882297,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwODEzOTUx",
+    "number": 9097,
+    "title": "commands: add `spack url stats` command",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 994582045,
+            "node_id": "MDU6TGFiZWw5OTQ1ODIwNDU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/utilities",
+            "name": "utilities",
+            "color": "73e251",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2018-08-24T18:22:06Z",
+    "updated_at": "2018-09-03T04:49:29Z",
+    "closed_at": "2018-08-25T17:20:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9097",
+        "html_url": "https://github.com/spack/spack/pull/9097",
+        "diff_url": "https://github.com/spack/spack/pull/9097.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9097.patch"
+    },
+    "body": "This command is intended to satisfy OCD people like me and @adamjstewart, and to help us track how Spack packages are fetched.  It prints out stats about all package versions, like so:\r\n\r\n```\r\n$ spack url stats\r\n==> 6070 total versions for 2827 packages:\r\n------------------------------------\r\nurl                    5411    89.1%\r\n  schemes\r\n    https              3822    70.6%\r\n    http               1527    28.2%\r\n    ftp                  27     0.5%\r\n    file                 35     0.6%\r\n  checksums\r\n    sha512                6     0.1%\r\n    sha256              163     3.0%\r\n    sha1                 81     1.5%\r\n    md5                5161    95.4%\r\n------------------------------------\r\nsvn                       3     0.0%\r\n------------------------------------\r\nhg                        5     0.1%\r\n------------------------------------\r\ngo                        1     0.0%\r\n------------------------------------\r\ngit                     650    10.7%\r\n  security\r\n    no commit           384    59.1%\r\n    commit              266    40.9%\r\n------------------------------------\r\n```",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8888",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8888/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8888/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8888/events",
+    "html_url": "https://github.com/spack/spack/pull/8888",
+    "id": 347663632,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA2MjE4OTA4",
+    "number": 8888,
+    "title": "Revert \"cc: package search paths come before dependency paths\"",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446645732,
+            "node_id": "MDU6TGFiZWw0NDY2NDU3MzI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-environment",
+            "name": "build-environment",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446615268,
+            "node_id": "MDU6TGFiZWw0NDY2MTUyNjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/compilers",
+            "name": "compilers",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-08-05T02:39:03Z",
+    "updated_at": "2018-09-03T04:49:37Z",
+    "closed_at": "2018-08-05T03:31:56Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8888",
+        "html_url": "https://github.com/spack/spack/pull/8888",
+        "diff_url": "https://github.com/spack/spack/pull/8888.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8888.patch"
+    },
+    "body": "Fixes #8882.\r\nFixes #8887.\r\n\r\nReverts spack/spack#4692 while @becker33 and I work on a fix.",
+    "performed_via_github_app": null
+}

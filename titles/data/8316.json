@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8316",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8316/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8316/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8316/events",
+    "html_url": "https://github.com/spack/spack/pull/8316",
+    "id": 327742502,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkxNDYxODAz",
+    "number": 8316,
+    "title": "add 2.17.1 for git",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-05-30T13:55:32Z",
+    "updated_at": "2018-06-26T15:46:00Z",
+    "closed_at": "2018-06-03T01:28:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8316",
+        "html_url": "https://github.com/spack/spack/pull/8316",
+        "diff_url": "https://github.com/spack/spack/pull/8316.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8316.patch"
+    },
+    "body": "https://www.phoronix.com/scan.php?page=news_item&px=Git-2018-Security-CVE-2018\r\n\r\nwe should probably add the other updates too, but I had a hard time getting the correct checksums. `git` itself advises `sha256` sums, but these are not consistent with what I'm getting when I manually checksum `2.17.1` https://mirrors.edge.kernel.org/pub/software/scm/git/sha256sums.asc\r\n\r\nI'll probably get back to this at the end of the week",
+    "performed_via_github_app": null
+}

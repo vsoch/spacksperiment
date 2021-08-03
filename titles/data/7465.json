@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7465",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7465/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7465/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7465/events",
+    "html_url": "https://github.com/spack/spack/pull/7465",
+    "id": 304527138,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc0NDg0ODgx",
+    "number": 7465,
+    "title": "pandaseq: needs bzip and libtool as link",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-12T20:26:27Z",
+    "updated_at": "2018-03-21T21:52:47Z",
+    "closed_at": "2018-03-21T21:52:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7465",
+        "html_url": "https://github.com/spack/spack/pull/7465",
+        "diff_url": "https://github.com/spack/spack/pull/7465.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7465.patch"
+    },
+    "body": "found more dependencies when trying to install in a clean container\r\nshould be the same as #7031 - will see if CI passes on this one",
+    "performed_via_github_app": null
+}

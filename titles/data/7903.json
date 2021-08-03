@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7903",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7903/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7903/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7903/events",
+    "html_url": "https://github.com/spack/spack/pull/7903",
+    "id": 317727294,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg0MTEyMDE4",
+    "number": 7903,
+    "title": "mfem: add valid range of hypre version numbers",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-04-25T17:41:39Z",
+    "updated_at": "2018-04-26T13:43:21Z",
+    "closed_at": "2018-04-26T13:43:21Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7903",
+        "html_url": "https://github.com/spack/spack/pull/7903",
+        "diff_url": "https://github.com/spack/spack/pull/7903.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7903.patch"
+    },
+    "body": "This commit fixes #7900.\r\n\r\nIn short: in the absence of constraints to the contrary, spack will\r\ndownload the preferred version of a package, which is usually the most\r\nrecent non-develop version. On a clean spack installation without\r\nhypre installed, `spack install mfem` will download hypre 2.14.0,\r\nwhich is API-incompatible with mfem 3.3.2 (and earlier versions of\r\nmfem), so spack will throw compiler errors re: the API mismatch.\r\n\r\nThis commit fixes that error by restricting mfem release versions\r\n3.3.2 and earlier to hypre version 2.10.0 to 2.13.999 (only 2.13.0\r\ncurrently exists, but if it has a non-2.14.x maintenance release,\r\nthese versions of hypre should also be permitted).",
+    "performed_via_github_app": null
+}

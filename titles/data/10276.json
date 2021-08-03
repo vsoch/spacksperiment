@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10276",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10276/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10276/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10276/events",
+    "html_url": "https://github.com/spack/spack/pull/10276",
+    "id": 396729266,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQyODQyMDc0",
+    "number": 10276,
+    "title": "Infer abstract spec for file-based installs",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-08T02:48:29Z",
+    "updated_at": "2019-01-08T04:40:36Z",
+    "closed_at": "2019-01-08T04:40:35Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10276",
+        "html_url": "https://github.com/spack/spack/pull/10276",
+        "diff_url": "https://github.com/spack/spack/pull/10276.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10276.patch"
+    },
+    "body": "Fixes https://github.com/spack/spack/issues/10141\r\n\r\nAs noted in https://github.com/spack/spack/issues/10141, when installing a spec that was stored in a yaml file using the `spack install -f` option, the install was no longer taking place. This has been broken since https://github.com/spack/spack/commit/87aec4134daba7dee43c958151b45ca72c02e617, which overlooked that specs read from files didn't have abstract specs.\r\n\r\nThis treats the spec initially read from the file as the abstract spec. Note if a user concretizes and writes a spec using logic like:\r\n\r\n```\r\n>>> s = Spec('openmpi')\r\n>>> s.concretize()\r\n>>> open('openmpi.yaml', 'w').write(s.to_yaml(all_deps=True))\r\n```\r\n\r\n(i.e. in the `spack-python` shell)\r\n\r\nThat the spec initially read from this file will be the concrete spec (e.g. it will not simply be `openmpi`).",
+    "performed_via_github_app": null
+}

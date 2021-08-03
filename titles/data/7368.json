@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7368",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7368/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7368/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7368/events",
+    "html_url": "https://github.com/spack/spack/pull/7368",
+    "id": 301626660,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTcyNDAzODg5",
+    "number": 7368,
+    "title": "libSplash 1.7.0: Root Fix",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-03-02T01:58:39Z",
+    "updated_at": "2018-03-06T15:41:06Z",
+    "closed_at": "2018-03-06T08:38:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7368",
+        "html_url": "https://github.com/spack/spack/pull/7368",
+        "diff_url": "https://github.com/spack/spack/pull/7368.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7368.patch"
+    },
+    "body": "Fix installs as \"root\" user for the last libSplash release.\r\n\r\nMissing quoting of string compares resulted in a CMake error when run as root (e.g. in a Docker build).\r\n\r\nReference: https://github.com/ComputationalRadiationPhysics/libSplash/pull/277",
+    "performed_via_github_app": null
+}

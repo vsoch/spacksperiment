@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8834",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8834/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8834/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8834/events",
+    "html_url": "https://github.com/spack/spack/pull/8834",
+    "id": 345872914,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0ODg2NTYx",
+    "number": 8834,
+    "title": "libmonitor: update to version 2018.07.18 and add variant to configure",
+    "user": {
+        "login": "mwkrentel",
+        "id": 3969036,
+        "node_id": "MDQ6VXNlcjM5NjkwMzY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3969036?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mwkrentel",
+        "html_url": "https://github.com/mwkrentel",
+        "followers_url": "https://api.github.com/users/mwkrentel/followers",
+        "following_url": "https://api.github.com/users/mwkrentel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mwkrentel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mwkrentel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mwkrentel/subscriptions",
+        "organizations_url": "https://api.github.com/users/mwkrentel/orgs",
+        "repos_url": "https://api.github.com/users/mwkrentel/repos",
+        "events_url": "https://api.github.com/users/mwkrentel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mwkrentel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 13,
+    "created_at": "2018-07-30T18:13:17Z",
+    "updated_at": "2018-08-03T18:00:13Z",
+    "closed_at": "2018-08-03T18:00:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8834",
+        "html_url": "https://github.com/spack/spack/pull/8834",
+        "diff_url": "https://github.com/spack/spack/pull/8834.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8834.patch"
+    },
+    "body": "for hpctoolkit.\r\n\r\nI have one question.  This PR requires a 1-line change to\r\ncbtf-argonavis and cbtf-krell to specify the old version (no longer\r\nthe default or only version).\r\n\r\nShould I add that to this PR or create a separate PR?\r\n\r\nping @scheibelp \r\n\r\nping @jgalarowicz since this affects Open Speedshop.\r\nBut the change will be invisible with the two 1-line changes above.\r\n",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10322",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10322/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10322/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10322/events",
+    "html_url": "https://github.com/spack/spack/pull/10322",
+    "id": 398541145,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQ0MjEyMjQx",
+    "number": 10322,
+    "title": "gdal: Add variant for GRIB driver",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-12T10:14:59Z",
+    "updated_at": "2019-01-12T16:33:18Z",
+    "closed_at": "2019-01-12T16:33:18Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10322",
+        "html_url": "https://github.com/spack/spack/pull/10322",
+        "diff_url": "https://github.com/spack/spack/pull/10322.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10322.patch"
+    },
+    "body": "The GRIB driver has no external dependencies, so can be a simple variant like most of the others. ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10232",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10232/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10232/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10232/events",
+    "html_url": "https://github.com/spack/spack/pull/10232",
+    "id": 395056227,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxNjE3Mzc2",
+    "number": 10232,
+    "title": "bowtie: new versions and %gcc@8.0.0: fix",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-01-01T05:08:50Z",
+    "updated_at": "2019-01-07T17:46:36Z",
+    "closed_at": "2019-01-07T17:31:00Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10232",
+        "html_url": "https://github.com/spack/spack/pull/10232",
+        "diff_url": "https://github.com/spack/spack/pull/10232.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10232.patch"
+    },
+    "body": "Bowtie development shifted from Sourceforge to GitHub.  This updates the Spack package to follow.\r\n\r\nThis commit adds several versions from GitHub, using the archive tarballs.  Note that the tag and URL for 1.2.2 tarball is actually 'v1.2.2_p1'...  Sigh.\r\n\r\nVersions 1.2.0 and newer come from GitHub (I'm unsure if the sourceforge 1.2 and github 1.2.0 are identical).\r\n\r\nIt leaves the old 1.2 release download info in place.\r\n\r\nThe PR includes a fix from https://github.com/BenLangmead/bowtie/issues/87 that enables %gcc@8.0.0: \r\n\r\nSadly, v1.2.2 has trouble with \"newer\" gcc's, so the PR it only adds v1.2.2 for %gcc@6.0.0:.  I'm not sure what gcc's work and/or don't.  Others should feel free to tighten this.  I know that:\r\n\r\n- 1.2 -> 1.2.2 work with %gcc@5.5.0;\r\n- 1.2 -> 1.2.1.1 work with %gcc@8.2.0; and\r\n- 1.2.2 fails with %gcc@8.2.0",
+    "performed_via_github_app": null
+}

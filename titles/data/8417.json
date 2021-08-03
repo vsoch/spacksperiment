@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8417",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8417/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8417/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8417/events",
+    "html_url": "https://github.com/spack/spack/pull/8417",
+    "id": 330174511,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkzMjQ1NjY5",
+    "number": 8417,
+    "title": "fix qt@5.8: build on systems without wayland",
+    "user": {
+        "login": "healther",
+        "id": 4048699,
+        "node_id": "MDQ6VXNlcjQwNDg2OTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4048699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/healther",
+        "html_url": "https://github.com/healther",
+        "followers_url": "https://api.github.com/users/healther/followers",
+        "following_url": "https://api.github.com/users/healther/following{/other_user}",
+        "gists_url": "https://api.github.com/users/healther/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/healther/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/healther/subscriptions",
+        "organizations_url": "https://api.github.com/users/healther/orgs",
+        "repos_url": "https://api.github.com/users/healther/repos",
+        "events_url": "https://api.github.com/users/healther/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/healther/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 470680435,
+            "node_id": "MDU6TGFiZWw0NzA2ODA0MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/X11",
+            "name": "X11",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-07T08:46:59Z",
+    "updated_at": "2018-06-07T16:41:11Z",
+    "closed_at": "2018-06-07T15:50:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8417",
+        "html_url": "https://github.com/spack/spack/pull/8417",
+        "diff_url": "https://github.com/spack/spack/pull/8417.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8417.patch"
+    },
+    "body": "I finally managed to track down the build failure of newer qt's on our system. This PR adds the `-skip wayland` to the qt build for newer qt's. Wayland seems to be a replacement for `x` but wasn't shipped with our (fairly minimal) Ubuntu so the qt-build fails a couple of minutes in.\r\n\r\nThis is a fairly brutal solution, but I prefer it over adding a variant would only work on some systems. If someone needs it I'll add the links to the qtwayland documentation \r\n\r\nhttps://wiki.qt.io/QtWayland\r\nhttps://wayland.freedesktop.org/ubuntu16.04.html",
+    "performed_via_github_app": null
+}

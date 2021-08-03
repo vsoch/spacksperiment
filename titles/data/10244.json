@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10244",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10244/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10244/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10244/events",
+    "html_url": "https://github.com/spack/spack/pull/10244",
+    "id": 395481594,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxOTI0MDY4",
+    "number": 10244,
+    "title": "coverage: add code climate integration",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 527266935,
+            "node_id": "MDU6TGFiZWw1MjcyNjY5MzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/coverage",
+            "name": "coverage",
+            "color": "e99695",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-01-03T07:44:26Z",
+    "updated_at": "2019-06-30T00:11:19Z",
+    "closed_at": "2019-06-30T00:04:25Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10244",
+        "html_url": "https://github.com/spack/spack/pull/10244",
+        "diff_url": "https://github.com/spack/spack/pull/10244.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10244.patch"
+    },
+    "body": "We've been having some recent issues with Codecov:\r\n1. Codecov's nice [browser extension](https://github.com/codecov/browser-extension) is deprecated in favor of a [new one using sourcegraph](https://github.com/codecov/sourcegraph-codecov), but the new one doesn't display diffs for PRs (!).  AFAIK this is our most common use case, so it's pretty disappointing.\r\n2. The codecov website has taken to hanging frequently when fetching coverage results for pull requests.\r\n\r\nGiven this stuff, I'm not sure how we can effectively review PRs for test coverage using Codecov.  (1) is supposed to be forthcoming (see codecov/sourcegraph-codecov#10), and maybe (2) will get fixed, but in the meantime, I'm trying out Code Climate to see if it's a good replacement.",
+    "performed_via_github_app": null
+}

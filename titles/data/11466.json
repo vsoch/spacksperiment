@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11466",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11466/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11466/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11466/events",
+    "html_url": "https://github.com/spack/spack/pull/11466",
+    "id": 444338726,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc5MDE3MjM5",
+    "number": 11466,
+    "title": "svn: use `svn info --xml` instead of `svn info` to get revisions",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430708,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA3MDg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/subversion",
+            "name": "subversion",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-05-15T09:44:06Z",
+    "updated_at": "2019-05-28T03:16:37Z",
+    "closed_at": "2019-05-15T11:37:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11466",
+        "html_url": "https://github.com/spack/spack/pull/11466",
+        "diff_url": "https://github.com/spack/spack/pull/11466.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11466.patch"
+    },
+    "body": "- `svn info` prints different results depending on the system locale\r\n- In particular, Japanese output doesn't contain \"Revision:\" -- it contains\u300c\u30ec\u30d3\u30b8\u30e7\u30f3\uff1a\u300d\r\n- Change Spack code to use XML output instead of using the human-readable output",
+    "performed_via_github_app": null
+}

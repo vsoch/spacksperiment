@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10107",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10107/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10107/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10107/events",
+    "html_url": "https://github.com/spack/spack/pull/10107",
+    "id": 391220539,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM4ODA2OTM0",
+    "number": 10107,
+    "title": "env: all commands that disambiguate specs should be env-aware",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 537065486,
+            "node_id": "MDU6TGFiZWw1MzcwNjU0ODY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/environments",
+            "name": "environments",
+            "color": "d4c5f9",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-12-14T18:35:13Z",
+    "updated_at": "2018-12-24T22:29:39Z",
+    "closed_at": "2018-12-20T01:49:52Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10107",
+        "html_url": "https://github.com/spack/spack/pull/10107",
+        "diff_url": "https://github.com/spack/spack/pull/10107.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10107.patch"
+    },
+    "body": "- Environment support for arguments of some commands were missed in the rollout of spack environments\r\n- For example, `spack location -i` complains about ambiguous specs, even when it's caused by specs outside the current environment\r\n\r\n- [x] make all commands that need to disambiguate specs restrict the disambiguation to installed packages in the active environment, as users would expect",
+    "performed_via_github_app": null
+}

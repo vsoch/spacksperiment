@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7828",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7828/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7828/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7828/events",
+    "html_url": "https://github.com/spack/spack/pull/7828",
+    "id": 315964407,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgyODQxNTY1",
+    "number": 7828,
+    "title": "Add Trinity package",
+    "user": {
+        "login": "simonflood",
+        "id": 8300801,
+        "node_id": "MDQ6VXNlcjgzMDA4MDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8300801?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simonflood",
+        "html_url": "https://github.com/simonflood",
+        "followers_url": "https://api.github.com/users/simonflood/followers",
+        "following_url": "https://api.github.com/users/simonflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simonflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simonflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simonflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/simonflood/orgs",
+        "repos_url": "https://api.github.com/users/simonflood/repos",
+        "events_url": "https://api.github.com/users/simonflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simonflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-04-19T17:08:58Z",
+    "updated_at": "2018-04-26T16:07:23Z",
+    "closed_at": "2018-04-26T14:11:59Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7828",
+        "html_url": "https://github.com/spack/spack/pull/7828",
+        "diff_url": "https://github.com/spack/spack/pull/7828.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7828.patch"
+    },
+    "body": "New package to install Trinity - another odd installer (assumes installation to /usr/local/bin and doesn't copy dot files hence deleting them)",
+    "performed_via_github_app": null
+}

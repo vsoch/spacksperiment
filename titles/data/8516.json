@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8516",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8516/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8516/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8516/events",
+    "html_url": "https://github.com/spack/spack/pull/8516",
+    "id": 333797862,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk1OTI1OTc1",
+    "number": 8516,
+    "title": "Trinity plugins",
+    "user": {
+        "login": "baberlevi",
+        "id": 5819098,
+        "node_id": "MDQ6VXNlcjU4MTkwOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5819098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/baberlevi",
+        "html_url": "https://github.com/baberlevi",
+        "followers_url": "https://api.github.com/users/baberlevi/followers",
+        "following_url": "https://api.github.com/users/baberlevi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/baberlevi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/baberlevi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/baberlevi/subscriptions",
+        "organizations_url": "https://api.github.com/users/baberlevi/orgs",
+        "repos_url": "https://api.github.com/users/baberlevi/repos",
+        "events_url": "https://api.github.com/users/baberlevi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/baberlevi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-06-19T18:58:49Z",
+    "updated_at": "2018-07-22T22:17:45Z",
+    "closed_at": "2018-07-22T22:17:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8516",
+        "html_url": "https://github.com/spack/spack/pull/8516",
+        "diff_url": "https://github.com/spack/spack/pull/8516.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8516.patch"
+    },
+    "body": "This ensures the plugins are actually built. One of the plugins is an autotools packages, so added dependencies for that, and it also required the openmp flag to be set.",
+    "performed_via_github_app": null
+}

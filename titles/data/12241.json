@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12241",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12241/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12241/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12241/events",
+    "html_url": "https://github.com/spack/spack/pull/12241",
+    "id": 476196257,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAzODAxMDcy",
+    "number": 12241,
+    "title": "adios2: Fix backwards compatibility version logic for FindMPI",
+    "user": {
+        "login": "chuckatkins",
+        "id": 320135,
+        "node_id": "MDQ6VXNlcjMyMDEzNQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/320135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chuckatkins",
+        "html_url": "https://github.com/chuckatkins",
+        "followers_url": "https://api.github.com/users/chuckatkins/followers",
+        "following_url": "https://api.github.com/users/chuckatkins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chuckatkins/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chuckatkins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chuckatkins/subscriptions",
+        "organizations_url": "https://api.github.com/users/chuckatkins/orgs",
+        "repos_url": "https://api.github.com/users/chuckatkins/repos",
+        "events_url": "https://api.github.com/users/chuckatkins/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chuckatkins/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 508566016,
+            "node_id": "MDU6TGFiZWw1MDg1NjYwMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/cmake",
+            "name": "cmake",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 809934104,
+            "node_id": "MDU6TGFiZWw4MDk5MzQxMDQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/regression",
+            "name": "regression",
+            "color": "e2c071",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-08-02T14:03:43Z",
+    "updated_at": "2019-08-02T19:27:51Z",
+    "closed_at": "2019-08-02T19:27:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12241",
+        "html_url": "https://github.com/spack/spack/pull/12241",
+        "diff_url": "https://github.com/spack/spack/pull/12241.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12241.patch"
+    },
+    "body": "This addresses a specific issue with 3.11.x compatibility\r\n\r\nhttps://github.com/ornladios/ADIOS2/pull/1654",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12166",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12166/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12166/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12166/events",
+    "html_url": "https://github.com/spack/spack/pull/12166",
+    "id": 473764135,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAxODQ1MzE1",
+    "number": 12166,
+    "title": "Prevent conflicts between libuuid and Apple Cocoa Framework on Mac",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-07-28T16:56:50Z",
+    "updated_at": "2019-07-29T02:16:29Z",
+    "closed_at": "2019-07-28T19:58:10Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12166",
+        "html_url": "https://github.com/spack/spack/pull/12166",
+        "diff_url": "https://github.com/spack/spack/pull/12166.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12166.patch"
+    },
+    "body": "Building Python with `+uuid` currently requires the Spack-built `libuuid` package. However, the vanilla `libuuid` is incompatible with Apple's frameworks. This results in build failures in Python 2.7 (since that version of Python uses Carbon, which also includes libuuid), as well as in code that's downstream of Python (such as py-matplotlib, which includes an `osx` backend).\r\n\r\nThe commit message documents the error messages for system/compiler versions:\r\n```\r\n    MacOS version 10.14.5\r\n    Xcode 10.2.1\r\n    Apple LLVM version 10.0.1 (clang-1001.0.46.4)\r\n```\r\n\r\nbut the final error message is always:\r\n```\r\n/usr/include/hfs/hfs_format.h:794:2: error: unknown type name 'uuid_string_t'; did you mean 'io_string_t'?\r\n```\r\nbecause `uuid_string_t` is defined *only* in Apple's `uuid.h` and not in Spack's.",
+    "performed_via_github_app": null
+}

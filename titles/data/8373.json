@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8373",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8373/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8373/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8373/events",
+    "html_url": "https://github.com/spack/spack/pull/8373",
+    "id": 329254531,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkyNTU2ODc1",
+    "number": 8373,
+    "title": "googletest: add a shared variant for all supported versions",
+    "user": {
+        "login": "DarylGrunau",
+        "id": 6332737,
+        "node_id": "MDQ6VXNlcjYzMzI3Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6332737?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DarylGrunau",
+        "html_url": "https://github.com/DarylGrunau",
+        "followers_url": "https://api.github.com/users/DarylGrunau/followers",
+        "following_url": "https://api.github.com/users/DarylGrunau/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DarylGrunau/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DarylGrunau/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DarylGrunau/subscriptions",
+        "organizations_url": "https://api.github.com/users/DarylGrunau/orgs",
+        "repos_url": "https://api.github.com/users/DarylGrunau/repos",
+        "events_url": "https://api.github.com/users/DarylGrunau/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DarylGrunau/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2018-06-04T23:49:21Z",
+    "updated_at": "2018-06-07T17:07:15Z",
+    "closed_at": "2018-06-07T15:34:38Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8373",
+        "html_url": "https://github.com/spack/spack/pull/8373",
+        "diff_url": "https://github.com/spack/spack/pull/8373.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8373.patch"
+    },
+    "body": "This PR adds a shared variant to all given versions of this package which builds/installs DLLs if requested with '+shared'.  The previous default (static libs) is NOT preserved; the new default is to produce shared libs.",
+    "performed_via_github_app": null
+}

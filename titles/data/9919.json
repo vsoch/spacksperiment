@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9919",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9919/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9919/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9919/events",
+    "html_url": "https://github.com/spack/spack/pull/9919",
+    "id": 383379736,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjMyODU5MDMz",
+    "number": 9919,
+    "title": "py-geopandas: New package. ",
+    "user": {
+        "login": "neilflood",
+        "id": 24580585,
+        "node_id": "MDQ6VXNlcjI0NTgwNTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24580585?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neilflood",
+        "html_url": "https://github.com/neilflood",
+        "followers_url": "https://api.github.com/users/neilflood/followers",
+        "following_url": "https://api.github.com/users/neilflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neilflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neilflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neilflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/neilflood/orgs",
+        "repos_url": "https://api.github.com/users/neilflood/repos",
+        "events_url": "https://api.github.com/users/neilflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neilflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-11-22T04:49:44Z",
+    "updated_at": "2018-11-24T21:44:45Z",
+    "closed_at": "2018-11-24T21:44:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9919",
+        "html_url": "https://github.com/spack/spack/pull/9919",
+        "diff_url": "https://github.com/spack/spack/pull/9919.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9919.patch"
+    },
+    "body": "Also includes packages for py-descartes, py-fiona, py-click-plugins, py-munch, as these are dependencies, either of py-geopandas or py-fiona. ",
+    "performed_via_github_app": null
+}

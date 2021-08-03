@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9123",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9123/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9123/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9123/events",
+    "html_url": "https://github.com/spack/spack/pull/9123",
+    "id": 354926940,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjExNTc2NDA4",
+    "number": 9123,
+    "title": "openblas: add @0.3.1, patch CMake export bug in @0.3.1:0.3.2",
+    "user": {
+        "login": "goxberry",
+        "id": 321479,
+        "node_id": "MDQ6VXNlcjMyMTQ3OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/321479?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/goxberry",
+        "html_url": "https://github.com/goxberry",
+        "followers_url": "https://api.github.com/users/goxberry/followers",
+        "following_url": "https://api.github.com/users/goxberry/following{/other_user}",
+        "gists_url": "https://api.github.com/users/goxberry/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/goxberry/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/goxberry/subscriptions",
+        "organizations_url": "https://api.github.com/users/goxberry/orgs",
+        "repos_url": "https://api.github.com/users/goxberry/repos",
+        "events_url": "https://api.github.com/users/goxberry/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/goxberry/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446754070,
+            "node_id": "MDU6TGFiZWw0NDY3NTQwNzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/blas-lapack-scalapack",
+            "name": "blas-lapack-scalapack",
+            "color": "4477a8",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-28T22:25:32Z",
+    "updated_at": "2018-09-16T19:12:41Z",
+    "closed_at": "2018-09-04T01:49:46Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9123",
+        "html_url": "https://github.com/spack/spack/pull/9123",
+        "diff_url": "https://github.com/spack/spack/pull/9123.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9123.patch"
+    },
+    "body": "* Adds OpenBLAS version 0.3.1\r\n* Adds a patch for OpenBLAS versions 0.3.1 and 0.3.2 that fixes `find_package(OpenBLAS)` in CMake. See https://github.com/xianyi/OpenBLAS/pull/1703 for the patch. The patch has already landed upstream and will be released with OpenBLAS 0.3.3.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10685",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10685/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10685/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10685/events",
+    "html_url": "https://github.com/spack/spack/pull/10685",
+    "id": 413456112,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjU1NDM2MDg4",
+    "number": 10685,
+    "title": "WIP: cxxstd package",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 501899682,
+            "node_id": "MDU6TGFiZWw1MDE4OTk2ODI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/RFC",
+            "name": "RFC",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-02-22T15:33:57Z",
+    "updated_at": "2019-05-31T20:37:38Z",
+    "closed_at": "2019-02-22T18:35:00Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10685",
+        "html_url": "https://github.com/spack/spack/pull/10685",
+        "diff_url": "https://github.com/spack/spack/pull/10685.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10685.patch"
+    },
+    "body": "This implements an auxiliary package class like CUDAPackage, that adds a variant cxxstd. This can be jointly inherited to add this variant and the function that returns the cxx flags for the std and compiler in the spec. The variant range and default can be overwritten in the inheriting class.\r\n\r\nFor example\r\n\r\nMyTool(Package, CxxstdPackage):\r\n...\r\n    variant('cxxstd', default='17', values=('14','17'))\r\n\r\n    install(self,spec,prefix):\r\n        make('CXXFLAGS=%s' % cxxstd_to_flag())",
+    "performed_via_github_app": null
+}

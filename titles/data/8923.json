@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8923",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8923/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8923/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8923/events",
+    "html_url": "https://github.com/spack/spack/pull/8923",
+    "id": 349118450,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA3MzA5MTAw",
+    "number": 8923,
+    "title": "Remove duplicate declaration of \"graph\" variant in Boost package",
+    "user": {
+        "login": "HadrienG2",
+        "id": 1305080,
+        "node_id": "MDQ6VXNlcjEzMDUwODA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1305080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadrienG2",
+        "html_url": "https://github.com/HadrienG2",
+        "followers_url": "https://api.github.com/users/HadrienG2/followers",
+        "following_url": "https://api.github.com/users/HadrienG2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadrienG2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadrienG2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadrienG2/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadrienG2/orgs",
+        "repos_url": "https://api.github.com/users/HadrienG2/repos",
+        "events_url": "https://api.github.com/users/HadrienG2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadrienG2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-08-09T13:04:11Z",
+    "updated_at": "2018-08-09T15:55:27Z",
+    "closed_at": "2018-08-09T15:29:58Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8923",
+        "html_url": "https://github.com/spack/spack/pull/8923",
+        "diff_url": "https://github.com/spack/spack/pull/8923.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8923.patch"
+    },
+    "body": "The \"graph\" variant is declared twice in the Boost package, with two different defaults. This PR removes the declaration which I identified as being the \"wrong\" one, as it strays apart from the regular pattern of this package.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11627",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11627/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11627/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11627/events",
+    "html_url": "https://github.com/spack/spack/pull/11627",
+    "id": 452262705,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg1MTg4MzY1",
+    "number": 11627,
+    "title": "fftw: change default value of simd variant for other than x86_64",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446623896,
+            "node_id": "MDU6TGFiZWw0NDY2MjM4OTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/platform-support",
+            "name": "platform-support",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-06-05T00:22:12Z",
+    "updated_at": "2019-09-05T18:42:05Z",
+    "closed_at": "2019-09-05T18:42:04Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11627",
+        "html_url": "https://github.com/spack/spack/pull/11627",
+        "diff_url": "https://github.com/spack/spack/pull/11627.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11627.patch"
+    },
+    "body": "Currently, default value of simd variant is dependent to x86_64 architecture.\r\nAnd if we execute `spack install fftw` on other than x86_64, the command is failed.\r\n\r\nThis patch change defaul value to 'default', and the value is determined to configure().",
+    "performed_via_github_app": null
+}

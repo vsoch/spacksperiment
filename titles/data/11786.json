@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11786",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11786/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11786/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11786/events",
+    "html_url": "https://github.com/spack/spack/pull/11786",
+    "id": 458072686,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg5NzUzNzkz",
+    "number": 11786,
+    "title": "Copy --{use,no}-cache from install to bootstrap",
+    "user": {
+        "login": "obreitwi",
+        "id": 123140,
+        "node_id": "MDQ6VXNlcjEyMzE0MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123140?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/obreitwi",
+        "html_url": "https://github.com/obreitwi",
+        "followers_url": "https://api.github.com/users/obreitwi/followers",
+        "following_url": "https://api.github.com/users/obreitwi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/obreitwi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/obreitwi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/obreitwi/subscriptions",
+        "organizations_url": "https://api.github.com/users/obreitwi/orgs",
+        "repos_url": "https://api.github.com/users/obreitwi/repos",
+        "events_url": "https://api.github.com/users/obreitwi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/obreitwi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-06-19T15:12:52Z",
+    "updated_at": "2019-07-15T14:41:59Z",
+    "closed_at": "2019-07-12T23:30:13Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11786",
+        "html_url": "https://github.com/spack/spack/pull/11786",
+        "diff_url": "https://github.com/spack/spack/pull/11786.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11786.patch"
+    },
+    "body": "Straight forward copy-paste to ensure `spack bootstrap` accepts the same `--{use,no}-cache` arguments as `spack install`.",
+    "performed_via_github_app": null
+}

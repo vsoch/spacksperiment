@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7682",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7682/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7682/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7682/events",
+    "html_url": "https://github.com/spack/spack/pull/7682",
+    "id": 311906290,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTc5ODk1Nzk1",
+    "number": 7682,
+    "title": "Improve invalid syntax error message when loading packages",
+    "user": {
+        "login": "davidgiga1993",
+        "id": 3924958,
+        "node_id": "MDQ6VXNlcjM5MjQ5NTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3924958?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davidgiga1993",
+        "html_url": "https://github.com/davidgiga1993",
+        "followers_url": "https://api.github.com/users/davidgiga1993/followers",
+        "following_url": "https://api.github.com/users/davidgiga1993/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davidgiga1993/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davidgiga1993/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davidgiga1993/subscriptions",
+        "organizations_url": "https://api.github.com/users/davidgiga1993/orgs",
+        "repos_url": "https://api.github.com/users/davidgiga1993/repos",
+        "events_url": "https://api.github.com/users/davidgiga1993/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davidgiga1993/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 509628729,
+            "node_id": "MDU6TGFiZWw1MDk2Mjg3Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/error-messages",
+            "name": "error-messages",
+            "color": "f9d0c4",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-04-06T09:23:26Z",
+    "updated_at": "2019-11-18T10:44:53Z",
+    "closed_at": "2019-11-18T10:44:52Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7682",
+        "html_url": "https://github.com/spack/spack/pull/7682",
+        "diff_url": "https://github.com/spack/spack/pull/7682.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7682.patch"
+    },
+    "body": "If a syntax error occurrs no further details are passed to the user.\r\nThis can be annoying in edge case errors like encoding issues.\r\nThe change will fix this issue by passing the actual error message.\r\n\r\n# Example\r\nBefore:\r\n```\r\nError: invalid syntax in /.../package.py, line 56\r\n```\r\n\r\nAfter:\r\n```\r\nError: invalid syntax Non-ASCII character '\\xe2' in file in /.../package.py, line 56\r\n```",
+    "performed_via_github_app": null
+}

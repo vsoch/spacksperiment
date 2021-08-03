@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9805",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9805/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9805/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9805/events",
+    "html_url": "https://github.com/spack/spack/pull/9805",
+    "id": 379565462,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI5OTc5NjE1",
+    "number": 9805,
+    "title": "Fix docker builds",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-11-11T21:31:11Z",
+    "updated_at": "2018-12-20T19:37:38Z",
+    "closed_at": "2018-12-20T19:17:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9805",
+        "html_url": "https://github.com/spack/spack/pull/9805",
+        "diff_url": "https://github.com/spack/spack/pull/9805.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9805.patch"
+    },
+    "body": "Fixes issue from #9658.\r\n\r\nThis PR should not be merged as-is.  This is because I've included an initial [commit](be179569b89b4cae4d352702b82413ac2dbc16ca) that removes a troublesome section of the travis file.  [Here](https://travis-ci.org/opadron/spack/jobs/453687889) is the log of a travis job that ran on the tip of this branch off of my fork.\r\n\r\nThese results show that 1 - the original issue from #9658 is not related to docker, and is a distinct issue that needs to be addressed, and 2 - the changes in this PR, other than the initial commit, are all that should be necessary for the `docker` stage to produce working images.  I haven't tested pushing to dockerhub, but I don't think it will be an issue.",
+    "performed_via_github_app": null
+}

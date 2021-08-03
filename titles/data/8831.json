@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8831",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8831/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8831/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8831/events",
+    "html_url": "https://github.com/spack/spack/pull/8831",
+    "id": 345778398,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0ODE5OTI4",
+    "number": 8831,
+    "title": "Add unzip runtime dependency to lua package",
+    "user": {
+        "login": "hartzell",
+        "id": 312978,
+        "node_id": "MDQ6VXNlcjMxMjk3OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/312978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hartzell",
+        "html_url": "https://github.com/hartzell",
+        "followers_url": "https://api.github.com/users/hartzell/followers",
+        "following_url": "https://api.github.com/users/hartzell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hartzell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hartzell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hartzell/subscriptions",
+        "organizations_url": "https://api.github.com/users/hartzell/orgs",
+        "repos_url": "https://api.github.com/users/hartzell/repos",
+        "events_url": "https://api.github.com/users/hartzell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hartzell/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446620495,
+            "node_id": "MDU6TGFiZWw0NDY2MjA0OTU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/WIP",
+            "name": "WIP",
+            "color": "ededed",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-07-30T14:19:00Z",
+    "updated_at": "2018-08-05T18:26:23Z",
+    "closed_at": "2018-08-05T18:26:23Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8831",
+        "html_url": "https://github.com/spack/spack/pull/8831",
+        "diff_url": "https://github.com/spack/spack/pull/8831.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8831.patch"
+    },
+    "body": "I ended up on an [Ubuntu] system that hadn't had unzip employed\r\nand discovered lua-luaposix requires it (while buildig Lmod).\r\n\r\nCloses #8533",
+    "performed_via_github_app": null
+}

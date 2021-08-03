@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11783",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11783/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11783/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11783/events",
+    "html_url": "https://github.com/spack/spack/pull/11783",
+    "id": 457700369,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg5NDU2NDg2",
+    "number": 11783,
+    "title": "Automatically use Python 3 if available",
+    "user": {
+        "login": "michaelkuhn",
+        "id": 4062614,
+        "node_id": "MDQ6VXNlcjQwNjI2MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4062614?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelkuhn",
+        "html_url": "https://github.com/michaelkuhn",
+        "followers_url": "https://api.github.com/users/michaelkuhn/followers",
+        "following_url": "https://api.github.com/users/michaelkuhn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelkuhn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelkuhn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelkuhn/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelkuhn/orgs",
+        "repos_url": "https://api.github.com/users/michaelkuhn/repos",
+        "events_url": "https://api.github.com/users/michaelkuhn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelkuhn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 574328447,
+            "node_id": "MDU6TGFiZWw1NzQzMjg0NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python3",
+            "name": "python3",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2019-06-18T21:16:51Z",
+    "updated_at": "2019-09-29T16:32:05Z",
+    "closed_at": "2019-09-29T16:32:05Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11783",
+        "html_url": "https://github.com/spack/spack/pull/11783",
+        "diff_url": "https://github.com/spack/spack/pull/11783.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11783.patch"
+    },
+    "body": "As discussed during today's BoF, some people would like Spack to use Python 3 if available. Since we cannot depend on any version of Python being available on all systems, this needs a slightly complex approach: The spack binary is moved to spack-real and replaced by a shell script that checks for available versions of Python (preferring Python 3) and invokes spack-real accordingly.\r\n\r\nThis should also take care of the situation where no python binary is available (as will be on RHEL 8 by default).\r\n\r\nNot sure if this is really the best way to go but I have been meaning to take a stab at this for a while now. (Only tested on Linux.)\r\n@tgamblin @alalazo @becker33 @adamjstewart",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12981",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12981/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12981/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12981/events",
+    "html_url": "https://github.com/spack/spack/pull/12981",
+    "id": 500444230,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzIyOTE0MjQ0",
+    "number": 12981,
+    "title": "superlu-dist package: OpenMP related conflicts.",
+    "user": {
+        "login": "adrienbernede",
+        "id": 51493078,
+        "node_id": "MDQ6VXNlcjUxNDkzMDc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/51493078?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adrienbernede",
+        "html_url": "https://github.com/adrienbernede",
+        "followers_url": "https://api.github.com/users/adrienbernede/followers",
+        "following_url": "https://api.github.com/users/adrienbernede/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adrienbernede/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adrienbernede/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adrienbernede/subscriptions",
+        "organizations_url": "https://api.github.com/users/adrienbernede/orgs",
+        "repos_url": "https://api.github.com/users/adrienbernede/repos",
+        "events_url": "https://api.github.com/users/adrienbernede/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adrienbernede/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 881436839,
+            "node_id": "MDU6TGFiZWw4ODE0MzY4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/conflicts",
+            "name": "conflicts",
+            "color": "92efd2",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2019-09-30T18:29:07Z",
+    "updated_at": "2019-10-08T01:37:24Z",
+    "closed_at": "2019-10-08T01:37:24Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12981",
+        "html_url": "https://github.com/spack/spack/pull/12981",
+        "diff_url": "https://github.com/spack/spack/pull/12981.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12981.patch"
+    },
+    "body": "Starting v5.3, incompatibility with compilers not supporting OpenMP 4.5.\r\nThe conflict has only been described for gcc, clang and intel.\r\n\r\nThis PR allows preventing an install which would fail later on.\r\n\r\nMentioning @balay for review.",
+    "performed_via_github_app": null
+}

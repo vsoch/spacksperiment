@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10819",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10819/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10819/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10819/events",
+    "html_url": "https://github.com/spack/spack/pull/10819",
+    "id": 417918644,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjU4ODA4Mzk0",
+    "number": 10819,
+    "title": "libimobiledevice: new package",
+    "user": {
+        "login": "whitfin",
+        "id": 5376378,
+        "node_id": "MDQ6VXNlcjUzNzYzNzg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5376378?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/whitfin",
+        "html_url": "https://github.com/whitfin",
+        "followers_url": "https://api.github.com/users/whitfin/followers",
+        "following_url": "https://api.github.com/users/whitfin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/whitfin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/whitfin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/whitfin/subscriptions",
+        "organizations_url": "https://api.github.com/users/whitfin/orgs",
+        "repos_url": "https://api.github.com/users/whitfin/repos",
+        "events_url": "https://api.github.com/users/whitfin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/whitfin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 718815971,
+            "node_id": "MDU6TGFiZWw3MTg4MTU5NzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/help%20wanted",
+            "name": "help wanted",
+            "color": "2bff8e",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456347589,
+            "node_id": "MDU6TGFiZWw0NTYzNDc1ODk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/up-for-grabs",
+            "name": "up-for-grabs",
+            "color": "489aca",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2019-03-06T17:16:30Z",
+    "updated_at": "2020-08-20T09:22:05Z",
+    "closed_at": "2020-08-20T09:22:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10819",
+        "html_url": "https://github.com/spack/spack/pull/10819",
+        "diff_url": "https://github.com/spack/spack/pull/10819.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10819.patch"
+    },
+    "body": "This PR adds `libimobiledevice, needed for iOS interaction from various Unix systems.\r\n\r\nThere's a small catch with this PR that I'm not sure what to do with; the `1.2.0` version (latest) requires `SSLv3` which we don't have variants for in `openssl`. As this is deprecated by the IETF, I don't want to add that variant.\r\n\r\nAs such, should I simply remove the `1.2.0` version from this package for now, or leave it so that people can link OpenSSL manually? ",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8811",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8811/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8811/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8811/events",
+    "html_url": "https://github.com/spack/spack/pull/8811",
+    "id": 344721792,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjA0MDQ3OTg1",
+    "number": 8811,
+    "title": "Use a bot to mark stale issues",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 746029681,
+            "node_id": "MDU6TGFiZWw3NDYwMjk2ODE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/community",
+            "name": "community",
+            "color": "e2c48e",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446634397,
+            "node_id": "MDU6TGFiZWw0NDY2MzQzOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/discussion",
+            "name": "discussion",
+            "color": "a87f5a",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 466955297,
+            "node_id": "MDU6TGFiZWw0NjY5NTUyOTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/proposal",
+            "name": "proposal",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 54,
+    "created_at": "2018-07-26T07:12:09Z",
+    "updated_at": "2021-06-12T13:53:39Z",
+    "closed_at": "2021-06-12T07:38:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8811",
+        "html_url": "https://github.com/spack/spack/pull/8811",
+        "diff_url": "https://github.com/spack/spack/pull/8811.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8811.patch"
+    },
+    "body": "As a developer I want to reduce the number of open issues, so that the ones that are active or being worked on will be more visible.\r\n\r\n#### Description\r\nAs of now we have  1100 open issues and 337 open pull requests. Using a cron job to mark stale issues and eventually close them after a grace period might be a way to keep the two lists more manageable. \r\n\r\nThe configuration values I pushed here are of course subject to discussion. The current configuration is:\r\n-  issues that are marked with certain labels are exempted from the check \r\n-  if an issue is marked as stale anybody has 30 days to perform any activity on it (in which case it will be unmarked)",
+    "performed_via_github_app": null
+}

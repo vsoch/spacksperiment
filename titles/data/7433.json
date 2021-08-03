@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7433",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7433/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7433/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7433/events",
+    "html_url": "https://github.com/spack/spack/pull/7433",
+    "id": 303673692,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTczODgyNzg3",
+    "number": 7433,
+    "title": "Added Option to disable user configs",
+    "user": {
+        "login": "pflarr",
+        "id": 50597,
+        "node_id": "MDQ6VXNlcjUwNTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50597?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pflarr",
+        "html_url": "https://github.com/pflarr",
+        "followers_url": "https://api.github.com/users/pflarr/followers",
+        "following_url": "https://api.github.com/users/pflarr/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pflarr/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pflarr/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pflarr/subscriptions",
+        "organizations_url": "https://api.github.com/users/pflarr/orgs",
+        "repos_url": "https://api.github.com/users/pflarr/repos",
+        "events_url": "https://api.github.com/users/pflarr/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pflarr/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446615135,
+            "node_id": "MDU6TGFiZWw0NDY2MTUxMzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/configuration",
+            "name": "configuration",
+            "color": "bfd4f2",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 459174375,
+            "node_id": "MDU6TGFiZWw0NTkxNzQzNzU=",
+            "url": "https://api.github.com/repos/spack/spack/labels/revisit",
+            "name": "revisit",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-08T23:43:39Z",
+    "updated_at": "2020-08-18T16:14:36Z",
+    "closed_at": "2020-08-18T16:14:36Z",
+    "author_association": "NONE",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7433",
+        "html_url": "https://github.com/spack/spack/pull/7433",
+        "diff_url": "https://github.com/spack/spack/pull/7433.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7433.patch"
+    },
+    "body": "For our use case, there should be no user specific configuration to Spack, as the configuration is common to the entire team. Leaving them in place is highly likely to cause problems. As such, I've added a config option to disable them.\r\n\r\nThe option (default True) is checked in spack __init__, and user configs are added to the ConfigScope there. \r\nThe only complication is the misc_cache directory, which is based on the user config directory. That now defaults to being created in the same parent directory as the normal cache.",
+    "performed_via_github_app": null
+}

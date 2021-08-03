@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7407",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7407/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7407/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7407/events",
+    "html_url": "https://github.com/spack/spack/pull/7407",
+    "id": 302865447,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTczMjgwNzkw",
+    "number": 7407,
+    "title": "add an option to build tbb statically",
+    "user": {
+        "login": "cyrush",
+        "id": 1194526,
+        "node_id": "MDQ6VXNlcjExOTQ1MjY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1194526?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrush",
+        "html_url": "https://github.com/cyrush",
+        "followers_url": "https://api.github.com/users/cyrush/followers",
+        "following_url": "https://api.github.com/users/cyrush/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrush/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrush/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrush/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrush/orgs",
+        "repos_url": "https://api.github.com/users/cyrush/repos",
+        "events_url": "https://api.github.com/users/cyrush/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrush/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-03-06T21:05:00Z",
+    "updated_at": "2018-03-13T16:36:31Z",
+    "closed_at": "2018-03-13T07:08:03Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7407",
+        "html_url": "https://github.com/spack/spack/pull/7407",
+        "diff_url": "https://github.com/spack/spack/pull/7407.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7407.patch"
+    },
+    "body": "Adds a `shared` variant to intel-tbb, which defaults to True\r\n\r\nWhen `~shared`, uses `extra_inc=big_iron.inc` to create static libraries. \r\n",
+    "performed_via_github_app": null
+}

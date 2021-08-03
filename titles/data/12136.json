@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12136",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12136/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12136/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12136/events",
+    "html_url": "https://github.com/spack/spack/pull/12136",
+    "id": 473047569,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAxMjkxOTM0",
+    "number": 12136,
+    "title": "range-v3: Resolve installation issues with 0.5.0",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-07-25T20:07:42Z",
+    "updated_at": "2019-08-05T19:15:10Z",
+    "closed_at": "2019-08-03T00:19:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12136",
+        "html_url": "https://github.com/spack/spack/pull/12136",
+        "diff_url": "https://github.com/spack/spack/pull/12136.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12136.patch"
+    },
+    "body": "Resolves #11481.\r\n\r\n* Incorporate as a patch upstream commit https://github.com/ericniebler/range-v3/commit/0c20dbf05973368339aeae0c4e106560e2dcf76b#diff-acb9169b4ccbac494ced5140d285a015 resolving problems with `-Wno-...` options not being understood by GCC.\r\n* Incorporate as a patch upstream PR https://github.com/ericniebler/range-v3/pull/1202 fixing upstream issue https://github.com/ericniebler/range-v3/issues/1196.\r\n* Compile tests only if we actually want to run them.\r\n* Optionally compile documentation with a `+doc` variant.\r\n* Add `+examples` and `+perf` variants to avoid unnecessary compilation of components usually not required for install.\r\n* Add conditional build-only dependency on Boost when appropriate.\r\n* Install docs, examples and performance tests if built (not part of upstream build instructions).\r\n* Add @chissg as a maintainer.\r\n",
+    "performed_via_github_app": null
+}

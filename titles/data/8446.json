@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8446",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8446/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8446/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8446/events",
+    "html_url": "https://github.com/spack/spack/pull/8446",
+    "id": 331600436,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk0Mjg5NzUy",
+    "number": 8446,
+    "title": "openfoam-com: added submodule flag to git fetch",
+    "user": {
+        "login": "sbna",
+        "id": 4947944,
+        "node_id": "MDQ6VXNlcjQ5NDc5NDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4947944?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sbna",
+        "html_url": "https://github.com/sbna",
+        "followers_url": "https://api.github.com/users/sbna/followers",
+        "following_url": "https://api.github.com/users/sbna/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sbna/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sbna/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sbna/subscriptions",
+        "organizations_url": "https://api.github.com/users/sbna/orgs",
+        "repos_url": "https://api.github.com/users/sbna/repos",
+        "events_url": "https://api.github.com/users/sbna/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sbna/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-12T13:59:15Z",
+    "updated_at": "2018-06-15T08:16:41Z",
+    "closed_at": "2018-06-13T13:56:53Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8446",
+        "html_url": "https://github.com/spack/spack/pull/8446",
+        "diff_url": "https://github.com/spack/spack/pull/8446.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8446.patch"
+    },
+    "body": "The dev version of openfoam-com has submodules to be downloaded using spack fetch @olesenm ",
+    "performed_via_github_app": null
+}

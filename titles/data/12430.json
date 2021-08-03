@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12430",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12430/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12430/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12430/events",
+    "html_url": "https://github.com/spack/spack/pull/12430",
+    "id": 481229089,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA3NzY4ODcy",
+    "number": 12430,
+    "title": "Add: c-blosc2",
+    "user": {
+        "login": "ax3l",
+        "id": 1353258,
+        "node_id": "MDQ6VXNlcjEzNTMyNTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1353258?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ax3l",
+        "html_url": "https://github.com/ax3l",
+        "followers_url": "https://api.github.com/users/ax3l/followers",
+        "following_url": "https://api.github.com/users/ax3l/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ax3l/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ax3l/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ax3l/subscriptions",
+        "organizations_url": "https://api.github.com/users/ax3l/orgs",
+        "repos_url": "https://api.github.com/users/ax3l/repos",
+        "events_url": "https://api.github.com/users/ax3l/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ax3l/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2019-08-15T16:21:35Z",
+    "updated_at": "2019-08-22T15:21:30Z",
+    "closed_at": "2019-08-22T00:52:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12430",
+        "html_url": "https://github.com/spack/spack/pull/12430",
+        "diff_url": "https://github.com/spack/spack/pull/12430.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12430.patch"
+    },
+    "body": "Add new packages for c-blosc2 compression.\r\n\r\n## Follow-up\r\n\r\n- support external lizard build (missing header(s) in install) https://github.com/inikep/lizard/issues/21",
+    "performed_via_github_app": null
+}

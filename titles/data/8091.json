@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8091",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8091/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8091/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8091/events",
+    "html_url": "https://github.com/spack/spack/pull/8091",
+    "id": 322102654,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3MzIwNTAw",
+    "number": 8091,
+    "title": "Patch PETSc test cases for IBM XL compiler",
+    "user": {
+        "login": "serbanmaerean",
+        "id": 20232116,
+        "node_id": "MDQ6VXNlcjIwMjMyMTE2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20232116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/serbanmaerean",
+        "html_url": "https://github.com/serbanmaerean",
+        "followers_url": "https://api.github.com/users/serbanmaerean/followers",
+        "following_url": "https://api.github.com/users/serbanmaerean/following{/other_user}",
+        "gists_url": "https://api.github.com/users/serbanmaerean/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/serbanmaerean/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/serbanmaerean/subscriptions",
+        "organizations_url": "https://api.github.com/users/serbanmaerean/orgs",
+        "repos_url": "https://api.github.com/users/serbanmaerean/repos",
+        "events_url": "https://api.github.com/users/serbanmaerean/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/serbanmaerean/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 521918850,
+            "node_id": "MDU6TGFiZWw1MjE5MTg4NTA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/xl",
+            "name": "xl",
+            "color": "1d76db",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-05-10T22:08:05Z",
+    "updated_at": "2018-05-15T06:53:22Z",
+    "closed_at": "2018-05-15T06:53:06Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8091",
+        "html_url": "https://github.com/spack/spack/pull/8091",
+        "diff_url": "https://github.com/spack/spack/pull/8091.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8091.patch"
+    },
+    "body": "Patch petsc test cases so they can be built with the IBM XL compiler after spack install.  These test cases are built in a seperate step, outside of spack, but they need to patched after staging so users don't have to do it in a seperate step.\r\nThe test cases are installed under <petsc install directory>/share/petsc/examples and can be built and executed by invoking gmake -f gmakefile.test in that directory.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8385",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8385/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8385/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8385/events",
+    "html_url": "https://github.com/spack/spack/pull/8385",
+    "id": 329598138,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkyODE1NjQ2",
+    "number": 8385,
+    "title": "Remove PGI-specific code to use dirent64 in place of dirent in boost",
+    "user": {
+        "login": "djfitzgerald",
+        "id": 38731008,
+        "node_id": "MDQ6VXNlcjM4NzMxMDA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/38731008?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/djfitzgerald",
+        "html_url": "https://github.com/djfitzgerald",
+        "followers_url": "https://api.github.com/users/djfitzgerald/followers",
+        "following_url": "https://api.github.com/users/djfitzgerald/following{/other_user}",
+        "gists_url": "https://api.github.com/users/djfitzgerald/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/djfitzgerald/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/djfitzgerald/subscriptions",
+        "organizations_url": "https://api.github.com/users/djfitzgerald/orgs",
+        "repos_url": "https://api.github.com/users/djfitzgerald/repos",
+        "events_url": "https://api.github.com/users/djfitzgerald/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/djfitzgerald/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908755,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NQ==",
+            "url": "https://api.github.com/repos/spack/spack/labels/duplicate",
+            "name": "duplicate",
+            "color": "cccccc",
+            "default": true,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-05T19:43:05Z",
+    "updated_at": "2018-06-05T19:48:41Z",
+    "closed_at": "2018-06-05T19:48:34Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8385",
+        "html_url": "https://github.com/spack/spack/pull/8385",
+        "diff_url": "https://github.com/spack/spack/pull/8385.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8385.patch"
+    },
+    "body": "Removed PGI-specific code in `boost` package that redefined `dirent` to be `dirent64`.  This caused `boost%pgi` to fail as certain function prototypes expected `dirent` instead of `dirent64`.\r\n\r\n`dirent` and `dirent64` structures are defined in `/usr/include/bits/dirent.h` and are identical, depending on whether `__USE_FILE_OFFSET64` is defined.  If not defined, `dirent64` doesn't exist, if defined `dirent64` and `dirent` are identical.  I am unsure what advantage explicitly using the `dirent64` type over `dirent` with the pgi compiler, as the only purpose it seems to serve is prevent compilation.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10259",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10259/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10259/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10259/events",
+    "html_url": "https://github.com/spack/spack/pull/10259",
+    "id": 396357132,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQyNTU5NzAz",
+    "number": 10259,
+    "title": "r-cowplot: new versions, more specific dependencies",
+    "user": {
+        "login": "odoublewen",
+        "id": 1421445,
+        "node_id": "MDQ6VXNlcjE0MjE0NDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1421445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/odoublewen",
+        "html_url": "https://github.com/odoublewen",
+        "followers_url": "https://api.github.com/users/odoublewen/followers",
+        "following_url": "https://api.github.com/users/odoublewen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/odoublewen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/odoublewen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/odoublewen/subscriptions",
+        "organizations_url": "https://api.github.com/users/odoublewen/orgs",
+        "repos_url": "https://api.github.com/users/odoublewen/repos",
+        "events_url": "https://api.github.com/users/odoublewen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/odoublewen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-01-07T05:54:42Z",
+    "updated_at": "2019-01-09T00:14:51Z",
+    "closed_at": "2019-01-09T00:14:51Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10259",
+        "html_url": "https://github.com/spack/spack/pull/10259",
+        "diff_url": "https://github.com/spack/spack/pull/10259.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10259.patch"
+    },
+    "body": "Filling in dependency versions from https://cran.r-project.org/web/packages/cowplot/index.html\r\n\r\nI don't need all these versions of r-cowplot, only the latest, but I figured I should provide them while I'm at it (?)",
+    "performed_via_github_app": null
+}

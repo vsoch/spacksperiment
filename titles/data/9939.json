@@ -1,0 +1,83 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9939",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9939/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9939/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9939/events",
+    "html_url": "https://github.com/spack/spack/issues/9939",
+    "id": 383916809,
+    "node_id": "MDU6SXNzdWUzODM5MTY4MDk=",
+    "number": 9939,
+    "title": "Non-boolean variant for external package is not respected",
+    "user": {
+        "login": "pramodk",
+        "id": 666852,
+        "node_id": "MDQ6VXNlcjY2Njg1Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/666852?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pramodk",
+        "html_url": "https://github.com/pramodk",
+        "followers_url": "https://api.github.com/users/pramodk/followers",
+        "following_url": "https://api.github.com/users/pramodk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pramodk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pramodk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pramodk/subscriptions",
+        "organizations_url": "https://api.github.com/users/pramodk/orgs",
+        "repos_url": "https://api.github.com/users/pramodk/repos",
+        "events_url": "https://api.github.com/users/pramodk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pramodk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 446623646,
+            "node_id": "MDU6TGFiZWw0NDY2MjM2NDY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/concretization",
+            "name": "concretization",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 455855856,
+            "node_id": "MDU6TGFiZWw0NTU4NTU4NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/external-packages",
+            "name": "external-packages",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-11-23T19:51:47Z",
+    "updated_at": "2020-11-02T15:34:55Z",
+    "closed_at": "2020-11-02T15:34:54Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "body": "Lets say we have intel-mkl as external package in packages.yaml: \r\n\r\n```\r\npackages:\r\n  intel-mkl:\r\n    paths:\r\n      intel-mkl@2018.1.163 threads=none ~ilp64+shared: /some/path\r\n```\r\n\r\nWe expect this to match with `threads=none` only. But we see:\r\n\r\n```\r\n$ spack install intel-mkl@2018.1.163 threads=none ~ilp64+shared\r\n==> intel-mkl@2018.1.163 : externally installed in /some/path\r\n==> intel-mkl@2018.1.163 : generating module file\r\n==> intel-mkl@2018.1.163 : registering into DB\r\n\r\n$ spack install intel-mkl@2018.1.163 threads=openmp ~ilp64+shared\r\n==> intel-mkl@2018.1.163 : externally installed in /some/path   => WRONG, shouldn't match with threads=openmp\r\n==> intel-mkl@2018.1.163 : already registered in DB\r\n```\r\n\r\nAs the second spec asks for `threads=openmp`, we expect to have separate installation.",
+    "performed_via_github_app": null
+}

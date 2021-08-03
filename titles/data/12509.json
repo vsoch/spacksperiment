@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12509",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12509/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12509/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12509/events",
+    "html_url": "https://github.com/spack/spack/pull/12509",
+    "id": 483573514,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA5NjIyNDgw",
+    "number": 12509,
+    "title": "Adding a new version of ESMF.",
+    "user": {
+        "login": "greglucas",
+        "id": 12417828,
+        "node_id": "MDQ6VXNlcjEyNDE3ODI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12417828?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/greglucas",
+        "html_url": "https://github.com/greglucas",
+        "followers_url": "https://api.github.com/users/greglucas/followers",
+        "following_url": "https://api.github.com/users/greglucas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/greglucas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/greglucas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/greglucas/subscriptions",
+        "organizations_url": "https://api.github.com/users/greglucas/orgs",
+        "repos_url": "https://api.github.com/users/greglucas/repos",
+        "events_url": "https://api.github.com/users/greglucas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/greglucas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446614839,
+            "node_id": "MDU6TGFiZWw0NDY2MTQ4Mzk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/macOS",
+            "name": "macOS",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 620268714,
+            "node_id": "MDU6TGFiZWw2MjAyNjg3MTQ=",
+            "url": "https://api.github.com/repos/spack/spack/labels/patch",
+            "name": "patch",
+            "color": "5319e7",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-08-21T18:11:29Z",
+    "updated_at": "2019-08-22T23:56:13Z",
+    "closed_at": "2019-08-22T23:55:57Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12509",
+        "html_url": "https://github.com/spack/spack/pull/12509",
+        "diff_url": "https://github.com/spack/spack/pull/12509.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12509.patch"
+    },
+    "body": "This updates the ESMF package to version 7.1.0r and changes the url to the public-facing versions.\r\n\r\nThe previous version of ESMF wouldn't build with newer Intel compilers due to the openMP flag changing from \"-openmp\" to \"-qopenmp\". The new version (7.1.0r) now contains new build scripts to account for this change. When testing on my local mac, I also found that a new gcc patch for mac's needs to be added as well which I've included.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12686",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12686/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12686/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12686/events",
+    "html_url": "https://github.com/spack/spack/pull/12686",
+    "id": 488399018,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzEzNDI2Nzky",
+    "number": 12686,
+    "title": "perf: spack find -p now does only one DB transaction",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 471995122,
+            "node_id": "MDU6TGFiZWw0NzE5OTUxMjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/commands",
+            "name": "commands",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446780477,
+            "node_id": "MDU6TGFiZWw0NDY3ODA0Nzc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/pkg-database",
+            "name": "pkg-database",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-09-03T05:29:03Z",
+    "updated_at": "2019-09-03T14:52:04Z",
+    "closed_at": "2019-09-03T14:41:40Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12686",
+        "html_url": "https://github.com/spack/spack/pull/12686",
+        "diff_url": "https://github.com/spack/spack/pull/12686.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12686.patch"
+    },
+    "body": "`spec.prefix` reads from Spack's database, and if you do this with\r\nmultiple consecutive read transactions, it can take a long time.  Or, at\r\nleast, you can see the paths get written out one by one.\r\n\r\nThis uses an outer read transaction to ensure that actual disk locks are\r\nacquired only once for the whole `spack find` operation, and that each\r\ntransaction inside `spec.prefix` is an in-memory operation. This speeds\r\nup `spack find -p` a lot.",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8604",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8604/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8604/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8604/events",
+    "html_url": "https://github.com/spack/spack/pull/8604",
+    "id": 336696606,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4MDg4NDA3",
+    "number": 8604,
+    "title": "[WIP] New package.py functions _has_make_target() and _has_ninja_target().",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 624275116,
+            "node_id": "MDU6TGFiZWw2MjQyNzUxMTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/makefile",
+            "name": "makefile",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2018-06-28T16:39:36Z",
+    "updated_at": "2018-09-17T20:17:37Z",
+    "closed_at": "2018-08-20T21:42:28Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8604",
+        "html_url": "https://github.com/spack/spack/pull/8604",
+        "diff_url": "https://github.com/spack/spack/pull/8604.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8604.patch"
+    },
+    "body": "Split off from _if_make_target_execute() and _if_ninja_target_execute(), respectively.\r\n\r\nIntended to facilitate testing of other functionality, per #8484 (comment).\r\n\r\n#8484 (comment) was considered, but this word order maintains consistency with existing functions.\r\n\r\nIncorporates PR #8484 due to overlap.",
+    "performed_via_github_app": null
+}

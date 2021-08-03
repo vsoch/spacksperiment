@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10224",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10224/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10224/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10224/events",
+    "html_url": "https://github.com/spack/spack/pull/10224",
+    "id": 394927770,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQxNTI1MjEw",
+    "number": 10224,
+    "title": "flang, llvm, pgmath: Add release for 2018-09-21",
+    "user": {
+        "login": "gklimowicz",
+        "id": 936096,
+        "node_id": "MDQ6VXNlcjkzNjA5Ng==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/936096?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gklimowicz",
+        "html_url": "https://github.com/gklimowicz",
+        "followers_url": "https://api.github.com/users/gklimowicz/followers",
+        "following_url": "https://api.github.com/users/gklimowicz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gklimowicz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gklimowicz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gklimowicz/subscriptions",
+        "organizations_url": "https://api.github.com/users/gklimowicz/orgs",
+        "repos_url": "https://api.github.com/users/gklimowicz/repos",
+        "events_url": "https://api.github.com/users/gklimowicz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gklimowicz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-12-31T04:36:38Z",
+    "updated_at": "2018-12-31T17:54:20Z",
+    "closed_at": "2018-12-31T17:50:05Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10224",
+        "html_url": "https://github.com/spack/spack/pull/10224",
+        "diff_url": "https://github.com/spack/spack/pull/10224.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10224.patch"
+    },
+    "body": "This is my first attempt to take over managing the spack package for Flang.\r\n\r\nWe did a binary release for Flang on GitHub in September, and uploaded corresponding source files and binary files to the Flang repository. Left undone was creating the equivalent spack releases for this.\r\n\r\nSo, this is a simple pull request to define the new release in the same was as the old ones were.\r\n\r\nThis is in preparation for me adding the release for December 2018.\r\n\r\nPlease let me know anything i'm not doing right here (obviously); I read the contribution guide and think I did the necessary, but I can't be certain.\r\n\r\nThanks.",
+    "performed_via_github_app": null
+}

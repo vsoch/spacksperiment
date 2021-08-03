@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11129",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11129/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11129/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11129/events",
+    "html_url": "https://github.com/spack/spack/pull/11129",
+    "id": 430568273,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY4NDI3Njc0",
+    "number": 11129,
+    "title": "ROOT: unset SPACK_INCLUDE_DIRS so the compiler wrapper does not prepend any -I flags. ",
+    "user": {
+        "login": "gartung",
+        "id": 4292184,
+        "node_id": "MDQ6VXNlcjQyOTIxODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4292184?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gartung",
+        "html_url": "https://github.com/gartung",
+        "followers_url": "https://api.github.com/users/gartung/followers",
+        "following_url": "https://api.github.com/users/gartung/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gartung/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gartung/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gartung/subscriptions",
+        "organizations_url": "https://api.github.com/users/gartung/orgs",
+        "repos_url": "https://api.github.com/users/gartung/repos",
+        "events_url": "https://api.github.com/users/gartung/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gartung/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1281134171,
+            "node_id": "MDU6TGFiZWwxMjgxMTM0MTcx",
+            "url": "https://api.github.com/repos/spack/spack/labels/hep",
+            "name": "hep",
+            "color": "bfdadc",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-04-08T17:23:00Z",
+    "updated_at": "2019-04-08T20:45:27Z",
+    "closed_at": "2019-04-08T19:30:23Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11129",
+        "html_url": "https://github.com/spack/spack/pull/11129",
+        "diff_url": "https://github.com/spack/spack/pull/11129.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11129.patch"
+    },
+    "body": "The assumption is that cmake will set the correct include flags.",
+    "performed_via_github_app": null
+}

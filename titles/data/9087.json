@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9087",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9087/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9087/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9087/events",
+    "html_url": "https://github.com/spack/spack/pull/9087",
+    "id": 353641269,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwNjM2NjUz",
+    "number": 9087,
+    "title": "Update to latest version of pytest and dependencies",
+    "user": {
+        "login": "adamjstewart",
+        "id": 12021217,
+        "node_id": "MDQ6VXNlcjEyMDIxMjE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12021217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/adamjstewart",
+        "html_url": "https://github.com/adamjstewart",
+        "followers_url": "https://api.github.com/users/adamjstewart/followers",
+        "following_url": "https://api.github.com/users/adamjstewart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/adamjstewart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/adamjstewart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/adamjstewart/subscriptions",
+        "organizations_url": "https://api.github.com/users/adamjstewart/orgs",
+        "repos_url": "https://api.github.com/users/adamjstewart/repos",
+        "events_url": "https://api.github.com/users/adamjstewart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/adamjstewart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446619758,
+            "node_id": "MDU6TGFiZWw0NDY2MTk3NTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/python",
+            "name": "python",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 456341797,
+            "node_id": "MDU6TGFiZWw0NTYzNDE3OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/tests",
+            "name": "tests",
+            "color": "b60205",
+            "default": false,
+            "description": "General test capability(ies)"
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-08-24T04:32:43Z",
+    "updated_at": "2018-08-25T19:12:50Z",
+    "closed_at": "2018-08-25T19:12:47Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9087",
+        "html_url": "https://github.com/spack/spack/pull/9087",
+        "diff_url": "https://github.com/spack/spack/pull/9087.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9087.patch"
+    },
+    "body": "Fixes #9037.\r\n\r\nHowever, this also uncovers another bug. When I try to build the latest version of numpy, all of the tests pass, but right before the installation finishes, I see the following error message:\r\n```\r\n==> Error: FileNotFoundError: [Errno 2] No such file or directory: '/Users/Adam/spack/var/spack/stage/py-numpy-1.15.1-axflucalynpnnr5camla655764dpyvqz/.pytest_cache/spack-build.out'\r\n\r\n/Users/Adam/spack/lib/spack/spack/package.py:1652, in log:\r\n       1649            # FIXME : this potentially catches too many things...\r\n       1650            pass\r\n       1651\r\n  >>   1652        # Archive the whole stdout + stderr for the package\r\n       1653        install(self.log_path, log_install_path)\r\n       1654        # Archive the environment used for the build\r\n       1655        install(self.env_path, env_install_path)\r\n```\r\nThe correct `spack-build.out` is in `numpy-1.15.1`, not `.pytest_cache`. Does anyone have any idea why the `log_path` is being overwritten? This doesn't happen if I install without `--test=root`.\r\n\r\nP.S. I could've sworn I fixed the error message off-by-one line number bug.",
+    "performed_via_github_app": null
+}

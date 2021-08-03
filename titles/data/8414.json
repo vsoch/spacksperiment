@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8414",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8414/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8414/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8414/events",
+    "html_url": "https://github.com/spack/spack/pull/8414",
+    "id": 330034314,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTkzMTQxODM2",
+    "number": 8414,
+    "title": "new version SZ 1.4.13.5",
+    "user": {
+        "login": "disheng222",
+        "id": 9811273,
+        "node_id": "MDQ6VXNlcjk4MTEyNzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9811273?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disheng222",
+        "html_url": "https://github.com/disheng222",
+        "followers_url": "https://api.github.com/users/disheng222/followers",
+        "following_url": "https://api.github.com/users/disheng222/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disheng222/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disheng222/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disheng222/subscriptions",
+        "organizations_url": "https://api.github.com/users/disheng222/orgs",
+        "repos_url": "https://api.github.com/users/disheng222/repos",
+        "events_url": "https://api.github.com/users/disheng222/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disheng222/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-06-06T21:11:15Z",
+    "updated_at": "2018-06-06T22:44:48Z",
+    "closed_at": "2018-06-06T22:44:48Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8414",
+        "html_url": "https://github.com/spack/spack/pull/8414",
+        "diff_url": "https://github.com/spack/spack/pull/8414.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8414.patch"
+    },
+    "body": "I removed pwrType from the interface SZ_compress_args() which will be convenient for ADIOS developers to use SZ's API. \r\nThis change will be consistent with our future version because pwrType will be deprecated in the later version. \r\nPlease use this version in Spack and I'll notify the corresponding users such as ADIOS for the changes. \r\n\r\nThanks.",
+    "performed_via_github_app": null
+}

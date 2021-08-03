@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8787",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8787/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8787/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8787/events",
+    "html_url": "https://github.com/spack/spack/pull/8787",
+    "id": 343710054,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjAzMjc4MjA2",
+    "number": 8787,
+    "title": "hmmer: added version 3.2.1 & updated URL",
+    "user": {
+        "login": "simonflood",
+        "id": 8300801,
+        "node_id": "MDQ6VXNlcjgzMDA4MDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8300801?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/simonflood",
+        "html_url": "https://github.com/simonflood",
+        "followers_url": "https://api.github.com/users/simonflood/followers",
+        "following_url": "https://api.github.com/users/simonflood/following{/other_user}",
+        "gists_url": "https://api.github.com/users/simonflood/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/simonflood/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/simonflood/subscriptions",
+        "organizations_url": "https://api.github.com/users/simonflood/orgs",
+        "repos_url": "https://api.github.com/users/simonflood/repos",
+        "events_url": "https://api.github.com/users/simonflood/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/simonflood/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-07-23T16:42:08Z",
+    "updated_at": "2018-08-28T14:41:35Z",
+    "closed_at": "2018-07-26T15:07:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8787",
+        "html_url": "https://github.com/spack/spack/pull/8787",
+        "diff_url": "https://github.com/spack/spack/pull/8787.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8787.patch"
+    },
+    "body": "Added HMMER 3.2.1 and updated URL then removed url_for_version function as no longer required - all HMMER downloads available from updated URL.",
+    "performed_via_github_app": null
+}

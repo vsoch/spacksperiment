@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7918",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7918/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7918/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7918/events",
+    "html_url": "https://github.com/spack/spack/pull/7918",
+    "id": 318102865,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg0MzkzNzM5",
+    "number": 7918,
+    "title": "Allow len(Version) to return number of split components.",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2018-04-26T16:18:08Z",
+    "updated_at": "2018-06-08T18:06:51Z",
+    "closed_at": "2018-04-26T22:38:44Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7918",
+        "html_url": "https://github.com/spack/spack/pull/7918",
+        "diff_url": "https://github.com/spack/spack/pull/7918.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7918.patch"
+    },
+    "body": "Simple addition to avoid having to type `len(version.version)` to check the number of components a version has, with test.\r\n\r\nUse case:  \r\n```python\r\n    def url_for_version(self, version):\r\n        url = 'https://github.com/01org/tbb/archive/{0}.tar.gz'\r\n        if (version[0] >= 2017) and len(version) > 1:\r\n            return url.format('{0}_U{1}'.format(version[0], version[1]))\r\n        else:\r\n            return url.format(version)\r\n```\r\n\r\nCurrently, `len(version.version)` must be used instead.\r\n",
+    "performed_via_github_app": null
+}

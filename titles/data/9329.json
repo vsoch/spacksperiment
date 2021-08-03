@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9329",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9329/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9329/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9329/events",
+    "html_url": "https://github.com/spack/spack/pull/9329",
+    "id": 363368751,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE3ODI1Njc0",
+    "number": 9329,
+    "title": "Unite Dockerfiles - add build/run/push scripts",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 719256466,
+            "node_id": "MDU6TGFiZWw3MTkyNTY0NjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/containers",
+            "name": "containers",
+            "color": "c5def5",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2018-09-25T00:36:09Z",
+    "updated_at": "2018-10-31T18:07:35Z",
+    "closed_at": "2018-10-26T17:15:06Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9329",
+        "html_url": "https://github.com/spack/spack/pull/9329",
+        "diff_url": "https://github.com/spack/spack/pull/9329.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9329.patch"
+    },
+    "body": "In preparation for pushing Spack docker images in support of the Release and PR testing milestone, I observed that there was still a lot of duplication among the Dockerfiles for the various flavors of Linux, and there were still a lot of area for improvement.  This PR tries to cut duplication down as much as possible, and in a way that tries to be as maintainable as possible.\r\n\r\nI've consolidated all the Dockerfiles into a single one.  It works using a shell script that wraps the script provided to docker during builds.  The script masks out subsets of the provided commands based on embedded annotations and forwards the result to `/bin/bash` for execution.  Using this script as the Dockerfile's `SHELL`, we are able to fully specify which commands to run in which Linux variants, and minimize duplication by providing commands common to multiple variants only once.\r\n\r\nThe reduction in duplication was so considerable that there was very little reason to continue requiring the use of `docker-compose`.  So, it was removed and replaced with shell scripts that make building predefined configurations with just plain docker very straightforward.\r\n\r\nFor example, to use the predefined configuration for ubuntu (based on bionic).\r\n\r\n```Bash\r\ncd share/spack/docker\r\nsource config/ubuntu.bash\r\n./build-image.sh\r\n# ... build ...\r\n./run-image.sh --version # run \"spack --version\" inside the container\r\n./run-image.sh # no arguments -- run an interactive shell session (with local tree mounted)\r\n./push-image.sh # push to dockerhub (need permission to push to spack org)\r\n```\r\nIn addition to making our docker offerings much simpler and more maintainable, this PR also cuts the guess work for building and publishing new versions down practically to zero.  Just source a config (or make your own), build, and push.  To support other variants of linux, just update the Dockerfile with the commands for your variant.",
+    "performed_via_github_app": null
+}

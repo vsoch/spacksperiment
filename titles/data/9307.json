@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9307",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9307/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9307/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9307/events",
+    "html_url": "https://github.com/spack/spack/pull/9307",
+    "id": 362437686,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjE3MTU4MjQz",
+    "number": 9307,
+    "title": "Smarter version constraints for packages with mixed versions",
+    "user": {
+        "login": "scheibelp",
+        "id": 1659704,
+        "node_id": "MDQ6VXNlcjE2NTk3MDQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1659704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/scheibelp",
+        "html_url": "https://github.com/scheibelp",
+        "followers_url": "https://api.github.com/users/scheibelp/followers",
+        "following_url": "https://api.github.com/users/scheibelp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/scheibelp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/scheibelp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/scheibelp/subscriptions",
+        "organizations_url": "https://api.github.com/users/scheibelp/orgs",
+        "repos_url": "https://api.github.com/users/scheibelp/repos",
+        "events_url": "https://api.github.com/users/scheibelp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/scheibelp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 474580738,
+            "node_id": "MDU6TGFiZWw0NzQ1ODA3Mzg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/versions",
+            "name": "versions",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2018-09-21T02:55:38Z",
+    "updated_at": "2018-09-26T17:39:05Z",
+    "closed_at": null,
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9307",
+        "html_url": "https://github.com/spack/spack/pull/9307",
+        "diff_url": "https://github.com/spack/spack/pull/9307.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9307.patch"
+    },
+    "body": "(note that although I assert that merging this would close #9281, properly reviewing this PR may take enough time that it makes sense to merge that in the meantime)\r\n\r\nFixes: https://github.com/spack/spack/issues/8432\r\nCloses: https://github.com/spack/spack/pull/9281\r\nCloses: https://github.com/spack/spack/pull/8320\r\n\r\n@PDoakORNL @skosukhin \r\n\r\nFor a `when` spec which requires `x.y`, Specs with version `x.y.z` were considered to satisfy it even when `x.y` refers to a specific package version and the user intends that the constraint *only* apply to `x.y`.\r\n\r\nThis updates `Spec.satisfies` so that if a constraint mentions a version which appears exactly in `Spec.package.versions`, that `Spec.version` must match it exactly in order to satisfy the constraint. This is considered reasonable for all constraint checks.\r\n\r\nIf a package `foo` has versions `2.1` and `2.1.2` and a user wishes to specify that a constraint applies for both, this PR would require that they write `when=@2.1:2.1.2` (where before `when=@2.1` would suffice). I currently don't know whether any package depends on that logic; this PR is not compatible with that sort of inference. I'm inclined to say the inference in this PR is preferable: Without this PR, in the case of `foo` with versions `2.1` and `2.1.2`, the constraint `when=@2.1:2.1.0` is sufficient to include `2.1` and exclude `2.1.2` (regardless of `strict==True`), but IMO that more awkward than what this PR forces on users that want to apply a constraint to `2.1` and `2.1.2` at the same time.\r\n\r\nIf `when` specifies a version range, this check is not applied, so for example `foo@2.3.1` will satisfy `when=2.1:2.3` even if there is an exact version `2.3` for `foo`.\r\n\r\n(note this only changes behavior when `strict=False`, `strict=True` didn't have this issue)",
+    "performed_via_github_app": null
+}

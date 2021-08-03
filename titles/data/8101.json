@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/8101",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/8101/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/8101/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/8101/events",
+    "html_url": "https://github.com/spack/spack/pull/8101",
+    "id": 322564009,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTg3NjUyMzMx",
+    "number": 8101,
+    "title": "add `spack --print-shell-vars` to speed up shell setup",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 460427403,
+            "node_id": "MDU6TGFiZWw0NjA0Mjc0MDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/performance",
+            "name": "performance",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 475435626,
+            "node_id": "MDU6TGFiZWw0NzU0MzU2MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/shell-support",
+            "name": "shell-support",
+            "color": "006b75",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-05-13T04:44:24Z",
+    "updated_at": "2018-07-16T23:24:26Z",
+    "closed_at": "2018-07-16T22:43:45Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/8101",
+        "html_url": "https://github.com/spack/spack/pull/8101",
+        "diff_url": "https://github.com/spack/spack/pull/8101.diff",
+        "patch_url": "https://github.com/spack/spack/pull/8101.patch"
+    },
+    "body": "This PR is several commits on top of #7774.  Merge that first.\r\n\r\nThe setup-env.sh script currently makes two calls to spack, but it should only need to make one.\r\n    \r\n- [x] add a fast-path shell setup routine in `main.py` to allow the shell setup to happen in a single, fast call that doesn't load more than it needs to.\r\n\r\n- [x] add `spack --print-shell-vars` to make this accessible on the command line.\r\n\r\nThis simplifies setup code, as it only has to eval what Spack prints. \r\n\r\nWe should consider eventually making the whole setup script the output of a spack command, now that spack initialization is a faster.",
+    "performed_via_github_app": null
+}

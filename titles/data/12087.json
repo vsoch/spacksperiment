@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12087",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12087/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12087/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12087/events",
+    "html_url": "https://github.com/spack/spack/pull/12087",
+    "id": 471368205,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAwMDYyODEy",
+    "number": 12087,
+    "title": "libfabric: add EFA fabric",
+    "user": {
+        "login": "jimmielin",
+        "id": 123603,
+        "node_id": "MDQ6VXNlcjEyMzYwMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123603?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jimmielin",
+        "html_url": "https://github.com/jimmielin",
+        "followers_url": "https://api.github.com/users/jimmielin/followers",
+        "following_url": "https://api.github.com/users/jimmielin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jimmielin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jimmielin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jimmielin/subscriptions",
+        "organizations_url": "https://api.github.com/users/jimmielin/orgs",
+        "repos_url": "https://api.github.com/users/jimmielin/repos",
+        "events_url": "https://api.github.com/users/jimmielin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jimmielin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 493969518,
+            "node_id": "MDU6TGFiZWw0OTM5Njk1MTg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/variants",
+            "name": "variants",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2019-07-22T22:31:41Z",
+    "updated_at": "2019-07-23T19:08:35Z",
+    "closed_at": "2019-07-23T19:08:35Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12087",
+        "html_url": "https://github.com/spack/spack/pull/12087",
+        "diff_url": "https://github.com/spack/spack/pull/12087.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12087.patch"
+    },
+    "body": "`libfabric` 1.8 (https://github.com/spack/spack/pull/11918) has integrated Amazon-developed Elastic Fabric Adapter (EFA) (https://aws.amazon.com/about-aws/whats-new/2019/07/elastic-fabric-adapter-officially-integrated-into-libfabric-library/). \r\n\r\nThis pull request adds `efa` fabric to the spack package description allowing EFA-enabled `libfabric` to be installed via spack:\r\n```\r\nspack install libfabric fabrics=efa\r\n```",
+    "performed_via_github_app": null
+}

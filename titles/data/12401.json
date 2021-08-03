@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12401",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12401/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12401/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12401/events",
+    "html_url": "https://github.com/spack/spack/pull/12401",
+    "id": 479967466,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzA2NzUyNDk2",
+    "number": 12401,
+    "title": "starce: new version and build on ARM.",
+    "user": {
+        "login": "tkameyama",
+        "id": 18064250,
+        "node_id": "MDQ6VXNlcjE4MDY0MjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18064250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkameyama",
+        "html_url": "https://github.com/tkameyama",
+        "followers_url": "https://api.github.com/users/tkameyama/followers",
+        "following_url": "https://api.github.com/users/tkameyama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkameyama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkameyama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkameyama/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkameyama/orgs",
+        "repos_url": "https://api.github.com/users/tkameyama/repos",
+        "events_url": "https://api.github.com/users/tkameyama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkameyama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1113012138,
+            "node_id": "MDU6TGFiZWwxMTEzMDEyMTM4",
+            "url": "https://api.github.com/repos/spack/spack/labels/arm",
+            "name": "arm",
+            "color": "007090",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-08-13T05:37:20Z",
+    "updated_at": "2019-08-14T00:38:45Z",
+    "closed_at": "2019-08-14T00:38:45Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12401",
+        "html_url": "https://github.com/spack/spack/pull/12401",
+        "diff_url": "https://github.com/spack/spack/pull/12401.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12401.patch"
+    },
+    "body": "* souce URL change to github.\r\n* Add version 5.1 and 5.2\r\n* enable build on ARM.\r\n    * strace try to use -m32, but gcc on aarch64 dose not support -m32, so -m32 is off on aarch64.",
+    "performed_via_github_app": null
+}

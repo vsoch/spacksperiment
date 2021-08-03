@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9078",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9078/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9078/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9078/events",
+    "html_url": "https://github.com/spack/spack/pull/9078",
+    "id": 353210790,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjEwMzIyMTgx",
+    "number": 9078,
+    "title": "Open mpi add v3.1.2",
+    "user": {
+        "login": "floquet",
+        "id": 13126143,
+        "node_id": "MDQ6VXNlcjEzMTI2MTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13126143?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/floquet",
+        "html_url": "https://github.com/floquet",
+        "followers_url": "https://api.github.com/users/floquet/followers",
+        "following_url": "https://api.github.com/users/floquet/following{/other_user}",
+        "gists_url": "https://api.github.com/users/floquet/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/floquet/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/floquet/subscriptions",
+        "organizations_url": "https://api.github.com/users/floquet/orgs",
+        "repos_url": "https://api.github.com/users/floquet/repos",
+        "events_url": "https://api.github.com/users/floquet/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/floquet/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616788,
+            "node_id": "MDU6TGFiZWw0NDY2MTY3ODg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-version",
+            "name": "new-version",
+            "color": "0e8a16",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-08-23T03:40:31Z",
+    "updated_at": "2018-08-23T16:45:06Z",
+    "closed_at": "2018-08-23T04:17:49Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9078",
+        "html_url": "https://github.com/spack/spack/pull/9078",
+        "diff_url": "https://github.com/spack/spack/pull/9078.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9078.patch"
+    },
+    "body": "## Built Open MPI @ 3.1.2 and tested.\r\n\r\n### Verify install\r\n```\r\n==> Successfully installed openmpi\r\n  Fetch: 2.46s.  Build: 14m 1.58s.  Total: 14m 4.04s.\r\n[+] /scratch/dantopa/spack.ccscs4.current/opt/spack/linux-rhel7-x86_64/gcc-8.1.0/openmpi-3.1.2-hva6lmqbvv33i2czi3n3ab7ujqkzfvqo\r\n\r\n```\r\n\r\n### Verify  libmpi.so version\r\n```\r\ndantopa@ccscs4.lanl.gov:spack.ccscs4.current $ cd opt/spack/linux-rhel7-x86_64/gcc-8.1.0/openmpi-3.1.2-hva6lmqbvv33i2czi3n3ab7ujqkzfvqo/lib\r\ndantopa@ccscs4.lanl.gov:lib $ ls -alh\r\ntotal 27M\r\n. . .\r\nlrwxrwxrwx 1 dantopa dantopa   17 Aug 22 19:49 libmpi.so -> libmpi.so.40.10.2\r\nlrwxrwxrwx 1 dantopa dantopa   17 Aug 22 19:49 libmpi.so.40 -> libmpi.so.40.10.2\r\n\r\n```",
+    "performed_via_github_app": null
+}

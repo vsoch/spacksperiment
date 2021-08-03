@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7193",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7193/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7193/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7193/events",
+    "html_url": "https://github.com/spack/spack/pull/7193",
+    "id": 294878475,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTY3NTAzNTE5",
+    "number": 7193,
+    "title": "Features/package hash",
+    "user": {
+        "login": "mathstuf",
+        "id": 97253,
+        "node_id": "MDQ6VXNlcjk3MjUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/97253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mathstuf",
+        "html_url": "https://github.com/mathstuf",
+        "followers_url": "https://api.github.com/users/mathstuf/followers",
+        "following_url": "https://api.github.com/users/mathstuf/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mathstuf/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mathstuf/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mathstuf/subscriptions",
+        "organizations_url": "https://api.github.com/users/mathstuf/orgs",
+        "repos_url": "https://api.github.com/users/mathstuf/repos",
+        "events_url": "https://api.github.com/users/mathstuf/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mathstuf/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446626162,
+            "node_id": "MDU6TGFiZWw0NDY2MjYxNjI=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hashes",
+            "name": "hashes",
+            "color": "9a69b7",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 446630556,
+            "node_id": "MDU6TGFiZWw0NDY2MzA1NTY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/specs",
+            "name": "specs",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2018-02-06T19:10:42Z",
+    "updated_at": "2018-03-22T17:09:14Z",
+    "closed_at": "2018-03-20T07:29:55Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7193",
+        "html_url": "https://github.com/spack/spack/pull/7193",
+        "diff_url": "https://github.com/spack/spack/pull/7193.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7193.patch"
+    },
+    "body": "---\r\nThis is the `features/package-hash` branch rebased onto `develop` and split into smaller, more logical commits. Currently there are two test failures on the top of the branch, but the rest of the branch is passing the test suite.\r\n\r\nCc: @tgamblin @scheibelp \r\n\r\nSee #7119",
+    "performed_via_github_app": null
+}

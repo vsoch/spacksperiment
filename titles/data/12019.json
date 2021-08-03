@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12019",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12019/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12019/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12019/events",
+    "html_url": "https://github.com/spack/spack/pull/12019",
+    "id": 467885810,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjk3NDI4NjY1",
+    "number": 12019,
+    "title": "Update R CRAN packages",
+    "user": {
+        "login": "glennpj",
+        "id": 16138574,
+        "node_id": "MDQ6VXNlcjE2MTM4NTc0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16138574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glennpj",
+        "html_url": "https://github.com/glennpj",
+        "followers_url": "https://api.github.com/users/glennpj/followers",
+        "following_url": "https://api.github.com/users/glennpj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glennpj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glennpj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glennpj/subscriptions",
+        "organizations_url": "https://api.github.com/users/glennpj/orgs",
+        "repos_url": "https://api.github.com/users/glennpj/repos",
+        "events_url": "https://api.github.com/users/glennpj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glennpj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619830,
+            "node_id": "MDU6TGFiZWw0NDY2MTk4MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/R",
+            "name": "R",
+            "color": "d93f0b",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 22,
+    "created_at": "2019-07-14T21:19:24Z",
+    "updated_at": "2019-10-24T03:49:16Z",
+    "closed_at": "2019-08-30T23:22:13Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12019",
+        "html_url": "https://github.com/spack/spack/pull/12019",
+        "diff_url": "https://github.com/spack/spack/pull/12019.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12019.patch"
+    },
+    "body": "This PR updates R CRAN packages. It also ensures that spack built\r\npackages that correspond to R recommended packages are specified in the\r\ndependency list. This is needed for #12015.\r\n\r\n@adamjstewart \r\nPlease add the WIP label.\r\n\r\nThanks.",
+    "performed_via_github_app": null
+}

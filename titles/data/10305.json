@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10305",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10305/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10305/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10305/events",
+    "html_url": "https://github.com/spack/spack/pull/10305",
+    "id": 397968545,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjQzNzk0NTQ2",
+    "number": 10305,
+    "title": "Updating LBANN and related packages",
+    "user": {
+        "login": "bvanessen",
+        "id": 6210171,
+        "node_id": "MDQ6VXNlcjYyMTAxNzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6210171?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bvanessen",
+        "html_url": "https://github.com/bvanessen",
+        "followers_url": "https://api.github.com/users/bvanessen/followers",
+        "following_url": "https://api.github.com/users/bvanessen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bvanessen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bvanessen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bvanessen/subscriptions",
+        "organizations_url": "https://api.github.com/users/bvanessen/orgs",
+        "repos_url": "https://api.github.com/users/bvanessen/repos",
+        "events_url": "https://api.github.com/users/bvanessen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bvanessen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446630669,
+            "node_id": "MDU6TGFiZWw0NDY2MzA2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/dependencies",
+            "name": "dependencies",
+            "color": "c2e0c6",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-01-10T18:57:58Z",
+    "updated_at": "2019-01-11T01:10:20Z",
+    "closed_at": "2019-01-11T01:10:12Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10305",
+        "html_url": "https://github.com/spack/spack/pull/10305",
+        "diff_url": "https://github.com/spack/spack/pull/10305.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10305.patch"
+    },
+    "body": " Updated LBANN, Hydrogen, and Aluminum to not require CUDA-aware MPI\r\n even when using CUDA.  Fixed small bugs within both LBANN and Hydrogen\r\n packages.  Added requirements for breathe and cereal to LBANN.",
+    "performed_via_github_app": null
+}

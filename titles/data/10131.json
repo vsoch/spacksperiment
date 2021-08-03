@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10131",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10131/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10131/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10131/events",
+    "html_url": "https://github.com/spack/spack/pull/10131",
+    "id": 391852320,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjM5MjUzOTE1",
+    "number": 10131,
+    "title": "Revert \"mark: Create new package\" due to license issue",
+    "user": {
+        "login": "tgamblin",
+        "id": 299842,
+        "node_id": "MDQ6VXNlcjI5OTg0Mg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299842?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tgamblin",
+        "html_url": "https://github.com/tgamblin",
+        "followers_url": "https://api.github.com/users/tgamblin/followers",
+        "following_url": "https://api.github.com/users/tgamblin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tgamblin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tgamblin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tgamblin/subscriptions",
+        "organizations_url": "https://api.github.com/users/tgamblin/orgs",
+        "repos_url": "https://api.github.com/users/tgamblin/repos",
+        "events_url": "https://api.github.com/users/tgamblin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tgamblin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 1025497628,
+            "node_id": "MDU6TGFiZWwxMDI1NDk3NjI4",
+            "url": "https://api.github.com/repos/spack/spack/labels/licenses",
+            "name": "licenses",
+            "color": "f97296",
+            "default": false,
+            "description": ""
+        },
+        {
+            "id": 1041152873,
+            "node_id": "MDU6TGFiZWwxMDQxMTUyODcz",
+            "url": "https://api.github.com/repos/spack/spack/labels/relicense",
+            "name": "relicense",
+            "color": "1d76db",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2018-12-17T19:14:25Z",
+    "updated_at": "2018-12-17T19:16:00Z",
+    "closed_at": "2018-12-17T19:15:32Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10131",
+        "html_url": "https://github.com/spack/spack/pull/10131",
+        "diff_url": "https://github.com/spack/spack/pull/10131.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10131.patch"
+    },
+    "body": "Reverts spack/spack#7069\r\n\r\n@lingnanyuan @baberlevi @adamjstewart: This one had the old license header -- I guess we didn't restart the build on it, and the CI passed before the license change. I'm reverting until @lingnanyuan can commit a version with the new license.",
+    "performed_via_github_app": null
+}

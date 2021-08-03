@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11323",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11323/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11323/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11323/events",
+    "html_url": "https://github.com/spack/spack/pull/11323",
+    "id": 438775383,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc0NzI4ODgy",
+    "number": 11323,
+    "title": "FAODEL: Add FAODEL package to spack",
+    "user": {
+        "login": "tkordenbrock",
+        "id": 8807825,
+        "node_id": "MDQ6VXNlcjg4MDc4MjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8807825?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tkordenbrock",
+        "html_url": "https://github.com/tkordenbrock",
+        "followers_url": "https://api.github.com/users/tkordenbrock/followers",
+        "following_url": "https://api.github.com/users/tkordenbrock/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tkordenbrock/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tkordenbrock/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tkordenbrock/subscriptions",
+        "organizations_url": "https://api.github.com/users/tkordenbrock/orgs",
+        "repos_url": "https://api.github.com/users/tkordenbrock/repos",
+        "events_url": "https://api.github.com/users/tkordenbrock/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tkordenbrock/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 966031931,
+            "node_id": "MDU6TGFiZWw5NjYwMzE5MzE=",
+            "url": "https://api.github.com/repos/spack/spack/labels/ecp",
+            "name": "ecp",
+            "color": "79d7ea",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2019-04-30T13:22:05Z",
+    "updated_at": "2019-05-08T13:17:09Z",
+    "closed_at": "2019-05-06T17:44:33Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11323",
+        "html_url": "https://github.com/spack/spack/pull/11323",
+        "diff_url": "https://github.com/spack/spack/pull/11323.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11323.patch"
+    },
+    "body": "FAODEL (Flexible, Asynchronous, Object Data-Exchange Libraries) is a collection\r\nof software libraries that are used to implement different data management\r\nservices on high-performance computing (HPC) platforms. This project is part of\r\nthe Advanced Technology Development and Mitigation (ATDM) effort for NNSA's ASC\r\nprogram at Sandia National Laboratories.\r\n\r\nThis PR replaces spack#11268.\r\n\r\n@chuckatkins @fbudin69500 @craigulmer Please review.\r\n",
+    "performed_via_github_app": null
+}

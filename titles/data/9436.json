@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9436",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9436/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9436/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9436/events",
+    "html_url": "https://github.com/spack/spack/pull/9436",
+    "id": 366831251,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjIwNDA5Mzg4",
+    "number": 9436,
+    "title": "feature: add option to retain .vcs",
+    "user": {
+        "login": "matz-e",
+        "id": 2151261,
+        "node_id": "MDQ6VXNlcjIxNTEyNjE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2151261?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matz-e",
+        "html_url": "https://github.com/matz-e",
+        "followers_url": "https://api.github.com/users/matz-e/followers",
+        "following_url": "https://api.github.com/users/matz-e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matz-e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matz-e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matz-e/subscriptions",
+        "organizations_url": "https://api.github.com/users/matz-e/orgs",
+        "repos_url": "https://api.github.com/users/matz-e/repos",
+        "events_url": "https://api.github.com/users/matz-e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matz-e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446643530,
+            "node_id": "MDU6TGFiZWw0NDY2NDM1MzA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/fetching",
+            "name": "fetching",
+            "color": "fbca04",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 584430629,
+            "node_id": "MDU6TGFiZWw1ODQ0MzA2Mjk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/git",
+            "name": "git",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2018-10-04T14:56:08Z",
+    "updated_at": "2019-12-12T09:13:25Z",
+    "closed_at": null,
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9436",
+        "html_url": "https://github.com/spack/spack/pull/9436",
+        "diff_url": "https://github.com/spack/spack/pull/9436.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9436.patch"
+    },
+    "body": "Some packages require version control information to build, e.g., python\r\npackages depending on `setuptools-scm`.  Spack will remove any VCS\r\ndirectory when caching hashable stages like tags, this patch will\r\nprovide a parameter `clean=False` to the `version` function that will\r\nretain `.git` etc.\r\n\r\nShould fix #8746.",
+    "performed_via_github_app": null
+}

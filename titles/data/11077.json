@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/11077",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/11077/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/11077/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/11077/events",
+    "html_url": "https://github.com/spack/spack/pull/11077",
+    "id": 427925252,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjY2NDEzMTIx",
+    "number": 11077,
+    "title": "adding package to install squashfs for singularity",
+    "user": {
+        "login": "vsoch",
+        "id": 814322,
+        "node_id": "MDQ6VXNlcjgxNDMyMg==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/814322?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vsoch",
+        "html_url": "https://github.com/vsoch",
+        "followers_url": "https://api.github.com/users/vsoch/followers",
+        "following_url": "https://api.github.com/users/vsoch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vsoch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vsoch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vsoch/subscriptions",
+        "organizations_url": "https://api.github.com/users/vsoch/orgs",
+        "repos_url": "https://api.github.com/users/vsoch/repos",
+        "events_url": "https://api.github.com/users/vsoch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vsoch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2019-04-01T21:42:34Z",
+    "updated_at": "2019-04-02T17:38:53Z",
+    "closed_at": "2019-04-02T17:33:24Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/11077",
+        "html_url": "https://github.com/spack/spack/pull/11077",
+        "diff_url": "https://github.com/spack/spack/pull/11077.diff",
+        "patch_url": "https://github.com/spack/spack/pull/11077.patch"
+    },
+    "body": "This is my first contribution (thanks in advance for helping me learn the codebase so I can contribute more!) to add installation of the squashfs tools package in order to prepare for the Singularity upgrade.\r\n\r\n - I chose 4.3 as the default, the latest version\r\n - I didn't go earlier than 4.0 because it was like, back in 2009! :O \r\n - the library only requires a make and make install, so I chose `MakefilePackage` as the base class (I found the package.py file in the main source folder) and then set the prefix to the prefix variable, which I figured out was provided in the function, and the makefile expected INSTALL_DIR to be set to the prefix.\r\n - to change directory, I found other examples `with working_dir` and that seemed to do the trick!\r\n\r\nLet me know what needs to be changed / improved, etc., and glad to do it! I'll have a few more of these after this one, and hopefully learn a little more each time.",
+    "performed_via_github_app": null
+}

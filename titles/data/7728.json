@@ -1,0 +1,62 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/7728",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/7728/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/7728/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/7728/events",
+    "html_url": "https://github.com/spack/spack/pull/7728",
+    "id": 313348099,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MTgwOTIyMDY5",
+    "number": 7728,
+    "title": "New packages postgresql-client & py-psycopg, enhance postgresql",
+    "user": {
+        "login": "chissg",
+        "id": 2372949,
+        "node_id": "MDQ6VXNlcjIzNzI5NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2372949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chissg",
+        "html_url": "https://github.com/chissg",
+        "followers_url": "https://api.github.com/users/chissg/followers",
+        "following_url": "https://api.github.com/users/chissg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chissg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chissg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chissg/subscriptions",
+        "organizations_url": "https://api.github.com/users/chissg/orgs",
+        "repos_url": "https://api.github.com/users/chissg/repos",
+        "events_url": "https://api.github.com/users/chissg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chissg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446619526,
+            "node_id": "MDU6TGFiZWw0NDY2MTk1MjY=",
+            "url": "https://api.github.com/repos/spack/spack/labels/new-package",
+            "name": "new-package",
+            "color": "444444",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2018-04-11T14:25:57Z",
+    "updated_at": "2019-03-20T13:34:49Z",
+    "closed_at": "2019-03-13T19:55:42Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/7728",
+        "html_url": "https://github.com/spack/spack/pull/7728",
+        "diff_url": "https://github.com/spack/spack/pull/7728.diff",
+        "patch_url": "https://github.com/spack/spack/pull/7728.patch"
+    },
+    "body": "We introduce a new package `postgresql-client` which allows for the installation of only client executables and libraries. It provides virtual packages `postgresql-c`, `postgresql-python`, `postgresql-perl`, `postgresql-tcl` and adds other variants (`lineedit`, `gssapi`) which weren't available in the original postgresql package. The postgresql package itself is updated to inherit from the client package and is therefore upgraded to understand the same variants, *etc.*, as the client. As a side effect this fixes the problems in the original package spec caused by a misspelled override (`configure_arg()` vs `configure_args()`).\r\nWe also introduce a new package `py-psycopg` which `depends_on(postgresql-python)`. It also depends on `postgresql-c` but here appears to be a problem with the current version of spack if a recipe `depends_on()` two virtual packages provided by the same concrete package. Advice is sought on whether this should be reported as an issue or understood as a limitation of the system.",
+    "performed_via_github_app": null
+}

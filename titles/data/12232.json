@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/12232",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/12232/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/12232/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/12232/events",
+    "html_url": "https://github.com/spack/spack/pull/12232",
+    "id": 475840461,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzAzNTE0MDA2",
+    "number": 12232,
+    "title": "Fix URLs for Geant4 surface data, and fix data install location",
+    "user": {
+        "login": "sethrj",
+        "id": 741229,
+        "node_id": "MDQ6VXNlcjc0MTIyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/741229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sethrj",
+        "html_url": "https://github.com/sethrj",
+        "followers_url": "https://api.github.com/users/sethrj/followers",
+        "following_url": "https://api.github.com/users/sethrj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sethrj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sethrj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sethrj/subscriptions",
+        "organizations_url": "https://api.github.com/users/sethrj/orgs",
+        "repos_url": "https://api.github.com/users/sethrj/repos",
+        "events_url": "https://api.github.com/users/sethrj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sethrj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 446616547,
+            "node_id": "MDU6TGFiZWw0NDY2MTY1NDc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/build-error",
+            "name": "build-error",
+            "color": "ff3300",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 729584669,
+            "node_id": "MDU6TGFiZWw3Mjk1ODQ2Njk=",
+            "url": "https://api.github.com/repos/spack/spack/labels/update-package",
+            "name": "update-package",
+            "color": "c68137",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 10,
+    "created_at": "2019-08-01T19:02:52Z",
+    "updated_at": "2019-08-07T20:09:09Z",
+    "closed_at": "2019-08-07T20:08:53Z",
+    "author_association": "CONTRIBUTOR",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/12232",
+        "html_url": "https://github.com/spack/spack/pull/12232",
+        "diff_url": "https://github.com/spack/spack/pull/12232.diff",
+        "patch_url": "https://github.com/spack/spack/pull/12232.patch"
+    },
+    "body": "A typo in the `g4realsurface` package causes *all* versions of the data to try to pull the *1.0* data, leading to a checksum failure:\r\n```\r\n==> Installing g4realsurface\r\n==> Searching for binary cache of g4realsurface\r\n==> Warning: No Spack mirrors are currently configured\r\n==> No binary for g4realsurface found: installing from source\r\n==> Fetching http://geant4-data.web.cern.ch/geant4-data/datasets/RealSurface.1.0.tar.gz\r\n######################################################################## 100.0%\r\n==> Error: ChecksumError: sha256 checksum failed for /projects/spack2/var/spack/stage/g4realsurface-2.1-rq2f5h57qev3imhdwlmfg346jz7uwfnz/RealSurface.1.0.tar.gz\r\n    Expected 2a287adbda1c0292571edeae2082a65b7f7bd6cf2bf088432d1d6f889426dcf3 but got 3e2d2506600d2780ed903f1f2681962e208039329347c58ba1916740679020b1\r\n```\r\n\r\nFurthermore, a recent change to Spack means that installing data files to `os.path.basename(self.stage.source_path))` means that they all get installed to `share/data/spack-src` rather than (e.g.) `share/data/G4ABLA.3.1`",
+    "performed_via_github_app": null
+}

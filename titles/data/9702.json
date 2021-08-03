@@ -1,0 +1,80 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/9702",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/9702/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/9702/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/9702/events",
+    "html_url": "https://github.com/spack/spack/pull/9702",
+    "id": 376434448,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjI3NjUyMDMx",
+    "number": 9702,
+    "title": "The vendored ruamel.yaml is imported under the namespace 'external'",
+    "user": {
+        "login": "alalazo",
+        "id": 4199709,
+        "node_id": "MDQ6VXNlcjQxOTk3MDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4199709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alalazo",
+        "html_url": "https://github.com/alalazo",
+        "followers_url": "https://api.github.com/users/alalazo/followers",
+        "following_url": "https://api.github.com/users/alalazo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alalazo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alalazo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alalazo/subscriptions",
+        "organizations_url": "https://api.github.com/users/alalazo/orgs",
+        "repos_url": "https://api.github.com/users/alalazo/repos",
+        "events_url": "https://api.github.com/users/alalazo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alalazo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 468766000,
+            "node_id": "MDU6TGFiZWw0Njg3NjYwMDA=",
+            "url": "https://api.github.com/repos/spack/spack/labels/broken-develop",
+            "name": "broken-develop",
+            "color": "b60205",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 73908754,
+            "node_id": "MDU6TGFiZWw3MzkwODc1NA==",
+            "url": "https://api.github.com/repos/spack/spack/labels/bug",
+            "name": "bug",
+            "color": "fc2929",
+            "default": true,
+            "description": null
+        },
+        {
+            "id": 876167697,
+            "node_id": "MDU6TGFiZWw4NzYxNjc2OTc=",
+            "url": "https://api.github.com/repos/spack/spack/labels/hotfix",
+            "name": "hotfix",
+            "color": "a54727",
+            "default": false,
+            "description": ""
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2018-11-01T15:10:09Z",
+    "updated_at": "2018-11-07T06:42:03Z",
+    "closed_at": "2018-11-07T00:06:19Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/9702",
+        "html_url": "https://github.com/spack/spack/pull/9702",
+        "diff_url": "https://github.com/spack/spack/pull/9702.diff",
+        "patch_url": "https://github.com/spack/spack/pull/9702.patch"
+    },
+    "body": "fixes #9619\r\nfixes #9206\r\n\r\ncloses #9261 (alternative solution to the same issue)\r\ncloses #9725 (alternative solution to the same issue)\r\n\r\n`ruamel.yaml` generates a `.pth` file when installed via pip that has the effect of always preferring the version of this package installed at site scope (effectively preventing us from vendoring it). Here we work around the issue by putting our vendored version of the package under an additional namespace.\r\n\r\nNote that we do this only for `ruamel.yaml` rather than consistently for every vendored dependency to avoid extensive changes in their source code, see https://github.com/spack/spack/issues/9206#issuecomment-435041643",
+    "performed_via_github_app": null
+}

@@ -1,0 +1,71 @@
+{
+    "url": "https://api.github.com/repos/spack/spack/issues/10547",
+    "repository_url": "https://api.github.com/repos/spack/spack",
+    "labels_url": "https://api.github.com/repos/spack/spack/issues/10547/labels{/name}",
+    "comments_url": "https://api.github.com/repos/spack/spack/issues/10547/comments",
+    "events_url": "https://api.github.com/repos/spack/spack/issues/10547/events",
+    "html_url": "https://github.com/spack/spack/pull/10547",
+    "id": 407859492,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MjUxMjM4NjYz",
+    "number": 10547,
+    "title": "try to workaround an issue with docker/dockerhub",
+    "user": {
+        "login": "opadron",
+        "id": 2837854,
+        "node_id": "MDQ6VXNlcjI4Mzc4NTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2837854?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/opadron",
+        "html_url": "https://github.com/opadron",
+        "followers_url": "https://api.github.com/users/opadron/followers",
+        "following_url": "https://api.github.com/users/opadron/following{/other_user}",
+        "gists_url": "https://api.github.com/users/opadron/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/opadron/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/opadron/subscriptions",
+        "organizations_url": "https://api.github.com/users/opadron/orgs",
+        "repos_url": "https://api.github.com/users/opadron/repos",
+        "events_url": "https://api.github.com/users/opadron/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/opadron/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "labels": [
+        {
+            "id": 832208203,
+            "node_id": "MDU6TGFiZWw4MzIyMDgyMDM=",
+            "url": "https://api.github.com/repos/spack/spack/labels/docker",
+            "name": "docker",
+            "color": "77b9d6",
+            "default": false,
+            "description": null
+        },
+        {
+            "id": 671550628,
+            "node_id": "MDU6TGFiZWw2NzE1NTA2Mjg=",
+            "url": "https://api.github.com/repos/spack/spack/labels/travis",
+            "name": "travis",
+            "color": "bfdadc",
+            "default": false,
+            "description": null
+        }
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-02-07T19:26:19Z",
+    "updated_at": "2019-02-09T17:51:47Z",
+    "closed_at": "2019-02-09T00:39:41Z",
+    "author_association": "MEMBER",
+    "active_lock_reason": null,
+    "pull_request": {
+        "url": "https://api.github.com/repos/spack/spack/pulls/10547",
+        "html_url": "https://github.com/spack/spack/pull/10547",
+        "diff_url": "https://github.com/spack/spack/pull/10547.diff",
+        "patch_url": "https://github.com/spack/spack/pull/10547.patch"
+    },
+    "body": "Checking the latest build log, it looks like everything docker-related is working, except for what seems to be an issue with docker/dockerhub\r\n\r\nSee the end of this build log -- docker reports successful log in, but then fails to authenticate at push time:\r\nhttps://api.travis-ci.org/v3/job/490096345/log.txt\r\n\r\nHere are two (among many) github issues describing the problem:\r\nhttps://github.com/docker/cli/issues/1180\r\nhttps://github.com/docker/hub-feedback/issues/1222\r\n\r\nThis PR implements a fix suggested in a comment:\r\nhttps://github.com/docker/hub-feedback/issues/1222#issuecomment-459390746",
+    "performed_via_github_app": null
+}
